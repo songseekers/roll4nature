@@ -9,6 +9,7 @@ interface PetalData {
   domain: string;
   description: string;
   color: string;
+  lightColor: string;
   angle: number;
 }
 
@@ -20,6 +21,7 @@ const petals: PetalData[] = [
     domain: 'Physical',
     description: 'Energy, stamina, and recovery',
     color: '#8B5B9E',
+    lightColor: '#B08FBF',
     angle: 0,
   },
   {
@@ -29,6 +31,7 @@ const petals: PetalData[] = [
     domain: 'Physical',
     description: 'Daily fuel and nutrient balance',
     color: '#7A5F95',
+    lightColor: '#A88DB8',
     angle: 45,
   },
   {
@@ -38,6 +41,7 @@ const petals: PetalData[] = [
     domain: 'Mental',
     description: 'Seeing the big picture, flexible thinking',
     color: '#B39968',
+    lightColor: '#D4BFA0',
     angle: 90,
   },
   {
@@ -47,6 +51,7 @@ const petals: PetalData[] = [
     domain: 'Mental',
     description: 'Focused understanding, thoughtful decision-making',
     color: '#C4A574',
+    lightColor: '#DCC4A4',
     angle: 135,
   },
   {
@@ -56,6 +61,7 @@ const petals: PetalData[] = [
     domain: 'Emotional',
     description: 'Full attunement to others and genuine engagement',
     color: '#5B9467',
+    lightColor: '#8DB5A0',
     angle: 180,
   },
   {
@@ -65,6 +71,7 @@ const petals: PetalData[] = [
     domain: 'Emotional',
     description: 'Emotional self-mastery and consistency',
     color: '#4A8356',
+    lightColor: '#7BA587',
     angle: 225,
   },
   {
@@ -74,6 +81,7 @@ const petals: PetalData[] = [
     domain: 'Lifestyle',
     description: 'Supportive spaces and surroundings',
     color: '#4A7BA7',
+    lightColor: '#7BA4CA',
     angle: 270,
   },
   {
@@ -83,6 +91,7 @@ const petals: PetalData[] = [
     domain: 'Lifestyle',
     description: 'Daily routines that sustain energy and focus',
     color: '#5A8CB8',
+    lightColor: '#8CB0D4',
     angle: 315,
   },
 ];
@@ -118,38 +127,65 @@ export default function PurposeFlower({
     <div className="flex flex-col items-center gap-8">
       <svg
         viewBox={viewBox}
-        className="w-full max-w-md mx-auto drop-shadow-lg"
+        className="w-full max-w-md mx-auto drop-shadow-xl"
         style={{ maxWidth: size === 'large' ? '500px' : size === 'medium' ? '400px' : '300px' }}
       >
+        <defs>
+          {/* Gradients for each petal */}
+          {petals.map((petal) => (
+            <defs key={`grad-${petal.id}`}>
+              <radialGradient id={`grad-${petal.id}`} cx="40%" cy="40%">
+                <stop offset="0%" stopColor={petal.lightColor} stopOpacity="1" />
+                <stop offset="100%" stopColor={petal.color} stopOpacity="0.9" />
+              </radialGradient>
+              <filter id={`shadow-${petal.id}`}>
+                <feDropShadow dx="0" dy="2" stdDeviation="3" floodOpacity="0.3" />
+              </filter>
+            </defs>
+          ))}
+        </defs>
+
         {/* Petals */}
         {petals.map((petal) => {
           const angleRad = (petal.angle * Math.PI) / 180;
-          const cx = 250 + petalRadius * 1.2 * Math.cos(angleRad);
-          const cy = 250 + petalRadius * 1.2 * Math.sin(angleRad);
+          const cx = 250 + petalRadius * 1.1 * Math.cos(angleRad);
+          const cy = 250 + petalRadius * 1.1 * Math.sin(angleRad);
 
           const isHovered = hoveredPetal === petal.id;
           const isSelected = selectedPetal?.id === petal.id;
 
+          // Create petal path with curves
+          const petalWidth = petalRadius * 0.55;
+          const petalHeight = petalRadius * 1.05;
+
+          const petalPath = `
+            M ${cx} ${cy - petalHeight}
+            Q ${cx + petalWidth} ${cy - petalHeight * 0.3} ${cx + petalWidth * 0.3} ${cy + petalHeight * 0.4}
+            Q ${cx} ${cy + petalHeight * 0.6} ${cx - petalWidth * 0.3} ${cy + petalHeight * 0.4}
+            Q ${cx - petalWidth} ${cy - petalHeight * 0.3} ${cx} ${cy - petalHeight}
+          `;
+
           return (
             <g key={petal.id}>
-              {/* Petal */}
-              <ellipse
-                cx={cx}
-                cy={cy}
-                rx={petalRadius * 0.5}
-                ry={petalRadius}
-                fill={petal.color}
-                opacity={isHovered || isSelected ? 1 : 0.85}
+              {/* Petal with gradient */}
+              <path
+                d={petalPath}
+                fill={`url(#grad-${petal.id})`}
+                filter={`url(#shadow-${petal.id})`}
                 stroke={isSelected ? '#ffffff' : 'none'}
-                strokeWidth={isSelected ? 3 : 0}
-                transform={`rotate(${petal.angle + 90} ${cx} ${cy})`}
+                strokeWidth={isSelected ? '2' : '0'}
                 className={interactive ? 'cursor-pointer transition-all duration-200' : ''}
                 onMouseEnter={() => interactive && setHoveredPetal(petal.id)}
                 onMouseLeave={() => interactive && setHoveredPetal(null)}
                 onClick={() => interactive && handlePetalClick(petal)}
                 style={{
-                  filter: isHovered ? 'drop-shadow(0 0 12px rgba(0,0,0,0.3))' : 'none',
-                  transform: isHovered ? `scale(1.05)` : 'scale(1)',
+                  filter: isHovered
+                    ? `drop-shadow(0 4px 12px rgba(0,0,0,0.4))`
+                    : `url(#shadow-${petal.id})`,
+                  opacity: isHovered || isSelected ? 1 : 0.9,
+                  transform: isHovered ? `scale(1.08)` : 'scale(1)',
+                  transformOrigin: `${cx}px ${cy}px`,
+                  transition: 'all 0.2s ease',
                 }}
               />
 
@@ -160,8 +196,12 @@ export default function PurposeFlower({
                   y={cy}
                   textAnchor="middle"
                   dominantBaseline="middle"
-                  className="text-sm font-bold fill-white pointer-events-none"
-                  fontSize={size === 'large' ? '16' : '12'}
+                  className="pointer-events-none font-bold fill-white"
+                  fontSize={size === 'large' ? '14' : '11'}
+                  fontWeight="600"
+                  style={{
+                    textShadow: '0 1px 2px rgba(0,0,0,0.3)',
+                  }}
                 >
                   {petal.label}
                 </text>
@@ -170,80 +210,107 @@ export default function PurposeFlower({
           );
         })}
 
-        {/* Center Stage - Octagon */}
-        <circle cx="250" cy="250" r={centerRadius} fill="#8B8B8B" opacity="0.3" />
+        {/* Center Circle with gradient */}
+        <defs>
+          <radialGradient id="centerGradient" cx="40%" cy="40%">
+            <stop offset="0%" stopColor="#f8f8f8" stopOpacity="1" />
+            <stop offset="100%" stopColor="#e8e8e8" stopOpacity="1" />
+          </radialGradient>
+          <filter id="centerShadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="4" floodOpacity="0.2" />
+          </filter>
+        </defs>
 
-        {/* Inner octagon */}
-        <g>
-          {Array.from({ length: 8 }).map((_, i) => {
-            const angle = (i * 360) / 8;
-            const rad = (angle * Math.PI) / 180;
-            const x = 250 + (centerRadius * 0.7) * Math.cos(rad);
-            const y = 250 + (centerRadius * 0.7) * Math.sin(rad);
-            const nextAngle = (((i + 1) * 360) / 8) * (Math.PI / 180);
-            const nextX = 250 + (centerRadius * 0.7) * Math.cos(nextAngle);
-            const nextY = 250 + (centerRadius * 0.7) * Math.sin(nextAngle);
+        {/* Main center circle */}
+        <circle
+          cx="250"
+          cy="250"
+          r={centerRadius}
+          fill="url(#centerGradient)"
+          filter="url(#centerShadow)"
+          stroke="#ddd"
+          strokeWidth="1"
+        />
 
-            if (i === 0) {
-              return (
-                <path
-                  key="octagon"
-                  d={
-                    Array.from({ length: 8 })
-                      .map((_, idx) => {
-                        const a = ((idx * 360) / 8) * (Math.PI / 180);
-                        const px = 250 + (centerRadius * 0.7) * Math.cos(a);
-                        const py = 250 + (centerRadius * 0.7) * Math.sin(a);
-                        return `${idx === 0 ? 'M' : 'L'} ${px} ${py}`;
-                      })
-                      .join(' ') + ' Z'
-                  }
-                  fill="none"
-                  stroke="#666"
-                  strokeWidth="2"
-                  opacity="0.3"
-                />
-              );
-            }
-            return null;
-          })}
-        </g>
+        {/* Inner ring accent */}
+        <circle
+          cx="250"
+          cy="250"
+          r={centerRadius * 0.85}
+          fill="none"
+          stroke="#ccc"
+          strokeWidth="1"
+          opacity="0.4"
+        />
 
         {/* Center Text - PUR-POSE */}
         <text
           x="250"
-          y="245"
+          y={size === 'large' ? '242' : size === 'medium' ? '243' : '245'}
           textAnchor="middle"
           dominantBaseline="middle"
-          className="font-bold fill-gray-700"
-          fontSize={size === 'large' ? '28' : size === 'medium' ? '20' : '14'}
+          className="font-bold"
+          fill="#333"
+          fontSize={size === 'large' ? '32' : size === 'medium' ? '22' : '16'}
+          letterSpacing="-1"
+          style={{ fontWeight: '800' }}
         >
           PUR-
         </text>
         <text
           x="250"
-          y="270"
+          y={size === 'large' ? '276' : size === 'medium' ? '265' : '258'}
           textAnchor="middle"
           dominantBaseline="middle"
-          className="font-bold fill-gray-700"
-          fontSize={size === 'large' ? '28' : size === 'medium' ? '20' : '14'}
+          className="font-bold"
+          fill="#333"
+          fontSize={size === 'large' ? '32' : size === 'medium' ? '22' : '16'}
+          letterSpacing="-1"
+          style={{ fontWeight: '800' }}
         >
           POSE
+        </text>
+
+        {/* Spiritual label */}
+        <text
+          x="250"
+          y={size === 'large' ? '310' : size === 'medium' ? '305' : '280'}
+          textAnchor="middle"
+          dominantBaseline="middle"
+          className="fill-gray-600"
+          fontSize={size === 'large' ? '10' : '8'}
+          fontStyle="italic"
+          opacity="0.7"
+        >
+          Spiritual
         </text>
       </svg>
 
       {/* Selected Petal Info */}
       {interactive && selectedPetal && (
-        <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 max-w-sm border-2 border-blue-200 w-full">
+        <div
+          className="rounded-xl p-6 max-w-sm w-full shadow-lg border border-opacity-20 animate-fadeIn"
+          style={{
+            background: `linear-gradient(135deg, ${selectedPetal.lightColor}20 0%, ${selectedPetal.color}15 100%)`,
+            borderColor: selectedPetal.color,
+          }}
+        >
           <div className="flex items-start gap-4">
             <div
-              className="w-6 h-6 rounded-full flex-shrink-0 mt-1"
-              style={{ backgroundColor: selectedPetal.color }}
+              className="w-8 h-8 rounded-full flex-shrink-0 mt-0.5 shadow-md"
+              style={{
+                backgroundColor: selectedPetal.color,
+                boxShadow: `0 4px 12px ${selectedPetal.color}40`,
+              }}
             />
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-gray-900">{selectedPetal.label}</h3>
-              <p className="text-sm font-semibold text-gray-600 mb-2">{selectedPetal.domain}</p>
-              <p className="text-gray-700 leading-relaxed">{selectedPetal.description}</p>
+              <h3 className="text-2xl font-bold text-gray-900">{selectedPetal.label}</h3>
+              <div className="flex items-center gap-2 mb-3">
+                <p className="text-sm font-semibold rounded-full px-3 py-1 bg-white bg-opacity-60" style={{ color: selectedPetal.color }}>
+                  {selectedPetal.domain}
+                </p>
+              </div>
+              <p className="text-gray-700 leading-relaxed text-sm">{selectedPetal.description}</p>
             </div>
           </div>
         </div>
@@ -251,35 +318,27 @@ export default function PurposeFlower({
 
       {/* Legend */}
       {size === 'large' && (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl text-sm">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#8B5B9E' }} />
-              <span className="font-semibold text-gray-900">Physical</span>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl text-sm mt-4">
+          {[
+            { color: '#8B5B9E', name: 'Physical', sub: 'Body' },
+            { color: '#B39968', name: 'Mental', sub: 'Mind' },
+            { color: '#5B9467', name: 'Emotional', sub: 'Heart' },
+            { color: '#4A7BA7', name: 'Lifestyle', sub: 'World' },
+          ].map((item) => (
+            <div
+              key={item.name}
+              className="bg-gradient-to-br from-gray-50 to-white rounded-lg p-3 border border-gray-200 hover:border-gray-300 hover:shadow-sm transition"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <div
+                  className="w-5 h-5 rounded-full shadow-sm"
+                  style={{ backgroundColor: item.color }}
+                />
+                <span className="font-semibold text-gray-900">{item.name}</span>
+              </div>
+              <p className="text-xs text-gray-600 ml-7 italic">{item.sub}</p>
             </div>
-            <p className="text-xs text-gray-600 ml-6">Body</p>
-          </div>
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#B39968' }} />
-              <span className="font-semibold text-gray-900">Mental</span>
-            </div>
-            <p className="text-xs text-gray-600 ml-6">Mind</p>
-          </div>
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#5B9467' }} />
-              <span className="font-semibold text-gray-900">Emotional</span>
-            </div>
-            <p className="text-xs text-gray-600 ml-6">Heart</p>
-          </div>
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#4A7BA7' }} />
-              <span className="font-semibold text-gray-900">Lifestyle</span>
-            </div>
-            <p className="text-xs text-gray-600 ml-6">World</p>
-          </div>
+          ))}
         </div>
       )}
     </div>
