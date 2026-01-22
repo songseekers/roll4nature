@@ -1,5 +1,6 @@
 import HeroSection from '@/components/home/HeroSection';
 import QuickActions from '@/components/home/QuickActions';
+import PurposeJourney from '@/components/home/PurposeJourney';
 import RouteMap from '@/components/map/RouteMap';
 import { getMajorCities } from '@/lib/data-helpers';
 import Link from 'next/link';
@@ -16,6 +17,9 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <QuickActions />
       </section>
+
+      {/* Purpose Journey Section */}
+      <PurposeJourney />
 
       {/* Interactive Route Map */}
       <section id="map" className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
