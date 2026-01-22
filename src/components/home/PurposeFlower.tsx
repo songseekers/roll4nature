@@ -154,15 +154,15 @@ export default function PurposeFlower({
           const isHovered = hoveredPetal === petal.id;
           const isSelected = selectedPetal?.id === petal.id;
 
-          // Create petal path with curves
-          const petalWidth = petalRadius * 0.55;
-          const petalHeight = petalRadius * 1.05;
+          // Create petal path - flatter, semi-circular shape
+          const petalWidth = petalRadius * 0.65;
+          const petalHeight = petalRadius * 0.75;
 
           const petalPath = `
             M ${cx} ${cy - petalHeight}
-            Q ${cx + petalWidth} ${cy - petalHeight * 0.3} ${cx + petalWidth * 0.3} ${cy + petalHeight * 0.4}
-            Q ${cx} ${cy + petalHeight * 0.6} ${cx - petalWidth * 0.3} ${cy + petalHeight * 0.4}
-            Q ${cx - petalWidth} ${cy - petalHeight * 0.3} ${cx} ${cy - petalHeight}
+            Q ${cx + petalWidth} ${cy - petalHeight * 0.4} ${cx + petalWidth} ${cy + petalHeight * 0.3}
+            Q ${cx} ${cy + petalHeight * 0.5} ${cx - petalWidth} ${cy + petalHeight * 0.3}
+            Q ${cx - petalWidth} ${cy - petalHeight * 0.4} ${cx} ${cy - petalHeight}
           `;
 
           // Position label at petal tip with proper rotation
