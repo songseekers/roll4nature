@@ -154,16 +154,17 @@ export default function PurposeFlower({
           const isHovered = hoveredPetal === petal.id;
           const isSelected = selectedPetal?.id === petal.id;
 
-          // Create petal path - oblong circle/ellipse shape
+          // Create petal path - oblong rounded shape centered at origin
           const petalWidth = petalRadius * 0.55;
           const petalHeight = petalRadius * 0.95;
 
+          // Path is centered at 0,0 and extends upward
           const petalPath = `
-            M ${cx} ${cy - petalHeight}
-            Q ${cx + petalWidth} ${cy - petalHeight * 0.5} ${cx + petalWidth} ${cy + petalHeight * 0.15}
-            Q ${cx + petalWidth} ${cy + petalHeight * 0.6} ${cx} ${cy + petalHeight * 0.65}
-            Q ${cx - petalWidth} ${cy + petalHeight * 0.6} ${cx - petalWidth} ${cy + petalHeight * 0.15}
-            Q ${cx - petalWidth} ${cy - petalHeight * 0.5} ${cx} ${cy - petalHeight}
+            M 0 ${-petalHeight}
+            Q ${petalWidth} ${-petalHeight * 0.3} ${petalWidth} ${petalHeight * 0.2}
+            Q ${petalWidth} ${petalHeight * 0.6} 0 ${petalHeight * 0.65}
+            Q ${-petalWidth} ${petalHeight * 0.6} ${-petalWidth} ${petalHeight * 0.2}
+            Q ${-petalWidth} ${-petalHeight * 0.3} 0 ${-petalHeight}
           `;
 
           // Position label at petal tip with proper rotation
@@ -178,8 +179,8 @@ export default function PurposeFlower({
           }
 
           return (
-            <g key={petal.id}>
-              {/* Petal with gradient */}
+            <g key={petal.id} transform={`translate(${cx},${cy}) rotate(${petal.angle})`}>
+              {/* Petal with gradient - rotated to point outward */}
               <path
                 d={petalPath}
                 fill={`url(#grad-${petal.id})`}
@@ -196,7 +197,7 @@ export default function PurposeFlower({
                     : `url(#shadow-${petal.id})`,
                   opacity: isHovered || isSelected ? 1 : 0.9,
                   transform: isHovered ? `scale(1.08)` : 'scale(1)',
-                  transformOrigin: `${cx}px ${cy}px`,
+                  transformOrigin: `0px 0px`,
                   transition: 'all 0.2s ease',
                 }}
               />
