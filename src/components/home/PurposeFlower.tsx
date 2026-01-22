@@ -188,16 +188,16 @@ export default function PurposeFlower({
               return (
                 <path
                   key="octagon"
-                  d={Array.from({ length: 8 })
-                    .map((_, idx) => {
-                      const a = ((idx * 360) / 8) * (Math.PI / 180);
-                      const px = 250 + (centerRadius * 0.7) * Math.cos(a);
-                      const py = 250 + (centerRadius * 0.7) * Math.sin(a);
-                      return `${idx === 0 ? 'M' : 'L'} ${px} ${py}`;
-                    })
-                    .join(' ')}
-                  Z
-                  closepath
+                  d={
+                    Array.from({ length: 8 })
+                      .map((_, idx) => {
+                        const a = ((idx * 360) / 8) * (Math.PI / 180);
+                        const px = 250 + (centerRadius * 0.7) * Math.cos(a);
+                        const py = 250 + (centerRadius * 0.7) * Math.sin(a);
+                        return `${idx === 0 ? 'M' : 'L'} ${px} ${py}`;
+                      })
+                      .join(' ') + ' Z'
+                  }
                   fill="none"
                   stroke="#666"
                   strokeWidth="2"
