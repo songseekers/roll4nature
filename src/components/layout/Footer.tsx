@@ -29,13 +29,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#map" className="text-gray-300 hover:text-white transition">
-                  Route Map
+                <Link href="/guidebook" className="text-gray-300 hover:text-white transition">
+                  Guidebook
                 </Link>
               </li>
               <li>
-                <Link href="/#cities" className="text-gray-300 hover:text-white transition">
-                  Cities
+                <Link href="/roll-for-veterans" className="text-gray-300 hover:text-white transition">
+                  Roll for Veterans
                 </Link>
               </li>
               <li>

@@ -24,11 +24,11 @@ export default function Navigation() {
             <Link href="/" className="text-gray-700 hover:text-blue-600 transition">
               Home
             </Link>
-            <Link href="/#map" className="text-gray-700 hover:text-blue-600 transition">
-              Route Map
+            <Link href="/guidebook" className="text-gray-700 hover:text-blue-600 transition">
+              Guidebook
             </Link>
-            <Link href="/#cities" className="text-gray-700 hover:text-blue-600 transition">
-              80+ Cities
+            <Link href="/roll-for-veterans" className="text-gray-700 hover:text-blue-600 transition">
+              Roll for Veterans
             </Link>
             <Link href="/team-bravo" className="text-gray-700 hover:text-blue-600 transition">
               Team Bravo
@@ -64,18 +64,18 @@ export default function Navigation() {
               Home
             </Link>
             <Link
-              href="/#map"
+              href="/guidebook"
               className="block text-gray-700 hover:text-blue-600 transition"
               onClick={() => setIsOpen(false)}
             >
-              Route Map
+              Guidebook
             </Link>
             <Link
-              href="/#cities"
+              href="/roll-for-veterans"
               className="block text-gray-700 hover:text-blue-600 transition"
               onClick={() => setIsOpen(false)}
             >
-              80+ Cities
+              Roll for Veterans
             </Link>
             <Link
               href="/team-bravo"
