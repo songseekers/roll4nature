@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import CountdownTimer from './CountdownTimer';
 import PurposeFlower from './PurposeFlower';

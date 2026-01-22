@@ -25,7 +25,7 @@ const petalMappings: PetalMapping[] = [
       '4,434 miles of sustained physical challenge',
       '55 miles per day average across 107 days',
       'Training now for peak performance in Feb-June 2026',
-      'Celebrating the body's remarkable capacity to show up',
+      "Celebrating the body's remarkable capacity to show up",
     ],
     journeyMessage:
       '"Every pedal stroke builds vitality for ourselves and the veterans we ride to honor"',
