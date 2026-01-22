@@ -201,27 +201,41 @@ export default function PurposeFlower({
                   transition: 'all 0.2s ease',
                 }}
               />
-
-              {/* Petal Label - Positioned at Tip with Rotation */}
-              {size !== 'small' && (
-                <g transform={`translate(${labelX},${labelY}) rotate(${textRotation})`}>
-                  <text
-                    x="0"
-                    y="0"
-                    textAnchor="middle"
-                    dominantBaseline="middle"
-                    className="pointer-events-none font-semibold fill-gray-700"
-                    fontSize={size === 'large' ? '13' : size === 'medium' ? '11' : '9'}
-                    fontWeight="600"
-                    style={{
-                      letterSpacing: '0.3px',
-                    }}
-                  >
-                    {petal.label}
-                  </text>
-                </g>
-              )}
             </g>
+          );
+        })}
+
+        {/* Petal Labels - Rendered Separately */}
+        {petals.map((petal) => {
+          const angleRad = (petal.angle * Math.PI) / 180;
+          const labelDistance = petalRadius * 1.85;
+          const labelX = 250 + labelDistance * Math.cos(angleRad);
+          const labelY = 250 + labelDistance * Math.sin(angleRad);
+
+          let textRotation = petal.angle;
+          if (petal.angle > 90 && petal.angle < 270) {
+            textRotation = petal.angle + 180;
+          }
+
+          return (
+            size !== 'small' && (
+              <g key={`label-${petal.id}`} transform={`translate(${labelX},${labelY}) rotate(${textRotation})`}>
+                <text
+                  x="0"
+                  y="0"
+                  textAnchor="middle"
+                  dominantBaseline="middle"
+                  className="pointer-events-none font-semibold fill-gray-700"
+                  fontSize={size === 'large' ? '13' : size === 'medium' ? '11' : '9'}
+                  fontWeight="600"
+                  style={{
+                    letterSpacing: '0.3px',
+                  }}
+                >
+                  {petal.label}
+                </text>
+              </g>
+            )
           );
         })}
 
