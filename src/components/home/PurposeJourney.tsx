@@ -43,8 +43,7 @@ const petalMappings: PetalMapping[] = [
       'Gratitude and care woven into every bite',
       'Nourishing body and spirit as one practice',
     ],
-    journeyMessage:
-      '"Nourishment is more than fuel—it's a daily practice of care and gratitude"',
+    journeyMessage: `"Nourishment is more than fuel—it's a daily practice of care and gratitude"`,
   },
   {
     id: 'perspective',
@@ -59,8 +58,7 @@ const petalMappings: PetalMapping[] = [
       'Understanding RWB chapters and communities nationwide',
       'Broadening view of what it means to serve and connect',
     ],
-    journeyMessage:
-      '"Perspective is not dismissing your own view—it's expanding it to honor all narratives"',
+    journeyMessage: `"Perspective is not dismissing your own view—it's expanding it to honor all narratives"`,
   },
   {
     id: 'clarity',
@@ -75,8 +73,7 @@ const petalMappings: PetalMapping[] = [
       'Clear communication of RWB values and impact',
       'Alignment of action with deepest purpose',
     ],
-    journeyMessage:
-      '"Clarity is not forcing answers—it's cultivating space for understanding to emerge"',
+    journeyMessage: `"Clarity is not forcing answers—it's cultivating space for understanding to emerge"`,
   },
   {
     id: 'presence',
