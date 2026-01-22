@@ -165,6 +165,11 @@ export default function PurposeFlower({
             Q ${cx - petalWidth} ${cy - petalHeight * 0.3} ${cx} ${cy - petalHeight}
           `;
 
+          // Position label outside the petal
+          const labelDistance = petalRadius * 1.5;
+          const labelX = 250 + labelDistance * Math.cos(angleRad);
+          const labelY = 250 + labelDistance * Math.sin(angleRad);
+
           return (
             <g key={petal.id}>
               {/* Petal with gradient */}
@@ -189,18 +194,18 @@ export default function PurposeFlower({
                 }}
               />
 
-              {/* Petal Label */}
+              {/* Petal Label - Positioned Outside */}
               {size !== 'small' && (
                 <text
-                  x={cx}
-                  y={cy}
+                  x={labelX}
+                  y={labelY}
                   textAnchor="middle"
                   dominantBaseline="middle"
-                  className="pointer-events-none font-bold fill-white"
-                  fontSize={size === 'large' ? '14' : '11'}
+                  className="pointer-events-none font-semibold fill-gray-700"
+                  fontSize={size === 'large' ? '13' : size === 'medium' ? '11' : '9'}
                   fontWeight="600"
                   style={{
-                    textShadow: '0 1px 2px rgba(0,0,0,0.3)',
+                    letterSpacing: '0.3px',
                   }}
                 >
                   {petal.label}
@@ -243,44 +248,32 @@ export default function PurposeFlower({
           opacity="0.4"
         />
 
-        {/* Center Text - PUR-POSE */}
+        {/* Center Text - PUR-POSE (Single Line) */}
         <text
           x="250"
-          y={size === 'large' ? '242' : size === 'medium' ? '243' : '245'}
+          y={size === 'large' ? '250' : size === 'medium' ? '250' : '250'}
           textAnchor="middle"
           dominantBaseline="middle"
           className="font-bold"
           fill="#333"
-          fontSize={size === 'large' ? '32' : size === 'medium' ? '22' : '16'}
-          letterSpacing="-1"
+          fontSize={size === 'large' ? '36' : size === 'medium' ? '26' : '20'}
+          letterSpacing="1"
           style={{ fontWeight: '800' }}
         >
-          PUR-
-        </text>
-        <text
-          x="250"
-          y={size === 'large' ? '276' : size === 'medium' ? '265' : '258'}
-          textAnchor="middle"
-          dominantBaseline="middle"
-          className="font-bold"
-          fill="#333"
-          fontSize={size === 'large' ? '32' : size === 'medium' ? '22' : '16'}
-          letterSpacing="-1"
-          style={{ fontWeight: '800' }}
-        >
-          POSE
+          PURPOSE
         </text>
 
         {/* Spiritual label */}
         <text
           x="250"
-          y={size === 'large' ? '310' : size === 'medium' ? '305' : '280'}
+          y={size === 'large' ? '275' : size === 'medium' ? '270' : '268'}
           textAnchor="middle"
           dominantBaseline="middle"
-          className="fill-gray-600"
-          fontSize={size === 'large' ? '10' : '8'}
+          className="fill-gray-500"
+          fontSize={size === 'large' ? '9' : '8'}
           fontStyle="italic"
-          opacity="0.7"
+          opacity="0.6"
+          letterSpacing="0.5"
         >
           Spiritual
         </text>
