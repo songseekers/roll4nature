@@ -1,0 +1,51 @@
+import { MapLayer } from './RouteMap';
+
+interface MapControlsProps {
+  layer: MapLayer;
+  onLayerChange: (layer: MapLayer) => void;
+}
+
+export default function MapControls({ layer, onLayerChange }: MapControlsProps) {
+  const controls: { label: string; value: MapLayer; description: string }[] = [
+    {
+      label: 'Overview',
+      value: 'overview',
+      description: 'Key West → LA → Grand Canyon',
+    },
+    {
+      label: 'Major Stops',
+      value: 'major',
+      description: '19 planned major stops',
+    },
+    {
+      label: 'All Cities',
+      value: 'all',
+      description: '80+ communities',
+    },
+  ];
+
+  return (
+    <div className="bg-white rounded-lg shadow-md p-4 mb-4 flex flex-col sm:flex-row gap-3">
+      <p className="text-sm font-semibold text-gray-700 self-center hidden sm:block">
+        Route Layers:
+      </p>
+
+      <div className="flex gap-2 flex-wrap">
+        {controls.map((control) => (
+          <button
+            key={control.value}
+            onClick={() => onLayerChange(control.value)}
+            className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap ${
+              layer === control.value
+                ? 'bg-blue-600 text-white shadow-md'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+            }`}
+            title={control.description}
+          >
+            {control.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
