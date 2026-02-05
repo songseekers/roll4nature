@@ -14,21 +14,8 @@
       "name": "Team RWB Florida Keys",
       "contactEmail": "floridakeys@teamrwb.org"
     },
-    "description": "Starting point of the Roll for Veterans 2026 journey. Key West is the southernmost city in the contiguous United States.",
+    "description": "Starting point of the Roll for Veterans 2026 journey.",
     "slug": "key-west"
-  },
-  {
-    "id": "homestead-fl",
-    "name": "Homestead",
-    "state": "Florida",
-    "population": 80737,
-    "coordinates": [-80.4776, 25.4687],
-    "arrivalDate": "2026-02-28",
-    "dayNumber": 2,
-    "distanceFromPrevious": 95,
-    "distanceFromStart": 95,
-    "tier": "all",
-    "slug": "homestead"
   },
   {
     "id": "miami-fl",
@@ -38,28 +25,14 @@
     "coordinates": [-80.1918, 25.7617],
     "arrivalDate": "2026-03-01",
     "dayNumber": 3,
-    "distanceFromPrevious": 35,
-    "distanceFromStart": 130,
+    "distanceFromPrevious": 165,
+    "distanceFromStart": 165,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB Miami",
       "contactEmail": "miami@teamrwb.org"
     },
-    "description": "Major metropolitan area in South Florida. Join us in Miami for Day 3 of our cross-country adventure.",
     "slug": "miami"
-  },
-  {
-    "id": "miami-beach-fl",
-    "name": "Miami Beach",
-    "state": "Florida",
-    "population": 92307,
-    "coordinates": [-80.1300, 25.7907],
-    "arrivalDate": "2026-03-02",
-    "dayNumber": 4,
-    "distanceFromPrevious": 8,
-    "distanceFromStart": 138,
-    "tier": "all",
-    "slug": "miami-beach"
   },
   {
     "id": "fort-lauderdale-fl",
@@ -69,66 +42,14 @@
     "coordinates": [-80.1344, 26.1224],
     "arrivalDate": "2026-03-03",
     "dayNumber": 5,
-    "distanceFromPrevious": 28,
-    "distanceFromStart": 166,
+    "distanceFromPrevious": 30,
+    "distanceFromStart": 195,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB Fort Lauderdale",
       "contactEmail": "fortlauderdale@teamrwb.org"
     },
     "slug": "fort-lauderdale"
-  },
-  {
-    "id": "pompano-beach-fl",
-    "name": "Pompano Beach",
-    "state": "Florida",
-    "population": 112046,
-    "coordinates": [-80.1248, 26.2379],
-    "arrivalDate": "2026-03-04",
-    "dayNumber": 6,
-    "distanceFromPrevious": 12,
-    "distanceFromStart": 178,
-    "tier": "all",
-    "slug": "pompano-beach"
-  },
-  {
-    "id": "deerfield-beach-fl",
-    "name": "Deerfield Beach",
-    "state": "Florida",
-    "population": 81798,
-    "coordinates": [-80.1000, 26.3184],
-    "arrivalDate": "2026-03-05",
-    "dayNumber": 7,
-    "distanceFromPrevious": 9,
-    "distanceFromStart": 187,
-    "tier": "all",
-    "slug": "deerfield-beach"
-  },
-  {
-    "id": "boca-raton-fl",
-    "name": "Boca Raton",
-    "state": "Florida",
-    "population": 97422,
-    "coordinates": [-80.0831, 26.3683],
-    "arrivalDate": "2026-03-06",
-    "dayNumber": 8,
-    "distanceFromPrevious": 6,
-    "distanceFromStart": 193,
-    "tier": "all",
-    "slug": "boca-raton"
-  },
-  {
-    "id": "delray-beach-fl",
-    "name": "Delray Beach",
-    "state": "Florida",
-    "population": 69451,
-    "coordinates": [-80.0728, 26.4615],
-    "arrivalDate": "2026-03-07",
-    "dayNumber": 9,
-    "distanceFromPrevious": 10,
-    "distanceFromStart": 203,
-    "tier": "all",
-    "slug": "delray-beach"
   },
   {
     "id": "west-palm-beach-fl",
@@ -138,148 +59,14 @@
     "coordinates": [-80.0534, 26.7153],
     "arrivalDate": "2026-03-08",
     "dayNumber": 10,
-    "distanceFromPrevious": 28,
-    "distanceFromStart": 231,
+    "distanceFromPrevious": 45,
+    "distanceFromStart": 240,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB West Palm Beach",
       "contactEmail": "westpalmbeach@teamrwb.org"
     },
     "slug": "west-palm-beach"
-  },
-  {
-    "id": "palm-beach-gardens-fl",
-    "name": "Palm Beach Gardens",
-    "state": "Florida",
-    "population": 59182,
-    "coordinates": [-80.1387, 26.8234],
-    "arrivalDate": "2026-03-09",
-    "dayNumber": 11,
-    "distanceFromPrevious": 13,
-    "distanceFromStart": 244,
-    "tier": "all",
-    "slug": "palm-beach-gardens"
-  },
-  {
-    "id": "jupiter-fl",
-    "name": "Jupiter",
-    "state": "Florida",
-    "population": 61047,
-    "coordinates": [-80.0942, 26.9342],
-    "arrivalDate": "2026-03-10",
-    "dayNumber": 12,
-    "distanceFromPrevious": 12,
-    "distanceFromStart": 256,
-    "tier": "all",
-    "slug": "jupiter"
-  },
-  {
-    "id": "fort-pierce-fl",
-    "name": "Fort Pierce",
-    "state": "Florida",
-    "population": 46074,
-    "coordinates": [-80.3256, 27.4467],
-    "arrivalDate": "2026-03-11",
-    "dayNumber": 13,
-    "distanceFromPrevious": 58,
-    "distanceFromStart": 314,
-    "tier": "all",
-    "slug": "fort-pierce"
-  },
-  {
-    "id": "sebastian-fl",
-    "name": "Sebastian",
-    "state": "Florida",
-    "population": 25613,
-    "coordinates": [-80.4706, 27.8164],
-    "arrivalDate": "2026-03-12",
-    "dayNumber": 14,
-    "distanceFromPrevious": 43,
-    "distanceFromStart": 357,
-    "tier": "all",
-    "slug": "sebastian"
-  },
-  {
-    "id": "palm-bay-fl",
-    "name": "Palm Bay",
-    "state": "Florida",
-    "population": 119760,
-    "coordinates": [-80.5887, 27.9859],
-    "arrivalDate": "2026-03-13",
-    "dayNumber": 15,
-    "distanceFromPrevious": 19,
-    "distanceFromStart": 376,
-    "tier": "all",
-    "slug": "palm-bay"
-  },
-  {
-    "id": "melbourne-fl",
-    "name": "Melbourne",
-    "state": "Florida",
-    "population": 84678,
-    "coordinates": [-80.6081, 28.0836],
-    "arrivalDate": "2026-03-14",
-    "dayNumber": 16,
-    "distanceFromPrevious": 12,
-    "distanceFromStart": 388,
-    "tier": "all",
-    "slug": "melbourne"
-  },
-  {
-    "id": "titusville-fl",
-    "name": "Titusville",
-    "state": "Florida",
-    "population": 48789,
-    "coordinates": [-80.8075, 28.6122],
-    "arrivalDate": "2026-03-15",
-    "dayNumber": 17,
-    "distanceFromPrevious": 60,
-    "distanceFromStart": 448,
-    "tier": "all",
-    "slug": "titusville"
-  },
-  {
-    "id": "daytona-beach-fl",
-    "name": "Daytona Beach",
-    "state": "Florida",
-    "population": 72647,
-    "coordinates": [-81.0229, 29.2108],
-    "arrivalDate": "2026-03-16",
-    "dayNumber": 18,
-    "distanceFromPrevious": 68,
-    "distanceFromStart": 516,
-    "tier": "major",
-    "rwbChapter": {
-      "name": "Team RWB Daytona Beach",
-      "contactEmail": "daytona@teamrwb.org"
-    },
-    "slug": "daytona-beach"
-  },
-  {
-    "id": "ormond-beach-fl",
-    "name": "Ormond Beach",
-    "state": "Florida",
-    "population": 43080,
-    "coordinates": [-81.0559, 29.2858],
-    "arrivalDate": "2026-03-17",
-    "dayNumber": 19,
-    "distanceFromPrevious": 9,
-    "distanceFromStart": 525,
-    "tier": "all",
-    "slug": "ormond-beach"
-  },
-  {
-    "id": "palm-coast-fl",
-    "name": "Palm Coast",
-    "state": "Florida",
-    "population": 89800,
-    "coordinates": [-81.2079, 29.5350],
-    "arrivalDate": "2026-03-18",
-    "dayNumber": 20,
-    "distanceFromPrevious": 29,
-    "distanceFromStart": 554,
-    "tier": "all",
-    "slug": "palm-coast"
   },
   {
     "id": "saint-augustine-fl",
@@ -289,9 +76,9 @@
     "coordinates": [-81.3124, 29.8947],
     "arrivalDate": "2026-03-19",
     "dayNumber": 21,
-    "distanceFromPrevious": 41,
-    "distanceFromStart": 595,
-    "tier": "all",
+    "distanceFromPrevious": 235,
+    "distanceFromStart": 475,
+    "tier": "major",
     "slug": "saint-augustine"
   },
   {
@@ -303,47 +90,13 @@
     "arrivalDate": "2026-03-20",
     "dayNumber": 22,
     "distanceFromPrevious": 195,
-    "distanceFromStart": 790,
+    "distanceFromStart": 670,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB Tallahassee",
       "contactEmail": "tallahassee@teamrwb.org"
     },
     "slug": "tallahassee"
-  },
-  {
-    "id": "pensacola-fl",
-    "name": "Pensacola",
-    "state": "Florida",
-    "population": 54312,
-    "coordinates": [-87.2169, 30.4213],
-    "arrivalDate": "2026-03-21",
-    "dayNumber": 23,
-    "distanceFromPrevious": 196,
-    "distanceFromStart": 986,
-    "tier": "major",
-    "rwbChapter": {
-      "name": "Team RWB Pensacola",
-      "contactEmail": "pensacola@teamrwb.org"
-    },
-    "slug": "pensacola"
-  },
-  {
-    "id": "mobile-al",
-    "name": "Mobile",
-    "state": "Alabama",
-    "population": 187041,
-    "coordinates": [-88.0399, 30.6954],
-    "arrivalDate": "2026-03-22",
-    "dayNumber": 24,
-    "distanceFromPrevious": 58,
-    "distanceFromStart": 1044,
-    "tier": "major",
-    "rwbChapter": {
-      "name": "Team RWB Mobile",
-      "contactEmail": "mobile@teamrwb.org"
-    },
-    "slug": "mobile"
   },
   {
     "id": "biloxi-ms",
@@ -353,36 +106,10 @@
     "coordinates": [-88.8853, 30.3960],
     "arrivalDate": "2026-03-23",
     "dayNumber": 25,
-    "distanceFromPrevious": 62,
-    "distanceFromStart": 1106,
-    "tier": "all",
+    "distanceFromPrevious": 320,
+    "distanceFromStart": 990,
+    "tier": "major",
     "slug": "biloxi"
-  },
-  {
-    "id": "gulfport-ms",
-    "name": "Gulfport",
-    "state": "Mississippi",
-    "population": 72926,
-    "coordinates": [-89.0928, 30.3674],
-    "arrivalDate": "2026-03-24",
-    "dayNumber": 26,
-    "distanceFromPrevious": 13,
-    "distanceFromStart": 1119,
-    "tier": "all",
-    "slug": "gulfport"
-  },
-  {
-    "id": "slidell-la",
-    "name": "Slidell",
-    "state": "Louisiana",
-    "population": 28781,
-    "coordinates": [-89.7811, 30.2752],
-    "arrivalDate": "2026-03-25",
-    "dayNumber": 27,
-    "distanceFromPrevious": 49,
-    "distanceFromStart": 1168,
-    "tier": "all",
-    "slug": "slidell"
   },
   {
     "id": "new-orleans-la",
@@ -392,8 +119,8 @@
     "coordinates": [-90.0715, 29.9511],
     "arrivalDate": "2026-03-26",
     "dayNumber": 28,
-    "distanceFromPrevious": 32,
-    "distanceFromStart": 1200,
+    "distanceFromPrevious": 85,
+    "distanceFromStart": 1075,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB New Orleans",
@@ -410,43 +137,13 @@
     "arrivalDate": "2026-03-27",
     "dayNumber": 29,
     "distanceFromPrevious": 80,
-    "distanceFromStart": 1280,
+    "distanceFromStart": 1155,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB Baton Rouge",
       "contactEmail": "batonrouge@teamrwb.org"
     },
     "slug": "baton-rouge"
-  },
-  {
-    "id": "lafayette-la",
-    "name": "Lafayette",
-    "state": "Louisiana",
-    "population": 121374,
-    "coordinates": [-92.0198, 30.2241],
-    "arrivalDate": "2026-03-28",
-    "dayNumber": 30,
-    "distanceFromPrevious": 56,
-    "distanceFromStart": 1336,
-    "tier": "all",
-    "slug": "lafayette"
-  },
-  {
-    "id": "beaumont-tx",
-    "name": "Beaumont",
-    "state": "Texas",
-    "population": 115282,
-    "coordinates": [-94.1266, 30.0802],
-    "arrivalDate": "2026-03-29",
-    "dayNumber": 31,
-    "distanceFromPrevious": 142,
-    "distanceFromStart": 1478,
-    "tier": "major",
-    "rwbChapter": {
-      "name": "Team RWB Beaumont",
-      "contactEmail": "beaumont@teamrwb.org"
-    },
-    "slug": "beaumont"
   },
   {
     "id": "navasota-tx",
@@ -456,9 +153,9 @@
     "coordinates": [-96.0877, 30.3880],
     "arrivalDate": "2026-03-30",
     "dayNumber": 32,
-    "distanceFromPrevious": 132,
-    "distanceFromStart": 1610,
-    "tier": "all",
+    "distanceFromPrevious": 275,
+    "distanceFromStart": 1430,
+    "tier": "major",
     "slug": "navasota"
   },
   {
@@ -470,7 +167,7 @@
     "arrivalDate": "2026-03-31",
     "dayNumber": 33,
     "distanceFromPrevious": 110,
-    "distanceFromStart": 1720,
+    "distanceFromStart": 1540,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB Austin",
@@ -487,8 +184,8 @@
     "arrivalDate": "2026-04-01",
     "dayNumber": 34,
     "distanceFromPrevious": 78,
-    "distanceFromStart": 1798,
-    "tier": "all",
+    "distanceFromStart": 1618,
+    "tier": "major",
     "slug": "fredericksburg"
   },
   {
@@ -500,7 +197,7 @@
     "arrivalDate": "2026-04-02",
     "dayNumber": 35,
     "distanceFromPrevious": 455,
-    "distanceFromStart": 2253,
+    "distanceFromStart": 2073,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB El Paso",
@@ -517,52 +214,9 @@
     "arrivalDate": "2026-04-03",
     "dayNumber": 36,
     "distanceFromPrevious": 45,
-    "distanceFromStart": 2298,
-    "tier": "all",
-    "slug": "las-cruces"
-  },
-  {
-    "id": "tucson-az",
-    "name": "Tucson",
-    "state": "Arizona",
-    "population": 542629,
-    "coordinates": [-110.9747, 32.2226],
-    "arrivalDate": "2026-04-04",
-    "dayNumber": 37,
-    "distanceFromPrevious": 270,
-    "distanceFromStart": 2568,
+    "distanceFromStart": 2118,
     "tier": "major",
-    "rwbChapter": {
-      "name": "Team RWB Tucson",
-      "contactEmail": "tucson@teamrwb.org"
-    },
-    "slug": "tucson"
-  },
-  {
-    "id": "mesa-az",
-    "name": "Mesa",
-    "state": "Arizona",
-    "population": 504258,
-    "coordinates": [-111.8315, 33.4152],
-    "arrivalDate": "2026-04-05",
-    "dayNumber": 38,
-    "distanceFromPrevious": 115,
-    "distanceFromStart": 2683,
-    "tier": "all",
-    "slug": "mesa"
-  },
-  {
-    "id": "tempe-az",
-    "name": "Tempe",
-    "state": "Arizona",
-    "population": 180587,
-    "coordinates": [-111.9391, 33.4255],
-    "arrivalDate": "2026-04-06",
-    "dayNumber": 39,
-    "distanceFromPrevious": 8,
-    "distanceFromStart": 2691,
-    "tier": "all",
-    "slug": "tempe"
+    "slug": "las-cruces"
   },
   {
     "id": "phoenix-az",
@@ -572,131 +226,14 @@
     "coordinates": [-112.0742, 33.4484],
     "arrivalDate": "2026-04-07",
     "dayNumber": 40,
-    "distanceFromPrevious": 10,
-    "distanceFromStart": 2701,
+    "distanceFromPrevious": 395,
+    "distanceFromStart": 2513,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB Phoenix",
       "contactEmail": "phoenix@teamrwb.org"
     },
     "slug": "phoenix"
-  },
-  {
-    "id": "scottsdale-az",
-    "name": "Scottsdale",
-    "state": "Arizona",
-    "population": 241361,
-    "coordinates": [-111.9261, 33.4942],
-    "arrivalDate": "2026-04-08",
-    "dayNumber": 41,
-    "distanceFromPrevious": 12,
-    "distanceFromStart": 2713,
-    "tier": "all",
-    "slug": "scottsdale"
-  },
-  {
-    "id": "glendale-az",
-    "name": "Glendale",
-    "state": "Arizona",
-    "population": 248325,
-    "coordinates": [-112.1860, 33.5387],
-    "arrivalDate": "2026-04-09",
-    "dayNumber": 42,
-    "distanceFromPrevious": 18,
-    "distanceFromStart": 2731,
-    "tier": "all",
-    "slug": "glendale"
-  },
-  {
-    "id": "goodyear-az",
-    "name": "Goodyear",
-    "state": "Arizona",
-    "population": 95294,
-    "coordinates": [-112.3584, 33.4353],
-    "arrivalDate": "2026-04-10",
-    "dayNumber": 43,
-    "distanceFromPrevious": 15,
-    "distanceFromStart": 2746,
-    "tier": "all",
-    "slug": "goodyear"
-  },
-  {
-    "id": "buckeye-az",
-    "name": "Buckeye",
-    "state": "Arizona",
-    "population": 91502,
-    "coordinates": [-112.5838, 33.3703],
-    "arrivalDate": "2026-04-11",
-    "dayNumber": 44,
-    "distanceFromPrevious": 19,
-    "distanceFromStart": 2765,
-    "tier": "all",
-    "slug": "buckeye"
-  },
-  {
-    "id": "indio-ca",
-    "name": "Indio",
-    "state": "California",
-    "population": 89137,
-    "coordinates": [-116.2156, 33.7206],
-    "arrivalDate": "2026-04-12",
-    "dayNumber": 45,
-    "distanceFromPrevious": 240,
-    "distanceFromStart": 3005,
-    "tier": "all",
-    "slug": "indio"
-  },
-  {
-    "id": "palm-desert-ca",
-    "name": "Palm Desert",
-    "state": "California",
-    "population": 51163,
-    "coordinates": [-116.3767, 33.7222],
-    "arrivalDate": "2026-04-13",
-    "dayNumber": 46,
-    "distanceFromPrevious": 12,
-    "distanceFromStart": 3017,
-    "tier": "all",
-    "slug": "palm-desert"
-  },
-  {
-    "id": "palm-springs-ca",
-    "name": "Palm Springs",
-    "state": "California",
-    "population": 44575,
-    "coordinates": [-116.5453, 33.8303],
-    "arrivalDate": "2026-04-14",
-    "dayNumber": 47,
-    "distanceFromPrevious": 15,
-    "distanceFromStart": 3032,
-    "tier": "all",
-    "slug": "palm-springs"
-  },
-  {
-    "id": "banning-ca",
-    "name": "Banning",
-    "state": "California",
-    "population": 30276,
-    "coordinates": [-116.8764, 33.9256],
-    "arrivalDate": "2026-04-15",
-    "dayNumber": 48,
-    "distanceFromPrevious": 25,
-    "distanceFromStart": 3057,
-    "tier": "all",
-    "slug": "banning"
-  },
-  {
-    "id": "redlands-ca",
-    "name": "Redlands",
-    "state": "California",
-    "population": 71035,
-    "coordinates": [-117.1825, 34.0556],
-    "arrivalDate": "2026-04-16",
-    "dayNumber": 49,
-    "distanceFromPrevious": 30,
-    "distanceFromStart": 3087,
-    "tier": "all",
-    "slug": "redlands"
   },
   {
     "id": "san-bernardino-ca",
@@ -706,66 +243,10 @@
     "coordinates": [-117.2898, 34.1083],
     "arrivalDate": "2026-04-17",
     "dayNumber": 50,
-    "distanceFromPrevious": 10,
-    "distanceFromStart": 3097,
-    "tier": "all",
-    "slug": "san-bernardino"
-  },
-  {
-    "id": "riverside-ca",
-    "name": "Riverside",
-    "state": "California",
-    "population": 314998,
-    "coordinates": [-117.3961, 33.9533],
-    "arrivalDate": "2026-04-18",
-    "dayNumber": 51,
-    "distanceFromPrevious": 18,
-    "distanceFromStart": 3115,
+    "distanceFromPrevious": 325,
+    "distanceFromStart": 2838,
     "tier": "major",
-    "rwbChapter": {
-      "name": "Team RWB Riverside",
-      "contactEmail": "riverside@teamrwb.org"
-    },
-    "slug": "riverside"
-  },
-  {
-    "id": "fontana-ca",
-    "name": "Fontana",
-    "state": "California",
-    "population": 208393,
-    "coordinates": [-117.4350, 34.0922],
-    "arrivalDate": "2026-04-19",
-    "dayNumber": 52,
-    "distanceFromPrevious": 16,
-    "distanceFromStart": 3131,
-    "tier": "all",
-    "slug": "fontana"
-  },
-  {
-    "id": "rancho-cucamonga-ca",
-    "name": "Rancho Cucamonga",
-    "state": "California",
-    "population": 174453,
-    "coordinates": [-117.5931, 34.1064],
-    "arrivalDate": "2026-04-20",
-    "dayNumber": 53,
-    "distanceFromPrevious": 12,
-    "distanceFromStart": 3143,
-    "tier": "all",
-    "slug": "rancho-cucamonga"
-  },
-  {
-    "id": "alhambra-ca",
-    "name": "Alhambra",
-    "state": "California",
-    "population": 82868,
-    "coordinates": [-118.1270, 34.0953],
-    "arrivalDate": "2026-04-21",
-    "dayNumber": 54,
-    "distanceFromPrevious": 38,
-    "distanceFromStart": 3181,
-    "tier": "all",
-    "slug": "alhambra"
+    "slug": "san-bernardino"
   },
   {
     "id": "los-angeles-ca",
@@ -775,79 +256,14 @@
     "coordinates": [-118.2437, 34.0522],
     "arrivalDate": "2026-04-22",
     "dayNumber": 55,
-    "distanceFromPrevious": 10,
-    "distanceFromStart": 3191,
+    "distanceFromPrevious": 65,
+    "distanceFromStart": 2903,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB Los Angeles",
       "contactEmail": "losangeles@teamrwb.org"
     },
     "slug": "los-angeles"
-  },
-  {
-    "id": "venice-beach-ca",
-    "name": "Venice Beach",
-    "state": "California",
-    "population": 40885,
-    "coordinates": [-118.4695, 33.9850],
-    "arrivalDate": "2026-04-23",
-    "dayNumber": 56,
-    "distanceFromPrevious": 16,
-    "distanceFromStart": 3207,
-    "tier": "all",
-    "slug": "venice-beach"
-  },
-  {
-    "id": "inglewood-ca",
-    "name": "Inglewood",
-    "state": "California",
-    "population": 107762,
-    "coordinates": [-118.3531, 33.9617],
-    "arrivalDate": "2026-04-24",
-    "dayNumber": 57,
-    "distanceFromPrevious": 8,
-    "distanceFromStart": 3215,
-    "tier": "all",
-    "slug": "inglewood"
-  },
-  {
-    "id": "el-monte-ca",
-    "name": "El Monte",
-    "state": "California",
-    "population": 109450,
-    "coordinates": [-118.0276, 34.0686],
-    "arrivalDate": "2026-04-25",
-    "dayNumber": 58,
-    "distanceFromPrevious": 23,
-    "distanceFromStart": 3238,
-    "tier": "all",
-    "slug": "el-monte"
-  },
-  {
-    "id": "west-covina-ca",
-    "name": "West Covina",
-    "state": "California",
-    "population": 106098,
-    "coordinates": [-117.9390, 34.0686],
-    "arrivalDate": "2026-04-26",
-    "dayNumber": 59,
-    "distanceFromPrevious": 7,
-    "distanceFromStart": 3245,
-    "tier": "all",
-    "slug": "west-covina"
-  },
-  {
-    "id": "pomona-ca",
-    "name": "Pomona",
-    "state": "California",
-    "population": 151713,
-    "coordinates": [-117.7500, 34.0553],
-    "arrivalDate": "2026-04-27",
-    "dayNumber": 60,
-    "distanceFromPrevious": 14,
-    "distanceFromStart": 3259,
-    "tier": "all",
-    "slug": "pomona"
   },
   {
     "id": "ontario-ca",
@@ -857,36 +273,10 @@
     "coordinates": [-117.6509, 34.0633],
     "arrivalDate": "2026-04-28",
     "dayNumber": 61,
-    "distanceFromPrevious": 8,
-    "distanceFromStart": 3267,
-    "tier": "all",
+    "distanceFromPrevious": 45,
+    "distanceFromStart": 2948,
+    "tier": "major",
     "slug": "ontario"
-  },
-  {
-    "id": "corona-ca",
-    "name": "Corona",
-    "state": "California",
-    "population": 157136,
-    "coordinates": [-117.5664, 33.8753],
-    "arrivalDate": "2026-04-29",
-    "dayNumber": 62,
-    "distanceFromPrevious": 22,
-    "distanceFromStart": 3289,
-    "tier": "all",
-    "slug": "corona"
-  },
-  {
-    "id": "hesperia-ca",
-    "name": "Hesperia",
-    "state": "California",
-    "population": 95163,
-    "coordinates": [-117.3009, 34.4264],
-    "arrivalDate": "2026-04-30",
-    "dayNumber": 63,
-    "distanceFromPrevious": 65,
-    "distanceFromStart": 3354,
-    "tier": "all",
-    "slug": "hesperia"
   },
   {
     "id": "victorville-ca",
@@ -896,23 +286,10 @@
     "coordinates": [-117.2911, 34.5362],
     "arrivalDate": "2026-05-01",
     "dayNumber": 64,
-    "distanceFromPrevious": 12,
-    "distanceFromStart": 3366,
-    "tier": "all",
+    "distanceFromPrevious": 55,
+    "distanceFromStart": 3003,
+    "tier": "major",
     "slug": "victorville"
-  },
-  {
-    "id": "barstow-ca",
-    "name": "Barstow",
-    "state": "California",
-    "population": 25415,
-    "coordinates": [-117.0228, 34.8986],
-    "arrivalDate": "2026-05-02",
-    "dayNumber": 65,
-    "distanceFromPrevious": 45,
-    "distanceFromStart": 3411,
-    "tier": "all",
-    "slug": "barstow"
   },
   {
     "id": "henderson-nv",
@@ -923,26 +300,9 @@
     "arrivalDate": "2026-05-03",
     "dayNumber": 66,
     "distanceFromPrevious": 155,
-    "distanceFromStart": 3566,
-    "tier": "all",
-    "slug": "henderson"
-  },
-  {
-    "id": "las-vegas-nv",
-    "name": "Las Vegas",
-    "state": "Nevada",
-    "population": 641903,
-    "coordinates": [-115.1398, 36.1699],
-    "arrivalDate": "2026-05-04",
-    "dayNumber": 67,
-    "distanceFromPrevious": 16,
-    "distanceFromStart": 3582,
+    "distanceFromStart": 3158,
     "tier": "major",
-    "rwbChapter": {
-      "name": "Team RWB Las Vegas",
-      "contactEmail": "lasvegas@teamrwb.org"
-    },
-    "slug": "las-vegas"
+    "slug": "henderson"
   },
   {
     "id": "st-george-ut",
@@ -952,36 +312,10 @@
     "coordinates": [-113.5841, 37.0965],
     "arrivalDate": "2026-05-05",
     "dayNumber": 68,
-    "distanceFromPrevious": 120,
-    "distanceFromStart": 3702,
-    "tier": "all",
+    "distanceFromPrevious": 135,
+    "distanceFromStart": 3293,
+    "tier": "major",
     "slug": "st-george"
-  },
-  {
-    "id": "hurricane-ut",
-    "name": "Hurricane",
-    "state": "Utah",
-    "population": 20460,
-    "coordinates": [-113.2896, 37.1753],
-    "arrivalDate": "2026-05-06",
-    "dayNumber": 69,
-    "distanceFromPrevious": 22,
-    "distanceFromStart": 3724,
-    "tier": "all",
-    "slug": "hurricane"
-  },
-  {
-    "id": "fredonia-az",
-    "name": "Fredonia",
-    "state": "Arizona",
-    "population": 1314,
-    "coordinates": [-112.5238, 36.9469],
-    "arrivalDate": "2026-05-07",
-    "dayNumber": 70,
-    "distanceFromPrevious": 75,
-    "distanceFromStart": 3799,
-    "tier": "all",
-    "slug": "fredonia"
   },
   {
     "id": "lees-ferry-az",
@@ -991,9 +325,9 @@
     "coordinates": [-111.5947, 36.8628],
     "arrivalDate": "2026-05-08",
     "dayNumber": 71,
-    "distanceFromPrevious": 65,
-    "distanceFromStart": 3864,
-    "tier": "all",
+    "distanceFromPrevious": 140,
+    "distanceFromStart": 3433,
+    "tier": "major",
     "slug": "lees-ferry"
   },
   {
@@ -1005,13 +339,13 @@
     "arrivalDate": "2026-05-09",
     "dayNumber": 72,
     "distanceFromPrevious": 125,
-    "distanceFromStart": 3989,
+    "distanceFromStart": 3558,
     "tier": "major",
     "rwbChapter": {
       "name": "Team RWB Flagstaff",
       "contactEmail": "flagstaff@teamrwb.org"
     },
-    "description": "Final stop before the Grand Canyon. Join us for the last stretch of the Roll for Veterans journey.",
+    "description": "Final destination of the Roll for Veterans 2026 journey.",
     "slug": "flagstaff"
   }
 ]

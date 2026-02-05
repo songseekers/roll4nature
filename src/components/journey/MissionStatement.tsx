@@ -2,69 +2,66 @@
 
 export default function MissionStatement() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Mission Content */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Why We Roll
             </h2>
 
-            <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-              Team RWB (Red, White & Blue) empowers veterans through physical and social engagement.
-              Our cross-country journey connects 80+ communities and celebrates the resilience of America's veterans.
+            <p className="text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+              Roll for Veterans is riding coast-to-coast in 2026 to raise awareness of and support for Team Red, White & Blue (Team RWB). Founded in 2010, Team RWB has become a nationwide community empowering veterans through physical activity, meaningful connection, and shared purpose.
             </p>
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              <span className="font-semibold">Not broken, still moving.</span> Every mile represents gratitude,
-              every city represents connection, and every veteran matters.
+            <p className="text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+              As we pass through communities across the country, this ride exists to amplify Team RWB's impact, strengthen local engagement, and remind veterans that they are not alone— there is a team ready for them to join.
             </p>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              This journey honors the 8 dimensions of whole-person health—the same framework that guides
-              our Purpose Pathfinder work. We're embodying Physical vitality, Mental clarity, Emotional presence,
-              and a Lifestyle of purpose as we ride.
+            <p className="text-base text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+              <span className="font-semibold text-gray-900 dark:text-white">Not broken. Still moving.</span><br />
+              Every mile is gratitude. Every community is connection. Every veteran matters.
             </p>
 
             <a
-              href="https://teamrwb.org"
+              href="https://teamrwb.org/programs"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition"
+              className="inline-block bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
             >
               Learn More About Team RWB
             </a>
           </div>
 
           {/* Right: Stats Box */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 border-2 border-blue-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-gradient-to-br from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] rounded-lg p-8 border-2 border-[#C1592B]">
+            <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Team RWB Impact
             </h3>
 
             <div className="space-y-6">
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">173,768</div>
-                <p className="text-gray-700">Event check-ins in 2025</p>
+                <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">300+</div>
+                <p className="text-lg text-gray-700 dark:text-gray-200">Members and supporters</p>
               </div>
 
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">18,490</div>
-                <p className="text-gray-700">Total events nationwide</p>
+                <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">173,768</div>
+                <p className="text-lg text-gray-700 dark:text-gray-200">Event check-ins in 2025</p>
               </div>
 
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">80+</div>
-                <p className="text-gray-700">Communities on our route</p>
+                <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">18,490</div>
+                <p className="text-lg text-gray-700 dark:text-gray-200">Total events nationwide</p>
               </div>
 
-              <div className="pt-6 border-t border-blue-300">
+              <div className="pt-6 border-t border-[#C1592B]">
                 <a
-                  href="https://teamrwb.org"
+                  href="https://members.teamrwb.org/registration"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-block text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition"
+                  className="w-full inline-block text-center bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
                 >
                   Join Team RWB Today
                 </a>

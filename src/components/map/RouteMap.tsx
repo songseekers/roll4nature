@@ -14,10 +14,12 @@ export type MapLayer = 'overview' | 'major' | 'all';
 export default function RouteMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
+  const markersRef = useRef<mapboxgl.Marker[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [layer, setLayer] = useState<MapLayer>('major');
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
   const popupRef = useRef<mapboxgl.Popup | null>(null);
+  const hoverPopupRef = useRef<mapboxgl.Popup | null>(null);
 
   useEffect(() => {
     if (!mapContainer.current) return;
@@ -31,6 +33,9 @@ export default function RouteMap() {
       pitch: 0,
       bearing: 0,
     });
+
+    // Add navigation controls
+    map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
     map.current.on('load', () => {
       // Add source for route line
@@ -59,19 +64,40 @@ export default function RouteMap() {
         type: 'line',
         source: 'route',
         paint: {
-          'line-color': '#3b82f6',
-          'line-width': 3,
-          'line-opacity': 0.7,
+          'line-color': '#C1592B',
+          'line-width': 4,
+          'line-opacity': 0.8,
         },
       });
+
+      // Fit map to show all cities
+      const allCities = getAllCities();
+      if (allCities.length > 0) {
+        const bounds = new mapboxgl.LngLatBounds();
+        allCities.forEach((city) => {
+          bounds.extend(city.coordinates);
+        });
+
+        // Fit to bounds with very minimal padding to zoom in closer
+        map.current?.fitBounds(bounds, {
+          padding: { top: 10, bottom: 10, left: 10, right: 10 },
+          duration: 0, // No animation on initial load
+        });
+      }
 
       setIsLoading(false);
     });
 
     return () => {
+      // Clean up
+      markersRef.current.forEach((marker) => marker.remove());
       if (popupRef.current) {
         popupRef.current.remove();
       }
+      if (hoverPopupRef.current) {
+        hoverPopupRef.current.remove();
+      }
+      map.current?.remove();
     };
   }, []);
 
@@ -80,14 +106,14 @@ export default function RouteMap() {
     if (!map.current || isLoading) return;
 
     // Remove existing markers
-    const markers = document.querySelectorAll('.mapboxgl-marker');
-    markers.forEach((marker) => marker.remove());
+    markersRef.current.forEach((marker) => marker.remove());
+    markersRef.current = [];
 
     // Get cities to display based on layer
     let citiesToShow: City[] = [];
     if (layer === 'overview') {
       citiesToShow = getAllCities().filter((city) =>
-        ['key-west', 'los-angeles', 'grand-canyon'].includes(city.slug)
+        ['key-west', 'flagstaff'].includes(city.slug)
       );
     } else if (layer === 'major') {
       citiesToShow = getMajorCities();
@@ -97,31 +123,86 @@ export default function RouteMap() {
 
     // Add markers
     citiesToShow.forEach((city) => {
+      const isMajor = city.tier === 'major';
+
+      // Create marker element
       const el = document.createElement('div');
-      el.className = 'marker';
-      el.style.width = '30px';
-      el.style.height = '30px';
-      el.style.backgroundImage = 'url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27%233b82f6%27%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%2710%27/%3E%3C/svg%3E")';
-      el.style.backgroundSize = 'cover';
+      el.className = 'city-marker';
+      const markerSize = isMajor ? 16 : 12;
+      const borderWidth = isMajor ? 3 : 2;
+
+      el.style.width = markerSize + 'px';
+      el.style.height = markerSize + 'px';
+      el.style.backgroundColor = isMajor ? '#8B4513' : '#C1592B';
+      el.style.border = `${borderWidth}px solid white`;
+      el.style.borderRadius = '50%';
       el.style.cursor = 'pointer';
-      el.style.transition = 'transform 0.2s';
+      el.style.boxShadow = '0 2px 4px rgba(0,0,0,0.3)';
+      el.style.display = 'block';
 
-      // Major cities get larger markers
-      if (city.tier === 'major') {
-        el.style.width = '40px';
-        el.style.height = '40px';
-        el.style.backgroundImage = 'url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27%231e40af%27%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%2710%27/%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E")';
-      }
-
+      // Hover effects - show hover popup
       el.addEventListener('mouseenter', () => {
-        el.style.transform = 'scale(1.2)';
+        el.style.boxShadow = '0 4px 8px rgba(0,0,0,0.4)';
+
+        // Remove any existing hover popup
+        if (hoverPopupRef.current) {
+          hoverPopupRef.current.remove();
+        }
+
+        // Create hover popup content
+        const hoverContent = document.createElement('div');
+        hoverContent.style.cssText = `
+          padding: 12px;
+          min-width: 220px;
+          background: linear-gradient(135deg, #E8C9A1 0%, #D4A574 100%);
+          border: 2px solid #C1592B;
+          border-radius: 8px;
+          color: #1F2937;
+        `;
+
+        hoverContent.innerHTML = `
+          <div style="font-weight: 700; font-size: 16px; color: #8B4513; margin-bottom: 8px;">
+            ${city.name}, ${city.state}
+          </div>
+          <div style="font-size: 14px; line-height: 1.5;">
+            <div style="margin-bottom: 4px;">
+              <strong style="color: #C1592B;">Arriving:</strong> ${new Date(city.arrivalDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            </div>
+            <div style="margin-bottom: 4px;">
+              <strong style="color: #C1592B;">Day:</strong> ${city.dayNumber}
+            </div>
+            <div>
+              <strong style="color: #C1592B;">Distance from start:</strong> ${city.distanceFromStart} miles
+            </div>
+          </div>
+        `;
+
+        // Create and show hover popup
+        hoverPopupRef.current = new mapboxgl.Popup({
+          closeButton: false,
+          closeOnClick: false,
+          maxWidth: '280px',
+          offset: 15,
+          className: 'hover-popup',
+        })
+          .setLngLat(city.coordinates)
+          .setDOMContent(hoverContent)
+          .addTo(map.current!);
       });
 
       el.addEventListener('mouseleave', () => {
-        el.style.transform = 'scale(1)';
+        el.style.boxShadow = '0 2px 4px rgba(0,0,0,0.3)';
+
+        // Remove hover popup
+        if (hoverPopupRef.current) {
+          hoverPopupRef.current.remove();
+          hoverPopupRef.current = null;
+        }
       });
 
-      el.addEventListener('click', () => {
+      // Click to show popup
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
         setSelectedCity(city);
 
         // Remove old popup if exists
@@ -131,29 +212,51 @@ export default function RouteMap() {
 
         // Create popup content
         const popupContent = document.createElement('div');
-        popupContent.className = 'p-4 max-w-xs';
+        popupContent.className = 'city-popup';
+        popupContent.style.padding = '12px';
+        popupContent.style.minWidth = '200px';
+        popupContent.style.maxWidth = '300px';
+
         popupContent.innerHTML = `
           <div>
-            <h3 class="font-bold text-lg text-gray-900 mb-1">${city.name}, ${city.state}</h3>
-            <div class="text-sm text-gray-600 space-y-1 mb-3">
-              <div><span class="font-semibold">Day ${city.dayNumber}:</span> ${new Date(city.arrivalDate).toLocaleDateString()}</div>
-              <div><span class="font-semibold">Population:</span> ${city.population.toLocaleString()}</div>
-              <div><span class="font-semibold">Distance from start:</span> ${city.distanceFromStart} miles</div>
-              ${city.rwbChapter ? `<div class="mt-2 text-xs bg-blue-50 p-2 rounded"><strong>Team RWB Chapter:</strong> ${city.rwbChapter.name}</div>` : ''}
+            <h3 style="font-weight: bold; font-size: 18px; color: #8B4513; margin-bottom: 8px;">
+              ${city.name}, ${city.state}
+            </h3>
+            <div style="font-size: 15px; color: #1F2937;">
+              <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Day ${city.dayNumber}:</strong> ${new Date(city.arrivalDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
+              <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Distance from start:</strong> ${city.distanceFromStart} miles</div>
+              ${city.rwbChapter ? `
+                <div style="margin-top: 8px; padding: 8px; background-color: #E8C9A1; border-radius: 4px; font-size: 14px; border: 1px solid #C1592B;">
+                  <strong style="color: #8B4513;">Team RWB:</strong><br/>
+                  <span style="color: #1F2937;">${city.rwbChapter.name}</span>
+                </div>
+              ` : ''}
             </div>
-            <a href="/roll4veterans/${city.slug}" class="inline-block bg-blue-600 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-700 transition">
-              View City Details
-            </a>
           </div>
         `;
 
-        popupRef.current = new mapboxgl.Popup({ closeButton: true, maxWidth: 'none' })
+        // Create and show popup with proper offset
+        popupRef.current = new mapboxgl.Popup({
+          closeButton: true,
+          closeOnClick: false,
+          maxWidth: '300px',
+          offset: 25, // Offset from the marker
+          anchor: 'bottom', // Anchor popup to bottom so it appears above marker
+        })
           .setLngLat(city.coordinates)
           .setDOMContent(popupContent)
           .addTo(map.current!);
       });
 
-      new mapboxgl.Marker(el).setLngLat(city.coordinates).addTo(map.current!);
+      // Create and add marker with center anchor
+      const marker = new mapboxgl.Marker({
+        element: el,
+        anchor: 'center',
+      })
+        .setLngLat(city.coordinates)
+        .addTo(map.current!);
+
+      markersRef.current.push(marker);
     });
   }, [layer, isLoading]);
 
@@ -163,7 +266,7 @@ export default function RouteMap() {
       <MapControls layer={layer} onLayerChange={setLayer} />
 
       {/* Map Container */}
-      <div className="relative">
+      <div className="relative max-w-5xl mx-auto px-4">
         <div
           ref={mapContainer}
           className="w-full h-96 sm:h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-lg"
@@ -180,22 +283,21 @@ export default function RouteMap() {
       </div>
 
       {/* Map Legend */}
-      <div className="mt-4 bg-gray-50 rounded-lg p-4">
-        <h3 className="font-bold text-gray-900 mb-3">Map Legend</h3>
+      <div className="mt-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-4 transition-colors max-w-5xl mx-auto">
+        <h3 className="font-bold text-gray-900 dark:text-white mb-3">Map Legend</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
           <div className="flex items-center space-x-3">
-            <div className="w-6 h-6 rounded-full bg-blue-600"></div>
-            <span className="text-gray-700">Standard Cities</span>
+            <div className="w-5 h-5 rounded-full bg-[#8B4513] border-[3px] border-white"></div>
+            <span className="text-gray-700 dark:text-gray-300">Major Cities</span>
           </div>
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-full bg-blue-900 border-4 border-white"></div>
-            <span className="text-gray-700">Major Stops</span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <div className="h-1 w-8 bg-blue-600"></div>
-            <span className="text-gray-700">Route Line</span>
+            <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
+            <span className="text-gray-700 dark:text-gray-300">Route (4,463 miles)</span>
           </div>
         </div>
+        <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+          Hover over markers for quick info • Click for full city details
+        </p>
       </div>
     </div>
   );

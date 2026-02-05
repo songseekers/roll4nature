@@ -1,99 +1,55 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
+import { useEffect } from 'react';
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
+  useEffect(() => {
+    // Force dark theme
+    document.documentElement.classList.add('dark');
+  }, []);
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white shadow-md">
+    <nav className="fixed top-0 z-50 w-full bg-gray-900 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 font-bold text-xl text-blue-600">
-            <span>🚴</span>
-            <span>Roll for Veterans</span>
+        {/* Mobile: Vertical Stack | Desktop: Horizontal */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 md:py-0 md:h-20 gap-3 md:gap-0">
+          {/* Banner Logo */}
+          <Link href="/" className="flex-shrink-0 mx-auto md:mx-0">
+            <Image
+              src="/images/banner_rev.png"
+              alt="Roll for Veterans"
+              width={400}
+              height={80}
+              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
+              priority
+            />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8 items-center">
-            <Link href="/" className="text-gray-700 hover:text-blue-600 transition">
+          {/* Navigation Links - Always visible */}
+          <div className="flex flex-row justify-center md:justify-end items-center space-x-4 md:space-x-8">
+            <Link href="/" className="text-gray-300 hover:text-[#E07B4F] transition text-sm md:text-base">
               Home
             </Link>
-            <Link href="/guidebook" className="text-gray-700 hover:text-blue-600 transition">
-              Guidebook
-            </Link>
-            <Link href="/roll-for-veterans" className="text-gray-700 hover:text-blue-600 transition">
-              Roll for Veterans
-            </Link>
-            <Link href="/team-bravo" className="text-gray-700 hover:text-blue-600 transition">
-              Team Bravo
-            </Link>
             <a
-              href="https://zeffy.com"
+              href="/resources/R4V_Story.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition font-semibold"
+              className="text-gray-300 hover:text-[#E07B4F] transition text-sm md:text-base whitespace-nowrap"
+            >
+              Our Story
+            </a>
+            <a
+              href="https://www.zeffy.com/en-US/team/roll-for-veterans"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#C1592B] text-white px-3 md:px-4 py-2 rounded-lg hover:bg-[#E07B4F] transition font-semibold text-sm md:text-base"
             >
               Donate
             </a>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden text-gray-700 hover:text-blue-600"
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden pb-4 space-y-3">
-            <Link
-              href="/"
-              className="block text-gray-700 hover:text-blue-600 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/guidebook"
-              className="block text-gray-700 hover:text-blue-600 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Guidebook
-            </Link>
-            <Link
-              href="/roll-for-veterans"
-              className="block text-gray-700 hover:text-blue-600 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Roll for Veterans
-            </Link>
-            <Link
-              href="/team-bravo"
-              className="block text-gray-700 hover:text-blue-600 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Team Bravo
-            </Link>
-            <a
-              href="https://zeffy.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition font-semibold text-center"
-            >
-              Donate
-            </a>
-          </div>
-        )}
       </div>
     </nav>
   );

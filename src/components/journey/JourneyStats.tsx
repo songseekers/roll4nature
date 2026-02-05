@@ -3,31 +3,31 @@
 export default function JourneyStats() {
   const stats = [
     {
-      value: '4,434',
+      value: '4,463',
       label: 'Miles',
       description: 'Across continental USA',
     },
     {
-      value: '107',
+      value: '115',
       label: 'Days',
-      description: 'Feb 27 - Jun 13, 2026',
+      description: 'Feb 27 - June 21, 2026',
     },
     {
-      value: '80+',
+      value: '24',
       label: 'Cities',
       description: 'Communities visited',
     },
     {
-      value: '~41',
+      value: '~39',
       label: 'Miles/Day',
       description: 'Average daily distance',
     },
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800 transition-colors">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
           By the Numbers
         </h2>
 
@@ -35,15 +35,15 @@ export default function JourneyStats() {
           {stats.map((stat, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 hover:shadow-md transition text-center"
+              className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-[#C1592B] hover:shadow-md transition text-center"
             >
-              <div className="text-4xl font-bold text-blue-600 mb-2">
+              <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">
                 {stat.value}
               </div>
-              <div className="text-lg font-semibold text-gray-900 mb-1">
+              <div className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
                 {stat.label}
               </div>
-              <div className="text-sm text-gray-600">
+              <div className="text-sm text-gray-600 dark:text-gray-400">
                 {stat.description}
               </div>
             </div>

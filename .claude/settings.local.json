@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 10 npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nBuild Roll for Veterans 2026 website with interactive map and 82 city pages\n\n## Features Implemented\n\n### Core Website\n- Homepage with hero section, countdown timer, and quick action CTAs\n- Interactive 3-layer route map \\(Overview, Major Stops, All 80+ Cities\\)\n- 82 pre-generated dynamic city landing pages with SSG\n- Team Bravo crew recruitment page with application form\n- Professional navigation bar and footer with Team RWB branding\n\n### Technical Implementation\n- Next.js 14+ with App Router and TypeScript\n- Mapbox GL JS for beautiful, interactive mapping\n- Tailwind CSS for responsive utility-first styling\n- React Hook Form + Zod for form validation\n- Complete data structure with 80+ cities\n\n### Components Created\n- RouteMap: Interactive 3-layer navigation map with Mapbox\n- MapControls: Toggle between map layers\n- HeroSection: Compelling hero with call-to-action\n- CountdownTimer: Live countdown to Feb 27, 2026 \\(updates every second\\)\n- QuickActions: Button grid for key user actions\n- Navigation: Sticky header with mobile menu\n- Footer: Comprehensive footer with Team RWB info and links\n- City Pages: Dynamic [city] routes with static generation\n- Team Bravo Page: Recruitment with form and role descriptions\n\n### Data & Content\n- 80+ cities with coordinates, arrival dates, populations, RWB chapters\n- 19 major stops highlighted throughout the journey\n- 4,434-mile route from Key West to Grand Canyon\n- 108-day journey countdown\n\n### Quality & Performance\n- Production-ready build \\(25MB\\)\n- All TypeScript types validated\n- Custom 404 and error pages with helpful navigation\n- SEO-optimized metadata on all pages\n- Mobile-first responsive design\n- Zero build warnings or errors\n\n## File Structure\n- src/app/: Next.js app router with pages\n- src/components/: Reusable React components\n- src/data/: Cities data in JSON format\n- src/types/: TypeScript interfaces\n- src/lib/: Helper functions for data querying\n- src/hooks/: Custom React hooks \\(useCountdown\\)\n\n## Deployment Ready\n- Vercel-optimized configuration\n- Environment variables configured for Mapbox\n- All pages pre-built for instant loading\n- Zero-cost hosting via Vercel free tier\n\nCo-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git config:*)",
+      "Bash(git remote add:*)",
+      "Bash(git remote:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo view:*)",
+      "Bash(gh repo list:*)",
+      "Bash(npm run dev:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nIntegrate Purpose Pathfinder flower into Roll for Veterans website\n\n- Create Purpose Pathfinder flower SVG component with 8 interactive petals\n  representing Physical, Mental, Emotional, and Lifestyle domains\n- Redesign homepage hero section to feature flower as centerpiece\n- Add Purpose Guidebook quote: \"Too many dwell in silent despair...\"\n- Create Purpose Journey assessment tool with petal-to-journey mappings\n  showing how the 4,434-mile ride honors each dimension of health\n- Add interactive petal selection to explore personal purpose journey\n- Update messaging and CTAs to align with Purpose Guidebook themes\n- Add fadeIn animation for smooth UI transitions\n- Include downloadable Purpose Guidebook as primary CTA\n- Color palette matches guidebook: purple \\(physical\\), tan \\(mental\\), \n  green \\(emotional\\), blue \\(lifestyle\\)\n\nThis transformation positions Roll for Veterans 2026 as not just a\ncharitable bike ride, but a journey toward personal purpose realization\nfor both riders and supporting veterans across 80+ communities.\n\nCo-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)",
+      "Bash(curl:*)",
+      "Bash(npm install:*)",
+      "Bash(npx next dev:*)",
+      "Bash(ping:*)",
+      "Bash(if exist .next rmdir /s /q .next)",
+      "Bash(npm run start:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(cmd //c \"taskkill /F /PID 24056\")",
+      "Bash(code:*)",
+      "Bash(notepad:*)",
+      "Bash(echo:*)",
+      "Bash(cmd //c \"taskkill /F /PID 42604\")",
+      "Bash(cmd //c \"taskkill /F /PID 42076\")",
+      "Bash(cmd //c \"taskkill /F /PID 19184\")",
+      "Bash(cmd //c \"taskkill /F /PID 40180\")",
+      "Bash(npx kill-port:*)",
+      "Bash(TURBOPACK=0 npm run dev:*)"
+    ]
+  }
+}

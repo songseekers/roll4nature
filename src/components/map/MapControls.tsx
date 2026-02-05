@@ -10,17 +10,12 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
     {
       label: 'Overview',
       value: 'overview',
-      description: 'Key West → LA → Grand Canyon',
+      description: 'Key West → LA → Flagstaff',
     },
     {
-      label: 'Major Stops',
+      label: 'Major Cities',
       value: 'major',
-      description: '19 planned major stops',
-    },
-    {
-      label: 'All Cities',
-      value: 'all',
-      description: '80+ communities',
+      description: '24 cities on our route',
     },
   ];
 
@@ -37,7 +32,7 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
             onClick={() => onLayerChange(control.value)}
             className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap ${
               layer === control.value
-                ? 'bg-blue-600 text-white shadow-md'
+                ? 'bg-[#C1592B] text-white shadow-md'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
             title={control.description}
