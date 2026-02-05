@@ -1,12 +1,13 @@
 'use client';
 
-import { Building2, DollarSign, Fuel, UtensilsCrossed } from 'lucide-react';
+import { Building2, DollarSign, Fuel, UtensilsCrossed, ExternalLink, MapPin, Phone as PhoneIcon, Globe } from 'lucide-react';
 import Image from 'next/image';
 import { useState, FormEvent } from 'react';
 
 export default function SponsorPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [selectedSponsor, setSelectedSponsor] = useState<string | null>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -134,6 +135,128 @@ export default function SponsorPage() {
           </div>
         </div>
       </section>
+
+      {/* Sponsors Display Section */}
+      <section id="sponsors" className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Thank You to Our Sponsors
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {/* 10BitWorks Sponsor */}
+            <div
+              onClick={() => setSelectedSponsor('10bitworks')}
+              className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
+            >
+              <div className="relative h-32 mb-4">
+                <Image
+                  src="/images/10bitworks.png"
+                  alt="10BitWorks Makerspace logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">
+                10BitWorks Makerspace
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">
+                Click to learn more
+              </p>
+            </div>
+
+            {/* Placeholder for future sponsors - can be easily added */}
+          </div>
+        </div>
+      </section>
+
+      {/* 10BitWorks Sponsor Modal */}
+      {selectedSponsor === '10bitworks' && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedSponsor(null)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-8">
+              <div className="flex justify-between items-start mb-6">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">10BitWorks Makerspace</h2>
+                <button
+                  onClick={() => setSelectedSponsor(null)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
+                  aria-label="Close modal"
+                >
+                  ×
+                </button>
+              </div>
+
+              <div className="mb-6">
+                <Image
+                  src="/images/10bitworks.png"
+                  alt="10BitWorks Makerspace logo"
+                  width={400}
+                  height={200}
+                  className="w-full h-auto max-h-40 object-contain"
+                />
+              </div>
+
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <MapPin size={20} className="text-[#C1592B] flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">Location:</p>
+                    <p className="text-gray-700 dark:text-gray-300">San Antonio, Texas</p>
+                    <p className="text-gray-700 dark:text-gray-300">130 W. LaChapelle St, San Antonio, TX 78204</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <PhoneIcon size={20} className="text-[#C1592B] flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">Phone:</p>
+                    <a href="tel:2105470221" className="text-[#C1592B] hover:underline">(210) 547-0221</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Globe size={20} className="text-[#C1592B] flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">Website:</p>
+                    <a
+                      href="https://10bitworks.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C1592B] hover:underline"
+                    >
+                      10bitworks.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="prose prose-lg dark:prose-invert max-w-none mb-6">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  10BitWorks is a 501(c)(3) nonprofit makerspace and San Antonio's most comprehensive hands-on workshop. Founded in 2010, they empower innovators, technologists, and creatives to bring their ideas to life through access to professional-grade tools, dedicated workspace, and a supportive community. From woodworking and metalworking to electronics, laser cutting, and textiles - 10BitWorks provides the resources and expertise for makers of all skill levels to learn, create, and grow.
+                </p>
+              </div>
+
+              <div className="flex justify-center">
+                <a
+                  href="https://10bitworks.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
+                >
+                  <ExternalLink size={20} />
+                  Visit 10BitWorks
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Contact Form Section */}
       <section className="bg-gradient-to-b from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] py-20 px-4 sm:px-6 lg:px-8">
@@ -284,21 +407,15 @@ export default function SponsorPage() {
           </h2>
 
           <p className="text-xl text-[#E8C9A1] mb-10">
-            Reach out anytime to discuss how your support can make a difference
+            Reach out any time to discuss how your support can make a difference by using the Connect With Us buttons below. We look forward to hearing from you!
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a
-              href="mailto:rollforveterans@gmail.com"
+              href="#sponsors"
               className="bg-white text-[#C1592B] px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
             >
-              Email: rollforveterans@gmail.com
-            </a>
-            <a
-              href="tel:8282804709"
-              className="bg-[#E07B4F] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#D4A574] transition inline-block"
-            >
-              Call: (828) 280-4709
+              Meet Our Sponsors
             </a>
           </div>
         </div>

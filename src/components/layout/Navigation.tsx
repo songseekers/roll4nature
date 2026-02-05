@@ -28,7 +28,7 @@ export default function Navigation() {
           </Link>
 
           {/* Navigation Links - Always visible */}
-          <div className="flex flex-row justify-center md:justify-end items-center space-x-4 md:space-x-8">
+          <div className="flex flex-row justify-center md:justify-end items-center space-x-2 md:space-x-4">
             <Link href="/" className="text-gray-300 hover:text-[#E07B4F] transition text-sm md:text-base">
               Home
             </Link>
@@ -44,9 +44,17 @@ export default function Navigation() {
               href="https://www.zeffy.com/en-US/team/roll-for-veterans"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#C1592B] text-white px-3 md:px-4 py-2 rounded-lg hover:bg-[#E07B4F] transition font-semibold text-sm md:text-base"
+              className="bg-[#C1592B] text-white px-2 md:px-3 py-2 rounded-lg hover:bg-[#E07B4F] transition font-semibold text-xs md:text-sm text-center leading-tight"
             >
-              Donate
+              <span className="hidden md:inline">Donate to<br />RWB</span>
+              <span className="md:hidden">Donate to RWB</span>
+            </a>
+            <a
+              href="/sponsor"
+              className="bg-[#C1592B] text-white px-2 md:px-3 py-2 rounded-lg hover:bg-[#E07B4F] transition font-semibold text-xs md:text-sm text-center leading-tight"
+            >
+              <span className="hidden md:inline">Sponsor<br />R4V</span>
+              <span className="md:hidden">Sponsor R4V</span>
             </a>
           </div>
         </div>

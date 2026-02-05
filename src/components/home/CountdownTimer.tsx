@@ -57,6 +57,15 @@ export default function CountdownTimer() {
       <p className="text-gray-600 dark:text-gray-300 mt-6 text-lg">
         <span className="font-semibold dark:text-white">February 27, 2026</span> - Starting our 4,463-mile journey!
       </p>
+
+      <div className="mt-6">
+        <a
+          href="/sponsor#sponsors"
+          className="inline-block bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
+        >
+          Meet Our Sponsors
+        </a>
+      </div>
     </div>
   );
 }

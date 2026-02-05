@@ -14,6 +14,10 @@ export default function JourneyHero() {
           4,463 Miles of Purpose in Motion
         </p>
 
+        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
+          This isn't a race or a commercial venture—it's a sustained, purpose-driven ride built around endurance, logistics, and community. If you're looking for answers, there's a good chance you'll find them with us on The Path.
+        </p>
+
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
           Join us on an epic cross-country bike journey from Key West, Florida, to Los Angeles, California, to Flagstaff, Arizona,
           supporting Team RWB and connecting with veterans in every community along the way.

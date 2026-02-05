@@ -18,12 +18,12 @@ export default function HomePage() {
       <MissionStatement />
 
       {/* Interactive Route Map */}
-      <section id="map" className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+      <section id="map" className="bg-gray-50 dark:bg-gray-800 py-12 px-4 sm:px-6 lg:px-8 transition-colors">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 text-center">
             Explore Our Route
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-base text-gray-600 dark:text-gray-300 text-center mb-8 max-w-xl mx-auto">
             Click on any city to see arrival dates and Team RWB chapter information.
           </p>
           <RouteMap />

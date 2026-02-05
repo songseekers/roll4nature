@@ -266,10 +266,10 @@ export default function RouteMap() {
       <MapControls layer={layer} onLayerChange={setLayer} />
 
       {/* Map Container */}
-      <div className="relative max-w-5xl mx-auto px-4">
+      <div className="relative max-w-3xl mx-auto px-4">
         <div
           ref={mapContainer}
-          className="w-full h-96 sm:h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-lg"
+          className="w-full h-64 sm:h-72 lg:h-80 rounded-lg overflow-hidden shadow-lg"
         />
 
         {/* Loading State */}
@@ -283,7 +283,7 @@ export default function RouteMap() {
       </div>
 
       {/* Map Legend */}
-      <div className="mt-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-4 transition-colors max-w-5xl mx-auto">
+      <div className="mt-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3 transition-colors max-w-3xl mx-auto">
         <h3 className="font-bold text-gray-900 dark:text-white mb-3">Map Legend</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
           <div className="flex items-center space-x-3">

@@ -1,6 +1,6 @@
 'use client';
 
-import { Users, Camera, Share2, Bike } from 'lucide-react';
+import { Users, Camera, Share2, Bike, Mail, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, FormEvent } from 'react';
@@ -8,6 +8,7 @@ import { useState, FormEvent } from 'react';
 export default function TeamBravoPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [selectedMember, setSelectedMember] = useState<string | null>(null);
   const roles = [
     {
       icon: Users,
@@ -104,6 +105,152 @@ export default function TeamBravoPage() {
           </p>
         </div>
       </div>
+
+      {/* YouTube Video Section */}
+      <section className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            Watch Our Story
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+            Learn more about Team Bravo and our mission to support veterans across America
+          </p>
+          <a
+            href="https://youtu.be/4tmbTdqWGbI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#C1592B] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E07B4F] transition text-lg"
+          >
+            <ExternalLink size={24} />
+            Watch on YouTube
+          </a>
+        </div>
+      </section>
+
+      {/* Meet Team Bravo Section */}
+      <section className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Meet Team Bravo
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* JT - Active Profile */}
+            <div
+              onClick={() => setSelectedMember('jt')}
+              className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
+            >
+              <div className="relative h-64">
+                <Image
+                  src="/images/TeamBravo/JT.png"
+                  alt="JT, Roll for Veterans team member and endurance cyclist"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">JT</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">Click to learn more</p>
+              </div>
+            </div>
+
+            {/* Placeholder Team Members */}
+            {[1, 2, 3].map((i) => (
+              <div
+                key={i}
+                className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg opacity-75"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src="/images/TeamBravo/SIL.png"
+                    alt="Team member profile coming soon"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4 text-center">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Team Member</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">Coming Soon</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* JT Profile Modal */}
+      {selectedMember === 'jt' && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedMember(null)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-8">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">JT</h2>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">
+                    Endurance Cyclist • Coach • Builder • Fixer • Contemplator • Friend
+                  </p>
+                </div>
+                <button
+                  onClick={() => setSelectedMember(null)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
+                  aria-label="Close modal"
+                >
+                  ×
+                </button>
+              </div>
+
+              <div className="mb-6">
+                <Image
+                  src="/images/TeamBravo/JT.png"
+                  alt="JT, Roll for Veterans team member"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Somewhere between the mountains of Utah where I was born, the valleys of Idaho where I grew up, and the California Inland Empire where I came of age, I learned to see the world as a place worth exploring, restoring, and cherishing. As one of seven children, I discovered early the value of connection, resilience, and showing up for others. Yet for much of my life, I struggled to be fully authentic or vulnerable, uncertain of who I truly was, why I was here, or what I was meant to contribute.
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Today, I carry those lessons—and that hard-earned awareness—into everything I do. I am a handyman who restores what's broken, a health coach who nurtures growth, an inspirational thinker who sparks reflection, and an aspiring podcaster who listens deeply. I build not just with tools, but with words, ideas, and relationships, striving always to show up fully, honestly, and with heart.
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Life's journey has carried me around the world, yet not until 3 January 2023 did my internal compass begin to learn how to function. Now, it aligns with my eternal purpose, guiding me to live deliberately, embrace authenticity, and serve others with integrity. Everything I create—whether in wood, thought, or heart—is my way of honoring the journey that brought me here, navigating the questions of purpose, and leaving a spark of light for those still seeking their own path.
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  <strong>If anything on this website resonates with you, I invite you to reach out to me.</strong>
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                  Too many dwell in silent despair; their true purpose unrealized, songs yet unsung. Let's sing a duet!
+                </p>
+
+                <div className="flex justify-center">
+                  <a
+                    href="mailto:jt.songseeker@gmail.com"
+                    className="inline-flex items-center gap-2 bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
+                    aria-label="Email JT at jt.songseeker@gmail.com"
+                  >
+                    <Mail size={20} />
+                    Email JT
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Roles Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white dark:bg-gray-900 transition-colors">
