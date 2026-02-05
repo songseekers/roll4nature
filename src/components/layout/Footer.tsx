@@ -31,73 +31,83 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
+          {/* Quick Links - Two Columns */}
+          <div className="col-span-1 md:col-span-2">
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-[#E07B4F] transition">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="/resources/R4V_Story.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#E07B4F] transition"
-                >
-                  Our Story
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.zeffy.com/en-US/team/roll-for-veterans"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#E07B4F] transition"
-                >
-                  Donate
-                </a>
-              </li>
-            </ul>
-          </div>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-2">
+              {/* Left Column */}
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/" className="text-gray-300 hover:text-[#E07B4F] transition">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="/resources/R4V_Story.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-[#E07B4F] transition"
+                  >
+                    Our Story
+                  </a>
+                </li>
+                <li>
+                  <Link href="/sponsor" className="text-gray-300 hover:text-[#E07B4F] transition">
+                    Sponsor Roll for Veterans
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/team-bravo" className="text-gray-300 hover:text-[#E07B4F] transition">
+                    Join Team Bravo
+                  </Link>
+                </li>
+              </ul>
 
-          {/* Team RWB */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Team RWB</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href="https://teamrwb.org/who-we-are/our-community"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#E07B4F] transition"
-                >
-                  Team RWB Official Page
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://teamrwb.org/find-your-chapter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#E07B4F] transition"
-                >
-                  Find a Chapter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://members.teamrwb.org/registration"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-[#E07B4F] transition"
-                >
-                  Join Team RWB
-                </a>
-              </li>
-            </ul>
+              {/* Right Column */}
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="https://www.zeffy.com/en-US/team/roll-for-veterans"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-[#E07B4F] transition"
+                  >
+                    Donate to Team RWB
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://teamrwb.org/who-we-are/our-community"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-[#E07B4F] transition"
+                  >
+                    Team RWB Official Page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://teamrwb.org/find-your-chapter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-[#E07B4F] transition"
+                  >
+                    Find a Chapter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://members.teamrwb.org/registration"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-[#E07B4F] transition"
+                  >
+                    Join Team RWB
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Contact & Social */}
@@ -222,12 +232,23 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* RWB Mission */}
+          {/* RWB Mission with Image */}
           <div className="mt-6 pt-6 border-t border-gray-800">
-            <p className="text-gray-300 text-sm text-center">
-              Team Red, White, and Blue (RWB) is a nonprofit organization dedicated to enrich the lives of
-              America's veterans by facilitating physical and social engagement.
-            </p>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              <div className="flex-shrink-0">
+                <Image
+                  src="/images/rwb_ob.svg"
+                  alt="Team Red, White, and Blue Logo"
+                  width={120}
+                  height={120}
+                  className="object-contain"
+                />
+              </div>
+              <p className="text-gray-300 text-sm text-center md:text-left max-w-2xl">
+                Team Red, White, and Blue (RWB) is a nonprofit organization dedicated to enrich the lives of
+                America's veterans by facilitating physical and social engagement.
+              </p>
+            </div>
           </div>
         </div>
       </div>

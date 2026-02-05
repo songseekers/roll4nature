@@ -406,18 +406,9 @@ export default function SponsorPage() {
             Questions About Sponsorship?
           </h2>
 
-          <p className="text-xl text-[#E8C9A1] mb-10">
+          <p className="text-xl text-[#E8C9A1]">
             Reach out any time to discuss how your support can make a difference by using the Connect With Us buttons below. We look forward to hearing from you!
           </p>
-
-          <div className="flex justify-center">
-            <a
-              href="#sponsors"
-              className="bg-white text-[#C1592B] px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
-            >
-              Meet Our Sponsors
-            </a>
-          </div>
         </div>
       </section>
     </div>

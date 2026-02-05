@@ -142,7 +142,7 @@ export default function TeamBravoPage() {
             >
               <div className="relative h-64">
                 <Image
-                  src="/images/TeamBravo/JT.png"
+                  src="/images/TeamBravo/JT.PNG"
                   alt="JT, Roll for Veterans team member and endurance cyclist"
                   fill
                   className="object-cover"
@@ -162,7 +162,7 @@ export default function TeamBravoPage() {
               >
                 <div className="relative h-64">
                   <Image
-                    src="/images/TeamBravo/SIL.png"
+                    src="/images/TeamBravo/sil.png"
                     alt="Team member profile coming soon"
                     fill
                     className="object-cover"
@@ -207,11 +207,11 @@ export default function TeamBravoPage() {
 
               <div className="mb-6">
                 <Image
-                  src="/images/TeamBravo/JT.png"
+                  src="/images/TeamBravo/JT.PNG"
                   alt="JT, Roll for Veterans team member"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto rounded-lg"
+                  width={300}
+                  height={200}
+                  className="w-1/2 h-auto rounded-lg mx-auto"
                 />
               </div>
 
