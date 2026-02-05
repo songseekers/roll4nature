@@ -50,7 +50,7 @@ export default function CityPage({ params }: Props) {
       {/* Breadcrumb */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Link
-          href="/roll-for-veterans"
+          href="/"
           className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold mb-6"
         >
           <ArrowLeft size={20} className="mr-2" />
@@ -253,14 +253,14 @@ export default function CityPage({ params }: Props) {
           <div className="flex gap-4 flex-col sm:flex-row">
             {city.dayNumber > 1 && (
               <Link
-                href="/roll-for-veterans#map"
+                href="/#map"
                 className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold transition text-center"
               >
                 ← Back to Map
               </Link>
             )}
             <Link
-              href="/roll-for-veterans#cities"
+              href="/#cities"
               className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition text-center"
             >
               Explore All 80+ Cities →

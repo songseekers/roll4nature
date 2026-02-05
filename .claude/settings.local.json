@@ -32,7 +32,8 @@
       "Bash(cmd //c \"taskkill /F /PID 19184\")",
       "Bash(cmd //c \"taskkill /F /PID 40180\")",
       "Bash(npx kill-port:*)",
-      "Bash(TURBOPACK=0 npm run dev:*)"
+      "Bash(TURBOPACK=0 npm run dev:*)",
+      "Bash(git branch:*)"
     ]
   }
 }
