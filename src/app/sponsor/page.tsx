@@ -21,12 +21,22 @@ export default function SponsorPage() {
     e.target.value = formatted;
   };
 
+  const handlePhoneKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      const target = e.target as HTMLInputElement;
+      const formatted = formatPhoneNumber(target.value);
+      target.value = formatted;
+    }
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    const formData = new FormData(e.currentTarget);
+    // Save form reference before async operation
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const data = {
       fullName: formData.get('fullName'),
       email: formData.get('email'),
@@ -49,7 +59,7 @@ export default function SponsorPage() {
 
       if (result.success) {
         setSubmitStatus('success');
-        e.currentTarget.reset();
+        form.reset();
       } else {
         setSubmitStatus('error');
       }
@@ -317,10 +327,9 @@ export default function SponsorPage() {
                     type="tel"
                     name="phone"
                     required
-                    minLength={14}
-                    maxLength={14}
                     placeholder="(123) 456-7890"
                     onBlur={handlePhoneInput}
+                    onKeyDown={handlePhoneKeyDown}
                     title="Enter 10 digits - will be auto-formatted"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
                   />
