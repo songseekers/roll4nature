@@ -23,8 +23,8 @@ export default function Footer() {
               <Image
                 src="/images/R4VLogo.png"
                 alt="R4V Logo"
-                width={96}
-                height={96}
+                width={104}
+                height={104}
                 className="object-contain"
               />
             </div>
@@ -35,7 +35,7 @@ export default function Footer() {
 
           {/* Quick Links - Two Columns */}
           <div className="col-span-1 md:col-span-2">
-            <div className="grid grid-cols-2 gap-x-8 gap-y-2">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-2 ml-5">
               {/* Left Column */}
               <div>
                 <h4 className="text-white font-semibold mb-4">Quick Links</h4>

@@ -42,3 +42,7 @@ next-env.d.ts
 
 # project documentation (local only)
 HANDOVER.md
+
+# user data (contains real submissions)
+/data/sponsor-inquiries.json
+/data/team-bravo-applications.json

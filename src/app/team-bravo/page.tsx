@@ -461,6 +461,23 @@ export default function TeamBravoPage() {
                 />
               </div>
 
+              {/* SMS Consent Checkbox */}
+              <div className="flex justify-center">
+                <div className="bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-500 rounded-lg p-4 max-w-2xl">
+                  <label className="flex items-start gap-3 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      name="sms_consent"
+                      required
+                      className="mt-1 w-4 h-4 text-[#C1592B] border-gray-300 rounded focus:ring-[#C1592B] cursor-pointer"
+                    />
+                    <span className="text-sm text-gray-700 dark:text-gray-200">
+                      I consent to receive a follow-up SMS message from Roll for Veterans at the number provided to discuss potential involvement. Message and data rates may apply.
+                    </span>
+                  </label>
+                </div>
+              </div>
+
               {/* Submit */}
               <button
                 type="submit"
