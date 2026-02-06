@@ -9,7 +9,7 @@ export default function MissionStatement() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Mission Content */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
               Why We Roll
             </h2>
 
@@ -38,7 +38,7 @@ export default function MissionStatement() {
 
           {/* Right: Stats Box */}
           <div className="bg-gradient-to-br from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] rounded-lg p-8 border-2 border-[#C1592B]">
-            <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
               Team RWB Impact
             </h3>
 

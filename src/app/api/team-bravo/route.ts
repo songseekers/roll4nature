@@ -18,6 +18,8 @@ const sendSMS = async (applicationData: any) => {
   try {
     const message = `New Team Bravo Application!\n\nName: ${applicationData.fullName}\nRole: ${applicationData.role}\nEmail: ${applicationData.email}\nPhone: ${applicationData.phone}`;
 
+    console.log('Attempting to send SMS to:', recipientPhone);
+
     const response = await fetch(
       `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`,
       {
@@ -35,12 +37,15 @@ const sendSMS = async (applicationData: any) => {
     );
 
     if (!response.ok) {
-      console.error('Failed to send SMS:', await response.text());
+      const errorText = await response.text();
+      console.error('Twilio API Error Response:', errorText);
+      console.error('Status:', response.status);
     } else {
       console.log('SMS notification sent successfully');
     }
   } catch (error) {
     console.error('Error sending SMS:', error);
+    console.error('Error details:', error instanceof Error ? error.message : 'Unknown error');
   }
 };
 
@@ -83,9 +88,14 @@ export async function POST(request: NextRequest) {
 
     // Write back to file
     fs.writeFileSync(dbPath, JSON.stringify(applications, null, 2));
+    console.log('Application saved successfully to database');
 
-    // Send SMS notification
-    await sendSMS(application);
+    // Send SMS notification (don't let this fail the request)
+    try {
+      await sendSMS(application);
+    } catch (smsError) {
+      console.error('SMS failed but application was saved:', smsError);
+    }
 
     return NextResponse.json({
       success: true,

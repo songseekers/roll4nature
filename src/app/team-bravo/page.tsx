@@ -9,6 +9,18 @@ export default function TeamBravoPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [selectedMember, setSelectedMember] = useState<string | null>(null);
+
+  // Auto-format phone number
+  const formatPhoneNumber = (value: string) => {
+    const cleaned = value.replace(/\D/g, '');
+    if (cleaned.length !== 10) return value;
+    return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(6)}`;
+  };
+
+  const handlePhoneInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formatted = formatPhoneNumber(e.target.value);
+    e.target.value = formatted;
+  };
   const roles = [
     {
       icon: Users,
@@ -337,9 +349,11 @@ export default function TeamBravoPage() {
                     type="tel"
                     name="phone"
                     required
-                    pattern="^\(\d{3}\)\s\d{3}-\d{4}$"
+                    minLength={14}
+                    maxLength={14}
                     placeholder="(123) 456-7890"
-                    title="Please enter phone number in format: (123) 456-7890"
+                    onBlur={handlePhoneInput}
+                    title="Enter 10 digits - will be auto-formatted"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
                   />
                 </div>

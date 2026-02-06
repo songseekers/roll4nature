@@ -35,6 +35,8 @@ Phone: ${sponsorData.phone}
 Best Time: ${sponsorData.bestTime}`;
 
   try {
+    console.log('Attempting to send sponsor SMS to:', toPhone);
+
     const response = await fetch(
       `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`,
       {
@@ -52,11 +54,15 @@ Best Time: ${sponsorData.bestTime}`;
     );
 
     if (!response.ok) {
-      const error = await response.json();
-      console.error('Twilio error:', error);
+      const errorText = await response.text();
+      console.error('Twilio API Error Response:', errorText);
+      console.error('Status:', response.status);
+    } else {
+      console.log('Sponsor SMS notification sent successfully');
     }
   } catch (error) {
     console.error('Error sending SMS:', error);
+    console.error('Error details:', error instanceof Error ? error.message : 'Unknown error');
   }
 };
 
@@ -97,9 +103,14 @@ export async function POST(request: NextRequest) {
 
     // Write back to file
     fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2));
+    console.log('Sponsor inquiry saved successfully to database');
 
-    // Send SMS notification
-    await sendSMS(submission);
+    // Send SMS notification (don't let this fail the request)
+    try {
+      await sendSMS(submission);
+    } catch (smsError) {
+      console.error('SMS failed but inquiry was saved:', smsError);
+    }
 
     return NextResponse.json({ success: true, message: 'Inquiry submitted successfully' });
   } catch (error) {

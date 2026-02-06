@@ -23,8 +23,8 @@ export default function Footer() {
               <Image
                 src="/images/R4VLogo.png"
                 alt="R4V Logo"
-                width={96}
-                height={96}
+                width={120}
+                height={120}
                 className="object-contain"
               />
             </div>
