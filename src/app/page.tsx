@@ -30,6 +30,18 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Meet Our Sponsors CTA */}
+      <section className="bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 transition-colors">
+        <div className="max-w-4xl mx-auto text-center">
+          <a
+            href="/sponsor#sponsors"
+            className="inline-block bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition text-lg"
+          >
+            Meet Our Sponsors
+          </a>
+        </div>
+      </section>
+
       {/* Team Bravo Section */}
       <section className="bg-gradient-to-b from-[#E8C9A1] dark:from-[#8B4513] to-white dark:to-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-4xl mx-auto text-center">

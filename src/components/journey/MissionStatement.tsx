@@ -38,47 +38,50 @@ export default function MissionStatement() {
 
           {/* Right: Stats Box */}
           <div className="bg-gradient-to-br from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] rounded-lg p-8 border-2 border-[#C1592B]">
-            {/* Team RWB Logo */}
-            <div className="flex justify-center mb-4">
-              <Image
-                src="/images/rwb_ob.svg"
-                alt="Team Red, White, and Blue Logo"
-                width={100}
-                height={100}
-                className="object-contain"
-              />
-            </div>
-
-            <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+            <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Team RWB Impact
             </h3>
 
-            <div className="space-y-6">
-              <div>
-                <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">300+</div>
-                <p className="text-lg text-gray-700 dark:text-gray-200">Members and supporters</p>
+            <div className="flex items-center gap-6">
+              {/* Left: Statistics */}
+              <div className="flex-1 space-y-6">
+                <div>
+                  <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">300+</div>
+                  <p className="text-lg text-gray-700 dark:text-gray-200">Members and supporters</p>
+                </div>
+
+                <div>
+                  <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">173,768</div>
+                  <p className="text-lg text-gray-700 dark:text-gray-200">Event check-ins in 2025</p>
+                </div>
+
+                <div>
+                  <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">18,490</div>
+                  <p className="text-lg text-gray-700 dark:text-gray-200">Total events nationwide</p>
+                </div>
               </div>
 
-              <div>
-                <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">173,768</div>
-                <p className="text-lg text-gray-700 dark:text-gray-200">Event check-ins in 2025</p>
+              {/* Right: Team RWB Logo */}
+              <div className="flex-shrink-0">
+                <Image
+                  src="/images/rwb_white.png"
+                  alt="Team Red, White, and Blue Logo"
+                  width={120}
+                  height={120}
+                  className="object-contain"
+                />
               </div>
+            </div>
 
-              <div>
-                <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">18,490</div>
-                <p className="text-lg text-gray-700 dark:text-gray-200">Total events nationwide</p>
-              </div>
-
-              <div className="pt-6 border-t border-[#C1592B]">
-                <a
-                  href="https://members.teamrwb.org/registration"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-block text-center bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
-                >
-                  Join Team RWB Today
-                </a>
-              </div>
+            <div className="mt-6 pt-6 border-t border-[#C1592B]">
+              <a
+                href="https://members.teamrwb.org/registration"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-block text-center bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
+              >
+                Join Team RWB Today
+              </a>
             </div>
           </div>
         </div>

@@ -57,6 +57,7 @@ export async function POST(request: NextRequest) {
       phone: body.phone,
       role: body.role,
       availability: body.availability,
+      comments: body.comments,
       veteranStatus: body.veteranStatus,
       message: body.message,
     };

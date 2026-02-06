@@ -16,17 +16,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center space-x-2">
+            <h3 className="text-xl font-bold text-white mb-4">
+              Roll for Veterans
+            </h3>
+            <div className="flex justify-center mb-4">
               <Image
                 src="/images/R4VLogo.png"
                 alt="R4V Logo"
-                width={32}
-                height={32}
+                width={96}
+                height={96}
                 className="object-contain"
               />
-              <span>Roll for Veterans</span>
-            </h3>
-            <p className="text-gray-300 text-sm">
+            </div>
+            <p className="text-gray-300 text-sm text-center">
               4,463 miles of stories, community, and gratitude supporting Team RWB.
             </p>
           </div>
@@ -242,7 +244,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               <div className="flex-shrink-0">
                 <Image
-                  src="/images/rwb_ob.svg"
+                  src="/images/rwb_ob_white.png"
                   alt="Team Red, White, and Blue Logo"
                   width={120}
                   height={120}

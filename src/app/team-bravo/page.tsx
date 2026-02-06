@@ -22,7 +22,7 @@ export default function TeamBravoPage() {
       title: 'Camera Operators',
       description:
         'Document the journey through photos and video. Your storytelling will inspire thousands of supporters.',
-      requirements: ['Photography and video experience', 'Your own equipment (a bonus)', 'Creative vision'],
+      requirements: ['Photography and video experience', 'Your own equipment a bonus', 'Creative vision'],
     },
     {
       icon: Share2,
@@ -52,6 +52,7 @@ export default function TeamBravoPage() {
       phone: formData.get('phone'),
       role: formData.get('role'),
       availability: formData.get('availability'),
+      comments: formData.get('comments'),
       veteranStatus: formData.get('veteran'),
       message: formData.get('message'),
     };
@@ -370,6 +371,19 @@ export default function TeamBravoPage() {
                   </select>
                 </div>
 
+                {/* Comments */}
+                <div className="md:col-span-2">
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                    Comments (Optional)
+                  </label>
+                  <textarea
+                    name="comments"
+                    placeholder="Any additional information you'd like to share..."
+                    rows={4}
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                  />
+                </div>
+
                 {/* Veteran Status */}
                 <div className="md:col-span-2">
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
@@ -410,7 +424,7 @@ export default function TeamBravoPage() {
               {/* Why Message */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
-                  Why do you want to join? *
+                  Why do you want to join Team Bravo? *
                 </label>
                 <textarea
                   name="message"
