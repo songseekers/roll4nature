@@ -337,7 +337,9 @@ export default function TeamBravoPage() {
                     type="tel"
                     name="phone"
                     required
+                    pattern="^\(\d{3}\)\s\d{3}-\d{4}$"
                     placeholder="(123) 456-7890"
+                    title="Please enter phone number in format: (123) 456-7890"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
                   />
                 </div>

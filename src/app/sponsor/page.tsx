@@ -305,7 +305,9 @@ export default function SponsorPage() {
                     type="tel"
                     name="phone"
                     required
+                    pattern="^\(\d{3}\)\s\d{3}-\d{4}$"
                     placeholder="(123) 456-7890"
+                    title="Please enter phone number in format: (123) 456-7890"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
                   />
                 </div>
@@ -364,7 +366,7 @@ export default function SponsorPage() {
                 disabled={isSubmitting}
                 className="w-full bg-[#C1592B] hover:bg-[#E07B4F] text-white font-bold py-3 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Submitting...' : 'Submit Inquiry'}
+                {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
 
               {submitStatus === 'success' && (

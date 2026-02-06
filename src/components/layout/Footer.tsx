@@ -15,10 +15,10 @@ export default function Footer() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
-          <div className="col-span-1">
-            <h3 className="text-xl font-bold text-white mb-4">
+          <div className="col-span-1 text-center">
+            <h4 className="text-white font-semibold mb-4">
               Roll for Veterans
-            </h3>
+            </h4>
             <div className="flex justify-center mb-4">
               <Image
                 src="/images/R4VLogo.png"
@@ -28,7 +28,7 @@ export default function Footer() {
                 className="object-contain"
               />
             </div>
-            <p className="text-gray-300 text-sm text-center">
+            <p className="text-gray-300 text-sm">
               4,463 miles of stories, community, and gratitude supporting Team RWB.
             </p>
           </div>

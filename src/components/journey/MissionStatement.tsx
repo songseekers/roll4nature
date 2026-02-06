@@ -42,7 +42,7 @@ export default function MissionStatement() {
               Team RWB Impact
             </h3>
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center justify-between gap-6">
               {/* Left: Statistics */}
               <div className="flex-1 space-y-6">
                 <div>
@@ -61,8 +61,8 @@ export default function MissionStatement() {
                 </div>
               </div>
 
-              {/* Right: Team RWB Logo */}
-              <div className="flex-shrink-0">
+              {/* Right: Team RWB Logo - Centered in remaining space */}
+              <div className="flex items-center justify-center" style={{width: '180px'}}>
                 <Image
                   src="/images/rwb_white.png"
                   alt="Team Red, White, and Blue Logo"

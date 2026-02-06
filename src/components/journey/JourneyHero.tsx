@@ -6,7 +6,7 @@ export default function JourneyHero() {
   return (
     <div className="bg-gradient-to-b from-[#E8C9A1] to-white dark:from-[#8B4513] dark:to-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
       <div className="max-w-4xl mx-auto text-center mb-12 mt-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 leading-tight whitespace-nowrap">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
           R4V 2026: Coast to Coast to Canyon
         </h1>
 
