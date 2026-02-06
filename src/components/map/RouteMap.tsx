@@ -235,13 +235,14 @@ export default function RouteMap() {
           </div>
         `;
 
-        // Create and show popup with proper offset
+        // Create and show popup with automatic positioning
+        // Removing fixed anchor allows Mapbox to auto-position based on viewport
         popupRef.current = new mapboxgl.Popup({
           closeButton: true,
           closeOnClick: false,
           maxWidth: '300px',
           offset: 25, // Offset from the marker
-          anchor: 'bottom', // Anchor popup to bottom so it appears above marker
+          // No anchor specified - allows automatic smart positioning to keep popup in viewport
         })
           .setLngLat(city.coordinates)
           .setDOMContent(popupContent)

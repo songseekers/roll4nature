@@ -33,80 +33,85 @@ export default function Footer() {
 
           {/* Quick Links - Two Columns */}
           <div className="col-span-1 md:col-span-2">
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <div className="grid grid-cols-2 gap-x-8 gap-y-2">
               {/* Left Column */}
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/" className="text-gray-300 hover:text-[#E07B4F] transition">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="/resources/R4V_Story.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-[#E07B4F] transition"
-                  >
-                    Our Story
-                  </a>
-                </li>
-                <li>
-                  <Link href="/sponsor" className="text-gray-300 hover:text-[#E07B4F] transition">
-                    Sponsor Roll for Veterans
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/team-bravo" className="text-gray-300 hover:text-[#E07B4F] transition">
-                    Join Team Bravo
-                  </Link>
-                </li>
-              </ul>
+              <div>
+                <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link href="/" className="text-gray-300 hover:text-[#E07B4F] transition">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <a
+                      href="/resources/R4V_Story.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                    >
+                      Our Story
+                    </a>
+                  </li>
+                  <li>
+                    <Link href="/sponsor" className="text-gray-300 hover:text-[#E07B4F] transition">
+                      Sponsor Roll for Veterans
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/team-bravo" className="text-gray-300 hover:text-[#E07B4F] transition">
+                      Join Team Bravo
+                    </Link>
+                  </li>
+                </ul>
+              </div>
 
               {/* Right Column */}
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a
-                    href="https://www.zeffy.com/en-US/team/roll-for-veterans"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-[#E07B4F] transition"
-                  >
-                    Donate to Team RWB
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://teamrwb.org/who-we-are/our-community"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-[#E07B4F] transition"
-                  >
-                    Team RWB Official Page
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://teamrwb.org/find-your-chapter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-[#E07B4F] transition"
-                  >
-                    Find a Chapter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://members.teamrwb.org/registration"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-[#E07B4F] transition"
-                  >
-                    Join Team RWB
-                  </a>
-                </li>
-              </ul>
+              <div>
+                <h4 className="text-white font-semibold mb-4">Team RWB Links</h4>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <a
+                      href="https://www.zeffy.com/en-US/team/roll-for-veterans"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                    >
+                      Donate to Team RWB
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://teamrwb.org/who-we-are/our-community"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                    >
+                      Team RWB Official Page
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://teamrwb.org/find-your-chapter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                    >
+                      Find a Chapter
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://members.teamrwb.org/registration"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                    >
+                      Join Team RWB
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 

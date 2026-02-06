@@ -44,13 +44,11 @@ export default function HomePage() {
           </div>
 
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America in the video below.
+            Ready to be part of this epic journey? Find out more about Team Bravo and how you can join the ride across America.
           </p>
 
           <a
-            href="https://youtu.be/4tmbTdqWGbI"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/team-bravo"
             className="inline-block bg-[#C1592B] text-white px-10 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition text-lg"
           >
             Learn About Team Bravo

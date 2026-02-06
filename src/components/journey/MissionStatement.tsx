@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function MissionStatement() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors">
@@ -36,7 +38,18 @@ export default function MissionStatement() {
 
           {/* Right: Stats Box */}
           <div className="bg-gradient-to-br from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] rounded-lg p-8 border-2 border-[#C1592B]">
-            <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            {/* Team RWB Logo */}
+            <div className="flex justify-center mb-4">
+              <Image
+                src="/images/rwb_ob.svg"
+                alt="Team Red, White, and Blue Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            </div>
+
+            <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
               Team RWB Impact
             </h3>
 
