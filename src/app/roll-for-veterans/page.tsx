@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'R4V 2026: Coast to Coast to Canyon | 4,463 Miles of Purpose',
-  description: 'Join our epic bike journey from Key West, FL to Los Angeles, CA to Flagstaff, AZ, connecting with veterans in 24 communities. Feb 27 - June 21, 2026.',
+  description: 'Join our epic bike journey from Key West, FL to Los Angeles, CA to Flagstaff, AZ, connecting with veterans in 42+ communities. Feb 27 - June 21, 2026.',
 };
 
 export default function RollForVeteransPage() {
@@ -48,9 +48,7 @@ export default function RollForVeteransPage() {
           </p>
 
           <a
-            href="https://youtu.be/4tmbTdqWGbI"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/team-bravo"
             className="inline-block bg-[#C1592B] text-white px-10 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition text-lg"
           >
             Learn About Team Bravo
@@ -76,13 +74,21 @@ export default function RollForVeteransPage() {
               rel="noopener noreferrer"
               className="bg-white text-[#C1592B] px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
             >
-              Donate Now
+              Donate to Team RWB
+            </a>
+            <a
+              href="https://gofund.me/fdff623ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#D4A574] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
+            >
+              R4V GoFundMe
             </a>
             <a
               href="/sponsor"
               className="bg-[#E07B4F] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#C1592B] transition inline-block"
             >
-              Become a Sponsor
+              Become a Partner
             </a>
             <a
               href="/team-bravo"

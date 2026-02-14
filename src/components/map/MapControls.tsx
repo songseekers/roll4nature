@@ -15,7 +15,7 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
     {
       label: 'Major Cities',
       value: 'major',
-      description: '24 cities on our route',
+      description: '42+ communities on our route',
     },
   ];
 
@@ -40,6 +40,14 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
             {control.label}
           </button>
         ))}
+
+        <a
+          href="/route-list"
+          className="px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap bg-[#8B4513] text-white hover:bg-[#A0522D] shadow-md"
+          title="View full route schedule"
+        >
+          Route List
+        </a>
       </div>
     </div>
   );

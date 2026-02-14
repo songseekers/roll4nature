@@ -1,7 +1,6 @@
 'use client';
 
 import { Users, Camera, Share2, Bike, Mail, ExternalLink } from 'lucide-react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { useState, FormEvent } from 'react';
 
@@ -121,80 +120,121 @@ export default function TeamBravoPage() {
           </div>
           <h1 className="text-5xl font-bold mb-6">Join Team Bravo</h1>
           <p className="text-xl text-[#E8C9A1] mb-8">
-            Be part of our support crew and make a difference in the lives of America's veterans
+            Be part of our support crew and make a difference in the lives of America&apos;s veterans
           </p>
-          <p className="text-[#D4A574] text-lg leading-relaxed">
+          <p className="text-[#D4A574] text-lg leading-relaxed mb-8">
             Team Bravo is our support crew that keeps the Roll for Veterans moving. From drivers to photographers
-            to cyclists, we need passionate people like you to help us connect with veterans across 24 cities.
+            to cyclists, we need passionate people like you to help us connect with veterans across 42+ communities.
           </p>
+          <a
+            href="https://youtube.com/@roll4veterans"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white text-[#C1592B] px-10 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition text-lg whitespace-nowrap"
+          >
+            <ExternalLink size={20} />
+            Roll4Veterans YouTube Channel
+          </a>
         </div>
       </div>
 
-      {/* YouTube Video Section */}
-      <section className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-            Watch Our Story
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            Learn more about Team Bravo and our mission to support veterans across America
-          </p>
-          <a
-            href="https://youtu.be/4tmbTdqWGbI"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#C1592B] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E07B4F] transition text-lg"
-          >
-            <ExternalLink size={24} />
-            Watch on YouTube
-          </a>
-        </div>
-      </section>
-
-      {/* Meet Team Bravo Section */}
+      {/* Team Bravo Ground Crew Section */}
       <section className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Meet Team Bravo
+            Team Bravo Ground Crew
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {/* JT - Active Profile */}
-            <div
-              onClick={() => setSelectedMember('jt')}
-              className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
-            >
-              <div className="relative h-64">
-                <Image
-                  src="/images/TeamBravo/JT.PNG"
-                  alt="JT, Roll for Veterans team member and endurance cyclist"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4 text-center">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">JT</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">Click to learn more</p>
+            <div className="flex flex-col items-center">
+              <div
+                onClick={() => setSelectedMember('jt')}
+                className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full"
+              >
+                <div className="relative h-40">
+                  <Image
+                    src="/images/TeamBravo/JT.PNG"
+                    alt="JT, Roll for Veterans team member and endurance cyclist"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">JT</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Click to learn more</p>
+                </div>
               </div>
             </div>
 
             {/* Placeholder Team Members */}
             {[1, 2, 3].map((i) => (
+              <div key={i} className="flex flex-col items-center">
+                <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg opacity-75 w-full">
+                  <div className="relative h-[120px]">
+                    <Image
+                      src="/images/TeamBravo/sil.png"
+                      alt="Team member profile coming soon"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-3 text-center">
+                    <h3 className="text-base font-bold text-gray-900 dark:text-white">Team Member</h3>
+                    <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Coming Soon</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Bravo Air Support Section */}
+      <section className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Team Bravo Air Support
+          </h2>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            {/* Janelle - Active Profile */}
+            <div className="flex flex-col items-center">
               <div
-                key={i}
-                className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg opacity-75"
+                onClick={() => setSelectedMember('janelle')}
+                className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full border border-gray-200 dark:border-gray-600"
               >
-                <div className="relative h-64">
+                <div className="relative h-40">
                   <Image
-                    src="/images/TeamBravo/sil.png"
-                    alt="Team member profile coming soon"
+                    src="/images/TeamBravo/JDR.png"
+                    alt="Janelle, Team Bravo Air Support crew member"
                     fill
                     className="object-cover"
                   />
                 </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Team Member</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">Coming Soon</p>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">Janelle</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Click to learn more</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Placeholder Air Support Members */}
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="flex flex-col items-center">
+                <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg opacity-75 w-full border border-gray-200 dark:border-gray-600">
+                  <div className="relative h-[120px]">
+                    <Image
+                      src="/images/TeamBravo/sil.png"
+                      alt="Team member profile coming soon"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-3 text-center">
+                    <h3 className="text-base font-bold text-gray-900 dark:text-white">Team Member</h3>
+                    <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Coming Soon</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -217,7 +257,7 @@ export default function TeamBravoPage() {
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">JT</h2>
                   <p className="text-lg text-gray-600 dark:text-gray-300">
-                    Endurance Cyclist • Coach • Builder • Fixer • Contemplator • Friend
+                    Endurance Cyclist &bull; Coach &bull; Builder &bull; Fixer &bull; Contemplator &bull; Friend
                   </p>
                 </div>
                 <button
@@ -225,7 +265,7 @@ export default function TeamBravoPage() {
                   className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
                   aria-label="Close modal"
                 >
-                  ×
+                  &times;
                 </button>
               </div>
 
@@ -245,11 +285,11 @@ export default function TeamBravoPage() {
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  Today, I carry those lessons—and that hard-earned awareness—into everything I do. I am a handyman who restores what's broken, a health coach who nurtures growth, an inspirational thinker who sparks reflection, and an aspiring podcaster who listens deeply. I build not just with tools, but with words, ideas, and relationships, striving always to show up fully, honestly, and with heart.
+                  Today, I carry those lessons—and that hard-earned awareness—into everything I do. I am a handyman who restores what&apos;s broken, a health coach who nurtures growth, an inspirational thinker who sparks reflection, and an aspiring podcaster who listens deeply. I build not just with tools, but with words, ideas, and relationships, striving always to show up fully, honestly, and with heart.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  Life's journey has carried me around the world, yet not until 3 January 2023 did my internal compass begin to learn how to function. Now, it aligns with my eternal purpose, guiding me to live deliberately, embrace authenticity, and serve others with integrity. Everything I create—whether in wood, thought, or heart—is my way of honoring the journey that brought me here, navigating the questions of purpose, and leaving a spark of light for those still seeking their own path.
+                  Life&apos;s journey has carried me around the world, yet not until 3 January 2023 did my internal compass begin to learn how to function. Now, it aligns with my eternal purpose, guiding me to live deliberately, embrace authenticity, and serve others with integrity. Everything I create—whether in wood, thought, or heart—is my way of honoring the journey that brought me here, navigating the questions of purpose, and leaving a spark of light for those still seeking their own path.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
@@ -257,7 +297,7 @@ export default function TeamBravoPage() {
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                  Too many dwell in silent despair; their true purpose unrealized, songs yet unsung. Let's sing a duet!
+                  Too many dwell in silent despair; their true purpose unrealized, songs yet unsung. Let&apos;s sing a duet!
                 </p>
 
                 <div className="flex justify-center">
@@ -270,6 +310,65 @@ export default function TeamBravoPage() {
                     Email JT
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Janelle Profile Modal */}
+      {selectedMember === 'janelle' && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedMember(null)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-8">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Janelle</h2>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">
+                    Air Support &bull; Coordinator &bull; Seamstress &bull; Artist &bull; Poet
+                  </p>
+                </div>
+                <button
+                  onClick={() => setSelectedMember(null)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
+                  aria-label="Close modal"
+                >
+                  &times;
+                </button>
+              </div>
+
+              <div className="mb-6">
+                <Image
+                  src="/images/TeamBravo/JDR.png"
+                  alt="Janelle, Team Bravo Air Support crew member"
+                  width={300}
+                  height={200}
+                  className="w-1/2 h-auto rounded-lg mx-auto"
+                />
+              </div>
+
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Her Role on Team Bravo</h3>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Janelle is a vital member of Team Bravo&apos;s Air Support crew, keeping the mission running smoothly behind the scenes. She handles phone outreach, manages correspondence, coordinates team activities, sets schedules, and contributes to mission planning — the kind of steady, reliable work that makes everything else possible.
+                </p>
+
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">About Janelle</h3>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Creativity has always been a part of Janelle&apos;s life, whether through sewing, drawing, or simply noticing the beauty woven into everyday moments. As a seamstress, she loves forming fabric with care and detail, and as an artist, she is inspired by color, texture, and the joy of learning new ways to express ideas. For her, creativity isn&apos;t only about making things — it&apos;s also about the learning, order, and delight in the process. Boogalie Bear was born in her fabric laboratory in 2023.
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                  Beyond her work with fabric, Janelle enjoys writing poetry, exploring watercolor and colored pencil, and listening to music that stirs the heart. Her faith and family shape who she is and keep her grounded in compassion and purpose. Being part of Team Bravo is meaningful to her because it offers a place where creators can share, encourage one another, and discover the joy that comes when imagination and community meet.
+                </p>
               </div>
             </div>
           </div>
@@ -301,7 +400,7 @@ export default function TeamBravoPage() {
                   <ul className="space-y-2">
                     {role.requirements.map((req) => (
                       <li key={req} className="flex items-start text-gray-700 dark:text-gray-200">
-                        <span className="text-[#C1592B] font-bold mr-2">✓</span>
+                        <span className="text-[#C1592B] font-bold mr-2">&#10003;</span>
                         {req}
                       </li>
                     ))}
@@ -423,7 +522,7 @@ export default function TeamBravoPage() {
                         value="yes"
                         className="mr-2"
                       />
-                      <span>Yes, I'm a veteran</span>
+                      <span>Yes, I&apos;m a veteran</span>
                     </label>
                     <label className="flex items-center">
                       <input
@@ -491,10 +590,10 @@ export default function TeamBravoPage() {
               {submitStatus === 'success' && (
                 <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-500 rounded-lg p-4 text-center">
                   <p className="text-green-800 dark:text-green-200 font-semibold">
-                    ✓ Application submitted successfully!
+                    &#10003; Application submitted successfully!
                   </p>
                   <p className="text-sm text-green-700 dark:text-green-300 mt-1">
-                    We'll review your application and be in touch within 48 hours!
+                    We&apos;ll review your application and be in touch within 48 hours!
                   </p>
                 </div>
               )}
@@ -513,7 +612,7 @@ export default function TeamBravoPage() {
 
               {submitStatus === 'idle' && (
                 <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-                  We'll review your application and be in touch within 48 hours!
+                  We&apos;ll review your application and be in touch within 48 hours!
                 </p>
               )}
             </form>
@@ -531,11 +630,11 @@ export default function TeamBravoPage() {
           {[
             {
               q: 'Do I need cycling experience?',
-              a: 'Only if you\'re interested in being a segment cyclist. Our support crew roles have different skill requirements, and we provide training as needed.',
+              a: "Only if you're interested in being a segment cyclist. Our support crew roles have different skill requirements, and we provide training as needed.",
             },
             {
               q: 'What about travel and accommodation?',
-              a: 'We cover most travel expenses for core team members. We\'ll discuss specifics during the application review process.',
+              a: "We cover most travel expenses for core team members. We'll discuss specifics during the application review process.",
             },
             {
               q: 'Can I join for just a few days?',
@@ -543,10 +642,10 @@ export default function TeamBravoPage() {
             },
             {
               q: 'When do applications close?',
-              a: 'We\'re accepting applications throughout the ride. It\'s never too late to apply until we reach Flagstaff!',
+              a: "We're accepting applications throughout the ride. It's never too late to apply until we reach Flagstaff!",
             },
             {
-              q: 'What\'s the Team RWB mission?',
+              q: "What's the Team RWB mission?",
               a: 'Team RWB empowers veterans through physical and social engagement. Find out more about Team RWB at the links at the bottom of the page.',
             },
           ].map((faq, i) => (
@@ -562,27 +661,12 @@ export default function TeamBravoPage() {
       <section className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Questions? Let's Talk!
+            Questions? Let&apos;s Talk!
           </h2>
 
-          <p className="text-xl text-[#E8C9A1] mb-10">
-            Email us or call to learn more about Team Bravo opportunities
+          <p className="text-xl text-[#E8C9A1] mb-10 max-w-2xl mx-auto leading-relaxed">
+            Email or call us to talk more about Team Bravo opportunities using the links under Connect With Us below. We look forward to hearing from you!
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:rollforveterans@gmail.com"
-              className="bg-white text-[#C1592B] px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
-            >
-              Email: rollforveterans@gmail.com
-            </a>
-            <a
-              href="tel:8282804709"
-              className="bg-[#E07B4F] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#D4A574] transition inline-block"
-            >
-              Call: (828) 280-4709
-            </a>
-          </div>
         </div>
       </section>
     </div>

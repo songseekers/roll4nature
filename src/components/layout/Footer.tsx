@@ -19,7 +19,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">
               Roll for Veterans
             </h4>
-            <div className="flex justify-center mb-4">
+            <Link href="/team-bravo" className="flex justify-center mb-4">
               <Image
                 src="/images/R4VLogo.png"
                 alt="R4V Logo"
@@ -27,7 +27,7 @@ export default function Footer() {
                 height={104}
                 className="object-contain"
               />
-            </div>
+            </Link>
             <p className="text-gray-300 text-sm">
               4,463 miles of stories, community, and gratitude supporting Team RWB.
             </p>
@@ -41,9 +41,14 @@ export default function Footer() {
                 <h4 className="text-white font-semibold mb-4">Quick Links</h4>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <Link href="/" className="text-gray-300 hover:text-[#E07B4F] transition">
-                      Home
-                    </Link>
+                    <a
+                      href="https://gofund.me/fdff623ca"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                    >
+                      R4V GoFundMe
+                    </a>
                   </li>
                   <li>
                     <a
@@ -56,14 +61,20 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <Link href="/sponsor" className="text-gray-300 hover:text-[#E07B4F] transition">
-                      Sponsor Roll for Veterans
-                    </Link>
+                    <a
+                      href="/sponsor"
+                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                    >
+                      Partner with Roll for Veterans
+                    </a>
                   </li>
                   <li>
-                    <Link href="/team-bravo" className="text-gray-300 hover:text-[#E07B4F] transition">
+                    <a
+                      href="/team-bravo"
+                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                    >
                       Join Team Bravo
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -235,26 +246,75 @@ export default function Footer() {
           {/* Bottom Info */}
           <div className="flex flex-col items-center">
             <p className="text-gray-300 text-sm text-center">
-              © {currentYear} Roll for Veterans. Supporting Team Red, White, and Blue veterans organization.
+              &copy; {currentYear} Roll for Veterans. Supporting Team Red, White, and Blue veterans organization.
             </p>
           </div>
 
           {/* RWB Mission with Image */}
           <div className="mt-6 pt-6 border-t border-gray-800">
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-              <div className="flex-shrink-0">
+              <a
+                href="https://www.zeffy.com/en-US/team/roll-for-veterans"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0"
+              >
                 <Image
                   src="/images/rwb_ob_white.png"
                   alt="Team Red, White, and Blue Logo"
-                  width={120}
-                  height={120}
+                  width={104}
+                  height={104}
                   className="object-contain"
                 />
-              </div>
+              </a>
               <p className="text-gray-300 text-sm text-center md:text-left max-w-2xl">
                 Team Red, White, and Blue (RWB) is a nonprofit organization dedicated to enrich the lives of
-                America's veterans by facilitating physical and social engagement.
+                America&apos;s veterans by facilitating physical and social engagement.
               </p>
+            </div>
+          </div>
+
+          {/* Attribution */}
+          <div className="mt-6 pt-6 border-t border-gray-800">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+              <a
+                href="https://bexarlabs.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col md:flex-row items-center gap-4 group"
+              >
+                <div className="flex-shrink-0">
+                  <Image
+                    src="/images/bexarlabs_logo.png"
+                    alt="BexarLabs logo"
+                    width={104}
+                    height={104}
+                    className="object-contain opacity-70 group-hover:opacity-100 transition h-[52px] w-auto"
+                  />
+                </div>
+                <span className="text-gray-300 text-sm text-center md:text-left group-hover:text-white transition">
+                  Website foundation and initial development
+                </span>
+              </a>
+              <a
+                href="https://www.anthropic.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col md:flex-row items-center gap-4 group"
+              >
+                <div className="flex-shrink-0">
+                  <Image
+                    src="/images/anth_logo.png"
+                    alt="Anthropic logo"
+                    width={104}
+                    height={104}
+                    className="object-contain opacity-70 group-hover:opacity-100 transition h-[52px] w-auto"
+                  />
+                </div>
+                <span className="text-gray-300 text-sm text-center md:text-left group-hover:text-white transition">
+                  AI-assisted design and development powered by Claude Sonnet 4.5 and Opus 4.6
+                </span>
+              </a>
             </div>
           </div>
         </div>

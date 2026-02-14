@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'R4V 2026: Coast to Coast to Canyon | 4,463 Miles of Purpose',
-  description: 'Join our epic bike journey from Key West, FL to Los Angeles, CA to Flagstaff, AZ, connecting with veterans in 72 communities. Feb 27 - June 21, 2026.',
+  description: 'Join our epic bike journey from Key West, FL to Los Angeles, CA to Flagstaff, AZ, connecting with veterans in 42+ communities. Feb 27 - June 21, 2026.',
 };
 
 export default function HomePage() {
@@ -18,27 +18,15 @@ export default function HomePage() {
       <MissionStatement />
 
       {/* Interactive Route Map */}
-      <section id="map" className="bg-gray-50 dark:bg-gray-800 py-12 px-4 sm:px-6 lg:px-8 transition-colors">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 text-center">
+      <section id="map" className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Explore Our Route
           </h2>
-          <p className="text-base text-gray-600 dark:text-gray-300 text-center mb-8 max-w-xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
             Click on any city to see arrival dates and Team RWB chapter information.
           </p>
           <RouteMap />
-        </div>
-      </section>
-
-      {/* Meet Our Sponsors CTA */}
-      <section className="bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 transition-colors">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="/sponsor#sponsors"
-            className="inline-block bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition text-lg"
-          >
-            Meet Our Sponsors
-          </a>
         </div>
       </section>
 
@@ -56,7 +44,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Ready to be part of this epic journey? Find out more about Team Bravo and how you can join the ride across America.
+            Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America in the video below.
           </p>
 
           <a
@@ -86,13 +74,21 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="bg-white text-[#C1592B] px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
             >
-              Donate Now
+              Donate to Team RWB
+            </a>
+            <a
+              href="https://gofund.me/fdff623ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#D4A574] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
+            >
+              R4V GoFundMe
             </a>
             <a
               href="/sponsor"
               className="bg-[#E07B4F] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#C1592B] transition inline-block"
             >
-              Become a Sponsor
+              Become a Partner
             </a>
             <a
               href="/team-bravo"

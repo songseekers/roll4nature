@@ -19,11 +19,12 @@ export function useCountdown(targetDate: Date): CountdownTime {
     isOver: false,
   });
 
+  const targetTime = targetDate.getTime();
+
   useEffect(() => {
     const calculateCountdown = () => {
       const now = new Date().getTime();
-      const target = targetDate.getTime();
-      const difference = target - now;
+      const difference = targetTime - now;
 
       if (difference <= 0) {
         setCountdown({
@@ -57,7 +58,7 @@ export function useCountdown(targetDate: Date): CountdownTime {
     const interval = setInterval(calculateCountdown, 1000);
 
     return () => clearInterval(interval);
-  }, [targetDate]);
+  }, [targetTime]);
 
   return countdown;
 }

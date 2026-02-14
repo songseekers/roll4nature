@@ -85,7 +85,7 @@ export default function SponsorPage() {
               className="mx-auto object-contain"
             />
           </div>
-          <h1 className="text-5xl font-bold mb-6">Become a Sponsor</h1>
+          <h1 className="text-5xl font-bold mb-6">Become a Partner</h1>
           <p className="text-xl text-[#E8C9A1] mb-8">
             Help us roll across America in support of our nation's veterans
           </p>
@@ -110,7 +110,7 @@ export default function SponsorPage() {
           </p>
           <p className="text-base text-gray-700 dark:text-gray-200 leading-relaxed">
             <span className="font-semibold text-gray-900 dark:text-white">
-              If you're interested in sponsoring Roll for Veterans directly,
+              If you're interested in partnering with Roll for Veterans directly,
             </span>{' '}
             we would be grateful for your support. Whether it's fuel, food, equipment, or financial assistance
             for operational expenses, every contribution helps us focus on what matters most: connecting with
@@ -162,7 +162,7 @@ export default function SponsorPage() {
       <section id="sponsors" className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors scroll-mt-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Thank You to Our Sponsors
+            Thank You to Our Partners
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -287,7 +287,7 @@ export default function SponsorPage() {
             Let's Connect
           </h2>
           <p className="text-center text-gray-700 dark:text-gray-200 mb-12 text-lg">
-            Interested in sponsoring? Fill out the form below and we'll be in touch to discuss how we can work together.
+            Interested in partnering? Fill out the form below and we'll be in touch to discuss how we can work together.
           </p>
 
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 md:p-12">
@@ -354,14 +354,14 @@ export default function SponsorPage() {
 
                 <div className="md:col-span-2">
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
-                    Type of Sponsorship Interest *
+                    Type of Partnership Interest *
                   </label>
                   <select
                     name="sponsorshipInterest"
                     required
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
                   >
-                    <option value="">Select sponsorship type</option>
+                    <option value="">Select partnership type</option>
                     <option value="fuel">Fuel Support</option>
                     <option value="food">Food & Supplies</option>
                     <option value="lodging">Lodging & Equipment</option>
@@ -378,7 +378,7 @@ export default function SponsorPage() {
                 </label>
                 <textarea
                   name="message"
-                  placeholder="Tell us more about your sponsorship interests or questions..."
+                  placeholder="Tell us more about your partnership interests or questions..."
                   rows={4}
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
                 />
@@ -415,7 +415,7 @@ export default function SponsorPage() {
                     ✓ Thank you for your interest!
                   </p>
                   <p className="text-sm text-green-700 dark:text-green-300 mt-1">
-                    We'll be in touch within 24 hours to discuss sponsorship opportunities.
+                    We'll be in touch within 24 hours to discuss partnership opportunities.
                   </p>
                 </div>
               )}
@@ -445,7 +445,7 @@ export default function SponsorPage() {
       <section className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Questions About Sponsorship?
+            Questions About Partnering?
           </h2>
 
           <p className="text-xl text-[#E8C9A1]">

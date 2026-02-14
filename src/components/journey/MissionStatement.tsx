@@ -46,7 +46,7 @@ export default function MissionStatement() {
               {/* Left: Statistics */}
               <div className="flex-1 space-y-6">
                 <div>
-                  <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">300+</div>
+                  <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">300,000+</div>
                   <p className="text-lg text-gray-700 dark:text-gray-200">Members and supporters</p>
                 </div>
 

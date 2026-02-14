@@ -50,11 +50,13 @@ export default function Navigation() {
               <span className="md:hidden">Donate to RWB</span>
             </a>
             <a
-              href="/sponsor"
+              href="https://gofund.me/fdff623ca"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#C1592B] text-white px-2 md:px-3 py-2 rounded-lg hover:bg-[#E07B4F] transition font-semibold text-xs md:text-sm text-center leading-tight"
             >
-              <span className="hidden md:inline">Sponsor<br />R4V</span>
-              <span className="md:hidden">Sponsor R4V</span>
+              <span className="hidden md:inline">R4V<br />GoFundMe</span>
+              <span className="md:hidden">R4V GoFundMe</span>
             </a>
           </div>
         </div>
