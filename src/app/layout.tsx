@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Roll for Veterans 2026 | Bike Ride for Team RWB",
-  description: "Join us on an epic cross-country journey from Key West to the Grand Canyon supporting Team RWB veterans organization. 4,434 miles of stories, community, and gratitude.",
+  description: "Join us on an epic cross-country journey from Key West to the Grand Canyon supporting Team RWB veterans organization. 4,463 miles of stories, community, and gratitude.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://songseekers.org"),
   openGraph: {
     title: "Roll for Veterans 2026",
@@ -48,6 +49,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

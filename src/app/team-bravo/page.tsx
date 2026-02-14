@@ -171,12 +171,12 @@ export default function TeamBravoPage() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg opacity-75 w-full">
-                  <div className="relative h-[120px]">
+                  <div className="relative h-40">
                     <Image
                       src="/images/TeamBravo/sil.png"
                       alt="Team member profile coming soon"
                       fill
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                   </div>
                   <div className="p-3 text-center">
@@ -223,12 +223,12 @@ export default function TeamBravoPage() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg opacity-75 w-full border border-gray-200 dark:border-gray-600">
-                  <div className="relative h-[120px]">
+                  <div className="relative h-40">
                     <Image
                       src="/images/TeamBravo/sil.png"
                       alt="Team member profile coming soon"
                       fill
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                   </div>
                   <div className="p-3 text-center">

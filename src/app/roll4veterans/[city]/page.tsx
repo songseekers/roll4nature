@@ -263,7 +263,7 @@ export default function CityPage({ params }: Props) {
               href="/#cities"
               className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition text-center"
             >
-              Explore All 80+ Cities →
+              Explore All 42+ Communities →
             </Link>
           </div>
         </div>

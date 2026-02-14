@@ -7,8 +7,8 @@ A beautiful, engaging website for **songseekers.org/roll4veterans** - supporting
 This is a Next.js 14+ website built to support the Roll for Veterans 2026 journey:
 - **Route**: Key West → LA → Grand Canyon
 - **Duration**: February 27 - June 13, 2026 (108 days)
-- **Distance**: 4,434 miles
-- **Cities**: 80+ communities across 19 major stops
+- **Distance**: 4,463 miles
+- **Cities**: 42+ communities across 19 major stops
 - **Mission**: Support Team RWB and connect veterans nationwide
 
 ## ✨ Features
@@ -17,7 +17,7 @@ This is a Next.js 14+ website built to support the Roll for Veterans 2026 journe
 - 3-layer navigation system:
   - **Overview**: Key West → LA → Grand Canyon
   - **Major Stops**: 19 planned key cities
-  - **All Cities**: 80+ communities with 25k+ population
+  - **All Cities**: 42+ communities with 25k+ population
 - Click any city to see arrival dates, population, and RWB chapter info
 - Built with Mapbox GL JS for beautiful, performant mapping
 

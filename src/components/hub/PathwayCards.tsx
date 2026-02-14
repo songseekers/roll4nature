@@ -48,7 +48,7 @@ export default function PathwayCards() {
                     Roll for Veterans 2026
                   </h2>
                   <p className="text-base text-gray-700 mb-6 leading-relaxed">
-                    Join our 4,434-mile cross-country bike journey from Key West to Grand Canyon, connecting with veterans in 80+ communities.
+                    Join our 4,463-mile cross-country bike journey from Key West to Grand Canyon, connecting with veterans in 42+ communities.
                   </p>
                   <div className="text-lg font-semibold text-green-600 group-hover:text-green-700 transition-colors">
                     → View Journey
@@ -57,7 +57,7 @@ export default function PathwayCards() {
 
                 {/* Badge */}
                 <div className="mt-6 text-xs font-semibold text-green-600 bg-green-100 px-3 py-1 rounded-full">
-                  4,434 Miles • 107 Days
+                  4,463 Miles • 107 Days
                 </div>
               </div>
             </div>

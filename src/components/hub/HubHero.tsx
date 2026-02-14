@@ -30,7 +30,7 @@ export default function HubHero() {
             <div className="text-xs text-gray-600">Dimensions</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-blue-600">4,434</div>
+            <div className="text-2xl font-bold text-blue-600">4,463</div>
             <div className="text-xs text-gray-600">Miles</div>
           </div>
           <div>

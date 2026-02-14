@@ -71,7 +71,7 @@ export default function GuidebookPage() {
           </h3>
 
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Our 4,434-mile cross-country bike journey embodies all 8 dimensions of purpose as we connect with veterans in 80+ communities.
+            Our 4,463-mile cross-country bike journey embodies all 8 dimensions of purpose as we connect with veterans in 42+ communities.
           </p>
 
           <Link

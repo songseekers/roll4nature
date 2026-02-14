@@ -2,14 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect } from 'react';
 
 export default function Navigation() {
-  useEffect(() => {
-    // Force dark theme
-    document.documentElement.classList.add('dark');
-  }, []);
-
   return (
     <nav className="fixed top-0 z-50 w-full bg-gray-900 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

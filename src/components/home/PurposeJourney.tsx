@@ -22,7 +22,7 @@ const petalMappings: PetalMapping[] = [
     journeyDescription:
       'Every pedal stroke builds endurance, resilience, and the living energy that propels us forward.',
     journeyPoints: [
-      '4,434 miles of sustained physical challenge',
+      '4,463 miles of sustained physical challenge',
       '55 miles per day average across 107 days',
       'Training now for peak performance in Feb-June 2026',
       "Celebrating the body's remarkable capacity to show up",
@@ -83,7 +83,7 @@ const petalMappings: PetalMapping[] = [
     journeyDescription:
       'We meet veterans face-to-face, listen deeply, and create sanctuary through authentic engagement.',
     journeyPoints: [
-      'Meeting veterans in 80+ communities along our route',
+      'Meeting veterans in 42+ communities along our route',
       'Listening to stories that matter and have gone unheard',
       'Creating spaces where veterans feel truly seen',
       'Full attunement and care in every interaction',

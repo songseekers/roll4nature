@@ -83,7 +83,7 @@ export default function HeroSection() {
 
             {/* Subheading */}
             <p className="text-xl md:text-2xl text-blue-700 mb-8 font-bold">
-              4,434 Miles of Purpose in Motion
+              4,463 Miles of Purpose in Motion
             </p>
 
             {/* Description */}
@@ -96,12 +96,12 @@ export default function HeroSection() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 bg-white rounded-lg p-6 mb-10 shadow-sm">
               <div>
-                <div className="text-3xl font-bold text-blue-600">4,434</div>
+                <div className="text-3xl font-bold text-blue-600">4,463</div>
                 <div className="text-sm text-gray-600">Miles</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600">80+</div>
-                <div className="text-sm text-gray-600">Cities</div>
+                <div className="text-3xl font-bold text-blue-600">42+</div>
+                <div className="text-sm text-gray-600">Communities</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-blue-600">107</div>
