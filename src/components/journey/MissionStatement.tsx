@@ -1,5 +1,6 @@
 'use client';
 
+import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
 export default function MissionStatement() {
@@ -26,18 +27,13 @@ export default function MissionStatement() {
               Every mile is gratitude. Every community is connection. Every veteran matters.
             </p>
 
-            <a
-              href="https://teamrwb.org/programs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
-            >
+            <Button variant="primary" size="md" href="https://teamrwb.org/programs" target="_blank" rel="noopener noreferrer">
               Learn More About Team RWB
-            </a>
+            </Button>
           </div>
 
           {/* Right: Stats Box */}
-          <div className="bg-gradient-to-br from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] rounded-lg p-8 border-2 border-[#C1592B]">
+          <div className="bg-gradient-to-br from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover rounded-lg p-8 border-2 border-r4v-primary">
             <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
               Team RWB Impact
             </h3>
@@ -46,17 +42,17 @@ export default function MissionStatement() {
               {/* Left: Statistics */}
               <div className="flex-1 space-y-6">
                 <div>
-                  <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">300,000+</div>
+                  <div className="text-4xl font-bold text-r4v-primary dark:text-r4v-primary-hover mb-2">300,000+</div>
                   <p className="text-lg text-gray-700 dark:text-gray-200">Members and supporters</p>
                 </div>
 
                 <div>
-                  <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">173,768</div>
+                  <div className="text-4xl font-bold text-r4v-primary dark:text-r4v-primary-hover mb-2">173,768</div>
                   <p className="text-lg text-gray-700 dark:text-gray-200">Event check-ins in 2025</p>
                 </div>
 
                 <div>
-                  <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">18,490</div>
+                  <div className="text-4xl font-bold text-r4v-primary dark:text-r4v-primary-hover mb-2">18,490</div>
                   <p className="text-lg text-gray-700 dark:text-gray-200">Total events nationwide</p>
                 </div>
               </div>
@@ -73,15 +69,10 @@ export default function MissionStatement() {
               </div>
             </div>
 
-            <div className="mt-6 pt-6 border-t border-[#C1592B]">
-              <a
-                href="https://members.teamrwb.org/registration"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-block text-center bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
-              >
+            <div className="mt-6 pt-6 border-t border-r4v-primary">
+              <Button variant="primary" size="md" href="https://members.teamrwb.org/registration" target="_blank" rel="noopener noreferrer" className="w-full">
                 Join Team RWB Today
-              </a>
+              </Button>
             </div>
           </div>
         </div>

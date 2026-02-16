@@ -4,13 +4,13 @@ import CountdownTimer from '@/components/home/CountdownTimer';
 
 export default function JourneyHero() {
   return (
-    <div className="bg-gradient-to-b from-[#E8C9A1] to-white dark:from-[#8B4513] dark:to-gray-900 pt-28 sm:pt-24 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
+    <div className="bg-gradient-to-b from-r4v-tan to-white dark:from-r4v-secondary dark:to-gray-950 pt-28 sm:pt-24 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
           R4V 2026: Coast to Coast to Canyon
         </h1>
 
-        <p className="text-2xl md:text-3xl text-[#C1592B] dark:text-[#E07B4F] font-bold mb-6">
+        <p className="text-2xl md:text-3xl text-r4v-primary dark:text-r4v-primary-hover font-bold mb-6">
           4,463 Miles of Purpose in Motion
         </p>
 
@@ -27,15 +27,15 @@ export default function JourneyHero() {
         <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm max-w-md mx-auto mb-8">
           <div className="grid grid-cols-3 gap-4">
             <div>
-              <div className="text-2xl font-bold text-[#C1592B] dark:text-[#E07B4F]">4,463</div>
+              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">4,463</div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Miles</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[#C1592B] dark:text-[#E07B4F]">115</div>
+              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">115</div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Days</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[#C1592B] dark:text-[#E07B4F]">42+</div>
+              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">42+</div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Communities</div>
             </div>
           </div>

@@ -45,7 +45,7 @@ export default function Footer() {
                       href="https://gofund.me/fdff623ca"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                      className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
                       R4V GoFundMe
                     </a>
@@ -55,7 +55,7 @@ export default function Footer() {
                       href="/resources/R4V_Story.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                      className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
                       Our Story
                     </a>
@@ -63,7 +63,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="/sponsor"
-                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                      className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
                       Partner with Roll for Veterans
                     </a>
@@ -71,7 +71,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="/team-bravo"
-                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                      className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
                       Join Team Bravo
                     </a>
@@ -88,7 +88,7 @@ export default function Footer() {
                       href="https://www.zeffy.com/en-US/team/roll-for-veterans"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                      className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
                       Donate to Team RWB
                     </a>
@@ -98,7 +98,7 @@ export default function Footer() {
                       href="https://teamrwb.org/who-we-are/our-community"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                      className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
                       Team RWB Official Page
                     </a>
@@ -108,7 +108,7 @@ export default function Footer() {
                       href="https://teamrwb.org/find-your-chapter"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                      className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
                       Find a Chapter
                     </a>
@@ -118,7 +118,7 @@ export default function Footer() {
                       href="https://members.teamrwb.org/registration"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-[#E07B4F] transition"
+                      className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
                       Join Team RWB
                     </a>
@@ -134,14 +134,14 @@ export default function Footer() {
             <div className="flex gap-3 mb-4">
               <button
                 onClick={() => setShowPhonePopup(true)}
-                className="flex items-center justify-center text-gray-300 hover:text-[#E07B4F] transition bg-gray-800 p-3 rounded-lg hover:bg-gray-700 w-12 h-12"
+                className="flex items-center justify-center text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-3 rounded-lg hover:bg-gray-700 w-12 h-12"
                 aria-label="Phone"
               >
                 <Phone size={24} />
               </button>
               <a
                 href="mailto:rollforveterans@gmail.com"
-                className="flex items-center justify-center text-gray-300 hover:text-[#E07B4F] transition bg-gray-800 p-3 rounded-lg hover:bg-gray-700 w-12 h-12"
+                className="flex items-center justify-center text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-3 rounded-lg hover:bg-gray-700 w-12 h-12"
                 aria-label="Email"
               >
                 <Mail size={24} />
@@ -166,7 +166,7 @@ export default function Footer() {
                   </p>
                   <a
                     href="tel:+18282804709"
-                    className="text-3xl font-bold text-[#C1592B] hover:text-[#E07B4F] transition block mb-6"
+                    className="text-3xl font-bold text-r4v-primary hover:text-r4v-primary-hover transition block mb-6"
                   >
                     (828) 280-4709
                   </a>
@@ -188,7 +188,7 @@ export default function Footer() {
                   href="https://instagram.com/roll4veterans"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-[#E07B4F] transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
+                  className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
                   aria-label="Instagram"
                 >
                   <Instagram size={20} />
@@ -198,7 +198,7 @@ export default function Footer() {
                   href="https://facebook.com/roll4veterans"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-[#E07B4F] transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
+                  className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
                   aria-label="Facebook"
                 >
                   <Facebook size={20} />
@@ -208,7 +208,7 @@ export default function Footer() {
                   href="https://tiktok.com/@roll4veterans"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-[#E07B4F] transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
+                  className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
                   aria-label="TikTok"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -220,7 +220,7 @@ export default function Footer() {
                   href="https://youtube.com/@roll4veterans"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-[#E07B4F] transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
+                  className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
                   aria-label="YouTube"
                 >
                   <Youtube size={20} />
@@ -230,7 +230,7 @@ export default function Footer() {
                   href="https://strava.app.link/hW78V3J2u0b"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-[#E07B4F] transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
+                  className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
                   aria-label="Strava"
                 >
                   <Activity size={20} />
@@ -249,12 +249,16 @@ export default function Footer() {
               &copy; {currentYear} Roll for Veterans. Supporting Team Red, White, and Blue veterans organization.
             </p>
             <div className="flex gap-4 mt-3">
-              <Link href="/privacy" className="text-gray-400 text-xs hover:text-[#E07B4F] transition">
+              <Link href="/privacy" className="text-gray-400 text-xs hover:text-r4v-primary-hover transition">
                 Privacy Policy
               </Link>
               <span className="text-gray-600 text-xs">|</span>
-              <Link href="/terms" className="text-gray-400 text-xs hover:text-[#E07B4F] transition">
+              <Link href="/terms" className="text-gray-400 text-xs hover:text-r4v-primary-hover transition">
                 Terms of Service
+              </Link>
+              <span className="text-gray-600 text-xs">|</span>
+              <Link href="/accessibility" className="text-gray-400 text-xs hover:text-r4v-primary-hover transition">
+                Accessibility
               </Link>
             </div>
           </div>

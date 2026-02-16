@@ -1,3 +1,4 @@
+import Button from '@/components/ui/Button';
 import Link from 'next/link';
 import { getAllCities } from '@/lib/data-helpers';
 
@@ -10,7 +11,7 @@ export default function RouteListPage() {
   const cities = getAllCities().sort((a, b) => a.dayNumber - b.dayNumber || a.distanceFromStart - b.distanceFromStart);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 pt-32 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
+    <div className="min-h-screen bg-white dark:bg-gray-950 pt-32 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
@@ -22,18 +23,18 @@ export default function RouteListPage() {
           </p>
           <Link
             href="/#map"
-            className="inline-block mt-4 text-[#E07B4F] hover:text-[#C1592B] transition font-semibold"
+            className="inline-block mt-4 text-r4v-primary-hover hover:text-r4v-primary transition font-semibold"
           >
             &larr; Back to Map
           </Link>
         </div>
 
         {/* Route Table */}
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700">
+        <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700">
           <div className="overflow-x-auto">
             <table className="w-full text-left">
               <thead>
-                <tr className="bg-[#8B4513] text-white">
+                <tr className="bg-r4v-secondary text-white">
                   <th className="px-4 py-3 text-sm font-semibold">#</th>
                   <th className="px-4 py-3 text-sm font-semibold">City</th>
                   <th className="px-4 py-3 text-sm font-semibold">State</th>
@@ -47,7 +48,7 @@ export default function RouteListPage() {
                     key={city.id}
                     className={`border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition ${
                       index === 0 || index === cities.length - 1
-                        ? 'bg-[#C1592B]/10'
+                        ? 'bg-r4v-primary/10'
                         : ''
                     }`}
                   >
@@ -76,12 +77,9 @@ export default function RouteListPage() {
           <p className="text-gray-500 text-sm">
             Dates and distances are estimates and subject to change.
           </p>
-          <Link
-            href="/#map"
-            className="inline-block mt-4 bg-[#C1592B] text-white px-6 py-2 rounded-lg hover:bg-[#E07B4F] transition font-semibold"
-          >
+          <Button variant="primary" size="sm" href="/#map" className="mt-4">
             View on Map
-          </Link>
+          </Button>
         </div>
       </div>
     </div>

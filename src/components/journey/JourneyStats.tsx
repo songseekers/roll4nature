@@ -25,7 +25,7 @@ export default function JourneyStats() {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800 transition-colors">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 transition-colors">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
           By the Numbers
@@ -35,9 +35,9 @@ export default function JourneyStats() {
           {stats.map((stat, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-[#C1592B] hover:shadow-md transition text-center"
+              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-r4v-primary hover:shadow-md transition text-center"
             >
-              <div className="text-4xl font-bold text-[#C1592B] dark:text-[#E07B4F] mb-2">
+              <div className="text-4xl font-bold text-r4v-primary dark:text-r4v-primary-hover mb-2">
                 {stat.value}
               </div>
               <div className="text-lg font-semibold text-gray-900 dark:text-white mb-1">

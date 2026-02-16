@@ -1,6 +1,7 @@
 import JourneyHero from '@/components/journey/JourneyHero';
 import MissionStatement from '@/components/journey/MissionStatement';
 import RouteMapLoader from '@/components/map/RouteMapLoader';
+import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function RollForVeteransPage() {
   return (
-    <div className="bg-white dark:bg-gray-900 transition-colors">
+    <div className="bg-white dark:bg-gray-950 transition-colors">
       {/* Journey Hero */}
       <JourneyHero />
 
@@ -18,7 +19,7 @@ export default function RollForVeteransPage() {
       <MissionStatement />
 
       {/* Interactive Route Map */}
-      <section id="map" className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section id="map" className="bg-gray-50 dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Explore Our Route
@@ -31,7 +32,7 @@ export default function RollForVeteransPage() {
       </section>
 
       {/* Team Bravo Section */}
-      <section className="bg-gradient-to-b from-[#E8C9A1] dark:from-[#8B4513] to-white dark:to-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section className="bg-gradient-to-b from-r4v-tan dark:from-r4v-secondary to-white dark:to-gray-950 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
             <Image
@@ -54,17 +55,14 @@ export default function RollForVeteransPage() {
             Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America in the video below.
           </p>
 
-          <a
-            href="/team-bravo"
-            className="inline-block bg-[#C1592B] text-white px-10 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition text-lg"
-          >
+          <Button variant="primary" size="lg" href="/team-bravo">
             Learn About Team Bravo
-          </a>
+          </Button>
         </div>
       </section>
 
       {/* Main CTA Section */}
-      <section className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Support the Mission?
@@ -75,34 +73,18 @@ export default function RollForVeteransPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://www.zeffy.com/en-US/team/roll-for-veterans"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#E8C9A1] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#d4b78a] transition inline-block"
-            >
+            <Button variant="secondary" size="md" href="https://www.zeffy.com/en-US/team/roll-for-veterans" target="_blank" rel="noopener noreferrer">
               Donate to Team RWB
-            </a>
-            <a
-              href="https://gofund.me/fdff623ca"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#D4A574] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#c49464] transition inline-block"
-            >
+            </Button>
+            <Button variant="tan-dark" size="md" href="https://gofund.me/fdff623ca" target="_blank" rel="noopener noreferrer">
               R4V GoFundMe
-            </a>
-            <a
-              href="/sponsor"
-              className="bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#a84d25] transition inline-block"
-            >
+            </Button>
+            <Button variant="primary" size="md" href="/sponsor">
               Become a Partner
-            </a>
-            <a
-              href="/team-bravo"
-              className="bg-[#8B4513] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#6d360f] transition inline-block"
-            >
+            </Button>
+            <Button variant="dark" size="md" href="/team-bravo">
               Join Team Bravo
-            </a>
+            </Button>
           </div>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import Button from '@/components/ui/Button';
 import { MapLayer } from './RouteMap';
 
 interface MapControlsProps {
@@ -20,8 +21,8 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
   ];
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 mb-4 flex flex-col sm:flex-row gap-3">
-      <p className="text-sm font-semibold text-gray-700 self-center hidden sm:block">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mb-4 flex flex-col sm:flex-row gap-3">
+      <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 self-center hidden sm:block">
         Route Layers:
       </p>
 
@@ -32,8 +33,8 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
             onClick={() => onLayerChange(control.value)}
             className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap ${
               layer === control.value
-                ? 'bg-[#C1592B] text-white shadow-md'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                ? 'bg-r4v-primary text-white shadow-md'
+                : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
             }`}
             title={control.description}
           >
@@ -41,13 +42,9 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
           </button>
         ))}
 
-        <a
-          href="/route-list"
-          className="px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap bg-[#8B4513] text-white hover:bg-[#A0522D] shadow-md"
-          title="View full route schedule"
-        >
+        <Button variant="dark" size="sm" href="/route-list" className="shadow-md whitespace-nowrap">
           Route List
-        </a>
+        </Button>
       </div>
     </div>
   );

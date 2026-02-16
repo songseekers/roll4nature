@@ -1,5 +1,6 @@
 'use client';
 
+import Button from '@/components/ui/Button';
 import { Users, Camera, Share2, Bike, Mail, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { useState, FormEvent } from 'react';
@@ -105,9 +106,9 @@ export default function TeamBravoPage() {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900 pt-24">
+    <div className="bg-white dark:bg-gray-950 pt-24">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
@@ -133,20 +134,15 @@ export default function TeamBravoPage() {
             Team Bravo is our support crew that keeps the Roll for Veterans moving. From drivers to photographers
             to cyclists, we need passionate people like you to help us connect with veterans across 42+ communities.
           </p>
-          <a
-            href="https://youtube.com/@roll4veterans"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-[#C1592B] px-10 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition text-lg whitespace-nowrap"
-          >
+          <Button variant="white" size="lg" href="https://youtube.com/@roll4veterans" target="_blank" rel="noopener noreferrer" className="gap-2 whitespace-nowrap">
             <ExternalLink size={20} />
             Roll4Veterans YouTube Channel
-          </a>
+          </Button>
         </div>
       </div>
 
       {/* Team Bravo Ground Crew Section */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section className="bg-gray-50 dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
             Team Bravo Ground Crew
@@ -157,7 +153,7 @@ export default function TeamBravoPage() {
             <div className="flex flex-col items-center">
               <div
                 onClick={() => setSelectedMember('jt')}
-                className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full"
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full"
               >
                 <div className="relative h-40">
                   <Image
@@ -177,7 +173,7 @@ export default function TeamBravoPage() {
             {/* Placeholder Team Members */}
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center">
-                <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg opacity-75 w-full">
+                <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg opacity-75 w-full">
                   <div className="relative h-40">
                     <Image
                       src="/images/TeamBravo/sil.png"
@@ -209,7 +205,7 @@ export default function TeamBravoPage() {
             <div className="flex flex-col items-center">
               <div
                 onClick={() => setSelectedMember('janelle')}
-                className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full border border-gray-200 dark:border-gray-600"
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full border border-gray-200 dark:border-gray-600"
               >
                 <div className="relative h-40">
                   <Image
@@ -229,7 +225,7 @@ export default function TeamBravoPage() {
             {/* Placeholder Air Support Members */}
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center">
-                <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg opacity-75 w-full border border-gray-200 dark:border-gray-600">
+                <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg opacity-75 w-full border border-gray-200 dark:border-gray-600">
                   <div className="relative h-40">
                     <Image
                       src="/images/TeamBravo/sil.png"
@@ -308,14 +304,10 @@ export default function TeamBravoPage() {
                 </p>
 
                 <div className="flex justify-center">
-                  <a
-                    href="mailto:jt.songseeker@gmail.com"
-                    className="inline-flex items-center gap-2 bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
-                    aria-label="Email JT at jt.songseeker@gmail.com"
-                  >
+                  <Button variant="primary" size="md" href="mailto:jt.songseeker@gmail.com" className="gap-2">
                     <Mail size={20} />
                     Email JT
-                  </a>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -394,20 +386,20 @@ export default function TeamBravoPage() {
             return (
               <div
                 key={role.title}
-                className="bg-white dark:bg-gray-800 border-2 border-[#C1592B] rounded-lg p-8 hover:shadow-lg transition"
+                className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-8 hover:shadow-lg transition"
               >
                 <div className="flex items-center mb-4">
-                  <IconComponent size={40} className="text-[#C1592B] mr-4" />
+                  <IconComponent size={40} className="text-r4v-primary mr-4" />
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{role.title}</h3>
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">{role.description}</p>
 
-                <div className="bg-[#E8C9A1] dark:bg-gray-700 rounded p-4 mb-6">
+                <div className="bg-r4v-tan dark:bg-gray-700 rounded p-4 mb-6">
                   <ul className="space-y-2">
                     {role.requirements.map((req) => (
                       <li key={req} className="flex items-start text-gray-700 dark:text-gray-200">
-                        <span className="text-[#C1592B] font-bold mr-2">&#10003;</span>
+                        <span className="text-r4v-primary font-bold mr-2">&#10003;</span>
                         {req}
                       </li>
                     ))}
@@ -420,7 +412,7 @@ export default function TeamBravoPage() {
       </section>
 
       {/* Application Section */}
-      <section className="bg-gradient-to-b from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] py-20 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section className="bg-gradient-to-b from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover py-20 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
             Ready to Join?
@@ -439,7 +431,7 @@ export default function TeamBravoPage() {
                     name="fullName"
                     required
                     placeholder="Your name"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
                 </div>
 
@@ -453,7 +445,7 @@ export default function TeamBravoPage() {
                     name="email"
                     required
                     placeholder="your@email.com"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
                 </div>
 
@@ -470,7 +462,7 @@ export default function TeamBravoPage() {
                     onBlur={handlePhoneInput}
                     onKeyDown={handlePhoneKeyDown}
                     title="Enter 10 digits - will be auto-formatted"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
                 </div>
 
@@ -479,7 +471,7 @@ export default function TeamBravoPage() {
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                     Role Interest *
                   </label>
-                  <select name="role" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent">
+                  <select name="role" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent">
                     <option value="">Select a role</option>
                     <option value="driver">Support Driver</option>
                     <option value="camera">Camera Operator</option>
@@ -494,7 +486,7 @@ export default function TeamBravoPage() {
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                     Availability *
                   </label>
-                  <select name="availability" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent">
+                  <select name="availability" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent">
                     <option value="">Select availability</option>
                     <option value="full">Full journey (Feb 27 - Jun 21)</option>
                     <option value="weeks">Several weeks</option>
@@ -512,7 +504,7 @@ export default function TeamBravoPage() {
                     name="comments"
                     placeholder="Any additional information you'd like to share..."
                     rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
                 </div>
 
@@ -563,7 +555,7 @@ export default function TeamBravoPage() {
                   required
                   placeholder="Tell us why you're passionate about this mission..."
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                 />
               </div>
 
@@ -575,7 +567,7 @@ export default function TeamBravoPage() {
                       type="checkbox"
                       name="sms_consent"
                       required
-                      className="mt-1 w-4 h-4 text-[#C1592B] border-gray-300 rounded focus:ring-[#C1592B] cursor-pointer"
+                      className="mt-1 w-4 h-4 text-r4v-primary border-gray-300 rounded focus:ring-r4v-primary cursor-pointer"
                     />
                     <span className="text-sm text-gray-700 dark:text-gray-200">
                       I consent to receive a follow-up SMS message from Roll for Veterans at the number provided to discuss potential involvement. Message and data rates may apply.
@@ -585,13 +577,16 @@ export default function TeamBravoPage() {
               </div>
 
               {/* Submit */}
-              <button
+              <Button
                 type="submit"
+                variant="primary"
+                size="md"
                 disabled={isSubmitting}
-                className="w-full bg-[#C1592B] hover:bg-[#E07B4F] text-white font-bold py-3 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+                loading={isSubmitting}
+                className="w-full"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Application'}
-              </button>
+              </Button>
 
               {/* Success Message */}
               {submitStatus === 'success' && (
@@ -656,7 +651,7 @@ export default function TeamBravoPage() {
               a: 'Team RWB empowers veterans through physical and social engagement. Find out more about Team RWB at the links at the bottom of the page.',
             },
           ].map((faq, i) => (
-            <div key={i} className="bg-[#E8C9A1] dark:bg-gray-800 rounded-lg p-6 border border-[#C1592B]">
+            <div key={i} className="bg-r4v-tan dark:bg-gray-800 rounded-lg p-6 border border-r4v-primary">
               <h3 className="font-bold text-gray-900 dark:text-white mb-2 text-lg">{faq.q}</h3>
               <p className="text-gray-700 dark:text-gray-300">{faq.a}</p>
             </div>
@@ -665,7 +660,7 @@ export default function TeamBravoPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             Questions? Let&apos;s Talk!

@@ -12,6 +12,17 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* R4V Brand Colors */
+  --color-r4v-primary: #C1592B;
+  --color-r4v-primary-hover: #E07B4F;
+  --color-r4v-secondary: #8B4513;
+  --color-r4v-secondary-hover: #A0522D;
+  --color-r4v-tan: #E8C9A1;
+  --color-r4v-tan-hover: #d4b78a;
+  --color-r4v-tan-dark: #D4A574;
+  --color-r4v-tan-dark-hover: #c49464;
+  --color-r4v-cream: #FDF6EC;
 }
 
 .dark {

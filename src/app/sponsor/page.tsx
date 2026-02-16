@@ -1,5 +1,6 @@
 'use client';
 
+import Button from '@/components/ui/Button';
 import { Building2, DollarSign, Fuel, UtensilsCrossed, ExternalLink, MapPin, Phone as PhoneIcon, Globe } from 'lucide-react';
 import Image from 'next/image';
 import { useState, FormEvent } from 'react';
@@ -72,9 +73,9 @@ export default function SponsorPage() {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900 pt-24">
+    <div className="bg-white dark:bg-gray-950 pt-24">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
@@ -94,7 +95,7 @@ export default function SponsorPage() {
 
       {/* Mission Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white dark:bg-gray-900 transition-colors">
-        <div className="bg-gradient-to-br from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] rounded-lg p-8 border-2 border-[#C1592B] mb-12">
+        <div className="bg-gradient-to-br from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover rounded-lg p-8 border-2 border-r4v-primary mb-12">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
             Support the Mission
           </h2>
@@ -124,33 +125,33 @@ export default function SponsorPage() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          <div className="bg-white dark:bg-gray-800 border-2 border-[#C1592B] rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-6">
             <div className="flex items-center mb-3">
-              <Fuel size={32} className="text-[#C1592B] mr-3" />
+              <Fuel size={32} className="text-r4v-primary mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Fuel Support</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Help keep our support vehicles moving across 4,463 miles of American roads.</p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 border-2 border-[#C1592B] rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-6">
             <div className="flex items-center mb-3">
-              <UtensilsCrossed size={32} className="text-[#C1592B] mr-3" />
+              <UtensilsCrossed size={32} className="text-r4v-primary mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Food & Supplies</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Support our team with meals and essential supplies throughout the journey.</p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 border-2 border-[#C1592B] rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-6">
             <div className="flex items-center mb-3">
-              <Building2 size={32} className="text-[#C1592B] mr-3" />
+              <Building2 size={32} className="text-r4v-primary mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Lodging & Equipment</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Assist with accommodations, bike maintenance, and gear for the ride.</p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 border-2 border-[#C1592B] rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-6">
             <div className="flex items-center mb-3">
-              <DollarSign size={32} className="text-[#C1592B] mr-3" />
+              <DollarSign size={32} className="text-r4v-primary mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">General Operations</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Flexible support for unexpected costs and operational expenses along the way.</p>
@@ -159,7 +160,7 @@ export default function SponsorPage() {
       </section>
 
       {/* Sponsors Display Section */}
-      <section id="sponsors" className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors scroll-mt-24">
+      <section id="sponsors" className="bg-gray-50 dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors scroll-mt-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
             Thank You to Our Partners
@@ -169,7 +170,7 @@ export default function SponsorPage() {
             {/* 10BitWorks Sponsor */}
             <div
               onClick={() => setSelectedSponsor('10bitworks')}
-              className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
+              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
             >
               <div className="relative h-32 mb-4">
                 <Image
@@ -226,7 +227,7 @@ export default function SponsorPage() {
 
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <MapPin size={20} className="text-[#C1592B] flex-shrink-0 mt-1" />
+                  <MapPin size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Location:</p>
                     <p className="text-gray-700 dark:text-gray-300">San Antonio, Texas</p>
@@ -235,22 +236,22 @@ export default function SponsorPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <PhoneIcon size={20} className="text-[#C1592B] flex-shrink-0 mt-1" />
+                  <PhoneIcon size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Phone:</p>
-                    <a href="tel:2105470221" className="text-[#C1592B] hover:underline">(210) 547-0221</a>
+                    <a href="tel:2105470221" className="text-r4v-primary hover:underline">(210) 547-0221</a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Globe size={20} className="text-[#C1592B] flex-shrink-0 mt-1" />
+                  <Globe size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Website:</p>
                     <a
                       href="https://10bitworks.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#C1592B] hover:underline"
+                      className="text-r4v-primary hover:underline"
                     >
                       10bitworks.com
                     </a>
@@ -265,15 +266,10 @@ export default function SponsorPage() {
               </div>
 
               <div className="flex justify-center">
-                <a
-                  href="https://10bitworks.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#C1592B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
-                >
+                <Button variant="primary" size="md" href="https://10bitworks.com" target="_blank" rel="noopener noreferrer" className="gap-2">
                   <ExternalLink size={20} />
                   Visit 10BitWorks
-                </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -281,7 +277,7 @@ export default function SponsorPage() {
       )}
 
       {/* Contact Form Section */}
-      <section className="bg-gradient-to-b from-[#E8C9A1] to-[#D4A574] dark:from-[#8B4513] dark:to-[#A0522D] py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
             Let's Connect
@@ -302,7 +298,7 @@ export default function SponsorPage() {
                     name="fullName"
                     required
                     placeholder="Your name or company name"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
                 </div>
 
@@ -315,7 +311,7 @@ export default function SponsorPage() {
                     name="email"
                     required
                     placeholder="your@email.com"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
                 </div>
 
@@ -331,7 +327,7 @@ export default function SponsorPage() {
                     onBlur={handlePhoneInput}
                     onKeyDown={handlePhoneKeyDown}
                     title="Enter 10 digits - will be auto-formatted"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
                 </div>
 
@@ -342,7 +338,7 @@ export default function SponsorPage() {
                   <select
                     name="bestTime"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   >
                     <option value="">Select a time</option>
                     <option value="morning">Morning (8am - 12pm)</option>
@@ -359,7 +355,7 @@ export default function SponsorPage() {
                   <select
                     name="sponsorshipInterest"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   >
                     <option value="">Select partnership type</option>
                     <option value="fuel">Fuel Support</option>
@@ -380,7 +376,7 @@ export default function SponsorPage() {
                   name="message"
                   placeholder="Tell us more about your partnership interests or questions..."
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-[#C1592B] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                 />
               </div>
 
@@ -392,7 +388,7 @@ export default function SponsorPage() {
                       type="checkbox"
                       name="sms_consent"
                       required
-                      className="mt-1 w-4 h-4 text-[#C1592B] border-gray-300 rounded focus:ring-[#C1592B] cursor-pointer"
+                      className="mt-1 w-4 h-4 text-r4v-primary border-gray-300 rounded focus:ring-r4v-primary cursor-pointer"
                     />
                     <span className="text-sm text-gray-700 dark:text-gray-200">
                       I consent to receive a follow-up SMS message from Roll for Veterans at the number provided to discuss potential involvement. Message and data rates may apply.
@@ -401,13 +397,16 @@ export default function SponsorPage() {
                 </div>
               </div>
 
-              <button
+              <Button
                 type="submit"
+                variant="primary"
+                size="md"
                 disabled={isSubmitting}
-                className="w-full bg-[#C1592B] hover:bg-[#E07B4F] text-white font-bold py-3 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+                loading={isSubmitting}
+                className="w-full"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}
-              </button>
+              </Button>
 
               {submitStatus === 'success' && (
                 <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-500 rounded-lg p-4 text-center">
@@ -442,7 +441,7 @@ export default function SponsorPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             Questions About Partnering?

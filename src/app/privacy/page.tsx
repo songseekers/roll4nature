@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import Button from '@/components/ui/Button';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Roll for Veterans 2026',
@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="bg-white dark:bg-gray-900 pt-24 pb-16 transition-colors">
+    <div className="bg-white dark:bg-gray-950 pt-24 pb-16 transition-colors">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
           <p className="text-gray-200">Last Updated: February 14, 2026</p>
@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-10">
           {/* 1. Introduction */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-[#C1592B] pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
               1. Introduction
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               If you have questions about this policy, please contact us at{' '}
-              <a href="mailto:rollforveterans@gmail.com" className="text-[#C1592B] hover:underline font-semibold">
+              <a href="mailto:rollforveterans@gmail.com" className="text-r4v-primary hover:underline font-semibold">
                 rollforveterans@gmail.com
               </a>.
             </p>
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
 
           {/* 2. Information We Collect */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-[#C1592B] pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
               2. Information We Collect
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -55,7 +55,7 @@ export default function PrivacyPolicyPage() {
 
           {/* 3. How We Use Your Information */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-[#C1592B] pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
               3. How We Use Your Information
             </h2>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
@@ -68,7 +68,7 @@ export default function PrivacyPolicyPage() {
 
           {/* 4. SMS Communications */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-[#C1592B] pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
               4. SMS Communications
             </h2>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
               <li>Message and data rates may apply</li>
               <li>
                 For help, reply <strong>HELP</strong> or contact{' '}
-                <a href="mailto:rollforveterans@gmail.com" className="text-[#C1592B] hover:underline font-semibold">
+                <a href="mailto:rollforveterans@gmail.com" className="text-r4v-primary hover:underline font-semibold">
                   rollforveterans@gmail.com
                 </a>
               </li>
@@ -86,7 +86,7 @@ export default function PrivacyPolicyPage() {
 
           {/* 5. Data Storage and Security */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-[#C1592B] pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
               5. Data Storage and Security
             </h2>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
@@ -98,13 +98,13 @@ export default function PrivacyPolicyPage() {
 
           {/* 6. Your Rights */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-[#C1592B] pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
               6. Your Rights
             </h2>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
               <li>
                 You may request deletion of your data at any time by emailing{' '}
-                <a href="mailto:rollforveterans@gmail.com" className="text-[#C1592B] hover:underline font-semibold">
+                <a href="mailto:rollforveterans@gmail.com" className="text-r4v-primary hover:underline font-semibold">
                   rollforveterans@gmail.com
                 </a>
               </li>
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
 
           {/* 7. Changes to This Policy */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-[#C1592B] pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
               7. Changes to This Policy
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -124,7 +124,7 @@ export default function PrivacyPolicyPage() {
 
           {/* 8. Contact Us */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-[#C1592B] pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
               8. Contact Us
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-2">
@@ -133,13 +133,13 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
               <li>
                 Email:{' '}
-                <a href="mailto:rollforveterans@gmail.com" className="text-[#C1592B] hover:underline font-semibold">
+                <a href="mailto:rollforveterans@gmail.com" className="text-r4v-primary hover:underline font-semibold">
                   rollforveterans@gmail.com
                 </a>
               </li>
               <li>
                 Website:{' '}
-                <a href="https://r4v.songseekers.org" className="text-[#C1592B] hover:underline font-semibold">
+                <a href="https://r4v.songseekers.org" className="text-r4v-primary hover:underline font-semibold">
                   r4v.songseekers.org
                 </a>
               </li>
@@ -149,12 +149,9 @@ export default function PrivacyPolicyPage() {
 
         {/* Back Link */}
         <div className="mt-12 text-center">
-          <Link
-            href="/"
-            className="inline-block bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition"
-          >
+          <Button variant="primary" size="md" href="/">
             Back to Home
-          </Link>
+          </Button>
         </div>
       </div>
     </div>

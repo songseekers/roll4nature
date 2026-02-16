@@ -1,5 +1,6 @@
 'use client';
 
+import Button from '@/components/ui/Button';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -23,35 +24,39 @@ export default function Navigation() {
 
           {/* Navigation Links - Always visible */}
           <div className="flex flex-row justify-center md:justify-end items-center space-x-2 md:space-x-4">
-            <Link href="/" className="text-gray-300 hover:text-[#E07B4F] transition text-sm md:text-base">
+            <Link href="/" className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base">
               Home
             </Link>
             <a
               href="/resources/R4V_Story.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-[#E07B4F] transition text-sm md:text-base whitespace-nowrap"
+              className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
             >
               Our Story
             </a>
-            <a
+            <Button
+              variant="primary"
+              size="sm"
               href="https://www.zeffy.com/en-US/team/roll-for-veterans"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#C1592B] text-white px-2 md:px-3 py-2 rounded-lg hover:bg-[#E07B4F] transition font-semibold text-xs md:text-sm text-center leading-tight"
+              className="px-2 md:px-3 py-2 text-xs md:text-sm font-semibold leading-tight"
             >
               <span className="hidden md:inline">Donate to<br />RWB</span>
               <span className="md:hidden">Donate to RWB</span>
-            </a>
-            <a
+            </Button>
+            <Button
+              variant="primary"
+              size="sm"
               href="https://gofund.me/fdff623ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#C1592B] text-white px-2 md:px-3 py-2 rounded-lg hover:bg-[#E07B4F] transition font-semibold text-xs md:text-sm text-center leading-tight"
+              className="px-2 md:px-3 py-2 text-xs md:text-sm font-semibold leading-tight"
             >
               <span className="hidden md:inline">R4V<br />GoFundMe</span>
               <span className="md:hidden">R4V GoFundMe</span>
-            </a>
+            </Button>
           </div>
         </div>
       </div>

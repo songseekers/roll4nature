@@ -284,7 +284,7 @@ export default function RouteMap() {
       </div>
 
       {/* Map Legend */}
-      <div className="mt-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3 transition-colors max-w-3xl mx-auto">
+      <div className="mt-4 bg-gray-50 dark:bg-gray-900 rounded-lg p-3 transition-colors max-w-3xl mx-auto">
         <h3 className="font-bold text-gray-900 dark:text-white mb-3">Map Legend</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
           <div className="flex items-center space-x-3">

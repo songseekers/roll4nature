@@ -51,8 +51,8 @@ export default function CountdownTimer() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-md mx-auto">
         {/* Days */}
-        <div className="bg-[#E8C9A1] dark:bg-[#8B4513] rounded-lg p-4 border-2 border-[#C1592B]">
-          <div className="text-4xl md:text-5xl font-bold text-[#C1592B] dark:text-[#E07B4F] font-mono">
+        <div className="bg-r4v-tan dark:bg-r4v-secondary rounded-lg p-4 border-2 border-r4v-primary">
+          <div className="text-4xl md:text-5xl font-bold text-r4v-primary dark:text-r4v-primary-hover font-mono">
             {countdown ? String(countdown.days).padStart(2, '0') : '--'}
           </div>
           <div className="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-semibold mt-2 uppercase tracking-wide">
@@ -61,8 +61,8 @@ export default function CountdownTimer() {
         </div>
 
         {/* Hours */}
-        <div className="bg-[#E8C9A1] dark:bg-[#8B4513] rounded-lg p-4 border-2 border-[#C1592B]">
-          <div className="text-4xl md:text-5xl font-bold text-[#C1592B] dark:text-[#E07B4F] font-mono">
+        <div className="bg-r4v-tan dark:bg-r4v-secondary rounded-lg p-4 border-2 border-r4v-primary">
+          <div className="text-4xl md:text-5xl font-bold text-r4v-primary dark:text-r4v-primary-hover font-mono">
             {countdown ? String(countdown.hours).padStart(2, '0') : '--'}
           </div>
           <div className="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-semibold mt-2 uppercase tracking-wide">
@@ -71,8 +71,8 @@ export default function CountdownTimer() {
         </div>
 
         {/* Minutes */}
-        <div className="bg-[#E8C9A1] dark:bg-[#8B4513] rounded-lg p-4 border-2 border-[#C1592B]">
-          <div className="text-4xl md:text-5xl font-bold text-[#C1592B] dark:text-[#E07B4F] font-mono">
+        <div className="bg-r4v-tan dark:bg-r4v-secondary rounded-lg p-4 border-2 border-r4v-primary">
+          <div className="text-4xl md:text-5xl font-bold text-r4v-primary dark:text-r4v-primary-hover font-mono">
             {countdown ? String(countdown.minutes).padStart(2, '0') : '--'}
           </div>
           <div className="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-semibold mt-2 uppercase tracking-wide">
@@ -81,8 +81,8 @@ export default function CountdownTimer() {
         </div>
 
         {/* Seconds */}
-        <div className="bg-[#E8C9A1] dark:bg-[#8B4513] rounded-lg p-4 border-2 border-[#C1592B]">
-          <div className="text-4xl md:text-5xl font-bold text-[#C1592B] dark:text-[#E07B4F] font-mono">
+        <div className="bg-r4v-tan dark:bg-r4v-secondary rounded-lg p-4 border-2 border-r4v-primary">
+          <div className="text-4xl md:text-5xl font-bold text-r4v-primary dark:text-r4v-primary-hover font-mono">
             {countdown ? String(countdown.seconds).padStart(2, '0') : '--'}
           </div>
           <div className="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-semibold mt-2 uppercase tracking-wide">
