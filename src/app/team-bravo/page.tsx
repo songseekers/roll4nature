@@ -111,18 +111,25 @@ export default function TeamBravoPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
+              src="/images/TeamBravoPatch.png"
+              alt="Team Bravo Patch"
+              width={500}
+              height={250}
+              className="mx-auto object-contain dark:hidden"
+            />
+            <Image
               src="/images/TeamBravoFlag.png"
               alt="Team Bravo Flag"
               width={500}
               height={250}
-              className="mx-auto object-contain"
+              className="mx-auto object-contain hidden dark:block"
             />
           </div>
           <h1 className="text-5xl font-bold mb-6">Join Team Bravo</h1>
-          <p className="text-xl text-[#E8C9A1] mb-8">
+          <p className="text-xl text-white mb-8">
             Be part of our support crew and make a difference in the lives of America&apos;s veterans
           </p>
-          <p className="text-[#D4A574] text-lg leading-relaxed mb-8">
+          <p className="text-gray-200 text-lg leading-relaxed mb-8">
             Team Bravo is our support crew that keeps the Roll for Veterans moving. From drivers to photographers
             to cyclists, we need passionate people like you to help us connect with veterans across 42+ communities.
           </p>
@@ -664,7 +671,7 @@ export default function TeamBravoPage() {
             Questions? Let&apos;s Talk!
           </h2>
 
-          <p className="text-xl text-[#E8C9A1] mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-white mb-10 max-w-2xl mx-auto leading-relaxed">
             Email or call us to talk more about Team Bravo opportunities using the links under Connect With Us below. We look forward to hearing from you!
           </p>
         </div>

@@ -86,7 +86,7 @@ export default function SponsorPage() {
             />
           </div>
           <h1 className="text-5xl font-bold mb-6">Become a Partner</h1>
-          <p className="text-xl text-[#E8C9A1] mb-8">
+          <p className="text-xl text-white mb-8">
             Help us roll across America in support of our nation's veterans
           </p>
         </div>
@@ -448,7 +448,7 @@ export default function SponsorPage() {
             Questions About Partnering?
           </h2>
 
-          <p className="text-xl text-[#E8C9A1]">
+          <p className="text-xl text-white">
             Reach out any time to discuss how your support can make a difference by using the Connect With Us buttons below. We look forward to hearing from you!
           </p>
         </div>

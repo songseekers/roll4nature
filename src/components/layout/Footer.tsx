@@ -248,6 +248,15 @@ export default function Footer() {
             <p className="text-gray-300 text-sm text-center">
               &copy; {currentYear} Roll for Veterans. Supporting Team Red, White, and Blue veterans organization.
             </p>
+            <div className="flex gap-4 mt-3">
+              <Link href="/privacy" className="text-gray-400 text-xs hover:text-[#E07B4F] transition">
+                Privacy Policy
+              </Link>
+              <span className="text-gray-600 text-xs">|</span>
+              <Link href="/terms" className="text-gray-400 text-xs hover:text-[#E07B4F] transition">
+                Terms of Service
+              </Link>
+            </div>
           </div>
 
           {/* RWB Mission with Image */}
@@ -304,7 +313,7 @@ export default function Footer() {
               >
                 <div className="flex-shrink-0">
                   <Image
-                    src="/images/anth_logo.png"
+                    src="/images/anth_logo1.png"
                     alt="Anthropic logo"
                     width={104}
                     height={104}

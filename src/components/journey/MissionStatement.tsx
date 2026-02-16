@@ -13,15 +13,15 @@ export default function MissionStatement() {
               Why We Roll
             </h2>
 
-            <p className="text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+            <p className="text-base text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
               Roll for Veterans is riding coast-to-coast in 2026 to raise awareness of and support for Team Red, White & Blue (Team RWB). Founded in 2010, Team RWB has become a nationwide community empowering veterans through physical activity, meaningful connection, and shared purpose.
             </p>
 
-            <p className="text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+            <p className="text-base text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
               As we pass through communities across the country, this ride exists to amplify Team RWB's impact, strengthen local engagement, and remind veterans that they are not alone— there is a team ready for them to join.
             </p>
 
-            <p className="text-base text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+            <p className="text-base text-gray-700 dark:text-gray-400 mb-8 leading-relaxed">
               <span className="font-semibold text-gray-900 dark:text-white">Not broken. Still moving.</span><br />
               Every mile is gratitude. Every community is connection. Every veteran matters.
             </p>

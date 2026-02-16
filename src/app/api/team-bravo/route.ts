@@ -1,10 +1,36 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { z } from 'zod';
 import fs from 'fs';
 import path from 'path';
+import { checkRateLimit, checkPayloadSize, sanitizeObject } from '@/lib/api-utils';
+
+// ─── Zod Validation Schema ─────────────────────────────────────
+
+const teamBravoSchema = z.object({
+  fullName: z.string().min(2, 'Name must be at least 2 characters').max(100, 'Name must be under 100 characters'),
+  email: z.string().email('Please provide a valid email address'),
+  phone: z.string().min(10, 'Phone number must be at least 10 digits').max(20, 'Phone number is too long'),
+  role: z.enum(['driver', 'camera', 'social', 'cyclist', 'other'], {
+    message: 'Please select a valid role',
+  }),
+  availability: z.enum(['full', 'weeks', 'days', 'flexible'], {
+    message: 'Please select a valid availability option',
+  }),
+  comments: z.string().max(2000, 'Comments must be under 2000 characters').optional().default(''),
+  veteranStatus: z.enum(['yes', 'military-family', 'no']).optional(),
+  message: z.string().min(10, 'Please tell us why you want to join (at least 10 characters)').max(2000, 'Message must be under 2000 characters'),
+});
+
+type TeamBravoInput = z.infer<typeof teamBravoSchema>;
+
+interface ApplicationData extends TeamBravoInput {
+  submittedAt: string;
+  id: string;
+}
 
 // Twilio integration for SMS notifications
-const sendSMS = async (applicationData: any) => {
+const sendSMS = async (applicationData: ApplicationData) => {
   const accountSid = process.env.TWILIO_ACCOUNT_SID;
   const authToken = process.env.TWILIO_AUTH_TOKEN;
   const twilioPhone = process.env.TWILIO_PHONE_NUMBER;
@@ -50,7 +76,7 @@ const sendSMS = async (applicationData: any) => {
 };
 
 // Function to send email via Resend
-const sendEmail = async (applicationData: any) => {
+const sendEmail = async (applicationData: ApplicationData) => {
   const apiKey = process.env.RESEND_API_KEY;
   const recipientEmail = process.env.RECIPIENT_EMAIL;
 
@@ -132,20 +158,49 @@ const sendEmail = async (applicationData: any) => {
 
 export async function POST(request: NextRequest) {
   try {
+    // Check payload size (max 10kb)
+    if (!checkPayloadSize(request)) {
+      return NextResponse.json(
+        { error: 'Request payload too large', fields: {} },
+        { status: 413 }
+      );
+    }
+
+    // Rate limiting
+    const { allowed } = checkRateLimit(request);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: 'Too many submissions. Please try again later.' },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
 
-    // Create application record with timestamp
-    const application = {
+    // Sanitize input (trim whitespace, strip HTML tags)
+    const sanitizedBody = sanitizeObject(body);
+
+    // Validate with Zod schema
+    const result = teamBravoSchema.safeParse(sanitizedBody);
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      for (const issue of result.error.issues) {
+        const fieldName = issue.path[0]?.toString() || 'unknown';
+        fieldErrors[fieldName] = issue.message;
+      }
+      return NextResponse.json(
+        { error: 'Validation failed', fields: fieldErrors },
+        { status: 400 }
+      );
+    }
+
+    const validated = result.data;
+
+    // Create application record
+    const application: ApplicationData = {
+      ...validated,
       id: Date.now().toString(),
       submittedAt: new Date().toISOString(),
-      fullName: body.fullName,
-      email: body.email,
-      phone: body.phone,
-      role: body.role,
-      availability: body.availability,
-      comments: body.comments,
-      veteranStatus: body.veteranStatus,
-      message: body.message,
     };
 
     // Save to JSON file (local development only - optional on Vercel)
@@ -157,7 +212,7 @@ export async function POST(request: NextRequest) {
         fs.mkdirSync(dataDir, { recursive: true });
       }
 
-      let applications: any[] = [];
+      let applications: ApplicationData[] = [];
       if (fs.existsSync(dbPath)) {
         try {
           const fileContent = fs.readFileSync(dbPath, 'utf-8');

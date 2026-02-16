@@ -1,6 +1,6 @@
 import JourneyHero from '@/components/journey/JourneyHero';
 import MissionStatement from '@/components/journey/MissionStatement';
-import RouteMap from '@/components/map/RouteMap';
+import RouteMapLoader from '@/components/map/RouteMapLoader';
 import Image from 'next/image';
 
 export const metadata = {
@@ -26,7 +26,7 @@ export default function RollForVeteransPage() {
           <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
             Click on any city to see arrival dates and Team RWB chapter information.
           </p>
-          <RouteMap />
+          <RouteMapLoader />
         </div>
       </section>
 
@@ -35,11 +35,18 @@ export default function RollForVeteransPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
             <Image
+              src="/images/TeamBravoPatch.png"
+              alt="Team Bravo Patch"
+              width={400}
+              height={200}
+              className="mx-auto object-contain dark:hidden"
+            />
+            <Image
               src="/images/TeamBravoFlag.png"
               alt="Team Bravo Flag"
               width={400}
               height={200}
-              className="mx-auto object-contain"
+              className="mx-auto object-contain hidden dark:block"
             />
           </div>
 
@@ -63,7 +70,7 @@ export default function RollForVeteransPage() {
             Ready to Support the Mission?
           </h2>
 
-          <p className="text-xl text-[#E8C9A1] mb-10 leading-relaxed">
+          <p className="text-xl text-white mb-10 leading-relaxed">
             Whether you want to donate, volunteer, or join us in your city—your support matters.
           </p>
 
@@ -72,7 +79,7 @@ export default function RollForVeteransPage() {
               href="https://www.zeffy.com/en-US/team/roll-for-veterans"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-[#C1592B] px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
+              className="bg-[#E8C9A1] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#d4b78a] transition inline-block"
             >
               Donate to Team RWB
             </a>
@@ -80,19 +87,19 @@ export default function RollForVeteransPage() {
               href="https://gofund.me/fdff623ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#D4A574] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
+              className="bg-[#D4A574] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#c49464] transition inline-block"
             >
               R4V GoFundMe
             </a>
             <a
               href="/sponsor"
-              className="bg-[#E07B4F] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#C1592B] transition inline-block"
+              className="bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#a84d25] transition inline-block"
             >
               Become a Partner
             </a>
             <a
               href="/team-bravo"
-              className="bg-[#D4A574] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#E8C9A1] transition inline-block"
+              className="bg-[#8B4513] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#6d360f] transition inline-block"
             >
               Join Team Bravo
             </a>

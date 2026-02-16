@@ -1,21 +1,34 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { z } from 'zod';
 import fs from 'fs';
 import path from 'path';
+import { checkRateLimit, checkPayloadSize, sanitizeObject } from '@/lib/api-utils';
 
-interface SponsorData {
-  fullName: string;
-  email: string;
-  phone: string;
-  bestTime: string;
-  sponsorshipInterest: string;
-  message?: string;
+// ─── Zod Validation Schema ─────────────────────────────────────
+
+const sponsorSchema = z.object({
+  fullName: z.string().min(2, 'Name must be at least 2 characters').max(100, 'Name must be under 100 characters'),
+  email: z.string().email('Please provide a valid email address'),
+  phone: z.string().min(10, 'Phone number must be at least 10 digits').max(20, 'Phone number is too long'),
+  bestTime: z.enum(['morning', 'afternoon', 'evening', 'anytime'], {
+    message: 'Please select a valid contact time',
+  }),
+  sponsorshipInterest: z.enum(['fuel', 'food', 'lodging', 'financial', 'in-kind', 'other'], {
+    message: 'Please select a valid partnership type',
+  }),
+  message: z.string().max(2000, 'Message must be under 2000 characters').optional().default(''),
+});
+
+type SponsorInput = z.infer<typeof sponsorSchema>;
+
+interface SponsorData extends SponsorInput {
   submittedAt: string;
   id: string;
 }
 
 // Function to send SMS via Twilio
-const sendSMS = async (sponsorData: any) => {
+const sendSMS = async (sponsorData: SponsorData) => {
   const accountSid = process.env.TWILIO_ACCOUNT_SID;
   const authToken = process.env.TWILIO_AUTH_TOKEN;
   const fromPhone = process.env.TWILIO_PHONE_NUMBER;
@@ -141,17 +154,48 @@ const sendEmail = async (sponsorData: SponsorData) => {
 
 export async function POST(request: NextRequest) {
   try {
+    // Check payload size (max 10kb)
+    if (!checkPayloadSize(request)) {
+      return NextResponse.json(
+        { error: 'Request payload too large', fields: {} },
+        { status: 413 }
+      );
+    }
+
+    // Rate limiting
+    const { allowed } = checkRateLimit(request);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: 'Too many submissions. Please try again later.' },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
+
+    // Sanitize input (trim whitespace, strip HTML tags)
+    const sanitizedBody = sanitizeObject(body);
+
+    // Validate with Zod schema
+    const result = sponsorSchema.safeParse(sanitizedBody);
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      for (const issue of result.error.issues) {
+        const fieldName = issue.path[0]?.toString() || 'unknown';
+        fieldErrors[fieldName] = issue.message;
+      }
+      return NextResponse.json(
+        { error: 'Validation failed', fields: fieldErrors },
+        { status: 400 }
+      );
+    }
+
+    const validated = result.data;
 
     // Create submission record
     const submission: SponsorData = {
+      ...validated,
       id: Date.now().toString(),
-      fullName: body.fullName,
-      email: body.email,
-      phone: body.phone,
-      bestTime: body.bestTime,
-      sponsorshipInterest: body.sponsorshipInterest,
-      message: body.message || '',
       submittedAt: new Date().toISOString(),
     };
 

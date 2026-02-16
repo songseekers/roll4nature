@@ -10,14 +10,14 @@ export default function RouteListPage() {
   const cities = getAllCities().sort((a, b) => a.dayNumber - b.dayNumber || a.distanceFromStart - b.distanceFromStart);
 
   return (
-    <div className="min-h-screen bg-gray-900 pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white dark:bg-gray-900 pt-32 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">
             Route Schedule
           </h1>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
             Key West, FL to Flagstaff, AZ — 4,463 miles across 42+ communities
           </p>
           <Link
@@ -29,7 +29,7 @@ export default function RouteListPage() {
         </div>
 
         {/* Route Table */}
-        <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700">
           <div className="overflow-x-auto">
             <table className="w-full text-left">
               <thead>
@@ -45,23 +45,23 @@ export default function RouteListPage() {
                 {cities.map((city, index) => (
                   <tr
                     key={city.id}
-                    className={`border-b border-gray-700 hover:bg-gray-700/50 transition ${
+                    className={`border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition ${
                       index === 0 || index === cities.length - 1
                         ? 'bg-[#C1592B]/10'
                         : ''
                     }`}
                   >
-                    <td className="px-4 py-3 text-gray-400 text-sm">{index + 1}</td>
-                    <td className="px-4 py-3 text-white font-medium">{city.name}</td>
-                    <td className="px-4 py-3 text-gray-300">{city.state}</td>
-                    <td className="px-4 py-3 text-gray-300 whitespace-nowrap">
+                    <td className="px-4 py-3 text-gray-500 dark:text-gray-400 text-sm">{index + 1}</td>
+                    <td className="px-4 py-3 text-gray-900 dark:text-white font-medium">{city.name}</td>
+                    <td className="px-4 py-3 text-gray-700 dark:text-gray-300">{city.state}</td>
+                    <td className="px-4 py-3 text-gray-700 dark:text-gray-300 whitespace-nowrap">
                       {new Date(city.arrivalDate + 'T00:00:00').toLocaleDateString('en-US', {
                         month: 'short',
                         day: 'numeric',
                         year: 'numeric',
                       })}
                     </td>
-                    <td className="px-4 py-3 text-gray-300 text-right">
+                    <td className="px-4 py-3 text-gray-700 dark:text-gray-300 text-right">
                       {city.distanceFromStart.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}
                     </td>
                   </tr>

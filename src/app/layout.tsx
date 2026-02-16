@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import ThemeToggle from "@/components/layout/ThemeToggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,15 +41,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
+        suppressHydrationWarning
       >
         <Navigation />
         <main className="min-h-screen">
           {children}
         </main>
         <Footer />
+        <ThemeToggle />
         <Analytics />
       </body>
     </html>
