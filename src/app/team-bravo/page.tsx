@@ -284,23 +284,56 @@ export default function TeamBravoPage() {
 
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  Somewhere between the mountains of Utah where I was born, the valleys of Idaho where I grew up, and the California Inland Empire where I came of age, I learned to see the world as a place worth exploring, restoring, and cherishing. As one of seven children, I discovered early the value of connection, resilience, and showing up for others. Yet for much of my life, I struggled to be fully authentic or vulnerable, uncertain of who I truly was, why I was here, or what I was meant to contribute.
+                  Team Red, White &amp; Blue changed the trajectory of my life. When Team RWB stepped in, they didn&apos;t
+                  just offer encouragement—they offered belief. They provided the scholarship that allowed me to
+                  become a certified Health Coach. They then selected me to participate in a 12-day white-water
+                  expedition through the Grand Canyon. I was so moved by their investment in me that I chose to
+                  ride my bike across the country to reach the starting point. Just that fast, my gratitude turned into action!
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  Today, I carry those lessons—and that hard-earned awareness—into everything I do. I am a handyman who restores what&apos;s broken, a health coach who nurtures growth, an inspirational thinker who sparks reflection, and an aspiring podcaster who listens deeply. I build not just with tools, but with words, ideas, and relationships, striving always to show up fully, honestly, and with heart.
+                  I was born in the mountains of Utah, raised in the valleys of Idaho, and came of age in
+                  California&apos;s Inland Empire. As one of seven children, I learned resilience early. I learned
+                  how to show up. What I didn&apos;t learn—at least not right away—was how to be fully authentic.
+                  For years, I wrestled quietly with questions of identity and purpose, unsure what I was meant
+                  to contribute.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  Life&apos;s journey has carried me around the world, yet not until 3 January 2023 did my internal compass begin to learn how to function. Now, it aligns with my eternal purpose, guiding me to live deliberately, embrace authenticity, and serve others with integrity. Everything I create—whether in wood, thought, or heart—is my way of honoring the journey that brought me here, navigating the questions of purpose, and leaving a spark of light for those still seeking their own path.
+                  That changed on January 3, 2023. My internal compass finally began to align. Since then, I&apos;ve
+                  committed to living deliberately and serving others with integrity.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  <strong>If anything on this website resonates with you, I invite you to reach out to me.</strong>
+                  Today, I work with my hands and my heart. I restore what&apos;s broken as a handyman. I help others
+                  rebuild strength and clarity as a health coach. I think, write, and speak about purpose,
+                  connection, and growth. I&apos;m an aspiring podcaster who believes listening is more powerful than
+                  talking. Whether I&apos;m building shelves, strengthening bodies, or building community, my goal is
+                  the same: show up fully, honestly, and with care.
                 </p>
 
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                  Too many dwell in silent despair; their true purpose unrealized, songs yet unsung. Let&apos;s sing a duet!
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Everything I create—woodwork, words, systems, or relationships—is an expression of gratitude
+                  for the journey that brought me here. I don&apos;t claim to have all the answers. I&apos;m simply
+                  committed to asking better questions and walking alongside others as they search for their own.
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  If something here resonates, I invite you to connect through the Team Bravo or Partnership
+                  applications.
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  <strong>My purpose is simple: to offer my friendship to everyone, my judgment to no one.</strong>
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Thirteen words guide me: Too many dwell in silent despair; their true purpose unrealized,
+                  songs yet unsung.
+                </p>
+
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-center">
+                  <em>Care to sing a duet?</em>
                 </p>
 
                 <div className="flex justify-center">
