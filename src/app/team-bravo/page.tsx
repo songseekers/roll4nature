@@ -134,7 +134,7 @@ export default function TeamBravoPage() {
             Team Bravo is our support crew that keeps the Roll for Veterans moving. From drivers to photographers
             to cyclists, we need passionate people like you to help us connect with veterans across 42+ communities.
           </p>
-          <Button variant="white" size="lg" href="https://youtube.com/@roll4veterans" target="_blank" rel="noopener noreferrer" className="gap-2 whitespace-nowrap">
+          <Button variant="white" size="lg" href="https://youtube.com/@roll4veterans/shorts" target="_blank" rel="noopener noreferrer" className="gap-2 whitespace-nowrap">
             <ExternalLink size={20} />
             Roll4Veterans YouTube Channel
           </Button>

@@ -217,7 +217,7 @@ export default function Footer() {
                   <span className="text-xs">TikTok</span>
                 </a>
                 <a
-                  href="https://youtube.com/@roll4veterans"
+                  href="https://youtube.com/@roll4veterans/shorts"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
