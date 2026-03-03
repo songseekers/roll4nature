@@ -1,5 +1,6 @@
 import JourneyHero from '@/components/journey/JourneyHero';
 import MissionStatement from '@/components/journey/MissionStatement';
+import FacebookComments from '@/components/home/FacebookComments';
 import RouteMapLoader from '@/components/map/RouteMapLoader';
 import Image from 'next/image';
 
@@ -16,6 +17,9 @@ export default function HomePage() {
 
       {/* Mission Statement */}
       <MissionStatement />
+
+      {/* Facebook Comments */}
+      <FacebookComments />
 
       {/* Interactive Route Map */}
       <section id="map" className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
