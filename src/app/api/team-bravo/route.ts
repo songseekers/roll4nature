@@ -18,7 +18,7 @@ const teamBravoSchema = z.object({
     message: 'Please select a valid availability option',
   }),
   comments: z.string().max(2000, 'Comments must be under 2000 characters').optional().default(''),
-  veteranStatus: z.enum(['yes', 'military-family', 'no']).optional(),
+  veteranStatus: z.enum(['yes', 'military-family', 'no']).nullish(),
   message: z.string().min(10, 'Please tell us why you want to join (at least 10 characters)').max(2000, 'Message must be under 2000 characters'),
 });
 
