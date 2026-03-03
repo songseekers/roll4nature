@@ -21,12 +21,14 @@ export default function NotFound() {
           >
             Back to Home
           </Link>
-          <Link
-            href="/#cities"
+          <a
+            href="/resources/R4V_story_v2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gray-100 hover:bg-gray-200 text-gray-900 font-bold py-3 px-6 rounded-lg transition inline-block"
           >
-            View All Cities
-          </Link>
+            Our Story
+          </a>
         </div>
 
         <div className="mt-12">
