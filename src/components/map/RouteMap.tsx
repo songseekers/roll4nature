@@ -93,7 +93,7 @@ export default function RouteMap() {
         type: 'line',
         source: 'route-completed',
         paint: {
-          'line-color': '#9CA3AF',
+          'line-color': '#6B7280',
           'line-width': 4,
           'line-opacity': 0.8,
         },
@@ -162,9 +162,12 @@ export default function RouteMap() {
       citiesToShow = getAllCities();
     }
 
+    const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD in local time
+
     // Add markers
     citiesToShow.forEach((city) => {
       const isMajor = city.tier === 'major';
+      const isPast = city.arrivalDate <= today;
 
       // Create marker element
       const el = document.createElement('div');
@@ -174,7 +177,7 @@ export default function RouteMap() {
 
       el.style.width = markerSize + 'px';
       el.style.height = markerSize + 'px';
-      el.style.backgroundColor = isMajor ? '#8B4513' : '#C1592B';
+      el.style.backgroundColor = isPast ? '#6B7280' : (isMajor ? '#8B4513' : '#C1592B');
       el.style.border = `${borderWidth}px solid white`;
       el.style.borderRadius = '50%';
       el.style.cursor = 'pointer';
@@ -338,7 +341,7 @@ export default function RouteMap() {
           </div>
           {new Date().toLocaleDateString('en-CA') >= '2026-02-27' && (
             <div className="flex items-center space-x-3">
-              <div className="h-1 w-8 bg-[#9CA3AF] rounded"></div>
+              <div className="h-1 w-8 bg-[#6B7280] rounded"></div>
               <span className="text-gray-700 dark:text-gray-300">Miles completed</span>
             </div>
           )}
