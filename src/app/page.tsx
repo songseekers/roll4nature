@@ -15,14 +15,8 @@ export default function HomePage() {
       {/* Journey Hero */}
       <JourneyHero />
 
-      {/* Mission Statement */}
-      <MissionStatement />
-
-      {/* Facebook Comments */}
-      <FacebookComments />
-
       {/* Interactive Route Map */}
-      <section id="map" className="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section id="map" className="bg-gray-50 dark:bg-gray-800 pb-16 pt-0 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Explore Our Route
@@ -33,6 +27,12 @@ export default function HomePage() {
           <RouteMapLoader />
         </div>
       </section>
+
+      {/* Mission Statement */}
+      <MissionStatement />
+
+      {/* Facebook Comments */}
+      <FacebookComments />
 
       {/* Team Bravo Section */}
       <section className="bg-gradient-to-b from-[#E8C9A1] dark:from-[#8B4513] to-white dark:to-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
