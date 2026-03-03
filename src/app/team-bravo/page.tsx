@@ -8,6 +8,7 @@ import { useState, FormEvent } from 'react';
 export default function TeamBravoPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [selectedMember, setSelectedMember] = useState<string | null>(null);
 
   // Auto-format phone number
@@ -65,6 +66,7 @@ export default function TeamBravoPage() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setFieldErrors({});
 
     // Save form reference before async operation
     const form = e.currentTarget;
@@ -93,9 +95,13 @@ export default function TeamBravoPage() {
 
       if (result.success) {
         setSubmitStatus('success');
+        setFieldErrors({});
         form.reset();
       } else {
         setSubmitStatus('error');
+        if (result.fields) {
+          setFieldErrors(result.fields);
+        }
       }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -466,6 +472,7 @@ export default function TeamBravoPage() {
                     placeholder="Your name"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
+                  {fieldErrors.fullName && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.fullName}</p>}
                 </div>
 
                 {/* Email */}
@@ -480,6 +487,7 @@ export default function TeamBravoPage() {
                     placeholder="your@email.com"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
+                  {fieldErrors.email && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.email}</p>}
                 </div>
 
                 {/* Phone */}
@@ -497,6 +505,7 @@ export default function TeamBravoPage() {
                     title="Enter 10 digits - will be auto-formatted"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
+                  {fieldErrors.phone && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.phone}</p>}
                 </div>
 
                 {/* Role Interest */}
@@ -512,6 +521,7 @@ export default function TeamBravoPage() {
                     <option value="cyclist">Segment Cyclist</option>
                     <option value="other">Other</option>
                   </select>
+                  {fieldErrors.role && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.role}</p>}
                 </div>
 
                 {/* Availability */}
@@ -526,6 +536,7 @@ export default function TeamBravoPage() {
                     <option value="days">Days or segments</option>
                     <option value="flexible">Flexible/TBD</option>
                   </select>
+                  {fieldErrors.availability && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.availability}</p>}
                 </div>
 
                 {/* Comments */}
@@ -590,6 +601,7 @@ export default function TeamBravoPage() {
                   rows={4}
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                 />
+                {fieldErrors.message && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.message}</p>}
               </div>
 
               {/* SMS Consent Checkbox */}

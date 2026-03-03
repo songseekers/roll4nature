@@ -8,6 +8,7 @@ import { useState, FormEvent } from 'react';
 export default function SponsorPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [selectedSponsor, setSelectedSponsor] = useState<string | null>(null);
 
   // Auto-format phone number
@@ -34,6 +35,7 @@ export default function SponsorPage() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setFieldErrors({});
 
     // Save form reference before async operation
     const form = e.currentTarget;
@@ -60,9 +62,13 @@ export default function SponsorPage() {
 
       if (result.success) {
         setSubmitStatus('success');
+        setFieldErrors({});
         form.reset();
       } else {
         setSubmitStatus('error');
+        if (result.fields) {
+          setFieldErrors(result.fields);
+        }
       }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -300,6 +306,7 @@ export default function SponsorPage() {
                     placeholder="Your name or company name"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
+                  {fieldErrors.fullName && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.fullName}</p>}
                 </div>
 
                 <div>
@@ -313,6 +320,7 @@ export default function SponsorPage() {
                     placeholder="your@email.com"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
+                  {fieldErrors.email && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.email}</p>}
                 </div>
 
                 <div>
@@ -329,6 +337,7 @@ export default function SponsorPage() {
                     title="Enter 10 digits - will be auto-formatted"
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
                   />
+                  {fieldErrors.phone && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.phone}</p>}
                 </div>
 
                 <div>
@@ -346,6 +355,7 @@ export default function SponsorPage() {
                     <option value="evening">Evening (5pm - 8pm)</option>
                     <option value="anytime">Anytime</option>
                   </select>
+                  {fieldErrors.bestTime && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.bestTime}</p>}
                 </div>
 
                 <div className="md:col-span-2">
@@ -365,6 +375,7 @@ export default function SponsorPage() {
                     <option value="in-kind">In-Kind Donation</option>
                     <option value="other">Other / Multiple Areas</option>
                   </select>
+                  {fieldErrors.sponsorshipInterest && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.sponsorshipInterest}</p>}
                 </div>
               </div>
 
