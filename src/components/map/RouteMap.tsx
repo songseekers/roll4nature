@@ -11,6 +11,34 @@ mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 export type MapLayer = 'overview' | 'major' | 'all';
 
+// TODO: Consider driving completed segment from live GPS data in a future update
+function getRouteSegments(): { completed: number[][], remaining: number[][] } {
+  const sortedCities = getAllCities().sort((a, b) => a.dayNumber - b.dayNumber);
+  const allCoords = sortedCities.map((c) => c.coordinates as number[]);
+  const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD in local time
+
+  if (today >= '2026-06-21') {
+    return { completed: allCoords, remaining: [] };
+  }
+
+  let cutoffIndex = -1;
+  for (let i = 0; i < sortedCities.length; i++) {
+    if (sortedCities[i].arrivalDate <= today) {
+      cutoffIndex = i;
+    }
+  }
+
+  if (cutoffIndex === -1) {
+    return { completed: [], remaining: allCoords };
+  }
+
+  return {
+    completed: allCoords.slice(0, cutoffIndex + 1),
+    // cutoff city included in both so the two lines connect seamlessly
+    remaining: allCoords.slice(cutoffIndex),
+  };
+}
+
 export default function RouteMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
@@ -38,31 +66,44 @@ export default function RouteMap() {
     map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
     map.current.on('load', () => {
-      // Add source for route line
-      map.current?.addSource('route', {
+      // Split route into completed (grey) and remaining (orange) segments
+      const { completed, remaining } = getRouteSegments();
+
+      map.current?.addSource('route-remaining', {
         type: 'geojson',
         data: {
-          type: 'FeatureCollection',
-          features: [
-            {
-              type: 'Feature',
-              geometry: {
-                type: 'LineString',
-                coordinates: getAllCities()
-                  .sort((a, b) => a.dayNumber - b.dayNumber)
-                  .map((city) => city.coordinates),
-              },
-              properties: {},
-            },
-          ],
+          type: 'Feature',
+          geometry: { type: 'LineString', coordinates: remaining },
+          properties: {},
         },
       });
 
-      // Add route line layer
+      map.current?.addSource('route-completed', {
+        type: 'geojson',
+        data: {
+          type: 'Feature',
+          geometry: { type: 'LineString', coordinates: completed },
+          properties: {},
+        },
+      });
+
+      // Completed segment (grey) — added first so it renders beneath
       map.current?.addLayer({
-        id: 'route-line',
+        id: 'route-line-completed',
         type: 'line',
-        source: 'route',
+        source: 'route-completed',
+        paint: {
+          'line-color': '#9CA3AF',
+          'line-width': 4,
+          'line-opacity': 0.8,
+        },
+      });
+
+      // Remaining segment (orange) — added second so it renders on top at join point
+      map.current?.addLayer({
+        id: 'route-line-remaining',
+        type: 'line',
+        source: 'route-remaining',
         paint: {
           'line-color': '#C1592B',
           'line-width': 4,
@@ -295,6 +336,12 @@ export default function RouteMap() {
             <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
             <span className="text-gray-700 dark:text-gray-300">Route (4,463 miles)</span>
           </div>
+          {new Date().toLocaleDateString('en-CA') >= '2026-02-27' && (
+            <div className="flex items-center space-x-3">
+              <div className="h-1 w-8 bg-[#9CA3AF] rounded"></div>
+              <span className="text-gray-700 dark:text-gray-300">Miles completed</span>
+            </div>
+          )}
         </div>
         <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
           Hover over markers for quick info • Click for full city details
