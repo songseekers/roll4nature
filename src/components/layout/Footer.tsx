@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Instagram, Facebook, Youtube, Activity, Mail, Phone } from 'lucide-react';
+import { Instagram, Facebook, Youtube, Activity, Mail, Phone, MapPin } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Footer() {
@@ -239,6 +239,19 @@ export default function Footer() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Glympse / Live Tracking Link */}
+        <div className="py-4 text-center">
+          <a
+            href="https://facebook.com/roll4veterans"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-r4v-primary-hover transition"
+          >
+            <MapPin size={16} />
+            Track our progress in real time — current Glympse link posted on Facebook
+          </a>
         </div>
 
         {/* Divider */}
