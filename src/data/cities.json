@@ -161,6 +161,23 @@
     "slug": "saint-augustine"
   },
   {
+    "id": "gainesville-fl",
+    "name": "Gainesville",
+    "state": "Florida",
+    "population": 141085,
+    "coordinates": [
+      -82.3248,
+      29.6516
+    ],
+    "arrivalDate": "2026-03-10",
+    "dayNumber": 12,
+    "distanceFromPrevious": 60.2,
+    "distanceFromStart": 562.0,
+    "tier": "major",
+    "slug": "gainesville",
+    "description": "Home to University of Florida — a college town with bike-friendly infrastructure and a strong cycling community."
+  },
+  {
     "id": "tallahassee-fl",
     "name": "Tallahassee",
     "state": "Florida",
@@ -171,7 +188,7 @@
     ],
     "arrivalDate": "2026-03-13",
     "dayNumber": 15,
-    "distanceFromPrevious": 156.6,
+    "distanceFromPrevious": 96.4,
     "distanceFromStart": 658.4,
     "tier": "major",
     "slug": "tallahassee",
