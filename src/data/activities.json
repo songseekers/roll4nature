@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2026-02-27",
+    "title": "Key West Cycling",
+    "distance": 62.71,
+    "calories": 3413,
+    "avgHR": 123,
+    "maxHR": 174,
+    "totalAscent": 525,
+    "totalDescent": 456,
+    "minTemp": 75.2,
+    "maxTemp": 95.0,
+    "movingTime": "6:52:31",
+    "maxElevation": 109
+  },
+  {
+    "date": "2026-02-28",
+    "title": "Marathon Cycling",
+    "distance": 51.46,
+    "calories": 1973,
+    "avgHR": 107,
+    "maxHR": 144,
+    "totalAscent": 407,
+    "totalDescent": 364,
+    "minTemp": 78.8,
+    "maxTemp": 93.2,
+    "movingTime": "5:29:21",
+    "maxElevation": 82
+  },
+  {
+    "date": "2026-02-28",
+    "title": "Monroe County Cycling",
+    "distance": 4.31,
+    "calories": 214,
+    "avgHR": null,
+    "maxHR": null,
+    "totalAscent": 66,
+    "totalDescent": 75,
+    "minTemp": 84.2,
+    "maxTemp": 89.6,
+    "movingTime": "0:23:25",
+    "maxElevation": 52
+  },
+  {
+    "date": "2026-03-01",
+    "title": "South Miami Cycling",
+    "distance": 40.01,
+    "calories": 1545,
+    "avgHR": 91,
+    "maxHR": 134,
+    "totalAscent": 528,
+    "totalDescent": 564,
+    "minTemp": 71.6,
+    "maxTemp": 86.0,
+    "movingTime": "4:20:08",
+    "maxElevation": 85
+  },
+  {
+    "date": "2026-03-02",
+    "title": "South Miami Cycling",
+    "distance": 60.09,
+    "calories": 2645,
+    "avgHR": 98,
+    "maxHR": 158,
+    "totalAscent": 554,
+    "totalDescent": 554,
+    "minTemp": 77.0,
+    "maxTemp": 93.2,
+    "movingTime": "6:27:35",
+    "maxElevation": 91
+  }
+]

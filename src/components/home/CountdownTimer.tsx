@@ -1,6 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import activitiesData from '@/data/activities.json';
+
+// Total miles from activities data (computed once at module level)
+const totalMilesCycled = (activitiesData as { distance: number }[]).reduce((sum, a) => sum + a.distance, 0);
 
 interface TimerTime {
   days: number;
@@ -52,6 +57,15 @@ function Divider() {
   return <span className="text-2xl font-bold text-gray-400 dark:text-gray-500 self-start pt-1">|</span>;
 }
 
+function SectionSeparator() {
+  return (
+    <>
+      <div className="hidden md:block w-px h-16 bg-gray-300 dark:bg-gray-600" />
+      <div className="block md:hidden w-24 h-px bg-gray-300 dark:bg-gray-600" />
+    </>
+  );
+}
+
 export default function CountdownTimer() {
   const [elapsed, setElapsed] = useState<TimerTime | null>(null);
   const [countdown, setCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
@@ -84,9 +98,25 @@ export default function CountdownTimer() {
         </div>
       </div>
 
-      {/* Visual separator between the two timers */}
-      <div className="hidden md:block w-px h-16 bg-gray-300 dark:bg-gray-600" />
-      <div className="block md:hidden w-24 h-px bg-gray-300 dark:bg-gray-600" />
+      <SectionSeparator />
+
+      {/* Miles Cycled — links to /stats */}
+      <Link
+        href="/stats"
+        className="flex flex-col items-center gap-2 group hover:opacity-80 transition-opacity"
+      >
+        <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center group-hover:underline">
+          Miles Cycled
+        </p>
+        <div className="flex flex-col items-center">
+          <span className="text-2xl md:text-3xl font-bold font-mono text-r4v-primary dark:text-r4v-primary-hover">
+            {totalMilesCycled.toFixed(1)}
+          </span>
+          <span className="text-[10px] uppercase tracking-wide text-gray-500 dark:text-gray-400">miles</span>
+        </div>
+      </Link>
+
+      <SectionSeparator />
 
       {/* Count-DOWN */}
       <div className="flex flex-col items-center gap-2">

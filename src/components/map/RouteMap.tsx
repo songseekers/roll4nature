@@ -17,7 +17,7 @@ function getRouteSegments(): { completed: number[][], remaining: number[][] } {
   const allCoords = sortedCities.map((c) => c.coordinates as number[]);
   const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD in local time
 
-  if (today >= '2026-06-21') {
+  if (today >= '2026-06-23') {
     return { completed: allCoords, remaining: [] };
   }
 
@@ -210,7 +210,7 @@ export default function RouteMap() {
           </div>
           <div style="font-size: 14px; line-height: 1.5;">
             <div style="margin-bottom: 4px;">
-              <strong style="color: #C1592B;">Arriving:</strong> ${new Date(city.arrivalDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+              <strong style="color: #C1592B;">Arriving:</strong> ${new Date(city.arrivalDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </div>
             <div style="margin-bottom: 4px;">
               <strong style="color: #C1592B;">Day:</strong> ${city.dayNumber}
@@ -267,7 +267,7 @@ export default function RouteMap() {
               ${city.name}, ${city.state}
             </h3>
             <div style="font-size: 15px; color: #1F2937;">
-              <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Day ${city.dayNumber}:</strong> ${new Date(city.arrivalDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
+              <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Day ${city.dayNumber}:</strong> ${new Date(city.arrivalDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
               <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Distance from start:</strong> ${city.distanceFromStart} miles</div>
               ${city.rwbChapter ? `
                 <div style="margin-top: 8px; padding: 8px; background-color: #E8C9A1; border-radius: 4px; font-size: 14px; border: 1px solid #C1592B;">
