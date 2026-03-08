@@ -257,8 +257,8 @@ export default function TeamBravoPage() {
               >
                 <div className="relative h-40">
                   <Image
-                    src="/images/TeamBravo/Adam.jpg"
-                    alt="Adam, Team Bravo Air Support – Outreach & Partner Liaison"
+                    src="/images/TeamBravo/Adam12.jpg"
+                    alt="Adam, Team Bravo Air Support – Outreach & Media/Partner Liaison"
                     fill
                     className="object-cover"
                   />
@@ -513,7 +513,7 @@ export default function TeamBravoPage() {
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Adam</h2>
                   <p className="text-lg text-gray-600 dark:text-gray-300">
-                    Outreach &bull; Sponsor Liaison
+                    Outreach &bull; Media/Partner Liaison
                   </p>
                 </div>
                 <button
@@ -526,8 +526,8 @@ export default function TeamBravoPage() {
               </div>
               <div className="mb-6">
                 <Image
-                  src="/images/TeamBravo/Adam.jpg"
-                  alt="Adam, Team Bravo Outreach and Sponsor Liaison"
+                  src="/images/TeamBravo/Adam12.jpg"
+                  alt="Adam, Team Bravo Outreach and Media/Partner Liaison"
                   width={300}
                   height={200}
                   className="w-1/2 h-auto rounded-lg mx-auto"

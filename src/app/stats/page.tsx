@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import activitiesData from '@/data/activities.json';
+import RouteImageCell from '@/components/stats/RouteImageCell';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -217,6 +218,7 @@ export default function StatsPage() {
               <table className="w-full text-sm text-left whitespace-nowrap">
                 <thead>
                   <tr className="bg-r4v-secondary text-white text-xs uppercase tracking-wide">
+                    <th className="px-3 py-3">Route</th>
                     <th className="px-3 py-3">Date</th>
                     <th className="px-3 py-3 text-right">Miles</th>
                     <th className="px-3 py-3">Time</th>
@@ -238,6 +240,9 @@ export default function StatsPage() {
                       key={row.date}
                       className="hover:bg-gray-100 dark:hover:bg-gray-800/60 transition text-gray-700 dark:text-gray-300"
                     >
+                      <td className="px-3 py-3">
+                        <RouteImageCell date={row.date} dateLabel={formatDateLabel(row.date)} />
+                      </td>
                       <td className="px-3 py-3 font-medium text-gray-900 dark:text-white">
                         {formatDateLabel(row.date)}
                       </td>
@@ -263,6 +268,7 @@ export default function StatsPage() {
                 {/* Totals row */}
                 <tfoot>
                   <tr className="bg-r4v-primary/10 dark:bg-r4v-primary/20 font-semibold text-gray-900 dark:text-white border-t-2 border-r4v-primary/30">
+                    <td className="px-3 py-3">—</td>
                     <td className="px-3 py-3">Totals / Avg</td>
                     <td className="px-3 py-3 text-right text-r4v-primary dark:text-r4v-primary-hover">
                       {fmt1(totalMiles)}
