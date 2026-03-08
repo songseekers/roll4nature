@@ -228,25 +228,65 @@ export default function TeamBravoPage() {
               </div>
             </div>
 
-            {/* Placeholder Air Support Members */}
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="flex flex-col items-center">
-                <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg opacity-75 w-full border border-gray-200 dark:border-gray-600">
-                  <div className="relative h-40">
-                    <Image
-                      src="/images/TeamBravo/sil.png"
-                      alt="Team member profile coming soon"
-                      fill
-                      className="object-cover object-top"
-                    />
-                  </div>
-                  <div className="p-3 text-center">
-                    <h3 className="text-base font-bold text-gray-900 dark:text-white">Team Member</h3>
-                    <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Coming Soon</p>
-                  </div>
+            {/* Gavin */}
+            <div className="flex flex-col items-center">
+              <div
+                onClick={() => setSelectedMember('gavin')}
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full border border-gray-200 dark:border-gray-600"
+              >
+                <div className="relative h-40">
+                  <Image
+                    src="/images/TeamBravo/Gavin.jpeg"
+                    alt="Gavin, Team Bravo Air Support – Tech Support & Social Media"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">Gavin</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Click to learn more</p>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* Adam */}
+            <div className="flex flex-col items-center">
+              <div
+                onClick={() => setSelectedMember('adam')}
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full border border-gray-200 dark:border-gray-600"
+              >
+                <div className="relative h-40">
+                  <Image
+                    src="/images/TeamBravo/Adam.jpg"
+                    alt="Adam, Team Bravo Air Support – Outreach & Partner Liaison"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">Adam</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Click to learn more</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Placeholder */}
+            <div className="flex flex-col items-center">
+              <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg opacity-75 w-full border border-gray-200 dark:border-gray-600">
+                <div className="relative h-40">
+                  <Image
+                    src="/images/TeamBravo/sil.png"
+                    alt="Team member profile coming soon"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">Team Member</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Coming Soon</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -406,6 +446,96 @@ export default function TeamBravoPage() {
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                   Beyond her work with fabric, Janelle enjoys writing poetry, exploring watercolor and colored pencil, and listening to music that stirs the heart. Her faith and family shape who she is and keep her grounded in compassion and purpose. Being part of Team Bravo is meaningful to her because it offers a place where creators can share, encourage one another, and discover the joy that comes when imagination and community meet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Gavin Profile Modal */}
+      {selectedMember === 'gavin' && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedMember(null)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-8">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Gavin</h2>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">
+                    Tech Support &bull; Social Media Facilitator
+                  </p>
+                </div>
+                <button
+                  onClick={() => setSelectedMember(null)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
+                  aria-label="Close modal"
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="mb-6">
+                <Image
+                  src="/images/TeamBravo/Gavin.jpeg"
+                  alt="Gavin, Team Bravo Tech Support and Social Media"
+                  width={300}
+                  height={200}
+                  className="w-1/2 h-auto rounded-lg mx-auto"
+                />
+              </div>
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
+                  Bio coming soon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Adam Profile Modal */}
+      {selectedMember === 'adam' && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedMember(null)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-8">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Adam</h2>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">
+                    Outreach &bull; Sponsor Liaison
+                  </p>
+                </div>
+                <button
+                  onClick={() => setSelectedMember(null)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
+                  aria-label="Close modal"
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="mb-6">
+                <Image
+                  src="/images/TeamBravo/Adam.jpg"
+                  alt="Adam, Team Bravo Outreach and Sponsor Liaison"
+                  width={300}
+                  height={200}
+                  className="w-1/2 h-auto rounded-lg mx-auto"
+                />
+              </div>
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
+                  Bio coming soon.
                 </p>
               </div>
             </div>

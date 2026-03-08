@@ -103,13 +103,13 @@ export default function CountdownTimer() {
       {/* Miles Cycled — links to /stats */}
       <Link
         href="/stats"
-        className="flex flex-col items-center gap-2 group hover:opacity-80 transition-opacity"
+        className="flex flex-col items-center gap-2 group cursor-pointer"
       >
-        <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center group-hover:underline">
-          Miles Cycled
+        <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center underline underline-offset-2 decoration-dotted group-hover:decoration-solid transition-all">
+          Miles Cycled ↗
         </p>
-        <div className="flex flex-col items-center">
-          <span className="text-2xl md:text-3xl font-bold font-mono text-r4v-primary dark:text-r4v-primary-hover">
+        <div className="flex flex-col items-center transition-transform group-hover:-translate-y-0.5">
+          <span className="text-2xl md:text-3xl font-bold font-mono text-r4v-primary dark:text-r4v-primary-hover border-b border-r4v-primary dark:border-r4v-primary-hover pb-0.5">
             {totalMilesCycled.toFixed(1)}
           </span>
           <span className="text-[10px] uppercase tracking-wide text-gray-500 dark:text-gray-400">miles</span>

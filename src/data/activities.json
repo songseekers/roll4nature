@@ -68,5 +68,47 @@
     "maxTemp": 93.2,
     "movingTime": "6:27:35",
     "maxElevation": 91
+  },
+  {
+    "date": "2026-03-04",
+    "title": "Stuart Cycling",
+    "distance": 50.01,
+    "calories": 1774,
+    "avgHR": 105,
+    "maxHR": 159,
+    "totalAscent": 469,
+    "totalDescent": 407,
+    "minTemp": 77.0,
+    "maxTemp": 91.4,
+    "movingTime": "4:36:19",
+    "maxElevation": 97
+  },
+  {
+    "date": "2026-03-05",
+    "title": "Melbourne Cycling",
+    "distance": 52.72,
+    "calories": 1987,
+    "avgHR": 102,
+    "maxHR": 141,
+    "totalAscent": 410,
+    "totalDescent": 446,
+    "minTemp": 71.6,
+    "maxTemp": 89.6,
+    "movingTime": "5:19:45",
+    "maxElevation": 72
+  },
+  {
+    "date": "2026-03-07",
+    "title": "Edgewater Cycling",
+    "distance": 63.51,
+    "calories": 2816,
+    "avgHR": 100,
+    "maxHR": 153,
+    "totalAscent": 617,
+    "totalDescent": 571,
+    "minTemp": 71.6,
+    "maxTemp": 89.6,
+    "movingTime": "6:48:31",
+    "maxElevation": 86
   }
 ]
