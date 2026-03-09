@@ -4,10 +4,7 @@
     "name": "Key West",
     "state": "Florida",
     "population": 26000,
-    "coordinates": [
-      -81.7799,
-      24.5551
-    ],
+    "coordinates": [-81.7799, 24.5551],
     "arrivalDate": "2026-02-27",
     "dayNumber": 1,
     "distanceFromPrevious": 0,
@@ -25,10 +22,7 @@
     "name": "Miami",
     "state": "Florida",
     "population": 449514,
-    "coordinates": [
-      -80.1918,
-      25.7617
-    ],
+    "coordinates": [-80.1918, 25.7617],
     "arrivalDate": "2026-03-02",
     "dayNumber": 4,
     "distanceFromPrevious": 168.8,
@@ -45,10 +39,7 @@
     "name": "Fort Lauderdale",
     "state": "Florida",
     "population": 182760,
-    "coordinates": [
-      -80.1344,
-      26.1224
-    ],
+    "coordinates": [-80.1344, 26.1224],
     "arrivalDate": "2026-03-04",
     "dayNumber": 6,
     "distanceFromPrevious": 78.3,
@@ -65,10 +56,7 @@
     "name": "West Palm Beach",
     "state": "Florida",
     "population": 117415,
-    "coordinates": [
-      -80.0534,
-      26.7153
-    ],
+    "coordinates": [-80.0534, 26.7153],
     "arrivalDate": "2026-03-05",
     "dayNumber": 7,
     "distanceFromPrevious": 36.8,
@@ -85,10 +73,7 @@
     "name": "Vero Beach",
     "state": "Florida",
     "population": 17163,
-    "coordinates": [
-      -80.3973,
-      27.6386
-    ],
+    "coordinates": [-80.3973, 27.6386],
     "arrivalDate": "2026-03-07",
     "dayNumber": 9,
     "distanceFromPrevious": 104.4,
@@ -101,10 +86,7 @@
     "name": "Melbourne",
     "state": "Florida",
     "population": 84678,
-    "coordinates": [
-      -80.6081,
-      28.0836
-    ],
+    "coordinates": [-80.6081, 28.0836],
     "arrivalDate": "2026-03-07",
     "dayNumber": 9,
     "distanceFromPrevious": 4.6,
@@ -117,14 +99,11 @@
     "name": "Titusville",
     "state": "Florida",
     "population": 48789,
-    "coordinates": [
-      -80.8076,
-      28.6122
-    ],
+    "coordinates": [-80.8076, 28.6122],
     "arrivalDate": "2026-03-08",
     "dayNumber": 10,
     "distanceFromPrevious": 16.8,
-    "distanceFromStart": 422,
+    "distanceFromStart": 422.0,
     "tier": "major",
     "slug": "titusville"
   },
@@ -133,10 +112,7 @@
     "name": "Daytona Beach",
     "state": "Florida",
     "population": 72647,
-    "coordinates": [
-      -81.0228,
-      29.2108
-    ],
+    "coordinates": [-81.0228, 29.2108],
     "arrivalDate": "2026-03-08",
     "dayNumber": 10,
     "distanceFromPrevious": 33.8,
@@ -149,10 +125,7 @@
     "name": "Saint Augustine",
     "state": "Florida",
     "population": 14329,
-    "coordinates": [
-      -81.3124,
-      29.8947
-    ],
+    "coordinates": [-81.3124, 29.8947],
     "arrivalDate": "2026-03-10",
     "dayNumber": 12,
     "distanceFromPrevious": 46.0,
@@ -165,12 +138,9 @@
     "name": "Gainesville",
     "state": "Florida",
     "population": 141085,
-    "coordinates": [
-      -82.3248,
-      29.6516
-    ],
+    "coordinates": [-82.3248, 29.6516],
     "arrivalDate": "2026-03-12",
-    "dayNumber": 13,
+    "dayNumber": 14,
     "distanceFromPrevious": 60.2,
     "distanceFromStart": 562.0,
     "tier": "major",
@@ -182,12 +152,9 @@
     "name": "Tallahassee",
     "state": "Florida",
     "population": 196169,
-    "coordinates": [
-      -84.2809,
-      30.4383
-    ],
+    "coordinates": [-84.2809, 30.4383],
     "arrivalDate": "2026-03-15",
-    "dayNumber": 16,
+    "dayNumber": 17,
     "distanceFromPrevious": 96.4,
     "distanceFromStart": 658.4,
     "tier": "major",
@@ -202,12 +169,9 @@
     "name": "Pensacola",
     "state": "Florida",
     "population": 54312,
-    "coordinates": [
-      -87.2169,
-      30.4213
-    ],
-    "arrivalDate": "2026-03-25",
-    "dayNumber": 26,
+    "coordinates": [-87.2169, 30.4213],
+    "arrivalDate": "2026-03-21",
+    "dayNumber": 23,
     "distanceFromPrevious": 276.2,
     "distanceFromStart": 934.6,
     "tier": "major",
@@ -218,12 +182,9 @@
     "name": "Biloxi",
     "state": "Mississippi",
     "population": 49449,
-    "coordinates": [
-      -88.8853,
-      30.396
-    ],
-    "arrivalDate": "2026-03-21",
-    "dayNumber": 22,
+    "coordinates": [-88.8853, 30.396],
+    "arrivalDate": "2026-03-23",
+    "dayNumber": 25,
     "distanceFromPrevious": 118.2,
     "distanceFromStart": 1052.8,
     "tier": "major",
@@ -234,12 +195,9 @@
     "name": "Gulfport",
     "state": "Mississippi",
     "population": 72926,
-    "coordinates": [
-      -89.0928,
-      30.3674
-    ],
-    "arrivalDate": "2026-03-26",
-    "dayNumber": 27,
+    "coordinates": [-89.0928, 30.3674],
+    "arrivalDate": "2026-03-24",
+    "dayNumber": 26,
     "distanceFromPrevious": 24.5,
     "distanceFromStart": 1077.3,
     "tier": "major",
@@ -250,12 +208,9 @@
     "name": "Slidell",
     "state": "Louisiana",
     "population": 28781,
-    "coordinates": [
-      -89.7812,
-      30.2752
-    ],
-    "arrivalDate": "2026-03-23",
-    "dayNumber": 24,
+    "coordinates": [-89.7812, 30.2752],
+    "arrivalDate": "2026-03-25",
+    "dayNumber": 27,
     "distanceFromPrevious": 44.6,
     "distanceFromStart": 1121.9,
     "tier": "major",
@@ -266,12 +221,9 @@
     "name": "New Orleans",
     "state": "Louisiana",
     "population": 383997,
-    "coordinates": [
-      -90.0715,
-      29.9511
-    ],
-    "arrivalDate": "2026-03-24",
-    "dayNumber": 25,
+    "coordinates": [-90.0715, 29.9511],
+    "arrivalDate": "2026-03-26",
+    "dayNumber": 28,
     "distanceFromPrevious": 47.5,
     "distanceFromStart": 1169.4,
     "tier": "major",
@@ -286,14 +238,11 @@
     "name": "Baton Rouge",
     "state": "Louisiana",
     "population": 227470,
-    "coordinates": [
-      -91.1871,
-      30.4515
-    ],
+    "coordinates": [-91.1871, 30.4515],
     "arrivalDate": "2026-03-29",
-    "dayNumber": 30,
+    "dayNumber": 31,
     "distanceFromPrevious": 156.6,
-    "distanceFromStart": 1326,
+    "distanceFromStart": 1326.0,
     "tier": "major",
     "slug": "baton-rouge",
     "rwbChapter": {
@@ -306,14 +255,11 @@
     "name": "Navasota",
     "state": "Texas",
     "population": 7786,
-    "coordinates": [
-      -96.0877,
-      30.388
-    ],
+    "coordinates": [-96.0877, 30.388],
     "arrivalDate": "2026-04-05",
-    "dayNumber": 37,
-    "distanceFromPrevious": 310,
-    "distanceFromStart": 1636,
+    "dayNumber": 38,
+    "distanceFromPrevious": 310.0,
+    "distanceFromStart": 1636.0,
     "tier": "major",
     "slug": "navasota"
   },
@@ -322,12 +268,9 @@
     "name": "Austin",
     "state": "Texas",
     "population": 961855,
-    "coordinates": [
-      -97.7431,
-      30.2672
-    ],
-    "arrivalDate": "2026-04-12",
-    "dayNumber": 44,
+    "coordinates": [-97.7431, 30.2672],
+    "arrivalDate": "2026-04-10",
+    "dayNumber": 43,
     "distanceFromPrevious": 231.7,
     "distanceFromStart": 1867.7,
     "tier": "major",
@@ -342,12 +285,9 @@
     "name": "Fredericksburg",
     "state": "Texas",
     "population": 11216,
-    "coordinates": [
-      -98.8746,
-      30.2752
-    ],
-    "arrivalDate": "2026-04-10",
-    "dayNumber": 42,
+    "coordinates": [-98.8746, 30.2752],
+    "arrivalDate": "2026-04-12",
+    "dayNumber": 45,
     "distanceFromPrevious": 89.0,
     "distanceFromStart": 1956.7,
     "tier": "major",
@@ -358,10 +298,7 @@
     "name": "Van Horn",
     "state": "Texas",
     "population": 1930,
-    "coordinates": [
-      -104.8307,
-      31.0473
-    ],
+    "coordinates": [-104.8307, 31.0473],
     "arrivalDate": "2026-04-23",
     "dayNumber": 56,
     "distanceFromPrevious": 311.6,
@@ -374,14 +311,11 @@
     "name": "El Paso",
     "state": "Texas",
     "population": 678815,
-    "coordinates": [
-      -106.485,
-      31.7619
-    ],
+    "coordinates": [-106.485, 31.7619],
     "arrivalDate": "2026-04-28",
     "dayNumber": 61,
     "distanceFromPrevious": 188.7,
-    "distanceFromStart": 2457,
+    "distanceFromStart": 2457.0,
     "tier": "major",
     "slug": "el-paso",
     "rwbChapter": {
@@ -394,10 +328,7 @@
     "name": "Las Cruces",
     "state": "New Mexico",
     "population": 111385,
-    "coordinates": [
-      -106.7893,
-      32.3199
-    ],
+    "coordinates": [-106.7893, 32.3199],
     "arrivalDate": "2026-05-03",
     "dayNumber": 66,
     "distanceFromPrevious": 181.1,
@@ -410,10 +341,7 @@
     "name": "Lordsburg",
     "state": "New Mexico",
     "population": 2797,
-    "coordinates": [
-      -108.7084,
-      32.3503
-    ],
+    "coordinates": [-108.7084, 32.3503],
     "arrivalDate": "2026-05-08",
     "dayNumber": 71,
     "distanceFromPrevious": 178.0,
@@ -426,10 +354,7 @@
     "name": "Phoenix",
     "state": "Arizona",
     "population": 1608139,
-    "coordinates": [
-      -112.0742,
-      33.4484
-    ],
+    "coordinates": [-112.0742, 33.4484],
     "arrivalDate": "2026-05-17",
     "dayNumber": 80,
     "distanceFromPrevious": 348.4,
@@ -446,12 +371,9 @@
     "name": "Quartzsite",
     "state": "Arizona",
     "population": 3677,
-    "coordinates": [
-      -114.2298,
-      33.6639
-    ],
-    "arrivalDate": "2026-05-22",
-    "dayNumber": 85,
+    "coordinates": [-114.2298, 33.6639],
+    "arrivalDate": "2026-05-20",
+    "dayNumber": 83,
     "distanceFromPrevious": 115.1,
     "distanceFromStart": 3279.6,
     "tier": "major",
@@ -462,14 +384,11 @@
     "name": "Blythe",
     "state": "California",
     "population": 18317,
-    "coordinates": [
-      -114.5963,
-      33.6175
-    ],
-    "arrivalDate": "2026-05-18",
-    "dayNumber": 81,
+    "coordinates": [-114.5963, 33.6175],
+    "arrivalDate": "2026-05-20",
+    "dayNumber": 83,
     "distanceFromPrevious": 15.4,
-    "distanceFromStart": 3295,
+    "distanceFromStart": 3295.0,
     "tier": "major",
     "slug": "blythe"
   },
@@ -478,10 +397,7 @@
     "name": "Indio",
     "state": "California",
     "population": 89137,
-    "coordinates": [
-      -116.2156,
-      33.7206
-    ],
+    "coordinates": [-116.2156, 33.7206],
     "arrivalDate": "2026-05-21",
     "dayNumber": 84,
     "distanceFromPrevious": 44.5,
@@ -494,12 +410,9 @@
     "name": "Palm Springs",
     "state": "California",
     "population": 44575,
-    "coordinates": [
-      -116.5453,
-      33.8303
-    ],
-    "arrivalDate": "2026-05-20",
-    "dayNumber": 83,
+    "coordinates": [-116.5453, 33.8303],
+    "arrivalDate": "2026-05-22",
+    "dayNumber": 85,
     "distanceFromPrevious": 42.9,
     "distanceFromStart": 3382.4,
     "tier": "major",
@@ -510,10 +423,7 @@
     "name": "San Bernardino",
     "state": "California",
     "population": 222101,
-    "coordinates": [
-      -117.2898,
-      34.1083
-    ],
+    "coordinates": [-117.2898, 34.1083],
     "arrivalDate": "2026-05-25",
     "dayNumber": 88,
     "distanceFromPrevious": 104.4,
@@ -526,12 +436,9 @@
     "name": "Fontana",
     "state": "California",
     "population": 208393,
-    "coordinates": [
-      -117.435,
-      34.0922
-    ],
-    "arrivalDate": "2026-05-28",
-    "dayNumber": 91,
+    "coordinates": [-117.435, 34.0922],
+    "arrivalDate": "2026-05-26",
+    "dayNumber": 89,
     "distanceFromPrevious": 39.9,
     "distanceFromStart": 3526.7,
     "tier": "major",
@@ -542,12 +449,9 @@
     "name": "Los Angeles",
     "state": "California",
     "population": 3898747,
-    "coordinates": [
-      -118.2437,
-      34.0522
-    ],
-    "arrivalDate": "2026-05-26",
-    "dayNumber": 89,
+    "coordinates": [-118.2437, 34.0522],
+    "arrivalDate": "2026-05-28",
+    "dayNumber": 91,
     "distanceFromPrevious": 75.2,
     "distanceFromStart": 3601.9,
     "tier": "major",
@@ -562,14 +466,11 @@
     "name": "Ontario",
     "state": "California",
     "population": 175265,
-    "coordinates": [
-      -117.6509,
-      34.0633
-    ],
-    "arrivalDate": "2026-06-05",
-    "dayNumber": 99,
+    "coordinates": [-117.6509, 34.0633],
+    "arrivalDate": "2026-06-01",
+    "dayNumber": 95,
     "distanceFromPrevious": 161.1,
-    "distanceFromStart": 3763,
+    "distanceFromStart": 3763.0,
     "tier": "major",
     "slug": "ontario"
   },
@@ -578,12 +479,9 @@
     "name": "Victorville",
     "state": "California",
     "population": 134810,
-    "coordinates": [
-      -117.2911,
-      34.5362
-    ],
-    "arrivalDate": "2026-06-01",
-    "dayNumber": 95,
+    "coordinates": [-117.2911, 34.5362],
+    "arrivalDate": "2026-06-03",
+    "dayNumber": 97,
     "distanceFromPrevious": 50.7,
     "distanceFromStart": 3813.7,
     "tier": "major",
@@ -594,12 +492,9 @@
     "name": "Barstow",
     "state": "California",
     "population": 24829,
-    "coordinates": [
-      -117.0173,
-      34.8958
-    ],
-    "arrivalDate": "2026-06-01",
-    "dayNumber": 95,
+    "coordinates": [-117.0173, 34.8958],
+    "arrivalDate": "2026-06-03",
+    "dayNumber": 97,
     "distanceFromPrevious": 1.5,
     "distanceFromStart": 3815.2,
     "tier": "major",
@@ -610,12 +505,9 @@
     "name": "Henderson",
     "state": "Nevada",
     "population": 320189,
-    "coordinates": [
-      -114.9819,
-      36.0395
-    ],
-    "arrivalDate": "2026-06-03",
-    "dayNumber": 97,
+    "coordinates": [-114.9819, 36.0395],
+    "arrivalDate": "2026-06-05",
+    "dayNumber": 99,
     "distanceFromPrevious": 95.2,
     "distanceFromStart": 3910.4,
     "tier": "major",
@@ -626,10 +518,7 @@
     "name": "St. George",
     "state": "Utah",
     "population": 95342,
-    "coordinates": [
-      -113.5841,
-      37.0965
-    ],
+    "coordinates": [-113.5841, 37.0965],
     "arrivalDate": "2026-06-10",
     "dayNumber": 104,
     "distanceFromPrevious": 193.3,
@@ -642,12 +531,9 @@
     "name": "Hurricane",
     "state": "Utah",
     "population": 20036,
-    "coordinates": [
-      -113.2899,
-      37.1753
-    ],
-    "arrivalDate": "2026-06-18",
-    "dayNumber": 112,
+    "coordinates": [-113.2899, 37.1753],
+    "arrivalDate": "2026-06-16",
+    "dayNumber": 110,
     "distanceFromPrevious": 105.9,
     "distanceFromStart": 4209.6,
     "tier": "major",
@@ -658,12 +544,9 @@
     "name": "Kanab",
     "state": "Utah",
     "population": 4700,
-    "coordinates": [
-      -112.5263,
-      37.0475
-    ],
-    "arrivalDate": "2026-06-16",
-    "dayNumber": 110,
+    "coordinates": [-112.5263, 37.0475],
+    "arrivalDate": "2026-06-18",
+    "dayNumber": 112,
     "distanceFromPrevious": 69.1,
     "distanceFromStart": 4278.7,
     "tier": "major",
@@ -674,14 +557,11 @@
     "name": "Marble Canyon",
     "state": "Arizona",
     "population": 50,
-    "coordinates": [
-      -111.6461,
-      36.8117
-    ],
-    "arrivalDate": "2026-06-16",
-    "dayNumber": 110,
+    "coordinates": [-111.6461, 36.8117],
+    "arrivalDate": "2026-06-18",
+    "dayNumber": 112,
     "distanceFromPrevious": 15.3,
-    "distanceFromStart": 4294,
+    "distanceFromStart": 4294.0,
     "tier": "major",
     "slug": "marble-canyon"
   },
@@ -690,12 +570,9 @@
     "name": "Lee's Ferry",
     "state": "Arizona",
     "population": 0,
-    "coordinates": [
-      -111.5947,
-      36.8628
-    ],
-    "arrivalDate": "2026-06-16",
-    "dayNumber": 110,
+    "coordinates": [-111.5947, 36.8628],
+    "arrivalDate": "2026-06-18",
+    "dayNumber": 112,
     "distanceFromPrevious": 4.7,
     "distanceFromStart": 4298.7,
     "tier": "major",
@@ -706,12 +583,9 @@
     "name": "Cameron",
     "state": "Arizona",
     "population": 885,
-    "coordinates": [
-      -111.4226,
-      35.8597
-    ],
-    "arrivalDate": "2026-06-23",
-    "dayNumber": 117,
+    "coordinates": [-111.4226, 35.8597],
+    "arrivalDate": "2026-06-21",
+    "dayNumber": 115,
     "distanceFromPrevious": 96.6,
     "distanceFromStart": 4395.3,
     "tier": "major",
@@ -722,10 +596,7 @@
     "name": "Flagstaff",
     "state": "Arizona",
     "population": 76831,
-    "coordinates": [
-      -111.6513,
-      35.1983
-    ],
+    "coordinates": [-111.6513, 35.1983],
     "arrivalDate": "2026-06-23",
     "dayNumber": 117,
     "distanceFromPrevious": 67.6,
