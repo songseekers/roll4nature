@@ -468,7 +468,7 @@ export default function TeamBravoPage() {
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Gavin</h2>
                   <p className="text-lg text-gray-600 dark:text-gray-300">
-                    Tech Support &bull; Social Media Facilitator
+                    Digital Hub Guru
                   </p>
                 </div>
                 <button
@@ -489,8 +489,35 @@ export default function TeamBravoPage() {
                 />
               </div>
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
-                  Bio coming soon.
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Most see JT&apos;s &ldquo;Roll for Veterans&rdquo; project through the lens of YouTube and social media. A few might actually have the rare chance to meet him in person along his odyssey. Either way, its eyes on the road—the dust, the wind, and the miles. But, behind the interface, I am a minor player. I am one of the resident Air (tech) Support team, ensuring those miles resonate.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  I&apos;m the brother. While JT is out there dipping his tire in the Atlantic and lacing up for the 10:00 AM push, I&apos;m bum deep in the complexity that brings his vision to life. He&apos;s doing things every day that would surely be my demise, physically and mentally. I&apos;m doing things he doesn&apos;t have the time for and don&apos;t poke me in the Asperger. To me, being on the Air Support team isn&apos;t about music in the traditional sense; it&apos;s about finding the &ldquo;nucleus&rdquo; where stories, code, and souls strike a chord. Sometimes that resonance is found in Python code, and sometimes it&apos;s just the quiet reflection silence under the cedar trees.
+                </p>
+
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">📜 From Submarines to Signal Streams</h3>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
+                  My journey to this project wasn&apos;t a straight line. I&apos;ve lived a few lives:
+                </p>
+                <ul className="list-none space-y-2 mb-4 text-gray-700 dark:text-gray-300">
+                  <li><strong>The Silent Service:</strong> Operating nuclear reactors aboard the fast-attack submarine USS Skate (SSN-578).</li>
+                  <li><strong>The Fiber Veins:</strong> Decades maintaining the fiber-optic and radio junction stations that keep the world connected—a job I still call the &ldquo;bestest in the world.&rdquo;</li>
+                  <li><strong>The AI Collaborator:</strong> Whether I&apos;m building tools with AI, training models, or directing &ldquo;Chauncy&rdquo; (my favorite AI collaborator) through the gothic halls of <em>The Hunger of Graywick Hall</em>—a novel that he&apos;s writing under my direction—I believe in the power of collaborative imagination.</li>
+                </ul>
+
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">🦅 Why R4V Matters to Me</h3>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  I likely inherited the &ldquo;tech gene&rdquo; from my father—a farmer turned rocket scientist (not even kidding) who helped design the motors for the Polaris and Minuteman programs. He taught me that precision and purpose go hand-in-hand.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  For me, Roll for Veterans is a &ldquo;for-reals&rdquo; side project with a deeper frequency. It&apos;s about building a bridge. I might show traits on the autism spectrum, which means I&apos;m not always a man of many words—but when I build something, whether it&apos;s a Braille proofreading tool, an overly-complicated Rainmeter skin, or the digital hub for this mission, that is how I speak.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  This project is my way of honoring veterans like my dad. Every line of code and every &ldquo;unusual tool&rdquo; I dream up for this mission is a tribute to the camaraderie JT finds at every mile marker along the way.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  I&apos;m here to make sure the signal stays strong, the stories stay raw, and the mission keeps rolling. Thanks to JT, and to you, for this opportunity.
                 </p>
               </div>
             </div>
