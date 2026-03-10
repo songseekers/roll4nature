@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import activitiesData from '@/data/activities.json';
-import RouteImageCell from '@/components/stats/RouteImageCell';
+import WorkoutTable from '@/components/stats/WorkoutTable';
+import type { DateRow } from '@/components/stats/WorkoutTable';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -57,22 +58,6 @@ const grouped = activities.reduce<Record<string, Activity[]>>((acc, a) => {
   acc[a.date].push(a);
   return acc;
 }, {});
-
-type DateRow = {
-  date: string;
-  distance: number;
-  totalSecs: number;
-  calories: number;
-  ascent: number;
-  descent: number;
-  maxElev: number;
-  avgHR: number | null;
-  maxHR: number | null;
-  minTemp: number;
-  maxTemp: number;
-  avgTemp: number;
-  avgMPH: number;
-};
 
 const dateRows: DateRow[] = Object.entries(grouped)
   .sort(([a], [b]) => a.localeCompare(b))
@@ -213,86 +198,25 @@ export default function StatsPage() {
         {/* ── Workout Breakdown Table ───────────────────────── */}
         <section>
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Workout Breakdown</h2>
-          <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm text-left whitespace-nowrap">
-                <thead>
-                  <tr className="bg-r4v-secondary text-white text-xs uppercase tracking-wide">
-                    <th className="px-3 py-3">Route</th>
-                    <th className="px-3 py-3">Date</th>
-                    <th className="px-3 py-3 text-right">Miles</th>
-                    <th className="px-3 py-3">Time</th>
-                    <th className="px-3 py-3 text-right">Avg HR</th>
-                    <th className="px-3 py-3 text-right">Max HR</th>
-                    <th className="px-3 py-3 text-right">↑ Ascent</th>
-                    <th className="px-3 py-3 text-right">↓ Descent</th>
-                    <th className="px-3 py-3 text-right">Max Elev</th>
-                    <th className="px-3 py-3 text-right">Avg MPH</th>
-                    <th className="px-3 py-3 text-right">Calories</th>
-                    <th className="px-3 py-3 text-right">Min °F</th>
-                    <th className="px-3 py-3 text-right">Max °F</th>
-                    <th className="px-3 py-3 text-right">Avg °F</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                  {dateRows.map((row) => (
-                    <tr
-                      key={row.date}
-                      className="hover:bg-gray-100 dark:hover:bg-gray-800/60 transition text-gray-700 dark:text-gray-300"
-                    >
-                      <td className="px-3 py-3">
-                        <RouteImageCell date={row.date} dateLabel={formatDateLabel(row.date)} />
-                      </td>
-                      <td className="px-3 py-3 font-medium text-gray-900 dark:text-white">
-                        {formatDateLabel(row.date)}
-                      </td>
-                      <td className="px-3 py-3 text-right">{fmt1(row.distance)}</td>
-                      <td className="px-3 py-3">{formatDuration(row.totalSecs)}</td>
-                      <td className="px-3 py-3 text-right">
-                        {row.avgHR !== null ? Math.round(row.avgHR) : '—'}
-                      </td>
-                      <td className="px-3 py-3 text-right">
-                        {row.maxHR !== null ? row.maxHR : '—'}
-                      </td>
-                      <td className="px-3 py-3 text-right">{fmtInt(row.ascent)}</td>
-                      <td className="px-3 py-3 text-right">{fmtInt(row.descent)}</td>
-                      <td className="px-3 py-3 text-right">{fmtInt(row.maxElev)}</td>
-                      <td className="px-3 py-3 text-right">{fmt1(row.avgMPH)}</td>
-                      <td className="px-3 py-3 text-right">{fmtInt(row.calories)}</td>
-                      <td className="px-3 py-3 text-right">{fmt1(row.minTemp)}</td>
-                      <td className="px-3 py-3 text-right">{fmt1(row.maxTemp)}</td>
-                      <td className="px-3 py-3 text-right">{fmt1(row.avgTemp)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-                {/* Totals row */}
-                <tfoot>
-                  <tr className="bg-r4v-primary/10 dark:bg-r4v-primary/20 font-semibold text-gray-900 dark:text-white border-t-2 border-r4v-primary/30">
-                    <td className="px-3 py-3">—</td>
-                    <td className="px-3 py-3">Totals / Avg</td>
-                    <td className="px-3 py-3 text-right text-r4v-primary dark:text-r4v-primary-hover">
-                      {fmt1(totalMiles)}
-                    </td>
-                    <td className="px-3 py-3">{formatDuration(totalSecs)}</td>
-                    <td className="px-3 py-3 text-right">
-                      {overallAvgHR ? `${overallAvgHR} avg` : '—'}
-                    </td>
-                    <td className="px-3 py-3 text-right">{totalMaxHR} max</td>
-                    <td className="px-3 py-3 text-right">{fmtInt(totalAscent)}</td>
-                    <td className="px-3 py-3 text-right">{fmtInt(totalDescent)}</td>
-                    <td className="px-3 py-3 text-right">{totalMaxElev} max</td>
-                    <td className="px-3 py-3 text-right">{fmt1(totalAvgMPH)}</td>
-                    <td className="px-3 py-3 text-right">{fmtInt(totalCalories)}</td>
-                    <td className="px-3 py-3 text-right">{fmt1(avgMinTempAcrossDates)} avg</td>
-                    <td className="px-3 py-3 text-right">{fmt1(avgMaxTempAcrossDates)} avg</td>
-                    <td className="px-3 py-3 text-right">{fmt1(avgTempAcrossDates)}</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-          </div>
+          <WorkoutTable
+            rows={dateRows}
+            totals={{
+              totalMiles,
+              totalSecs,
+              totalCalories,
+              totalAscent,
+              totalDescent,
+              overallAvgHR,
+              totalMaxHR,
+              totalMaxElev,
+              totalAvgMPH,
+              avgMinTemp: avgMinTempAcrossDates,
+              avgMaxTemp: avgMaxTempAcrossDates,
+              avgTemp: avgTempAcrossDates,
+            }}
+          />
           <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
-            Multiple rides on the same date are combined into a single row.
+            Multiple rides on the same date are combined into a single row. Click any column header to sort.
           </p>
         </section>
 
