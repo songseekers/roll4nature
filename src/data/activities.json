@@ -110,5 +110,19 @@
     "maxTemp": 89.6,
     "movingTime": "6:48:31",
     "maxElevation": 86
+  },
+  {
+    "date": "2026-03-09",
+    "title": "St Johns County Cycling",
+    "distance": 51.3,
+    "calories": 1557,
+    "avgHR": 97,
+    "maxHR": 131,
+    "totalAscent": 472,
+    "totalDescent": 564,
+    "minTemp": 66.2,
+    "maxTemp": 87.8,
+    "movingTime": "5:04:01",
+    "maxElevation": 50
   }
 ]
