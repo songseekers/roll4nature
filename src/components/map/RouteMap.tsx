@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import { Maximize2, Minimize2 } from 'lucide-react';
 import { City } from '@/types/city';
 import { getMajorCities, getAllCities } from '@/lib/data-helpers';
 import MapControls from './MapControls';
@@ -46,8 +47,26 @@ export default function RouteMap() {
   const [isLoading, setIsLoading] = useState(true);
   const [layer, setLayer] = useState<MapLayer>('major');
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const popupRef = useRef<mapboxgl.Popup | null>(null);
   const hoverPopupRef = useRef<mapboxgl.Popup | null>(null);
+
+  // Escape key exits fullscreen
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsFullscreen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  // Resize map after DOM repaints on fullscreen toggle
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      map.current?.resize();
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [isFullscreen]);
 
   useEffect(() => {
     if (!mapContainer.current) return;
@@ -305,6 +324,64 @@ export default function RouteMap() {
     });
   }, [layer, isLoading]);
 
+  const toggleButton = (
+    <button
+      onClick={() => setIsFullscreen((prev) => !prev)}
+      className="absolute top-2 left-6 z-10 flex items-center gap-1 bg-white dark:bg-gray-800 text-r4v-primary dark:text-r4v-primary-hover border border-r4v-primary rounded-full px-3 py-1 text-sm font-semibold shadow hover:shadow-md transition cursor-pointer"
+    >
+      {isFullscreen ? <Minimize2 size={14} /> : <Maximize2 size={14} />}
+      <span>{isFullscreen ? 'Exit Full Screen' : 'Full Screen'}</span>
+    </button>
+  );
+
+  const legend = (
+    <div className="mt-4 bg-gray-50 dark:bg-gray-900 rounded-lg p-3 transition-colors max-w-3xl mx-auto">
+      <h3 className="font-bold text-gray-900 dark:text-white mb-3">Map Legend</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div className="flex items-center space-x-3">
+          <div className="w-5 h-5 rounded-full bg-[#8B4513] border-[3px] border-white"></div>
+          <span className="text-gray-700 dark:text-gray-300">Major Cities</span>
+        </div>
+        <div className="flex items-center space-x-3">
+          <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
+          <span className="text-gray-700 dark:text-gray-300">Route (4,463 miles)</span>
+        </div>
+        {new Date().toLocaleDateString('en-CA') >= '2026-02-27' && (
+          <div className="flex items-center space-x-3">
+            <div className="h-1 w-8 bg-[#6B7280] rounded"></div>
+            <span className="text-gray-700 dark:text-gray-300">Miles completed</span>
+          </div>
+        )}
+      </div>
+      <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+        Hover over markers for quick info • Click for full city details
+      </p>
+    </div>
+  );
+
+  if (isFullscreen) {
+    return (
+      <div className="fixed inset-0 z-50 bg-white dark:bg-gray-900 flex flex-col overflow-auto">
+        <MapControls layer={layer} onLayerChange={setLayer} />
+        <div className="relative flex-1 min-h-0">
+          <div
+            ref={mapContainer}
+            className="w-full h-full"
+          />
+          {toggleButton}
+          {isLoading && (
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+              <div className="bg-white px-6 py-3 rounded-lg shadow-lg">
+                <p className="text-gray-700 font-semibold">Loading map...</p>
+              </div>
+            </div>
+          )}
+        </div>
+        {legend}
+      </div>
+    );
+  }
+
   return (
     <div id="map" className="w-full">
       {/* Map Controls */}
@@ -316,6 +393,7 @@ export default function RouteMap() {
           ref={mapContainer}
           className="w-full h-64 sm:h-72 lg:h-80 rounded-lg overflow-hidden shadow-lg"
         />
+        {toggleButton}
 
         {/* Loading State */}
         {isLoading && (
@@ -328,28 +406,7 @@ export default function RouteMap() {
       </div>
 
       {/* Map Legend */}
-      <div className="mt-4 bg-gray-50 dark:bg-gray-900 rounded-lg p-3 transition-colors max-w-3xl mx-auto">
-        <h3 className="font-bold text-gray-900 dark:text-white mb-3">Map Legend</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-          <div className="flex items-center space-x-3">
-            <div className="w-5 h-5 rounded-full bg-[#8B4513] border-[3px] border-white"></div>
-            <span className="text-gray-700 dark:text-gray-300">Major Cities</span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
-            <span className="text-gray-700 dark:text-gray-300">Route (4,463 miles)</span>
-          </div>
-          {new Date().toLocaleDateString('en-CA') >= '2026-02-27' && (
-            <div className="flex items-center space-x-3">
-              <div className="h-1 w-8 bg-[#6B7280] rounded"></div>
-              <span className="text-gray-700 dark:text-gray-300">Miles completed</span>
-            </div>
-          )}
-        </div>
-        <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
-          Hover over markers for quick info • Click for full city details
-        </p>
-      </div>
+      {legend}
     </div>
   );
 }

@@ -52,12 +52,12 @@ export default function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/resources/R4V_story_v2.pdf"
+                      href="/resources/R4V%20Story_v8.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
-                      Our Story
+                      R4V Story
                     </a>
                   </li>
                   <li>

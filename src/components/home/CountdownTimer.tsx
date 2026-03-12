@@ -20,6 +20,9 @@ const START_TIME = new Date('2026-02-27T10:00:00').getTime();
 // Count-DOWN to March 8, 2026 at 6:00 PM local time
 const NEXT_STOP_TIME = new Date('2026-03-08T18:00:00').getTime();
 
+// PENSACOLA — Yoga and Social: March 20, 2026 at 3:00 PM local time
+const PENSACOLA_STOP_TIME = new Date('2026-03-20T15:00:00').getTime();
+
 function calcElapsed(from: number): TimerTime {
   const diff = Math.max(0, Date.now() - from);
   return {
@@ -69,11 +72,13 @@ function SectionSeparator() {
 export default function CountdownTimer() {
   const [elapsed, setElapsed] = useState<TimerTime | null>(null);
   const [countdown, setCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
+  const [pensacolaCountdown, setPensacolaCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
 
   useEffect(() => {
     const tick = () => {
       setElapsed(calcElapsed(START_TIME));
       setCountdown(calcCountdown(NEXT_STOP_TIME));
+      setPensacolaCountdown(calcCountdown(PENSACOLA_STOP_TIME));
     };
     tick();
     const interval = setInterval(tick, 1000);
@@ -134,6 +139,33 @@ export default function CountdownTimer() {
             <TimerBlock value={countdown?.minutes ?? null} label="min" />
             <Divider />
             <TimerBlock value={countdown?.seconds ?? null} label="sec" />
+          </div>
+        )}
+      </div>
+
+      <SectionSeparator />
+
+      {/* Pensacola countdown */}
+      <div className="flex flex-col items-center gap-2">
+        <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+          {pensacolaCountdown?.isOver
+            ? "See you next time, Pensacola!"
+            : 'Pensacola — Yoga and Social'}
+        </p>
+        {!pensacolaCountdown?.isOver && (
+          <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
+            2601 N 13th Ave, Pensacola, FL 32503
+          </p>
+        )}
+        {!pensacolaCountdown?.isOver && (
+          <div className="flex items-center gap-2">
+            <TimerBlock value={pensacolaCountdown?.days ?? null} label="days" />
+            <Divider />
+            <TimerBlock value={pensacolaCountdown?.hours ?? null} label="hrs" />
+            <Divider />
+            <TimerBlock value={pensacolaCountdown?.minutes ?? null} label="min" />
+            <Divider />
+            <TimerBlock value={pensacolaCountdown?.seconds ?? null} label="sec" />
           </div>
         )}
       </div>

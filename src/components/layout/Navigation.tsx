@@ -13,7 +13,7 @@ export default function Navigation() {
           {/* Banner Logo */}
           <Link href="/" className="flex-shrink-0 mx-auto md:mx-0">
             <Image
-              src="/images/banner_rev.png"
+              src="/images/banner.png"
               alt="Roll for Veterans"
               width={400}
               height={80}
@@ -28,12 +28,12 @@ export default function Navigation() {
               Home
             </Link>
             <a
-              href="/resources/R4V_story_v2.pdf"
+              href="/resources/R4V%20Story_v8.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
             >
-              Our Story
+              R4V Story
             </a>
             <Button
               variant="primary"
