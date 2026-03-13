@@ -359,45 +359,31 @@ export default function RouteMap() {
     </div>
   );
 
-  if (isFullscreen) {
-    return (
-      <div className="fixed inset-0 z-50 bg-white dark:bg-gray-900 flex flex-col overflow-auto">
-        <MapControls layer={layer} onLayerChange={setLayer} />
-        <div className="relative flex-1 min-h-0">
-          <div
-            ref={mapContainer}
-            className="w-full h-full"
-          />
-          {toggleButton}
-          {isLoading && (
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="bg-white px-6 py-3 rounded-lg shadow-lg">
-                <p className="text-gray-700 font-semibold">Loading map...</p>
-              </div>
-            </div>
-          )}
-        </div>
-        {legend}
-      </div>
-    );
-  }
-
   return (
-    <div id="map" className="w-full">
-      {/* Map Controls */}
+    <div
+      id={isFullscreen ? undefined : 'map'}
+      className={isFullscreen
+        ? 'fixed inset-0 z-50 bg-white dark:bg-gray-900 flex flex-col overflow-hidden'
+        : 'w-full'
+      }
+    >
       <MapControls layer={layer} onLayerChange={setLayer} />
 
-      {/* Map Container */}
-      <div className="relative max-w-3xl mx-auto px-4">
+      <div className={isFullscreen
+        ? 'relative flex-1 min-h-0'
+        : 'relative max-w-3xl mx-auto px-4'
+      }>
         <div
           ref={mapContainer}
-          className="w-full h-64 sm:h-72 lg:h-80 rounded-lg overflow-hidden shadow-lg"
+          className={isFullscreen
+            ? 'w-full h-full'
+            : 'w-full h-64 sm:h-72 lg:h-80 rounded-lg overflow-hidden shadow-lg'
+          }
         />
         {toggleButton}
 
-        {/* Loading State */}
         {isLoading && (
-          <div className="absolute inset-0 bg-black/20 flex items-center justify-center rounded-lg">
+          <div className={`absolute inset-0 bg-black/20 flex items-center justify-center${isFullscreen ? '' : ' rounded-lg'}`}>
             <div className="bg-white px-6 py-3 rounded-lg shadow-lg">
               <p className="text-gray-700 font-semibold">Loading map...</p>
             </div>
@@ -405,8 +391,7 @@ export default function RouteMap() {
         )}
       </div>
 
-      {/* Map Legend */}
-      {legend}
+      {!isFullscreen && legend}
     </div>
   );
 }

@@ -123,28 +123,6 @@ export default function CountdownTimer() {
 
       <SectionSeparator />
 
-      {/* Count-DOWN */}
-      <div className="flex flex-col items-center gap-2">
-        <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
-          {countdown?.isOver
-            ? "We've reached Daytona Beach, FL!"
-            : 'Next stop: Daytona Beach, FL (Exact location TBD)'}
-        </p>
-        {!countdown?.isOver && (
-          <div className="flex items-center gap-2">
-            <TimerBlock value={countdown?.days ?? null} label="days" />
-            <Divider />
-            <TimerBlock value={countdown?.hours ?? null} label="hrs" />
-            <Divider />
-            <TimerBlock value={countdown?.minutes ?? null} label="min" />
-            <Divider />
-            <TimerBlock value={countdown?.seconds ?? null} label="sec" />
-          </div>
-        )}
-      </div>
-
-      <SectionSeparator />
-
       {/* Pensacola countdown */}
       <div className="flex flex-col items-center gap-2">
         <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
