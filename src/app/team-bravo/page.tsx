@@ -176,6 +176,27 @@ export default function TeamBravoPage() {
               </div>
             </div>
 
+            {/* Boogalie Bear */}
+            <div className="flex flex-col items-center">
+              <div
+                onClick={() => setSelectedMember('boogs')}
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full"
+              >
+                <div className="relative h-40">
+                  <Image
+                    src="/images/TeamBravo/Boogs.jpeg"
+                    alt="Boogalie Bear, Roll for Veterans expedition companion and morale officer"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">Boogalie Bear</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Click to learn more</p>
+                </div>
+              </div>
+            </div>
+
             {/* Placeholder Team Members */}
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center">
@@ -563,6 +584,73 @@ export default function TeamBravoPage() {
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
                   Bio coming soon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Boogalie Bear Profile Modal */}
+      {selectedMember === 'boogs' && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedMember(null)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-8">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Boogalie Bear</h2>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">
+                    Expedition Companion &bull; Morale Officer &bull; Photo Enthusiast
+                  </p>
+                </div>
+                <button
+                  onClick={() => setSelectedMember(null)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
+                  aria-label="Close modal"
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="mb-6 flex flex-col sm:flex-row gap-4 justify-center">
+                <Image
+                  src="/images/TeamBravo/BoogBack.jpeg"
+                  alt="Boogalie Bear showing his back, made from JT's Army pants and Grand Canyon shirt"
+                  width={300}
+                  height={200}
+                  className="w-full sm:w-1/2 h-auto rounded-lg"
+                />
+                <Image
+                  src="/images/TeamBravo/Boog_cert.jpeg"
+                  alt="Boogalie Bear's Road Trip certificate"
+                  width={300}
+                  height={200}
+                  className="w-full sm:w-1/2 h-auto rounded-lg"
+                />
+              </div>
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Hello! I&apos;m Boogalie Bear, but most folks just call me Boogs.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  I was born in 2023 in Janelle&apos;s fabric laboratory — one of our Air Support crew members — crafted from JT&apos;s Army pants and a shirt he got while visiting the Grand Canyon. That means I carry a piece of JT&apos;s service and a piece of one of the world&apos;s greatest natural wonders with me everywhere I go. Pretty special stuff for a bear!
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  I&apos;ve been dreaming about seeing the Grand Canyon — the place of my origin, in a way — with my own eyes ever since Janelle stitched my first seam. This journey from Key West to Flagstaff will finally take me there, and I couldn&apos;t be more excited. I&apos;m already Road Trip certified, but this trip is taking that to the next level!
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  My favorite part of being on Team Bravo? Meeting people along The Path and taking pictures with them. Seriously, I never turn down a photo opportunity. If you see us out there on the road, come say hi! I&apos;m always ready to pose, share a smile, and be part of your story.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  After all, what good is a journey if you don&apos;t make friends and memories along the way?
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  See you on The Path!<br />— Boogs
                 </p>
               </div>
             </div>
