@@ -152,5 +152,33 @@
     "maxTemp": 91.4,
     "movingTime": "6:12:05",
     "maxElevation": 76
+  },
+  {
+    "date": "2026-03-14",
+    "title": "Tallahassee Cycling",
+    "distance": 65.08,
+    "calories": 2969,
+    "avgHR": 98,
+    "maxHR": 138,
+    "totalAscent": 1148,
+    "totalDescent": 1076,
+    "minTemp": 73.4,
+    "maxTemp": 93.2,
+    "movingTime": "6:26:17",
+    "maxElevation": 147
+  },
+  {
+    "date": "2026-03-15",
+    "title": "Tallahassee Cycling",
+    "distance": 55.83,
+    "calories": 2228,
+    "avgHR": 95,
+    "maxHR": 141,
+    "totalAscent": 2014,
+    "totalDescent": 1926,
+    "minTemp": 69.8,
+    "maxTemp": 91.4,
+    "movingTime": "5:55:55",
+    "maxElevation": 124
   }
 ]
