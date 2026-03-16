@@ -187,7 +187,7 @@ export default function TeamBravoPage() {
                     src="/images/TeamBravo/Boogs.jpeg"
                     alt="Boogalie Bear, Roll for Veterans expedition companion and morale officer"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
                 <div className="p-3 text-center">
@@ -617,20 +617,13 @@ export default function TeamBravoPage() {
                   &times;
                 </button>
               </div>
-              <div className="mb-6 flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="mb-6">
                 <Image
                   src="/images/TeamBravo/BoogBack.jpeg"
                   alt="Boogalie Bear showing his back, made from JT's Army pants and Grand Canyon shirt"
                   width={300}
                   height={200}
-                  className="w-full sm:w-1/2 h-auto rounded-lg"
-                />
-                <Image
-                  src="/images/TeamBravo/Boog_cert.jpeg"
-                  alt="Boogalie Bear's Road Trip certificate"
-                  width={300}
-                  height={200}
-                  className="w-full sm:w-1/2 h-auto rounded-lg"
+                  className="w-1/2 h-auto rounded-lg mx-auto"
                 />
               </div>
               <div className="prose prose-lg dark:prose-invert max-w-none">
@@ -649,9 +642,18 @@ export default function TeamBravoPage() {
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   After all, what good is a journey if you don&apos;t make friends and memories along the way?
                 </p>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                   See you on The Path!<br />— Boogs
                 </p>
+                <div className="flex justify-center mt-6 pt-6 border-t border-gray-200 dark:border-gray-600">
+                  <Image
+                    src="/images/TeamBravo/Boog_cert.jpeg"
+                    alt="Boogalie Bear's official Road Trip certification"
+                    width={300}
+                    height={200}
+                    className="w-2/3 h-auto rounded-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>
