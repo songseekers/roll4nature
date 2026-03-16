@@ -3,6 +3,7 @@ import MissionStatement from '@/components/journey/MissionStatement';
 import FacebookComments from '@/components/home/FacebookComments';
 import RouteMapLoader from '@/components/map/RouteMapLoader';
 import Image from 'next/image';
+import trackingData from '@/data/tracking.json';
 
 export const metadata = {
   title: 'R4V 2026: Coast to Coast to Canyon | 4,463 Miles of Purpose',
@@ -10,6 +11,12 @@ export const metadata = {
 };
 
 export default function HomePage() {
+  const isTrackingActive = (() => {
+    const { url, expires } = trackingData as { url: string; expires: number };
+    const now = Math.floor(Date.now() / 1000);
+    return !!url && expires > 0 && now < expires;
+  })();
+
   return (
     <div className="bg-white dark:bg-gray-900 transition-colors">
       {/* Journey Hero */}
@@ -27,6 +34,36 @@ export default function HomePage() {
           <RouteMapLoader />
         </div>
       </section>
+
+      {/* Live Tracking Banner — only rendered when a session is active */}
+      {isTrackingActive && (
+        <section className="bg-gray-900 py-6 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col items-center sm:items-start gap-1">
+              <div className="flex items-center gap-2">
+                <span className="relative flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
+                </span>
+                <span className="text-white font-semibold text-sm">
+                  JT is currently on The Path
+                </span>
+              </div>
+              <p className="text-gray-400 text-xs text-center sm:text-left">
+                Location is shared only while JT is riding
+              </p>
+            </div>
+            <a
+              href="/track"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-400 text-white font-bold px-6 py-2 rounded-lg transition text-sm whitespace-nowrap"
+            >
+              Track Live Location →
+            </a>
+          </div>
+        </section>
+      )}
 
       {/* Mission Statement */}
       <MissionStatement />
