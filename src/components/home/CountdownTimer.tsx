@@ -120,11 +120,11 @@ export default function CountdownTimer() {
           <span className="text-[10px] uppercase tracking-wide text-gray-500 dark:text-gray-400">miles</span>
         </div>
         <div className="flex items-center gap-1 mt-1">
-          <span className="text-sm font-semibold text-r4v-primary dark:text-white group-hover:underline transition-all">
+          <span className="text-sm font-semibold text-r4v-primary dark:text-gray-300 group-hover:underline transition-all">
             Click
           </span>
-          <span className="text-r4v-primary dark:text-white text-base leading-none">↑</span>
-          <span className="text-sm font-semibold text-r4v-primary dark:text-white group-hover:underline transition-all">
+          <span className="text-r4v-primary dark:text-gray-300 text-base leading-none">↑</span>
+          <span className="text-sm font-semibold text-r4v-primary dark:text-gray-300 group-hover:underline transition-all">
             to see stats
           </span>
         </div>
@@ -139,6 +139,11 @@ export default function CountdownTimer() {
             ? "See you next time, Pensacola!"
             : 'Pensacola — Yoga and Social'}
         </p>
+        {!pensacolaCountdown?.isOver && (
+          <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
+            20 March 2026 @ 3:00 PM
+          </p>
+        )}
         {!pensacolaCountdown?.isOver && (
           <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
             2601 N 13th Ave, Pensacola, FL 32503
