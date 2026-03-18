@@ -180,5 +180,33 @@
     "maxTemp": 91.4,
     "movingTime": "5:55:55",
     "maxElevation": 124
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Mary Esther Cycling",
+    "distance": 25.16,
+    "calories": 610,
+    "avgHR": 98,
+    "maxHR": 131,
+    "totalAscent": 230,
+    "totalDescent": 312,
+    "minTemp": 50.0,
+    "maxTemp": 64.4,
+    "movingTime": "2:11:02",
+    "maxElevation": 56
+  },
+  {
+    "date": "2026-03-17",
+    "title": "Okaloosa County Cycling",
+    "distance": 30.21,
+    "calories": 958,
+    "avgHR": 99,
+    "maxHR": 146,
+    "totalAscent": 548,
+    "totalDescent": 482,
+    "minTemp": 55.4,
+    "maxTemp": 80.6,
+    "movingTime": "2:52:57",
+    "maxElevation": 89
   }
 ]
