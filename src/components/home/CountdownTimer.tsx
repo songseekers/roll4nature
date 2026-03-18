@@ -120,11 +120,11 @@ export default function CountdownTimer() {
           <span className="text-[10px] uppercase tracking-wide text-gray-500 dark:text-gray-400">miles</span>
         </div>
         <div className="flex items-center gap-1 mt-1">
-          <span className="text-xs font-semibold text-r4v-primary dark:text-white group-hover:underline transition-all">
+          <span className="text-sm font-semibold text-r4v-primary dark:text-white group-hover:underline transition-all">
             Click
           </span>
           <span className="text-r4v-primary dark:text-white text-base leading-none">↑</span>
-          <span className="text-xs font-semibold text-r4v-primary dark:text-white group-hover:underline transition-all">
+          <span className="text-sm font-semibold text-r4v-primary dark:text-white group-hover:underline transition-all">
             to see stats
           </span>
         </div>
