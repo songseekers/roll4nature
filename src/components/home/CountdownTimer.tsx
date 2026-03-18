@@ -121,9 +121,12 @@ export default function CountdownTimer() {
         </div>
         <div className="flex items-center gap-1 mt-1">
           <span className="text-xs font-semibold text-r4v-primary dark:text-white group-hover:underline transition-all">
-            Click to see stats
+            Click
           </span>
-          <span className="text-r4v-primary dark:text-white text-base leading-none">↗</span>
+          <span className="text-r4v-primary dark:text-white text-base leading-none">↑</span>
+          <span className="text-xs font-semibold text-r4v-primary dark:text-white group-hover:underline transition-all">
+            to see stats
+          </span>
         </div>
       </Link>
 
