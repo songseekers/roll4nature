@@ -31,7 +31,7 @@ export default function JourneyHero() {
               <div className="text-xs text-gray-600 dark:text-gray-400">Miles</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">115</div>
+              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">120</div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Days</div>
             </div>
             <div>
@@ -40,7 +40,7 @@ export default function JourneyHero() {
             </div>
           </div>
           <div className="border-t border-gray-200 dark:border-gray-700 mt-4 pt-4 text-xs text-gray-600 dark:text-gray-400">
-            <p><span className="font-semibold dark:text-white">Feb 27 - May 26 - Jun 21, 2026</span></p>
+            <p><span className="font-semibold dark:text-white">Feb 27 - May 31 - Jun 26, 2026</span></p>
             <p>Key West, FL → Los Angeles, CA → Flagstaff, AZ</p>
           </div>
         </div>
