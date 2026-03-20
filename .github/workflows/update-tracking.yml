@@ -7,6 +7,11 @@ on:
         description: 'Glympse URL (e.g. https://glympse.com/!abc123)'
         required: true
         type: string
+      hours:
+        description: 'Hours to keep link active (e.g. 6, 8, 10)'
+        required: true
+        default: '10'
+        type: string
 
 permissions:
   contents: write
@@ -21,14 +26,15 @@ jobs:
 
       - name: Write tracking.json
         run: |
-          EXPIRES=$(( $(date +%s) + 36000 ))
+          SECONDS_ACTIVE=$(( ${{ github.event.inputs.hours }} * 3600 ))
+          EXPIRES=$(( $(date +%s) + $SECONDS_ACTIVE ))
           echo "{\"url\": \"${{ github.event.inputs.glympse_url }}\", \"expires\": $EXPIRES}" > src/data/tracking.json
-          echo "Written tracking.json with expiry at $EXPIRES ($(date -d @$EXPIRES))"
+          echo "Written tracking.json — active for ${{ github.event.inputs.hours }} hours, expires at $EXPIRES ($(date -d @$EXPIRES))"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/tracking.json
-          git commit -m "ride: update live tracking link"
+          git commit -m "ride: update live tracking link (${{ github.event.inputs.hours }}h)"
           git push
