@@ -208,5 +208,33 @@
     "maxTemp": 80.6,
     "movingTime": "2:52:57",
     "maxElevation": 89
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Pensacola Cycling",
+    "distance": 5.69,
+    "calories": 388,
+    "avgHR": 102,
+    "maxHR": 132,
+    "totalAscent": 118,
+    "totalDescent": 135,
+    "minTemp": 62.6,
+    "maxTemp": 75.2,
+    "movingTime": "0:41:57",
+    "maxElevation": 125
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Pensacola Cycling",
+    "distance": 60.76,
+    "calories": 2377,
+    "avgHR": 106,
+    "maxHR": 156,
+    "totalAscent": 810,
+    "totalDescent": 725,
+    "minTemp": 62.6,
+    "maxTemp": 84.2,
+    "movingTime": "6:07:15",
+    "maxElevation": 115
   }
 ]
