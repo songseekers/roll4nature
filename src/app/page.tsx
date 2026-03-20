@@ -3,16 +3,22 @@ import MissionStatement from '@/components/journey/MissionStatement';
 import FacebookComments from '@/components/home/FacebookComments';
 import RouteMapLoader from '@/components/map/RouteMapLoader';
 import Image from 'next/image';
-import trackingData from '@/data/tracking.json';
+import fs from 'fs';
+import path from 'path';
 
 export const metadata = {
   title: 'R4V 2026: Coast to Coast to Canyon | 4,463 Miles of Purpose',
-  description: 'Join our epic bike journey from Key West, FL to Los Angeles, CA to Flagstaff, AZ, connecting with veterans in 42+ communities. Feb 27 - June 21, 2026.',
+  description: 'Join our epic bike journey from Key West, FL to Los Angeles, CA to Flagstaff, AZ, connecting with veterans in 42+ communities. Feb 27 - June 26, 2026.',
 };
 
 export default function HomePage() {
+  const trackingRaw = fs.readFileSync(
+    path.join(process.cwd(), 'src/data/tracking.json'),
+    'utf-8'
+  );
+  const trackingData = JSON.parse(trackingRaw) as { url: string; expires: number };
   const isTrackingActive = (() => {
-    const { url, expires } = trackingData as { url: string; expires: number };
+    const { url, expires } = trackingData;
     const now = Math.floor(Date.now() / 1000);
     return !!url && expires > 0 && now < expires;
   })();
