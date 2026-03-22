@@ -236,5 +236,33 @@
     "maxTemp": 84.2,
     "movingTime": "6:07:15",
     "maxElevation": 115
+  },
+  {
+    "date": "2026-03-20",
+    "title": "Pensacola Cycling",
+    "distance": 25.4,
+    "calories": 870,
+    "avgHR": 84,
+    "maxHR": 148,
+    "totalAscent": 443,
+    "totalDescent": 367,
+    "minTemp": 73.4,
+    "maxTemp": 91.4,
+    "movingTime": "2:56:10",
+    "maxElevation": 121
+  },
+  {
+    "date": "2026-03-21",
+    "title": "Santa Rosa County Cycling",
+    "distance": 56.24,
+    "calories": 1945,
+    "avgHR": 121,
+    "maxHR": 161,
+    "totalAscent": 328,
+    "totalDescent": 302,
+    "minTemp": 66.2,
+    "maxTemp": 86.0,
+    "movingTime": "4:14:16",
+    "maxElevation": 141
   }
 ]

@@ -17,11 +17,9 @@ interface TimerTime {
 // Count-UP from February 27, 2026 at 10:00 AM local time
 const START_TIME = new Date('2026-02-27T10:00:00').getTime();
 
-// Count-DOWN to March 8, 2026 at 6:00 PM local time
-const NEXT_STOP_TIME = new Date('2026-03-08T18:00:00').getTime();
-
-// PENSACOLA — Yoga and Social: March 20, 2026 at 3:00 PM local time
-const PENSACOLA_STOP_TIME = new Date('2026-03-20T15:00:00').getTime();
+// Biloxi Fun Run/Walk/Roll: March 26, 2026 at 6:00 PM CST
+// CST is UTC-6, so 6:00 PM CST = 2026-03-27T00:00:00Z
+const BILOXI_STOP_TIME = new Date('2026-03-26T18:00:00-06:00').getTime();
 
 function calcElapsed(from: number): TimerTime {
   const diff = Math.max(0, Date.now() - from);
@@ -71,14 +69,12 @@ function SectionSeparator() {
 
 export default function CountdownTimer() {
   const [elapsed, setElapsed] = useState<TimerTime | null>(null);
-  const [countdown, setCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
   const [pensacolaCountdown, setPensacolaCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
 
   useEffect(() => {
     const tick = () => {
       setElapsed(calcElapsed(START_TIME));
-      setCountdown(calcCountdown(NEXT_STOP_TIME));
-      setPensacolaCountdown(calcCountdown(PENSACOLA_STOP_TIME));
+      setPensacolaCountdown(calcCountdown(BILOXI_STOP_TIME));
     };
     tick();
     const interval = setInterval(tick, 1000);
@@ -132,21 +128,21 @@ export default function CountdownTimer() {
 
       <SectionSeparator />
 
-      {/* Pensacola countdown */}
+      {/* Biloxi countdown */}
       <div className="flex flex-col items-center gap-2">
         <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
           {pensacolaCountdown?.isOver
-            ? "See you next time, Pensacola!"
-            : 'Pensacola — Yoga and Social'}
+            ? "Arrived in Biloxi!"
+            : 'Biloxi — Fun Run/Walk/Roll'}
         </p>
         {!pensacolaCountdown?.isOver && (
           <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-            20 March 2026 @ 3:00 PM
+            26 March 2026 @ 6:00 PM
           </p>
         )}
         {!pensacolaCountdown?.isOver && (
           <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-            2601 N 13th Ave, Pensacola, FL 32503
+            969 Howard Ave, Biloxi, MS 39530
           </p>
         )}
         {!pensacolaCountdown?.isOver && (
