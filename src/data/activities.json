@@ -264,5 +264,33 @@
     "maxTemp": 86.0,
     "movingTime": "4:14:16",
     "maxElevation": 141
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Pensacola Cycling",
+    "distance": 60.45,
+    "calories": 2340,
+    "avgHR": 102,
+    "maxHR": 152,
+    "totalAscent": 594,
+    "totalDescent": 643,
+    "minTemp": 68.0,
+    "maxTemp": 104.0,
+    "movingTime": "5:41:46",
+    "maxElevation": 19
+  },
+  {
+    "date": "2026-03-25",
+    "title": "Gulf Shores Cycling",
+    "distance": 56.01,
+    "calories": 1483,
+    "avgHR": 97,
+    "maxHR": 150,
+    "totalAscent": 814,
+    "totalDescent": 728,
+    "minTemp": 68.0,
+    "maxTemp": 84.2,
+    "movingTime": "5:42:29",
+    "maxElevation": 94
   }
 ]
