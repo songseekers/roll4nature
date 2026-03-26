@@ -16,7 +16,7 @@ export type MapLayer = 'overview' | 'major' | 'all';
 function getRouteSegments(): { completed: number[][], remaining: number[][] } {
   const sortedCities = getAllCities().sort((a, b) => a.dayNumber - b.dayNumber);
   const allCoords = sortedCities.map((c) => c.coordinates as number[]);
-  const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD in local time
+  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }); // YYYY-MM-DD in local time
 
   if (today >= '2026-06-23') {
     return { completed: allCoords, remaining: [] };
@@ -181,7 +181,7 @@ export default function RouteMap() {
       citiesToShow = getAllCities();
     }
 
-    const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD in local time
+    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }); // YYYY-MM-DD in local time
 
     // Add markers
     citiesToShow.forEach((city) => {
@@ -346,7 +346,7 @@ export default function RouteMap() {
           <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
           <span className="text-gray-700 dark:text-gray-300">Route (4,463 miles)</span>
         </div>
-        {new Date().toLocaleDateString('en-CA') >= '2026-02-27' && (
+        {new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }) >= '2026-02-27' && (
           <div className="flex items-center space-x-3">
             <div className="h-1 w-8 bg-[#6B7280] rounded"></div>
             <span className="text-gray-700 dark:text-gray-300">Miles completed</span>

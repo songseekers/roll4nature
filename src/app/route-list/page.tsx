@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RouteListPage() {
   const cities = getAllCities().sort((a, b) => a.dayNumber - b.dayNumber || a.distanceFromStart - b.distanceFromStart);
-  const today = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD, local time
+  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }); // YYYY-MM-DD, Central time
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950 pt-32 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
