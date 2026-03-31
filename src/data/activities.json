@@ -292,5 +292,61 @@
     "maxTemp": 84.2,
     "movingTime": "5:42:29",
     "maxElevation": 94
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Biloxi Cycling",
+    "distance": 10.23,
+    "calories": 295,
+    "avgHR": 111,
+    "maxHR": 134,
+    "totalAscent": 138,
+    "totalDescent": 154,
+    "minTemp": 71.6,
+    "maxTemp": 82.4,
+    "movingTime": "0:49:17",
+    "maxElevation": -13
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Biloxi Cycling",
+    "distance": 31.57,
+    "calories": 1653,
+    "avgHR": 91,
+    "maxHR": 144,
+    "totalAscent": 587,
+    "totalDescent": 531,
+    "minTemp": 75.2,
+    "maxTemp": 91.4,
+    "movingTime": "3:33:16",
+    "maxElevation": 121
+  },
+  {
+    "date": "2026-03-28",
+    "title": "Biloxi Cycling",
+    "distance": 22.35,
+    "calories": 1211,
+    "avgHR": 104,
+    "maxHR": 146,
+    "totalAscent": 581,
+    "totalDescent": 495,
+    "minTemp": 75.2,
+    "maxTemp": 89.6,
+    "movingTime": "2:27:17",
+    "maxElevation": 142
+  },
+  {
+    "date": "2026-03-30",
+    "title": "New Orleans Cycling",
+    "distance": 100.09,
+    "calories": 2481,
+    "avgHR": 100,
+    "maxHR": 139,
+    "totalAscent": 571,
+    "totalDescent": 502,
+    "minTemp": 69.8,
+    "maxTemp": 89.6,
+    "movingTime": "9:16:29",
+    "maxElevation": 58
   }
 ]
