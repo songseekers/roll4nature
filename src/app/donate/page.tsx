@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
@@ -68,13 +67,11 @@ export default function DonatePage() {
               className="flex flex-col items-center text-center gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-lg transition"
             >
               <div className="h-12 flex items-center justify-center">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={platform.logo}
                   alt={`${platform.name} logo`}
-                  width={120}
-                  height={40}
-                  className="object-contain h-10 w-auto"
-                  unoptimized
+                  className="h-10 w-auto object-contain"
                 />
               </div>
               <p className="text-gray-600 dark:text-gray-300 text-sm">{platform.description}</p>
