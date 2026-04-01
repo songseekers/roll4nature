@@ -38,24 +38,11 @@ export default function Navigation() {
             <Button
               variant="primary"
               size="sm"
-              href="https://www.zeffy.com/en-US/team/roll-for-veterans"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/donate"
               className="px-2 md:px-3 py-2 text-xs md:text-sm font-semibold leading-tight"
             >
-              <span className="hidden md:inline">Donate to<br />RWB</span>
-              <span className="md:hidden">Donate to RWB</span>
-            </Button>
-            <Button
-              variant="primary"
-              size="sm"
-              href="https://gofund.me/fdff623ca"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-2 md:px-3 py-2 text-xs md:text-sm font-semibold leading-tight"
-            >
-              <span className="hidden md:inline">R4V<br />GoFundMe</span>
-              <span className="md:hidden">R4V GoFundMe</span>
+              <span className="hidden md:inline">Help Fuel<br />the Mission</span>
+              <span className="md:hidden">Donate</span>
             </Button>
           </div>
         </div>
