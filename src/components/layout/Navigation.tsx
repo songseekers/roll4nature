@@ -42,7 +42,7 @@ export default function Navigation() {
               className="px-2 md:px-3 py-2 text-xs md:text-sm font-semibold leading-tight"
             >
               <span className="hidden md:inline">Help Fuel<br />the Mission</span>
-              <span className="md:hidden">Donate</span>
+              <span className="md:hidden">Help Fuel the Mission</span>
             </Button>
           </div>
         </div>

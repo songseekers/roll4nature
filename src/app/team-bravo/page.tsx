@@ -694,7 +694,7 @@ export default function TeamBravoPage() {
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Sean</h2>
                   <p className="text-lg text-gray-600 dark:text-gray-300">
-                    Culinary Specialist &bull; Veteran &bull; Driver &bull; Ground Support &bull; Social Media
+                    Chef &bull; Veteran &bull; Driver &bull; Ground Support &bull; Social Media
                   </p>
                 </div>
                 <button
@@ -718,7 +718,7 @@ export default function TeamBravoPage() {
 
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  I served 8 years aboard the USS Cole (DDG-67) and at Naval Station Norfolk, along with other duty stations from 2008–2016 as a Culinary Specialist in the United States Navy.
+                  I served 8 years aboard the USS Cole (DDG-67) and at Naval Station Norfolk, along with other duty stations from 2008–2016 as a Chef (Culinary Specialist) in the United States Navy.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   During that time, I learned more than how to cook — I learned how to lead, adapt, and serve under pressure. Whether feeding 200 sailors on a destroyer or supporting larger operations, the mission was always the same: take care of people.
