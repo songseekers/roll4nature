@@ -176,6 +176,27 @@ export default function TeamBravoPage() {
               </div>
             </div>
 
+            {/* Sean */}
+            <div className="flex flex-col items-center">
+              <div
+                onClick={() => setSelectedMember('sean')}
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 w-full"
+              >
+                <div className="relative h-40">
+                  <Image
+                    src="/images/TeamBravo/Sean.png"
+                    alt="Sean 'Lancelot' Palmer, Team Bravo Ground Crew — Driver, Support, Social Media"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">Sean</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Click to learn more</p>
+                </div>
+              </div>
+            </div>
+
             {/* Boogalie Bear */}
             <div className="flex flex-col items-center">
               <div
@@ -197,25 +218,23 @@ export default function TeamBravoPage() {
               </div>
             </div>
 
-            {/* Placeholder Team Members */}
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="flex flex-col items-center">
-                <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg opacity-75 w-full">
-                  <div className="relative h-40">
-                    <Image
-                      src="/images/TeamBravo/sil.png"
-                      alt="Team member profile coming soon"
-                      fill
-                      className="object-cover object-top"
-                    />
-                  </div>
-                  <div className="p-3 text-center">
-                    <h3 className="text-base font-bold text-gray-900 dark:text-white">Team Member</h3>
-                    <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Coming Soon</p>
-                  </div>
+            {/* Placeholder */}
+            <div className="flex flex-col items-center">
+              <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg opacity-75 w-full">
+                <div className="relative h-40">
+                  <Image
+                    src="/images/TeamBravo/sil.png"
+                    alt="Team member profile coming soon"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">Team Member</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">Coming Soon</p>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -654,6 +673,83 @@ export default function TeamBravoPage() {
                     className="w-2/3 h-auto rounded-lg"
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Sean Profile Modal */}
+      {selectedMember === 'sean' && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedMember(null)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-8">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Sean</h2>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">
+                    Culinary Specialist &bull; Veteran &bull; Driver &bull; Ground Support &bull; Social Media
+                  </p>
+                </div>
+                <button
+                  onClick={() => setSelectedMember(null)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold"
+                  aria-label="Close modal"
+                >
+                  &times;
+                </button>
+              </div>
+
+              <div className="mb-6">
+                <Image
+                  src="/images/TeamBravo/Sean.png"
+                  alt="Sean 'Lancelot' Palmer, Team Bravo Ground Crew — Driver, Support, Social Media"
+                  width={300}
+                  height={200}
+                  className="w-1/2 h-auto rounded-lg mx-auto"
+                />
+              </div>
+
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  I served 8 years aboard the USS Cole (DDG-67) and at Naval Station Norfolk, along with other duty stations from 2008–2016 as a Culinary Specialist in the United States Navy.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  During that time, I learned more than how to cook — I learned how to lead, adapt, and serve under pressure. Whether feeding 200 sailors on a destroyer or supporting larger operations, the mission was always the same: take care of people.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  But service didn&apos;t stop when I took off the uniform.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  On Roll for Veterans, that same mission continues on four wheels and two feet. As Ground Crew, I&apos;m the driver, the direct support, and the logistics backbone that keeps JT rolling. I manage the schedule, coordinate the moving parts, and make sure everything — and everyone — is where they need to be. I also handle social media, turning the miles and moments of this journey into stories that connect veterans and communities across the country. Whatever needs doing, I show up and get it done. In fact, JT refers to me as Lancelot, his right hand.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Today, I continue the mission through food, connection, and presence.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  As a chef, I believe food is more than fuel — it&apos;s comfort, it&apos;s community, it&apos;s healing. As a coach, I believe in meeting people where they are and helping them find strength in their own journey. And as a nomad, I live what I teach — growth, resilience, and purpose through experience.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Being part of Roll 4 Veterans isn&apos;t just about support — it&apos;s about showing up. It&apos;s about standing beside those still fighting silent battles and reminding them they&apos;re not alone.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Every meal I cook, every mile we support, every conversation we have — it all comes back to one thing: Service.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  I don&apos;t claim to have all the answers. I just know how to show up, do the work, and walk alongside others.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 italic">
+                  If you&apos;re on your own path, just know — you don&apos;t have to walk it alone.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-6 pt-4 border-t border-gray-200 dark:border-gray-600">
+                  <strong>Purpose:</strong> To serve others through food, presence, and connection — one person, one meal, one moment at a time.
+                </p>
               </div>
             </div>
           </div>
