@@ -251,6 +251,19 @@
     }
   },
   {
+    "id": "lafayette-la",
+    "name": "Lafayette",
+    "state": "Louisiana",
+    "population": 121374,
+    "coordinates": [-92.0193, 30.2241],
+    "arrivalDate": "2026-04-02",
+    "dayNumber": 35,
+    "distanceFromPrevious": 62.0,
+    "distanceFromStart": 1388.0,
+    "tier": "major",
+    "slug": "lafayette"
+  },
+  {
     "id": "navasota-tx",
     "name": "Navasota",
     "state": "Texas",
@@ -258,7 +271,7 @@
     "coordinates": [-96.0877, 30.388],
     "arrivalDate": "2026-04-08",
     "dayNumber": 41,
-    "distanceFromPrevious": 310.0,
+    "distanceFromPrevious": 248.0,
     "distanceFromStart": 1636.0,
     "tier": "major",
     "slug": "navasota"
