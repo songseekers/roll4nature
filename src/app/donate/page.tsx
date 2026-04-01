@@ -92,17 +92,9 @@ export default function DonatePage() {
         </div>
 
         <p className="mt-12 text-xs text-gray-400 dark:text-gray-500 text-center leading-relaxed">
-          All donations are received by JT directly and used to fund the Roll for Veterans 2026
-          expedition. Donations to Team RWB can be made at{' '}
-          <a
-            href="https://teamrwb.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-gray-600 dark:hover:text-gray-400"
-          >
-            teamrwb.org
-          </a>
-          .
+          All donations received are used to fund the Roll4Veterans 2026 expedition expenses and
+          growth of Roll4Veterans. Donations to Team RWB can be made using the Donate to Team RWB
+          link at the bottom of the website.
         </p>
       </div>
     </div>
