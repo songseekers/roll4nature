@@ -123,20 +123,10 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.zeffy.com/en-US/team/roll-for-veterans"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#E8C9A1] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#d4b78a] transition inline-block"
-            >
-              Donate to Team RWB
-            </a>
-            <a
-              href="https://gofund.me/fdff623ca"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/donate"
               className="bg-[#D4A574] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#c49464] transition inline-block"
             >
-              R4V GoFundMe
+              Help Fuel the Mission
             </a>
             <a
               href="/sponsor"
