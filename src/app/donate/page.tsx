@@ -10,7 +10,7 @@ const platforms = [
   {
     name: 'GoFundMe',
     url: 'https://gofund.me/fdff623ca',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/GoFundMe_logo.svg/320px-GoFundMe_logo.svg.png',
+    logo: '/images/donate/logo_gofundme.jpg',
     description: 'Our primary fundraising page — donate to support the ride directly.',
     buttonText: 'Donate on GoFundMe',
     buttonColor: '#02A95C',
@@ -18,7 +18,7 @@ const platforms = [
   {
     name: 'PayPal',
     url: 'https://www.paypal.me/roll4veterans',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/320px-PayPal.svg.png',
+    logo: '/images/donate/logo_paypal.jpg',
     description: 'Quick and secure payments via PayPal.',
     buttonText: 'Send via PayPal',
     buttonColor: '#003087',
@@ -26,7 +26,7 @@ const platforms = [
   {
     name: 'Venmo',
     url: 'https://www.venmo.com/u/roll4veterans',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Venmo_Logo.svg/320px-Venmo_Logo.svg.png',
+    logo: '/images/donate/logo_venmo.jpg',
     description: 'Fast and easy payments via Venmo.',
     buttonText: 'Send via Venmo',
     buttonColor: '#008CFF',
@@ -34,7 +34,7 @@ const platforms = [
   {
     name: 'Cash App',
     url: 'https://cash.app/$roll4veterans',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Square_Cash_app_logo.svg/240px-Square_Cash_app_logo.svg.png',
+    logo: '/images/donate/logo_cashapp.jpg',
     description: 'Instant transfers via Cash App.',
     buttonText: 'Send via Cash App',
     buttonColor: '#00D64F',
@@ -56,8 +56,8 @@ export default function DonatePage() {
           Help Fuel the Mission
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-10 leading-relaxed">
-          Every dollar supports JT on The Path — 4,463 miles from Key West to Flagstaff for Team
-          RWB veterans. Choose your preferred platform below.
+          Every dollar supports the mission — 4,463 miles from Key West to Flagstaff for veterans.
+          Choose your preferred platform below.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
