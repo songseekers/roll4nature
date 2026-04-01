@@ -17,9 +17,8 @@ interface TimerTime {
 // Count-UP from February 27, 2026 at 10:00 AM local time
 const START_TIME = new Date('2026-02-27T10:00:00').getTime();
 
-// Biloxi Fun Run/Walk/Roll: March 26, 2026 at 6:00 PM CST
-// CST is UTC-6, so 6:00 PM CST = 2026-03-27T00:00:00Z
-const BILOXI_STOP_TIME = new Date('2026-03-26T18:00:00-06:00').getTime();
+// Youngsville, LA — Corner Bar Team RWB Social: April 18, 2026 at 6:30 PM CST
+const BILOXI_STOP_TIME = new Date('2026-04-18T18:30:00-06:00').getTime();
 
 function calcElapsed(from: number): TimerTime {
   const diff = Math.max(0, Date.now() - from);
@@ -132,17 +131,17 @@ export default function CountdownTimer() {
       <div className="flex flex-col items-center gap-2">
         <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
           {pensacolaCountdown?.isOver
-            ? "Arrived in Biloxi!"
-            : 'Biloxi — Fun Run/Walk/Roll'}
+            ? "See you next time, Youngsville!"
+            : 'Youngsville, LA — Team RWB Social'}
         </p>
         {!pensacolaCountdown?.isOver && (
           <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-            26 March 2026 @ 6:00 PM
+            18 April 2026 @ 6:30 PM
           </p>
         )}
         {!pensacolaCountdown?.isOver && (
           <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-            969 Howard Ave, Biloxi, MS 39530
+            1700 Chemin Metairie Rd, Youngsville, LA — Corner Bar
           </p>
         )}
         {!pensacolaCountdown?.isOver && (
