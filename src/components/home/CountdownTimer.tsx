@@ -17,8 +17,8 @@ interface TimerTime {
 // Count-UP from February 27, 2026 at 10:00 AM local time
 const START_TIME = new Date('2026-02-27T10:00:00').getTime();
 
-// Youngsville, LA — Corner Bar Team RWB Social: April 18, 2026 at 6:30 PM CST
-const BILOXI_STOP_TIME = new Date('2026-04-18T18:30:00-06:00').getTime();
+// Youngsville, LA — Corner Bar Team RWB Social: April 2, 2026 at 6:30 PM CST
+const BILOXI_STOP_TIME = new Date('2026-04-02T18:30:00-06:00').getTime();
 
 function calcElapsed(from: number): TimerTime {
   const diff = Math.max(0, Date.now() - from);
@@ -136,7 +136,7 @@ export default function CountdownTimer() {
         </p>
         {!pensacolaCountdown?.isOver && (
           <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-            18 April 2026 @ 6:30 PM
+            2 April 2026 @ 6:30 PM
           </p>
         )}
         {!pensacolaCountdown?.isOver && (
