@@ -8,14 +8,21 @@ interface RouteImageCellProps {
   dateLabel: string;  // "Feb 27"
 }
 
-function dateToFilename(date: string): string {
-  // "2026-02-27" → "260227"
-  return date.replace(/^20/, '').replace(/-/g, '');
+function dateToPath(date: string): string {
+  // "2026-02-27" → "/images/routes/2603/260227.png"
+  const filename = date.replace(/^20/, '').replace(/-/g, '');
+  const month = date.substring(0, 7);
+  let folder: string;
+  if (month <= '2026-03') { folder = '2603'; }
+  else if (month <= '2026-04') { folder = '2604'; }
+  else if (month <= '2026-05') { folder = '2605'; }
+  else { folder = '2606'; }
+  return `/images/routes/${folder}/${filename}.png`;
 }
 
 export default function RouteImageCell({ date, dateLabel }: RouteImageCellProps) {
   const [open, setOpen] = useState(false);
-  const src = `/images/routes/${dateToFilename(date)}.png`;
+  const src = dateToPath(date);
 
   return (
     <>

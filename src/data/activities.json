@@ -348,5 +348,19 @@
     "maxTemp": 89.6,
     "movingTime": "9:16:29",
     "maxElevation": 58
+  },
+  {
+    "date": "2026-04-01",
+    "title": "West Baton Rouge Parish Cycling",
+    "distance": 53.01,
+    "calories": 1252,
+    "avgHR": 87,
+    "maxHR": 126,
+    "totalAscent": 482,
+    "totalDescent": 341,
+    "minTemp": 78.8,
+    "maxTemp": 93.2,
+    "movingTime": "4:43:08",
+    "maxElevation": 159
   }
 ]
