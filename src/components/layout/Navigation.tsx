@@ -35,6 +35,15 @@ export default function Navigation() {
             >
               R4V Story
             </a>
+            <a
+              href="/resources/r4v_journal.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Read JT's Riding Journal (opens in new tab, PDF)"
+              className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
+            >
+              JT&apos;s Journal
+            </a>
             <Button
               variant="primary"
               size="sm"
