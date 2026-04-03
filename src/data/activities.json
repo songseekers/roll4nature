@@ -362,5 +362,19 @@
     "maxTemp": 93.2,
     "movingTime": "4:43:08",
     "maxElevation": 159
+  },
+  {
+    "date": "2026-04-02",
+    "title": "St Martin Parish Cycling",
+    "distance": 41.47,
+    "calories": 1473,
+    "avgHR": 93,
+    "maxHR": 129,
+    "totalAscent": 577,
+    "totalDescent": 522,
+    "minTemp": 78.8,
+    "maxTemp": 87.8,
+    "movingTime": "4:47:12",
+    "maxElevation": 62
   }
 ]
