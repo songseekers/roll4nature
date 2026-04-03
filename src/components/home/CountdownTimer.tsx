@@ -17,8 +17,21 @@ interface TimerTime {
 // Count-UP from February 27, 2026 at 10:00 AM local time
 const START_TIME = new Date('2026-02-27T10:00:00').getTime();
 
-// Youngsville, LA — Corner Bar Team RWB Social: April 2, 2026 at 6:30 PM CST
-const BILOXI_STOP_TIME = new Date('2026-04-02T18:30:00-06:00').getTime();
+// Sequential upcoming events — first one in the future will be shown
+const EVENTS = [
+  {
+    label: 'Conroe, TX — Team RWB Meetup',
+    dateDisplay: '7 April 2026 @ 6:00 PM',
+    locationDisplay: 'Meetup location TBD',
+    time: new Date('2026-04-07T18:00:00-05:00').getTime(),
+  },
+  {
+    label: 'Navasota, TX — Arrival',
+    dateDisplay: '8 April 2026 @ 6:00 PM',
+    locationDisplay: 'Meetup location TBD',
+    time: new Date('2026-04-08T18:00:00-05:00').getTime(),
+  },
+];
 
 function calcElapsed(from: number): TimerTime {
   const diff = Math.max(0, Date.now() - from);
@@ -68,12 +81,18 @@ function SectionSeparator() {
 
 export default function CountdownTimer() {
   const [elapsed, setElapsed] = useState<TimerTime | null>(null);
-  const [pensacolaCountdown, setPensacolaCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
+  const [activeCountdown, setActiveCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
+  const [activeEvent, setActiveEvent] = useState<typeof EVENTS[0] | undefined>(undefined);
 
   useEffect(() => {
     const tick = () => {
+      const now = Date.now();
+      const next = EVENTS.find((e) => e.time > now);
+      setActiveEvent(next);
+      if (next) {
+        setActiveCountdown(calcCountdown(next.time));
+      }
       setElapsed(calcElapsed(START_TIME));
-      setPensacolaCountdown(calcCountdown(BILOXI_STOP_TIME));
     };
     tick();
     const interval = setInterval(tick, 1000);
@@ -127,33 +146,33 @@ export default function CountdownTimer() {
 
       <SectionSeparator />
 
-      {/* Biloxi countdown */}
+      {/* Next event countdown */}
       <div className="flex flex-col items-center gap-2">
-        <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
-          {pensacolaCountdown?.isOver
-            ? "See you next time, Youngsville!"
-            : 'Youngsville, LA — Team RWB Social'}
-        </p>
-        {!pensacolaCountdown?.isOver && (
-          <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-            2 April 2026 @ 6:30 PM
+        {activeEvent ? (
+          <>
+            <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+              {activeEvent.label}
+            </p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
+              {activeEvent.dateDisplay}
+            </p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
+              {activeEvent.locationDisplay}
+            </p>
+            <div className="flex items-center gap-2">
+              <TimerBlock value={activeCountdown?.days ?? null} label="days" />
+              <Divider />
+              <TimerBlock value={activeCountdown?.hours ?? null} label="hrs" />
+              <Divider />
+              <TimerBlock value={activeCountdown?.minutes ?? null} label="min" />
+              <Divider />
+              <TimerBlock value={activeCountdown?.seconds ?? null} label="sec" />
+            </div>
+          </>
+        ) : (
+          <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+            Stay tuned for the next stop!
           </p>
-        )}
-        {!pensacolaCountdown?.isOver && (
-          <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-            1700 Chemin Metairie Rd, Youngsville, LA — Corner Bar
-          </p>
-        )}
-        {!pensacolaCountdown?.isOver && (
-          <div className="flex items-center gap-2">
-            <TimerBlock value={pensacolaCountdown?.days ?? null} label="days" />
-            <Divider />
-            <TimerBlock value={pensacolaCountdown?.hours ?? null} label="hrs" />
-            <Divider />
-            <TimerBlock value={pensacolaCountdown?.minutes ?? null} label="min" />
-            <Divider />
-            <TimerBlock value={pensacolaCountdown?.seconds ?? null} label="sec" />
-          </div>
         )}
       </div>
     </div>

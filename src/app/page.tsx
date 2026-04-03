@@ -107,6 +107,34 @@ export default function HomePage() {
           >
             Learn About Team Bravo
           </a>
+
+          <div className="mt-10 pt-8 border-t border-[#C1592B]/30">
+            <a href="/purpose">
+              <Image
+                src="/resources/PP_dk.png"
+                alt="The Purpose Pathfinder — click to learn more"
+                width={300}
+                height={300}
+                className="mx-auto object-contain dark:hidden hover:opacity-80 transition cursor-pointer"
+              />
+              <Image
+                src="/resources/PP.png"
+                alt="The Purpose Pathfinder — click to learn more"
+                width={300}
+                height={300}
+                className="mx-auto object-contain hidden dark:block hover:opacity-80 transition cursor-pointer"
+              />
+            </a>
+            <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 mt-4">
+              Interested in working with JT &amp; Sean as your integrative health coaches?
+            </p>
+            <a
+              href="/purpose"
+              className="inline-block bg-[#8B4513] text-white px-8 py-2 rounded-lg font-semibold hover:bg-[#6d360f] transition text-base"
+            >
+              Find Your Purpose
+            </a>
+          </div>
         </div>
       </section>
 

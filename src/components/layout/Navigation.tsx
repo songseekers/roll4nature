@@ -28,7 +28,7 @@ export default function Navigation() {
               Home
             </Link>
             <a
-              href="/resources/R4V%20Story_v8.pdf"
+              href="/resources/R4V_Story_v9.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
@@ -43,6 +43,12 @@ export default function Navigation() {
               className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
             >
               JT&apos;s Journal
+            </a>
+            <a
+              href="/purpose"
+              className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
+            >
+              The Path
             </a>
             <Button
               variant="primary"
