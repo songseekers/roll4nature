@@ -113,15 +113,15 @@ export default function HomePage() {
               <Image
                 src="/resources/PP_dk.png"
                 alt="The Purpose Pathfinder — click to learn more"
-                width={300}
-                height={300}
+                width={350}
+                height={350}
                 className="mx-auto object-contain dark:hidden hover:opacity-80 transition cursor-pointer"
               />
               <Image
                 src="/resources/PP.png"
                 alt="The Purpose Pathfinder — click to learn more"
-                width={300}
-                height={300}
+                width={350}
+                height={350}
                 className="mx-auto object-contain hidden dark:block hover:opacity-80 transition cursor-pointer"
               />
             </a>

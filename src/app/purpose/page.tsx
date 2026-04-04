@@ -324,7 +324,7 @@ export default function PurposePage() {
 
             {/* Interactive image between paragraphs */}
             <div className="py-4 flex justify-center">
-              <PathfinderImage size={300} debug={false} />
+              <PathfinderImage size={350} debug={false} />
             </div>
 
             <p>

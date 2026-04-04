@@ -487,6 +487,19 @@ export default function TeamBravoPage() {
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                   Beyond her work with fabric, Janelle enjoys writing poetry, exploring watercolor and colored pencil, and listening to music that stirs the heart. Her faith and family shape who she is and keep her grounded in compassion and purpose. Being part of Team Bravo is meaningful to her because it offers a place where creators can share, encourage one another, and discover the joy that comes when imagination and community meet.
                 </p>
+
+                <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-600 text-center">
+                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
+                    Contact Janelle at Stitch in Time to discuss your own creation:
+                  </p>
+                  <Image
+                    src="/images/TeamBravo/StitchInTime_QR.jpeg"
+                    alt="Stitch in Time by Janelle — QR code to contact Janelle about custom creations"
+                    width={180}
+                    height={180}
+                    className="mx-auto rounded-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -671,6 +684,19 @@ export default function TeamBravoPage() {
                     width={300}
                     height={200}
                     className="w-2/3 h-auto rounded-lg"
+                  />
+                </div>
+
+                <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-600 text-center">
+                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
+                    Contact Janelle at Stitch in Time to discuss your own creation:
+                  </p>
+                  <Image
+                    src="/images/TeamBravo/StitchInTime_QR.jpeg"
+                    alt="Stitch in Time by Janelle — QR code to contact Janelle about custom creations"
+                    width={180}
+                    height={180}
+                    className="mx-auto rounded-lg"
                   />
                 </div>
               </div>
