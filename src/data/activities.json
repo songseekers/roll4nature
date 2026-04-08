@@ -390,5 +390,61 @@
     "maxTemp": 84.2,
     "movingTime": "2:09:24",
     "maxElevation": 55
+  },
+  {
+    "date": "2026-04-04",
+    "title": "Deridder Cycling",
+    "distance": 10.21,
+    "calories": 284,
+    "avgHR": 86,
+    "maxHR": 127,
+    "totalAscent": 361,
+    "totalDescent": 390,
+    "minTemp": 71.6,
+    "maxTemp": 86.0,
+    "movingTime": "1:08:50",
+    "maxElevation": 230
+  },
+  {
+    "date": "2026-04-05",
+    "title": "Deridder Cycling",
+    "distance": 68.26,
+    "calories": 2011,
+    "avgHR": 94,
+    "maxHR": 145,
+    "totalAscent": 1404,
+    "totalDescent": 1499,
+    "minTemp": 60.8,
+    "maxTemp": 86.0,
+    "movingTime": "7:03:31",
+    "maxElevation": 307
+  },
+  {
+    "date": "2026-04-06",
+    "title": "Jasper County Cycling",
+    "distance": 62.3,
+    "calories": 1711,
+    "avgHR": 94,
+    "maxHR": 132,
+    "totalAscent": 2861,
+    "totalDescent": 2677,
+    "minTemp": 66.2,
+    "maxTemp": 95.0,
+    "movingTime": "6:14:25",
+    "maxElevation": 444
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Polk County Cycling",
+    "distance": 69.6,
+    "calories": 2105,
+    "avgHR": 98,
+    "maxHR": 141,
+    "totalAscent": 2562,
+    "totalDescent": 2415,
+    "minTemp": 69.8,
+    "maxTemp": 89.6,
+    "movingTime": "7:06:38",
+    "maxElevation": 438
   }
 ]
