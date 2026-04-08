@@ -3,9 +3,13 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import activitiesData from '@/data/activities.json';
+import eventsJson from '@/data/countdownEvents.json';
 
 // Total miles from activities data (computed once at module level)
-const totalMilesCycled = (activitiesData as { distance: number }[]).reduce((sum, a) => sum + a.distance, 0);
+const totalMilesCycled = (activitiesData as { distance: number }[]).reduce(
+  (sum, a) => sum + (a as { distance: number }).distance,
+  0
+);
 
 interface TimerTime {
   days: number;
@@ -14,24 +18,34 @@ interface TimerTime {
   seconds: number;
 }
 
+interface CountdownEvent {
+  city: string;
+  label: string;
+  isoDateTime: string;
+  location: string;
+  expirationMessage: string;
+  eventTime: number;
+  midnightTime: number;
+}
+
 // Count-UP from February 27, 2026 at 10:00 AM local time
 const START_TIME = new Date('2026-02-27T10:00:00').getTime();
 
-// Sequential upcoming events — first one in the future will be shown
-const EVENTS = [
-  {
-    label: 'Conroe, TX — Team RWB Meetup',
-    dateDisplay: '7 April 2026 @ 6:00 PM',
-    locationDisplay: 'Meetup location TBD',
-    time: new Date('2026-04-07T18:00:00-05:00').getTime(),
-  },
-  {
-    label: 'Navasota, TX — Arrival',
-    dateDisplay: '8 April 2026 @ 6:00 PM',
-    locationDisplay: 'Meetup location TBD',
-    time: new Date('2026-04-08T18:00:00-05:00').getTime(),
-  },
-];
+// Build typed events array from JSON — compute timestamps once at module level
+const EVENTS: CountdownEvent[] = (
+  eventsJson.events as {
+    city: string;
+    label: string;
+    isoDateTime: string;
+    location: string;
+    expirationMessage: string;
+  }[]
+).map((e) => {
+  const eventTime = new Date(e.isoDateTime).getTime();
+  const d = new Date(e.isoDateTime);
+  d.setHours(24, 0, 0, 0); // midnight at end of event day
+  return { ...e, eventTime, midnightTime: d.getTime() };
+});
 
 function calcElapsed(from: number): TimerTime {
   const diff = Math.max(0, Date.now() - from);
@@ -81,19 +95,37 @@ function SectionSeparator() {
 
 export default function CountdownTimer() {
   const [elapsed, setElapsed] = useState<TimerTime | null>(null);
+  const [activeEvent, setActiveEvent] = useState<CountdownEvent | undefined>(undefined);
   const [activeCountdown, setActiveCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
-  const [activeEvent, setActiveEvent] = useState<typeof EVENTS[0] | undefined>(undefined);
+  const [showExpiration, setShowExpiration] = useState(false);
 
   useEffect(() => {
     const tick = () => {
       const now = Date.now();
-      const next = EVENTS.find((e) => e.time > now);
-      setActiveEvent(next);
-      if (next) {
-        setActiveCountdown(calcCountdown(next.time));
-      }
       setElapsed(calcElapsed(START_TIME));
+
+      // Find the current active event:
+      // - If midnightTime > now, this event is either counting down or showing expiration
+      // - Once midnight passes, move to the next event
+      const active = EVENTS.find((e) => e.midnightTime > now);
+      setActiveEvent(active);
+
+      if (active) {
+        if (now < active.eventTime) {
+          // Still counting down to event
+          setActiveCountdown(calcCountdown(active.eventTime));
+          setShowExpiration(false);
+        } else {
+          // Event has passed but midnight hasn't — show expiration message
+          setActiveCountdown(null);
+          setShowExpiration(true);
+        }
+      } else {
+        setActiveCountdown(null);
+        setShowExpiration(false);
+      }
     };
+
     tick();
     const interval = setInterval(tick, 1000);
     return () => clearInterval(interval);
@@ -101,7 +133,7 @@ export default function CountdownTimer() {
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
-      {/* Count-UP */}
+      {/* Count-UP: time since Key West */}
       <div className="flex flex-col items-center gap-2">
         <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
           Rolling time since Key West
@@ -120,10 +152,7 @@ export default function CountdownTimer() {
       <SectionSeparator />
 
       {/* Miles Cycled — links to /stats */}
-      <Link
-        href="/stats"
-        className="flex flex-col items-center gap-1 group cursor-pointer"
-      >
+      <Link href="/stats" className="flex flex-col items-center gap-1 group cursor-pointer">
         <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
           Miles Cycled
         </p>
@@ -146,29 +175,41 @@ export default function CountdownTimer() {
 
       <SectionSeparator />
 
-      {/* Next event countdown */}
+      {/* Next event countdown or expiration message */}
       <div className="flex flex-col items-center gap-2">
         {activeEvent ? (
-          <>
-            <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
-              {activeEvent.label}
-            </p>
-            <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-              {activeEvent.dateDisplay}
-            </p>
-            <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-              {activeEvent.locationDisplay}
-            </p>
-            <div className="flex items-center gap-2">
-              <TimerBlock value={activeCountdown?.days ?? null} label="days" />
-              <Divider />
-              <TimerBlock value={activeCountdown?.hours ?? null} label="hrs" />
-              <Divider />
-              <TimerBlock value={activeCountdown?.minutes ?? null} label="min" />
-              <Divider />
-              <TimerBlock value={activeCountdown?.seconds ?? null} label="sec" />
-            </div>
-          </>
+          showExpiration ? (
+            // Post-event: show expiration message until midnight
+            <>
+              <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
+                {activeEvent.expirationMessage}
+              </p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+                {activeEvent.city}
+              </p>
+            </>
+          ) : (
+            // Pre-event: show countdown
+            <>
+              <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+                {activeEvent.label}
+              </p>
+              {activeEvent.location && activeEvent.location !== 'TBD' && (
+                <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
+                  {activeEvent.location}
+                </p>
+              )}
+              <div className="flex items-center gap-2">
+                <TimerBlock value={activeCountdown?.days ?? null} label="days" />
+                <Divider />
+                <TimerBlock value={activeCountdown?.hours ?? null} label="hrs" />
+                <Divider />
+                <TimerBlock value={activeCountdown?.minutes ?? null} label="min" />
+                <Divider />
+                <TimerBlock value={activeCountdown?.seconds ?? null} label="sec" />
+              </div>
+            </>
+          )
         ) : (
           <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
             Stay tuned for the next stop!

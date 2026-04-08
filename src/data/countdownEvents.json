@@ -1,0 +1,34 @@
+{
+  "_workflow": "To add a new event: append an entry to the events array following the existing format. isoDateTime uses YYYY-MM-DDThh:mm:ss in US Central Time — stored as local ISO string, no timezone suffix. Redeploy the site after saving — no code changes needed.",
+  "_tz_note": "All times are US Central. Stored as local ISO — browser interprets in local timezone.",
+  "events": [
+    {
+      "city": "Navasota",
+      "label": "Navasota, TX — Next Stop",
+      "isoDateTime": "2026-04-08T18:45:00",
+      "location": "The Coop - 215 S Lasalle St",
+      "expirationMessage": "Thanks for the memories, Navasota!"
+    },
+    {
+      "city": "Austin",
+      "label": "Austin, TX — Next Stop",
+      "isoDateTime": "2026-04-11T17:00:00",
+      "location": "TBD",
+      "expirationMessage": "Keep being awesome, Austin!"
+    },
+    {
+      "city": "San Antonio",
+      "label": "San Antonio, TX — Next Stop",
+      "isoDateTime": "2026-04-12T17:00:00",
+      "location": "TBD",
+      "expirationMessage": "It is always a good time in San Antonio!"
+    },
+    {
+      "city": "Fredericksburg",
+      "label": "Fredericksburg, TX — Next Stop",
+      "isoDateTime": "2026-04-14T17:00:00",
+      "location": "Enchanted Rock - 16710 Ranch Road 965",
+      "expirationMessage": "Fredericksburg is enchanting!"
+    }
+  ]
+}
