@@ -446,5 +446,19 @@
     "maxTemp": 89.6,
     "movingTime": "7:06:38",
     "maxElevation": 438
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Montgomery County Cycling",
+    "distance": 62.82,
+    "calories": 1603,
+    "avgHR": 93,
+    "maxHR": 139,
+    "totalAscent": 1627,
+    "totalDescent": 1473,
+    "minTemp": 75.2,
+    "maxTemp": 95.0,
+    "movingTime": "5:45:17",
+    "maxElevation": 344
   }
 ]
