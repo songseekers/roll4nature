@@ -2,12 +2,9 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Instagram, Facebook, Youtube, Activity, Mail, Phone, MapPin, Linkedin } from 'lucide-react';
-import { useState } from 'react';
-
+import { Instagram, Facebook, Youtube, Activity, Mail, MapPin, Linkedin } from 'lucide-react';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const [showPhonePopup, setShowPhonePopup] = useState(false);
 
   return (
     <footer className="bg-gray-900 text-gray-100">
@@ -29,7 +26,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-300 text-sm">
-              4,463 miles of stories, community, and gratitude supporting Team RWB.
+              4,545 miles of stories, community, and gratitude supporting Team RWB.
             </p>
           </div>
 
@@ -132,13 +129,20 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Connect With Us</h4>
             <div className="flex gap-3 mb-4">
-              <button
-                onClick={() => setShowPhonePopup(true)}
-                className="flex items-center justify-center text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-3 rounded-lg hover:bg-gray-700 w-12 h-12"
-                aria-label="Phone"
+              <a
+                href="https://cal.com/jt.songseeker/one-time-meeting"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-1 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-3 rounded-lg hover:bg-gray-700 w-12 h-12 justify-center"
+                aria-label="Book time on JT's Calendar"
               >
-                <Phone size={24} />
-              </button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </a>
               <a
                 href="mailto:rollforveterans@gmail.com"
                 className="flex items-center justify-center text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-3 rounded-lg hover:bg-gray-700 w-12 h-12"
@@ -148,37 +152,6 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Phone Popup */}
-            {showPhonePopup && (
-              <div
-                className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-                onClick={() => setShowPhonePopup(false)}
-              >
-                <div
-                  className="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-md mx-4 shadow-2xl"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    Contact Us
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Feel free to call or text at this number:
-                  </p>
-                  <a
-                    href="tel:+18282804709"
-                    className="text-3xl font-bold text-r4v-primary hover:text-r4v-primary-hover transition block mb-6"
-                  >
-                    (828) 280-4709
-                  </a>
-                  <button
-                    onClick={() => setShowPhonePopup(false)}
-                    className="w-full bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            )}
 
             {/* Social Media Icons */}
             <div className="mt-4">
