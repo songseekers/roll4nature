@@ -148,6 +148,7 @@ export default function Footer() {
                 href="mailto:rollforveterans@gmail.com"
                 className="flex items-center justify-center text-gray-300 hover:text-r4v-primary-hover transition bg-gray-800 p-3 rounded-lg hover:bg-gray-700 w-12 h-12"
                 aria-label="Email"
+                title="Send an email to Roll 4 Veterans"
               >
                 <Mail size={24} />
               </a>
