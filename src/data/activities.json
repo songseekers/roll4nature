@@ -460,5 +460,33 @@
     "maxTemp": 95.0,
     "movingTime": "5:45:17",
     "maxElevation": 344
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Navasota Cycling",
+    "distance": 44.87,
+    "calories": 1693,
+    "avgHR": 93,
+    "maxHR": 148,
+    "totalAscent": 1877,
+    "totalDescent": 1686,
+    "minTemp": 69.8,
+    "maxTemp": 91.4,
+    "movingTime": "4:40:24",
+    "maxElevation": 425
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Washington County Cycling",
+    "distance": 66.75,
+    "calories": 1394,
+    "avgHR": 81,
+    "maxHR": 125,
+    "totalAscent": 2539,
+    "totalDescent": 2520,
+    "minTemp": 69.8,
+    "maxTemp": 95.0,
+    "movingTime": "6:13:52",
+    "maxElevation": 627
   }
 ]
