@@ -23,6 +23,7 @@ interface CountdownEvent {
   label: string;
   isoDateTime: string;
   location: string;
+  locationUrl?: string;
   expirationMessage: string;
   eventTime: number;
   midnightTime: number;
@@ -38,6 +39,7 @@ const EVENTS: CountdownEvent[] = (
     label: string;
     isoDateTime: string;
     location: string;
+    locationUrl?: string;
     expirationMessage: string;
   }[]
 ).map((e) => {
@@ -195,9 +197,20 @@ export default function CountdownTimer() {
                 {activeEvent.label}
               </p>
               {activeEvent.location && activeEvent.location !== 'TBD' && (
-                <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
-                  {activeEvent.location}
-                </p>
+                activeEvent.locationUrl ? (
+                  <a
+                    href={activeEvent.locationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-r4v-primary dark:text-r4v-primary-hover text-center -mt-1 underline underline-offset-2 hover:opacity-80 transition"
+                  >
+                    📍 {activeEvent.location}
+                  </a>
+                ) : (
+                  <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
+                    {activeEvent.location}
+                  </p>
+                )
               )}
               <div className="flex items-center gap-2">
                 <TimerBlock value={activeCountdown?.days ?? null} label="days" />
