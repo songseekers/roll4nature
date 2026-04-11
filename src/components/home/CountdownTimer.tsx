@@ -76,10 +76,10 @@ function calcCountdown(to: number): TimerTime & { isOver: boolean } {
 function TimerBlock({ value, label }: { value: number | null; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-2xl md:text-3xl font-bold font-mono text-r4v-primary dark:text-r4v-primary-hover">
+      <span className="text-3xl md:text-4xl font-bold font-mono text-r4v-primary dark:text-r4v-primary-hover">
         {value !== null ? String(value).padStart(2, '0') : '--'}
       </span>
-      <span className="text-[10px] uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</span>
+      <span className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</span>
     </div>
   );
 }

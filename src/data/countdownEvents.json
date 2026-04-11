@@ -21,8 +21,10 @@
     {
       "city": "San Antonio",
       "label": "San Antonio, TX — Next Stop",
-      "isoDateTime": "2026-04-12T17:00:00",
-      "location": "TBD",
+      "isoDateTime": "2026-04-12T18:30:00",
+      "location": "Veterans Park — 6:30 PM",
+      "locationAddress": "737 E Aviation Blvd, Universal City, TX 78148",
+      "locationUrl": "https://maps.google.com/?q=737+E+Aviation+Blvd,+Universal+City,+TX+78148",
       "expirationMessage": "It is always a good time in San Antonio!"
     },
     {
