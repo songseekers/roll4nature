@@ -13,7 +13,8 @@
       "city": "Austin",
       "label": "Austin, TX — Next Stop",
       "isoDateTime": "2026-04-11T14:00:00",
-      "location": "Dogspeed Cycles - 1619 E Cesar Chavez St, Austin, TX 78702",
+      "location": "Dogspeed Cycles — 2:00 PM",
+      "locationAddress": "1619 E Cesar Chavez St, Austin, TX 78702",
       "locationUrl": "https://maps.app.goo.gl/swXnn7Xjzi7txEk1A",
       "expirationMessage": "Keep being awesome, Austin!"
     },
