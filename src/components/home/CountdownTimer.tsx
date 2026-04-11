@@ -109,9 +109,8 @@ export default function CountdownTimer() {
       setElapsed(calcElapsed(START_TIME));
 
       // Find the current active event:
-      // - If midnightTime > now, this event is either counting down or showing expiration
-      // - Once midnight passes, move to the next event
-      const active = EVENTS.find((e) => e.midnightTime > now);
+      // - Show countdown until eventTime, then immediately switch to the next event
+      const active = EVENTS.find((e) => e.eventTime > now);
       setActiveEvent(active);
 
       if (active) {
