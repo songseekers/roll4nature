@@ -23,6 +23,7 @@ interface CountdownEvent {
   label: string;
   isoDateTime: string;
   location: string;
+  locationAddress?: string;
   locationUrl?: string;
   expirationMessage: string;
   eventTime: number;
@@ -39,6 +40,7 @@ const EVENTS: CountdownEvent[] = (
     label: string;
     isoDateTime: string;
     location: string;
+    locationAddress?: string;
     locationUrl?: string;
     expirationMessage: string;
   }[]
@@ -202,13 +204,29 @@ export default function CountdownTimer() {
                     href={activeEvent.locationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-r4v-primary dark:text-r4v-primary-hover text-center -mt-1 underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     📍 {activeEvent.location}
                   </a>
                 ) : (
-                  <p className="text-xs text-gray-500 dark:text-gray-400 text-center -mt-1">
+                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
                     {activeEvent.location}
+                  </p>
+                )
+              )}
+              {activeEvent.locationAddress && (
+                activeEvent.locationUrl ? (
+                  <a
+                    href={activeEvent.locationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center underline underline-offset-2 hover:opacity-80 transition"
+                  >
+                    {activeEvent.locationAddress}
+                  </a>
+                ) : (
+                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+                    {activeEvent.locationAddress}
                   </p>
                 )
               )}
