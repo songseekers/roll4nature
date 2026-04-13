@@ -184,6 +184,10 @@ export default function CountdownTimer() {
 
       {/* Next event countdown or expiration message */}
       <div className="flex flex-col items-center gap-2">
+        {/* Header — matches "Rolling time since Key West" and "Miles Cycled" style */}
+        <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+          What&apos;s Next
+        </p>
         {activeEvent ? (
           showExpiration ? (
             // Post-event: show expiration message until midnight
@@ -216,7 +220,8 @@ export default function CountdownTimer() {
           ) : (
             // Pre-event: show countdown
             <>
-              <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+              {/* Event label in orange — primary info, matches Miles Cycled value style */}
+              <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
                 {activeEvent.label}
               </p>
               {activeEvent.location && activeEvent.location !== 'TBD' && (
@@ -225,7 +230,7 @@ export default function CountdownTimer() {
                     href={activeEvent.locationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     📍 {activeEvent.location}
                   </a>
@@ -241,7 +246,7 @@ export default function CountdownTimer() {
                     href={activeEvent.locationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     {activeEvent.locationAddress}
                   </a>
@@ -263,7 +268,7 @@ export default function CountdownTimer() {
             </>
           )
         ) : (
-          <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+          <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
             Stay tuned for the next stop!
           </p>
         )}
