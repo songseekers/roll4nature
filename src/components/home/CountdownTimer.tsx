@@ -26,6 +26,8 @@ interface CountdownEvent {
   locationAddress?: string;
   locationUrl?: string;
   expirationMessage: string;
+  expirationLine2?: string;
+  expirationLine3?: string;
   eventTime: number;
   midnightTime: number;
 }
@@ -43,11 +45,13 @@ const EVENTS: CountdownEvent[] = (
     locationAddress?: string;
     locationUrl?: string;
     expirationMessage: string;
+    expirationLine2?: string;
+    expirationLine3?: string;
   }[]
 ).map((e) => {
   const eventTime = new Date(e.isoDateTime).getTime();
   const d = new Date(e.isoDateTime);
-  d.setHours(24, 0, 0, 0); // midnight at end of event day
+  d.setHours(48, 0, 0, 0); // midnight at end of the day after the event
   return { ...e, eventTime, midnightTime: d.getTime() };
 });
 
@@ -108,21 +112,21 @@ export default function CountdownTimer() {
       const now = Date.now();
       setElapsed(calcElapsed(START_TIME));
 
-      // Find the current active event:
-      // - Show countdown until eventTime, then immediately switch to the next event
-      const active = EVENTS.find((e) => e.eventTime > now);
-      setActiveEvent(active);
+      // Priority 1: show expiration message for a recently-passed event (until midnight of the next day)
+      const recentlyPassed = EVENTS.find((e) => e.eventTime <= now && e.midnightTime > now);
+      if (recentlyPassed) {
+        setActiveEvent(recentlyPassed);
+        setActiveCountdown(null);
+        setShowExpiration(true);
+        return;
+      }
 
-      if (active) {
-        if (now < active.eventTime) {
-          // Still counting down to event
-          setActiveCountdown(calcCountdown(active.eventTime));
-          setShowExpiration(false);
-        } else {
-          // Event has passed but midnight hasn't — show expiration message
-          setActiveCountdown(null);
-          setShowExpiration(true);
-        }
+      // Priority 2: count down to the next upcoming event
+      const upcoming = EVENTS.find((e) => e.eventTime > now);
+      setActiveEvent(upcoming);
+      if (upcoming) {
+        setActiveCountdown(calcCountdown(upcoming.eventTime));
+        setShowExpiration(false);
       } else {
         setActiveCountdown(null);
         setShowExpiration(false);
@@ -187,9 +191,27 @@ export default function CountdownTimer() {
               <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
                 {activeEvent.expirationMessage}
               </p>
-              <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
-                {activeEvent.city}
-              </p>
+              {activeEvent.expirationLine2 && (
+                <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+                  {activeEvent.expirationLine2}
+                </p>
+              )}
+              {activeEvent.expirationLine3 && (
+                activeEvent.expirationLine3.startsWith('https://') ? (
+                  <a
+                    href={activeEvent.expirationLine3}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center underline underline-offset-2 hover:opacity-80 transition"
+                  >
+                    📍 View on Maps
+                  </a>
+                ) : (
+                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+                    {activeEvent.expirationLine3}
+                  </p>
+                )
+              )}
             </>
           ) : (
             // Pre-event: show countdown
