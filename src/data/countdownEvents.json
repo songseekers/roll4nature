@@ -21,7 +21,7 @@
     {
       "city": "San Antonio",
       "label": "San Antonio, TX — Next Stop",
-      "isoDateTime": "2026-04-12T18:30:00",
+      "isoDateTime": "2026-04-11T18:30:00",
       "location": "Veterans Park — 6:30 PM",
       "locationAddress": "737 E Aviation Blvd, Universal City, TX 78148",
       "locationUrl": "https://maps.google.com/?q=737+E+Aviation+Blvd,+Universal+City,+TX+78148",
@@ -29,11 +29,12 @@
     },
     {
       "city": "San Antonio Downtown",
-      "label": "Sean and JT are exploring downtown San Antonio today!",
+      "label": "San Antonio Downtown Day",
       "isoDateTime": "2026-04-13T08:00:00",
-      "location": "Click the green box under the map to track their location.",
-      "locationAddress": "Meet up with them and ride awhile... See you out there!",
-      "expirationMessage": "See you next time, San Antonio!"
+      "location": "Downtown San Antonio",
+      "expirationMessage": "Sean and JT are exploring downtown San Antonio today!",
+      "expirationLine2": "Click the green box under the map to track their location.",
+      "expirationLine3": "Meet up with them and ride awhile... See you out there!"
     },
     {
       "city": "Enchanted Rock",
