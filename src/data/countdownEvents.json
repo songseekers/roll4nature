@@ -25,14 +25,26 @@
       "location": "Veterans Park — 6:30 PM",
       "locationAddress": "737 E Aviation Blvd, Universal City, TX 78148",
       "locationUrl": "https://maps.google.com/?q=737+E+Aviation+Blvd,+Universal+City,+TX+78148",
-      "expirationMessage": "It is always a good time in San Antonio!"
+      "expirationMessage": "Keep being awesome, San Antonio!"
     },
     {
-      "city": "Fredericksburg",
-      "label": "Fredericksburg, TX — Next Stop",
-      "isoDateTime": "2026-04-14T17:00:00",
-      "location": "Enchanted Rock - 16710 Ranch Road 965",
-      "expirationMessage": "Fredericksburg is enchanting!"
+      "city": "San Antonio Downtown",
+      "label": "Sean and JT are exploring downtown San Antonio today!",
+      "isoDateTime": "2026-04-13T08:00:00",
+      "location": "Click the green box under the map to track their location.",
+      "locationAddress": "Meet up with them and ride awhile... See you out there!",
+      "expirationMessage": "See you next time, San Antonio!"
+    },
+    {
+      "city": "Enchanted Rock",
+      "label": "Next stop: Enchanted Rock",
+      "isoDateTime": "2026-04-15T20:00:00",
+      "location": "8:00 PM on 15 April 2026",
+      "locationAddress": "16710 Ranch Road 965, Fredericksburg TX",
+      "locationUrl": "https://maps.app.goo.gl/St7p9pd3aGzDmLFE6",
+      "expirationMessage": "Next stop: Enchanted Rock",
+      "expirationLine2": "8:00 pm on 15 April 2026",
+      "expirationLine3": "https://maps.app.goo.gl/St7p9pd3aGzDmLFE6"
     }
   ]
 }

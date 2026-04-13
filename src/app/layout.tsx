@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Roll for Veterans 2026 | Bike Ride for Team RWB",
-  description: "Join us on an epic cross-country journey from Key West to the Grand Canyon supporting Team RWB veterans organization. 4,463 miles of stories, community, and gratitude.",
+  description: "Join us on an epic cross-country journey from Key West to the Grand Canyon supporting Team RWB veterans organization. 4,545 miles of stories, community, and gratitude.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://songseekers.org"),
   openGraph: {
     title: "Roll for Veterans 2026",
