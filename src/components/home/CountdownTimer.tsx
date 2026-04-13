@@ -142,7 +142,7 @@ export default function CountdownTimer() {
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
       {/* Count-UP: time since Key West */}
       <div className="flex flex-col items-center gap-2">
-        <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+        <p className="text-base font-semibold text-gray-700 dark:text-gray-300 text-center">
           Rolling time since Key West
         </p>
         <div className="flex items-center gap-2">
@@ -160,7 +160,7 @@ export default function CountdownTimer() {
 
       {/* Miles Cycled — links to /stats */}
       <Link href="/stats" className="flex flex-col items-center gap-1 group cursor-pointer">
-        <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
+        <p className="text-base font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
           Miles Cycled
         </p>
         <div className="flex flex-col items-center transition-transform group-hover:-translate-y-0.5">
@@ -185,7 +185,7 @@ export default function CountdownTimer() {
       {/* Next event countdown or expiration message */}
       <div className="flex flex-col items-center gap-2">
         {/* Header — matches "Rolling time since Key West" and "Miles Cycled" style */}
-        <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+        <p className="text-base font-semibold text-gray-700 dark:text-gray-300 text-center">
           What&apos;s Next
         </p>
         {activeEvent ? (
