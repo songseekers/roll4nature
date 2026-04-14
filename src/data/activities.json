@@ -516,5 +516,19 @@
     "maxTemp": 82.4,
     "movingTime": "4:49:18",
     "maxElevation": 854
+  },
+  {
+    "date": "2026-04-13",
+    "title": "San Antonio Cycling",
+    "distance": 37.0,
+    "calories": 1731,
+    "avgHR": 83,
+    "maxHR": 137,
+    "totalAscent": 1385,
+    "totalDescent": 1316,
+    "minTemp": 80.6,
+    "maxTemp": 98.6,
+    "movingTime": "4:11:12",
+    "maxElevation": 978
   }
 ]

@@ -37,6 +37,15 @@
       "expirationLine3": "Meet up with them and ride awhile... See you out there!"
     },
     {
+      "city": "San Antonio Bike Fiesta",
+      "label": "San Antonio — Bike Fiesta",
+      "isoDateTime": "2026-04-14T17:00:00",
+      "location": "5:00 PM – 9:00 PM",
+      "locationAddress": "200 W Houston St, San Antonio, TX",
+      "locationUrl": "https://maps.google.com/?q=200+W+Houston+St,+San+Antonio,+TX",
+      "expirationMessage": "Thanks for the great time at Bike Fiesta, San Antonio!"
+    },
+    {
       "city": "Enchanted Rock",
       "label": "Next stop: Enchanted Rock",
       "isoDateTime": "2026-04-15T20:00:00",
