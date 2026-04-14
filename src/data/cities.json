@@ -321,6 +321,19 @@
     "slug": "fredericksburg"
   },
   {
+    "id": "del-rio-tx",
+    "name": "Del Rio",
+    "state": "Texas",
+    "population": 35842,
+    "coordinates": [-100.8963, 29.3706],
+    "arrivalDate": "2026-04-20",
+    "dayNumber": 51,
+    "distanceFromPrevious": 164.0,
+    "distanceFromStart": 2197,
+    "tier": "major",
+    "slug": "del-rio"
+  },
+  {
     "id": "van-horn-tx",
     "name": "Van Horn",
     "state": "Texas",
@@ -328,7 +341,7 @@
     "coordinates": [-104.8307, 31.0473],
     "arrivalDate": "2026-04-26",
     "dayNumber": 59,
-    "distanceFromPrevious": 311.6,
+    "distanceFromPrevious": 147.0,
     "distanceFromStart": 2344,
     "tier": "major",
     "slug": "van-horn"
