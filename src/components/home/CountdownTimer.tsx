@@ -25,6 +25,7 @@ interface CountdownEvent {
   location: string;
   locationAddress?: string;
   locationUrl?: string;
+  expiryDays?: number;
   expirationMessage: string;
   expirationLine2?: string;
   expirationLine3?: string;
@@ -44,6 +45,7 @@ const EVENTS: CountdownEvent[] = (
     location: string;
     locationAddress?: string;
     locationUrl?: string;
+    expiryDays?: number;
     expirationMessage: string;
     expirationLine2?: string;
     expirationLine3?: string;
@@ -51,7 +53,10 @@ const EVENTS: CountdownEvent[] = (
 ).map((e) => {
   const eventTime = new Date(e.isoDateTime).getTime();
   const d = new Date(e.isoDateTime);
-  d.setHours(48, 0, 0, 0); // midnight at end of the day after the event
+  // expiryDays=1 (default): expires midnight of arrival day
+  // expiryDays=2: expires midnight of the following day (e.g. Enchanted Rock)
+  const hoursToMidnight = 24 * (e.expiryDays ?? 1);
+  d.setHours(hoursToMidnight, 0, 0, 0);
   return { ...e, eventTime, midnightTime: d.getTime() };
 });
 

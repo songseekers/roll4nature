@@ -1,5 +1,5 @@
 {
-  "_workflow": "To add a new event: append an entry to the events array following the existing format. isoDateTime uses YYYY-MM-DDThh:mm:ss in US Central Time — stored as local ISO string, no timezone suffix. Redeploy the site after saving — no code changes needed.",
+  "_workflow": "To add a new event: append an entry to the events array. isoDateTime uses YYYY-MM-DDThh:mm:ss in US Central Time. expiryDays controls how long the expiration message shows: 1 = expires midnight of arrival day, 2 = expires midnight of the following day. Redeploy after saving — no code changes needed.",
   "_tz_note": "All times are US Central. Stored as local ISO — browser interprets in local timezone.",
   "events": [
     {
@@ -7,6 +7,7 @@
       "label": "Navasota, TX — Next Stop",
       "isoDateTime": "2026-04-08T18:45:00",
       "location": "The Coop - 215 S Lasalle St",
+      "expiryDays": 1,
       "expirationMessage": "Thanks for the memories, Navasota!"
     },
     {
@@ -16,6 +17,7 @@
       "location": "Dogspeed Cycles — 2:00 PM",
       "locationAddress": "1619 E Cesar Chavez St, Austin, TX 78702",
       "locationUrl": "https://maps.app.goo.gl/swXnn7Xjzi7txEk1A",
+      "expiryDays": 1,
       "expirationMessage": "Keep being awesome, Austin!"
     },
     {
@@ -25,6 +27,7 @@
       "location": "Veterans Park — 6:30 PM",
       "locationAddress": "737 E Aviation Blvd, Universal City, TX 78148",
       "locationUrl": "https://maps.google.com/?q=737+E+Aviation+Blvd,+Universal+City,+TX+78148",
+      "expiryDays": 1,
       "expirationMessage": "Keep being awesome, San Antonio!"
     },
     {
@@ -32,6 +35,7 @@
       "label": "San Antonio Downtown Day",
       "isoDateTime": "2026-04-12T08:00:00",
       "location": "Downtown San Antonio",
+      "expiryDays": 1,
       "expirationMessage": "Sean and JT are exploring downtown San Antonio today!",
       "expirationLine2": "Click the green box under the map to track their location.",
       "expirationLine3": "Meet up with them and ride awhile... See you out there!"
@@ -43,6 +47,7 @@
       "location": "5:00 PM – 9:00 PM",
       "locationAddress": "200 W Houston St, San Antonio, TX",
       "locationUrl": "https://maps.google.com/?q=200+W+Houston+St,+San+Antonio,+TX",
+      "expiryDays": 1,
       "expirationMessage": "Thanks for the great time at Bike Fiesta, San Antonio!"
     },
     {
@@ -52,9 +57,37 @@
       "location": "8:00 PM on 15 April 2026",
       "locationAddress": "16710 Ranch Road 965, Fredericksburg TX",
       "locationUrl": "https://maps.app.goo.gl/St7p9pd3aGzDmLFE6",
-      "expirationMessage": "Next stop: Enchanted Rock",
-      "expirationLine2": "8:00 pm on 15 April 2026",
+      "expiryDays": 2,
+      "expirationMessage": "We're at Enchanted Rock — come spend some time with us in this enchanted place!",
+      "expirationLine2": "📍 16710 Ranch Road 965, Fredericksburg TX",
       "expirationLine3": "https://maps.app.goo.gl/St7p9pd3aGzDmLFE6"
+    },
+    {
+      "city": "Del Rio",
+      "label": "Next stop: Del Rio, TX",
+      "isoDateTime": "2026-04-20T19:00:00",
+      "location": "7:00 PM on 20 April 2026",
+      "locationAddress": "Location TBD",
+      "expiryDays": 1,
+      "expirationMessage": "Thanks for the memories, Del Rio!"
+    },
+    {
+      "city": "Van Horn",
+      "label": "Next stop: Van Horn, TX",
+      "isoDateTime": "2026-04-26T19:00:00",
+      "location": "7:00 PM on 26 April 2026",
+      "locationAddress": "Location TBD",
+      "expiryDays": 1,
+      "expirationMessage": "Van Horn — what a hidden gem!"
+    },
+    {
+      "city": "El Paso",
+      "label": "Next stop: El Paso, TX",
+      "isoDateTime": "2026-05-01T19:00:00",
+      "location": "7:00 PM on 1 May 2026",
+      "locationAddress": "Location TBD",
+      "expiryDays": 1,
+      "expirationMessage": "Keep being awesome, El Paso!"
     }
   ]
 }
