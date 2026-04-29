@@ -321,17 +321,17 @@
     "slug": "fredericksburg"
   },
   {
-    "id": "del-rio-tx",
-    "name": "Del Rio",
+    "id": "sonora-tx",
+    "name": "Sonora",
     "state": "Texas",
-    "population": 35842,
-    "coordinates": [-100.8963, 29.3706],
+    "population": 2924,
+    "coordinates": [-100.6501, 30.5669],
     "arrivalDate": "2026-04-20",
     "dayNumber": 51,
     "distanceFromPrevious": 164.0,
     "distanceFromStart": 2197,
     "tier": "major",
-    "slug": "del-rio"
+    "slug": "sonora"
   },
   {
     "id": "van-horn-tx",

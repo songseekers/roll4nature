@@ -244,7 +244,17 @@ export default function Footer() {
               <h5 className="text-r4v-primary-hover font-semibold text-sm uppercase tracking-wide">Sean</h5>
               <div className="flex flex-wrap justify-center gap-2">
                 <a
-                  href="https://www.instagram.com/performancechefsean?igsh=cHlzaXFueHZzbGtv"
+                  href="https://www.facebook.com/share/18Wt5WcbA2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg"
+                  aria-label="Sean's Facebook"
+                >
+                  <Facebook size={18} />
+                  <span className="text-xs">Facebook</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/nomadchefsean?igsh=cHlzaXFueHZzbGtv"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg"
@@ -254,7 +264,7 @@ export default function Footer() {
                   <span className="text-xs">Instagram</span>
                 </a>
                 <a
-                  href="https://youtube.com/@performancechefsean?si=-nJ5DYm-6Pec0Z0v"
+                  href="https://youtube.com/@nomadchefsean?si=BQhRo-nWISF6DGJi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg"
@@ -264,7 +274,7 @@ export default function Footer() {
                   <span className="text-xs">YouTube</span>
                 </a>
                 <a
-                  href="https://tiktok.com/@performancechefsean"
+                  href="https://tiktok.com/@nomadchefsean"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg"
@@ -276,7 +286,7 @@ export default function Footer() {
                   <span className="text-xs">TikTok</span>
                 </a>
                 <a
-                  href="https://www.threads.com/@performancechefsean"
+                  href="https://www.threads.com/@nomadchefsean"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg"
@@ -288,7 +298,7 @@ export default function Footer() {
                   <span className="text-xs">Threads</span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/performancechefsean"
+                  href="https://www.linkedin.com/in/nomadchefsean"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-r4v-primary-hover transition bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg"
