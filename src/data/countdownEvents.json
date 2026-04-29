@@ -63,13 +63,13 @@
       "expirationLine3": "https://maps.app.goo.gl/St7p9pd3aGzDmLFE6"
     },
     {
-      "city": "Del Rio",
-      "label": "Next stop: Del Rio, TX",
+      "city": "Sonora",
+      "label": "Next stop: Sonora, TX",
       "isoDateTime": "2026-04-20T19:00:00",
       "location": "7:00 PM on 20 April 2026",
       "locationAddress": "Location TBD",
       "expiryDays": 1,
-      "expirationMessage": "Thanks for the memories, Del Rio!"
+      "expirationMessage": "Thanks for the memories, Sonora!"
     },
     {
       "city": "Van Horn",

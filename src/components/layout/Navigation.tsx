@@ -54,7 +54,7 @@ export default function Navigation() {
               variant="primary"
               size="sm"
               href="/donate"
-              className="px-2 md:px-3 py-2 text-xs md:text-sm font-semibold leading-tight"
+              className="px-3 md:px-4 py-2.5 text-sm md:text-base font-semibold leading-tight"
             >
               <span>DONATE</span>
             </Button>
