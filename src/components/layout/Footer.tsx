@@ -44,7 +44,7 @@ export default function Footer() {
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
-                      R4V GoFundMe
+                      DONATE
                     </a>
                   </li>
                   <li>
