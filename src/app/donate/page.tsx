@@ -17,7 +17,7 @@ const platforms = [
   },
   {
     name: 'PayPal',
-    url: 'https://www.paypal.me/roll4veterans',
+    url: 'https://www.paypal.me/jthandyguy',
     logo: '/images/donate/logo_paypal.jpg',
     description: 'Quick and secure payments via PayPal.',
     buttonText: 'Send via PayPal',
