@@ -93,8 +93,8 @@
     {
       "city": "El Paso Morning",
       "label": "El Paso — Morning Meetup",
-      "isoDateTime": "2026-05-02T11:45:00",
-      "location": "11:45 AM on 2 May 2026",
+      "isoDateTime": "2026-05-02T10:45:00",
+      "location": "10:45 AM on 2 May 2026",
       "locationAddress": "1400 Texas Ave, El Paso, TX 79901",
       "locationUrl": "https://maps.google.com/?q=1400+Texas+Ave,+El+Paso,+TX+79901",
       "expiryDays": 1,
