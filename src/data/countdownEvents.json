@@ -97,14 +97,14 @@
       "location": "10:45 AM on 2 May 2026",
       "locationAddress": "1400 Texas Ave, El Paso, TX 79901",
       "locationUrl": "https://maps.google.com/?q=1400+Texas+Ave,+El+Paso,+TX+79901",
-      "expiryDays": 1,
+      "expiryTime": "2026-05-02T11:45:00",
       "expirationMessage": "Thanks for a great morning, El Paso!"
     },
     {
       "city": "Las Cruces",
       "label": "Next stop: Las Cruces, NM",
-      "isoDateTime": "2026-05-02T15:30:00",
-      "location": "Outdoor Adventures — 3:30 PM",
+      "isoDateTime": "2026-05-02T16:30:00",
+      "location": "Outdoor Adventures — 4:30 PM",
       "locationAddress": "1424 Missouri Ave, Las Cruces, NM 88001",
       "locationUrl": "https://maps.google.com/?q=1424+Missouri+Ave,+Las+Cruces,+NM+88001",
       "expiryDays": 1,
