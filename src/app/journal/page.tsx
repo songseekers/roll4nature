@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { journalDays, stateOrder, stateConfig, JournalDay } from '@/data/journalData';
 
 export default function JournalPage() {
@@ -13,11 +13,10 @@ export default function JournalPage() {
     'New Mexico': true,
   });
 
-  // Group days by state
+  // Group days by state, deduplicate by num (keep last)
   const byState: Record<string, JournalDay[]> = {};
   journalDays.forEach(d => {
     if (!byState[d.state]) byState[d.state] = [];
-    // Deduplicate by num (take last occurrence)
     const existing = byState[d.state].findIndex(x => x.num === d.num);
     if (existing >= 0) byState[d.state][existing] = d;
     else byState[d.state].push(d);
@@ -30,9 +29,7 @@ export default function JournalPage() {
   const scrollToDay = (dayNum: number) => {
     setActiveDay(dayNum);
     const el = document.getElementById(`day-${dayNum}`);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
@@ -43,7 +40,7 @@ export default function JournalPage() {
         <aside className="hidden lg:flex flex-col w-72 min-w-72 h-[calc(100vh-64px)] sticky top-16 overflow-y-auto bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800">
           <div className="p-5 border-b border-gray-200 dark:border-gray-800">
             <div className="text-xs font-bold text-r4v-primary uppercase tracking-widest mb-1">Roll for Veterans</div>
-            <div className="text-sm font-semibold text-gray-700 dark:text-gray-200">Journal</div>
+            <div className="text-base font-semibold text-gray-700 dark:text-gray-200">Journal</div>
           </div>
           <nav className="p-4 flex-1">
             {stateOrder.map(state => {
@@ -51,18 +48,15 @@ export default function JournalPage() {
               const { color } = stateConfig[state];
               const days = byState[state].sort((a, b) => a.num - b.num);
               return (
-                <div key={state} className="mb-3">
+                <div key={state} className="mb-4">
                   <button
                     onClick={() => toggleState(state)}
-                    className="w-full flex items-center justify-between py-1.5 px-2 rounded text-left group"
+                    className="w-full flex items-center justify-between py-2 px-2 rounded text-left"
                   >
-                    <span
-                      className="text-xs font-bold uppercase tracking-wider"
-                      style={{ color }}
-                    >
+                    <span className="text-sm font-bold uppercase tracking-wider" style={{ color }}>
                       {state}
                     </span>
-                    <span className="text-gray-400 text-xs">{expandedStates[state] ? '▾' : '▸'}</span>
+                    <span className="text-gray-400 text-sm">{expandedStates[state] ? '▾' : '▸'}</span>
                   </button>
                   {expandedStates[state] && (
                     <ul className="ml-3 mt-1 space-y-0.5">
@@ -70,7 +64,7 @@ export default function JournalPage() {
                         <li key={d.num}>
                           <button
                             onClick={() => scrollToDay(d.num)}
-                            className={`w-full text-left px-2 py-1 rounded text-xs transition-colors ${
+                            className={`w-full text-left px-2 py-1.5 rounded text-sm transition-colors ${
                               activeDay === d.num
                                 ? 'bg-r4v-primary/10 text-r4v-primary font-semibold'
                                 : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
@@ -96,16 +90,16 @@ export default function JournalPage() {
             <div className="text-sm font-bold text-r4v-primary uppercase tracking-widest mb-3">
               Roll for Veterans
             </div>
-            <h1 className="text-6xl sm:text-7xl font-bold text-gray-900 dark:text-white mb-4 leading-none">
+            <h1 className="text-6xl sm:text-7xl font-bold text-gray-900 dark:text-white mb-5 leading-none">
               ROLLING
             </h1>
-            <p className="text-xl sm:text-2xl text-gray-500 dark:text-gray-400 italic mb-6">
-              A cross-country chronicle
+            <p className="text-2xl sm:text-3xl text-gray-500 dark:text-gray-400 italic mb-6">
+              A cross-country cycling chronicle
             </p>
-            <p className="text-sm text-gray-400 dark:text-gray-500 font-medium tracking-wide">
+            <p className="text-base text-gray-400 dark:text-gray-500 font-medium tracking-wide">
               JT Tracy &nbsp;·&nbsp; February 27, 2026 —
             </p>
-            <div className="mt-6 flex flex-wrap gap-2 text-xs text-gray-400">
+            <div className="mt-6 flex flex-wrap gap-2 text-sm text-gray-400">
               <span>Key West, FL</span>
               <span>→</span>
               <span>Los Angeles, CA</span>
@@ -123,15 +117,16 @@ export default function JournalPage() {
 
             return (
               <section key={state} className="mb-24">
+
                 {/* Chapter header */}
-                <div className="mb-12 pb-6 border-t-4" style={{ borderColor: color }}>
-                  <div className="pt-8 text-center">
-                    <div className="text-xs uppercase tracking-widest text-gray-400 mb-2">Chapter</div>
-                    <h2 className="text-4xl font-bold mb-2" style={{ color }}>
+                <div className="mb-14 pb-6 border-t-4" style={{ borderColor: color }}>
+                  <div className="pt-10 text-center">
+                    <div className="text-sm uppercase tracking-widest text-gray-400 mb-3">Chapter</div>
+                    <h2 className="text-5xl font-bold mb-3" style={{ color }}>
                       The {state} Chapter
                     </h2>
-                    <p className="text-sm text-gray-400 italic mb-4">{subtitle}</p>
-                    <div className="text-gray-300 dark:text-gray-600">✦ &nbsp; ✦ &nbsp; ✦</div>
+                    <p className="text-lg text-gray-400 italic mb-5">{subtitle}</p>
+                    <div className="text-gray-300 dark:text-gray-600 text-lg">✦ &nbsp; ✦ &nbsp; ✦</div>
                   </div>
                 </div>
 
@@ -143,9 +138,9 @@ export default function JournalPage() {
                   return (
                     <div key={d.num}>
                       {showRegion && (
-                        <div className="text-center my-10">
+                        <div className="text-center my-12">
                           <span
-                            className="text-xs font-bold uppercase tracking-widest px-4"
+                            className="text-sm font-bold uppercase tracking-widest px-4"
                             style={{ color: `${color}99` }}
                           >
                             ── {d.region} ──
@@ -155,24 +150,26 @@ export default function JournalPage() {
 
                       <article
                         id={`day-${d.num}`}
-                        className="mb-14 pb-14 border-b border-gray-100 dark:border-gray-800 scroll-mt-20"
+                        className="mb-16 pb-16 border-b border-gray-100 dark:border-gray-800 scroll-mt-20"
                       >
                         {/* Day header */}
-                        <div className="mb-2">
-                          <span className="text-lg font-bold" style={{ color }}>
+                        <div className="mb-2 flex flex-wrap items-baseline gap-x-3">
+                          <span className="text-2xl font-bold" style={{ color }}>
                             Day {d.num}
                           </span>
-                          <span className="text-gray-300 dark:text-gray-600 mx-3">·</span>
-                          <span className="text-gray-400 italic text-sm">{d.date}</span>
+                          <span className="text-gray-300 dark:text-gray-600">·</span>
+                          <span className="text-gray-400 italic text-lg">{d.date}</span>
                         </div>
-                        <div className="text-xs text-blue-400 italic mb-6">{d.location}</div>
+
+                        {/* Location */}
+                        <div className="text-base text-blue-400 italic mb-8">{d.location}</div>
 
                         {/* Entry text */}
-                        <div className="space-y-4">
+                        <div className="space-y-5">
                           {d.entry.split('\n\n').map((para, i) => (
                             <p
                               key={i}
-                              className="text-gray-700 dark:text-gray-300 leading-relaxed text-base"
+                              className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg"
                             >
                               {para}
                             </p>
@@ -180,11 +177,11 @@ export default function JournalPage() {
                         </div>
 
                         {/* Hashtags */}
-                        <div className="mt-6 flex flex-wrap gap-2">
+                        <div className="mt-8 flex flex-wrap gap-2">
                           {d.hashtags.map(tag => (
                             <span
                               key={tag}
-                              className="text-xs italic text-blue-400 dark:text-blue-500"
+                              className="text-sm italic text-blue-400 dark:text-blue-500"
                             >
                               {tag}
                             </span>
@@ -201,8 +198,8 @@ export default function JournalPage() {
           {/* Footer */}
           <div className="text-center py-16 border-t border-gray-200 dark:border-gray-700">
             <div className="text-2xl text-gray-300 dark:text-gray-600 mb-4">✦ &nbsp; ✦ &nbsp; ✦</div>
-            <p className="text-gray-400 italic text-sm">The road continues...</p>
-            <p className="text-xs text-gray-300 dark:text-gray-600 mt-2">
+            <p className="text-gray-400 italic text-base">The road continues...</p>
+            <p className="text-sm text-gray-300 dark:text-gray-600 mt-2">
               Updated through Day 65 · May 2, 2026
             </p>
           </div>
