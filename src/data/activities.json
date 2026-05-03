@@ -712,5 +712,47 @@
     "maxTemp": 98.6,
     "movingTime": "5:03:41",
     "maxElevation": 4671
+  },
+  {
+    "date": "2026-04-29",
+    "title": "El Paso Cycling",
+    "distance": 7.54,
+    "calories": 267,
+    "avgHR": 95,
+    "maxHR": 130,
+    "totalAscent": 295,
+    "totalDescent": 43,
+    "minTemp": 77.0,
+    "maxTemp": 82.4,
+    "movingTime": "0:55:46",
+    "maxElevation": 3969
+  },
+  {
+    "date": "2026-05-01",
+    "title": "El Paso Cycling",
+    "distance": 20.93,
+    "calories": 680,
+    "avgHR": 113,
+    "maxHR": 160,
+    "totalAscent": 492,
+    "totalDescent": 564,
+    "minTemp": 59.0,
+    "maxTemp": 71.6,
+    "movingTime": "1:52:00",
+    "maxElevation": 4042
+  },
+  {
+    "date": "2026-05-02",
+    "title": "El Paso / Las Cruces Cycling",
+    "distance": 67.76,
+    "calories": 2409,
+    "avgHR": 105,
+    "maxHR": 164,
+    "totalAscent": 1053,
+    "totalDescent": 928,
+    "minTemp": 60.8,
+    "maxTemp": 86.0,
+    "movingTime": "5:05:59",
+    "maxElevation": 4052
   }
 ]
