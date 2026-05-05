@@ -40,7 +40,7 @@ export default function JourneyHero() {
             </div>
           </div>
           <div className="border-t border-gray-200 dark:border-gray-700 mt-4 pt-4 text-sm text-gray-700 dark:text-gray-300">
-            <p><span className="font-semibold dark:text-white">Feb 27 - May 31 - Jun 26, 2026</span></p>
+            <p><span className="font-semibold dark:text-white">Feb 27 - May 27 - Jun 22, 2026</span></p>
             <p>Key West, FL → Los Angeles, CA → Flagstaff, AZ</p>
           </div>
         </div>
