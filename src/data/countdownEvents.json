@@ -113,11 +113,22 @@
     {
       "city": "Sierra Vista",
       "label": "Next stop: Sierra Vista, AZ",
-      "isoDateTime": "2026-05-09T18:00:00",
-      "location": "6:00 PM on 9 May 2026",
-      "locationAddress": "Location TBD",
-      "expiryDays": 1,
+      "isoDateTime": "2026-05-09T16:00:00",
+      "location": "Urban Axe Yard — 4:00 PM",
+      "locationAddress": "3758 E Fry Blvd Unit A, Sierra Vista, AZ 85635",
+      "locationUrl": "https://maps.google.com/?q=3758+E+Fry+Blvd+Unit+A,+Sierra+Vista,+AZ+85635",
+      "expiryTime": "2026-05-09T17:00:00",
       "expirationMessage": "Thanks for the memories, Sierra Vista!"
+    },
+    {
+      "city": "Sierra Vista Morning",
+      "label": "Sierra Vista — Breakfast & Ride Out",
+      "isoDateTime": "2026-05-10T08:00:00",
+      "location": "Denny's — 8:00 AM",
+      "locationAddress": "2397 E Fry Blvd, Sierra Vista, AZ 85635",
+      "locationUrl": "https://maps.google.com/?q=2397+E+Fry+Blvd,+Sierra+Vista,+AZ+85635",
+      "expiryDays": 1,
+      "expirationMessage": "Onward to Tucson! Thanks for riding out with us, Sierra Vista!"
     }
   ]
 }
