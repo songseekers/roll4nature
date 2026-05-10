@@ -62,7 +62,7 @@ export default function Footer() {
                       href="/sponsor"
                       className="text-gray-300 hover:text-r4v-primary-hover transition"
                     >
-                      Partner with Roll for Veterans
+                      Partner with Us
                     </a>
                   </li>
                   <li>
