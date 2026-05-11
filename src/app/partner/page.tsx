@@ -96,6 +96,55 @@ export default function PartnerPage() {
         </div>
       </div>
 
+      {/* Partners Display Section */}
+      <section id="partners" className="bg-gray-50 dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors scroll-mt-24">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Thank You to Our Partners
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            {/* Veteran Mobile */}
+            <div
+              onClick={() => setSelectedPartner('veteranmobile')}
+              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
+            >
+              <div className="relative h-32 mb-4">
+                <Image src="/images/partners/VeteranMobile.png" alt="Veteran Mobile logo" fill className="object-contain" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">Veteran Mobile</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
+            </div>
+
+            {/* WrapSpot */}
+            <div
+              onClick={() => setSelectedPartner('wrapspot')}
+              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
+            >
+              <div className="relative h-32 mb-4">
+                <Image src="/images/partners/WrapSpot_Logo.png" alt="WrapSpot logo" fill className="object-contain" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">WrapSpot</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
+            </div>
+
+            {/* 10BitWorks */}
+            <div
+              onClick={() => setSelectedPartner('10bitworks')}
+              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
+            >
+              <div className="relative h-32 mb-4">
+                <Image src="/images/partners/10bitworks.png" alt="10BitWorks Makerspace logo" fill className="object-contain" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">10BitWorks Makerspace</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Mission Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white dark:bg-gray-900 transition-colors">
         <div className="bg-gradient-to-br from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover rounded-lg p-8 border-2 border-r4v-primary mb-12">
@@ -158,55 +207,6 @@ export default function PartnerPage() {
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">General Operations</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Flexible support for unexpected costs and operational expenses along the way.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Display Section */}
-      <section id="partners" className="bg-gray-50 dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors scroll-mt-24">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Thank You to Our Partners
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-
-            {/* Veteran Mobile */}
-            <div
-              onClick={() => setSelectedPartner('veteranmobile')}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
-            >
-              <div className="relative h-32 mb-4">
-                <Image src="/images/partners/VeteranMobile.png" alt="Veteran Mobile logo" fill className="object-contain" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">Veteran Mobile</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
-            </div>
-
-            {/* WrapSpot */}
-            <div
-              onClick={() => setSelectedPartner('wrapspot')}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
-            >
-              <div className="relative h-32 mb-4">
-                <Image src="/images/partners/WrapSpot_Logo.png" alt="WrapSpot logo" fill className="object-contain" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">WrapSpot</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
-            </div>
-
-            {/* 10BitWorks */}
-            <div
-              onClick={() => setSelectedPartner('10bitworks')}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
-            >
-              <div className="relative h-32 mb-4">
-                <Image src="/images/partners/10bitworks.png" alt="10BitWorks Makerspace logo" fill className="object-contain" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">10BitWorks Makerspace</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
-            </div>
-
           </div>
         </div>
       </section>

@@ -157,7 +157,7 @@ export default function HomePage() {
               Help Fuel the Mission
             </a>
             <a
-              href="/sponsor"
+              href="/partner"
               className="bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#a84d25] transition inline-block"
             >
               Become a Partner
