@@ -5,7 +5,7 @@ import { Building2, DollarSign, Fuel, UtensilsCrossed, ExternalLink, MapPin, Pho
 import Image from 'next/image';
 import { useState, FormEvent } from 'react';
 
-type PartnerId = 'veteranmobile' | 'wrapspot' | '10bitworks' | null;
+type PartnerId = 'veteranmobile' | 'wrapspot' | '10bitworks' | 'whitestrailers' | null;
 
 export default function PartnerPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -126,6 +126,18 @@ export default function PartnerPage() {
                 <Image src="/images/partners/WrapSpot_Logo.png" alt="WrapSpot logo" fill className="object-contain" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">WrapSpot</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
+            </div>
+
+            {/* White's Trailers */}
+            <div
+              onClick={() => setSelectedPartner('whitestrailers')}
+              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
+            >
+              <div className="relative h-32 mb-4">
+                <Image src="/images/partners/WhitesLogo.png" alt="White's Trailers logo" fill className="object-contain" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">White&apos;s Trailers</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
             </div>
 
@@ -361,6 +373,58 @@ export default function PartnerPage() {
                 <Button variant="primary" size="md" href="https://10bitworks.com" target="_blank" rel="noopener noreferrer" className="gap-2">
                   <ExternalLink size={20} />
                   Visit 10BitWorks
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* White's Trailers Modal */}
+      {selectedPartner === 'whitestrailers' && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onClick={() => setSelectedPartner(null)}>
+          <div className="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+            <div className="p-8">
+              <div className="flex justify-between items-start mb-6">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">White&apos;s Trailers LLC</h2>
+                <button onClick={() => setSelectedPartner(null)} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold" aria-label="Close modal">×</button>
+              </div>
+              <div className="mb-6">
+                <Image src="/images/partners/WhitesLogo.png" alt="White's Trailers logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
+              </div>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <MapPin size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">Location:</p>
+                    <p className="text-gray-700 dark:text-gray-300">Lafayette, Louisiana</p>
+                    <p className="text-gray-700 dark:text-gray-300">1005 Westgate Road, Lafayette, LA 70506</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <PhoneIcon size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">Phone:</p>
+                    <a href="tel:3379624835" className="text-r4v-primary hover:underline">(337) 962-4835</a>
+                    <span className="text-gray-500 dark:text-gray-400 text-sm ml-2">24/7</span>
+                  </div>
+                </div>
+              </div>
+              <div className="prose prose-lg dark:prose-invert max-w-none mb-6">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  White&apos;s Trailers LLC is a Lafayette, Louisiana-based trailer repair and 24-hour roadside assistance operation run by Drake White — a one-man force of nature who treats every trailer like it&apos;s his own. Founded in 2021, White&apos;s Trailers has built a reputation across Acadiana for showing up fast, working hard, and charging fair — even when the call comes in on a Sunday, a holiday, or both.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Drake&apos;s name came up when we needed it most. The day before Easter Sunday, deep in Louisiana, Cleopatra&apos;s axle was severely compromised and the mission was in jeopardy. Drake answered his phone. Within hours he had sourced the parts, made the repairs, and put us back on the road — a minor miracle on a holiday weekend when no one else was picking up. That&apos;s not just service. That&apos;s character.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Whether it&apos;s leaf springs, bearings, brakes, or a full suspension rebuild on the side of the road in 90° heat, Drake gets the job done. If you&apos;re hauling anything on four wheels through Louisiana and surrounding areas, save his number.
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <Button variant="primary" size="md" href="tel:3379624835" className="gap-2">
+                  <PhoneIcon size={20} />
+                  Call Drake: (337) 962-4835
                 </Button>
               </div>
             </div>
