@@ -111,7 +111,7 @@ export default function PartnerPage() {
               className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
             >
               <div className="relative h-32 mb-4">
-                <Image src="/images/partners/VeteranMobile.png" alt="Veteran Mobile logo" fill className="object-contain" />
+                <Image src="/images/partner/VeteranMobile.png" alt="Veteran Mobile logo" fill className="object-contain" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">Veteran Mobile</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
@@ -123,7 +123,7 @@ export default function PartnerPage() {
               className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
             >
               <div className="relative h-32 mb-4">
-                <Image src="/images/partners/WrapSpot_Logo.png" alt="WrapSpot logo" fill className="object-contain" />
+                <Image src="/images/partner/WrapSpot_Logo.png" alt="WrapSpot logo" fill className="object-contain" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">WrapSpot</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
@@ -135,7 +135,7 @@ export default function PartnerPage() {
               className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
             >
               <div className="relative h-32 mb-4">
-                <Image src="/images/partners/WhitesLogo.png" alt="White's Trailers logo" fill className="object-contain" />
+                <Image src="/images/partner/WhitesLogo.png" alt="White's Trailers logo" fill className="object-contain" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">White&apos;s Trailers</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
@@ -147,7 +147,7 @@ export default function PartnerPage() {
               className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105"
             >
               <div className="relative h-32 mb-4">
-                <Image src="/images/partners/10bitworks.png" alt="10BitWorks Makerspace logo" fill className="object-contain" />
+                <Image src="/images/partner/10bitworks.png" alt="10BitWorks Makerspace logo" fill className="object-contain" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center">10BitWorks Makerspace</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Click to learn more</p>
@@ -233,7 +233,7 @@ export default function PartnerPage() {
                 <button onClick={() => setSelectedPartner(null)} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold" aria-label="Close modal">×</button>
               </div>
               <div className="mb-6">
-                <Image src="/images/partners/VeteranMobile.png" alt="Veteran Mobile logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
+                <Image src="/images/partner/VeteranMobile.png" alt="Veteran Mobile logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
@@ -284,7 +284,7 @@ export default function PartnerPage() {
                 <button onClick={() => setSelectedPartner(null)} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold" aria-label="Close modal">×</button>
               </div>
               <div className="mb-6">
-                <Image src="/images/partners/WrapSpot_Logo.png" alt="WrapSpot logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
+                <Image src="/images/partner/WrapSpot_Logo.png" alt="WrapSpot logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
@@ -338,7 +338,7 @@ export default function PartnerPage() {
                 <button onClick={() => setSelectedPartner(null)} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold" aria-label="Close modal">×</button>
               </div>
               <div className="mb-6">
-                <Image src="/images/partners/10bitworks.png" alt="10BitWorks Makerspace logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
+                <Image src="/images/partner/10bitworks.png" alt="10BitWorks Makerspace logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
@@ -390,7 +390,7 @@ export default function PartnerPage() {
                 <button onClick={() => setSelectedPartner(null)} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl font-bold" aria-label="Close modal">×</button>
               </div>
               <div className="mb-6">
-                <Image src="/images/partners/WhitesLogo.png" alt="White's Trailers logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
+                <Image src="/images/partner/WhitesLogo.png" alt="White's Trailers logo" width={400} height={200} className="w-full h-auto max-h-40 object-contain" />
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
@@ -407,6 +407,13 @@ export default function PartnerPage() {
                     <p className="font-semibold text-gray-900 dark:text-white">Phone:</p>
                     <a href="tel:3379624835" className="text-r4v-primary hover:underline">(337) 962-4835</a>
                     <span className="text-gray-500 dark:text-gray-400 text-sm ml-2">24/7</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Globe size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">Website:</p>
+                    <a href="https://whitestrailersllc.com" target="_blank" rel="noopener noreferrer" className="text-r4v-primary hover:underline">whitestrailersllc.com</a>
                   </div>
                 </div>
               </div>
