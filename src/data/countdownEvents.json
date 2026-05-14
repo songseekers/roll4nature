@@ -129,6 +129,36 @@
       "locationUrl": "https://maps.google.com/?q=2397+E+Fry+Blvd,+Sierra+Vista,+AZ+85635",
       "expiryDays": 1,
       "expirationMessage": "Onward to Tucson! Thanks for riding out with us, Sierra Vista!"
+    },
+    {
+      "city": "Gilbert Ruck",
+      "label": "Phoenix Area — Morning Walk & Ruck",
+      "isoDateTime": "2026-05-16T07:00:00",
+      "location": "Riparian Preserve — 7:00 AM",
+      "locationAddress": "2757 E Guadalupe Rd, Gilbert, AZ 85234",
+      "locationUrl": "https://maps.google.com/?q=2757+E+Guadalupe+Rd,+Gilbert,+AZ+85234",
+      "expiryTime": "2026-05-16T08:00:00",
+      "expirationMessage": "Great ruck! Now let's eat!"
+    },
+    {
+      "city": "Mesa Breakfast",
+      "label": "Phoenix Area — Breakfast Social",
+      "isoDateTime": "2026-05-16T08:00:00",
+      "location": "First Watch — 8:00 AM",
+      "locationAddress": "1939 S Val Vista Dr, Mesa, AZ 85204",
+      "locationUrl": "https://maps.google.com/?q=1939+S+Val+Vista+Dr,+Mesa,+AZ+85204",
+      "expiryTime": "2026-05-16T09:00:00",
+      "expirationMessage": "Great breakfast! See you tonight at OHSO!"
+    },
+    {
+      "city": "Phoenix OHSO",
+      "label": "Phoenix — Social & Dinner at OHSO",
+      "isoDateTime": "2026-05-16T18:00:00",
+      "location": "OHSO Brewery — 6:00 PM to 8:00 PM",
+      "locationAddress": "8525 N Central Ave, Phoenix, AZ 85020",
+      "locationUrl": "https://maps.google.com/?q=8525+N+Central+Ave,+Phoenix,+AZ+85020",
+      "expiryDays": 1,
+      "expirationMessage": "Phoenix — you never disappoint! See you down the road!"
     }
   ]
 }
