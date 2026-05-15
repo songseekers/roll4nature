@@ -11,7 +11,7 @@ export default function JourneyHero() {
         </h1>
 
         <p className="text-2xl md:text-3xl text-r4v-primary dark:text-r4v-primary-hover font-bold mb-6">
-          4,545 Miles of Purpose in Motion
+          4,434 Miles of Purpose in Motion
         </p>
 
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
@@ -27,7 +27,7 @@ export default function JourneyHero() {
         <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm max-w-md mx-auto mb-8">
           <div className="grid grid-cols-3 gap-4">
             <div>
-              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">4,545</div>
+              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">4,434</div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Miles</div>
             </div>
             <div>
@@ -35,7 +35,7 @@ export default function JourneyHero() {
               <div className="text-xs text-gray-600 dark:text-gray-400">Days</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">42+</div>
+              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">47</div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Communities</div>
             </div>
           </div>

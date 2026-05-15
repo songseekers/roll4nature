@@ -525,22 +525,6 @@
     }
   },
   {
-    "id": "quartzsite-az",
-    "name": "Quartzsite",
-    "state": "Arizona",
-    "population": 3677,
-    "coordinates": [
-      -114.2298,
-      33.6639
-    ],
-    "arrivalDate": "2026-05-19",
-    "dayNumber": 82,
-    "distanceFromPrevious": 115.1,
-    "distanceFromStart": 3356,
-    "tier": "major",
-    "slug": "quartzsite"
-  },
-  {
     "id": "blythe-ca",
     "name": "Blythe",
     "state": "California",
@@ -551,7 +535,7 @@
     ],
     "arrivalDate": "2026-05-19",
     "dayNumber": 82,
-    "distanceFromPrevious": 15.4,
+    "distanceFromPrevious": 130,
     "distanceFromStart": 3371,
     "tier": "major",
     "slug": "blythe"
@@ -568,7 +552,7 @@
     "arrivalDate": "2026-05-20",
     "dayNumber": 83,
     "distanceFromPrevious": 44.5,
-    "distanceFromStart": 3416,
+    "distanceFromStart": 3415.5,
     "tier": "major",
     "slug": "indio"
   },
@@ -584,7 +568,7 @@
     "arrivalDate": "2026-05-21",
     "dayNumber": 84,
     "distanceFromPrevious": 42.9,
-    "distanceFromStart": 3458,
+    "distanceFromStart": 3458.4,
     "tier": "major",
     "slug": "palm-springs"
   },
@@ -600,7 +584,7 @@
     "arrivalDate": "2026-05-24",
     "dayNumber": 87,
     "distanceFromPrevious": 104.4,
-    "distanceFromStart": 3563,
+    "distanceFromStart": 3562.8,
     "tier": "major",
     "slug": "san-bernardino"
   },
@@ -616,7 +600,7 @@
     "arrivalDate": "2026-05-25",
     "dayNumber": 88,
     "distanceFromPrevious": 39.9,
-    "distanceFromStart": 3603,
+    "distanceFromStart": 3602.7,
     "tier": "major",
     "slug": "fontana"
   },
@@ -632,7 +616,7 @@
     "arrivalDate": "2026-05-27",
     "dayNumber": 90,
     "distanceFromPrevious": 75.2,
-    "distanceFromStart": 3678,
+    "distanceFromStart": 3677.9,
     "tier": "major",
     "slug": "los-angeles",
     "rwbChapter": {
@@ -668,7 +652,7 @@
     "arrivalDate": "2026-06-02",
     "dayNumber": 96,
     "distanceFromPrevious": 50.7,
-    "distanceFromStart": 3890,
+    "distanceFromStart": 3889.7,
     "tier": "major",
     "slug": "victorville"
   },
@@ -684,7 +668,7 @@
     "arrivalDate": "2026-06-02",
     "dayNumber": 96,
     "distanceFromPrevious": 1.5,
-    "distanceFromStart": 3891,
+    "distanceFromStart": 3891.2,
     "tier": "major",
     "slug": "barstow"
   },
@@ -700,7 +684,7 @@
     "arrivalDate": "2026-06-04",
     "dayNumber": 98,
     "distanceFromPrevious": 95.2,
-    "distanceFromStart": 3986,
+    "distanceFromStart": 3986.4,
     "tier": "major",
     "slug": "henderson"
   },
@@ -716,7 +700,7 @@
     "arrivalDate": "2026-06-09",
     "dayNumber": 103,
     "distanceFromPrevious": 193.3,
-    "distanceFromStart": 4180,
+    "distanceFromStart": 4179.7,
     "tier": "major",
     "slug": "st-george"
   },
@@ -732,7 +716,7 @@
     "arrivalDate": "2026-06-15",
     "dayNumber": 109,
     "distanceFromPrevious": 105.9,
-    "distanceFromStart": 4286,
+    "distanceFromStart": 4285.6,
     "tier": "major",
     "slug": "hurricane"
   },
@@ -748,7 +732,7 @@
     "arrivalDate": "2026-06-17",
     "dayNumber": 111,
     "distanceFromPrevious": 69.1,
-    "distanceFromStart": 4355,
+    "distanceFromStart": 4354.7,
     "tier": "major",
     "slug": "kanab"
   },
@@ -780,7 +764,7 @@
     "arrivalDate": "2026-06-17",
     "dayNumber": 111,
     "distanceFromPrevious": 4.7,
-    "distanceFromStart": 4375,
+    "distanceFromStart": 4374.7,
     "tier": "major",
     "slug": "lees-ferry"
   },
@@ -796,7 +780,7 @@
     "arrivalDate": "2026-06-20",
     "dayNumber": 114,
     "distanceFromPrevious": 96.6,
-    "distanceFromStart": 4471,
+    "distanceFromStart": 4471.3,
     "tier": "major",
     "slug": "cameron"
   },
@@ -812,7 +796,7 @@
     "arrivalDate": "2026-06-22",
     "dayNumber": 116,
     "distanceFromPrevious": 67.6,
-    "distanceFromStart": 4545,
+    "distanceFromStart": 4434,
     "tier": "major",
     "slug": "flagstaff",
     "rwbChapter": {
