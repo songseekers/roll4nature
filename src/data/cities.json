@@ -605,24 +605,38 @@
     "slug": "fontana"
   },
   {
-    "id": "los-angeles-ca",
-    "name": "Los Angeles",
+    "id": "griffith-park-ca",
+    "name": "Griffith Park",
     "state": "California",
-    "population": 3898747,
+    "population": 0,
     "coordinates": [
-      -118.2437,
-      34.0522
+      -118.2996,
+      34.1341
     ],
-    "arrivalDate": "2026-05-27",
-    "dayNumber": 90,
-    "distanceFromPrevious": 75.2,
-    "distanceFromStart": 3677.9,
+    "arrivalDate": "2026-05-28",
+    "dayNumber": 91,
+    "distanceFromPrevious": 55.2,
+    "distanceFromStart": 3658,
     "tier": "major",
-    "slug": "los-angeles",
-    "rwbChapter": {
-      "name": "Team RWB Los Angeles",
-      "contactEmail": "losangeles@teamrwb.org"
-    }
+    "slug": "griffith-park",
+    "description": "Iconic Los Angeles park with views of the Hollywood Sign and Griffith Observatory."
+  },
+  {
+    "id": "pacific-ocean-ca",
+    "name": "Pacific Ocean",
+    "state": "California",
+    "population": 0,
+    "coordinates": [
+      -118.4912,
+      34.0195
+    ],
+    "arrivalDate": "2026-05-29",
+    "dayNumber": 92,
+    "distanceFromPrevious": 20,
+    "distanceFromStart": 3678,
+    "tier": "major",
+    "slug": "pacific-ocean",
+    "description": "Symbolic coast-to-coast completion - touching the Pacific Ocean at Santa Monica."
   },
   {
     "id": "ontario-ca",
