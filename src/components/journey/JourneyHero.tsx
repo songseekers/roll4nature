@@ -39,7 +39,7 @@ export default function JourneyHero() {
               <div className="text-xs text-gray-600 dark:text-gray-400">Days</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">47</div>
+              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">48</div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Communities</div>
             </div>
           </div>
