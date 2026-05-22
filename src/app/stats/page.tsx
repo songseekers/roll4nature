@@ -98,7 +98,7 @@ const overallAvgHR = allHR.length > 0 ? Math.round(allHR.reduce((s, v) => s + v,
 const allMidTemps = activities.map((a) => (a.minTemp + a.maxTemp) / 2);
 const overallAvgTemp = allMidTemps.reduce((s, v) => s + v, 0) / allMidTemps.length;
 
-const ROUTE_TOTAL_MILES = 4434;
+const ROUTE_TOTAL_MILES = 4444;
 const routeProgress = (totalMiles / ROUTE_TOTAL_MILES) * 100;
 
 // Totals row values

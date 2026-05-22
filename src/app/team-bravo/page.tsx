@@ -132,14 +132,31 @@ export default function TeamBravoPage() {
               className="mx-auto object-contain hidden dark:block"
             />
           </div>
-          <h1 className="text-5xl font-bold mb-6">Join Team Bravo</h1>
-          <p className="text-xl text-white mb-8">
-            Be part of our support crew and make a difference in the lives of America&apos;s veterans
+          <h1 className="text-5xl font-bold mb-6">Team Bravo: Four Fingers Strong</h1>
+
+          <div className="text-xl text-white mb-6 space-y-3">
+            <p className="font-bold text-2xl">
+              Roll <span className="text-3xl">4</span> Veterans
+            </p>
+            <p>
+              <span className="text-3xl font-bold">4,444</span> miles across America
+            </p>
+            <p>
+              <span className="text-3xl font-bold">4</span> fingers raised — the letter <strong>B</strong> in sign language
+            </p>
+          </div>
+
+          <p className="text-gray-200 text-lg leading-relaxed mb-6">
+            Team Bravo isn&apos;t just the core crew on the road — it&apos;s <strong>everyone</strong> who supports this mission.
+            Veterans who ride alongside us. Communities who welcome us. And you — choosing to do good deeds,
+            get out into nature, and connect with others.
           </p>
+
           <p className="text-gray-200 text-lg leading-relaxed mb-8">
-            Team Bravo is our support crew that keeps the Roll for Veterans moving. From drivers to photographers
-            to cyclists, we need passionate people like you to help us connect with veterans across 42+ communities.
+            There are no requirements to join Team Bravo. Just raise four fingers in the Team Bravo Salute,
+            share it with others, and live the mission in your own way.
           </p>
+
           <Button variant="white" size="lg" href="https://youtube.com/@roll4veterans/shorts" target="_blank" rel="noopener noreferrer" className="gap-2 whitespace-nowrap">
             <ExternalLink size={20} />
             Roll4Veterans YouTube Channel

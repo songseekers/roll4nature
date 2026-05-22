@@ -11,23 +11,27 @@ export default function JourneyHero() {
         </h1>
 
         <p className="text-2xl md:text-3xl text-r4v-primary dark:text-r4v-primary-hover font-bold mb-6">
-          4,434 Miles of Purpose in Motion
+          4,444 Miles of Purpose in Motion
         </p>
 
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
           This isn't a race or a commercial venture—it's a sustained, purpose-driven ride built around endurance, logistics, and community. If you're looking for answers, there's a good chance you'll find them with us on The Path.
         </p>
 
-        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
+        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-4">
           Join us on an epic cross-country bike journey from Key West, Florida, to Los Angeles, California, to Flagstaff, Arizona,
           supporting Team RWB and connecting with veterans in every community along the way.
+        </p>
+
+        <p className="text-base font-semibold text-r4v-primary dark:text-r4v-primary-hover mb-8">
+          Rolling 4 Purpose | Rolling 4 Health | Rolling 4 Discovery | Rolling 4 Veterans
         </p>
 
         {/* Key Details */}
         <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm max-w-md mx-auto mb-8">
           <div className="grid grid-cols-3 gap-4">
             <div>
-              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">4,434</div>
+              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">4,444</div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Miles</div>
             </div>
             <div>
