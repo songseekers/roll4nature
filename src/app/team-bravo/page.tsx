@@ -132,7 +132,7 @@ export default function TeamBravoPage() {
               className="mx-auto object-contain hidden dark:block"
             />
           </div>
-          <h1 className="text-5xl font-bold mb-6">Team Bravo: Four Fingers Strong</h1>
+          <h1 className="text-5xl font-bold mb-6">Join Team Bravo</h1>
 
           <div className="text-xl text-white mb-6 space-y-3">
             <p className="font-bold text-2xl">
@@ -142,7 +142,7 @@ export default function TeamBravoPage() {
               <span className="text-3xl font-bold">4,444</span> miles across America
             </p>
             <p>
-              <span className="text-3xl font-bold">4</span> fingers raised — the letter <strong>B</strong> in sign language
+              <span className="text-3xl font-bold">4</span> fingers raised with the thumb across the palm — the letter <strong>B</strong> in sign language
             </p>
           </div>
 
