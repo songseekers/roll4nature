@@ -159,6 +159,35 @@
       "locationUrl": "https://maps.google.com/?q=8525+N+Central+Ave,+Phoenix,+AZ+85020",
       "expiryDays": 1,
       "expirationMessage": "Phoenix — you never disappoint! See you down the road!"
+    },
+    {
+      "city": "Fontana",
+      "label": "Next stop: Fontana, CA",
+      "isoDateTime": "2026-05-26T10:00:00",
+      "location": "Fontana High School — 10:00 AM",
+      "locationAddress": "9453 Citrus Ave, Fontana, CA 92335",
+      "locationUrl": "https://maps.google.com/?q=9453+Citrus+Ave,+Fontana,+CA+92335",
+      "expiryDays": 1,
+      "expirationMessage": "Thanks for the memories, Fontana!"
+    },
+    {
+      "city": "Glendale",
+      "label": "Next stop: Glendale, CA",
+      "isoDateTime": "2026-05-27T19:00:00",
+      "location": "Home Depot — 7:00 PM",
+      "locationAddress": "5040 San Fernando Rd, Glendale, CA 91204",
+      "locationUrl": "https://maps.google.com/?q=5040+San+Fernando+Rd,+Glendale,+CA+91204",
+      "expiryDays": 1,
+      "expirationMessage": "Thanks for the memories, Glendale!"
+    },
+    {
+      "city": "Pacific Ocean",
+      "label": "Next stop: The Pacific Ocean!",
+      "isoDateTime": "2026-05-28T18:00:00",
+      "location": "6:00 PM on 28 May 2026",
+      "locationAddress": "Click the green box below the map to find us!",
+      "expiryDays": 1,
+      "expirationMessage": "We made it to the Pacific Ocean! Coast to Coast!"
     }
   ]
 }
