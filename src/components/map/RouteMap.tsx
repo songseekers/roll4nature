@@ -337,19 +337,19 @@ export default function RouteMap() {
   const legend = (
     <div className="mt-4 bg-gray-50 dark:bg-gray-900 rounded-lg p-3 transition-colors max-w-3xl mx-auto">
       <h3 className="font-bold text-gray-900 dark:text-white mb-3">Map Legend</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-        <div className="flex items-center space-x-3">
+      <div className="flex flex-wrap items-center gap-6 text-sm">
+        <div className="flex items-center space-x-2">
           <div className="w-5 h-5 rounded-full bg-[#8B4513] border-[3px] border-white"></div>
-          <span className="text-gray-700 dark:text-gray-300">Major Cities</span>
+          <span className="text-gray-700 dark:text-gray-300">Planned Stops</span>
         </div>
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-2">
           <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
-          <span className="text-gray-700 dark:text-gray-300">Route</span>
+          <span className="text-gray-700 dark:text-gray-300">Miles Remaining</span>
         </div>
         {new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }) >= '2026-02-27' && (
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2">
             <div className="h-1 w-8 bg-[#6B7280] rounded"></div>
-            <span className="text-gray-700 dark:text-gray-300">Miles completed</span>
+            <span className="text-gray-700 dark:text-gray-300">Miles Completed</span>
           </div>
         )}
       </div>

@@ -14,9 +14,9 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
       description: 'Key West → LA → Flagstaff',
     },
     {
-      label: 'Major Cities',
+      label: 'Planned Stops',
       value: 'major',
-      description: '42+ communities on our route',
+      description: '48 communities on our route',
     },
   ];
 
