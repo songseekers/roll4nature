@@ -344,7 +344,7 @@ export default function RouteMap() {
         </div>
         <div className="flex items-center space-x-3">
           <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
-          <span className="text-gray-700 dark:text-gray-300">Route (4,463 miles)</span>
+          <span className="text-gray-700 dark:text-gray-300">Route</span>
         </div>
         {new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }) >= '2026-02-27' && (
           <div className="flex items-center space-x-3">
