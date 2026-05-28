@@ -188,6 +188,15 @@
       "locationAddress": "Click the green box below the map to find us!",
       "expiryDays": 1,
       "expirationMessage": "We made it to the Pacific Ocean! Coast to Coast!"
+    },
+    {
+      "city": "Cajon Pass",
+      "label": "Climb the Cajon Pass — Ride With Us!",
+      "isoDateTime": "2026-05-29T12:00:00",
+      "location": "Starting Point: Nealy's Corner — Time TBD",
+      "locationAddress": "If you ever thought of climbing the pass, let's do it together! 🙂",
+      "expiryDays": 1,
+      "expirationMessage": "We conquered the Cajon Pass! What a climb!"
     }
   ]
 }
