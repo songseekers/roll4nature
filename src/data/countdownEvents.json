@@ -177,17 +177,8 @@
       "location": "Home Depot — 7:00 PM",
       "locationAddress": "5040 San Fernando Rd, Glendale, CA 91204",
       "locationUrl": "https://maps.google.com/?q=5040+San+Fernando+Rd,+Glendale,+CA+91204",
-      "expiryDays": 1,
+      "expiryTime": "2026-05-27T19:00:00",
       "expirationMessage": "Thanks for the memories, Glendale!"
-    },
-    {
-      "city": "Pacific Ocean",
-      "label": "Next stop: The Pacific Ocean!",
-      "isoDateTime": "2026-05-28T18:00:00",
-      "location": "6:00 PM on 28 May 2026",
-      "locationAddress": "Click the green box below the map to find us!",
-      "expiryDays": 1,
-      "expirationMessage": "We made it to the Pacific Ocean! Coast to Coast!"
     },
     {
       "city": "Cajon Pass",
@@ -195,8 +186,8 @@
       "isoDateTime": "2026-05-29T12:00:00",
       "location": "Starting Point: Nealy's Corner — Time TBD",
       "locationAddress": "If you ever thought of climbing the pass, let's do it together! 🙂",
-      "expiryDays": 1,
-      "expirationMessage": "We conquered the Cajon Pass! What a climb!"
+      "expiryTime": "2026-05-30T00:00:00",
+      "expirationMessage": "Epic climb... Cajon Pass defeated!"
     }
   ]
 }
