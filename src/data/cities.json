@@ -4,10 +4,7 @@
     "name": "Key West",
     "state": "Florida",
     "population": 26000,
-    "coordinates": [
-      -81.7799,
-      24.5551
-    ],
+    "coordinates": [-81.7799, 24.5551],
     "arrivalDate": "2026-02-27",
     "dayNumber": 1,
     "distanceFromPrevious": 0,
@@ -25,14 +22,11 @@
     "name": "Miami",
     "state": "Florida",
     "population": 449514,
-    "coordinates": [
-      -80.1918,
-      25.7617
-    ],
+    "coordinates": [-80.1918, 25.7617],
     "arrivalDate": "2026-03-02",
     "dayNumber": 4,
     "distanceFromPrevious": 169,
-    "distanceFromStart": 181,
+    "distanceFromStart": 169,
     "tier": "major",
     "slug": "miami",
     "rwbChapter": {
@@ -45,14 +39,11 @@
     "name": "Fort Lauderdale",
     "state": "Florida",
     "population": 182760,
-    "coordinates": [
-      -80.1344,
-      26.1224
-    ],
+    "coordinates": [-80.1344, 26.1224],
     "arrivalDate": "2026-03-04",
     "dayNumber": 6,
     "distanceFromPrevious": 78,
-    "distanceFromStart": 259,
+    "distanceFromStart": 247,
     "tier": "major",
     "slug": "fort-lauderdale",
     "rwbChapter": {
@@ -65,14 +56,11 @@
     "name": "West Palm Beach",
     "state": "Florida",
     "population": 117415,
-    "coordinates": [
-      -80.0534,
-      26.7153
-    ],
+    "coordinates": [-80.0534, 26.7153],
     "arrivalDate": "2026-03-05",
     "dayNumber": 7,
     "distanceFromPrevious": 37,
-    "distanceFromStart": 296,
+    "distanceFromStart": 284,
     "tier": "major",
     "slug": "west-palm-beach",
     "rwbChapter": {
@@ -85,14 +73,11 @@
     "name": "Vero Beach",
     "state": "Florida",
     "population": 17163,
-    "coordinates": [
-      -80.3973,
-      27.6386
-    ],
+    "coordinates": [-80.3973, 27.6386],
     "arrivalDate": "2026-03-07",
     "dayNumber": 9,
     "distanceFromPrevious": 104,
-    "distanceFromStart": 401,
+    "distanceFromStart": 388,
     "tier": "major",
     "slug": "vero-beach"
   },
@@ -101,14 +86,11 @@
     "name": "Melbourne",
     "state": "Florida",
     "population": 84678,
-    "coordinates": [
-      -80.6081,
-      28.0836
-    ],
+    "coordinates": [-80.6081, 28.0836],
     "arrivalDate": "2026-03-07",
     "dayNumber": 9,
     "distanceFromPrevious": 5,
-    "distanceFromStart": 405,
+    "distanceFromStart": 393,
     "tier": "major",
     "slug": "melbourne"
   },
@@ -117,14 +99,11 @@
     "name": "Titusville",
     "state": "Florida",
     "population": 48789,
-    "coordinates": [
-      -80.8076,
-      28.6122
-    ],
+    "coordinates": [-80.8076, 28.6122],
     "arrivalDate": "2026-03-08",
     "dayNumber": 10,
     "distanceFromPrevious": 17,
-    "distanceFromStart": 422,
+    "distanceFromStart": 410,
     "tier": "major",
     "slug": "titusville"
   },
@@ -133,14 +112,11 @@
     "name": "Daytona Beach",
     "state": "Florida",
     "population": 72647,
-    "coordinates": [
-      -81.0228,
-      29.2108
-    ],
+    "coordinates": [-81.0228, 29.2108],
     "arrivalDate": "2026-03-08",
     "dayNumber": 10,
     "distanceFromPrevious": 34,
-    "distanceFromStart": 456,
+    "distanceFromStart": 444,
     "tier": "major",
     "slug": "daytona-beach"
   },
@@ -149,14 +125,11 @@
     "name": "Saint Augustine",
     "state": "Florida",
     "population": 14329,
-    "coordinates": [
-      -81.3124,
-      29.8947
-    ],
+    "coordinates": [-81.3124, 29.8947],
     "arrivalDate": "2026-03-10",
     "dayNumber": 12,
     "distanceFromPrevious": 46,
-    "distanceFromStart": 502,
+    "distanceFromStart": 490,
     "tier": "major",
     "slug": "saint-augustine"
   },
@@ -165,14 +138,11 @@
     "name": "Gainesville",
     "state": "Florida",
     "population": 141085,
-    "coordinates": [
-      -82.3248,
-      29.6516
-    ],
+    "coordinates": [-82.3248, 29.6516],
     "arrivalDate": "2026-03-12",
     "dayNumber": 14,
     "distanceFromPrevious": 60,
-    "distanceFromStart": 562,
+    "distanceFromStart": 550,
     "tier": "major",
     "slug": "gainesville",
     "description": "Home to University of Florida — a college town with bike-friendly infrastructure and a strong cycling community."
@@ -182,14 +152,11 @@
     "name": "Tallahassee",
     "state": "Florida",
     "population": 196169,
-    "coordinates": [
-      -84.2809,
-      30.4383
-    ],
+    "coordinates": [-84.2809, 30.4383],
     "arrivalDate": "2026-03-15",
     "dayNumber": 17,
     "distanceFromPrevious": 96,
-    "distanceFromStart": 658,
+    "distanceFromStart": 646,
     "tier": "major",
     "slug": "tallahassee",
     "rwbChapter": {
@@ -202,14 +169,11 @@
     "name": "Pensacola",
     "state": "Florida",
     "population": 54312,
-    "coordinates": [
-      -87.2169,
-      30.4213
-    ],
+    "coordinates": [-87.2169, 30.4213],
     "arrivalDate": "2026-03-20",
     "dayNumber": 23,
     "distanceFromPrevious": 276,
-    "distanceFromStart": 935,
+    "distanceFromStart": 922,
     "tier": "major",
     "slug": "pensacola"
   },
@@ -218,14 +182,11 @@
     "name": "Biloxi",
     "state": "Mississippi",
     "population": 49449,
-    "coordinates": [
-      -88.8853,
-      30.396
-    ],
+    "coordinates": [-88.8853, 30.396],
     "arrivalDate": "2026-03-26",
     "dayNumber": 28,
     "distanceFromPrevious": 118,
-    "distanceFromStart": 1053,
+    "distanceFromStart": 1041,
     "tier": "major",
     "slug": "biloxi"
   },
@@ -234,14 +195,11 @@
     "name": "Gulfport",
     "state": "Mississippi",
     "population": 72926,
-    "coordinates": [
-      -89.0928,
-      30.3674
-    ],
+    "coordinates": [-89.0928, 30.3674],
     "arrivalDate": "2026-03-27",
     "dayNumber": 29,
     "distanceFromPrevious": 25,
-    "distanceFromStart": 1077,
+    "distanceFromStart": 1065,
     "tier": "major",
     "slug": "gulfport"
   },
@@ -250,14 +208,11 @@
     "name": "Slidell",
     "state": "Louisiana",
     "population": 28781,
-    "coordinates": [
-      -89.7812,
-      30.2752
-    ],
+    "coordinates": [-89.7812, 30.2752],
     "arrivalDate": "2026-03-28",
     "dayNumber": 30,
     "distanceFromPrevious": 45,
-    "distanceFromStart": 1122,
+    "distanceFromStart": 1110,
     "tier": "major",
     "slug": "slidell"
   },
@@ -266,14 +221,11 @@
     "name": "New Orleans",
     "state": "Louisiana",
     "population": 383997,
-    "coordinates": [
-      -90.0715,
-      29.9511
-    ],
+    "coordinates": [-90.0715, 29.9511],
     "arrivalDate": "2026-03-29",
     "dayNumber": 31,
     "distanceFromPrevious": 48,
-    "distanceFromStart": 1169,
+    "distanceFromStart": 1157,
     "tier": "major",
     "slug": "new-orleans",
     "rwbChapter": {
@@ -286,14 +238,11 @@
     "name": "Baton Rouge",
     "state": "Louisiana",
     "population": 227470,
-    "coordinates": [
-      -91.1871,
-      30.4515
-    ],
+    "coordinates": [-91.1871, 30.4515],
     "arrivalDate": "2026-04-01",
     "dayNumber": 34,
     "distanceFromPrevious": 157,
-    "distanceFromStart": 1326,
+    "distanceFromStart": 1314,
     "tier": "major",
     "slug": "baton-rouge",
     "rwbChapter": {
@@ -306,14 +255,11 @@
     "name": "Lafayette",
     "state": "Louisiana",
     "population": 121374,
-    "coordinates": [
-      -92.0193,
-      30.2241
-    ],
+    "coordinates": [-92.0193, 30.2241],
     "arrivalDate": "2026-04-02",
     "dayNumber": 35,
     "distanceFromPrevious": 62,
-    "distanceFromStart": 1388,
+    "distanceFromStart": 1376,
     "tier": "major",
     "slug": "lafayette"
   },
@@ -322,14 +268,11 @@
     "name": "Navasota",
     "state": "Texas",
     "population": 7786,
-    "coordinates": [
-      -96.0877,
-      30.388
-    ],
+    "coordinates": [-96.0877, 30.388],
     "arrivalDate": "2026-04-08",
     "dayNumber": 41,
     "distanceFromPrevious": 248,
-    "distanceFromStart": 1636,
+    "distanceFromStart": 1624,
     "tier": "major",
     "slug": "navasota"
   },
@@ -338,14 +281,11 @@
     "name": "Austin",
     "state": "Texas",
     "population": 961855,
-    "coordinates": [
-      -97.7431,
-      30.2672
-    ],
+    "coordinates": [-97.7431, 30.2672],
     "arrivalDate": "2026-04-11",
     "dayNumber": 44,
     "distanceFromPrevious": 232,
-    "distanceFromStart": 1868,
+    "distanceFromStart": 1855,
     "tier": "major",
     "slug": "austin",
     "rwbChapter": {
@@ -358,31 +298,24 @@
     "name": "San Antonio",
     "state": "Texas",
     "population": 1434625,
-    "coordinates": [
-      -98.2686,
-      29.5519
-    ],
+    "coordinates": [-98.2686, 29.5519],
     "arrivalDate": "2026-04-12",
     "dayNumber": 45,
     "distanceFromPrevious": 65,
-    "distanceFromStart": 1933,
+    "distanceFromStart": 1920,
     "tier": "major",
-    "slug": "san-antonio",
-    "description": "Overnight stop on the outskirts of San Antonio (Schertz)."
+    "slug": "san-antonio"
   },
   {
     "id": "fredericksburg-tx",
     "name": "Fredericksburg",
     "state": "Texas",
     "population": 11216,
-    "coordinates": [
-      -98.8746,
-      30.2752
-    ],
+    "coordinates": [-98.8746, 30.2752],
     "arrivalDate": "2026-04-15",
     "dayNumber": 48,
     "distanceFromPrevious": 100,
-    "distanceFromStart": 2033,
+    "distanceFromStart": 2020,
     "tier": "major",
     "slug": "fredericksburg"
   },
@@ -391,14 +324,11 @@
     "name": "Sonora",
     "state": "Texas",
     "population": 2924,
-    "coordinates": [
-      -100.6501,
-      30.5669
-    ],
+    "coordinates": [-100.6501, 30.5669],
     "arrivalDate": "2026-04-20",
     "dayNumber": 51,
     "distanceFromPrevious": 164,
-    "distanceFromStart": 2197,
+    "distanceFromStart": 2184,
     "tier": "major",
     "slug": "sonora"
   },
@@ -407,14 +337,11 @@
     "name": "Van Horn",
     "state": "Texas",
     "population": 1930,
-    "coordinates": [
-      -104.8307,
-      31.0473
-    ],
+    "coordinates": [-104.8307, 31.0473],
     "arrivalDate": "2026-04-26",
     "dayNumber": 59,
     "distanceFromPrevious": 147,
-    "distanceFromStart": 2344,
+    "distanceFromStart": 2331,
     "tier": "major",
     "slug": "van-horn"
   },
@@ -423,14 +350,11 @@
     "name": "El Paso",
     "state": "Texas",
     "population": 678815,
-    "coordinates": [
-      -106.485,
-      31.7619
-    ],
+    "coordinates": [-106.485, 31.7619],
     "arrivalDate": "2026-05-01",
     "dayNumber": 64,
     "distanceFromPrevious": 189,
-    "distanceFromStart": 2533,
+    "distanceFromStart": 2520,
     "tier": "major",
     "slug": "el-paso",
     "rwbChapter": {
@@ -443,14 +367,11 @@
     "name": "Las Cruces",
     "state": "New Mexico",
     "population": 111385,
-    "coordinates": [
-      -106.7893,
-      32.3199
-    ],
+    "coordinates": [-106.7893, 32.3199],
     "arrivalDate": "2026-05-02",
     "dayNumber": 65,
     "distanceFromPrevious": 181,
-    "distanceFromStart": 2714,
+    "distanceFromStart": 2701,
     "tier": "major",
     "slug": "las-cruces"
   },
@@ -459,14 +380,11 @@
     "name": "Lordsburg",
     "state": "New Mexico",
     "population": 2797,
-    "coordinates": [
-      -108.7084,
-      32.3503
-    ],
+    "coordinates": [-108.7084, 32.3503],
     "arrivalDate": "2026-05-07",
     "dayNumber": 70,
-    "distanceFromPrevious": 178,
-    "distanceFromStart": 2892,
+    "distanceFromPrevious": 154,
+    "distanceFromStart": 2855,
     "tier": "major",
     "slug": "lordsburg"
   },
@@ -475,48 +393,39 @@
     "name": "Sierra Vista",
     "state": "Arizona",
     "population": 43888,
-    "coordinates": [
-      -110.2773,
-      31.5553
-    ],
+    "coordinates": [-110.2773, 31.5553],
     "arrivalDate": "2026-05-09",
     "dayNumber": 75,
-    "distanceFromPrevious": 158,
-    "distanceFromStart": 3050,
+    "distanceFromPrevious": 142,
+    "distanceFromStart": 2997,
     "tier": "major",
     "slug": "sierra-vista",
-    "description": "Detour stop - home to Fort Huachuca military installation."
+    "description": "Home to Fort Huachuca military installation."
   },
   {
     "id": "tucson-az",
     "name": "Tucson",
     "state": "Arizona",
     "population": 548073,
-    "coordinates": [
-      -110.9265,
-      32.2226
-    ],
+    "coordinates": [-110.9265, 32.2226],
     "arrivalDate": "2026-05-13",
     "dayNumber": 77,
     "distanceFromPrevious": 70,
-    "distanceFromStart": 3120,
+    "distanceFromStart": 3067,
     "tier": "major",
     "slug": "tucson",
-    "description": "Detour stop - Arizona's second-largest city with strong cycling community."
+    "description": "Arizona's second-largest city with a strong cycling community."
   },
   {
     "id": "phoenix-az",
     "name": "Phoenix",
     "state": "Arizona",
     "population": 1608139,
-    "coordinates": [
-      -112.0742,
-      33.4484
-    ],
+    "coordinates": [-112.0742, 33.4484],
     "arrivalDate": "2026-05-16",
     "dayNumber": 79,
     "distanceFromPrevious": 121,
-    "distanceFromStart": 3241,
+    "distanceFromStart": 3188,
     "tier": "major",
     "slug": "phoenix",
     "rwbChapter": {
@@ -529,14 +438,11 @@
     "name": "Blythe",
     "state": "California",
     "population": 18317,
-    "coordinates": [
-      -114.5963,
-      33.6175
-    ],
+    "coordinates": [-114.5963, 33.6175],
     "arrivalDate": "2026-05-19",
     "dayNumber": 82,
-    "distanceFromPrevious": 130,
-    "distanceFromStart": 3371,
+    "distanceFromPrevious": 128,
+    "distanceFromStart": 3316,
     "tier": "major",
     "slug": "blythe"
   },
@@ -545,14 +451,11 @@
     "name": "Indio",
     "state": "California",
     "population": 89137,
-    "coordinates": [
-      -116.2156,
-      33.7206
-    ],
+    "coordinates": [-116.2156, 33.7206],
     "arrivalDate": "2026-05-20",
     "dayNumber": 83,
     "distanceFromPrevious": 45,
-    "distanceFromStart": 3416,
+    "distanceFromStart": 3361,
     "tier": "major",
     "slug": "indio"
   },
@@ -561,14 +464,11 @@
     "name": "Palm Springs",
     "state": "California",
     "population": 44575,
-    "coordinates": [
-      -116.5453,
-      33.8303
-    ],
+    "coordinates": [-116.5453, 33.8303],
     "arrivalDate": "2026-05-21",
     "dayNumber": 84,
     "distanceFromPrevious": 43,
-    "distanceFromStart": 3458,
+    "distanceFromStart": 3404,
     "tier": "major",
     "slug": "palm-springs"
   },
@@ -577,14 +477,11 @@
     "name": "San Bernardino",
     "state": "California",
     "population": 222101,
-    "coordinates": [
-      -117.2898,
-      34.1083
-    ],
+    "coordinates": [-117.2898, 34.1083],
     "arrivalDate": "2026-05-24",
     "dayNumber": 87,
-    "distanceFromPrevious": 104,
-    "distanceFromStart": 3563,
+    "distanceFromPrevious": 62,
+    "distanceFromStart": 3466,
     "tier": "major",
     "slug": "san-bernardino"
   },
@@ -593,223 +490,265 @@
     "name": "Fontana",
     "state": "California",
     "population": 208393,
-    "coordinates": [
-      -117.435,
-      34.0922
-    ],
+    "coordinates": [-117.435, 34.0922],
     "arrivalDate": "2026-05-25",
     "dayNumber": 88,
     "distanceFromPrevious": 40,
-    "distanceFromStart": 3603,
+    "distanceFromStart": 3506,
     "tier": "major",
     "slug": "fontana"
   },
   {
-    "id": "griffith-park-ca",
-    "name": "Griffith Park",
+    "id": "anaheim-ca",
+    "name": "Anaheim",
     "state": "California",
-    "population": 0,
-    "coordinates": [
-      -118.2996,
-      34.1341
-    ],
+    "population": 346824,
+    "coordinates": [-117.9145, 33.8353],
+    "arrivalDate": "2026-05-26",
+    "dayNumber": 89,
+    "distanceFromPrevious": 55,
+    "distanceFromStart": 3561,
+    "tier": "major",
+    "slug": "anaheim"
+  },
+  {
+    "id": "huntington-beach-ca",
+    "name": "Huntington Beach",
+    "state": "California",
+    "population": 198711,
+    "coordinates": [-117.9992, 33.6595],
+    "arrivalDate": "2026-05-27",
+    "dayNumber": 90,
+    "distanceFromPrevious": 20,
+    "distanceFromStart": 3581,
+    "tier": "major",
+    "slug": "huntington-beach",
+    "description": "Surf City USA — Pacific coast touch point of the journey."
+  },
+  {
+    "id": "rialto-ca",
+    "name": "Rialto",
+    "state": "California",
+    "population": 103526,
+    "coordinates": [-117.3703, 34.1064],
     "arrivalDate": "2026-05-28",
     "dayNumber": 91,
-    "distanceFromPrevious": 55,
-    "distanceFromStart": 3658,
+    "distanceFromPrevious": 65,
+    "distanceFromStart": 3646,
     "tier": "major",
-    "slug": "griffith-park",
-    "description": "Iconic Los Angeles park with views of the Hollywood Sign and Griffith Observatory."
+    "slug": "rialto"
   },
   {
-    "id": "pacific-ocean-ca",
-    "name": "Pacific Ocean",
+    "id": "hesperia-ca",
+    "name": "Hesperia",
     "state": "California",
-    "population": 0,
-    "coordinates": [
-      -118.4912,
-      34.0195
-    ],
+    "population": 99818,
+    "coordinates": [-117.3009, 34.4264],
     "arrivalDate": "2026-05-29",
     "dayNumber": 92,
-    "distanceFromPrevious": 20,
-    "distanceFromStart": 3678,
-    "tier": "major",
-    "slug": "pacific-ocean",
-    "description": "Symbolic coast-to-coast completion - touching the Pacific Ocean at Santa Monica."
-  },
-  {
-    "id": "ontario-ca",
-    "name": "Ontario",
-    "state": "California",
-    "population": 175265,
-    "coordinates": [
-      -117.6509,
-      34.0633
-    ],
-    "arrivalDate": "2026-05-31",
-    "dayNumber": 94,
-    "distanceFromPrevious": 161,
-    "distanceFromStart": 3839,
-    "tier": "major",
-    "slug": "ontario"
-  },
-  {
-    "id": "victorville-ca",
-    "name": "Victorville",
-    "state": "California",
-    "population": 134810,
-    "coordinates": [
-      -117.2911,
-      34.5362
-    ],
-    "arrivalDate": "2026-06-02",
-    "dayNumber": 96,
     "distanceFromPrevious": 51,
-    "distanceFromStart": 3890,
+    "distanceFromStart": 3696,
     "tier": "major",
-    "slug": "victorville"
+    "slug": "hesperia"
   },
   {
     "id": "barstow-ca",
     "name": "Barstow",
     "state": "California",
     "population": 24829,
-    "coordinates": [
-      -117.0173,
-      34.8958
-    ],
-    "arrivalDate": "2026-06-02",
-    "dayNumber": 96,
-    "distanceFromPrevious": 2,
-    "distanceFromStart": 3891,
+    "coordinates": [-117.0173, 34.8958],
+    "arrivalDate": "2026-06-01",
+    "dayNumber": 95,
+    "distanceFromPrevious": 47,
+    "distanceFromStart": 3743,
     "tier": "major",
     "slug": "barstow"
   },
   {
-    "id": "henderson-nv",
-    "name": "Henderson",
-    "state": "Nevada",
-    "population": 320189,
-    "coordinates": [
-      -114.9819,
-      36.0395
-    ],
-    "arrivalDate": "2026-06-04",
-    "dayNumber": 98,
-    "distanceFromPrevious": 95,
-    "distanceFromStart": 3986,
+    "id": "mojave-np-ca",
+    "name": "Mojave National Preserve Kelbaker",
+    "state": "California",
+    "population": 0,
+    "coordinates": [-115.6380, 34.7667],
+    "arrivalDate": "2026-06-02",
+    "dayNumber": 96,
+    "distanceFromPrevious": 81,
+    "distanceFromStart": 3824,
     "tier": "major",
-    "slug": "henderson"
+    "slug": "mojave-national-preserve",
+    "description": "Kelbaker Road South Entrance — gateway through the Mojave National Preserve."
   },
   {
-    "id": "st-george-ut",
-    "name": "St. George",
-    "state": "Utah",
-    "population": 95342,
-    "coordinates": [
-      -113.5841,
-      37.0965
-    ],
-    "arrivalDate": "2026-06-09",
-    "dayNumber": 103,
-    "distanceFromPrevious": 193,
-    "distanceFromStart": 4180,
+    "id": "cal-nev-ari-nv",
+    "name": "Cal Nev Ari",
+    "state": "Nevada",
+    "population": 280,
+    "coordinates": [-114.8530, 35.1833],
+    "arrivalDate": "2026-06-03",
+    "dayNumber": 97,
+    "distanceFromPrevious": 68,
+    "distanceFromStart": 3892,
     "tier": "major",
-    "slug": "st-george"
+    "slug": "cal-nev-ari"
+  },
+  {
+    "id": "boulder-city-nv",
+    "name": "Boulder City",
+    "state": "Nevada",
+    "population": 16592,
+    "coordinates": [-114.8320, 35.9788],
+    "arrivalDate": "2026-06-04",
+    "dayNumber": 98,
+    "distanceFromPrevious": 59,
+    "distanceFromStart": 3951,
+    "tier": "major",
+    "slug": "boulder-city",
+    "description": "Home to Veterans Memorial Park — a fitting stop to honor those who served."
+  },
+  {
+    "id": "las-vegas-nv",
+    "name": "Tahiti Village, Las Vegas",
+    "state": "Nevada",
+    "population": 641903,
+    "coordinates": [-115.1398, 36.1699],
+    "arrivalDate": "2026-06-05",
+    "dayNumber": 99,
+    "distanceFromPrevious": 24,
+    "distanceFromStart": 3975,
+    "tier": "major",
+    "slug": "las-vegas",
+    "description": "Rest Week — recharging before the final push to the Grand Canyon."
+  },
+  {
+    "id": "overton-nv",
+    "name": "Rogers Spring, Overton",
+    "state": "Nevada",
+    "population": 1200,
+    "coordinates": [-114.4430, 36.5441],
+    "arrivalDate": "2026-06-12",
+    "dayNumber": 106,
+    "distanceFromPrevious": 66,
+    "distanceFromStart": 4041,
+    "tier": "major",
+    "slug": "overton"
+  },
+  {
+    "id": "mesquite-nv",
+    "name": "Mesquite",
+    "state": "Nevada",
+    "population": 21592,
+    "coordinates": [-114.0672, 36.8057],
+    "arrivalDate": "2026-06-13",
+    "dayNumber": 107,
+    "distanceFromPrevious": 60,
+    "distanceFromStart": 4101,
+    "tier": "major",
+    "slug": "mesquite"
+  },
+  {
+    "id": "ivins-ut",
+    "name": "Ivins",
+    "state": "Utah",
+    "population": 9935,
+    "coordinates": [-113.6802, 37.1686],
+    "arrivalDate": "2026-06-14",
+    "dayNumber": 108,
+    "distanceFromPrevious": 44,
+    "distanceFromStart": 4145,
+    "tier": "major",
+    "slug": "ivins"
   },
   {
     "id": "hurricane-ut",
     "name": "Hurricane",
     "state": "Utah",
     "population": 20036,
-    "coordinates": [
-      -113.2899,
-      37.1753
-    ],
+    "coordinates": [-113.2899, 37.1753],
     "arrivalDate": "2026-06-15",
     "dayNumber": 109,
-    "distanceFromPrevious": 106,
-    "distanceFromStart": 4286,
+    "distanceFromPrevious": 30,
+    "distanceFromStart": 4175,
     "tier": "major",
     "slug": "hurricane"
   },
   {
-    "id": "kanab-ut",
-    "name": "Kanab",
+    "id": "fredonia-ut",
+    "name": "Fredonia",
     "state": "Utah",
-    "population": 4700,
-    "coordinates": [
-      -112.5263,
-      37.0475
-    ],
+    "population": 1314,
+    "coordinates": [-112.5274, 36.9447],
     "arrivalDate": "2026-06-17",
     "dayNumber": 111,
-    "distanceFromPrevious": 69,
-    "distanceFromStart": 4249,
+    "distanceFromPrevious": 55,
+    "distanceFromStart": 4230,
     "tier": "major",
-    "slug": "kanab"
+    "slug": "fredonia"
   },
   {
-    "id": "marble-canyon-az",
-    "name": "Marble Canyon",
+    "id": "jacob-lake-az",
+    "name": "Jacob Lake",
     "state": "Arizona",
-    "population": 50,
-    "coordinates": [
-      -111.6461,
-      36.8117
-    ],
-    "arrivalDate": "2026-06-17",
-    "dayNumber": 111,
-    "distanceFromPrevious": 15,
-    "distanceFromStart": 4264,
+    "population": 0,
+    "coordinates": [-112.2126, 36.7160],
+    "arrivalDate": "2026-06-18",
+    "dayNumber": 112,
+    "distanceFromPrevious": 31,
+    "distanceFromStart": 4261,
     "tier": "major",
-    "slug": "marble-canyon"
+    "slug": "jacob-lake",
+    "description": "A scenic uphill climb into the Kaibab Plateau — gateway to the North Rim."
   },
   {
     "id": "lees-ferry-az",
     "name": "Lee's Ferry",
     "state": "Arizona",
     "population": 0,
-    "coordinates": [
-      -111.5947,
-      36.8628
-    ],
-    "arrivalDate": "2026-06-17",
-    "dayNumber": 111,
-    "distanceFromPrevious": 5,
-    "distanceFromStart": 4269,
+    "coordinates": [-111.5947, 36.8628],
+    "arrivalDate": "2026-06-19",
+    "dayNumber": 113,
+    "distanceFromPrevious": 47,
+    "distanceFromStart": 4308,
     "tier": "major",
-    "slug": "lees-ferry"
+    "slug": "lees-ferry",
+    "description": "A scenic downhill run — historic Colorado River crossing point."
+  },
+  {
+    "id": "bitter-springs-az",
+    "name": "Bitter Springs",
+    "state": "Arizona",
+    "population": 200,
+    "coordinates": [-111.6072, 36.6880],
+    "arrivalDate": "2026-06-20",
+    "dayNumber": 114,
+    "distanceFromPrevious": 21,
+    "distanceFromStart": 4329,
+    "tier": "major",
+    "slug": "bitter-springs",
+    "description": "Uphill stretch — LDS Chapel community stop."
   },
   {
     "id": "cameron-az",
     "name": "Cameron",
     "state": "Arizona",
     "population": 885,
-    "coordinates": [
-      -111.4226,
-      35.8597
-    ],
-    "arrivalDate": "2026-06-20",
-    "dayNumber": 114,
-    "distanceFromPrevious": 97,
-    "distanceFromStart": 4366,
+    "coordinates": [-111.4226, 35.8597],
+    "arrivalDate": "2026-06-21",
+    "dayNumber": 115,
+    "distanceFromPrevious": 62,
+    "distanceFromStart": 4391,
     "tier": "major",
-    "slug": "cameron"
+    "slug": "cameron",
+    "description": "Mostly downhill — last stop before Flagstaff."
   },
   {
     "id": "flagstaff-az",
     "name": "Flagstaff",
     "state": "Arizona",
     "population": 76831,
-    "coordinates": [
-      -111.6513,
-      35.1983
-    ],
+    "coordinates": [-111.6513, 35.1983],
     "arrivalDate": "2026-06-22",
     "dayNumber": 116,
-    "distanceFromPrevious": 78,
+    "distanceFromPrevious": 53,
     "distanceFromStart": 4444,
     "tier": "major",
     "slug": "flagstaff",
@@ -817,6 +756,6 @@
       "name": "Team RWB Flagstaff",
       "contactEmail": "flagstaff@teamrwb.org"
     },
-    "description": "Final destination of the Roll for Veterans 2026 journey."
+    "description": "Final destination of the Roll for Veterans 2026 journey — 4,444 miles complete."
   }
 ]
