@@ -1,8 +1,13 @@
 'use client';
 
 import CountdownTimer from '@/components/home/CountdownTimer';
+import FlagstaffBanner from '@/components/home/FlagstaffBanner';
 
-export default function JourneyHero() {
+interface JourneyHeroProps {
+  showBanner?: boolean;
+}
+
+export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
   return (
     <div className="bg-gradient-to-b from-r4v-tan to-white dark:from-r4v-secondary dark:to-gray-950 pt-40 sm:pt-36 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
       <div className="max-w-4xl mx-auto text-center mb-12">
@@ -49,6 +54,13 @@ export default function JourneyHero() {
           </div>
         </div>
       </div>
+
+      {/* Flagstaff Celebration Banner */}
+      {showBanner && (
+        <div className="mb-6">
+          <FlagstaffBanner />
+        </div>
+      )}
 
       {/* Countdown Timer */}
       <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm">

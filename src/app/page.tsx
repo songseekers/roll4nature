@@ -2,7 +2,6 @@ import JourneyHero from '@/components/journey/JourneyHero';
 import MissionStatement from '@/components/journey/MissionStatement';
 import FacebookComments from '@/components/home/FacebookComments';
 import RouteMapLoader from '@/components/map/RouteMapLoader';
-import FlagstaffBanner from '@/components/home/FlagstaffBanner';
 import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
@@ -30,10 +29,7 @@ export default function HomePage() {
   return (
     <div className="bg-white dark:bg-gray-900 transition-colors">
       {/* Journey Hero */}
-      <JourneyHero />
-
-      {/* Flagstaff Celebration Banner — visible until July 2nd, 2026 */}
-      {showFlagstaffBanner && <FlagstaffBanner />}
+      <JourneyHero showBanner={showFlagstaffBanner} />
 
       {/* Interactive Route Map */}
       <section id="map" className="bg-gray-50 dark:bg-gray-800 pb-16 pt-0 px-4 sm:px-6 lg:px-8 transition-colors">
