@@ -120,11 +120,15 @@ export default function CountdownTimer() {
   const [activeEvent, setActiveEvent] = useState<CountdownEvent | undefined>(undefined);
   const [activeCountdown, setActiveCountdown] = useState<(TimerTime & { isOver: boolean }) | null>(null);
   const [showExpiration, setShowExpiration] = useState(false);
+  const [isAfterJuly2, setIsAfterJuly2] = useState(false);
 
   useEffect(() => {
     const tick = () => {
       const now = Date.now();
       setElapsed(calcElapsed(START_TIME));
+
+      const todayCT = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
+      setIsAfterJuly2(todayCT >= '2026-07-02');
 
       // Priority 1: show expiration message for a recently-passed event (until midnight of the next day)
       const recentlyPassed = EVENTS.find((e) => e.eventTime <= now && e.midnightTime > now);
@@ -202,7 +206,23 @@ export default function CountdownTimer() {
         <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 text-center">
           What&apos;s Next
         </p>
-        {activeEvent ? (
+        {isAfterJuly2 ? (
+          // Post-July-2nd: Flagstaff celebration placeholder
+          <div className="flex flex-col items-center gap-1.5 max-w-[200px] text-center">
+            <p className="text-sm font-bold text-[#C41E3A] dark:text-red-400">
+              🎆 Flagstaff Celebration
+            </p>
+            <p className="text-sm font-semibold text-[#1B3A6B] dark:text-blue-300">
+              July 4th, 2026
+            </p>
+            <p className="text-xs text-gray-600 dark:text-gray-400 leading-snug">
+              Event details coming soon! Check back for venue info and schedule updates.
+            </p>
+            <p className="text-xs text-gray-500 dark:text-gray-500">
+              RSVP&apos;d? We&apos;ll be in touch!
+            </p>
+          </div>
+        ) : activeEvent ? (
           showExpiration ? (
             // Post-event: show expiration message until midnight
             <>
