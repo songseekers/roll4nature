@@ -160,9 +160,6 @@ function FlagstaffRsvpModal({ onClose }: { onClose: () => void }) {
           <p className="text-blue-200 text-xs text-center mt-1">
             Venue to be announced based on projected attendance.
           </p>
-          <p className="text-blue-200 text-xs text-center mt-0.5">
-            Fill out the form below and we&apos;ll keep you posted!
-          </p>
         </div>
 
         <div className="p-6">
