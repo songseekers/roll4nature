@@ -188,6 +188,56 @@
       "locationAddress": "If you ever thought of climbing the pass, let's do it together! 🙂",
       "expiryTime": "2026-05-30T00:00:00",
       "expirationMessage": "Epic climb... Cajon Pass defeated!"
+    },
+    {
+      "city": "Barstow",
+      "label": "Next stop: Barstow, CA",
+      "isoDateTime": "2026-06-01T18:00:00",
+      "location": "Big Fire Helmet — 6:00 PM",
+      "locationAddress": "861 Barstow Rd, Barstow, CA 92311",
+      "locationUrl": "https://maps.google.com/?q=861+Barstow+Rd,+Barstow,+CA+92311",
+      "expiryDays": 1,
+      "expirationMessage": "Thanks for the memories, Barstow!"
+    },
+    {
+      "city": "Hoover Dam",
+      "label": "Next stop: Hoover Dam, Boulder City NV",
+      "isoDateTime": "2026-06-04T18:00:00",
+      "location": "Hoover Dam — 6:00 PM",
+      "locationAddress": "Boulder City, NV",
+      "locationUrl": "https://maps.google.com/?q=Hoover+Dam,+Boulder+City,+NV",
+      "expiryDays": 1,
+      "expirationMessage": "What a sight — Hoover Dam!"
+    },
+    {
+      "city": "Las Vegas",
+      "label": "Next stop: Las Vegas, NV",
+      "isoDateTime": "2026-06-05T17:00:00",
+      "location": "Kahiko Room — 5:00 PM",
+      "locationAddress": "2nd Floor of Denny's Building, Tahiti Village, Las Vegas, NV",
+      "locationUrl": "https://maps.google.com/?q=Tahiti+Village,+Las+Vegas,+NV",
+      "expiryDays": 1,
+      "expirationMessage": "Aloha, Las Vegas! Thanks for the memories!"
+    },
+    {
+      "city": "Mesquite",
+      "label": "Next stop: Mesquite, NV",
+      "isoDateTime": "2026-06-12T18:00:00",
+      "location": "VFW Post — 6:00 PM",
+      "locationAddress": "840 E Hafen Ln, Mesquite, NV 89027",
+      "locationUrl": "https://maps.google.com/?q=840+E+Hafen+Ln,+Mesquite,+NV+89027",
+      "expiryDays": 1,
+      "expirationMessage": "Thanks for the hospitality, Mesquite!"
+    },
+    {
+      "city": "Ivins",
+      "label": "Next stop: Tuacahn Amphitheatre, Ivins UT",
+      "isoDateTime": "2026-06-13T18:00:00",
+      "location": "Tuacahn Amphitheatre — 6:00 PM",
+      "locationAddress": "1100 North Tuacahn Dr, Ivins, UT 84738",
+      "locationUrl": "https://maps.google.com/?q=1100+North+Tuacahn+Dr,+Ivins,+UT+84738",
+      "expiryDays": 1,
+      "expirationMessage": "Tuacahn — what an incredible setting!"
     }
   ]
 }
