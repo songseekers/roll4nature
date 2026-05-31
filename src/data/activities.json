@@ -1076,5 +1076,33 @@
     "maxTemp": 82.4,
     "movingTime": "3:59:52",
     "maxElevation": 150
+  },
+  {
+    "date": "2026-05-28",
+    "title": "Santa Ana Cycling",
+    "distance": 56.18,
+    "calories": 1970,
+    "avgHR": 94,
+    "maxHR": 140,
+    "totalAscent": 2228,
+    "totalDescent": 1125,
+    "minTemp": 71.6,
+    "maxTemp": 86.0,
+    "movingTime": "5:59:16",
+    "maxElevation": 1205
+  },
+  {
+    "date": "2026-05-29",
+    "title": "Inland Empire to High Desert",
+    "distance": 46.1,
+    "calories": 2160,
+    "avgHR": 98,
+    "maxHR": 148,
+    "totalAscent": 4203,
+    "totalDescent": 2057,
+    "minTemp": 64.4,
+    "maxTemp": 89.6,
+    "movingTime": "5:28:17",
+    "maxElevation": 4028
   }
 ]
