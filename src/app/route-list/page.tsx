@@ -22,7 +22,7 @@ export default function RouteListPage() {
             Route Schedule
           </h1>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
-            Key West, FL to Flagstaff, AZ — 4,463 miles across 42+ communities
+            Key West, FL to Huntington Beach, CA to Flagstaff, AZ — 4,444 miles of adventure and purpose
           </p>
           <Link
             href="/#map"
@@ -114,7 +114,7 @@ export default function RouteListPage() {
                         })}
                       </td>
                       <td className={`px-4 py-3 text-right ${cellClass}`}>
-                        {city.distanceFromStart.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}
+                        {city.distanceFromStart.toLocaleString('en-US', { maximumFractionDigits: 0 })}
                       </td>
                     </tr>
                   );

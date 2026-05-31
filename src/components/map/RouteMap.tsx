@@ -353,9 +353,6 @@ export default function RouteMap() {
           </div>
         )}
       </div>
-      <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
-        Hover over markers for quick info • Click for full city details
-      </p>
     </div>
   );
 

@@ -566,7 +566,7 @@
   },
   {
     "id": "mojave-np-ca",
-    "name": "Mojave National Preserve Kelbaker",
+    "name": "Kelbaker",
     "state": "California",
     "population": 0,
     "coordinates": [-115.6380, 34.7667],
@@ -607,7 +607,7 @@
   },
   {
     "id": "las-vegas-nv",
-    "name": "Tahiti Village, Las Vegas",
+    "name": "Las Vegas",
     "state": "Nevada",
     "population": 641903,
     "coordinates": [-115.1398, 36.1699],
@@ -621,7 +621,7 @@
   },
   {
     "id": "overton-nv",
-    "name": "Rogers Spring, Overton",
+    "name": "Overton",
     "state": "Nevada",
     "population": 1200,
     "coordinates": [-114.4430, 36.5441],
