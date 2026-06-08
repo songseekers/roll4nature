@@ -138,7 +138,7 @@ export default function JournalPage() {
                 If a sentence doesn&apos;t quite make sense — it made perfect sense at 11 pm parked next to an abandoned roadside cafe in West Texas.
               </p>
               <p className="text-sm font-semibold text-gray-500 dark:text-gray-400 italic">
-                Read on. The road is real. The people are real. And somewhere in here, so is the truth.
+                Read on. The road is real. The people are real. And somewhere in here, you might find a sparkle that lights the way to your true purpose.
               </p>
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function JournalPage() {
             <div className="text-2xl text-gray-300 dark:text-gray-600 mb-4">✦ &nbsp; ✦ &nbsp; ✦</div>
             <p className="text-gray-400 italic text-base">The road continues...</p>
             <p className="text-sm text-gray-300 dark:text-gray-600 mt-2">
-              Updated through Day 92 · May 29, 2026
+              Updated through Day 96 · June 2, 2026
             </p>
           </div>
         </main>
