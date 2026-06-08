@@ -2,6 +2,7 @@
 
 import CountdownTimer from '@/components/home/CountdownTimer';
 import FlagstaffBanner from '@/components/home/FlagstaffBanner';
+import TelegramBanner from '@/components/home/TelegramBanner';
 
 interface JourneyHeroProps {
   showBanner?: boolean;
@@ -10,6 +11,11 @@ interface JourneyHeroProps {
 export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
   return (
     <div className="bg-gradient-to-b from-r4v-tan to-white dark:from-r4v-secondary dark:to-gray-950 pt-40 sm:pt-36 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
+      {/* Telegram Banner — first visual element, above hero content */}
+      <div className="max-w-4xl mx-auto mb-8">
+        <TelegramBanner />
+      </div>
+
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
           R4V 2026: Coast to Coast to Canyon
