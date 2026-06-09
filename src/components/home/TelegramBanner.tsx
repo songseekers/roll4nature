@@ -99,6 +99,7 @@ export default function TelegramBanner() {
       textDecoration: 'underline dotted',
       fontWeight: '700',
       flexShrink: 0,
+      fontSize: '11px',
     },
     value: {
       fontWeight: '700',
@@ -210,6 +211,7 @@ export default function TelegramBanner() {
       textDecoration: 'underline dotted',
       fontWeight: '700',
       flexShrink: 0,
+      fontSize: '11px',
     },
     value: {
       fontWeight: '700',
@@ -299,7 +301,7 @@ export default function TelegramBanner() {
                 <span style={s.msg2}>ANSWERS FOUND OUTSIDE... LISTEN</span>
                 <span style={s.msg3}>
                   DISCOVER PURPOSE IN&nbsp;
-                  <span style={{ whiteSpace: 'nowrap' }}>NATURE. BECOME</span>
+                  <span style={{ whiteSpace: 'nowrap' }}>NATURE. BECOME.</span>
                 </span>
               </div>
             </div>
