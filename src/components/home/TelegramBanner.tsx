@@ -10,16 +10,13 @@ export default function TelegramBanner() {
     const check = () => setIsDark(document.documentElement.classList.contains('dark'));
     check();
     setMounted(true);
-
     const observer = new MutationObserver(check);
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
     return () => observer.disconnect();
   }, []);
 
-  // Avoid hydration mismatch — render nothing until client has determined theme
   if (!mounted) return null;
 
-  // ─── Shared layout helpers ───────────────────────────────────
   const row = { display: 'flex', alignItems: 'flex-start', gap: '12px' } as const;
 
   // ─── Light styles ────────────────────────────────────────────
@@ -28,9 +25,8 @@ export default function TelegramBanner() {
       background: '#e8dfc0',
       border: '2px solid #7a6340',
       borderRadius: '2px',
-      boxShadow: '5px 5px 0px #7a6340, 3px 3px 12px rgba(0,0,0,0.3)',
+      boxShadow: '4px 4px 0 #7a6340',
       fontFamily: "'Courier New', Courier, monospace",
-      color: '#2a1a08',
       position: 'relative' as const,
       overflow: 'hidden' as const,
     },
@@ -49,15 +45,15 @@ export default function TelegramBanner() {
     },
     watermark: {
       position: 'absolute' as const,
-      top: '50%',
-      left: '50%',
+      top: '50%', left: '50%',
       transform: 'translate(-50%, -50%) rotate(-25deg)',
+      fontSize: '56px',
       fontWeight: '700',
-      letterSpacing: '8px',
-      color: 'rgba(180, 40, 20, 0.13)',
-      border: '6px solid rgba(180, 40, 20, 0.10)',
-      padding: '4px 16px',
-      borderRadius: '4px',
+      letterSpacing: '6px',
+      color: 'rgba(180,40,20,0.12)',
+      border: '5px solid rgba(180,40,20,0.09)',
+      padding: '2px 12px',
+      borderRadius: '3px',
       whiteSpace: 'nowrap' as const,
       pointerEvents: 'none' as const,
       zIndex: 5,
@@ -65,72 +61,76 @@ export default function TelegramBanner() {
     header: {
       background: '#2a1a08',
       color: '#d4c49a',
+      textAlign: 'center' as const,
+      padding: '8px 12px',
       fontSize: '11px',
       letterSpacing: '3px',
-      padding: '9px 16px',
+      fontWeight: '700',
       borderBottom: '2px solid #7a6340',
-      textAlign: 'center' as const,
     },
     meta: {
-      borderBottom: '1px dashed #9a7d52',
-      padding: '7px 20px',
+      padding: '6px 16px',
+      display: 'flex' as const,
+      justifyContent: 'space-between' as const,
       fontSize: '11px',
       color: '#6b4f28',
-    },
-    dots: {
-      padding: '12px 20px 4px',
-      fontSize: '12px',
-      color: '#9a7d52',
-      letterSpacing: '2px',
+      borderBottom: '1px dashed #9a7d52',
     },
     urgentBar: {
       textAlign: 'center' as const,
-      fontSize: '12px',
-      letterSpacing: '4px',
+      fontSize: '11px',
+      letterSpacing: '3px',
       fontWeight: '700',
       color: '#2a1a08',
-      padding: '6px 20px',
-      borderTop: '1px solid #9a7d52',
+      padding: '6px 16px',
       borderBottom: '1px solid #9a7d52',
       background: 'rgba(120,90,40,0.08)',
     },
     body: {
-      padding: '20px 28px',
+      padding: '16px 20px',
       display: 'flex' as const,
       flexDirection: 'column' as const,
-      gap: '12px',
+      gap: '10px',
     },
     label: {
       color: '#6b4f28',
-      minWidth: '80px',
+      minWidth: '60px',
       letterSpacing: '1px',
       textDecoration: 'underline dotted',
+      fontWeight: '700',
       flexShrink: 0,
     },
     value: {
       fontWeight: '700',
       letterSpacing: '2px',
-      color: '#1e1206',
-    },
-    divider: {
-      borderTop: '1px dashed #9a7d52',
-    },
-    msgLabel: {
       color: '#6b4f28',
-      minWidth: '80px',
-      letterSpacing: '1px',
-      textDecoration: 'underline dotted',
-      flexShrink: 0,
-      paddingTop: '4px',
+      fontSize: '11px',
+    },
+    divider: { borderTop: '1px dashed #9a7d52', margin: '2px 0' },
+    endBar: {
+      textAlign: 'center' as const,
+      fontSize: '11px',
+      letterSpacing: '3px',
+      fontWeight: '700',
+      color: '#2a1a08',
+      padding: '6px 16px',
+      borderTop: '1px solid #9a7d52',
+      borderBottom: '1px solid #9a7d52',
+      background: 'rgba(120,90,40,0.08)',
     },
     footer: {
       background: '#2a1a08',
       color: '#d4c49a',
+      padding: '7px 12px',
       fontSize: '10px',
       letterSpacing: '2px',
-      padding: '7px 16px',
+      display: 'flex' as const,
+      justifyContent: 'space-between' as const,
       borderTop: '2px solid #7a6340',
     },
+    msg1: { fontSize: '11px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.6', color: '#6b4f28' },
+    msg2: { fontSize: '12px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.6', color: '#6b4f28' },
+    msg3: { fontSize: '13px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.6', color: '#6b4f28' },
   };
 
   // ─── Dark styles ─────────────────────────────────────────────
@@ -139,14 +139,8 @@ export default function TelegramBanner() {
       background: '#1a1208',
       border: '1px solid #4a3820',
       borderRadius: '2px',
-      boxShadow: [
-        '0 0 40px rgba(200,140,40,0.12)',
-        '0 0 80px rgba(200,140,40,0.06)',
-        '5px 5px 0px #0a0804',
-        'inset 0 0 60px rgba(0,0,0,0.4)',
-      ].join(', '),
+      boxShadow: '0 0 30px rgba(200,140,40,0.1), 4px 4px 0 #0a0804',
       fontFamily: "'Courier New', Courier, monospace",
-      color: '#d4b87a',
       position: 'relative' as const,
       overflow: 'hidden' as const,
     },
@@ -162,15 +156,15 @@ export default function TelegramBanner() {
     },
     watermark: {
       position: 'absolute' as const,
-      top: '50%',
-      left: '50%',
+      top: '50%', left: '50%',
       transform: 'translate(-50%, -50%) rotate(-25deg)',
+      fontSize: '56px',
       fontWeight: '700',
-      letterSpacing: '8px',
-      color: 'rgba(220, 60, 40, 0.18)',
-      border: '6px solid rgba(220, 60, 40, 0.14)',
-      padding: '4px 16px',
-      borderRadius: '4px',
+      letterSpacing: '6px',
+      color: 'rgba(220,60,40,0.16)',
+      border: '5px solid rgba(220,60,40,0.12)',
+      padding: '2px 12px',
+      borderRadius: '3px',
       whiteSpace: 'nowrap' as const,
       pointerEvents: 'none' as const,
       zIndex: 5,
@@ -178,211 +172,150 @@ export default function TelegramBanner() {
     header: {
       background: '#0a0804',
       color: '#c8a050',
-      textShadow: '0 0 8px rgba(200,160,80,0.4)',
-      fontSize: '11px',
-      letterSpacing: '4px',
-      padding: '10px 16px',
-      borderBottom: '1px solid #4a3820',
       textAlign: 'center' as const,
+      padding: '8px 12px',
+      fontSize: '11px',
+      letterSpacing: '3px',
+      fontWeight: '700',
+      borderBottom: '1px solid #4a3820',
     },
     meta: {
-      borderBottom: '1px dashed #3a2c14',
-      padding: '7px 20px',
+      padding: '6px 16px',
+      display: 'flex' as const,
+      justifyContent: 'space-between' as const,
       fontSize: '11px',
-      color: '#7a6030',
-      letterSpacing: '1px',
-    },
-    dots: {
-      padding: '12px 20px 4px',
-      fontSize: '12px',
-      color: '#4a3820',
-      letterSpacing: '2px',
+      color: '#a08848',
+      borderBottom: '1px dashed #3a2c14',
     },
     urgentBar: {
       textAlign: 'center' as const,
-      fontSize: '12px',
-      letterSpacing: '4px',
+      fontSize: '11px',
+      letterSpacing: '3px',
       fontWeight: '700',
       color: '#e8c060',
-      padding: '8px 20px',
-      borderTop: '1px solid #3a2c14',
+      padding: '6px 16px',
       borderBottom: '1px solid #3a2c14',
       background: 'rgba(200,140,40,0.06)',
-      textShadow: '0 0 10px rgba(220,160,60,0.3)',
     },
     body: {
-      padding: '22px 28px',
+      padding: '16px 20px',
       display: 'flex' as const,
       flexDirection: 'column' as const,
-      gap: '14px',
+      gap: '10px',
     },
     label: {
-      color: '#7a6030',
-      minWidth: '80px',
+      color: '#c8a050',
+      minWidth: '60px',
       letterSpacing: '1px',
       textDecoration: 'underline dotted',
-      textDecorationColor: '#4a3820',
+      fontWeight: '700',
       flexShrink: 0,
     },
     value: {
       fontWeight: '700',
       letterSpacing: '2px',
-      color: '#d4b87a',
-      textShadow: '0 0 6px rgba(200,160,80,0.2)',
+      color: '#c8a050',
+      fontSize: '11px',
     },
-    divider: {
-      borderTop: '1px dashed #3a2c14',
-    },
-    msgLabel: {
-      color: '#7a6030',
-      minWidth: '80px',
-      letterSpacing: '1px',
-      textDecoration: 'underline dotted',
-      textDecorationColor: '#4a3820',
-      flexShrink: 0,
-      paddingTop: '4px',
+    divider: { borderTop: '1px dashed #3a2c14', margin: '2px 0' },
+    endBar: {
+      textAlign: 'center' as const,
+      fontSize: '11px',
+      letterSpacing: '3px',
+      fontWeight: '700',
+      color: '#e8c060',
+      padding: '6px 16px',
+      borderTop: '1px solid #3a2c14',
+      borderBottom: '1px solid #3a2c14',
+      background: 'rgba(200,140,40,0.06)',
     },
     footer: {
       background: '#0a0804',
-      color: '#7a6030',
+      color: '#a08848',
+      padding: '7px 12px',
       fontSize: '10px',
       letterSpacing: '2px',
-      padding: '7px 16px',
+      display: 'flex' as const,
+      justifyContent: 'space-between' as const,
       borderTop: '1px solid #4a3820',
     },
+    msg1: { fontSize: '11px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.6', color: '#c8a050' },
+    msg2: { fontSize: '12px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.6', color: '#c8a050' },
+    msg3: { fontSize: '13px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.6', color: '#c8a050' },
   };
 
   const s = isDark ? dark : light;
-  const DOTS = '⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂· ·⠂';
 
   return (
     <section aria-label="Message from Roll for Veterans">
       <div style={s.outer}>
-        {/* Texture: grain lines */}
-        <div
-          aria-hidden="true"
-          style={{ ...s.grain, position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 }}
-        />
-        {/* Texture: age stains / warm glow */}
-        <div
-          aria-hidden="true"
-          style={{ ...s.stain, position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 }}
-        />
+
+        {/* Texture layers */}
+        <div aria-hidden="true" style={{ ...s.grain, position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 }} />
+        <div aria-hidden="true" style={{ ...s.stain, position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 }} />
 
         {/* URGENT watermark */}
-        <div
-          role="img"
-          aria-label="Urgent stamp"
-          className="text-[48px] sm:text-[72px]"
-          style={s.watermark}
-        >
-          URGENT
-        </div>
+        <div role="img" aria-label="Urgent stamp" style={s.watermark}>URGENT</div>
 
-        {/* Header bar */}
-        <div style={{ ...s.header, position: 'relative', zIndex: 10 }}>
-          WESTERN UNION TELEGRAM
-        </div>
+        {/* All content above textures */}
+        <div style={{ position: 'relative', zIndex: 4 }}>
 
-        {/* Meta row */}
-        <div
-          style={{ ...s.meta, position: 'relative', zIndex: 10 }}
-          className="flex justify-between"
-        >
-          <span className="hidden sm:block">RECEIVED AT ALL STATIONS</span>
-          <span>NO. 2026-R4V</span>
-          <span className="hidden sm:block">FEB 27, 2026</span>
-        </div>
+          {/* Header */}
+          <div style={s.header}>ROLL 4 VETERANS TELEGRAM</div>
 
-        {/* Top dots */}
-        <div style={{ ...s.dots, position: 'relative', zIndex: 10 }}>{DOTS}</div>
-
-        {/* Urgent header bar */}
-        <div style={{ ...s.urgentBar, position: 'relative', zIndex: 10 }}>
-          ━━━ URGENT MESSAGE FOLLOWS ━━━
-        </div>
-
-        {/* Message body */}
-        <div style={{ ...s.body, position: 'relative', zIndex: 10 }}>
-          {/* FROM */}
-          <div style={row}>
-            <span style={s.label}>FROM:</span>
-            <span style={s.value}>ROLL 4 VETERANS</span>
+          {/* Meta row */}
+          <div style={s.meta}>
+            <span>RCVD: ALL STATIONS</span>
+            <span>NO. 2026-R4V</span>
+            <span>FEB 27, 2026</span>
           </div>
 
-          {/* TO */}
-          <div style={row}>
-            <span style={s.label}>TO:</span>
-            <span style={s.value}>EVERYONE</span>
+          {/* Urgent bar */}
+          <div style={s.urgentBar}>━━━ URGENT MESSAGE FOLLOWS ━━━</div>
+
+          {/* Body */}
+          <div style={s.body}>
+
+            {/* FROM */}
+            <div style={row}>
+              <span style={s.label}>FROM:</span>
+              <span style={s.value}>ROLL 4 VETERANS</span>
+            </div>
+
+            {/* TO */}
+            <div style={row}>
+              <span style={s.label}>TO:</span>
+              <span style={s.value}>EVERYONE</span>
+            </div>
+
+            {/* Divider */}
+            <div style={s.divider} />
+
+            {/* MSG */}
+            <div style={row}>
+              <span style={{ ...s.label, paddingTop: '2px' }}>MSG:</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                <span style={s.msg1}>GET OUTSIDE! STOP</span>
+                <span style={s.msg2}>ANSWERS FOUND OUTSIDE... LISTEN</span>
+                <span style={s.msg3}>
+                  DISCOVER PURPOSE IN&nbsp;
+                  <span style={{ whiteSpace: 'nowrap' }}>NATURE. BECOME</span>
+                </span>
+              </div>
+            </div>
+
           </div>
 
-          {/* Divider */}
-          <div style={s.divider} />
+          {/* End bar */}
+          <div style={s.endBar}>━━━━━━━━ END ━━━━━━━━</div>
 
-          {/* MSG */}
-          <div style={row}>
-            <span style={s.msgLabel}>MSG:</span>
-            <span>
-              <span
-                className={[
-                  'block',
-                  'whitespace-normal sm:whitespace-nowrap',
-                  isDark
-                    ? 'text-[16px] sm:text-[19px]'
-                    : 'text-[14px] sm:text-[17px]',
-                ].join(' ')}
-                style={{
-                  fontWeight: '700',
-                  letterSpacing: '3px',
-                  lineHeight: '1.8',
-                  color: isDark ? '#f0d080' : '#1e1206',
-                  ...(isDark
-                    ? { textShadow: '0 0 12px rgba(240,200,80,0.35), 0 0 24px rgba(240,200,80,0.15)' }
-                    : {}),
-                }}
-              >
-                GET OUTSIDE!
-              </span>
-              <span
-                className={[
-                  'block',
-                  'whitespace-normal sm:whitespace-nowrap',
-                  isDark
-                    ? 'text-[16px] sm:text-[19px]'
-                    : 'text-[14px] sm:text-[17px]',
-                ].join(' ')}
-                style={{
-                  fontWeight: '700',
-                  letterSpacing: '3px',
-                  lineHeight: '1.8',
-                  color: isDark ? '#f0d080' : '#1e1206',
-                  ...(isDark
-                    ? { textShadow: '0 0 12px rgba(240,200,80,0.35), 0 0 24px rgba(240,200,80,0.15)' }
-                    : {}),
-                }}
-              >
-                THE ANSWERS ARE OUTSIDE.
-              </span>
-            </span>
+          {/* Footer */}
+          <div style={s.footer}>
+            <span>FILED: KEY WEST FL</span>
+            <span>R4V.SONGSEEKERS.ORG</span>
+            <span>DEST: FLAGSTAFF AZ</span>
           </div>
-        </div>
 
-        {/* End bar */}
-        <div style={{ ...s.urgentBar, position: 'relative', zIndex: 10 }}>
-          ━━━━━━━━ END ━━━━━━━━
-        </div>
-
-        {/* Bottom dots */}
-        <div style={{ ...s.dots, position: 'relative', zIndex: 10 }}>{DOTS}</div>
-
-        {/* Footer bar */}
-        <div
-          style={{ ...s.footer, position: 'relative', zIndex: 10 }}
-          className="flex justify-between"
-        >
-          <span className="hidden sm:block">FILED: KEY WEST FL</span>
-          <span>R4V.SONGSEEKERS.ORG</span>
-          <span className="hidden sm:block">DEST: FLAGSTAFF AZ</span>
         </div>
       </div>
     </section>
