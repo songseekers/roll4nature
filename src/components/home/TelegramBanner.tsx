@@ -297,11 +297,11 @@ export default function TelegramBanner() {
             <div style={row}>
               <span style={{ ...s.label, paddingTop: '2px' }}>MSG:</span>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                <span style={s.msg1}>GET OUTSIDE! STOP</span>
-                <span style={s.msg2}>ANSWERS FOUND OUTSIDE... LISTEN</span>
+                <span style={s.msg1}>GET OUTSIDE!</span>
+                <span style={s.msg2}>ANSWERS ARE FOUND OUTDOORS.</span>
                 <span style={s.msg3}>
                   DISCOVER PURPOSE IN&nbsp;
-                  <span style={{ whiteSpace: 'nowrap' }}>NATURE. BECOME.</span>
+                  <span style={{ whiteSpace: 'nowrap' }}>NATURE.</span>
                 </span>
               </div>
             </div>
