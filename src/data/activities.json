@@ -1174,5 +1174,47 @@
     "maxTemp": 93.2,
     "movingTime": "1:20:52",
     "maxElevation": 2375
+  },
+  {
+    "date": "2026-06-08",
+    "title": "Clark County Cycling",
+    "distance": 12.44,
+    "calories": 722,
+    "avgHR": 106,
+    "maxHR": 152,
+    "totalAscent": 262,
+    "totalDescent": 262,
+    "minTemp": 77.0,
+    "maxTemp": 89.6,
+    "movingTime": "0:56:00",
+    "maxElevation": 2253
+  },
+  {
+    "date": "2026-06-09",
+    "title": "Clark County Cycling",
+    "distance": 8.81,
+    "calories": 302,
+    "avgHR": 106,
+    "maxHR": 140,
+    "totalAscent": 203,
+    "totalDescent": 174,
+    "minTemp": 82.4,
+    "maxTemp": 98.6,
+    "movingTime": "0:40:53",
+    "maxElevation": 2257
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Clark County Cycling",
+    "distance": 30.6,
+    "calories": 1399,
+    "avgHR": 90,
+    "maxHR": 130,
+    "totalAscent": 630,
+    "totalDescent": 676,
+    "minTemp": 78.8,
+    "maxTemp": 100.4,
+    "movingTime": "3:16:48",
+    "maxElevation": 2254
   }
 ]
