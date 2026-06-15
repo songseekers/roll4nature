@@ -1216,5 +1216,33 @@
     "maxTemp": 100.4,
     "movingTime": "3:16:48",
     "maxElevation": 2254
+  },
+  {
+    "date": "2026-06-13",
+    "title": "Ivins Cycling",
+    "distance": 20.02,
+    "calories": 736,
+    "avgHR": 105,
+    "maxHR": 136,
+    "totalAscent": 951,
+    "totalDescent": 991,
+    "minTemp": 86.0,
+    "maxTemp": 100.4,
+    "movingTime": "1:57:13",
+    "maxElevation": 3284
+  },
+  {
+    "date": "2026-06-14",
+    "title": "Ivins Cycling",
+    "distance": 38.01,
+    "calories": 1807,
+    "avgHR": 109,
+    "maxHR": 158,
+    "totalAscent": 2776,
+    "totalDescent": 2703,
+    "minTemp": 86.0,
+    "maxTemp": 104.0,
+    "movingTime": "3:53:48",
+    "maxElevation": 4704
   }
 ]
