@@ -14,6 +14,7 @@ export default function JournalPage() {
     Arizona: true,
     California: true,
     Nevada: true,
+    Utah: true,
   });
 
   const byState: Record<string, JournalDay[]> = {};
