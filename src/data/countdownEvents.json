@@ -238,6 +238,16 @@
       "locationUrl": "https://maps.google.com/?q=1100+North+Tuacahn+Dr,+Ivins,+UT+84738",
       "expiryDays": 1,
       "expirationMessage": "Tuacahn — what an incredible setting!"
+    },
+    {
+      "city": "Flagstaff 4th of July",
+      "label": "4th of July Parade — Celebrate with us!",
+      "isoDateTime": "2026-07-04T09:00:00",
+      "location": "Starts at Beaver St & Elm St — 9:00 AM",
+      "locationAddress": "Beaver St and Elm St, Flagstaff, AZ",
+      "locationUrl": "https://maps.google.com/?q=Beaver+St+and+Elm+St,+Flagstaff,+AZ",
+      "expiryDays": 1,
+      "expirationMessage": "We did it! 4,444 miles complete. See you next time, Flagstaff!"
     }
   ]
 }
