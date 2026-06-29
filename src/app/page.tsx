@@ -8,12 +8,12 @@ import path from 'path';
 
 export const metadata = {
   title: 'R4V 2026: Coast to Coast to Canyon | 4,444 Miles of Purpose',
-  description: 'Join our epic bike journey from Key West, FL to Flagstaff, AZ, connecting with veterans in 57 communities. Rolling 4 Purpose, Health, Discovery, and Veterans. Feb 27 - June 30, 2026.',
+  description: 'Join our epic bike journey from Key West, FL to Flagstaff, AZ, connecting with veterans in 57 communities. Rolling 4 Purpose, Health, Discovery, and Veterans. Feb 27 - July 1, 2026.',
 };
 
 export default function HomePage() {
   const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
-  const showFlagstaffBanner = today < '2026-07-02';
+  const showFlagstaffBanner = today < '2026-07-03';
 
   const trackingRaw = fs.readFileSync(
     path.join(process.cwd(), 'src/data/tracking.json'),
