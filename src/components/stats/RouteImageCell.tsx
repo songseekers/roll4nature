@@ -16,7 +16,8 @@ function dateToPath(date: string): string {
   if (month <= '2026-03') { folder = '2603'; }
   else if (month <= '2026-04') { folder = '2604'; }
   else if (month <= '2026-05') { folder = '2605'; }
-  else { folder = '2606'; }
+  else if (month <= '2026-06') { folder = '2606'; }
+  else { folder = '2607'; }
   return `/images/routes/${folder}/${filename}.png`;
 }
 
