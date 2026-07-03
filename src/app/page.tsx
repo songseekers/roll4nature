@@ -174,6 +174,55 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 4th of July Parade — Journey Celebration */}
+      <section className="bg-gradient-to-r from-red-600 to-blue-600 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">
+            🎆 Celebrate the Finish 🎆
+          </h2>
+
+          <p className="text-xl text-white mb-8 leading-relaxed">
+            Join us for the Flagstaff 4th of July Parade—the perfect way to celebrate 4,444 miles of purpose, connection, and community.
+          </p>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-8 max-w-2xl mx-auto border border-white/20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left sm:text-center">
+              <div>
+                <p className="text-sm font-semibold text-white/80 mb-2">DATE & TIME</p>
+                <p className="text-2xl font-bold">July 4, 2026</p>
+                <p className="text-lg">9:00 AM</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-white/80 mb-2">LOCATION</p>
+                <p className="text-2xl font-bold">Beaver St & Elm St</p>
+                <p className="text-lg">Flagstaff, Arizona</p>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+            Whether you&apos;re local or traveling from afar, come celebrate the end of a journey with Team RWB, Team Bravo, and everyone who made this ride possible.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://maps.google.com/?q=Beaver+St+and+Elm+St,+Flagstaff,+AZ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-red-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition text-lg"
+            >
+              View Location on Map
+            </a>
+            <a
+              href="mailto:roll4veterans@gmail.com?subject=4th%20of%20July%20Parade%20-%20Flagstaff"
+              className="bg-blue-400 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-500 transition text-lg"
+            >
+              Get More Info
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
