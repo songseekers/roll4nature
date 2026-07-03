@@ -16,7 +16,7 @@ export type MapLayer = 'overview' | 'major' | 'all';
 function getRouteSegments(): { completed: number[][], remaining: number[][] } {
   const sortedCities = getAllCities().sort((a, b) => a.dayNumber - b.dayNumber);
   const allCoords = sortedCities.map((c) => c.coordinates as number[]);
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }); // YYYY-MM-DD in local time
+  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
 
   if (today >= '2026-06-23') {
     return { completed: allCoords, remaining: [] };
@@ -35,7 +35,6 @@ function getRouteSegments(): { completed: number[][], remaining: number[][] } {
 
   return {
     completed: allCoords.slice(0, cutoffIndex + 1),
-    // cutoff city included in both so the two lines connect seamlessly
     remaining: allCoords.slice(cutoffIndex),
   };
 }
@@ -51,7 +50,6 @@ export default function RouteMap() {
   const popupRef = useRef<mapboxgl.Popup | null>(null);
   const hoverPopupRef = useRef<mapboxgl.Popup | null>(null);
 
-  // Escape key exits fullscreen
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setIsFullscreen(false);
@@ -60,7 +58,6 @@ export default function RouteMap() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  // Resize map after DOM repaints on fullscreen toggle
   useEffect(() => {
     const timer = setTimeout(() => {
       map.current?.resize();
@@ -71,7 +68,6 @@ export default function RouteMap() {
   useEffect(() => {
     if (!mapContainer.current) return;
 
-    // Initialize map
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/outdoors-v12',
@@ -81,11 +77,9 @@ export default function RouteMap() {
       bearing: 0,
     });
 
-    // Add navigation controls
     map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
     map.current.on('load', () => {
-      // Split route into completed (grey) and remaining (orange) segments
       const { completed, remaining } = getRouteSegments();
 
       map.current?.addSource('route-remaining', {
@@ -106,7 +100,6 @@ export default function RouteMap() {
         },
       });
 
-      // Completed segment (grey) — added first so it renders beneath
       map.current?.addLayer({
         id: 'route-line-completed',
         type: 'line',
@@ -118,7 +111,6 @@ export default function RouteMap() {
         },
       });
 
-      // Remaining segment (orange) — added second so it renders on top at join point
       map.current?.addLayer({
         id: 'route-line-remaining',
         type: 'line',
@@ -130,18 +122,15 @@ export default function RouteMap() {
         },
       });
 
-      // Fit map to show all cities
       const allCities = getAllCities();
       if (allCities.length > 0) {
         const bounds = new mapboxgl.LngLatBounds();
         allCities.forEach((city) => {
           bounds.extend(city.coordinates);
         });
-
-        // Fit to bounds with very minimal padding to zoom in closer
         map.current?.fitBounds(bounds, {
           padding: { top: 10, bottom: 10, left: 10, right: 10 },
-          duration: 0, // No animation on initial load
+          duration: 0,
         });
       }
 
@@ -149,27 +138,19 @@ export default function RouteMap() {
     });
 
     return () => {
-      // Clean up
       markersRef.current.forEach((marker) => marker.remove());
-      if (popupRef.current) {
-        popupRef.current.remove();
-      }
-      if (hoverPopupRef.current) {
-        hoverPopupRef.current.remove();
-      }
+      if (popupRef.current) popupRef.current.remove();
+      if (hoverPopupRef.current) hoverPopupRef.current.remove();
       map.current?.remove();
     };
   }, []);
 
-  // Update markers when layer changes
   useEffect(() => {
     if (!map.current || isLoading) return;
 
-    // Remove existing markers
     markersRef.current.forEach((marker) => marker.remove());
     markersRef.current = [];
 
-    // Get cities to display based on layer
     let citiesToShow: City[] = [];
     if (layer === 'overview') {
       citiesToShow = getAllCities().filter((city) =>
@@ -181,14 +162,12 @@ export default function RouteMap() {
       citiesToShow = getAllCities();
     }
 
-    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }); // YYYY-MM-DD in local time
+    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
 
-    // Add markers
     citiesToShow.forEach((city) => {
       const isMajor = city.tier === 'major';
       const isPast = city.arrivalDate <= today;
 
-      // Create marker element
       const el = document.createElement('div');
       el.className = 'city-marker';
       const markerSize = isMajor ? 16 : 12;
@@ -203,16 +182,10 @@ export default function RouteMap() {
       el.style.boxShadow = '0 2px 4px rgba(0,0,0,0.3)';
       el.style.display = 'block';
 
-      // Hover effects - show hover popup
       el.addEventListener('mouseenter', () => {
         el.style.boxShadow = '0 4px 8px rgba(0,0,0,0.4)';
+        if (hoverPopupRef.current) hoverPopupRef.current.remove();
 
-        // Remove any existing hover popup
-        if (hoverPopupRef.current) {
-          hoverPopupRef.current.remove();
-        }
-
-        // Create hover popup content
         const hoverContent = document.createElement('div');
         hoverContent.style.cssText = `
           padding: 12px;
@@ -222,7 +195,6 @@ export default function RouteMap() {
           border-radius: 8px;
           color: #1F2937;
         `;
-
         hoverContent.innerHTML = `
           <div style="font-weight: 700; font-size: 16px; color: #8B4513; margin-bottom: 8px;">
             ${city.name}, ${city.state}
@@ -240,7 +212,6 @@ export default function RouteMap() {
           </div>
         `;
 
-        // Create and show hover popup
         hoverPopupRef.current = new mapboxgl.Popup({
           closeButton: false,
           closeOnClick: false,
@@ -255,31 +226,22 @@ export default function RouteMap() {
 
       el.addEventListener('mouseleave', () => {
         el.style.boxShadow = '0 2px 4px rgba(0,0,0,0.3)';
-
-        // Remove hover popup
         if (hoverPopupRef.current) {
           hoverPopupRef.current.remove();
           hoverPopupRef.current = null;
         }
       });
 
-      // Click to show popup
       el.addEventListener('click', (e) => {
         e.stopPropagation();
         setSelectedCity(city);
+        if (popupRef.current) popupRef.current.remove();
 
-        // Remove old popup if exists
-        if (popupRef.current) {
-          popupRef.current.remove();
-        }
-
-        // Create popup content
         const popupContent = document.createElement('div');
         popupContent.className = 'city-popup';
         popupContent.style.padding = '12px';
         popupContent.style.minWidth = '200px';
         popupContent.style.maxWidth = '300px';
-
         popupContent.innerHTML = `
           <div>
             <h3 style="font-weight: bold; font-size: 18px; color: #8B4513; margin-bottom: 8px;">
@@ -298,21 +260,17 @@ export default function RouteMap() {
           </div>
         `;
 
-        // Create and show popup with automatic positioning
-        // Removing fixed anchor allows Mapbox to auto-position based on viewport
         popupRef.current = new mapboxgl.Popup({
           closeButton: true,
           closeOnClick: false,
           maxWidth: '300px',
-          offset: 25, // Offset from the marker
-          // No anchor specified - allows automatic smart positioning to keep popup in viewport
+          offset: 25,
         })
           .setLngLat(city.coordinates)
           .setDOMContent(popupContent)
           .addTo(map.current!);
       });
 
-      // Create and add marker with center anchor
       const marker = new mapboxgl.Marker({
         element: el,
         anchor: 'center',
@@ -323,6 +281,61 @@ export default function RouteMap() {
       markersRef.current.push(marker);
     });
   }, [layer, isLoading]);
+
+  // ─── Route completed watermark overlay ───────────────────────
+  const routeCompletedOverlay = (
+    <div
+      aria-label="Route status: completed"
+      style={{
+        position: 'absolute',
+        inset: 0,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        pointerEvents: 'none',
+        zIndex: 10,
+      }}
+    >
+      <div
+        style={{
+          transform: 'rotate(-25deg)',
+          textAlign: 'center',
+          userSelect: 'none',
+        }}
+      >
+        <div
+          style={{
+            fontFamily: "'Courier New', Courier, monospace",
+            fontSize: 'clamp(18px, 4vw, 32px)',
+            fontWeight: '900',
+            letterSpacing: '4px',
+            color: 'rgba(139, 69, 19, 0.22)',
+            border: '4px solid rgba(139, 69, 19, 0.18)',
+            padding: '6px 20px',
+            borderRadius: '4px',
+            lineHeight: '1.4',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          ROUTE COMPLETED<br />
+          1 JULY 2026
+        </div>
+        <div
+          style={{
+            fontFamily: "'Courier New', Courier, monospace",
+            fontSize: 'clamp(11px, 2vw, 16px)',
+            fontWeight: '700',
+            letterSpacing: '3px',
+            color: 'rgba(139, 69, 19, 0.18)',
+            marginTop: '6px',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          STAY TUNED FOR NEW ROUTE SOON
+        </div>
+      </div>
+    </div>
+  );
 
   const toggleButton = (
     <button
@@ -378,6 +391,7 @@ export default function RouteMap() {
           }
         />
         {toggleButton}
+        {routeCompletedOverlay}
 
         {isLoading && (
           <div className={`absolute inset-0 bg-black/20 flex items-center justify-center${isFullscreen ? '' : ' rounded-lg'}`}>
