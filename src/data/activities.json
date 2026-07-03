@@ -1384,5 +1384,47 @@
     "maxTemp": 82.4,
     "movingTime": "1:06:14",
     "maxElevation": 3570
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Coconino County Cycling",
+    "distance": 15.21,
+    "calories": 976,
+    "avgHR": 113,
+    "maxHR": 144,
+    "totalAscent": 2126,
+    "totalDescent": 496,
+    "minTemp": 80.6,
+    "maxTemp": 96.8,
+    "movingTime": "2:25:17",
+    "maxElevation": 5160
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Coconino County Cycling",
+    "distance": 10.17,
+    "calories": 346,
+    "avgHR": 117,
+    "maxHR": 135,
+    "totalAscent": 108,
+    "totalDescent": 538,
+    "minTemp": 80.6,
+    "maxTemp": 84.2,
+    "movingTime": "0:54:02",
+    "maxElevation": 5358
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Coconino County Cycling",
+    "distance": 30.3,
+    "calories": 2030,
+    "avgHR": 114,
+    "maxHR": 148,
+    "totalAscent": 2070,
+    "totalDescent": 732,
+    "minTemp": 69.8,
+    "maxTemp": 93.2,
+    "movingTime": "3:49:19",
+    "maxElevation": 6094
   }
 ]
