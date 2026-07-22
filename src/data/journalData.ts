@@ -12,9 +12,9 @@ export interface JournalDay {
   hashtags: string[];
 }
 
-export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Grand Canyon'];
+export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Northern Arizona', 'Grand Canyon'];
 
-export const stateConfig: Record<string, { color: string; subtitle: string }> = {
+export const stateConfig: Record<string, { color: string; subtitle: string; displayName?: string }> = {
   Florida:      { color: '#1a5276', subtitle: 'Key West to the Panhandle · ~1,000 Miles' },
   Mississippi:  { color: '#7d6608', subtitle: 'Biloxi to the State Line' },
   Louisiana:    { color: '#7b241c', subtitle: 'New Orleans to the Texas Border' },
@@ -23,8 +23,9 @@ export const stateConfig: Record<string, { color: string; subtitle: string }> = 
   'Arizona':    { color: '#8B4513', subtitle: 'Willcox to the California Border' },
   'California': { color: '#1a6b2a', subtitle: 'Southern California to Los Angeles' },
   'Nevada':     { color: '#1a4a6b', subtitle: 'Searchlight to Las Vegas' },
-  'Utah':       { color: '#8B3a00', subtitle: 'St. George to the Canyon Country' },
-  'Grand Canyon': { color: '#6b2a00', subtitle: 'Flagstaff to the Colorado River' },
+  'Utah':             { color: '#8B3a00', subtitle: 'St. George to the Canyon Country' },
+  'Northern Arizona': { color: '#8B4513', subtitle: 'Jacob Lake to Flagstaff', displayName: 'Arizona' },
+  'Grand Canyon':     { color: '#6b2a00', subtitle: 'Flagstaff to the Colorado River' },
 };
 
 export const journalDays: JournalDay[] = [
@@ -1103,7 +1104,7 @@ export const journalDays: JournalDay[] = [
     num: 120,
     date: "Friday, June 26, 2026",
     location: "Fredonia, AZ → Jacob Lake, AZ — Home Base",
-    state: "Utah",
+    state: "Northern Arizona",
     region: "Southern Utah",
     entry: "Day 120 turned into something of a comedy of errors, at least in hindsight, but it was also full of unexpected lessons and meaningful encounters.\n\nI woke up around 5:00 a.m. determined to get an early start. My first stop was a gas station in Fredonia, hoping to grab breakfast quickly, but the selection was pretty limited. I continued to the last gas station in town, where I picked up a couple of breakfast burritos before heading out.\n\nWhile I was there, I spent some time talking with the staff. I recorded a short video with Stephanie, one of the cashiers, and met Emily, the third-generation owner of the business. Her family recently opened what is essentially Fredonia's only restaurant type establishment — a combination coffee shop, sandwich shop, and food truck — after realizing the town had very few quick dining options. Hearing the family's story added another memorable stop to the journey.\n\nThe ride toward Jacob Lake started off well enough. The first five miles were pleasant, but right at 8:00 a.m. — three hours earlier than the forecast predicted — the wind arrived. It blew steadily from my right front quarter, forcing me to lean into it almost constantly. Before I even reached the major climbs, the wind had already begun draining my energy.\n\nAround mile 18, the road began climbing in earnest. As the highway twisted through the mountains, the wind occasionally shifted behind me, offering brief moments of relief before changing directions again. Starting near 6,000 feet in elevation, I gradually climbed toward 8,000 feet.\n\nBetween the elevation gain and the relentless wind, this may have been one of the toughest riding days of the trip. It's difficult to compare it to climbing Cajon Pass because each challenge was so different, but by the time I reached Jacob Lake, I was thoroughly exhausted.\n\nWhen I arrived, Sean was nowhere to be found.\n\nI began talking with some visitors, assuming he would arrive shortly. Eventually I called him and discovered that he had just reached the area — but then I learned something that immediately sank my heart.\n\nI had made a major routing mistake.\n\nBecause of my navigation error, Sean had driven many miles out of his way, turning what should have been a straightforward trip into a long and difficult day. I felt terrible about sending him in the wrong direction. But as he told me about the people he met and the experiences he had because of that detour, I couldn't help wondering if perhaps that unexpected route was the one he was supposed to take that day. Sometimes even our mistakes seem to create opportunities we never could have planned.\n\nOnce we reunited, the day took another positive turn.\n\nWe visited the ranger station, where the staff stamped our trailer with the official National Park passport stamp. Instead of carrying a paper passport book, we've decided to collect the stamps directly on the inside panel of the trailer door. It seemed like a fitting way to document this journey.\n\nWe also spent time visiting with the people at Jacob Lake Inn. Several people signed the trailer, and I recorded another YouTube Short with Melinda, a third-generation member of the family that has operated the inn for decades. Listening to her share the history of Jacob Lake and the inn made the place feel even more special.\n\nEarlier in the day, before reaching Jacob Lake, I had hoped to meet Sean halfway so I could refill my water bottles, but because I had accidentally sent him the wrong direction, there was no way to reach him — there was no cell service.\n\nThen, almost out of nowhere, a woman named Caroline pulled up in a Volkswagen bus and offered me water.\n\nHer kindness arrived exactly when I needed it.\n\nLater, I found myself thinking about that interaction. I accepted her generosity, but I never offered anything in return. Even something as simple as a granola bar or a fig bar would have expressed my gratitude. It reminded me that service isn't only about receiving kindness — it is also about looking for opportunities to give something back whenever possible.\n\nThat has become one of the biggest lessons of this trip. Sean and I are intentionally trying to become people who look for ways to serve others instead of simply accepting hospitality. The more we practice that mindset, the richer this journey becomes.\n\nWe'll spend the night here at Jacob Lake before heading to Lee's Ferry tomorrow to dip the tires of Herbie and Giselle in the Colorado River — a symbolic milestone I've been looking forward to for a long time. Depending on what's happening there over the weekend, we may spend some extra time exploring before making our way toward Navajo Bridge and eventually Flagstaff.\n\nOne final conversation stood out today.\n\nWhile talking with Kim at the ranger station, she mentioned that her daughter practices something called sound therapy, or sound baths. It's a world I know almost nothing about, but it reminded me of an experience I had during a yoga class in Daytona. After one of the most restorative stretching sessions I've ever had following a ride, the instructor began playing a singing bowl. The vibrations and tones seemed to resonate through my entire body. I walked out feeling strangely energized, almost as if someone had recharged my internal batteries.\n\nMaybe that's what a sound bath is all about.\n\nThere are still so many things in this world that I haven't experienced yet, and days like today remind me just how much there still is to discover.\n\nThirty-five point one miles on the day.",
     hashtags: ["#Resilience", "#Grit", "#Gratitude", "#Brotherhood", "#Connection", "#Wonder", "#RollForVeterans", "#TeamBravo", "#NewWayOfLife", "#ProblemSolving"]
@@ -1112,7 +1113,7 @@ export const journalDays: JournalDay[] = [
     num: 121,
     date: "Saturday, June 27, 2026",
     location: "Jacob Lake, AZ → Lee's Ferry, AZ — The Colorado River — Home Base",
-    state: "Utah",
+    state: "Northern Arizona",
     region: "Southern Utah",
     entry: "Well, this was a big one.\n\nThe 27th of June — Day 121 — began at Jacob Lake and ended at Lee's Ferry. What a day it was.\n\nWe started the morning with breakfast: some canned hash mixed with a refrigerated bowl of sausage, eggs, and potatoes. We threw it all together and made some really good breakfast burritos.\n\nThe night before hadn't been great. I spent most of it feeling achy and needing to use the bathroom, but we didn't have one nearby, so I kept trying to wait until one became available. I also felt like I had body aches and maybe even a slight fever. Those aches came and went throughout the day, but once I got riding, it was hard to feel anything but wonderful. By the time I got into camp and started to unwind, though, I could feel those symptoms creeping back.\n\nBefore we left, we met a couple of really cool people. One of them was Marina. She walked by and told Sean how much she liked his hat. I jokingly asked, what about mine? She looked over and said, oh, I didn't even see you there. We all laughed. She was a super cool lady, and it was fun talking with her for a while.\n\nHer girlfriend's son came over and signed the trailer as well. I told him I had hair just like his underneath my helmet. Without missing a beat, he said, I bet you don't have any hair under that helmet. He definitely inherited his quick wit from his future mother-in-law.\n\nWhen I started riding, I couldn't believe it. We began at about 8,000 feet, and the road immediately dropped away — 8% grades, then 7%, sometimes 4%. I was consistently doing around 35 miles per hour, listening to those tires hum while hoping everything on the bike was adjusted just right. At those speeds, physics is in charge.\n\nThe wind was absolutely wild. Most of the day it pushed me along, but whenever the road curved it would suddenly shove me toward the centerline, then toward the shoulder, and sometimes stop me almost dead in my tracks. Once it actually pushed me backward a little, just to remind me who was boss. As if I needed the reminder.\n\nAfter seven or eight miles — maybe ten — the road stretched out across the plain below the mountain. It ran almost perfectly east, and the wind shifted to my right rear. It wasn't a true tailwind, but it wasn't really a crosswind either. It was helping, and that's when the ride turned into one of those magical stretches where the miles just seemed to disappear.\n\nI stopped at the first store I came across and met Rosa. I also talked with Aaron, a handyman, and recorded a short video with Fay about what makes this area so special.\n\nI waited for Sean for a while, but eventually I checked Marcus's location and realized he was already at Lee's Ferry.\n\nI wanted to stop and meet more people along the way, but another thought kept pulling at me: I wanted to dip my tires into the Colorado River before the sun went down.\n\nAs soon as I reached the boat ramp, I spotted the rig, but Sean wasn't around. Six rafting crews were busy preparing their boats for launch the following morning. I struck up a conversation with Brian, the trip leader. After talking for a while, I asked if he would record the tire-dipping ceremony. He gladly agreed.\n\nAt 7:19 p.m., my tires touched the Colorado River.\n\nSean showed up shortly afterward, returning from a long — and somewhat mystical — hike. We ate dinner, collected signatures from the other river guides, and then moved over to the long-term parking area to spend the night.\n\nThis was the last tire-dipping ceremony before rolling into Flagstaff.\n\nIt felt momentous.\n\nFifty point one miles on the day.",
     hashtags: ["#Resilience", "#Milestone", "#Gratitude", "#Brotherhood", "#Connection", "#Wonder", "#RollForVeterans", "#TeamBravo", "#NewWayOfLife", "#Inspiration"]
@@ -1121,7 +1122,7 @@ export const journalDays: JournalDay[] = [
     num: 122,
     date: "Sunday, June 28, 2026",
     location: "Lee's Ferry, AZ → Marble Canyon, AZ --- Lodge --- Home Base",
-    state: "Utah",
+    state: "Northern Arizona",
     region: "SOUTHERN UTAH",
     entry: `What can I say about June 28, Day 122? It started with something pretty
 unpleasant.
@@ -1191,7 +1192,7 @@ Six miles on the day.`,
     num: 123,
     date: "Monday, June 29, 2026",
     location: "Marble Canyon, AZ → Bitter Springs, AZ → Gap Trading Post, AZ --- Home Base",
-    state: "Utah",
+    state: "Northern Arizona",
     region: "SOUTHERN UTAH",
     entry: `Day 123 started in Marble Canyon at a rather upscale motor lodge, which
 honestly felt like a necessity after how I was feeling yesterday. I was
@@ -1337,7 +1338,7 @@ Fifteen miles on the day.`,
     num: 124,
     date: "Tuesday, June 30, 2026",
     location: "Gap Trading Post, AZ → Cameron, AZ --- Painted Desert Gift Shop --- Home Base",
-    state: "Utah",
+    state: "Northern Arizona",
     region: "SOUTHERN UTAH",
     entry: `Today, June 30 --- Day 124 --- began in the parking lot of the Gap
 Trading Post, where we were tucked in between the trading post and a big
@@ -1485,7 +1486,7 @@ Ten point two miles on the day.
     num: 125,
     date: "Wednesday, July 1, 2026",
     location: "Cameron, AZ → Flagstaff, AZ — Home Base",
-    state: "Grand Canyon",
+    state: "Northern Arizona",
     region: "Northern Arizona — Flagstaff",
     entry: `Today was July the first, Day one hundred twenty-five.
 
@@ -1514,7 +1515,7 @@ Thirty point three miles ridden today.`,
     num: 126,
     date: "Thursday, July 2, 2026",
     location: "Flagstaff, AZ — Home Base",
-    state: "Grand Canyon",
+    state: "Northern Arizona",
     region: "Northern Arizona — Flagstaff",
     entry: `The second of July, Day one hundred twenty-six, began in the Mobil station parking lot.
 
@@ -1541,7 +1542,7 @@ Now it's time for bed.`,
     num: 127,
     date: "Friday, July 3, 2026",
     location: "Flagstaff, AZ — Home Base",
-    state: "Grand Canyon",
+    state: "Northern Arizona",
     region: "Northern Arizona — Flagstaff",
     entry: `Today was July the third, Day one hundred twenty-seven.
 
@@ -1570,7 +1571,7 @@ Based on what this journey has done for Sean and me, I'd give it two enthusiasti
     num: 128,
     date: "Saturday, July 4, 2026",
     location: "Flagstaff, AZ → Grand Canyon Oasis, AZ — Home Base",
-    state: "Grand Canyon",
+    state: "Northern Arizona",
     region: "Northern Arizona — Flagstaff",
     entry: `Ah, the Fourth of July. Day one hundred twenty-eight.
 
@@ -1603,7 +1604,7 @@ Twenty miles on the day.`,
     num: 129,
     date: "Sunday, July 5, 2026",
     location: "Grand Canyon Oasis, AZ — Home Base",
-    state: "Grand Canyon",
+    state: "Northern Arizona",
     region: "Northern Arizona — Flagstaff",
     entry: `Today was July the fifth, Day one hundred twenty-nine.
 
@@ -1624,7 +1625,7 @@ Now it's time to finish packing and get ready for the next phase of this adventu
     num: 130,
     date: "Monday, July 6, 2026",
     location: "Grand Canyon Oasis, AZ — Home Base",
-    state: "Grand Canyon",
+    state: "Northern Arizona",
     region: "Northern Arizona — Flagstaff",
     entry: `Today was July the sixth, Day one hundred thirty.
 
@@ -1649,7 +1650,7 @@ We'll see.`,
     num: 131,
     date: "Tuesday, July 7, 2026",
     location: "Grand Canyon Oasis, AZ → Flagstaff, AZ — Home Base",
-    state: "Grand Canyon",
+    state: "Northern Arizona",
     region: "Northern Arizona — Flagstaff",
     entry: `Today was July the seventh, Day one hundred thirty-one.
 

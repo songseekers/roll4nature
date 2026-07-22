@@ -15,6 +15,7 @@ export default function JournalPage() {
     California: true,
     Nevada: true,
     Utah: true,
+    'Northern Arizona': true,
     'Grand Canyon': true,
   });
 
@@ -54,7 +55,7 @@ export default function JournalPage() {
           <nav className="p-4 flex-1">
             {stateOrder.map((state, stateIndex) => {
               if (!byState[state]) return null;
-              const { color } = stateConfig[state];
+              const { color, displayName } = stateConfig[state];
               const days = byState[state].sort((a, b) => a.num - b.num);
               return (
                 <div key={state}>
@@ -66,8 +67,8 @@ export default function JournalPage() {
                       onClick={() => scrollToState(state)}
                       className="w-full flex items-center justify-between py-2 px-2 rounded text-left group"
                     >
-                      <span className="text-sm font-bold uppercase tracking-wider" style={{ color }}>
-                        {state}
+                      <span className="text-sm font-bold uppercase tracking-wider" style={{ color: '#1a5276' }}>
+                        {displayName ?? state}
                       </span>
                       <button
                         onClick={(e) => { e.stopPropagation(); toggleState(state); }}
@@ -149,7 +150,7 @@ export default function JournalPage() {
           {/* CHAPTERS */}
           {stateOrder.map((state, stateIndex) => {
             if (!byState[state]) return null;
-            const { color, subtitle } = stateConfig[state];
+            const { color, subtitle, displayName } = stateConfig[state];
             const stateId = `state-${state.toLowerCase().replace(/\s+/g, '-')}`;
             const days = byState[state].sort((a, b) => a.num - b.num);
             let currentRegion = '';
@@ -170,7 +171,7 @@ export default function JournalPage() {
                   <div className="pt-10 text-center">
                     <div className="text-sm uppercase tracking-widest text-gray-400 mb-3">Chapter</div>
                     <h2 className="text-5xl font-bold mb-3" style={{ color }}>
-                      The {state} Chapter
+                      The {displayName ?? state} Chapter
                     </h2>
                     <p className="text-lg text-gray-400 italic mb-5">{subtitle}</p>
                     <div className="text-gray-300 dark:text-gray-600 text-lg">✦ &nbsp; ✦ &nbsp; ✦</div>
