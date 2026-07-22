@@ -15,6 +15,7 @@ export default function JournalPage() {
     California: true,
     Nevada: true,
     Utah: true,
+    'Grand Canyon': true,
   });
 
   const byState: Record<string, JournalDay[]> = {};
@@ -218,7 +219,7 @@ export default function JournalPage() {
             <div className="text-2xl text-gray-300 dark:text-gray-600 mb-4">✦ &nbsp; ✦ &nbsp; ✦</div>
             <p className="text-gray-400 italic text-base">The road continues...</p>
             <p className="text-sm text-gray-300 dark:text-gray-600 mt-2">
-              Updated through Day 122 · June 28, 2026
+              Updated through Day 132 · July 8, 2026
             </p>
           </div>
         </main>

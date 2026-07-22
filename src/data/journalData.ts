@@ -12,7 +12,7 @@ export interface JournalDay {
   hashtags: string[];
 }
 
-export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah'];
+export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Grand Canyon'];
 
 export const stateConfig: Record<string, { color: string; subtitle: string }> = {
   Florida:      { color: '#1a5276', subtitle: 'Key West to the Panhandle · ~1,000 Miles' },
@@ -24,6 +24,7 @@ export const stateConfig: Record<string, { color: string; subtitle: string }> = 
   'California': { color: '#1a6b2a', subtitle: 'Southern California to Los Angeles' },
   'Nevada':     { color: '#1a4a6b', subtitle: 'Searchlight to Las Vegas' },
   'Utah':       { color: '#8B3a00', subtitle: 'St. George to the Canyon Country' },
+  'Grand Canyon': { color: '#6b2a00', subtitle: 'Flagstaff to the Colorado River' },
 };
 
 export const journalDays: JournalDay[] = [
@@ -1119,10 +1120,599 @@ export const journalDays: JournalDay[] = [
   {
     num: 122,
     date: "Sunday, June 28, 2026",
-    location: "Lee's Ferry, AZ → Marble Canyon, AZ — Lodge — Home Base",
+    location: "Lee's Ferry, AZ → Marble Canyon, AZ --- Lodge --- Home Base",
     state: "Utah",
-    region: "Southern Utah",
-    entry: "What can I say about June 28, Day 122? It started with something pretty unpleasant.\n\nI woke up in the middle of the night with an extreme urgency to evacuate my bowels. I got out of the trailer, but I didn't make it very far before I had an accident right there in the parking lot. I was standing there thinking, now what? Am I going to wake Sean up so he can spray me down with the water in the truck?\n\nEarlier, before I went to bed, I had walked around the parking lot and noticed a fish-cleaning station with two sprayers. I squeezed them, and they worked, so I knew we had water. That meant I could at least clean myself up. I just walked over there completely naked in the middle of the lot.\n\nThere were a couple of things to be grateful for. First, we were alone in that long-term parking lot, so there were no neighbors around. Second, those two water sprayers were right there and let me clean up. Then, about an hour later, it happened again. I just couldn't control it. It was all out there. So it was the same process, I cleaned myself up once more.\n\nI was sweating, so I put a towel on the bed to help with that. When it got light enough, I got up, filled the bucket with water, and tried to clean up the parking lot a little bit because, not gonna lie, it was pretty nasty.\n\nBy then it was already a beautiful morning, and I thought that if I was going to get up that hill, I'd better do it before the wind started, because it was forecast to pick up. Even though they said it would start at 11:00, in my experience it usually starts earlier. Last time they said 11:00, it started around 9:00. So I decided to try to make it up the hill.\n\nI took some water and started the 6-mile ride. There were parts where I had to walk, and I sat down on the sidewalk for a while because I was really weak and probably dehydrated. The wind started to blow at about 7 a.m. Can't trust those weather predictions.\n\nEventually I made it to the lodge at the top of the hill and got a room. For the first time on this journey, I paid for a hotel room. I didn't want to, but I felt like it was my best chance to get some rest so I'll be able to function tomorrow.\n\nI'm glad I did, because I still haven't really felt like myself today. It's nice to be able to lie in this bed with a bathroom right here and not worry about anything for a minute.\n\nSean went hiking in the evening, and he was so helpful to me. I kept asking him to get things out of the truck, and I didn't leave this place all day. I thought about it once, but when I opened the door and felt the wind and heat hit me, I decided I was going back to bed.\n\nI don't know how I'm going to feel tomorrow, but Sean says he's ready for a 49-mile ride. I'd like to go to the bridge for a little while and just look at it. Sean's never seen it, so he doesn't know what he's in for. Then we'll hit the road. Hopefully we'll make it to the Gap Trading Post tomorrow, but we'll see. It's all kind of up in the air.\n\nI did add up all the miles I rode from the 15th to the 28th, and the total is now 4,484 miles. That means I've ridden the distance from Florida to California to the Grand Canyon, and that's not even counting the extra rides we've done. It feels good to be done with the mileage component. Now maybe we can mix it up a little.\n\nI feel like I've been tested for the past couple of days with some really hard things, and body aches and diarrhea are definitely not my favorite. Hopefully the worst is behind me. I'm really grateful to have Sean helping me through times like this.\n\nThat's about it. I didn't really do anything else. I didn't get any signatures. I watched a bunch of Turner Classic Movies with no commercials and some Food Network shows, which is something I haven't done in a long time.\n\nEvery journey has its down days, I guess. Sometimes you just have to let your body recuperate, and hopefully that's what we did today.\n\nSix miles on the day.",
+    region: "SOUTHERN UTAH",
+    entry: `What can I say about June 28, Day 122? It started with something pretty
+unpleasant.
+
+I woke up in the middle of the night with an extreme urgency to evacuate
+my bowels. I got out of the trailer, but I didn't make it very far
+before I had an accident right there in the parking lot. I was standing
+there thinking, now what? Am I going to wake Sean up so he can spray me
+down with the water in the truck?
+
+Earlier, before I went to bed, I had walked around the parking lot and
+noticed a fish-cleaning station with two sprayers. I squeezed them, and
+they worked, so I knew we had water. That meant I could at least clean
+myself up. I just walked over there completely naked in the middle of
+the lot.
+
+There were a couple of things to be grateful for. First, we were alone
+in that long-term parking lot, so there were no neighbors around.
+Second, those two water sprayers were right there and let me clean up.
+Then, about an hour later, it happened again. I cleaned myself up once
+more.
+
+When it got light enough, I got up, filled the bucket with water, and
+tried to clean up the parking lot a little bit because, not gonna lie,
+it was pretty nasty.
+
+By then it was already a beautiful morning, and I thought that if I was
+going to get up that hill, I'd better do it before the wind started.
+Even though they said it would start at 11:00, in my experience it
+usually starts earlier. Last time they said 11:00, it started around
+9:00. So I decided to try to make it up the hill.
+
+I took some water and started the 6-mile ride. There were parts where I
+had to walk, and I sat down on the sidewalk for a while because I was
+really weak and probably dehydrated. The wind started to blow at about 7
+a.m. Can't trust those weather predictions.
+
+Eventually I made it to the lodge at the top of the hill and got a room.
+For the first time on this journey, I paid for a hotel room. I didn't
+want to, but I felt like it was my best chance to get some rest so I'll
+be able to function tomorrow.
+
+I'm glad I did, because I still haven't really felt like myself today.
+It's nice to be able to lie in this bed with a bathroom right here and
+not worry about anything for a minute.
+
+Sean went hiking in the evening, and he was so helpful to me.
+
+I did add up all the miles I rode from the 15th to the 28th, and the
+total is now 4,484 miles. That means I've ridden the distance from
+Florida to California to the Grand Canyon, and that's not even counting
+the extra rides we've done. It feels good to be done with the mileage
+component. Now maybe we can mix it up a little.
+
+I feel like I've been tested for the past couple of days with some
+really hard things, and body aches and diarrhea are definitely not my
+favorite. Hopefully the worst is behind me. I'm really grateful to have
+Sean helping me through times like this.
+
+Every journey has its down days, I guess. Sometimes you just have to let
+your body recuperate, and hopefully that's what we did today.
+
+Six miles on the day.`,
     hashtags: ["#Resilience", "#Grit", "#Adaptation", "#Gratitude", "#Brotherhood", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo", "#Rest", "#Milestone"]
+  },
+  {
+    num: 123,
+    date: "Monday, June 29, 2026",
+    location: "Marble Canyon, AZ → Bitter Springs, AZ → Gap Trading Post, AZ --- Home Base",
+    state: "Utah",
+    region: "SOUTHERN UTAH",
+    entry: `Day 123 started in Marble Canyon at a rather upscale motor lodge, which
+honestly felt like a necessity after how I was feeling yesterday. I was
+very queasy, weak, and dealing with quite a bit of gastrointestinal
+distress. Thankfully, I woke up feeling a little better this morning.
+
+While updating my bike mileage and the website, I realized I'd already
+passed 4,444 miles. My total now stands at 4,484 miles. That marked the
+beginning of a new phase for Roll for Veterans. From here on out, Sean
+and I will be splitting the riding duties.
+
+Our destination was Bitter Springs, about 15 miles from Marble Canyon.
+Sean drove the truck there, unloaded the bike, took a picture of where
+he left the truck, and headed out on Judy --- his mountain bike ---
+while I rode toward Marcus.
+
+Fifteen miles doesn't sound like much, but it took me about three and a
+half hours to get there. The road climbed almost the entire way, the
+wind was either in my face or hitting me from the right, and I felt
+nauseated the whole time. Every bit of exertion seemed to make my
+stomach worse, so I stopped often and just moved at whatever pace my
+body would allow.
+
+When I finally saw Marcus and Cleo on the side of the road, I honestly
+felt like crying. It took everything I had just to load Herbie up and
+strap him down. Even driving was uncomfortable because of the nausea,
+but as the miles passed and I wasn't constantly pedaling, my stomach
+slowly began to settle down.
+
+By the time I was nearing the Gap Trading Post, I was feeling noticeably
+better. Then, about four miles from the trading post, I spotted Sean
+walking down the road. He was waving his right arm around like he was
+conducting an orchestra and looked genuinely happy.
+
+He was doing great.
+
+He told me that three different people had stopped to offer him water
+during the day. Cold water. Since the beginning of this journey, only
+one person has ever stopped to offer me water without being asked, and
+that happened just a few days ago when I really needed it. Every other
+time I'd run out, I had to ask people at homes, rest areas, or even
+truck drivers parked on the side of the road. As a matter of fact, I
+stopped at a home and asked for water before I got too low. A nice guy
+named Garrett obliged me, and his kids were very interested in my biking
+adventure. I wished I had some bracelets to give to them. Kids seem to
+love bracelets.
+
+There seems to be something about Sean that naturally draws people in.
+The way strangers respond to him makes me think he's exactly where
+he's supposed to be right now.
+
+That makes me happy, because when someone's purpose is encouraging
+people to get outside and experience nature, and my purpose aligns so
+closely with that, it feels like we're working toward the same goal.
+How can we lose if our mission is simply to remind people of the healing
+power and beauty of the natural world?
+
+A few days ago, while we were at Best Friends Animal Sanctuary, a man
+named Tolo, who is Navajo and Hopi, contacted people here at the Gap
+Trading Post and also reached out to the local veterans chapter to let
+them know we'd be arriving.
+
+Even so, everything worked out. The trading post manager kindly gave us
+permission to park beside the building for the night, and we were able
+to get in touch with the commander of the local veterans organization.
+He said he'd meet with us tomorrow morning.
+
+Everything is in place.
+
+Before leaving Marble Canyon, we stopped at Navajo Bridge and met
+several wonderful people. A Vietnam veteran and his wife signed the
+trailer, and we also met a fascinating man named Mark. He was traveling
+on a BMW motorcycle loaded down with camping gear.
+
+He told us he was riding all the way to the Arctic Circle. That alone
+amazed me. Then I asked if he'd ever ridden to South America.
+
+I've already done that, he replied.
+
+Mark used to photograph assignments for National Geographic, so I asked
+if he'd ever seen The Secret Life of Walter Mitty. He smiled and said
+yes, and that many of the adventures in that movie reminded him of his
+own life.
+
+Later, at the Gap Trading Post, we met another adventure rider named
+Steve. He was traveling on a Yamaha motorcycle, loaded with camping
+gear. Originally, his plan was to go to Canada, but he had been forced
+to change his plans because a blizzard was hitting Wyoming and Montana.
+
+A blizzard, in June.
+
+That's hard to wrap my head around.
+
+At the same time, massive wildfires are burning in Utah, and another
+fire near beloved Sedona has grown large enough that people told me
+Flagstaff is already smoky.
+
+While talking with Steve, I shared our message: get outside, nature is
+everything.
+
+He smiled and said, I believe the same thing.
+
+I thought you might, I told him. Just by the way you're living.
+
+Sure enough, when he pulled out of the gas station, he simply pointed
+one finger toward me --- a friendly see you down the road gesture ---
+and disappeared.
+
+I'll admit, I was a little disappointed. He reminded me a lot of my
+friend Jerrod, and I would have enjoyed getting to know him better.
+
+As the old saying goes, the saddest words of tongue or pen are these sad
+words --- it might have been.
+
+Something else happened at the Gap Trading Post that I don't want to
+forget. While Sean and I were talking about his ride, a car on the
+opposite side of the street revved its engine. I looked over, and the
+driver --- I couldn't tell if it was a man or a woman --- stuck the
+letter B out the window in sign language. It was a black muscle car,
+modern day, either a Challenger or a Charger. I can never tell those two
+apart. They turned right and just took off.
+
+I wanted to know who that was. They didn't stop.
+
+But they gave us a Team Bravo salute --- the first one we've ever
+received from a stranger on the road. And it happened before we even
+reached our finish line in Flagstaff. I call that a win.
+
+We also met a guy named Sam, who is also a nomad. He goes by Mi$fit ---
+with a dollar sign in place of the S --- because, as he explains it,
+that way he always knows where his money is. He seems like quite a
+character, and I hope we run into him again somewhere down the road.
+
+For now, it's 8:30, and I don't think I've gone to bed this early in
+over a month.
+
+Good night.
+
+Fifteen miles on the day.`,
+    hashtags: ["#Resilience", "#Grit", "#Gratitude", "#Brotherhood", "#Connection", "#Wonder", "#RollForVeterans", "#TeamBravo", "#NewWayOfLife", "#Adaptation"]
+  },
+  {
+    num: 124,
+    date: "Tuesday, June 30, 2026",
+    location: "Gap Trading Post, AZ → Cameron, AZ --- Painted Desert Gift Shop --- Home Base",
+    state: "Utah",
+    region: "SOUTHERN UTAH",
+    entry: `Today, June 30 --- Day 124 --- began in the parking lot of the Gap
+Trading Post, where we were tucked in between the trading post and a big
+mailbox next to what appeared to be an abandoned house.
+
+The night before, I'd parked the truck and trailer with the hope that
+the neighboring house would cast some shade over us in the morning.
+Alas, that wasn't how it worked out. The sun came up and started
+shining through the cracks in the back of the trailer.
+
+I woke up before my alarm and was scrolling through my messages when I
+saw one from Leonard, the commander of the Echo Cliffs Veterans
+Organization in Bodaway Gap.
+
+Apparently Tolo --- or someone Tolo had spoken with --- had let Leonard
+know we were on our way and interested in learning more about veterans'
+issues in the area. Leonard had taken a picture of the truck and
+trailer, and I noticed that the trailer door was cracked open in exactly
+the same way it was in his photo. That told me he was standing right
+outside.
+
+I threw on a shirt, climbed out of the trailer, and was greeted by a
+weather-worn man with a warm smile standing beside a large white flatbed
+truck.
+
+I opened the pickup door and told Sean we had a visitor. He climbed out,
+and the three of us talked for quite a while.
+
+Once we were ready, we followed Leonard over to the Bodaway Gap Chapter
+House, the local Navajo Nation government building.
+
+He explained that the Bodaway Gap Chapter is one of the farthest
+chapters from Window Rock, the capital of the Navajo Nation. Because of
+that distance, it's often difficult for the community's needs to
+receive the attention they deserve.
+
+We met Jordan, who works there, along with Leonard and several other
+wonderful people who are deeply committed to helping their community
+despite the many challenges they face. We recorded a short video with
+Jordan, and it was inspiring to hear about the programs they're
+creating to keep young people engaged, out of trouble, and connected to
+both practical life skills and traditional Navajo customs.
+
+We also learned they're hosting a wellness event on July 25.
+
+After collecting signatures from everyone at the Bodaway Gap Chapter
+House, we hit the road again.
+
+I started riding first while Sean drove about ten miles ahead, parked
+the truck, and then started pedaling himself.
+
+When I reached the truck, I realized something encouraging.
+
+I wasn't nauseated.
+
+Not like yesterday.
+
+The ride felt manageable again.
+
+I probably could have gone farther, but I was grateful to keep the day
+intentionally short. In fact, I actually rode a little past the truck
+before turning around just so my odometer would read an even ten miles.
+
+I do things like that because... well... I'm weird.
+
+After loading the bike, I drove ahead and eventually caught up with Sean
+on the outskirts of Cameron, Arizona, about fifty miles north of
+Flagstaff.
+
+There are still a couple of mountain climbs between us and Flagstaff,
+including Gray Mountain. If we continue splitting the distance evenly,
+I'll probably take that climb. Honestly, I'd rather do it than have
+Sean tackle it. He doesn't even have clipless pedals yet, so he's
+climbing with only part of what his legs are capable of producing. He
+doesn't know the difference yet --- but someday he will.
+
+We made it safely into Cameron.
+
+While driving around, I found a place called the Painted Desert Gift
+Shop and Laundromat. Behind it were a few RV hookups and trailers, so I
+went inside and asked if we could park there for the night.
+
+They kindly said yes.
+
+We started a load of laundry, then walked over to Burger King for
+dinner.
+
+Tonight was the first time in about three days that I'd eaten a real
+meal. Since getting sick, I'd mostly been surviving on simple foods.
+
+So tonight became a bit of an experiment.
+
+Would the Whopper stay where it belonged?
+
+Or would I find myself making another urgent midnight run to the
+bathroom?
+
+Only time would tell.
+
+Between trips to Burger King, we finished the laundry. Sean folded every
+piece of clothing while I uploaded videos to YouTube.
+
+Thanks, Sean.
+
+Later, I reorganized the trailer and gathered everything I'll need for
+the upcoming Grand Canyon excursion --- shower shoes, rain gear, pants,
+and other essentials.
+
+The funny thing is, you eventually run out of numbers or run out of time
+--- but you never run out of blessings.
+
+I'm grateful for Sean.
+
+I'm grateful for a best friend to share this adventure with and someone
+who continually inspires me to become a better person.
+
+Most of all, I'm grateful for the opportunity to spend so much time in
+nature.
+
+I often tell people that I use social media to get people away from
+social media.
+
+If my videos inspire even one person to go outside, ride a bike, take a
+walk, visit a national park, or discover something beautiful, then
+they've accomplished exactly what I hoped they would.
+
+There's a good chance I'll be riding my bike when you call.
+
+Honestly, that's about as close to heaven as I ever feel.
+
+And sharing that ride with a friend somehow makes it even better.
+
+Ten point two miles on the day.
+
+**The Grand Canyon**
+
+*The Final Destination*
+
+✦ ✦ ✦
+
+*[Entries will be added upon arrival]*`,
+    hashtags: ["#Resilience", "#Gratitude", "#Brotherhood", "#Connection", "#Wonder", "#Community", "#RollForVeterans", "#TeamBravo", "#NewWayOfLife", "#Adaptation"]
+  },
+  {
+    num: 125,
+    date: "Wednesday, July 1, 2026",
+    location: "Cameron, AZ → Flagstaff, AZ — Home Base",
+    state: "Grand Canyon",
+    region: "Northern Arizona — Flagstaff",
+    entry: `Today was July the first, Day one hundred twenty-five.
+
+We started the morning in Cameron, Arizona. I headed out somewhere around seven or eight o'clock and rode all morning. It was surprisingly cold. I wore my hoodie near the entire ride, only shedding it once I reached the truck.
+
+Sean had parked it about twenty-three miles from where I started, sitting on the left side of the highway in front of a glamping company. I nearly rode past it altogether.
+
+While I was there, I met the man who built the whole place. His name is Adam. He has poured an incredible amount of work into it, and the operation reminded me so much of Zion Glamping Adventures back in Utah. Adam and his fiancée carry that same vision and enthusiasm the folks at Zion Glamping have. I am hoping to put the two businesses in touch, so they might learn from one another.
+
+After the day's ride, we made our way into Flagstaff. The American Legion did not work out. Little America would have let us park among the semi-trucks, but we wanted to be closer to the entrance. We settled on a Mobil station at the edge of the lot, close enough to the twenty-four-hour restrooms.
+
+We stopped by the Chamber of Commerce and picked up our parade packet. We are number eighty-eight. A special number to me.
+
+I want to give thanks tonight. To Lacey, the first Lacey I've met whose name is spelled just like the main character in my book — she and her friend Robbie spent time with us at Little America and connected with what Roll for Veterans is about. To Curtis, the big-hearted gentleman who helped us sort out parking at the Mobil station. And to McGuire, who practices slacklining between two trees — watching him, I found myself thinking Sean could probably do that too.
+
+Tomorrow is shaping up busy. We aim to find a way to serve here in Flagstaff, find someone to drive the truck during the parade on the fourth, and speak with city officials about a place to park during the drone show.
+
+Marcus is excited. I am excited too — a little guarded, maybe, because you never know how people will respond. But mostly I am looking forward to what comes next.
+
+Every day out here reminds me there are good people everywhere. You just have to get out into the world long enough to meet them.
+
+Thirty point three miles ridden today.`,
+    hashtags: ["#Gratitude", "#Connection", "#Community", "#Wonder", "#Brotherhood", "#RollForVeterans", "#TeamBravo", "#NewWayOfLife", "#Sparkle", "#Grit"]
+  },
+  {
+    num: 126,
+    date: "Thursday, July 2, 2026",
+    location: "Flagstaff, AZ — Home Base",
+    state: "Grand Canyon",
+    region: "Northern Arizona — Flagstaff",
+    entry: `The second of July, Day one hundred twenty-six, began in the Mobil station parking lot.
+
+We left as soon as we reasonably could. It wasn't the ideal place to spend the night, but I was genuinely grateful for their hospitality, especially because the bathroom was close by. I ended up needing it a couple of times during the night. My stomach is still a little topsy-turvy, and that definitely takes some of the fun out of life.
+
+After breakfast and filling all of our water jugs, Sean and I headed off in different directions, both looking for opportunities to volunteer.
+
+I decided to stop by the Grand Canyon excursion company. I wanted to ask if they happened to know anyone willing to drive our truck during the parade, tell them a little about Sean, and just get a feel for the place before next week's river trip. That's where I met Justin, the trip leader for my upcoming excursion. It was exciting to finally see the rafts and meet some of the people I'll soon be spending days with on the Colorado River. The whole visit made the trip feel much more real.
+
+I wasn't exactly parked in a legal spot, though. While Justin was signing the trailer, a police officer pulled up. Fortunately, he was friendly. He even signed the trailer himself before I thanked everyone and moved the truck.
+
+A little while later, Sean texted to say he'd found a VA nursing home that welcomed visitors. So I drove over to meet him. It was quite a climb getting there, but fortunately I was in the truck instead of on the bike.
+
+We had a wonderful time with the veterans. Victoria, the activities coordinator, invited us to help paint a wooden pallet to look like the American flag. I volunteered to paint the stars, which turned out to be a little stressful for someone with perfectionist tendencies, but we got it finished. I also spent some time sitting with George, a Vietnam veteran. The two of us watched a World Cup match together and just enjoyed the afternoon. Before we left, Sean and I shared a mocktail with everyone, listened to a little disco music, and said our goodbyes.
+
+From there, I headed over to Andrew's house while Sean made his way toward Planet Fitness. Andrew is one of the people who'll be joining me on the Grand Canyon excursion next week, and he had several items I'd ordered for the trip. We spent a little while talking, watched some more soccer together, and then I headed over to Planet Fitness to meet back up with Sean.
+
+Our hope is to spend the night here. I took a long, hot shower, which felt absolutely wonderful.
+
+Now it's time for bed.`,
+    hashtags: ["#Gratitude", "#Brotherhood", "#Community", "#Connection", "#Adaptation", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo", "#Wonder", "#Milestone"]
+  },
+  {
+    num: 127,
+    date: "Friday, July 3, 2026",
+    location: "Flagstaff, AZ — Home Base",
+    state: "Grand Canyon",
+    region: "Northern Arizona — Flagstaff",
+    entry: `Today was July the third, Day one hundred twenty-seven.
+
+The night began with an unexpected interruption. Somewhere in the middle of the night, a security guard knocked on the trailer door. Normally they knock on the truck, but he must have realized it was my turn to sleep in the trailer. He politely told us we couldn't stay there. I asked where we could park instead, and he suggested the Safeway parking lot.
+
+Honestly, I probably could have asked permission before the sun went down, but I was a little out of sorts and just wanted to get some sleep. It wasn't a big deal. Sean stayed in bed while I drove us over to Safeway. Once we were parked, I climbed back into the trailer and went straight back to sleep.
+
+After we got up, we headed to Planet Fitness to shower and use the facilities. We also washed the truck and got Marcus ready for the parade. He's looking spiffy.
+
+While we were out, I spent some time updating the website. I shifted the focus even more toward nature and added a banner inviting everyone to celebrate the completion of our cross-country odyssey with us at tomorrow's Fourth of July parade in Flagstaff. I also updated the mileage and placed a watermark across the route map that reads: "Route Completed — July 1, 2026. Stay tuned for a new route soon." I'm not exactly sure how soon soon will be. It will definitely be after we return from the Grand Canyon excursion.
+
+Tomorrow is the big day. It's the day we'll finally participate in the Flagstaff parade and officially complete what we came here to do. Once that's finished, Sean and I will feel good about moving on.
+
+We've both noticed something about Flagstaff. Some places simply have a different atmosphere than others. There seem to be more rules here, fewer places willing to let people park overnight, and even the way people respond when they hear about riding a bicycle across the country feels a little different. That's not to say Flagstaff isn't a wonderful place. We've met some truly kind people here, and we've had some great experiences. But between the wildfire smoke and the difficulty finding places to stay, we're both ready to move on. There have only been two cities during this entire journey where the American Legion wasn't able to accommodate us. I'll leave it at that.
+
+After tomorrow's parade, we'll decide exactly where to head next, but I think we're both leaning toward getting outside the city. The smoke has become difficult to ignore. Without a mask, it feels like there's a weight sitting on your chest. Since we're sleeping outdoors, there isn't much separating us from the air around us. No HEPA filters out here.
+
+Over the past couple of days, I've noticed something changing inside me. I finally feel like I've accomplished something truly significant. For the first time in a while, I've allowed myself to relax.
+
+At the same time, another idea has been growing stronger. I can't stop thinking about creating a retreat. This journey has given me a sense of peace and clarity that I wish everyone could experience for themselves. I'd love to create something that helps other people step away from the noise of everyday life and reconnect with themselves through nature. I think that's the next chapter of this adventure. I'll spend the coming months refining the idea, working out the details, and experimenting with what it could become. If everything comes together, I'd love to launch it next summer by retracing much of the route we've already traveled and inviting others to experience it alongside us.
+
+Based on what this journey has done for Sean and me, I'd give it two enthusiastic thumbs up.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Adaptation", "#Resilience", "#NewWayOfLife", "#Community", "#RollForVeterans", "#TeamBravo", "#Connection", "#Milestone"]
+  },
+  {
+    num: 128,
+    date: "Saturday, July 4, 2026",
+    location: "Flagstaff, AZ → Grand Canyon Oasis, AZ — Home Base",
+    state: "Grand Canyon",
+    region: "Northern Arizona — Flagstaff",
+    entry: `Ah, the Fourth of July. Day one hundred twenty-eight.
+
+Today was the Flagstaff Fourth of July Parade. Everything came together. We found a driver for the truck and trailer. His name is Greg. He used to compete in jiu-jitsu, and now he operates heavy equipment for the county. With all the forest fires burning around Flagstaff right now, they've been incredibly busy. He carved out just enough time to drive us in the parade before heading straight back to work. He did a fantastic job.
+
+Before it was our turn, I watched some of the parade go by, but honestly, my mind kept drifting to when we'd finally pull onto the route. When we did, it was awesome. People were clapping, cheering, waving, and smiling everywhere we looked. We handed out bracelets as fast as we could, and the kids were carrying pillowcases, hoping to collect anything people were giving away. We eventually ran out of bracelets, but it was a lot of fun while they lasted.
+
+The whole thing was over before we knew it. We were just two cyclists in a sea of humanity, but for a few minutes we got to share our story with hundreds of people. That felt pretty special.
+
+Almost as soon as the parade ended, the wildfire smoke began rolling back into town. I asked Sean whether he wanted to stick around Flagstaff or head somewhere with cleaner air. He didn't have much of a preference, so we decided to flip a coin. As Providence sometimes seems to do, the coin gave us a little nudge. We left Flagstaff.
+
+I rode twenty miles out of Flagstaff toward the Grand Canyon Oasis while Sean took the truck. Somewhere along the way I got a little turned around in the woods. Google Maps left something to be desired out there. But getting lost had its rewards — I came across three elk moving through the trees and managed to get a picture of them before they wandered off. By the time I rolled in, Herbie was filthy, caked in dust from all that time off the pavement.
+
+We drove back to the Grand Canyon Oasis, where Sean had parked the truck the day we entered the city. I'd already met Adam there when I picked up the truck a few days ago. He's a genuinely kind guy and had invited us to come back anytime. He also mentioned a few projects around the property that needed attention, so I'll spend some time helping him fix things over the next few days. That makes me feel useful.
+
+This evening they held a small Fourth of July gathering for the long-term residents, and they invited us to join them. Most of the people staying there are travel nurses who work in Flagstaff but live out here. Everyone seemed genuinely happy, and it was a great way to spend Independence Day.
+
+Not everything went perfectly, though. When I went to take a shower, I plugged the water heater into an outlet that couldn't handle the load and tripped the breaker. So I had to go find Adam. The good news is that I learned a little more about the electrical system around the property. The bad news is, well, I caused the problem in the first place. The shower itself didn't last long because the wind was absolutely howling. Still, it felt wonderful to finally be clean.
+
+Then came today's less-than-proud moment. I accidentally ran over Sean's bicycle wheel with the trailer. I never even saw it leaning against the trailer before I pulled away. Somehow it fell just right, and the trailer tire rolled directly over it. So Judy is officially out of commission until we can replace the damaged tire and tube. I'm grateful the forks weren't damaged — it could have been a lot worse. On Monday I'll start calling bike shops to see who can service Herbie while we're back in Flagstaff. Hopefully we can also find a replacement tire for Judy and pick everything up on the seventh.
+
+Other than that, the Fourth of July 2026 is finally in the books. I've been looking forward to this day for a long time. Now that it's over, I also feel a sense of relief. There was so much anticipation leading up to the parade, and now we can turn our attention toward the next adventure.
+
+I'd also like to thank Adam and the entire Team Bravo Air Support Crew for helping make this opportunity possible. Getting to participate in the Flagstaff Fourth of July Parade was an unforgettable experience. Awesome. Epic. Awesepic.
+
+Twenty miles on the day.`,
+    hashtags: ["#Milestone", "#Gratitude", "#Brotherhood", "#Community", "#NewWayOfLife", "#ProblemSolving", "#RollForVeterans", "#TeamBravo", "#Connection", "#Wonder"]
+  },
+  {
+    num: 129,
+    date: "Sunday, July 5, 2026",
+    location: "Grand Canyon Oasis, AZ — Home Base",
+    state: "Grand Canyon",
+    region: "Northern Arizona — Flagstaff",
+    entry: `Today was July the fifth, Day one hundred twenty-nine.
+
+I spent the day at the Grand Canyon Oasis, which will be Sean's home for the next couple of weeks while I make my way down the Colorado River through the Grand Canyon. Grand Canyon Oasis is about forty minutes north of Flagstaff, on the road toward Gap and Tuba City. It's a peaceful place, and I'm grateful we've found it.
+
+Today I was able to help out around the property. I repaired a gate that needed some attention and fixed a stationary exercise bike that had stopped working. One of the things I really appreciate about Adam and Shelly, the owners of the property, is that they're happy to trade labor for a place to stay. That's a tremendous blessing, especially while we're trying to be careful with money. So today was spent in that kind of rhythm, working, helping out, and getting settled.
+
+I also joined the family Zoom call for the entire family. It ended up being just my sister, my brother, and me. It was good to catch up. I showed them the gate I'd repaired. My sister talked about preparing to host a German exchange student for the coming school year, and my brother shared everything he's been learning about gardening in Kansas. He's had a lot of success growing plants there over the past year, and it was fun hearing about all the things he's discovered along the way.
+
+Later, I watched a little of the World Cup, as England found a way to defeat Mexico. Then Sean and I watched Project Hail Mary, the science fiction movie starring Ryan Gosling.
+
+Overall, it was a quiet day. Not every day on this journey has to be about riding a bicycle across the country. Sometimes it's about repairing a gate, fixing a bike, talking with family, watching a movie with a friend, and preparing for whatever comes next. For me, that's exactly what today was.
+
+Now it's time to finish packing and get ready for the next phase of this adventure. If everything goes according to plan, I'll begin the Grand Canyon excursion on the eighth.`,
+    hashtags: ["#Gratitude", "#Community", "#Brotherhood", "#NewWayOfLife", "#ProblemSolving", "#RollForVeterans", "#TeamBravo", "#Connection", "#Wonder", "#Milestone"]
+  },
+  {
+    num: 130,
+    date: "Monday, July 6, 2026",
+    location: "Grand Canyon Oasis, AZ — Home Base",
+    state: "Grand Canyon",
+    region: "Northern Arizona — Flagstaff",
+    entry: `Today was July the sixth, Day one hundred thirty.
+
+Once again, I spent the day at the Grand Canyon Oasis. The morning started slowly. I had breakfast and watched an adorable movie about a flock of sheep trying to solve the mystery of who killed their shepherd. It was surprisingly entertaining.
+
+After that, I applied some caulking to the front of Adam's garage while Sean tackled the overgrown weeds along the front of the property. I wouldn't exactly call it grass, it was mostly dry weeds, but Adam said he wanted the place to look a little less abandoned. Mission accomplished.
+
+Later, Sean cooked a huge batch of breakfast burrito filling, eggs, meat, potatoes, the works, and we made ourselves some breakfast burritos. It was a lot of food. We ate every bit of it. I washed the dishes afterward, and then we settled in to watch the United States play Belgium in the soccer tournament.
+
+Unfortunately, the U.S. lost three to one. It felt a little anticlimactic. Belgium simply looked like the better team. The United States created some good opportunities, but they just couldn't finish them. It also seemed like they were missing a little of that fire-in-the-belly determination that championship teams often have. Then again, maybe Belgium was simply the stronger side. That's sports.
+
+With that result, the United States, Canada, and Mexico have all been eliminated, so there won't be a North American team in the finals. We'll see how the rest of the tournament unfolds. As for me, I'll probably miss most of it.
+
+On the eighth, I'll be heading into the Grand Canyon, where I'll spend twelve days making my way down the Colorado River. My plan is to bring only my phone and a couple of spare battery packs. Hopefully that'll be enough to record the journey, mostly photos, a few videos, and my thoughts at the end of each day. When I come back out on the twentieth, I'll transfer everything and relive the experience.
+
+This trip has been on my bucket list for a long time. Soon, the Colorado River, and at least a few of its mysteries, will become a little more familiar. I've never done anything quite like this before. I have no idea exactly how it will affect me. But I have a feeling I'll come out of the canyon carrying a perspective I don't yet have.
+
+We'll see.`,
+    hashtags: ["#Gratitude", "#Community", "#Brotherhood", "#NewWayOfLife", "#ProblemSolving", "#RollForVeterans", "#TeamBravo", "#Wonder", "#Milestone", "#Adaptation"]
+  },
+  {
+    num: 131,
+    date: "Tuesday, July 7, 2026",
+    location: "Grand Canyon Oasis, AZ → Flagstaff, AZ — Home Base",
+    state: "Grand Canyon",
+    region: "Northern Arizona — Flagstaff",
+    entry: `Today was July the seventh, Day one hundred thirty-one.
+
+The day began at the Grand Canyon Oasis. I woke up, sorted through all my gear as carefully as I could, ate a little cereal, and tried to triple-check that I had everything I would need for the river. I did realize I'd left my waterproof phone bags somewhere back at the Oasis. Fortunately, the outfitter had extras, so that problem solved itself.
+
+Sean and I drove to the East Rim of the Grand Canyon, then entered through the South Entrance and continued to the IMAX theater, where we met up with the rest of the group. Before our orientation, we toured a fascinating exhibit of the historic boats that the earliest explorers used to navigate the Colorado River through the Grand Canyon. It was incredible. You could literally see the evolution of river-running technology through the years. The earliest boats were little more than sturdy wooden craft that weren't especially well suited for whitewater. Over time, they evolved into more capable designs and eventually into motorized boats with propellers.
+
+Those first explorers really had no idea what they were getting themselves into. Some of them didn't make it home. But that's what exploration looked like in those days. They were venturing into an unknown world, learning every rapid, every bend, and every canyon one discovery at a time. I found myself imagining what it must have been like to see the Grand Canyon for the very first time, to stand on its edge with no maps, no satellite imagery, and no certainty about what lay downstream. What an extraordinary time that must have been.
+
+After the museum, we visited Hopi Point. It almost doesn't look real. The sky. The clouds. The shifting shadows. The countless layers of rock carved by millions of years of flowing water. It's overwhelming in the best possible way.
+
+On our way out of the park, Sean spotted an enormous bull elk. Earlier we'd seen a few cows and a younger bull, but this one was something else entirely. He told me to turn around, so I did. When we pulled back into the parking area, the elk was standing behind a bush, quietly eating. For a moment it looked like the bush itself had grown antlers. They were massive. The animal was absolutely magnificent. Cars continued driving past as if nothing unusual was happening, but Sean and I just stood there for a while, completely captivated.
+
+From there we drove back to Flagstaff, where we picked up a new front tire for Judy, the one I'd accidentally run over with the trailer a few days ago. Judy is officially back in service.
+
+After that, we checked into the hotel where Canyon X held their pre-trip orientation. For about an hour they walked us through everything we need to know: what to expect, how to pack, which dry bags should hold what gear, and all the other little details that make life on the river go a little more smoothly. Hopefully I packed everything correctly. I'm sure after a day or two on the river I'll discover things I wish I'd packed differently, but I think I have enough in the right places to get through the first day.
+
+When the orientation ended, Sean and I celebrated with long-overdue Double-Doubles from In-N-Out Burger. We were starving. Earlier we'd explored the old cemetery near the Grand Canyon and eaten a little food from the back of the truck, but it wasn't much. I'd left the refrigerator back at the Oasis because there wasn't any ice in it, and I didn't want the milk to spoil. That meant no sandwich supplies, no mayonnaise or any of the good stuff, so we simply made do until dinner.
+
+Afterward we stopped at the store for a few last-minute supplies before returning to the hotel to finish organizing my gear.
+
+One unexpected blessing came at the very end of the day. The man who had originally been assigned to share this hotel room with me decided to stay in his RV instead. His wife is remaining in Flagstaff while he's on the river, so he no longer needed the room. That meant Sean was able to stay here tonight instead of sleeping elsewhere. I have to admit, this bed is pretty comfortable. It's nice sleeping in one that doesn't squeak every time you roll over.
+
+And now, tomorrow is the big day. Tomorrow I'll step onto the Colorado River and finally experience something I've dreamed about for years. I honestly don't know what to expect. So I've decided not to expect anything. I'll just let the canyon reveal itself one bend at a time.
+
+Oh, and one last thing. During orientation, everyone found a bag placed beneath their chair. When I looked underneath mine, I had bag number four. That number just keeps following me wherever I go.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Milestone", "#Adaptation", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo", "#Connection", "#Brotherhood", "#Community"]
+  },
+  {
+    num: 132,
+    date: "Wednesday, July 8, 2026",
+    location: "Lees Ferry, AZ → Colorado River, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the eighth, Day one hundred thirty-two. My first day on the Colorado River.
+
+We're making our way from Lees Ferry to Diamond Creek, and what an incredible first day it has been.
+
+The morning started by saying goodbye to Sean at the DoubleTree Inn. He was able to sleep in while I got up early, packed my gear, and boarded a rather uncomfortable bus for the two-hour ride to Lees Ferry. We made a couple of stops along the way. Once we arrived at the river, everything became very real.
+
+We loaded our gear onto the boats, picked out our helmets and personal flotation devices, and listened to a thorough safety briefing covering everything from how to wear our life jackets to how to get in and out of the rafts.
+
+When it came time to choose boats, I volunteered for the paddle raft. There are six paddlers and one guide steering from the back. It was exactly what I had hoped for. Daniel and I were seated in the front, which meant we took the full force of every wave. I loved it. The water was cold, especially whenever the sun disappeared behind the canyon walls, but getting blasted by wave after wave was worth the shivers.
+
+Our crew consisted of Daniel and me in front, Scooter and Edie in the middle, Jen and Seth in the back, and our guide, also named Seth, steering the raft.
+
+Today we ran three major rapids along with a couple of smaller ones. One of the smaller rapids didn't even have a name, but somehow it managed to soak me more thoroughly than any of the others. I'm pretty sure Seth intentionally aimed us straight into the biggest waves. If that's true, I appreciated it.
+
+By the time we reached camp, I was completely drenched. Fortunately, a warm breeze blew through camp all afternoon, and my clothes dried surprisingly quickly. I found a campsite tucked among a few shrubs that should help block some of the wind tonight. I decided to forego a tent. I'll simply be sleeping beneath the stars. It took me a little while to figure out how to inflate my sleeping pad, and I finally admitted defeat long enough to ask for help. Problem solved.
+
+As for the canyon itself, I don't even know how to describe it. Every bend reveals another breathtaking wall of ancient rock, sculpted over millions of years by the very river we're floating down. One moment your heart is pounding as you charge through whitewater. The next you're drifting quietly through one of the most beautiful places on Earth at little more than a mile an hour. It's hard to imagine a better way to experience the Grand Canyon.
+
+Tomorrow I think I'm going to ride on one of the oar boats instead of the paddle raft. Doug was rowing one today, and no one else rode with him. He seems like someone I'd enjoy talking with, and I have a feeling he might even let me try rowing for a little while. The rowing technique is interesting. You actually push the oars forward rather than pulling them backward. It looks awkward at first, but apparently it works remarkably well.
+
+Oh, a squirrel just ran right past me. Really close. Didn't even ask permission. That made me laugh.
+
+Lunch today was excellent. We had turkey and ham sandwiches with tomatoes and avocado, orange slices, chips, plenty of food for everyone. Everyone on this trip has been incredibly kind. I'm already starting to remember most people's names, which is encouraging. I also forgot to write down exactly what we had for dinner, but I do remember thinking that it was outstanding. The food on the very first day exceeded every expectation I had. There's certainly no danger of going hungry out here.
+
+This adventure has been about six months in the making. To finally be here, actually floating down the Colorado River, it feels a little surreal. I'm trying not to rush through any of it. I'm trying to soak it all in. Because moments like this don't come around very often.
+
+To conserve battery power, I've decided to record just one video and one audio journal entry each day. I brought two spare battery packs with me, and hopefully they'll last until we reach Diamond Creek on July nineteenth.
+
+If today is any indication, this is going to be an unforgettable journey.`,
+    hashtags: ["#Wonder", "#Gratitude", "#Milestone", "#NewWayOfLife", "#Adventure", "#Brotherhood", "#RollForVeterans", "#TeamBravo", "#Connection", "#Sparkle"]
   },
 ];
