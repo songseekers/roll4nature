@@ -1,24 +1,7 @@
-'use client';
-
-import { useState } from 'react';
 import { journalDays, stateOrder, stateConfig, JournalDay } from '@/data/journalData';
+import JournalSidebar from './JournalSidebar';
 
 export default function JournalPage() {
-  const [activeDay, setActiveDay] = useState<number | null>(null);
-  const [expandedStates, setExpandedStates] = useState<Record<string, boolean>>({
-    Florida: true,
-    Mississippi: true,
-    Louisiana: true,
-    Texas: true,
-    'New Mexico': true,
-    Arizona: true,
-    California: true,
-    Nevada: true,
-    Utah: true,
-    'Northern Arizona': true,
-    'Grand Canyon': true,
-  });
-
   const byState: Record<string, JournalDay[]> = {};
   journalDays.forEach(d => {
     if (!byState[d.state]) byState[d.state] = [];
@@ -27,80 +10,22 @@ export default function JournalPage() {
     else byState[d.state].push(d);
   });
 
-  const toggleState = (state: string) => {
-    setExpandedStates(prev => ({ ...prev, [state]: !prev[state] }));
-  };
-
-  const scrollToDay = (dayNum: number) => {
-    setActiveDay(dayNum);
-    const el = document.getElementById(`day-${dayNum}`);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
-  const scrollToState = (state: string) => {
-    const el = document.getElementById(`state-${state.toLowerCase().replace(/\s+/g, '-')}`);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
+  const sidebarStates = stateOrder
+    .filter(state => byState[state])
+    .map(state => ({
+      state,
+      displayName: stateConfig[state].displayName,
+      days: byState[state]
+        .slice()
+        .sort((a, b) => a.num - b.num)
+        .map(d => ({ num: d.num, date: d.date })),
+    }));
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors">
       <div className="flex pt-16">
 
-        {/* SIDEBAR */}
-        <aside className="hidden lg:flex flex-col w-72 min-w-72 h-[calc(100vh-64px)] sticky top-16 overflow-y-auto bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800">
-          <div className="p-5 border-b border-gray-200 dark:border-gray-800">
-            <div className="text-xs font-bold text-r4v-primary uppercase tracking-widest mb-1">Roll for Veterans</div>
-            <div className="text-base font-semibold text-gray-700 dark:text-gray-200">ROLLING</div>
-          </div>
-          <nav className="p-4 flex-1">
-            {stateOrder.map((state, stateIndex) => {
-              if (!byState[state]) return null;
-              const { color, displayName } = stateConfig[state];
-              const days = byState[state].sort((a, b) => a.num - b.num);
-              return (
-                <div key={state}>
-                  {stateIndex > 0 && (
-                    <div className="my-3 border-t border-gray-200 dark:border-gray-700" />
-                  )}
-                  <div className="mb-2">
-                    <button
-                      onClick={() => scrollToState(state)}
-                      className="w-full flex items-center justify-between py-2 px-2 rounded text-left group"
-                    >
-                      <span className="text-sm font-bold uppercase tracking-wider" style={{ color: '#1a5276' }}>
-                        {displayName ?? state}
-                      </span>
-                      <button
-                        onClick={(e) => { e.stopPropagation(); toggleState(state); }}
-                        className="text-gray-400 text-sm ml-2"
-                      >
-                        {expandedStates[state] ? '▾' : '▸'}
-                      </button>
-                    </button>
-                    {expandedStates[state] && (
-                      <ul className="ml-3 mt-1 space-y-0.5">
-                        {days.map(d => (
-                          <li key={d.num}>
-                            <button
-                              onClick={() => scrollToDay(d.num)}
-                              className={`w-full text-left px-2 py-1.5 rounded text-sm transition-colors ${
-                                activeDay === d.num
-                                  ? 'bg-r4v-primary/10 text-r4v-primary font-semibold'
-                                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
-                              }`}
-                            >
-                              Day {d.num} · {d.date.split(',')[0]}
-                            </button>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </nav>
-        </aside>
+        <JournalSidebar states={sidebarStates} />
 
         {/* MAIN CONTENT */}
         <main className="flex-1 min-w-0 px-6 sm:px-10 lg:px-16 py-16 max-w-3xl">

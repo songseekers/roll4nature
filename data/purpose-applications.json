@@ -1,0 +1,14 @@
+[
+  {
+    "fullName": "Test",
+    "email": "test@gmail.com",
+    "phone": "(123) 456-7890",
+    "guidebookCompleted": "yes",
+    "coachingPreference": "on-site",
+    "availability": "May",
+    "medicalRestrictions": "no",
+    "comments": "This is only a test",
+    "id": "1775657876880",
+    "submittedAt": "2026-04-08T14:17:56.880Z"
+  }
+]
