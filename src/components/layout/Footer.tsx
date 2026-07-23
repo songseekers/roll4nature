@@ -52,9 +52,14 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <Link href="/roll-for-veterans" className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition">
-                      R4V 2026 Journey
-                    </Link>
+                    <a
+                      href="https://c2c2c.songseekers.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition"
+                    >
+                      Coast to Coast to Canyon Archive
+                    </a>
                   </li>
                   <li>
                     <a

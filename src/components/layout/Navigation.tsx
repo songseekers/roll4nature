@@ -29,12 +29,6 @@ export default function Navigation() {
               Home
             </Link>
             <Link
-              href="/roll-for-veterans"
-              className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
-            >
-              R4V 2026
-            </Link>
-            <Link
               href="/journal"
               aria-label="Read JT's Rolling Journal"
               className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
