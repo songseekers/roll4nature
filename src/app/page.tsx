@@ -159,12 +159,12 @@ export default function HomePage() {
 
           <a
             href="/team-bravo"
-            className="inline-block bg-[#C1592B] text-white px-10 py-3 rounded-lg font-bold hover:bg-[#E07B4F] transition text-lg"
+            className="inline-block bg-[#5C3317] text-white px-10 py-3 rounded-lg font-bold hover:bg-[#7A4A28] transition text-lg"
           >
             Learn About Team Bravo
           </a>
 
-          <div className="mt-10 pt-8 border-t border-[#C1592B]/30">
+          <div className="mt-10 pt-8 border-t border-[#5C3317]/30">
             <a href="/purpose">
               <Image
                 src="/resources/PP_dk.png"
@@ -195,7 +195,7 @@ export default function HomePage() {
       </section>
 
       {/* Main CTA Section */}
-      <section className="bg-gradient-to-r from-[#C1592B] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-[#5C3317] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Support the Mission?
@@ -214,7 +214,7 @@ export default function HomePage() {
             </a>
             <a
               href="/partner"
-              className="bg-[#C1592B] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#a84d25] transition inline-block"
+              className="bg-[#5C3317] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#a84d25] transition inline-block"
             >
               Become a Partner
             </a>

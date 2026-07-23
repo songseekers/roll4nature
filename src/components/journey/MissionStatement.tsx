@@ -15,7 +15,7 @@ export default function MissionStatement() {
             </h2>
 
             <p className="text-base text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
-              Roll for Veterans is riding coast-to-coast in 2026 to raise awareness of and support for Team Red, White & Blue (Team RWB). Founded in 2010, Team RWB has become a nationwide community empowering veterans through physical activity, meaningful connection, and shared purpose.
+              Roll 4 Nature is riding coast-to-coast in 2026 to raise awareness of and support for Team Red, White & Blue (Team RWB). Founded in 2010, Team RWB has become a nationwide community empowering veterans through physical activity, meaningful connection, and shared purpose.
             </p>
 
             <p className="text-base text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">

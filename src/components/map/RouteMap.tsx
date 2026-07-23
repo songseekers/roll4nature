@@ -14,7 +14,7 @@ export type MapLayer = 'overview' | 'major' | 'all';
 export type RouteKey = 'c2c2c' | 'mse';
 
 const ROUTE_COLORS: Record<RouteKey, string> = {
-  c2c2c: '#C1592B',
+  c2c2c: '#5C3317',
   mse: '#4a7c59',
 };
 
@@ -100,7 +100,7 @@ export default function RouteMap() {
         paint: {
           'line-color': ROUTE_COLORS.c2c2c,
           'line-width': 4,
-          'line-opacity': 0.3,
+          'line-opacity': 0.12,
         },
       });
 
@@ -133,7 +133,7 @@ export default function RouteMap() {
     (['c2c2c', 'mse'] as RouteKey[]).forEach((route) => {
       const layerId = `route-line-${route}`;
       if (map.current?.getLayer(layerId)) {
-        map.current.setPaintProperty(layerId, 'line-opacity', route === selectedRoute ? 1 : 0.3);
+        map.current.setPaintProperty(layerId, 'line-opacity', route === selectedRoute ? 1 : 0.12);
       }
     });
 
@@ -178,11 +178,12 @@ export default function RouteMap() {
         : ROUTE_COLORS[city.route];
 
       const matchesSelectedRoute = city.route === 'both' || city.route === selectedRoute;
-      const markerOpacity = matchesSelectedRoute ? 1 : 0.3;
+      const markerOpacity = matchesSelectedRoute ? 1 : 0.25;
 
       const el = document.createElement('div');
       el.className = 'city-marker';
-      const markerSize = isMajor ? 16 : 12;
+      const baseSize = isMajor ? 16 : 12;
+      const markerSize = matchesSelectedRoute ? baseSize : baseSize * 0.6;
       const borderWidth = isMajor ? 3 : 2;
 
       el.style.width = markerSize + 'px';
@@ -204,7 +205,7 @@ export default function RouteMap() {
           padding: 12px;
           min-width: 220px;
           background: linear-gradient(135deg, #E8C9A1 0%, #D4A574 100%);
-          border: 2px solid #C1592B;
+          border: 2px solid #5C3317;
           border-radius: 8px;
           color: #1F2937;
         `;
@@ -214,13 +215,13 @@ export default function RouteMap() {
           </div>
           <div style="font-size: 14px; line-height: 1.5;">
             <div style="margin-bottom: 4px;">
-              <strong style="color: #C1592B;">Arriving:</strong> ${new Date(city.arrivalDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+              <strong style="color: #5C3317;">Arriving:</strong> ${new Date(city.arrivalDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </div>
             <div style="margin-bottom: 4px;">
-              <strong style="color: #C1592B;">Day:</strong> ${city.dayNumber}
+              <strong style="color: #5C3317;">Day:</strong> ${city.dayNumber}
             </div>
             <div>
-              <strong style="color: #C1592B;">Route:</strong> ${ROUTE_LABELS[city.route]}
+              <strong style="color: #5C3317;">Route:</strong> ${ROUTE_LABELS[city.route]}
             </div>
           </div>
         `;
@@ -261,10 +262,10 @@ export default function RouteMap() {
               ${city.name}, ${city.state}
             </h3>
             <div style="font-size: 15px; color: #1F2937;">
-              <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Day ${city.dayNumber}:</strong> ${new Date(city.arrivalDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
-              <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Route:</strong> ${ROUTE_LABELS[city.route]}</div>
+              <div style="margin-bottom: 4px;"><strong style="color: #5C3317;">Day ${city.dayNumber}:</strong> ${new Date(city.arrivalDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
+              <div style="margin-bottom: 4px;"><strong style="color: #5C3317;">Route:</strong> ${ROUTE_LABELS[city.route]}</div>
               ${city.rwbChapter ? `
-                <div style="margin-top: 8px; padding: 8px; background-color: #E8C9A1; border-radius: 4px; font-size: 14px; border: 1px solid #C1592B;">
+                <div style="margin-top: 8px; padding: 8px; background-color: #E8C9A1; border-radius: 4px; font-size: 14px; border: 1px solid #5C3317;">
                   <strong style="color: #8B4513;">Team RWB:</strong><br/>
                   <span style="color: #1F2937;">${city.rwbChapter.name}</span>
                 </div>
@@ -341,7 +342,7 @@ export default function RouteMap() {
           <span className="text-gray-700 dark:text-gray-300">Visited</span>
         </div>
         <div className="flex items-center space-x-2">
-          <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
+          <div className="h-1 w-8 bg-[#5C3317] rounded"></div>
           <span className="text-gray-700 dark:text-gray-300">Coast to Coast to Canyon</span>
         </div>
         <div className="flex items-center space-x-2">

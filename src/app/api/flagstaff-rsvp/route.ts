@@ -95,7 +95,7 @@ const sendEmail = async (rsvp: RsvpRecord) => {
 
   try {
     const { error } = await resend.emails.send({
-      from: 'Roll for Veterans <onboarding@resend.dev>',
+      from: 'Roll 4 Nature <onboarding@resend.dev>',
       to: recipientEmail,
       subject: `New Flagstaff RSVP - ${rsvp.name} (${rsvp.certainty}/10)`,
       html: `

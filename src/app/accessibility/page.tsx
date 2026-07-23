@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Button from '@/components/ui/Button';
 
 export const metadata: Metadata = {
-  title: 'Accessibility Statement | Roll for Veterans 2026',
-  description: 'Accessibility statement for Roll for Veterans 2026 — our commitment to making this site usable for everyone.',
+  title: 'Accessibility Statement | Roll 4 Nature 2026',
+  description: 'Accessibility statement for Roll 4 Nature 2026 — our commitment to making this site usable for everyone.',
 };
 
 export default function AccessibilityPage() {
@@ -26,7 +26,7 @@ export default function AccessibilityPage() {
               1. Our Commitment
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
-              Roll for Veterans is committed to ensuring digital accessibility for people of all abilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
+              Roll 4 Nature is committed to ensuring digital accessibility for people of all abilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               We believe the web should be accessible to all, and we strive to make our site welcoming and usable for every visitor, including veterans and their families.

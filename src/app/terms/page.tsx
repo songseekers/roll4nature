@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Button from '@/components/ui/Button';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Roll for Veterans 2026',
-  description: 'Terms of service for Roll for Veterans 2026 website.',
+  title: 'Terms of Service | Roll 4 Nature 2026',
+  description: 'Terms of service for Roll 4 Nature 2026 website.',
 };
 
 export default function TermsOfServicePage() {
@@ -26,7 +26,7 @@ export default function TermsOfServicePage() {
               1. Acceptance of Terms
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
-              By accessing and using this website, you agree to be bound by these Terms of Service. This site is operated by JT Tracy on behalf of Roll for Veterans 2026.
+              By accessing and using this website, you agree to be bound by these Terms of Service. This site is operated by JT Tracy on behalf of Roll 4 Nature 2026.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               If you do not agree to these terms, please do not use this site.
@@ -64,7 +64,7 @@ export default function TermsOfServicePage() {
             </h2>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
               <li>All donations go directly to Team RWB via their official donation platform</li>
-              <li>Roll for Veterans 2026 does not directly handle or process donations</li>
+              <li>Roll 4 Nature 2026 does not directly handle or process donations</li>
               <li>For donation questions, please contact Team RWB directly</li>
             </ul>
           </section>
@@ -75,7 +75,7 @@ export default function TermsOfServicePage() {
               5. Intellectual Property
             </h2>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
-              <li>Site content, logos, and branding are property of Roll for Veterans 2026</li>
+              <li>Site content, logos, and branding are property of Roll 4 Nature 2026</li>
               <li>Team RWB logo and branding are property of Team Red, White & Blue</li>
               <li>Do not reproduce site content or branding without written permission</li>
             </ul>
@@ -99,7 +99,7 @@ export default function TermsOfServicePage() {
               7. Limitation of Liability
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Roll for Veterans 2026 and its operators shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of this website or reliance on any information provided herein.
+              Roll 4 Nature 2026 and its operators shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of this website or reliance on any information provided herein.
             </p>
           </section>
 

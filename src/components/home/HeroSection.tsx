@@ -78,7 +78,7 @@ export default function HeroSection() {
           {/* Main Headline */}
           <div className="text-center mb-12 pt-8 border-t border-gray-200">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-              Roll for Veterans 2026
+              Roll 4 Nature 2026
             </h1>
 
             {/* Subheading */}

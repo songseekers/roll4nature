@@ -141,7 +141,7 @@ export default function StatsPage() {
           </Link>
           <h1 className="text-3xl sm:text-4xl font-bold mb-2">Cycling Stats</h1>
           <p className="text-white/80 text-lg">
-            Roll for Veterans 2026 — Key West, FL to Flagstaff, AZ
+            Roll 4 Nature 2026 — Key West, FL to Flagstaff, AZ
           </p>
         </div>
       </div>

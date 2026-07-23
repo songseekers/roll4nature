@@ -33,7 +33,7 @@ export default function JournalPage() {
           {/* TITLE BLOCK */}
           <div className="mb-20 pb-12 border-b border-gray-200 dark:border-gray-700">
             <div className="text-sm font-bold text-r4v-primary uppercase tracking-widest mb-3">
-              Roll for Veterans
+              Roll 4 Nature
             </div>
             <h1 className="text-6xl sm:text-7xl font-bold text-gray-900 dark:text-white mb-5 leading-none">
               ROLLING

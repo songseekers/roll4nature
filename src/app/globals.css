@@ -15,9 +15,9 @@
 
   /* Roll 4 Nature Brand Colors */
 
-  /* Primary action — burnt orange carried over from R4V */
-  --color-r4v-primary: #C1592B;
-  --color-r4v-primary-hover: #E07B4F;
+  /* Primary action — dark brown replacing burnt orange */
+  --color-r4v-primary: #5C3317;
+  --color-r4v-primary-hover: #7A4A28;
 
   /* Light mode — sky blue, sage green, warm earth brown */
   --color-r4n-sky: #e8f4f8;
@@ -82,7 +82,7 @@ body {
   height: 32px !important;
   font-size: 24px !important;
   line-height: 32px !important;
-  color: #C1592B !important;
+  color: #5C3317 !important;
   background-color: rgba(255, 255, 255, 0.95) !important;
   border-radius: 50% !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
@@ -94,7 +94,7 @@ body {
 }
 
 .mapboxgl-popup-close-button:hover {
-  background-color: #C1592B !important;
+  background-color: #5C3317 !important;
   color: white !important;
   transform: scale(1.1) !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;

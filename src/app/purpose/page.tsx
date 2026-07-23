@@ -581,7 +581,7 @@ export default function PurposePage() {
                       className="mt-1 w-4 h-4 text-r4v-primary border-gray-300 rounded focus:ring-r4v-primary cursor-pointer"
                     />
                     <span className="text-sm text-gray-700 dark:text-gray-200">
-                      I consent to receive a follow-up SMS message from Roll for Veterans at the number provided
+                      I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided
                       to discuss potential involvement. Message and data rates may apply.
                     </span>
                   </label>

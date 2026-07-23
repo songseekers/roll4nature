@@ -35,7 +35,7 @@ export default function PathwayCards() {
             </div>
           </Link>
 
-          {/* Roll for Veterans Card */}
+          {/* Roll 4 Nature Card */}
           <Link href="/roll-for-veterans">
             <div className="group rounded-xl bg-gradient-to-br from-green-50 to-blue-50 p-8 border-2 border-green-200 hover:border-green-400 hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
               <div className="flex flex-col items-center text-center h-full justify-between">
@@ -45,7 +45,7 @@ export default function PathwayCards() {
                 {/* Content */}
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                    Roll for Veterans 2026
+                    Roll 4 Nature 2026
                   </h2>
                   <p className="text-base text-gray-700 mb-6 leading-relaxed">
                     Join our 4,463-mile cross-country bike journey from Key West to Grand Canyon, connecting with veterans in 42+ communities.

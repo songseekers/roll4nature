@@ -14,10 +14,10 @@ export default function Navigation() {
           {/* Banner Logo */}
           <Link href="/" className="flex-shrink-0 mx-auto md:mx-0">
             <Image
-              src="/images/banner.png"
+              src="/images/r4n_banner.png"
               alt="Roll 4 Nature"
-              width={400}
-              height={80}
+              width={1155}
+              height={100}
               className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
               priority
             />

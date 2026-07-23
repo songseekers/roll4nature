@@ -83,7 +83,7 @@ export default function PartnerPage() {
           <div className="mb-8">
             <Image
               src="/images/R4VLogo.png"
-              alt="Roll for Veterans Logo"
+              alt="Roll 4 Nature Logo"
               width={200}
               height={200}
               className="mx-auto object-contain"
@@ -164,7 +164,7 @@ export default function PartnerPage() {
             Support the Mission
           </h2>
           <p className="text-base text-gray-700 dark:text-gray-200 mb-4 leading-relaxed">
-            Roll for Veterans is a fundraising journey to raise awareness and support for Team Red, White &amp; Blue,
+            Roll 4 Nature is a fundraising journey to raise awareness and support for Team Red, White &amp; Blue,
             a nonprofit organization dedicated to enriching the lives of America&apos;s veterans through physical and
             social engagement. Every dollar donated goes directly to Team RWB&apos;s mission.
           </p>
@@ -175,7 +175,7 @@ export default function PartnerPage() {
           </p>
           <p className="text-base text-gray-700 dark:text-gray-200 leading-relaxed">
             <span className="font-semibold text-gray-900 dark:text-white">
-              If you&apos;re interested in partnering with Roll for Veterans directly,
+              If you&apos;re interested in partnering with Roll 4 Nature directly,
             </span>{' '}
             we would be grateful for your support. Whether it&apos;s fuel, food, equipment, or financial assistance
             for operational expenses, every contribution helps us focus on what matters most: connecting with
@@ -260,7 +260,7 @@ export default function PartnerPage() {
                   What sets Veteran Mobile apart is its mission-driven model: a minimum of 10% of profits go directly to supporting homeless veterans and veteran organizations including DAV and AMVETS. Plans are designed with flexibility in mind—pay upfront for 6 or 12 months and skip the monthly bill entirely, or choose a straightforward monthly plan. Discounted rates are available for veterans with proof of service.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Bill&apos;s personal commitment to the veteran community made him a natural fit as a Roll for Veterans partner. Veteran Mobile keeps our team connected across 4,545 miles of American road—and every signal is a reminder that the mission goes far beyond the ride.
+                  Bill&apos;s personal commitment to the veteran community made him a natural fit as a Roll 4 Nature partner. Veteran Mobile keeps our team connected across 4,545 miles of American road—and every signal is a reminder that the mission goes far beyond the ride.
                 </p>
               </div>
               <div className="flex justify-center">
@@ -311,7 +311,7 @@ export default function PartnerPage() {
                   WrapSpot is a premier commercial wrap studio founded by Garrick, a craftsman and veteran advocate who believes that quality work and community commitment go hand in hand. Specializing in fleet wraps, vehicle graphics, wall wraps, window graphics, and paint protection, WrapSpot brings brands to life using only top-tier materials from industry leaders like 3M and Avery Dennison—chosen for their color vibrancy, durability, and all-weather performance.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  Garrick and his team designed and installed all of the vehicle graphics for the Roll for Veterans mission fleet—including the bold Team RWB wrap panels on Giselle, our tribute trailer, and the full graphic treatment on Marcus, our support truck. Every mile we roll, WrapSpot&apos;s craftsmanship rides with us, turning heads and starting conversations about veteran wellness from Key West to Los Angeles.
+                  Garrick and his team designed and installed all of the vehicle graphics for the Roll 4 Nature mission fleet—including the bold Team RWB wrap panels on Giselle, our tribute trailer, and the full graphic treatment on Marcus, our support truck. Every mile we roll, WrapSpot&apos;s craftsmanship rides with us, turning heads and starting conversations about veteran wellness from Key West to Los Angeles.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Garrick&apos;s passion for veteran causes made the partnership a natural fit. WrapSpot doesn&apos;t just wrap vehicles—they wrap missions in visibility.
@@ -500,7 +500,7 @@ export default function PartnerPage() {
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="sms_consent" required className="mt-1 w-4 h-4 text-r4v-primary border-gray-300 rounded focus:ring-r4v-primary cursor-pointer" />
                     <span className="text-sm text-gray-700 dark:text-gray-200">
-                      I consent to receive a follow-up SMS message from Roll for Veterans at the number provided to discuss potential involvement. Message and data rates may apply.
+                      I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided to discuss potential involvement. Message and data rates may apply.
                     </span>
                   </label>
                 </div>

@@ -218,7 +218,7 @@ export default function PurposeJourney() {
               </div>
             ) : (
               <div className="bg-gray-50 rounded-lg p-12 text-center">
-                <p className="text-lg text-gray-600 mb-4">Select a petal to explore how Roll for Veterans 2026</p>
+                <p className="text-lg text-gray-600 mb-4">Select a petal to explore how Roll 4 Nature 2026</p>
                 <p className="text-lg text-gray-600">honors each dimension of purpose</p>
               </div>
             )}

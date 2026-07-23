@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Help Fuel the Mission | Roll for Veterans 2026',
+  title: 'Help Fuel the Mission | Roll 4 Nature 2026',
   description:
-    'Support JT and Roll for Veterans 2026 — donate via GoFundMe, PayPal, Venmo, or Cash App.',
+    'Support JT and Roll 4 Nature 2026 — donate via GoFundMe, PayPal, Venmo, or Cash App.',
 };
 
 const platforms = [

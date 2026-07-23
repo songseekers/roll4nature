@@ -16,7 +16,7 @@ export default function FlagstaffBanner() {
             <span className="text-2xl hidden sm:block flex-shrink-0">🎆</span>
             <p className="text-white font-bold text-base sm:text-lg leading-snug">
               <span className="text-xl sm:hidden mr-2">🎆</span>
-              Roll for Veterans arrives in Flagstaff on{' '}
+              Roll 4 Nature arrives in Flagstaff on{' '}
               <span className="text-yellow-300">July 4th, 2026</span> — and we invite{' '}
               <em>YOU</em> to celebrate with us!
             </p>
@@ -152,7 +152,7 @@ function FlagstaffRsvpModal({ onClose }: { onClose: () => void }) {
             id="flagstaff-modal-title"
             className="text-xl font-bold text-white text-center pr-6"
           >
-            Join Roll 4 Veterans in Flagstaff!
+            Join Roll 4 Nature in Flagstaff!
           </h2>
           <p className="text-blue-200 text-sm text-center mt-2">
             July 4th, 2026 &bull; Flagstaff, Arizona

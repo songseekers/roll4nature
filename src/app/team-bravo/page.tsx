@@ -181,7 +181,7 @@ export default function TeamBravoPage() {
                 <div className="relative h-40">
                   <Image
                     src="/images/TeamBravo/JT.PNG"
-                    alt="JT, Roll for Veterans team member and endurance cyclist"
+                    alt="JT, Roll 4 Nature team member and endurance cyclist"
                     fill
                     className="object-cover"
                   />
@@ -223,7 +223,7 @@ export default function TeamBravoPage() {
                 <div className="relative h-40">
                   <Image
                     src="/images/TeamBravo/Boogs.jpeg"
-                    alt="Boogalie Bear, Roll for Veterans expedition companion and morale officer"
+                    alt="Boogalie Bear, Roll 4 Nature expedition companion and morale officer"
                     fill
                     className="object-contain"
                   />
@@ -378,7 +378,7 @@ export default function TeamBravoPage() {
               <div className="mb-6">
                 <Image
                   src="/images/TeamBravo/JT.PNG"
-                  alt="JT, Roll for Veterans team member"
+                  alt="JT, Roll 4 Nature team member"
                   width={300}
                   height={200}
                   className="w-1/2 h-auto rounded-lg mx-auto"
@@ -560,7 +560,7 @@ export default function TeamBravoPage() {
               </div>
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  Most see JT&apos;s &ldquo;Roll for Veterans&rdquo; project through the lens of YouTube and social media. A few might actually have the rare chance to meet him in person along his odyssey. Either way, its eyes on the road—the dust, the wind, and the miles. But, behind the interface, I am a minor player. I am one of the resident Air (tech) Support team, ensuring those miles resonate.
+                  Most see JT&apos;s &ldquo;Roll 4 Nature&rdquo; project through the lens of YouTube and social media. A few might actually have the rare chance to meet him in person along his odyssey. Either way, its eyes on the road—the dust, the wind, and the miles. But, behind the interface, I am a minor player. I am one of the resident Air (tech) Support team, ensuring those miles resonate.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   I&apos;m the brother. While JT is out there dipping his tire in the Atlantic and lacing up for the 10:00 AM push, I&apos;m bum deep in the complexity that brings his vision to life. He&apos;s doing things every day that would surely be my demise, physically and mentally. I&apos;m doing things he doesn&apos;t have the time for and don&apos;t poke me in the Asperger. To me, being on the Air Support team isn&apos;t about music in the traditional sense; it&apos;s about finding the &ldquo;nucleus&rdquo; where stories, code, and souls strike a chord. Sometimes that resonance is found in Python code, and sometimes it&apos;s just the quiet reflection silence under the cedar trees.
@@ -581,7 +581,7 @@ export default function TeamBravoPage() {
                   I likely inherited the &ldquo;tech gene&rdquo; from my father—a farmer turned rocket scientist (not even kidding) who helped design the motors for the Polaris and Minuteman programs. He taught me that precision and purpose go hand-in-hand.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  For me, Roll for Veterans is a &ldquo;for-reals&rdquo; side project with a deeper frequency. It&apos;s about building a bridge. I might show traits on the autism spectrum, which means I&apos;m not always a man of many words—but when I build something, whether it&apos;s a Braille proofreading tool, an overly-complicated Rainmeter skin, or the digital hub for this mission, that is how I speak.
+                  For me, Roll 4 Nature is a &ldquo;for-reals&rdquo; side project with a deeper frequency. It&apos;s about building a bridge. I might show traits on the autism spectrum, which means I&apos;m not always a man of many words—but when I build something, whether it&apos;s a Braille proofreading tool, an overly-complicated Rainmeter skin, or the digital hub for this mission, that is how I speak.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   This project is my way of honoring veterans like my dad. Every line of code and every &ldquo;unusual tool&rdquo; I dream up for this mission is a tribute to the camaraderie JT finds at every mile marker along the way.
@@ -770,7 +770,7 @@ export default function TeamBravoPage() {
                   But service didn&apos;t stop when I took off the uniform.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  On Roll for Veterans, that same mission continues on four wheels and two feet. As Ground Crew, I&apos;m the driver, the direct support, and the logistics backbone that keeps JT rolling. I manage the schedule, coordinate the moving parts, and make sure everything — and everyone — is where they need to be. I also handle social media, turning the miles and moments of this journey into stories that connect veterans and communities across the country. Whatever needs doing, I show up and get it done. In fact, JT refers to me as Lancelot, his right hand.
+                  On Roll 4 Nature, that same mission continues on four wheels and two feet. As Ground Crew, I&apos;m the driver, the direct support, and the logistics backbone that keeps JT rolling. I manage the schedule, coordinate the moving parts, and make sure everything — and everyone — is where they need to be. I also handle social media, turning the miles and moments of this journey into stories that connect veterans and communities across the country. Whatever needs doing, I show up and get it done. In fact, JT refers to me as Lancelot, his right hand.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   Today, I continue the mission through food, connection, and presence.
@@ -779,7 +779,7 @@ export default function TeamBravoPage() {
                   As a chef, I believe food is more than fuel — it&apos;s comfort, it&apos;s community, it&apos;s healing. As a coach, I believe in meeting people where they are and helping them find strength in their own journey. And as a nomad, I live what I teach — growth, resilience, and purpose through experience.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  Being part of Roll 4 Veterans isn&apos;t just about support — it&apos;s about showing up. It&apos;s about standing beside those still fighting silent battles and reminding them they&apos;re not alone.
+                  Being part of Roll 4 Nature isn&apos;t just about support — it&apos;s about showing up. It&apos;s about standing beside those still fighting silent battles and reminding them they&apos;re not alone.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   Every meal I cook, every mile we support, every conversation we have — it all comes back to one thing: Service.
@@ -1001,7 +1001,7 @@ export default function TeamBravoPage() {
                       className="mt-1 w-4 h-4 text-r4v-primary border-gray-300 rounded focus:ring-r4v-primary cursor-pointer"
                     />
                     <span className="text-sm text-gray-700 dark:text-gray-200">
-                      I consent to receive a follow-up SMS message from Roll for Veterans at the number provided to discuss potential involvement. Message and data rates may apply.
+                      I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided to discuss potential involvement. Message and data rates may apply.
                     </span>
                   </label>
                 </div>

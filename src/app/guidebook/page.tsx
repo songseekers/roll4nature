@@ -67,7 +67,7 @@ export default function GuidebookPage() {
           </p>
 
           <h3 className="text-2xl font-bold text-gray-900 mb-3">
-            Living Purpose on Roll for Veterans 2026
+            Living Purpose on Roll 4 Nature 2026
           </h3>
 
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">

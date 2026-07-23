@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Button from '@/components/ui/Button';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Roll for Veterans 2026',
-  description: 'Privacy policy for Roll for Veterans 2026 — how we collect, use, and protect your information.',
+  title: 'Privacy Policy | Roll 4 Nature 2026',
+  description: 'Privacy policy for Roll 4 Nature 2026 — how we collect, use, and protect your information.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
               1. Introduction
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
-              Roll for Veterans 2026 is operated by JT Tracy. This privacy policy explains how we collect, use, and protect your information when you visit our website and use our services.
+              Roll 4 Nature 2026 is operated by JT Tracy. This privacy policy explains how we collect, use, and protect your information when you visit our website and use our services.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               If you have questions about this policy, please contact us at{' '}

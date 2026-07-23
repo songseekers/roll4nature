@@ -37,7 +37,7 @@ export default function JournalSidebar({ states }: { states: StateNav[] }) {
   return (
     <aside className="hidden lg:flex flex-col w-72 min-w-72 h-[calc(100vh-64px)] sticky top-16 overflow-y-auto bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800">
       <div className="p-5 border-b border-gray-200 dark:border-gray-800">
-        <div className="text-xs font-bold text-r4v-primary uppercase tracking-widest mb-1">Roll for Veterans</div>
+        <div className="text-xs font-bold text-r4v-primary uppercase tracking-widest mb-1">Roll 4 Nature</div>
         <div className="text-base font-semibold text-gray-700 dark:text-gray-200">ROLLING</div>
       </div>
       <nav className="p-4 flex-1">

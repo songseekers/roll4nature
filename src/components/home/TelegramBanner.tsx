@@ -249,7 +249,7 @@ export default function TelegramBanner() {
   const s = isDark ? dark : light;
 
   return (
-    <section aria-label="Message from Roll for Veterans">
+    <section aria-label="Message from Roll 4 Nature">
       <div style={s.outer}>
 
         {/* Texture layers */}
@@ -263,7 +263,7 @@ export default function TelegramBanner() {
         <div style={{ position: 'relative', zIndex: 4 }}>
 
           {/* Header */}
-          <div style={s.header}>ROLL 4 VETERANS TELEGRAM</div>
+          <div style={s.header}>ROLL 4 NATURE TELEGRAM</div>
 
           {/* Meta row */}
           <div style={s.meta}>
@@ -281,7 +281,7 @@ export default function TelegramBanner() {
             {/* FROM */}
             <div style={row}>
               <span style={s.label}>FROM:</span>
-              <span style={s.value}>ROLL 4 VETERANS</span>
+              <span style={s.value}>ROLL 4 NATURE</span>
             </div>
 
             {/* TO */}

@@ -88,12 +88,12 @@ const sendEmail = async (applicationData: ApplicationData) => {
 
   try {
     const { error } = await resend.emails.send({
-      from: 'Roll for Veterans <onboarding@resend.dev>',
+      from: 'Roll 4 Nature <onboarding@resend.dev>',
       to: recipientEmail,
       subject: `New Purpose Coaching Application from ${applicationData.fullName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <div style="background: linear-gradient(to right, #C1592B, #8B4513); padding: 20px; border-radius: 8px 8px 0 0;">
+          <div style="background: linear-gradient(to right, #5C3317, #8B4513); padding: 20px; border-radius: 8px 8px 0 0;">
             <h1 style="color: white; margin: 0; font-size: 24px;">New Purpose Coaching Application</h1>
           </div>
           <div style="background: #f9f9f9; padding: 24px; border: 1px solid #ddd; border-radius: 0 0 8px 8px;">

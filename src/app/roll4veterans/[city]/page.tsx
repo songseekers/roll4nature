@@ -25,8 +25,8 @@ export function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${city.name}, ${city.state} | Roll for Veterans 2026`,
-    description: `Join the Roll for Veterans on Day ${city.dayNumber} in ${city.name}. Population: ${city.population.toLocaleString()}. Team RWB chapter information and signup form included.`,
+    title: `${city.name}, ${city.state} | Roll 4 Nature 2026`,
+    description: `Join the Roll 4 Nature on Day ${city.dayNumber} in ${city.name}. Population: ${city.population.toLocaleString()}. Team RWB chapter information and signup form included.`,
   };
 }
 
@@ -74,7 +74,7 @@ export default function CityPage({ params }: Props) {
           </p>
 
           <p className="text-blue-50 text-lg max-w-2xl">
-            {city.description || `Join us for Day ${city.dayNumber} of the Roll for Veterans journey in ${city.name}, ${city.state}.`}
+            {city.description || `Join us for Day ${city.dayNumber} of the Roll 4 Nature journey in ${city.name}, ${city.state}.`}
           </p>
         </div>
       </div>
