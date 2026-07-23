@@ -12,7 +12,6 @@ mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 export type MapLayer = 'overview' | 'major' | 'all';
 
-// TODO: Consider driving completed segment from live GPS data in a future update
 function getRouteSegments(): { completed: number[][], remaining: number[][] } {
   const sortedCities = getAllCities().sort((a, b) => a.dayNumber - b.dayNumber);
   const allCoords = sortedCities.map((c) => c.coordinates as number[]);
@@ -282,61 +281,6 @@ export default function RouteMap() {
     });
   }, [layer, isLoading]);
 
-  // ─── Route completed watermark overlay ───────────────────────
-  const routeCompletedOverlay = (
-    <div
-      aria-label="Route status: completed"
-      style={{
-        position: 'absolute',
-        inset: 0,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        pointerEvents: 'none',
-        zIndex: 10,
-      }}
-    >
-      <div
-        style={{
-          transform: 'rotate(-25deg)',
-          textAlign: 'center',
-          userSelect: 'none',
-        }}
-      >
-        <div
-          style={{
-            fontFamily: "'Courier New', Courier, monospace",
-            fontSize: 'clamp(18px, 4vw, 32px)',
-            fontWeight: '900',
-            letterSpacing: '4px',
-            color: 'rgba(139, 69, 19, 0.82)',
-            border: '4px solid rgba(139, 69, 19, 0.70)',
-            padding: '6px 20px',
-            borderRadius: '4px',
-            lineHeight: '1.4',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          ROUTE COMPLETED<br />
-          1 JULY 2026
-        </div>
-        <div
-          style={{
-            fontFamily: "'Courier New', Courier, monospace",
-            fontSize: 'clamp(11px, 2vw, 16px)',
-            fontWeight: '700',
-            letterSpacing: '3px',
-            color: 'rgba(139, 69, 19, 0.70)',
-            marginTop: '6px',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          STAY TUNED FOR NEW ROUTE SOON
-        </div>
-      </div>
-    </div>
-  );
-
   const toggleButton = (
     <button
       onClick={() => setIsFullscreen((prev) => !prev)}
@@ -391,7 +335,6 @@ export default function RouteMap() {
           }
         />
         {toggleButton}
-        {routeCompletedOverlay}
 
         {isLoading && (
           <div className={`absolute inset-0 bg-black/20 flex items-center justify-center${isFullscreen ? '' : ' rounded-lg'}`}>
