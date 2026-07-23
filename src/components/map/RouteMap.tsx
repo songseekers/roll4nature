@@ -11,31 +11,23 @@ import MapControls from './MapControls';
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 export type MapLayer = 'overview' | 'major' | 'all';
+export type RouteKey = 'c2c2c' | 'mse';
 
-function getRouteSegments(): { completed: number[][], remaining: number[][] } {
-  const sortedCities = getAllCities().sort((a, b) => a.dayNumber - b.dayNumber);
-  const allCoords = sortedCities.map((c) => c.coordinates as number[]);
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
+const ROUTE_COLORS: Record<RouteKey, string> = {
+  c2c2c: '#C1592B',
+  mse: '#4a7c59',
+};
 
-  if (today >= '2026-06-23') {
-    return { completed: allCoords, remaining: [] };
-  }
+const ROUTE_LABELS: Record<City['route'], string> = {
+  c2c2c: 'Coast to Coast to Canyon',
+  mse: 'Mountain States Exploration',
+  both: 'Coast to Coast to Canyon → Mountain States Exploration',
+};
 
-  let cutoffIndex = -1;
-  for (let i = 0; i < sortedCities.length; i++) {
-    if (sortedCities[i].arrivalDate <= today) {
-      cutoffIndex = i;
-    }
-  }
-
-  if (cutoffIndex === -1) {
-    return { completed: [], remaining: allCoords };
-  }
-
-  return {
-    completed: allCoords.slice(0, cutoffIndex + 1),
-    remaining: allCoords.slice(cutoffIndex),
-  };
+function citiesForRoute(route: RouteKey): City[] {
+  return getAllCities()
+    .filter((c) => c.route === route || c.route === 'both')
+    .sort((a, b) => a.dayNumber - b.dayNumber);
 }
 
 export default function RouteMap() {
@@ -44,6 +36,7 @@ export default function RouteMap() {
   const markersRef = useRef<mapboxgl.Marker[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [layer, setLayer] = useState<MapLayer>('major');
+  const [selectedRoute, setSelectedRoute] = useState<RouteKey>('mse');
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const popupRef = useRef<mapboxgl.Popup | null>(null);
@@ -79,59 +72,48 @@ export default function RouteMap() {
     map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
     map.current.on('load', () => {
-      const { completed, remaining } = getRouteSegments();
+      const c2c2cCoords = citiesForRoute('c2c2c').map((c) => c.coordinates as number[]);
+      const mseCoords = citiesForRoute('mse').map((c) => c.coordinates as number[]);
 
-      map.current?.addSource('route-remaining', {
+      map.current?.addSource('route-c2c2c', {
         type: 'geojson',
         data: {
           type: 'Feature',
-          geometry: { type: 'LineString', coordinates: remaining },
+          geometry: { type: 'LineString', coordinates: c2c2cCoords },
           properties: {},
         },
       });
 
-      map.current?.addSource('route-completed', {
+      map.current?.addSource('route-mse', {
         type: 'geojson',
         data: {
           type: 'Feature',
-          geometry: { type: 'LineString', coordinates: completed },
+          geometry: { type: 'LineString', coordinates: mseCoords },
           properties: {},
         },
       });
 
       map.current?.addLayer({
-        id: 'route-line-completed',
+        id: 'route-line-c2c2c',
         type: 'line',
-        source: 'route-completed',
+        source: 'route-c2c2c',
         paint: {
-          'line-color': '#6B7280',
+          'line-color': ROUTE_COLORS.c2c2c,
           'line-width': 4,
-          'line-opacity': 0.8,
+          'line-opacity': 0.3,
         },
       });
 
       map.current?.addLayer({
-        id: 'route-line-remaining',
+        id: 'route-line-mse',
         type: 'line',
-        source: 'route-remaining',
+        source: 'route-mse',
         paint: {
-          'line-color': '#C1592B',
+          'line-color': ROUTE_COLORS.mse,
           'line-width': 4,
-          'line-opacity': 0.8,
+          'line-opacity': 1,
         },
       });
-
-      const allCities = getAllCities();
-      if (allCities.length > 0) {
-        const bounds = new mapboxgl.LngLatBounds();
-        allCities.forEach((city) => {
-          bounds.extend(city.coordinates);
-        });
-        map.current?.fitBounds(bounds, {
-          padding: { top: 10, bottom: 10, left: 10, right: 10 },
-          duration: 0,
-        });
-      }
 
       setIsLoading(false);
     });
@@ -144,6 +126,28 @@ export default function RouteMap() {
     };
   }, []);
 
+  // Selected route drives line opacity and which route the map is framed on.
+  useEffect(() => {
+    if (!map.current || isLoading) return;
+
+    (['c2c2c', 'mse'] as RouteKey[]).forEach((route) => {
+      const layerId = `route-line-${route}`;
+      if (map.current?.getLayer(layerId)) {
+        map.current.setPaintProperty(layerId, 'line-opacity', route === selectedRoute ? 1 : 0.3);
+      }
+    });
+
+    const targetCities = citiesForRoute(selectedRoute);
+    if (targetCities.length > 0) {
+      const bounds = new mapboxgl.LngLatBounds();
+      targetCities.forEach((city) => bounds.extend(city.coordinates));
+      map.current.fitBounds(bounds, {
+        padding: { top: 40, bottom: 40, left: 40, right: 40 },
+        duration: 800,
+      });
+    }
+  }, [selectedRoute, isLoading]);
+
   useEffect(() => {
     if (!map.current || isLoading) return;
 
@@ -153,7 +157,7 @@ export default function RouteMap() {
     let citiesToShow: City[] = [];
     if (layer === 'overview') {
       citiesToShow = getAllCities().filter((city) =>
-        ['key-west', 'flagstaff'].includes(city.slug)
+        ['key-west', 'flagstaff', 'rigby'].includes(city.slug)
       );
     } else if (layer === 'major') {
       citiesToShow = getMajorCities();
@@ -167,6 +171,15 @@ export default function RouteMap() {
       const isMajor = city.tier === 'major';
       const isPast = city.arrivalDate <= today;
 
+      const markerColor = isPast
+        ? '#6B7280'
+        : city.route === 'both'
+        ? ROUTE_COLORS[selectedRoute]
+        : ROUTE_COLORS[city.route];
+
+      const matchesSelectedRoute = city.route === 'both' || city.route === selectedRoute;
+      const markerOpacity = matchesSelectedRoute ? 1 : 0.3;
+
       const el = document.createElement('div');
       el.className = 'city-marker';
       const markerSize = isMajor ? 16 : 12;
@@ -174,7 +187,8 @@ export default function RouteMap() {
 
       el.style.width = markerSize + 'px';
       el.style.height = markerSize + 'px';
-      el.style.backgroundColor = isPast ? '#6B7280' : (isMajor ? '#8B4513' : '#C1592B');
+      el.style.backgroundColor = markerColor;
+      el.style.opacity = String(markerOpacity);
       el.style.border = `${borderWidth}px solid white`;
       el.style.borderRadius = '50%';
       el.style.cursor = 'pointer';
@@ -206,7 +220,7 @@ export default function RouteMap() {
               <strong style="color: #C1592B;">Day:</strong> ${city.dayNumber}
             </div>
             <div>
-              <strong style="color: #C1592B;">Distance from start:</strong> ${city.distanceFromStart} miles
+              <strong style="color: #C1592B;">Route:</strong> ${ROUTE_LABELS[city.route]}
             </div>
           </div>
         `;
@@ -248,7 +262,7 @@ export default function RouteMap() {
             </h3>
             <div style="font-size: 15px; color: #1F2937;">
               <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Day ${city.dayNumber}:</strong> ${new Date(city.arrivalDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
-              <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Distance from start:</strong> ${city.distanceFromStart} miles</div>
+              <div style="margin-bottom: 4px;"><strong style="color: #C1592B;">Route:</strong> ${ROUTE_LABELS[city.route]}</div>
               ${city.rwbChapter ? `
                 <div style="margin-top: 8px; padding: 8px; background-color: #E8C9A1; border-radius: 4px; font-size: 14px; border: 1px solid #C1592B;">
                   <strong style="color: #8B4513;">Team RWB:</strong><br/>
@@ -279,7 +293,7 @@ export default function RouteMap() {
 
       markersRef.current.push(marker);
     });
-  }, [layer, isLoading]);
+  }, [layer, isLoading, selectedRoute]);
 
   const toggleButton = (
     <button
@@ -291,24 +305,49 @@ export default function RouteMap() {
     </button>
   );
 
+  const routeToggle = (
+    <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto mb-4">
+      <button
+        onClick={() => setSelectedRoute('c2c2c')}
+        aria-pressed={selectedRoute === 'c2c2c'}
+        className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap border-2 cursor-pointer ${
+          selectedRoute === 'c2c2c'
+            ? 'bg-r4v-primary border-r4v-primary text-white shadow-md'
+            : 'bg-transparent border-r4v-primary/30 text-r4v-primary/50 dark:text-r4v-primary-hover/60 hover:border-r4v-primary hover:text-r4v-primary'
+        }`}
+      >
+        Coast to Coast to Canyon
+      </button>
+      <button
+        onClick={() => setSelectedRoute('mse')}
+        aria-pressed={selectedRoute === 'mse'}
+        className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap border-2 cursor-pointer ${
+          selectedRoute === 'mse'
+            ? 'bg-r4n-sage border-r4n-sage text-white shadow-md'
+            : 'bg-transparent border-r4n-sage/30 text-r4n-sage/50 hover:border-r4n-sage hover:text-r4n-sage'
+        }`}
+      >
+        Mountain States Exploration
+      </button>
+    </div>
+  );
+
   const legend = (
     <div className="mt-4 bg-gray-50 dark:bg-gray-900 rounded-lg p-3 transition-colors max-w-3xl mx-auto">
       <h3 className="font-bold text-gray-900 dark:text-white mb-3">Map Legend</h3>
       <div className="flex flex-wrap items-center gap-6 text-sm">
         <div className="flex items-center space-x-2">
-          <div className="w-5 h-5 rounded-full bg-[#8B4513] border-[3px] border-white"></div>
-          <span className="text-gray-700 dark:text-gray-300">Planned Stops</span>
+          <div className="w-5 h-5 rounded-full bg-[#6B7280] border-[3px] border-white"></div>
+          <span className="text-gray-700 dark:text-gray-300">Visited</span>
         </div>
         <div className="flex items-center space-x-2">
           <div className="h-1 w-8 bg-[#C1592B] rounded"></div>
-          <span className="text-gray-700 dark:text-gray-300">Miles Remaining</span>
+          <span className="text-gray-700 dark:text-gray-300">Coast to Coast to Canyon</span>
         </div>
-        {new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }) >= '2026-02-27' && (
-          <div className="flex items-center space-x-2">
-            <div className="h-1 w-8 bg-[#6B7280] rounded"></div>
-            <span className="text-gray-700 dark:text-gray-300">Miles Completed</span>
-          </div>
-        )}
+        <div className="flex items-center space-x-2">
+          <div className="h-1 w-8 bg-[#4a7c59] rounded"></div>
+          <span className="text-gray-700 dark:text-gray-300">Mountain States Exploration</span>
+        </div>
       </div>
     </div>
   );
@@ -322,6 +361,7 @@ export default function RouteMap() {
       }
     >
       <MapControls layer={layer} onLayerChange={setLayer} />
+      {routeToggle}
 
       <div className={isFullscreen
         ? 'relative flex-1 min-h-0'

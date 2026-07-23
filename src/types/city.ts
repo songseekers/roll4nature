@@ -19,6 +19,7 @@ export interface City {
   description?: string;                         // For city landing pages
   slug: string;                                 // 'austin' for URL routing
   imageUrl?: string;                            // Optional city image
+  route: 'c2c2c' | 'mse' | 'both';              // Coast to Coast to Canyon / Mountain States Exploration
 }
 
 export interface RouteSegment {

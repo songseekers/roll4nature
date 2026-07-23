@@ -11,12 +11,12 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
     {
       label: 'Overview',
       value: 'overview',
-      description: 'Key West → LA → Flagstaff',
+      description: 'Key West → Flagstaff → Rigby',
     },
     {
       label: 'Planned Stops',
       value: 'major',
-      description: '48 communities on our route',
+      description: '78 communities on our route',
     },
   ];
 
