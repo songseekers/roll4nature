@@ -17,14 +17,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Roll for Veterans 2026 | Bike Ride for Team RWB",
-  description: "Join us on an epic cross-country journey from Key West to the Grand Canyon supporting Team RWB veterans organization. 4,545 miles of stories, community, and gratitude.",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://songseekers.org"),
+  title: "Roll 4 Nature | Get Outside. Answers Are Found Outdoors.",
+  description: "Roll 4 Nature is a veteran-founded, purpose-driven outdoor community. Get outside, discover purpose in nature, and become who you were meant to be.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://roll4nature.org"),
   openGraph: {
-    title: "Roll for Veterans 2026",
-    description: "Cross-country bike ride supporting Team RWB",
-    url: "https://songseekers.org",
-    siteName: "Roll for Veterans",
+    title: "Roll 4 Nature",
+    description: "Get Outside. Answers Are Found Outdoors. Discover Purpose in Nature.",
+    url: "https://roll4nature.org",
+    siteName: "Roll 4 Nature",
     images: [
       {
         url: "/og-image.jpg",
@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-r4n-forest text-gray-900 dark:text-r4n-warm-cream`}
         suppressHydrationWarning
       >
         <Navigation />

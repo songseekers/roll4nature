@@ -13,21 +13,46 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* R4V Brand Colors */
+  /* Roll 4 Nature Brand Colors */
+
+  /* Primary action — burnt orange carried over from R4V */
   --color-r4v-primary: #C1592B;
   --color-r4v-primary-hover: #E07B4F;
-  --color-r4v-secondary: #8B4513;
-  --color-r4v-secondary-hover: #A0522D;
-  --color-r4v-tan: #E8C9A1;
-  --color-r4v-tan-hover: #d4b78a;
-  --color-r4v-tan-dark: #D4A574;
-  --color-r4v-tan-dark-hover: #c49464;
-  --color-r4v-cream: #FDF6EC;
+
+  /* Light mode — sky blue, sage green, warm earth brown */
+  --color-r4n-sky: #e8f4f8;
+  --color-r4n-sky-dark: #b8dce8;
+  --color-r4n-sage: #4a7c59;
+  --color-r4n-sage-hover: #5a9c6e;
+  --color-r4n-sage-light: #d4e8d8;
+  --color-r4n-earth: #8b6914;
+  --color-r4n-earth-hover: #a07820;
+  --color-r4n-earth-light: #f5edd8;
+  --color-r4n-stone: #6b7c6b;
+  --color-r4n-cream: #f8faf5;
+
+  /* Dark mode — deep forest, charcoal, warm cream */
+  --color-r4n-forest: #1a2e1a;
+  --color-r4n-forest-mid: #2d4a2d;
+  --color-r4n-forest-light: #3d6040;
+  --color-r4n-charcoal: #1c1c1c;
+  --color-r4n-charcoal-mid: #2a2a2a;
+  --color-r4n-warm-cream: #f0ebe0;
+  --color-r4n-warm-cream-dim: #c8c0a8;
+
+  /* Legacy aliases so existing components don't break */
+  --color-r4v-secondary: #4a7c59;
+  --color-r4v-secondary-hover: #5a9c6e;
+  --color-r4v-tan: #d4e8d8;
+  --color-r4v-tan-hover: #b8d4bc;
+  --color-r4v-tan-dark: #8b6914;
+  --color-r4v-tan-dark-hover: #a07820;
+  --color-r4v-cream: #f8faf5;
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #1a2e1a;
+  --foreground: #f0ebe0;
 }
 
 body {

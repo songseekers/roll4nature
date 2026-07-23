@@ -6,15 +6,16 @@ import Image from 'next/image';
 
 export default function Navigation() {
   return (
-    <nav className="fixed top-0 z-50 w-full bg-gray-900 shadow-md">
+    <nav className="fixed top-0 z-50 w-full bg-r4n-forest dark:bg-r4n-charcoal shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile: Vertical Stack | Desktop: Horizontal */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 md:py-0 md:h-20 gap-3 md:gap-0">
+
           {/* Banner Logo */}
           <Link href="/" className="flex-shrink-0 mx-auto md:mx-0">
             <Image
               src="/images/banner.png"
-              alt="Roll for Veterans"
+              alt="Roll 4 Nature"
               width={400}
               height={80}
               className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
@@ -22,36 +23,34 @@ export default function Navigation() {
             />
           </Link>
 
-          {/* Navigation Links - Always visible */}
+          {/* Navigation Links */}
           <div className="flex flex-row justify-center md:justify-end items-center space-x-2 md:space-x-4">
-            <Link href="/" className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base">
+            <Link href="/" className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base">
               Home
             </Link>
-            <a
-              href="/resources/R4V_Story_v9.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
+            <Link
+              href="/roll-for-veterans"
+              className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
             >
-              R4V Story
-            </a>
+              R4V 2026
+            </Link>
             <Link
               href="/journal"
               aria-label="Read JT's Rolling Journal"
-              className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
+              className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
             >
-              JT&apos;s Journal
+              Journal
             </Link>
-            <a
+            <Link
               href="/purpose"
-              className="text-gray-300 hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
+              className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
             >
               The Path
-            </a>
+            </Link>
             <Button
               variant="primary"
               size="sm"
-              href="/donate"
+              href="https://gofund.me/fdff623ca"
               className="px-3 md:px-4 py-2.5 text-sm md:text-base font-semibold leading-tight"
             >
               <span>DONATE</span>
