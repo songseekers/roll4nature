@@ -5,7 +5,6 @@ import Link from 'next/link';
 import activitiesData from '@/data/activities.json';
 import eventsJson from '@/data/countdownEvents.json';
 
-// Total miles from activities data (computed once at module level)
 const totalMilesCycled = (activitiesData as { distance: number }[]).reduce(
   (sum, a) => sum + (a as { distance: number }).distance,
   0
@@ -34,10 +33,8 @@ interface CountdownEvent {
   midnightTime: number;
 }
 
-// Count-UP from February 27, 2026 at 10:00 AM local time
 const START_TIME = new Date('2026-02-27T10:00:00').getTime();
 
-// Build typed events array from JSON — compute timestamps once at module level
 const EVENTS: CountdownEvent[] = (
   eventsJson.events as {
     city: string;
@@ -54,9 +51,6 @@ const EVENTS: CountdownEvent[] = (
   }[]
 ).map((e) => {
   const eventTime = new Date(e.isoDateTime).getTime();
-  // expiryTime: exact ISO datetime to switch to next event (e.g. "2026-05-02T11:45:00")
-  // expiryDays: days until midnight expiry (1 = midnight same day, 2 = midnight next day)
-  // default: midnight of arrival day
   let midnightTime: number;
   if (e.expiryTime) {
     midnightTime = new Date(e.expiryTime).getTime();
@@ -91,26 +85,27 @@ function calcCountdown(to: number): TimerTime & { isOver: boolean } {
   };
 }
 
+// Tan on brown — all timer numbers and labels
 function TimerBlock({ value, label }: { value: number | null; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-3xl md:text-4xl font-bold font-mono text-r4n-grass">
+      <span className="text-3xl md:text-4xl font-bold font-mono text-r4n-tan">
         {value !== null ? String(value).padStart(2, '0') : '--'}
       </span>
-      <span className="text-xs uppercase tracking-wide text-r4n-grass-light">{label}</span>
+      <span className="text-xs uppercase tracking-wide text-r4n-tan-dark">{label}</span>
     </div>
   );
 }
 
 function Divider() {
-  return <span className="text-2xl font-bold text-r4n-grass-light/70 self-start pt-1">|</span>;
+  return <span className="text-2xl font-bold text-r4n-tan-dark/60 self-start pt-1">|</span>;
 }
 
 function SectionSeparator() {
   return (
     <>
-      <div className="hidden md:block w-px h-16 bg-r4n-tan/30" />
-      <div className="block md:hidden w-24 h-px bg-r4n-tan/30" />
+      <div className="hidden md:block w-px h-16 bg-r4n-tan/20" />
+      <div className="block md:hidden w-24 h-px bg-r4n-tan/20" />
     </>
   );
 }
@@ -126,7 +121,6 @@ export default function CountdownTimer() {
       const now = Date.now();
       setElapsed(calcElapsed(START_TIME));
 
-      // Priority 1: show expiration message for a recently-passed event (until midnight of the next day)
       const recentlyPassed = EVENTS.find((e) => e.eventTime <= now && e.midnightTime > now);
       if (recentlyPassed) {
         setActiveEvent(recentlyPassed);
@@ -135,7 +129,6 @@ export default function CountdownTimer() {
         return;
       }
 
-      // Priority 2: count down to the next upcoming event
       const upcoming = EVENTS.find((e) => e.eventTime > now);
       setActiveEvent(upcoming);
       if (upcoming) {
@@ -153,10 +146,13 @@ export default function CountdownTimer() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+    <div
+      style={{ backgroundColor: '#5C3317', borderRadius: '12px', padding: '32px' }}
+      className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12"
+    >
       {/* Count-UP: time since Key West */}
       <div className="flex flex-col items-center gap-2">
-        <p className="text-lg font-semibold text-r4n-grass text-center">
+        <p className="text-lg font-semibold text-r4n-tan text-center">
           Time on The Path
         </p>
         <div className="flex items-center gap-2">
@@ -172,23 +168,23 @@ export default function CountdownTimer() {
 
       <SectionSeparator />
 
-      {/* Miles Cycled — links to /stats */}
+      {/* Miles Cycled */}
       <Link href="/stats" className="flex flex-col items-center gap-1 group cursor-pointer">
-        <p className="text-lg font-semibold text-r4n-grass text-center">
+        <p className="text-lg font-semibold text-r4n-tan text-center">
           Miles Cycled
         </p>
         <div className="flex flex-col items-center transition-transform group-hover:-translate-y-0.5">
-          <span className="text-2xl md:text-3xl font-bold font-mono text-r4n-grass border-b border-r4n-grass pb-0.5">
+          <span className="text-2xl md:text-3xl font-bold font-mono text-r4n-tan border-b border-r4n-tan-dark pb-0.5">
             {totalMilesCycled.toFixed(1)}
           </span>
-          <span className="text-[10px] uppercase tracking-wide text-r4n-grass-light">miles</span>
+          <span className="text-[10px] uppercase tracking-wide text-r4n-tan-dark">miles</span>
         </div>
         <div className="flex items-center gap-1 mt-1">
-          <span className="text-sm font-semibold text-r4n-grass-light group-hover:underline transition-all">
+          <span className="text-sm font-semibold text-r4n-tan-dark group-hover:underline transition-all">
             Click
           </span>
-          <span className="text-r4n-grass-light text-base leading-none">↑</span>
-          <span className="text-sm font-semibold text-r4n-grass-light group-hover:underline transition-all">
+          <span className="text-r4n-tan-dark text-base leading-none">↑</span>
+          <span className="text-sm font-semibold text-r4n-tan-dark group-hover:underline transition-all">
             to see stats
           </span>
         </div>
@@ -198,19 +194,17 @@ export default function CountdownTimer() {
 
       {/* Next event countdown or expiration message */}
       <div className="flex flex-col items-center gap-2">
-        {/* Header — matches "Time on The Path" and "Miles Cycled" style */}
-        <p className="text-lg font-semibold text-r4n-grass text-center">
+        <p className="text-lg font-semibold text-r4n-tan text-center">
           What&apos;s Next
         </p>
         {activeEvent ? (
           showExpiration ? (
-            // Post-event: show expiration message until midnight
             <>
-              <p className="text-sm font-semibold text-r4n-grass text-center">
+              <p className="text-sm font-semibold text-r4n-tan text-center">
                 {activeEvent.expirationMessage}
               </p>
               {activeEvent.expirationLine2 && (
-                <p className="text-sm font-semibold text-r4n-grass-light text-center">
+                <p className="text-sm font-semibold text-r4n-tan-dark text-center">
                   {activeEvent.expirationLine2}
                 </p>
               )}
@@ -220,22 +214,20 @@ export default function CountdownTimer() {
                     href={activeEvent.expirationLine3}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4n-grass text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-r4n-tan text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     📍 View on Maps
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-r4n-grass-light text-center">
+                  <p className="text-sm font-semibold text-r4n-tan-dark text-center">
                     {activeEvent.expirationLine3}
                   </p>
                 )
               )}
             </>
           ) : (
-            // Pre-event: show countdown
             <>
-              {/* Event label — primary info, matches Miles Cycled value style */}
-              <p className="text-sm font-semibold text-r4n-grass text-center">
+              <p className="text-sm font-semibold text-r4n-tan text-center">
                 {activeEvent.label}
               </p>
               {activeEvent.location && activeEvent.location !== 'TBD' && (
@@ -244,12 +236,12 @@ export default function CountdownTimer() {
                     href={activeEvent.locationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4n-grass-light text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-r4n-tan-dark text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     📍 {activeEvent.location}
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-r4n-grass-light text-center">
+                  <p className="text-sm font-semibold text-r4n-tan-dark text-center">
                     {activeEvent.location}
                   </p>
                 )
@@ -260,12 +252,12 @@ export default function CountdownTimer() {
                     href={activeEvent.locationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4n-grass-light text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-r4n-tan-dark text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     {activeEvent.locationAddress}
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-r4n-grass-light text-center">
+                  <p className="text-sm font-semibold text-r4n-tan-dark text-center">
                     {activeEvent.locationAddress}
                   </p>
                 )
@@ -282,7 +274,7 @@ export default function CountdownTimer() {
             </>
           )
         ) : (
-          <p className="text-sm font-semibold text-r4n-grass text-center">
+          <p className="text-sm font-semibold text-r4n-tan text-center">
             Stay tuned for the next stop!
           </p>
         )}
