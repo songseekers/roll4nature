@@ -3,6 +3,13 @@
 import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
+// Tan palette used on brown containers
+const TAN = '#E8D0B0';        // light tan — headings and numbers
+const TAN_DIM = '#D4B896';    // medium tan — body text
+const BROWN = '#5C3317';      // dark brown — container background
+const BROWN_MID = '#3d2010';  // darker brown — button background
+const TAN_BORDER = 'rgba(232,208,176,0.25)';
+
 export default function MissionStatement() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors">
@@ -33,27 +40,33 @@ export default function MissionStatement() {
             </Button>
           </div>
 
-          {/* Right: Team RWB Impact — brown container, grass green numbers, tan text */}
-          <div style={{ backgroundColor: '#5C3317', borderRadius: '8px', padding: '32px', border: '1px solid rgba(212,184,150,0.3)', boxShadow: '0 4px 16px rgba(0,0,0,0.2)' }}>
-            <h3 style={{ fontSize: '28px', fontWeight: '700', color: '#D4B896', textAlign: 'center', marginBottom: '24px' }}>
+          {/* Right: Team RWB Impact — brown container, tan text throughout */}
+          <div style={{
+            backgroundColor: BROWN,
+            borderRadius: '8px',
+            padding: '32px',
+            border: `1px solid ${TAN_BORDER}`,
+            boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+          }}>
+            <h3 style={{ fontSize: '28px', fontWeight: '700', color: TAN, textAlign: 'center', marginBottom: '24px' }}>
               Team RWB Impact
             </h3>
 
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px' }}>
 
-              {/* Statistics */}
+              {/* Statistics — tan numbers, dimmer tan labels */}
               <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#7AB648', marginBottom: '4px' }}>300,000+</div>
-                  <p style={{ fontSize: '16px', color: '#D4B896' }}>Members and supporters</p>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: TAN, marginBottom: '4px' }}>300,000+</div>
+                  <p style={{ fontSize: '16px', color: TAN_DIM }}>Members and supporters</p>
                 </div>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#7AB648', marginBottom: '4px' }}>173,768</div>
-                  <p style={{ fontSize: '16px', color: '#D4B896' }}>Event check-ins in 2025</p>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: TAN, marginBottom: '4px' }}>173,768</div>
+                  <p style={{ fontSize: '16px', color: TAN_DIM }}>Event check-ins in 2025</p>
                 </div>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#7AB648', marginBottom: '4px' }}>18,490</div>
-                  <p style={{ fontSize: '16px', color: '#D4B896' }}>Total events nationwide</p>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: TAN, marginBottom: '4px' }}>18,490</div>
+                  <p style={{ fontSize: '16px', color: TAN_DIM }}>Total events nationwide</p>
                 </div>
               </div>
 
@@ -69,7 +82,7 @@ export default function MissionStatement() {
               </div>
             </div>
 
-            <div style={{ marginTop: '24px', paddingTop: '24px', borderTop: '1px solid rgba(212,184,150,0.2)' }}>
+            <div style={{ marginTop: '24px', paddingTop: '24px', borderTop: `1px solid ${TAN_BORDER}` }}>
               <a
                 href="https://members.teamrwb.org/registration"
                 target="_blank"
@@ -79,13 +92,12 @@ export default function MissionStatement() {
                   width: '100%',
                   textAlign: 'center',
                   padding: '12px 24px',
-                  backgroundColor: '#3d6040',
-                  color: '#7AB648',
-                  border: '1px solid #7AB648',
+                  backgroundColor: BROWN_MID,
+                  color: TAN,
+                  border: `1px solid ${TAN_DIM}`,
                   borderRadius: '8px',
                   fontWeight: '700',
                   textDecoration: 'none',
-                  transition: 'all 0.2s',
                 }}
               >
                 Join Team RWB Today
