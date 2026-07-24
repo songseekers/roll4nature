@@ -13,52 +13,64 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Roll 4 Nature Brand Colors */
+  /* ── Core brand ─────────────────────────────────────── */
 
-  /* Primary action — dark brown for buttons and CTAs */
-  --color-r4n-primary: #5C3317;
+  /* Brown — primary action color */
+  --color-r4n-primary:       #5C3317;
   --color-r4n-primary-hover: #7A4A28;
 
-  /* Tan — warm sandy tan for text on brown, outlines, accents */
-  --color-r4n-tan: #D4B896;
-  --color-r4n-tan-hover: #E8D0B0;
-  --color-r4n-tan-light: #F5EBD8;
-  --color-r4n-tan-dark: #B89878;
-  --color-r4n-tan-dark-hover: #C8A888;
+  /* Tan — text and accents on brown backgrounds */
+  --color-r4n-tan:           #E8D0B0;
+  --color-r4n-tan-hover:     #F0DCC0;
+  --color-r4n-tan-light:     #F5EBD8;
+  --color-r4n-tan-dark:      #D4B896;
+  --color-r4n-tan-dark-hover:#C8A888;
 
-  /* Young grass green — text on brown containers */
-  --color-r4n-grass: #7AB648;
-  --color-r4n-grass-hover: #8FCC58;
-  --color-r4n-grass-light: #A8D878;
+  /* Sage green — section backgrounds and accents */
+  --color-r4n-sage:          #4a7c59;
+  --color-r4n-sage-hover:    #5a9c6e;
+  --color-r4n-sage-light:    #d4e8d8;
 
-  /* Sage green — backgrounds and accents */
-  --color-r4n-sage: #4a7c59;
-  --color-r4n-sage-hover: #5a9c6e;
-  --color-r4n-sage-light: #d4e8d8;
+  /* Grass green — kept in palette but no longer used on brown */
+  --color-r4n-grass:         #7AB648;
+  --color-r4n-grass-hover:   #8FCC58;
 
-  /* Earth tones */
-  --color-r4n-earth: #8b6914;
-  --color-r4n-earth-hover: #a07820;
-  --color-r4n-earth-light: #f5edd8;
-  --color-r4n-stone: #6b7c6b;
-  --color-r4n-cream: #f8faf5;
+  /* Earth, stone, cream */
+  --color-r4n-earth:         #8b6914;
+  --color-r4n-earth-hover:   #a07820;
+  --color-r4n-earth-light:   #f5edd8;
+  --color-r4n-stone:         #6b7c6b;
+  --color-r4n-cream:         #f8faf5;
 
-  /* Sky — replacing blue containers */
-  --color-r4n-sky: #e8f4f8;
-  --color-r4n-sky-dark: #b8dce8;
+  /* Sky */
+  --color-r4n-sky:           #e8f4f8;
+  --color-r4n-sky-dark:      #b8dce8;
 
-  /* Dark mode — deep forest, charcoal, warm cream */
-  --color-r4n-forest: #1a2e1a;
-  --color-r4n-forest-mid: #2d4a2d;
-  --color-r4n-forest-light: #3d6040;
-  --color-r4n-charcoal: #1c1c1c;
-  --color-r4n-charcoal-mid: #2a2a2a;
-  --color-r4n-warm-cream: #f0ebe0;
-  --color-r4n-warm-cream-dim: #c8c0a8;
+  /* Dark mode greens */
+  --color-r4n-forest:        #1a2e1a;
+  --color-r4n-forest-mid:    #2d4a2d;
+  --color-r4n-forest-light:  #3d6040;
+  --color-r4n-charcoal:      #1c1c1c;
+  --color-r4n-charcoal-mid:  #2a2a2a;
+  --color-r4n-warm-cream:    #f0ebe0;
+  --color-r4n-warm-cream-dim:#c8c0a8;
 
-  /* Secondary — sage alias used by dark button variant */
-  --color-r4n-secondary: #4a7c59;
+  /* Secondary alias */
+  --color-r4n-secondary:       #4a7c59;
   --color-r4n-secondary-hover: #5a9c6e;
+
+  /* ── Legacy r4v- aliases ────────────────────────────── */
+  /* Keep these so existing components using r4v- classes  */
+  /* continue to work without a full find-and-replace.     */
+  --color-r4v-primary:         #5C3317;
+  --color-r4v-primary-hover:   #7A4A28;
+  --color-r4v-secondary:       #4a7c59;
+  --color-r4v-secondary-hover: #5a9c6e;
+  --color-r4v-tan:             #E8D0B0;
+  --color-r4v-tan-hover:       #F0DCC0;
+  --color-r4v-tan-dark:        #D4B896;
+  --color-r4v-tan-dark-hover:  #C8A888;
+  --color-r4v-cream:           #f8faf5;
 }
 
 .dark {
@@ -73,21 +85,15 @@ body {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Mapbox Popup Close Button Styling */
+/* Mapbox Popup Close Button */
 .mapboxgl-popup-close-button {
   width: 32px !important;
   height: 32px !important;
@@ -96,7 +102,7 @@ body {
   color: #5C3317 !important;
   background-color: rgba(255, 255, 255, 0.95) !important;
   border-radius: 50% !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
   font-weight: bold !important;
   transition: all 0.2s ease !important;
   padding: 0 !important;
@@ -108,7 +114,7 @@ body {
   background-color: #5C3317 !important;
   color: white !important;
   transform: scale(1.1) !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
 }
 
 .mapboxgl-popup-close-button:active {

@@ -10,26 +10,11 @@ interface JourneyHeroProps {
 }
 
 // Calculate total miles dynamically from activities
-const totalMiles = activitiesData
-  .reduce((sum: number, activity: { distance: number }) => sum + activity.distance, 0)
+const totalMiles = (activitiesData as Array<{ distance: number }>)
+  .reduce((sum, activity) => sum + activity.distance, 0)
   .toFixed(0);
 
-// Days rolling since Feb 27, 2026
-function getDaysOnPath(): number {
-  const start = new Date('2026-02-27T00:00:00');
-  const now = new Date();
-  const diff = Math.floor((now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-  return Math.max(0, diff);
-}
-
-const BROWN = '#5C3317';
-const TAN = '#E8D0B0';
-const TAN_DIM = '#D4B896';
-const TAN_BORDER = 'rgba(232,208,176,0.25)';
-
 export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
-  const daysOnPath = getDaysOnPath();
-
   return (
     <div className="bg-gradient-to-b from-r4n-tan-light to-white dark:from-r4n-forest dark:to-gray-950 pt-40 sm:pt-36 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
 
@@ -45,9 +30,8 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
           Mountain States Exploration
         </h1>
 
-        {/* Dynamic mileage — tan color matching the design */}
-        <p style={{ fontSize: '28px', fontWeight: '700', color: BROWN, marginBottom: '24px' }}
-           className="dark:text-r4n-tan">
+        {/* Dynamic mileage — brown in light mode, tan in dark */}
+        <p className="text-2xl md:text-3xl font-bold mb-6 text-r4v-primary dark:text-r4n-tan">
           {Number(totalMiles).toLocaleString()} Miles of Purpose in Motion
         </p>
 
@@ -62,31 +46,9 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
         </p>
 
         {/* Rolling tagline */}
-        <p style={{ fontSize: '15px', fontWeight: '600', color: BROWN, marginBottom: '32px' }}
-           className="dark:text-r4n-tan">
+        <p className="text-base font-semibold text-r4v-primary dark:text-r4n-tan mb-8">
           Rolling 4 Purpose | Rolling 4 Health | Rolling 4 Discovery | Rolling 4 Nature
         </p>
-
-        {/* Days on The Path — brown container, tan text */}
-        <div style={{
-          backgroundColor: BROWN,
-          borderRadius: '8px',
-          padding: '24px',
-          maxWidth: '280px',
-          margin: '0 auto 32px',
-          border: `1px solid ${TAN_BORDER}`,
-          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-        }}>
-          <div style={{ fontSize: '48px', fontWeight: '700', color: TAN, lineHeight: 1 }}>
-            {daysOnPath}
-          </div>
-          <div style={{ fontSize: '13px', fontWeight: '600', color: TAN, letterSpacing: '2px', textTransform: 'uppercase', marginTop: '8px' }}>
-            Days Rolling on The Path
-          </div>
-          <div style={{ fontSize: '11px', color: TAN_DIM, marginTop: '6px' }}>
-            Since 27 February 2026
-          </div>
-        </div>
 
       </div>
 
