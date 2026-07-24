@@ -47,7 +47,7 @@ export default function DonatePage() {
       <div className="max-w-3xl mx-auto">
         <Link
           href="/"
-          className="text-r4v-primary dark:text-r4v-primary-hover hover:underline text-sm font-medium mb-8 inline-block"
+          className="text-r4n-primary dark:text-r4n-primary-hover hover:underline text-sm font-medium mb-8 inline-block"
         >
           ← Back to Home
         </Link>

@@ -94,7 +94,7 @@ function calcCountdown(to: number): TimerTime & { isOver: boolean } {
 function TimerBlock({ value, label }: { value: number | null; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-3xl md:text-4xl font-bold font-mono text-r4v-primary dark:text-r4v-primary-hover">
+      <span className="text-3xl md:text-4xl font-bold font-mono text-r4n-primary dark:text-r4n-primary-hover">
         {value !== null ? String(value).padStart(2, '0') : '--'}
       </span>
       <span className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</span>
@@ -174,21 +174,21 @@ export default function CountdownTimer() {
 
       {/* Miles Cycled — links to /stats */}
       <Link href="/stats" className="flex flex-col items-center gap-1 group cursor-pointer">
-        <p className="text-lg font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
+        <p className="text-lg font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center">
           Miles Cycled
         </p>
         <div className="flex flex-col items-center transition-transform group-hover:-translate-y-0.5">
-          <span className="text-2xl md:text-3xl font-bold font-mono text-r4v-primary dark:text-r4v-primary-hover border-b border-r4v-primary dark:border-r4v-primary-hover pb-0.5">
+          <span className="text-2xl md:text-3xl font-bold font-mono text-r4n-primary dark:text-r4n-primary-hover border-b border-r4n-primary dark:border-r4n-primary-hover pb-0.5">
             {totalMilesCycled.toFixed(1)}
           </span>
           <span className="text-[10px] uppercase tracking-wide text-gray-500 dark:text-gray-400">miles</span>
         </div>
         <div className="flex items-center gap-1 mt-1">
-          <span className="text-sm font-semibold text-r4v-primary dark:text-gray-300 group-hover:underline transition-all">
+          <span className="text-sm font-semibold text-r4n-primary dark:text-gray-300 group-hover:underline transition-all">
             Click
           </span>
-          <span className="text-r4v-primary dark:text-gray-300 text-base leading-none">↑</span>
-          <span className="text-sm font-semibold text-r4v-primary dark:text-gray-300 group-hover:underline transition-all">
+          <span className="text-r4n-primary dark:text-gray-300 text-base leading-none">↑</span>
+          <span className="text-sm font-semibold text-r4n-primary dark:text-gray-300 group-hover:underline transition-all">
             to see stats
           </span>
         </div>
@@ -206,7 +206,7 @@ export default function CountdownTimer() {
           showExpiration ? (
             // Post-event: show expiration message until midnight
             <>
-              <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
+              <p className="text-sm font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center">
                 {activeEvent.expirationMessage}
               </p>
               {activeEvent.expirationLine2 && (
@@ -220,7 +220,7 @@ export default function CountdownTimer() {
                     href={activeEvent.expirationLine3}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     📍 View on Maps
                   </a>
@@ -235,7 +235,7 @@ export default function CountdownTimer() {
             // Pre-event: show countdown
             <>
               {/* Event label in orange — primary info, matches Miles Cycled value style */}
-              <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
+              <p className="text-sm font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center">
                 {activeEvent.label}
               </p>
               {activeEvent.location && activeEvent.location !== 'TBD' && (
@@ -282,7 +282,7 @@ export default function CountdownTimer() {
             </>
           )
         ) : (
-          <p className="text-sm font-semibold text-r4v-primary dark:text-r4v-primary-hover text-center">
+          <p className="text-sm font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center">
             Stay tuned for the next stop!
           </p>
         )}

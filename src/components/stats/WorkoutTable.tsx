@@ -130,7 +130,7 @@ export default function WorkoutTable({ rows, totals }: Props) {
       <div className="overflow-x-auto">
         <table className="w-full text-sm text-left whitespace-nowrap">
           <thead>
-            <tr className="bg-r4v-secondary text-white text-xs uppercase tracking-wide">
+            <tr className="bg-r4n-secondary text-white text-xs uppercase tracking-wide">
               {COLUMNS.map((col) => (
                 <th
                   key={col.label}
@@ -170,10 +170,10 @@ export default function WorkoutTable({ rows, totals }: Props) {
             ))}
           </tbody>
           <tfoot>
-            <tr className="bg-r4v-primary/10 dark:bg-r4v-primary/20 font-semibold text-gray-900 dark:text-white border-t-2 border-r4v-primary/30">
+            <tr className="bg-r4n-primary/10 dark:bg-r4n-primary/20 font-semibold text-gray-900 dark:text-white border-t-2 border-r4n-primary/30">
               <td className="px-3 py-3">—</td>
               <td className="px-3 py-3">Totals / Avg</td>
-              <td className="px-3 py-3 text-right text-r4v-primary dark:text-r4v-primary-hover">{fmt1(t.totalMiles)}</td>
+              <td className="px-3 py-3 text-right text-r4n-primary dark:text-r4n-primary-hover">{fmt1(t.totalMiles)}</td>
               <td className="px-3 py-3">{formatDuration(t.totalSecs)}</td>
               <td className="px-3 py-3 text-right">{t.overallAvgHR ? `${t.overallAvgHR} avg` : '—'}</td>
               <td className="px-3 py-3 text-right">{t.totalMaxHR} max</td>

@@ -41,7 +41,7 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
         </h1>
 
         {/* Dynamic mileage */}
-        <p className="text-2xl md:text-3xl text-r4v-primary dark:text-r4n-tan font-bold mb-6">
+        <p className="text-2xl md:text-3xl text-r4n-primary dark:text-r4n-tan font-bold mb-6">
           {Number(totalMiles).toLocaleString()} Miles of Purpose in Motion
         </p>
 
@@ -56,12 +56,12 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
         </p>
 
         {/* Rolling tagline */}
-        <p className="text-base font-semibold text-r4v-primary dark:text-r4n-tan mb-8">
+        <p className="text-base font-semibold text-r4n-primary dark:text-r4n-tan mb-8">
           Rolling 4 Purpose | Rolling 4 Health | Rolling 4 Discovery | Rolling 4 Nature
         </p>
 
         {/* Days on The Path counter */}
-        <div className="bg-r4v-primary dark:bg-r4n-forest-mid rounded-lg p-6 shadow-sm max-w-sm mx-auto mb-8 border border-r4n-tan/30">
+        <div className="bg-r4n-primary dark:bg-r4n-forest-mid rounded-lg p-6 shadow-sm max-w-sm mx-auto mb-8 border border-r4n-tan/30">
           <div className="text-4xl font-bold text-r4n-grass mb-1">{daysOnPath}</div>
           <div className="text-r4n-tan text-sm font-semibold tracking-wide uppercase">
             Days Rolling on The Path

@@ -17,7 +17,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"
-            className="bg-r4v-primary hover:bg-r4v-primary-hover text-r4n-tan font-bold py-3 px-6 rounded-lg transition inline-block"
+            className="bg-r4n-primary hover:bg-r4n-primary-hover text-r4n-tan font-bold py-3 px-6 rounded-lg transition inline-block"
           >
             Back to Home
           </Link>

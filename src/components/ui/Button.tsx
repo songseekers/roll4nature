@@ -16,13 +16,13 @@ interface ButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'cla
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: 'bg-r4v-primary text-white hover:bg-r4v-primary-hover',
-  secondary: 'bg-r4v-tan text-gray-900 hover:bg-r4v-tan-hover',
-  dark: 'bg-r4v-secondary text-white hover:bg-r4v-secondary-hover',
-  'tan-dark': 'bg-r4v-tan-dark text-gray-900 hover:bg-r4v-tan-dark-hover',
-  white: 'bg-white text-r4v-primary hover:bg-r4v-tan',
-  outline: 'border-2 border-r4v-primary text-r4v-primary hover:bg-r4v-primary hover:text-white bg-transparent',
-  ghost: 'text-r4v-primary hover:bg-r4v-primary/10 bg-transparent',
+  primary: 'bg-r4n-primary text-white hover:bg-r4n-primary-hover',
+  secondary: 'bg-r4n-tan text-gray-900 hover:bg-r4n-tan-hover',
+  dark: 'bg-r4n-secondary text-white hover:bg-r4n-secondary-hover',
+  'tan-dark': 'bg-r4n-tan-dark text-gray-900 hover:bg-r4n-tan-dark-hover',
+  white: 'bg-white text-r4n-primary hover:bg-r4n-tan',
+  outline: 'border-2 border-r4n-primary text-r4n-primary hover:bg-r4n-primary hover:text-white bg-transparent',
+  ghost: 'text-r4n-primary hover:bg-r4n-primary/10 bg-transparent',
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

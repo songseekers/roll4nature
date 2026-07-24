@@ -131,7 +131,7 @@ export default function StatsPage() {
     <div className="min-h-screen bg-white dark:bg-gray-950 pt-24 transition-colors">
 
       {/* Hero */}
-      <div className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <Link
             href="/"
@@ -164,7 +164,7 @@ export default function StatsPage() {
                 <span
                   className={`text-xl font-bold font-mono ${
                     card.highlight
-                      ? 'text-r4v-primary dark:text-r4v-primary-hover'
+                      ? 'text-r4n-primary dark:text-r4n-primary-hover'
                       : 'text-gray-900 dark:text-white'
                   }`}
                 >
@@ -182,7 +182,7 @@ export default function StatsPage() {
           </p>
           <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
             <div
-              className="h-full bg-r4v-primary rounded-full"
+              className="h-full bg-r4n-primary rounded-full"
               style={{ width: `${routeProgress.toFixed(2)}%` }}
               role="progressbar"
               aria-valuenow={parseFloat(routeProgress.toFixed(2))}

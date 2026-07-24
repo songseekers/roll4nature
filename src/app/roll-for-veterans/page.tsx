@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'R4V 2026: Coast to Coast to Canyon | 4,545 Miles of Purpose',
+  title: 'R4N 2026: Coast to Coast to Canyon | 4,545 Miles of Purpose',
   description: 'Join our epic bike journey from Key West, FL to Los Angeles, CA to Flagstaff, AZ, connecting with veterans in 42+ communities. Feb 27 - June 27, 2026.',
 };
 
@@ -32,7 +32,7 @@ export default function RollForVeteransPage() {
       <MissionStatement />
 
       {/* Team Bravo Section */}
-      <section className="bg-gradient-to-b from-r4v-tan dark:from-r4v-secondary to-white dark:to-gray-950 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section className="bg-r4n-primary py-16 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
             <Image
@@ -51,7 +51,7 @@ export default function RollForVeteransPage() {
             />
           </div>
 
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-r4n-tan mb-8 max-w-2xl mx-auto">
             Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America in the video below.
           </p>
 
@@ -62,7 +62,7 @@ export default function RollForVeteransPage() {
       </section>
 
       {/* Main CTA Section */}
-      <section className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Support the Mission?
@@ -77,7 +77,7 @@ export default function RollForVeteransPage() {
               Donate to Team RWB
             </Button>
             <Button variant="tan-dark" size="md" href="https://gofund.me/fdff623ca" target="_blank" rel="noopener noreferrer">
-              R4V GoFundMe
+              R4N GoFundMe
             </Button>
             <Button variant="primary" size="md" href="/sponsor">
               Become a Partner

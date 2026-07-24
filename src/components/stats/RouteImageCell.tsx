@@ -29,7 +29,7 @@ export default function RouteImageCell({ date, dateLabel }: RouteImageCellProps)
     <>
       <button
         onClick={() => setOpen(true)}
-        className="block mx-auto rounded overflow-hidden border border-gray-300 dark:border-gray-600 hover:border-r4v-primary transition hover:scale-105"
+        className="block mx-auto rounded overflow-hidden border border-gray-300 dark:border-gray-600 hover:border-r4n-primary transition hover:scale-105"
         style={{ width: 56, height: 40, flexShrink: 0 }}
         aria-label={`View route map for ${dateLabel}`}
       >

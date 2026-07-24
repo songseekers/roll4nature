@@ -43,12 +43,12 @@ export default function RouteListPage() {
   const renderRow = ({ city, stop }: StopRow, accent: 'sage' | 'orange') => {
     const isVisited = city.arrivalDate <= today;
 
-    const borderClass = accent === 'sage' ? 'border-l-4 border-r4n-sage' : 'border-l-4 border-r4v-primary';
+    const borderClass = accent === 'sage' ? 'border-l-4 border-r4n-sage' : 'border-l-4 border-r4n-primary';
     const stopClass = isVisited
       ? 'text-gray-400 dark:text-gray-500'
       : accent === 'sage'
       ? 'text-r4n-sage font-bold'
-      : 'text-r4v-primary font-bold';
+      : 'text-r4n-primary font-bold';
 
     const textClass = isVisited
       ? 'text-gray-400 dark:text-gray-500'
@@ -95,7 +95,7 @@ export default function RouteListPage() {
           </p>
           <Link
             href="/#map"
-            className="inline-block mt-4 text-r4v-primary-hover hover:text-r4v-primary transition font-semibold"
+            className="inline-block mt-4 text-r4n-primary-hover hover:text-r4n-primary transition font-semibold"
           >
             &larr; Back to Map
           </Link>
@@ -112,7 +112,7 @@ export default function RouteListPage() {
             Mountain States Exploration
           </span>
           <span className="flex items-center gap-2 text-gray-900 dark:text-white font-medium">
-            <span className="w-4 h-4 rounded-full bg-r4v-primary inline-block" aria-hidden="true" />
+            <span className="w-4 h-4 rounded-full bg-r4n-primary inline-block" aria-hidden="true" />
             Coast to Coast to Canyon
           </span>
         </div>
@@ -122,7 +122,7 @@ export default function RouteListPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-left min-w-[500px]">
               <thead>
-                <tr className="bg-r4v-secondary text-white">
+                <tr className="bg-r4n-secondary text-white">
                   <th className="px-4 py-3 text-sm font-semibold">#</th>
                   <th className="px-4 py-3 text-sm font-semibold">City</th>
                   <th className="px-4 py-3 text-sm font-semibold">State</th>
@@ -133,7 +133,7 @@ export default function RouteListPage() {
               <tbody>
                 {sectionHeader('Mountain States Exploration — Flagstaff to Rigby', 'bg-r4n-sage')}
                 {mseStops.map((row) => renderRow(row, 'sage'))}
-                {sectionHeader('Coast to Coast to Canyon — Key West to Flagstaff', 'bg-r4v-primary')}
+                {sectionHeader('Coast to Coast to Canyon — Key West to Flagstaff', 'bg-r4n-primary')}
                 {c2c2cStops.map((row) => renderRow(row, 'orange'))}
               </tbody>
             </table>

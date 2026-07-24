@@ -16,14 +16,15 @@
   /* Roll 4 Nature Brand Colors */
 
   /* Primary action — dark brown for buttons and CTAs */
-  --color-r4v-primary: #5C3317;
-  --color-r4v-primary-hover: #7A4A28;
+  --color-r4n-primary: #5C3317;
+  --color-r4n-primary-hover: #7A4A28;
 
   /* Tan — warm sandy tan for text on brown, outlines, accents */
   --color-r4n-tan: #D4B896;
   --color-r4n-tan-hover: #E8D0B0;
   --color-r4n-tan-light: #F5EBD8;
   --color-r4n-tan-dark: #B89878;
+  --color-r4n-tan-dark-hover: #C8A888;
 
   /* Young grass green — text on brown containers */
   --color-r4n-grass: #7AB648;
@@ -55,14 +56,9 @@
   --color-r4n-warm-cream: #f0ebe0;
   --color-r4n-warm-cream-dim: #c8c0a8;
 
-  /* Legacy aliases so existing components don't break */
-  --color-r4v-secondary: #4a7c59;
-  --color-r4v-secondary-hover: #5a9c6e;
-  --color-r4v-tan: #D4B896;
-  --color-r4v-tan-hover: #E8D0B0;
-  --color-r4v-tan-dark: #8b6914;
-  --color-r4v-tan-dark-hover: #a07820;
-  --color-r4v-cream: #f8faf5;
+  /* Secondary — sage alias used by dark button variant */
+  --color-r4n-secondary: #4a7c59;
+  --color-r4n-secondary-hover: #5a9c6e;
 }
 
 .dark {

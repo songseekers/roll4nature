@@ -7,7 +7,7 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata = {
-  title: 'R4V 2026: Coast to Coast to Canyon | 4,444 Miles of Purpose',
+  title: 'R4N 2026: Coast to Coast to Canyon | 4,444 Miles of Purpose',
   description: 'Join our epic bike journey from Key West, FL to Flagstaff, AZ, connecting with veterans in 57 communities. Rolling 4 Purpose, Health, Discovery, and Veterans. Feb 27 - July 1, 2026.',
 };
 

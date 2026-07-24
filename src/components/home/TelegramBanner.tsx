@@ -268,7 +268,7 @@ export default function TelegramBanner() {
           {/* Meta row */}
           <div style={s.meta}>
             <span>RCVD: ALL STATIONS</span>
-            <span>NO. 2026-R4V</span>
+            <span>NO. 2026-R4N</span>
             <span>FEB 27, 2026</span>
           </div>
 
@@ -311,7 +311,7 @@ export default function TelegramBanner() {
           {/* Footer */}
           <div style={s.footer}>
             <span>FILED: KEY WEST FL</span>
-            <span>R4V.SONGSEEKERS.ORG</span>
+            <span>R4N.SONGSEEKERS.ORG</span>
             <span>DEST: FLAGSTAFF AZ</span>
           </div>
 

@@ -299,7 +299,7 @@ export default function RouteMap() {
   const toggleButton = (
     <button
       onClick={() => setIsFullscreen((prev) => !prev)}
-      className="absolute top-2 left-6 z-10 flex items-center gap-1 bg-white dark:bg-gray-800 text-r4v-primary dark:text-r4v-primary-hover border border-r4v-primary rounded-full px-3 py-1 text-sm font-semibold shadow hover:shadow-md transition cursor-pointer"
+      className="absolute top-2 left-6 z-10 flex items-center gap-1 bg-white dark:bg-gray-800 text-r4n-primary dark:text-r4n-primary-hover border border-r4n-primary rounded-full px-3 py-1 text-sm font-semibold shadow hover:shadow-md transition cursor-pointer"
     >
       {isFullscreen ? <Minimize2 size={14} /> : <Maximize2 size={14} />}
       <span>{isFullscreen ? 'Exit Full Screen' : 'Full Screen'}</span>
@@ -313,8 +313,8 @@ export default function RouteMap() {
         aria-pressed={selectedRoute === 'c2c2c'}
         className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap border-2 cursor-pointer ${
           selectedRoute === 'c2c2c'
-            ? 'bg-r4v-primary border-r4n-tan text-r4n-tan shadow-md'
-            : 'bg-transparent border-r4n-tan text-r4n-tan hover:bg-r4v-primary/20'
+            ? 'bg-r4n-primary border-r4n-tan text-r4n-tan shadow-md'
+            : 'bg-transparent border-r4n-tan text-r4n-tan hover:bg-r4n-primary/20'
         }`}
       >
         Coast to Coast to Canyon

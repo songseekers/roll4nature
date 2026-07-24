@@ -184,7 +184,7 @@ export default function PurposeJourney() {
                 </div>
 
                 {/* Journey Points */}
-                <div className="bg-r4v-primary border-l-4 border-r4n-tan p-6 rounded-lg">
+                <div className="bg-r4n-primary border-l-4 border-r4n-tan p-6 rounded-lg">
                   <h4 className="font-bold text-r4n-tan mb-4">On This Journey:</h4>
                   <ul className="space-y-3">
                     {selectedMapping.journeyPoints.map((point, idx) => (
@@ -197,7 +197,7 @@ export default function PurposeJourney() {
                 </div>
 
                 {/* Journey Message */}
-                <div className="bg-gradient-to-br from-r4v-primary to-r4v-primary-hover p-6 rounded-lg border border-r4n-tan">
+                <div className="bg-gradient-to-br from-r4n-primary to-r4n-primary-hover p-6 rounded-lg border border-r4n-tan">
                   <p className="text-lg italic text-r4n-tan leading-relaxed">{selectedMapping.journeyMessage}</p>
                 </div>
 
@@ -235,7 +235,7 @@ export default function PurposeJourney() {
                 onClick={() => setSelectedPetalId(mapping.id)}
                 className={`p-6 rounded-lg text-center transition transform hover:scale-105 cursor-pointer ${
                   selectedPetalId === mapping.id
-                    ? 'bg-r4v-primary text-r4n-tan shadow-lg'
+                    ? 'bg-r4n-primary text-r4n-tan shadow-lg'
                     : 'bg-white border border-gray-200 text-gray-900 hover:border-r4n-tan'
                 }`}
               >

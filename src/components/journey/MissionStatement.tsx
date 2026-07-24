@@ -60,7 +60,7 @@ export default function MissionStatement() {
               {/* RWB Logo */}
               <div style={{ width: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Image
-                  src="/images/rwb_ob.svg"
+                  src="/images/rwb_ob_white.png"
                   alt="Team Red, White, and Blue Logo"
                   width={120}
                   height={120}

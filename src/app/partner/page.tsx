@@ -78,7 +78,7 @@ export default function PartnerPage() {
     <div className="bg-white dark:bg-gray-950 pt-24">
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
@@ -159,7 +159,7 @@ export default function PartnerPage() {
 
       {/* Mission Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white dark:bg-gray-900 transition-colors">
-        <div className="bg-gradient-to-br from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover rounded-lg p-8 border-2 border-r4v-primary mb-12">
+        <div className="bg-gradient-to-br from-r4n-tan to-r4n-tan-dark dark:from-r4n-secondary dark:to-r4n-secondary-hover rounded-lg p-8 border-2 border-r4n-primary mb-12">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
             Support the Mission
           </h2>
@@ -189,33 +189,33 @@ export default function PartnerPage() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 border-2 border-r4n-primary rounded-lg p-6">
             <div className="flex items-center mb-3">
-              <Fuel size={32} className="text-r4v-primary mr-3" />
+              <Fuel size={32} className="text-r4n-primary mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Fuel Support</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Help keep our support vehicles moving across 4,545 miles of American roads.</p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 border-2 border-r4n-primary rounded-lg p-6">
             <div className="flex items-center mb-3">
-              <UtensilsCrossed size={32} className="text-r4v-primary mr-3" />
+              <UtensilsCrossed size={32} className="text-r4n-primary mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Food &amp; Supplies</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Support our team with meals and essential supplies throughout the journey.</p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 border-2 border-r4n-primary rounded-lg p-6">
             <div className="flex items-center mb-3">
-              <Building2 size={32} className="text-r4v-primary mr-3" />
+              <Building2 size={32} className="text-r4n-primary mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Lodging &amp; Equipment</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Assist with accommodations, bike maintenance, and gear for the ride.</p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 border-2 border-r4n-primary rounded-lg p-6">
             <div className="flex items-center mb-3">
-              <DollarSign size={32} className="text-r4v-primary mr-3" />
+              <DollarSign size={32} className="text-r4n-primary mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">General Operations</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">Flexible support for unexpected costs and operational expenses along the way.</p>
@@ -237,7 +237,7 @@ export default function PartnerPage() {
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <MapPin size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <MapPin size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Location:</p>
                     <p className="text-gray-700 dark:text-gray-300">Port Charlotte, Florida</p>
@@ -245,10 +245,10 @@ export default function PartnerPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Globe size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <Globe size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Website:</p>
-                    <a href="https://veteranmobile.com" target="_blank" rel="noopener noreferrer" className="text-r4v-primary hover:underline">veteranmobile.com</a>
+                    <a href="https://veteranmobile.com" target="_blank" rel="noopener noreferrer" className="text-r4n-primary hover:underline">veteranmobile.com</a>
                   </div>
                 </div>
               </div>
@@ -288,21 +288,21 @@ export default function PartnerPage() {
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <PhoneIcon size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <PhoneIcon size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Phone:</p>
-                    <a href="tel:3526726538" className="text-r4v-primary hover:underline">(352) 672-6538</a>
+                    <a href="tel:3526726538" className="text-r4n-primary hover:underline">(352) 672-6538</a>
                     <span className="text-gray-500 dark:text-gray-400 text-sm ml-2">FL</span>
                     <span className="text-gray-500 dark:text-gray-400 mx-2">·</span>
-                    <a href="tel:7706971221" className="text-r4v-primary hover:underline">(770) 697-1221</a>
+                    <a href="tel:7706971221" className="text-r4n-primary hover:underline">(770) 697-1221</a>
                     <span className="text-gray-500 dark:text-gray-400 text-sm ml-2">GA</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Globe size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <Globe size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Website:</p>
-                    <a href="https://wrapspot.com" target="_blank" rel="noopener noreferrer" className="text-r4v-primary hover:underline">wrapspot.com</a>
+                    <a href="https://wrapspot.com" target="_blank" rel="noopener noreferrer" className="text-r4n-primary hover:underline">wrapspot.com</a>
                   </div>
                 </div>
               </div>
@@ -342,7 +342,7 @@ export default function PartnerPage() {
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <MapPin size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <MapPin size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Location:</p>
                     <p className="text-gray-700 dark:text-gray-300">San Antonio, Texas</p>
@@ -350,17 +350,17 @@ export default function PartnerPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <PhoneIcon size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <PhoneIcon size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Phone:</p>
-                    <a href="tel:2105470221" className="text-r4v-primary hover:underline">(210) 547-0221</a>
+                    <a href="tel:2105470221" className="text-r4n-primary hover:underline">(210) 547-0221</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Globe size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <Globe size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Website:</p>
-                    <a href="https://10bitworks.com" target="_blank" rel="noopener noreferrer" className="text-r4v-primary hover:underline">10bitworks.com</a>
+                    <a href="https://10bitworks.com" target="_blank" rel="noopener noreferrer" className="text-r4n-primary hover:underline">10bitworks.com</a>
                   </div>
                 </div>
               </div>
@@ -394,7 +394,7 @@ export default function PartnerPage() {
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <MapPin size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <MapPin size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Location:</p>
                     <p className="text-gray-700 dark:text-gray-300">Lafayette, Louisiana</p>
@@ -402,18 +402,18 @@ export default function PartnerPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <PhoneIcon size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <PhoneIcon size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Phone:</p>
-                    <a href="tel:3379624835" className="text-r4v-primary hover:underline">(337) 962-4835</a>
+                    <a href="tel:3379624835" className="text-r4n-primary hover:underline">(337) 962-4835</a>
                     <span className="text-gray-500 dark:text-gray-400 text-sm ml-2">24/7</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Globe size={20} className="text-r4v-primary flex-shrink-0 mt-1" />
+                  <Globe size={20} className="text-r4n-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Website:</p>
-                    <a href="https://whitestrailersllc.com" target="_blank" rel="noopener noreferrer" className="text-r4v-primary hover:underline">whitestrailersllc.com</a>
+                    <a href="https://whitestrailersllc.com" target="_blank" rel="noopener noreferrer" className="text-r4n-primary hover:underline">whitestrailersllc.com</a>
                   </div>
                 </div>
               </div>
@@ -440,7 +440,7 @@ export default function PartnerPage() {
       )}
 
       {/* Contact Form Section */}
-      <section className="bg-gradient-to-b from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-r4n-tan to-r4n-tan-dark dark:from-r4n-secondary dark:to-r4n-secondary-hover py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
             Let&apos;s Connect
@@ -453,22 +453,22 @@ export default function PartnerPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">Full Name / Organization *</label>
-                  <input type="text" name="fullName" required placeholder="Your name or company name" className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent" />
+                  <input type="text" name="fullName" required placeholder="Your name or company name" className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent" />
                   {fieldErrors.fullName && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.fullName}</p>}
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">Email *</label>
-                  <input type="email" name="email" required placeholder="your@email.com" className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent" />
+                  <input type="email" name="email" required placeholder="your@email.com" className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent" />
                   {fieldErrors.email && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.email}</p>}
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">Phone *</label>
-                  <input type="tel" name="phone" required placeholder="(123) 456-7890" onBlur={handlePhoneInput} onKeyDown={handlePhoneKeyDown} title="Enter 10 digits - will be auto-formatted" className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent" />
+                  <input type="tel" name="phone" required placeholder="(123) 456-7890" onBlur={handlePhoneInput} onKeyDown={handlePhoneKeyDown} title="Enter 10 digits - will be auto-formatted" className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent" />
                   {fieldErrors.phone && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.phone}</p>}
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">Best Time to Contact *</label>
-                  <select name="bestTime" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent">
+                  <select name="bestTime" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent">
                     <option value="">Select a time</option>
                     <option value="morning">Morning (8am - 12pm)</option>
                     <option value="afternoon">Afternoon (12pm - 5pm)</option>
@@ -479,7 +479,7 @@ export default function PartnerPage() {
                 </div>
                 <div className="md:col-span-2">
                   <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">Type of Partnership Interest *</label>
-                  <select name="sponsorshipInterest" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent">
+                  <select name="sponsorshipInterest" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent">
                     <option value="">Select partnership type</option>
                     <option value="fuel">Fuel Support</option>
                     <option value="food">Food &amp; Supplies</option>
@@ -493,12 +493,12 @@ export default function PartnerPage() {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">Additional Information (Optional)</label>
-                <textarea name="message" placeholder="Tell us more about your partnership interests or questions..." rows={4} className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent" />
+                <textarea name="message" placeholder="Tell us more about your partnership interests or questions..." rows={4} className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent" />
               </div>
               <div className="flex justify-center">
-                <div className="bg-r4v-primary border-2 border-r4n-tan rounded-lg p-4 max-w-2xl">
+                <div className="bg-r4n-primary border-2 border-r4n-tan rounded-lg p-4 max-w-2xl">
                   <label className="flex items-start gap-3 cursor-pointer">
-                    <input type="checkbox" name="sms_consent" required className="mt-1 w-4 h-4 text-r4v-primary border-gray-300 rounded focus:ring-r4v-primary cursor-pointer" />
+                    <input type="checkbox" name="sms_consent" required className="mt-1 w-4 h-4 text-r4n-primary border-gray-300 rounded focus:ring-r4n-primary cursor-pointer" />
                     <span className="text-sm text-r4n-tan">
                       I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided to discuss potential involvement. Message and data rates may apply.
                     </span>
@@ -529,7 +529,7 @@ export default function PartnerPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Questions About Partnering?</h2>
           <p className="text-xl text-white">

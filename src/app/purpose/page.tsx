@@ -164,7 +164,7 @@ function PathfinderImage({ size = 300, debug = false }: PathfinderImageProps) {
               <div>
                 <button
                   onClick={() => setActiveZone(null)}
-                  className="mb-4 text-sm text-r4v-primary hover:underline flex items-center gap-1"
+                  className="mb-4 text-sm text-r4n-primary hover:underline flex items-center gap-1"
                 >
                   ← Back to framework
                 </button>
@@ -297,7 +297,7 @@ export default function PurposePage() {
     <div className="bg-white dark:bg-gray-950 pt-24">
 
       {/* ── Section 1: Hero ──────────────────────────────────── */}
-      <div className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">The Path</h1>
           <p className="text-xl text-white mb-4">Integrative Health Coaching with JT &amp; Sean</p>
@@ -333,7 +333,7 @@ export default function PurposePage() {
               qualities are the visible expression of your inner health.
             </p>
 
-            <div className="border-2 border-r4v-primary bg-r4v-tan dark:bg-gray-800 rounded-lg p-6 max-w-2xl mx-auto">
+            <div className="border-2 border-r4n-primary bg-r4n-tan dark:bg-gray-800 rounded-lg p-6 max-w-2xl mx-auto">
               <p className="text-gray-800 dark:text-gray-100 font-medium italic text-center">
                 The same framework guiding JT across 4,400 miles is the one he and Sean use with clients —
                 because purpose isn&apos;t just a concept. It&apos;s a practice.
@@ -351,9 +351,9 @@ export default function PurposePage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-8 hover:shadow-lg transition">
+            <div className="bg-white dark:bg-gray-800 border-2 border-r4n-primary rounded-lg p-8 hover:shadow-lg transition">
               <div className="flex items-center mb-4">
-                <Laptop size={40} className="text-r4v-primary mr-4" />
+                <Laptop size={40} className="text-r4n-primary mr-4" />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Remote Coaching</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -362,9 +362,9 @@ export default function PurposePage() {
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-8 hover:shadow-lg transition">
+            <div className="bg-white dark:bg-gray-800 border-2 border-r4n-primary rounded-lg p-8 hover:shadow-lg transition">
               <div className="flex items-center mb-4">
-                <MapPin size={40} className="text-r4v-primary mr-4" />
+                <MapPin size={40} className="text-r4n-primary mr-4" />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">On-Site Coaching</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -374,9 +374,9 @@ export default function PurposePage() {
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 border-2 border-r4v-primary rounded-lg p-8 hover:shadow-lg transition md:col-span-2">
+            <div className="bg-white dark:bg-gray-800 border-2 border-r4n-primary rounded-lg p-8 hover:shadow-lg transition md:col-span-2">
               <div className="flex items-center mb-4">
-                <Mic size={40} className="text-r4v-primary mr-4" />
+                <Mic size={40} className="text-r4n-primary mr-4" />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Motivational Speaking</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -391,8 +391,8 @@ export default function PurposePage() {
       </section>
 
       {/* ── Section 4: Guidebook Download ────────────────────── */}
-      <section className="bg-r4v-tan dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
-        <div className="max-w-2xl mx-auto text-center border-2 border-r4v-primary rounded-xl p-10 shadow-md">
+      <section className="bg-r4n-tan dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+        <div className="max-w-2xl mx-auto text-center border-2 border-r4n-primary rounded-xl p-10 shadow-md">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Start Your Journey</h3>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
             The Purpose Guidebook is a free self-reflection tool designed to help you explore your whole-person
@@ -413,7 +413,7 @@ export default function PurposePage() {
       </section>
 
       {/* ── Section 5: Application Form ──────────────────────── */}
-      <section className="bg-gradient-to-b from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover py-20 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section className="bg-gradient-to-b from-r4n-tan to-r4n-tan-dark dark:from-r4n-secondary dark:to-r4n-secondary-hover py-20 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
             Apply for Coaching
@@ -436,7 +436,7 @@ export default function PurposePage() {
                     name="fullName"
                     required
                     placeholder="Your name"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent"
                   />
                   {fieldErrors.fullName && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.fullName}</p>}
                 </div>
@@ -451,7 +451,7 @@ export default function PurposePage() {
                     name="email"
                     required
                     placeholder="your@email.com"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent"
                   />
                   {fieldErrors.email && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.email}</p>}
                 </div>
@@ -469,7 +469,7 @@ export default function PurposePage() {
                     onBlur={handlePhoneInput}
                     onKeyDown={handlePhoneKeyDown}
                     title="Enter 10 digits - will be auto-formatted"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent"
                   />
                   {fieldErrors.phone && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.phone}</p>}
                 </div>
@@ -484,7 +484,7 @@ export default function PurposePage() {
                     name="availability"
                     required
                     placeholder="e.g. Weekday evenings, or April–May"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent"
                   />
                   {fieldErrors.availability && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{fieldErrors.availability}</p>}
                 </div>
@@ -565,20 +565,20 @@ export default function PurposePage() {
                     name="comments"
                     placeholder="Anything else you'd like to share..."
                     rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4v-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-r4n-primary focus:border-transparent"
                   />
                 </div>
               </div>
 
               {/* SMS Consent */}
               <div className="flex justify-center">
-                <div className="bg-r4v-primary border-2 border-r4n-tan rounded-lg p-4 max-w-2xl">
+                <div className="bg-r4n-primary border-2 border-r4n-tan rounded-lg p-4 max-w-2xl">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input
                       type="checkbox"
                       name="sms_consent"
                       required
-                      className="mt-1 w-4 h-4 text-r4v-primary border-gray-300 rounded focus:ring-r4v-primary cursor-pointer"
+                      className="mt-1 w-4 h-4 text-r4n-primary border-gray-300 rounded focus:ring-r4n-primary cursor-pointer"
                     />
                     <span className="text-sm text-r4n-tan">
                       I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided

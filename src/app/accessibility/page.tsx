@@ -10,7 +10,7 @@ export default function AccessibilityPage() {
   return (
     <div className="bg-white dark:bg-gray-950 pt-24 pb-16 transition-colors">
       {/* Header */}
-      <div className="bg-gradient-to-r from-r4v-primary to-r4v-secondary text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl font-bold mb-2">Accessibility Statement</h1>
           <p className="text-gray-200">Last Updated: February 16, 2026</p>
@@ -22,7 +22,7 @@ export default function AccessibilityPage() {
         <div className="space-y-10">
           {/* 1. Our Commitment */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4n-primary pb-2">
               1. Our Commitment
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -35,7 +35,7 @@ export default function AccessibilityPage() {
 
           {/* 2. Standards We Follow */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4n-primary pb-2">
               2. Standards We Follow
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -51,7 +51,7 @@ export default function AccessibilityPage() {
 
           {/* 3. Accessibility Features */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4n-primary pb-2">
               3. Accessibility Features
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -70,7 +70,7 @@ export default function AccessibilityPage() {
 
           {/* 4. Known Limitations */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4n-primary pb-2">
               4. Known Limitations
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -83,7 +83,7 @@ export default function AccessibilityPage() {
             </ul>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-3">
               We provide alternative ways to access route information, including a fully accessible{' '}
-              <a href="/route-list" className="text-r4v-primary hover:underline font-semibold">
+              <a href="/route-list" className="text-r4n-primary hover:underline font-semibold">
                 Route Schedule
               </a>{' '}
               page as a text-based alternative to the interactive map.
@@ -92,7 +92,7 @@ export default function AccessibilityPage() {
 
           {/* 5. Assistive Technology Compatibility */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4n-primary pb-2">
               5. Assistive Technology Compatibility
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -108,7 +108,7 @@ export default function AccessibilityPage() {
 
           {/* 6. Feedback */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4n-primary pb-2">
               6. Feedback
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -117,13 +117,13 @@ export default function AccessibilityPage() {
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
               <li>
                 Email:{' '}
-                <a href="mailto:rollforveterans@gmail.com" className="text-r4v-primary hover:underline font-semibold">
+                <a href="mailto:rollforveterans@gmail.com" className="text-r4n-primary hover:underline font-semibold">
                   rollforveterans@gmail.com
                 </a>
               </li>
               <li>
                 Website:{' '}
-                <a href="https://r4v.songseekers.org" className="text-r4v-primary hover:underline font-semibold">
+                <a href="https://r4v.songseekers.org" className="text-r4n-primary hover:underline font-semibold">
                   r4v.songseekers.org
                 </a>
               </li>
@@ -135,7 +135,7 @@ export default function AccessibilityPage() {
 
           {/* 7. Continuous Improvement */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4v-primary pb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b-2 border-r4n-primary pb-2">
               7. Continuous Improvement
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">

@@ -35,9 +35,9 @@ export default function JourneyStats() {
           {stats.map((stat, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-r4v-primary hover:shadow-md transition text-center"
+              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-r4n-primary hover:shadow-md transition text-center"
             >
-              <div className="text-4xl font-bold text-r4v-primary dark:text-r4v-primary-hover mb-2">
+              <div className="text-4xl font-bold text-r4n-primary dark:text-r4n-primary-hover mb-2">
                 {stat.value}
               </div>
               <div className="text-lg font-semibold text-gray-900 dark:text-white mb-1">

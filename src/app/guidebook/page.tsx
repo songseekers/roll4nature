@@ -38,7 +38,7 @@ export default function GuidebookPage() {
       <DimensionsGrid />
 
       {/* Download CTA Section */}
-      <section className="bg-gradient-to-r from-r4v-primary to-r4v-primary-hover text-r4n-tan py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-r4n-primary to-r4n-primary-hover text-r4n-tan py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Explore Deeper?
@@ -76,7 +76,7 @@ export default function GuidebookPage() {
 
           <Link
             href="/roll-for-veterans"
-            className="inline-block bg-r4v-primary text-r4n-tan px-8 py-3 rounded-lg font-bold hover:bg-r4v-primary-hover transition"
+            className="inline-block bg-r4n-primary text-r4n-tan px-8 py-3 rounded-lg font-bold hover:bg-r4n-primary-hover transition"
           >
             Explore the Journey →
           </Link>

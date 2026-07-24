@@ -245,7 +245,7 @@ function FlagstaffRsvpModal({ onClose }: { onClose: () => void }) {
 
               {/* SMS Consent — only when 10-digit phone entered */}
               {showSmsConsent && (
-                <div className="bg-r4v-primary border border-r4n-tan rounded-lg p-3">
+                <div className="bg-r4n-primary border border-r4n-tan rounded-lg p-3">
                   <label className="flex items-start gap-2 cursor-pointer">
                     <input
                       type="checkbox"

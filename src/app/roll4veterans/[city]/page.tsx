@@ -59,9 +59,9 @@ export default function CityPage({ params }: Props) {
       </div>
 
       {/* Hero Header */}
-      <div className="bg-gradient-to-r from-r4v-primary to-[#3D220F] text-r4n-tan py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4n-primary to-[#3D220F] text-r4n-tan py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-4 inline-block bg-r4v-primary-hover px-4 py-1 rounded-full">
+          <div className="mb-4 inline-block bg-r4n-primary-hover px-4 py-1 rounded-full">
             <span className="text-sm font-bold">Day {city.dayNumber} of 108</span>
           </div>
 
@@ -86,7 +86,7 @@ export default function CityPage({ params }: Props) {
           <div className="lg:col-span-2">
             {/* Stats Cards */}
             <div className="grid grid-cols-2 gap-4 mb-8">
-              <div className="bg-r4v-primary rounded-lg p-6 border-2 border-r4n-tan">
+              <div className="bg-r4n-primary rounded-lg p-6 border-2 border-r4n-tan">
                 <div className="flex items-center mb-2">
                   <Users size={24} className="text-r4n-grass mr-2" />
                   <span className="text-r4n-tan font-semibold">Population</span>
@@ -132,7 +132,7 @@ export default function CityPage({ params }: Props) {
 
             {/* Team RWB Chapter Info */}
             {city.rwbChapter && (
-              <div className="bg-r4v-primary border-2 border-r4n-tan rounded-lg p-8 mb-8">
+              <div className="bg-r4n-primary border-2 border-r4n-tan rounded-lg p-8 mb-8">
                 <h3 className="text-2xl font-bold text-r4n-tan mb-4">
                   Team RWB Chapter
                 </h3>
@@ -149,7 +149,7 @@ export default function CityPage({ params }: Props) {
                     href={city.rwbChapter.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-r4v-primary-hover text-r4n-tan px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+                    className="inline-block bg-r4n-primary-hover text-r4n-tan px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition"
                   >
                     Visit Chapter Website
                   </a>
@@ -178,7 +178,7 @@ export default function CityPage({ params }: Props) {
 
           {/* Right Column - Signup */}
           <div className="lg:col-span-1">
-            <div className="bg-gradient-to-b from-r4v-primary to-r4v-primary-hover border-2 border-r4n-tan rounded-lg p-8 sticky top-24">
+            <div className="bg-gradient-to-b from-r4n-primary to-r4n-primary-hover border-2 border-r4n-tan rounded-lg p-8 sticky top-24">
               <h3 className="text-2xl font-bold text-r4n-tan mb-4">
                 Join Us Here
               </h3>
@@ -234,7 +234,7 @@ export default function CityPage({ params }: Props) {
                   </select>
                 </div>
 
-                <button className="w-full bg-r4n-tan text-r4v-primary py-2 rounded-lg font-bold hover:bg-r4n-tan-hover transition">
+                <button className="w-full bg-r4n-tan text-r4n-primary py-2 rounded-lg font-bold hover:bg-r4n-tan-hover transition">
                   Sign Me Up!
                 </button>
               </div>
@@ -261,7 +261,7 @@ export default function CityPage({ params }: Props) {
             )}
             <Link
               href="/#cities"
-              className="flex-1 bg-r4v-primary hover:bg-r4v-primary-hover text-r4n-tan px-6 py-3 rounded-lg font-semibold transition text-center"
+              className="flex-1 bg-r4n-primary hover:bg-r4n-primary-hover text-r4n-tan px-6 py-3 rounded-lg font-semibold transition text-center"
             >
               Explore All 42+ Communities →
             </Link>

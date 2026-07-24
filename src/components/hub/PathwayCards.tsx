@@ -9,7 +9,7 @@ export default function PathwayCards() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Guidebook Card */}
           <Link href="/guidebook">
-            <div className="group rounded-xl bg-r4v-primary p-8 border-2 border-r4n-tan hover:border-r4n-tan-hover hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
+            <div className="group rounded-xl bg-r4n-primary p-8 border-2 border-r4n-tan hover:border-r4n-tan-hover hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
               <div className="flex flex-col items-center text-center h-full justify-between">
                 {/* Icon */}
                 <div className="text-6xl mb-6">🌸</div>

@@ -2,7 +2,7 @@
 
 export default function HubHero() {
   return (
-    <div className="relative bg-gradient-to-b from-r4v-primary to-r4v-primary-hover py-16 px-4 sm:px-6 lg:px-8">
+    <div className="relative bg-gradient-to-b from-r4n-primary to-r4n-primary-hover py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         {/* Logo/Branding */}
         <div className="mb-8">
