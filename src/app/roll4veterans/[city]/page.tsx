@@ -51,7 +51,7 @@ export default function CityPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Link
           href="/"
-          className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold mb-6"
+          className="inline-flex items-center text-r4n-grass hover:text-r4n-grass-hover font-semibold mb-6"
         >
           <ArrowLeft size={20} className="mr-2" />
           Back to Journey
@@ -59,9 +59,9 @@ export default function CityPage({ params }: Props) {
       </div>
 
       {/* Hero Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-r4v-primary to-[#3D220F] text-r4n-tan py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-4 inline-block bg-blue-500 px-4 py-1 rounded-full">
+          <div className="mb-4 inline-block bg-r4v-primary-hover px-4 py-1 rounded-full">
             <span className="text-sm font-bold">Day {city.dayNumber} of 108</span>
           </div>
 
@@ -69,11 +69,11 @@ export default function CityPage({ params }: Props) {
             {city.name}, {city.state}
           </h1>
 
-          <p className="text-xl text-blue-100 mb-6">
+          <p className="text-xl text-r4n-tan mb-6">
             {formattedDate}
           </p>
 
-          <p className="text-blue-50 text-lg max-w-2xl">
+          <p className="text-r4n-tan text-lg max-w-2xl">
             {city.description || `Join us for Day ${city.dayNumber} of the Roll 4 Nature journey in ${city.name}, ${city.state}.`}
           </p>
         </div>
@@ -86,12 +86,12 @@ export default function CityPage({ params }: Props) {
           <div className="lg:col-span-2">
             {/* Stats Cards */}
             <div className="grid grid-cols-2 gap-4 mb-8">
-              <div className="bg-blue-50 rounded-lg p-6 border-2 border-blue-200">
+              <div className="bg-r4v-primary rounded-lg p-6 border-2 border-r4n-tan">
                 <div className="flex items-center mb-2">
-                  <Users size={24} className="text-blue-600 mr-2" />
-                  <span className="text-gray-600 font-semibold">Population</span>
+                  <Users size={24} className="text-r4n-grass mr-2" />
+                  <span className="text-r4n-tan font-semibold">Population</span>
                 </div>
-                <div className="text-3xl font-bold text-gray-900">
+                <div className="text-3xl font-bold text-r4n-tan">
                   {city.population.toLocaleString()}
                 </div>
               </div>
@@ -132,15 +132,15 @@ export default function CityPage({ params }: Props) {
 
             {/* Team RWB Chapter Info */}
             {city.rwbChapter && (
-              <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-8 mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="bg-r4v-primary border-2 border-r4n-tan rounded-lg p-8 mb-8">
+                <h3 className="text-2xl font-bold text-r4n-tan mb-4">
                   Team RWB Chapter
                 </h3>
-                <p className="text-xl text-blue-900 font-semibold mb-2">
+                <p className="text-xl text-r4n-tan font-semibold mb-2">
                   {city.rwbChapter.name}
                 </p>
-                <p className="text-gray-700 mb-4">
-                  Email: <a href={`mailto:${city.rwbChapter.contactEmail}`} className="text-blue-600 hover:underline">
+                <p className="text-r4n-tan mb-4">
+                  Email: <a href={`mailto:${city.rwbChapter.contactEmail}`} className="text-r4n-grass hover:underline">
                     {city.rwbChapter.contactEmail}
                   </a>
                 </p>
@@ -149,7 +149,7 @@ export default function CityPage({ params }: Props) {
                     href={city.rwbChapter.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
+                    className="inline-block bg-r4v-primary-hover text-r4n-tan px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition"
                   >
                     Visit Chapter Website
                   </a>
@@ -178,54 +178,54 @@ export default function CityPage({ params }: Props) {
 
           {/* Right Column - Signup */}
           <div className="lg:col-span-1">
-            <div className="bg-gradient-to-b from-blue-50 to-blue-100 border-2 border-blue-200 rounded-lg p-8 sticky top-24">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <div className="bg-gradient-to-b from-r4v-primary to-r4v-primary-hover border-2 border-r4n-tan rounded-lg p-8 sticky top-24">
+              <h3 className="text-2xl font-bold text-r4n-tan mb-4">
                 Join Us Here
               </h3>
 
-              <p className="text-gray-700 mb-6">
+              <p className="text-r4n-tan mb-6">
                 Want to meet us, ride with us, or volunteer in {city.name}?
               </p>
 
               <div className="space-y-3">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-r4n-tan mb-2">
                     Name
                   </label>
                   <input
                     type="text"
                     placeholder="Your name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-r4n-grass focus:border-transparent"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-r4n-tan mb-2">
                     Email
                   </label>
                   <input
                     type="email"
                     placeholder="your@email.com"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-r4n-grass focus:border-transparent"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-r4n-tan mb-2">
                     Phone
                   </label>
                   <input
                     type="tel"
                     placeholder="(123) 456-7890"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-r4n-grass focus:border-transparent"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-r4n-tan mb-2">
                     How can you help?
                   </label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-r4n-grass focus:border-transparent">
                     <option>Select an option</option>
                     <option>Ride with us</option>
                     <option>Meet & greet</option>
@@ -234,12 +234,12 @@ export default function CityPage({ params }: Props) {
                   </select>
                 </div>
 
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-blue-700 transition">
+                <button className="w-full bg-r4n-tan text-r4v-primary py-2 rounded-lg font-bold hover:bg-r4n-tan-hover transition">
                   Sign Me Up!
                 </button>
               </div>
 
-              <p className="text-xs text-gray-600 text-center mt-6">
+              <p className="text-xs text-r4n-tan text-center mt-6">
                 100% of donations go to Team RWB
               </p>
             </div>
@@ -261,7 +261,7 @@ export default function CityPage({ params }: Props) {
             )}
             <Link
               href="/#cities"
-              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition text-center"
+              className="flex-1 bg-r4v-primary hover:bg-r4v-primary-hover text-r4n-tan px-6 py-3 rounded-lg font-semibold transition text-center"
             >
               Explore All 42+ Communities →
             </Link>

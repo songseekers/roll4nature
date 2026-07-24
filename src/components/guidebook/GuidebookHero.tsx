@@ -4,7 +4,7 @@ export default function GuidebookHero() {
   return (
     <div className="bg-gradient-to-b from-white to-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
-        <p className="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-4">
+        <p className="text-sm font-semibold text-r4n-grass uppercase tracking-widest mb-4">
           The Purpose Pathfinder
         </p>
 

@@ -2,23 +2,23 @@
 
 export default function HubHero() {
   return (
-    <div className="relative bg-gradient-to-b from-blue-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="relative bg-gradient-to-b from-r4v-primary to-r4v-primary-hover py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         {/* Logo/Branding */}
         <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+          <h1 className="text-4xl md:text-5xl font-bold text-r4n-tan mb-2">
             Songseekers
           </h1>
-          <p className="text-xl text-blue-600 font-semibold">Purpose in Motion</p>
+          <p className="text-xl text-r4n-tan font-semibold">Purpose in Motion</p>
         </div>
 
         {/* Mission Statement */}
         <div className="max-w-2xl mx-auto mb-12">
-          <p className="text-lg md:text-xl text-gray-700 italic leading-relaxed">
+          <p className="text-lg md:text-xl text-r4n-tan italic leading-relaxed">
             "Too many dwell in silent despair—their true purpose unrealized,{' '}
-            <span className="font-bold text-blue-700">songs yet unsung!</span>"
+            <span className="font-bold text-r4n-grass">songs yet unsung!</span>"
           </p>
-          <p className="text-base text-gray-600 mt-4">
+          <p className="text-base text-r4n-tan mt-4">
             Choose your path: Discover your purpose, or join us on a journey that changes lives.
           </p>
         </div>
@@ -26,15 +26,15 @@ export default function HubHero() {
         {/* Quick Stats */}
         <div className="grid grid-cols-3 gap-4 bg-white rounded-lg p-6 shadow-sm max-w-md mx-auto">
           <div>
-            <div className="text-2xl font-bold text-blue-600">8</div>
+            <div className="text-2xl font-bold text-r4n-grass">8</div>
             <div className="text-xs text-gray-600">Dimensions</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-blue-600">4,463</div>
+            <div className="text-2xl font-bold text-r4n-grass">4,463</div>
             <div className="text-xs text-gray-600">Miles</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-blue-600">80+</div>
+            <div className="text-2xl font-bold text-r4n-grass">80+</div>
             <div className="text-xs text-gray-600">Communities</div>
           </div>
         </div>

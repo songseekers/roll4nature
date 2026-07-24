@@ -9,20 +9,20 @@ export default function PathwayCards() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Guidebook Card */}
           <Link href="/guidebook">
-            <div className="group rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 p-8 border-2 border-blue-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
+            <div className="group rounded-xl bg-r4v-primary p-8 border-2 border-r4n-tan hover:border-r4n-tan-hover hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
               <div className="flex flex-col items-center text-center h-full justify-between">
                 {/* Icon */}
                 <div className="text-6xl mb-6">🌸</div>
 
                 {/* Content */}
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h2 className="text-2xl font-bold text-r4n-tan mb-3">
                     Discover Your Purpose
                   </h2>
-                  <p className="text-base text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-base text-r4n-tan mb-6 leading-relaxed">
                     Explore the 8-petal framework for whole-person health across Physical, Mental, Emotional, and Lifestyle domains.
                   </p>
-                  <div className="text-lg font-semibold text-blue-600 group-hover:text-blue-700 transition-colors">
+                  <div className="text-lg font-semibold text-r4n-grass group-hover:text-r4n-grass-hover transition-colors">
                     → Explore Guidebook
                   </div>
                 </div>
@@ -37,7 +37,7 @@ export default function PathwayCards() {
 
           {/* Roll 4 Nature Card */}
           <Link href="/roll-for-veterans">
-            <div className="group rounded-xl bg-gradient-to-br from-green-50 to-blue-50 p-8 border-2 border-green-200 hover:border-green-400 hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
+            <div className="group rounded-xl bg-gradient-to-br from-green-50 to-r4n-sage-light p-8 border-2 border-green-200 hover:border-green-400 hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
               <div className="flex flex-col items-center text-center h-full justify-between">
                 {/* Icon */}
                 <div className="text-6xl mb-6">🚴</div>

@@ -50,8 +50,8 @@ export default function TelegramBanner() {
       fontSize: '72px',
       fontWeight: '700',
       letterSpacing: '8px',
-      color: 'rgba(180,40,20,0.12)',
-      border: '6px solid rgba(180,40,20,0.09)',
+      color: 'rgba(92,51,23,0.12)',
+      border: '6px solid rgba(92,51,23,0.09)',
       padding: '4px 16px',
       borderRadius: '3px',
       whiteSpace: 'nowrap' as const,
@@ -93,7 +93,7 @@ export default function TelegramBanner() {
       gap: '12px',
     },
     label: {
-      color: '#6b4f28',
+      color: '#5C3317',
       minWidth: '68px',
       letterSpacing: '1px',
       textDecoration: 'underline dotted',
@@ -104,7 +104,7 @@ export default function TelegramBanner() {
     value: {
       fontWeight: '700',
       letterSpacing: '2px',
-      color: '#6b4f28',
+      color: '#5C3317',
       fontSize: '14px',
     },
     divider: { borderTop: '1px dashed #9a7d52', margin: '2px 0' },
@@ -129,9 +129,9 @@ export default function TelegramBanner() {
       justifyContent: 'space-between' as const,
       borderTop: '2px solid #7a6340',
     },
-    msg1: { fontSize: '14px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.7', color: '#6b4f28' },
-    msg2: { fontSize: '15px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.7', color: '#6b4f28' },
-    msg3: { fontSize: '16px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.7', color: '#6b4f28' },
+    msg1: { fontSize: '14px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.7', color: '#5C3317' },
+    msg2: { fontSize: '15px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.7', color: '#5C3317' },
+    msg3: { fontSize: '16px', fontWeight: '700', letterSpacing: '2px', lineHeight: '1.7', color: '#5C3317' },
   };
 
   // ─── Dark styles ─────────────────────────────────────────────

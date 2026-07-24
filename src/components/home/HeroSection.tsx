@@ -11,14 +11,14 @@ export default function HeroSection() {
   return (
     <div className="pt-8 pb-12 px-4 sm:px-6 lg:px-8">
       {/* Hero Background */}
-      <div className="relative bg-gradient-to-b from-gray-50 to-blue-50 rounded-xl overflow-hidden">
+      <div className="relative bg-gradient-to-b from-gray-50 to-r4n-tan-light rounded-xl overflow-hidden">
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto py-12 px-6 sm:py-16 sm:px-10">
           {/* Purpose Statement */}
           <div className="text-center mb-12">
             <p className="text-lg md:text-xl text-gray-700 italic mb-4 leading-relaxed max-w-3xl mx-auto">
               "Too many dwell in silent despair—their true purpose unrealized,{' '}
-              <span className="font-bold text-blue-700">songs yet unsung!</span>"
+              <span className="font-bold text-r4n-grass">songs yet unsung!</span>"
             </p>
             <p className="text-base text-gray-600 max-w-2xl mx-auto">
               This journey is about more than miles. It's about discovering and living your purpose.
@@ -50,9 +50,9 @@ export default function HeroSection() {
                 </p>
               </div>
 
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded">
-                <h3 className="font-bold text-gray-900 mb-3">The 8 Petals of Purpose:</h3>
-                <div className="grid grid-cols-2 gap-4 text-sm text-gray-700">
+              <div className="bg-r4v-primary border-l-4 border-r4n-tan p-6 rounded">
+                <h3 className="font-bold text-r4n-tan mb-3">The 8 Petals of Purpose:</h3>
+                <div className="grid grid-cols-2 gap-4 text-sm text-r4n-tan">
                   <div>
                     <span className="font-semibold">Physical:</span> Vitality, Nourishment
                   </div>
@@ -69,7 +69,7 @@ export default function HeroSection() {
               </div>
 
               <p className="text-gray-700 leading-relaxed">
-                <span className="font-bold text-blue-700">Click on any petal</span> to see how this journey
+                <span className="font-bold text-r4n-grass">Click on any petal</span> to see how this journey
                 honors each dimension of whole-person health.
               </p>
             </div>
@@ -82,7 +82,7 @@ export default function HeroSection() {
             </h1>
 
             {/* Subheading */}
-            <p className="text-xl md:text-2xl text-blue-700 mb-8 font-bold">
+            <p className="text-xl md:text-2xl text-r4n-grass mb-8 font-bold">
               4,463 Miles of Purpose in Motion
             </p>
 
@@ -96,15 +96,15 @@ export default function HeroSection() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 bg-white rounded-lg p-6 mb-10 shadow-sm">
               <div>
-                <div className="text-3xl font-bold text-blue-600">4,463</div>
+                <div className="text-3xl font-bold text-r4n-grass">4,463</div>
                 <div className="text-sm text-gray-600">Miles</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600">42+</div>
+                <div className="text-3xl font-bold text-r4n-grass">42+</div>
                 <div className="text-sm text-gray-600">Communities</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600">107</div>
+                <div className="text-3xl font-bold text-r4n-grass">107</div>
                 <div className="text-sm text-gray-600">Days</div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#map"
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition inline-block"
+                className="bg-r4v-primary text-r4n-tan px-8 py-3 rounded-lg font-bold hover:bg-r4v-primary-hover transition inline-block"
               >
                 Explore the Route
               </Link>

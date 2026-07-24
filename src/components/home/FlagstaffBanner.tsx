@@ -154,10 +154,10 @@ function FlagstaffRsvpModal({ onClose }: { onClose: () => void }) {
           >
             Join Roll 4 Nature in Flagstaff!
           </h2>
-          <p className="text-blue-200 text-sm text-center mt-2">
+          <p className="text-r4n-grass text-sm text-center mt-2">
             July 4th, 2026 &bull; Flagstaff, Arizona
           </p>
-          <p className="text-blue-200 text-xs text-center mt-1">
+          <p className="text-r4n-grass text-xs text-center mt-1">
             Venue to be announced based on projected attendance.
           </p>
         </div>
@@ -166,7 +166,7 @@ function FlagstaffRsvpModal({ onClose }: { onClose: () => void }) {
           {submitStatus === 'success' && submittedData ? (
             <div className="text-center py-4">
               <div className="text-5xl mb-4">🎆</div>
-              <h3 className="text-2xl font-bold text-[#1B3A6B] dark:text-blue-300 mb-3">
+              <h3 className="text-2xl font-bold text-[#1B3A6B] dark:text-r4n-grass mb-3">
                 You&apos;re on the list!
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
@@ -245,14 +245,14 @@ function FlagstaffRsvpModal({ onClose }: { onClose: () => void }) {
 
               {/* SMS Consent — only when 10-digit phone entered */}
               {showSmsConsent && (
-                <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
+                <div className="bg-r4v-primary border border-r4n-tan rounded-lg p-3">
                   <label className="flex items-start gap-2 cursor-pointer">
                     <input
                       type="checkbox"
                       name="smsConsent"
                       className="mt-0.5 accent-[#1B3A6B]"
                     />
-                    <span className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <span className="text-xs text-r4n-tan leading-relaxed">
                       I agree to receive a confirmation SMS about this event. Message and data rates
                       may apply. Reply STOP to opt out.
                     </span>

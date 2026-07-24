@@ -992,7 +992,7 @@ export default function TeamBravoPage() {
 
               {/* SMS Consent Checkbox */}
               <div className="flex justify-center">
-                <div className="bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-500 rounded-lg p-4 max-w-2xl">
+                <div className="bg-r4v-primary border-2 border-r4n-tan rounded-lg p-4 max-w-2xl">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input
                       type="checkbox"
@@ -1000,7 +1000,7 @@ export default function TeamBravoPage() {
                       required
                       className="mt-1 w-4 h-4 text-r4v-primary border-gray-300 rounded focus:ring-r4v-primary cursor-pointer"
                     />
-                    <span className="text-sm text-gray-700 dark:text-gray-200">
+                    <span className="text-sm text-r4n-tan">
                       I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided to discuss potential involvement. Message and data rates may apply.
                     </span>
                   </label>

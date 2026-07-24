@@ -3,62 +3,74 @@
 import CountdownTimer from '@/components/home/CountdownTimer';
 import FlagstaffBanner from '@/components/home/FlagstaffBanner';
 import TelegramBanner from '@/components/home/TelegramBanner';
+import activitiesData from '@/data/activities.json';
 
 interface JourneyHeroProps {
   showBanner?: boolean;
 }
 
+// Calculate total miles dynamically from activities
+const totalMiles = activitiesData
+  .reduce((sum, activity) => sum + activity.distance, 0)
+  .toFixed(1);
+
+// Days rolling since Feb 27, 2026
+function getDaysOnPath(): number {
+  const start = new Date('2026-02-27T00:00:00');
+  const now = new Date();
+  const diff = Math.floor((now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+  return Math.max(0, diff);
+}
+
 export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
+  const daysOnPath = getDaysOnPath();
+
   return (
-    <div className="bg-gradient-to-b from-r4v-tan to-white dark:from-r4v-secondary dark:to-gray-950 pt-40 sm:pt-36 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
-      {/* Telegram Banner — first visual element, above hero content */}
+    <div className="bg-gradient-to-b from-r4n-tan-light to-white dark:from-r4n-forest dark:to-gray-950 pt-40 sm:pt-36 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
+
+      {/* Telegram Banner — first visual element */}
       <div className="max-w-4xl mx-auto mb-8">
         <TelegramBanner />
       </div>
 
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-          R4V 2026: Coast to Coast to Canyon
+
+        {/* Route title */}
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-r4n-warm-cream mb-4 leading-tight">
+          Mountain States Exploration
         </h1>
 
-        <p className="text-2xl md:text-3xl text-r4v-primary dark:text-r4v-primary-hover font-bold mb-6">
-          4,444 Miles of Purpose in Motion
+        {/* Dynamic mileage */}
+        <p className="text-2xl md:text-3xl text-r4v-primary dark:text-r4n-tan font-bold mb-6">
+          {Number(totalMiles).toLocaleString()} Miles of Purpose in Motion
         </p>
 
+        {/* Body paragraph 1 — nature focus */}
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
-          This isn't a race or a commercial venture—it's a sustained, purpose-driven ride built around endurance, logistics, and community. If you're looking for answers, there's a good chance you'll find them with us on The Path.
+          Nature is not a backdrop — it is the medicine. Research continues to confirm what those who spend time outdoors already know: time in nature reduces cortisol, quiets the mind, restores emotional balance, and reconnects the spirit to something larger than itself. This journey is built on that truth.
         </p>
 
-        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-4">
-          Join us on an epic cross-country bike journey from Key West, Florida, to Los Angeles, California, to Flagstaff, Arizona,
-          supporting Team RWB and connecting with veterans in every community along the way.
+        {/* Body paragraph 2 — community and purpose */}
+        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
+          From the coastline to the canyon to the mountain states, we roll through America's wild places not to conquer them, but to listen. Every mile is an invitation — to step away from the noise, to breathe, to move, and to discover what becomes clear when you get outside and stay there.
         </p>
 
-        <p className="text-base font-semibold text-r4v-primary dark:text-r4v-primary-hover mb-8">
-          Rolling 4 Purpose | Rolling 4 Health | Rolling 4 Discovery | Rolling 4 Veterans
+        {/* Rolling tagline */}
+        <p className="text-base font-semibold text-r4v-primary dark:text-r4n-tan mb-8">
+          Rolling 4 Purpose | Rolling 4 Health | Rolling 4 Discovery | Rolling 4 Nature
         </p>
 
-        {/* Key Details */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm max-w-md mx-auto mb-8">
-          <div className="grid grid-cols-3 gap-4">
-            <div>
-              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">4,444</div>
-              <div className="text-xs text-gray-600 dark:text-gray-400">Miles</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">125</div>
-              <div className="text-xs text-gray-600 dark:text-gray-400">Days</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-r4v-primary dark:text-r4v-primary-hover">57</div>
-              <div className="text-xs text-gray-600 dark:text-gray-400">Communities</div>
-            </div>
+        {/* Days on The Path counter */}
+        <div className="bg-r4v-primary dark:bg-r4n-forest-mid rounded-lg p-6 shadow-sm max-w-sm mx-auto mb-8 border border-r4n-tan/30">
+          <div className="text-4xl font-bold text-r4n-grass mb-1">{daysOnPath}</div>
+          <div className="text-r4n-tan text-sm font-semibold tracking-wide uppercase">
+            Days Rolling on The Path
           </div>
-          <div className="border-t border-gray-200 dark:border-gray-700 mt-4 pt-4 text-sm text-gray-700 dark:text-gray-300">
-            <p><span className="font-semibold dark:text-white">Feb 27 - May 27 - Jul 1, 2026</span></p>
-            <p>Key West, FL → Los Angeles, CA → Flagstaff, AZ</p>
+          <div className="text-r4n-tan-dark text-xs mt-2">
+            Since 27 February 2026
           </div>
         </div>
+
       </div>
 
       {/* Flagstaff Celebration Banner */}
@@ -69,7 +81,7 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
       )}
 
       {/* Countdown Timer */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm">
+      <div className="bg-white dark:bg-r4n-forest-mid rounded-lg p-8 shadow-sm">
         <CountdownTimer />
       </div>
     </div>

@@ -8,23 +8,24 @@ export default function MissionStatement() {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
           {/* Left: Mission Content */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-r4n-warm-cream mb-6 text-center">
               Why We Roll
             </h2>
 
-            <p className="text-base text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
-              Roll 4 Nature is riding coast-to-coast in 2026 to raise awareness of and support for Team Red, White & Blue (Team RWB). Founded in 2010, Team RWB has become a nationwide community empowering veterans through physical activity, meaningful connection, and shared purpose.
+            <p className="text-base text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+              Roll 4 Nature is riding in support of Team Red, White and Blue (Team RWB) — a nationwide community dedicated to enriching the lives of veterans through physical activity, meaningful connection, and shared purpose. Founded in 2010, Team RWB has become the heartbeat of veteran wellness across America.
             </p>
 
-            <p className="text-base text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
-              As we pass through communities across the country, this ride exists to amplify Team RWB's impact, strengthen local engagement, and remind veterans that they are not alone— there is a team ready for them to join.
+            <p className="text-base text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+              Nature is one of the most powerful and underutilized tools for mental, physical, and spiritual health. Time outdoors reduces anxiety and depression, lowers blood pressure, sharpens focus, and restores the sense of meaning that too many veterans — and too many people — lose after major life transitions. This ride is our way of proving that point, mile by mile.
             </p>
 
-            <p className="text-base text-gray-700 dark:text-gray-400 mb-8 leading-relaxed">
-              <span className="font-semibold text-gray-900 dark:text-white">Not broken. Still moving.</span><br />
-              Every mile is gratitude. Every community is connection. Every veteran matters.
+            <p className="text-base text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+              <span className="font-semibold text-gray-900 dark:text-r4n-warm-cream">Not broken. Still moving.</span><br />
+              Every mile is gratitude. Every trail is a classroom. Every community is connection.
             </p>
 
             <Button variant="primary" size="md" href="https://teamrwb.org/programs" target="_blank" rel="noopener noreferrer">
@@ -32,49 +33,66 @@ export default function MissionStatement() {
             </Button>
           </div>
 
-          {/* Right: Stats Box */}
-          <div className="bg-gradient-to-br from-r4v-tan to-r4v-tan-dark dark:from-r4v-secondary dark:to-r4v-secondary-hover rounded-lg p-8 border-2 border-r4v-primary">
-            <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+          {/* Right: Team RWB Impact — brown container, grass green numbers, tan text */}
+          <div style={{ backgroundColor: '#5C3317', borderRadius: '8px', padding: '32px', border: '1px solid rgba(212,184,150,0.3)', boxShadow: '0 4px 16px rgba(0,0,0,0.2)' }}>
+            <h3 style={{ fontSize: '28px', fontWeight: '700', color: '#D4B896', textAlign: 'center', marginBottom: '24px' }}>
               Team RWB Impact
             </h3>
 
-            <div className="flex items-center justify-between gap-6">
-              {/* Left: Statistics */}
-              <div className="flex-1 space-y-6">
-                <div>
-                  <div className="text-4xl font-bold text-r4v-primary dark:text-r4v-primary-hover mb-2">300,000+</div>
-                  <p className="text-lg text-gray-700 dark:text-gray-200">Members and supporters</p>
-                </div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px' }}>
 
+              {/* Statistics */}
+              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div>
-                  <div className="text-4xl font-bold text-r4v-primary dark:text-r4v-primary-hover mb-2">173,768</div>
-                  <p className="text-lg text-gray-700 dark:text-gray-200">Event check-ins in 2025</p>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#7AB648', marginBottom: '4px' }}>300,000+</div>
+                  <p style={{ fontSize: '16px', color: '#D4B896' }}>Members and supporters</p>
                 </div>
-
                 <div>
-                  <div className="text-4xl font-bold text-r4v-primary dark:text-r4v-primary-hover mb-2">18,490</div>
-                  <p className="text-lg text-gray-700 dark:text-gray-200">Total events nationwide</p>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#7AB648', marginBottom: '4px' }}>173,768</div>
+                  <p style={{ fontSize: '16px', color: '#D4B896' }}>Event check-ins in 2025</p>
+                </div>
+                <div>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#7AB648', marginBottom: '4px' }}>18,490</div>
+                  <p style={{ fontSize: '16px', color: '#D4B896' }}>Total events nationwide</p>
                 </div>
               </div>
 
-              {/* Right: Team RWB Logo - Centered in remaining space */}
-              <div className="flex items-center justify-center" style={{width: '180px'}}>
+              {/* RWB Logo */}
+              <div style={{ width: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Image
-                  src="/images/rwb_white.png"
+                  src="/images/rwb_ob.svg"
                   alt="Team Red, White, and Blue Logo"
                   width={120}
                   height={120}
-                  className="object-contain"
+                  style={{ objectFit: 'contain', opacity: 0.9 }}
                 />
               </div>
             </div>
 
-            <div className="mt-6 pt-6 border-t border-r4v-primary">
-              <Button variant="primary" size="md" href="https://members.teamrwb.org/registration" target="_blank" rel="noopener noreferrer" className="w-full">
+            <div style={{ marginTop: '24px', paddingTop: '24px', borderTop: '1px solid rgba(212,184,150,0.2)' }}>
+              <a
+                href="https://members.teamrwb.org/registration"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'block',
+                  width: '100%',
+                  textAlign: 'center',
+                  padding: '12px 24px',
+                  backgroundColor: '#3d6040',
+                  color: '#7AB648',
+                  border: '1px solid #7AB648',
+                  borderRadius: '8px',
+                  fontWeight: '700',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s',
+                }}
+              >
                 Join Team RWB Today
-              </Button>
+              </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>

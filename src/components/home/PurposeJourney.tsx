@@ -184,21 +184,21 @@ export default function PurposeJourney() {
                 </div>
 
                 {/* Journey Points */}
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
-                  <h4 className="font-bold text-gray-900 mb-4">On This Journey:</h4>
+                <div className="bg-r4v-primary border-l-4 border-r4n-tan p-6 rounded-lg">
+                  <h4 className="font-bold text-r4n-tan mb-4">On This Journey:</h4>
                   <ul className="space-y-3">
                     {selectedMapping.journeyPoints.map((point, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <span className="text-blue-600 font-bold mt-1">→</span>
-                        <span className="text-gray-700">{point}</span>
+                        <span className="text-r4n-grass font-bold mt-1">→</span>
+                        <span className="text-r4n-tan">{point}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Journey Message */}
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
-                  <p className="text-lg italic text-gray-800 leading-relaxed">{selectedMapping.journeyMessage}</p>
+                <div className="bg-gradient-to-br from-r4v-primary to-r4v-primary-hover p-6 rounded-lg border border-r4n-tan">
+                  <p className="text-lg italic text-r4n-tan leading-relaxed">{selectedMapping.journeyMessage}</p>
                 </div>
 
                 {/* CTA */}
@@ -235,12 +235,12 @@ export default function PurposeJourney() {
                 onClick={() => setSelectedPetalId(mapping.id)}
                 className={`p-6 rounded-lg text-center transition transform hover:scale-105 cursor-pointer ${
                   selectedPetalId === mapping.id
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'bg-white border border-gray-200 text-gray-900 hover:border-blue-400'
+                    ? 'bg-r4v-primary text-r4n-tan shadow-lg'
+                    : 'bg-white border border-gray-200 text-gray-900 hover:border-r4n-tan'
                 }`}
               >
                 <h4 className="font-bold mb-2">{mapping.petalLabel}</h4>
-                <p className={`text-sm ${selectedPetalId === mapping.id ? 'text-blue-100' : 'text-gray-600'}`}>
+                <p className={`text-sm ${selectedPetalId === mapping.id ? 'text-r4n-tan' : 'text-gray-600'}`}>
                   {mapping.title}
                 </p>
               </button>

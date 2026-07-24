@@ -3,12 +3,15 @@
 import Button from '@/components/ui/Button';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
+  const pathname = usePathname();
+  const isHome = pathname === '/' || pathname === '/roll-for-veterans';
+
   return (
     <nav className="fixed top-0 z-50 w-full bg-r4n-forest dark:bg-r4n-charcoal shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Mobile: Vertical Stack | Desktop: Horizontal */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center py-3 md:py-0 md:h-20 gap-3 md:gap-0">
 
           {/* Banner Logo */}
@@ -25,19 +28,27 @@ export default function Navigation() {
 
           {/* Navigation Links */}
           <div className="flex flex-row justify-center md:justify-end items-center space-x-2 md:space-x-4">
-            <Link href="/" className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base">
-              Home
-            </Link>
+
+            {/* Home — hidden on home page, visible on all subpages */}
+            {!isHome && (
+              <Link
+                href="/"
+                className="text-r4n-warm-cream-dim hover:text-r4n-tan transition text-sm md:text-base"
+              >
+                Home
+              </Link>
+            )}
+
             <Link
               href="/journal"
               aria-label="Read JT's Rolling Journal"
-              className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
+              className="text-r4n-warm-cream-dim hover:text-r4n-tan transition text-sm md:text-base whitespace-nowrap"
             >
               Journal
             </Link>
             <Link
               href="/purpose"
-              className="text-r4n-warm-cream-dim hover:text-r4v-primary-hover transition text-sm md:text-base whitespace-nowrap"
+              className="text-r4n-warm-cream-dim hover:text-r4n-tan transition text-sm md:text-base whitespace-nowrap"
             >
               The Path
             </Link>

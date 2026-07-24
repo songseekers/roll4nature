@@ -8,10 +8,10 @@ export default function QuickActions() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {/* View Route Map */}
       <Link href="/#map">
-        <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-lg hover:shadow-lg transition transform hover:scale-105 cursor-pointer h-full">
+        <div className="bg-gradient-to-br from-r4v-primary to-r4v-primary-hover text-r4n-tan p-6 rounded-lg hover:shadow-lg transition transform hover:scale-105 cursor-pointer h-full">
           <MapPin size={32} className="mb-4" />
           <h3 className="text-xl font-bold mb-2">View Route Map</h3>
-          <p className="text-blue-100 text-sm">
+          <p className="text-r4n-tan text-sm">
             Explore our path from Key West to the Grand Canyon across 80+ cities
           </p>
         </div>

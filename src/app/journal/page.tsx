@@ -121,7 +121,7 @@ export default function JournalPage() {
                           <span className="text-gray-300 dark:text-gray-600">·</span>
                           <span className="text-gray-400 italic text-lg">{d.date}</span>
                         </div>
-                        <div className="text-base text-blue-400 italic mb-8">{d.location}</div>
+                        <div className="text-base text-r4n-grass italic mb-8">{d.location}</div>
                         <div className="space-y-5">
                           {d.entry.split('\n\n').map((para, i) => (
                             <p key={i} className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">{para}</p>
@@ -129,7 +129,7 @@ export default function JournalPage() {
                         </div>
                         <div className="mt-8 flex flex-wrap gap-2">
                           {d.hashtags.map(tag => (
-                            <span key={tag} className="text-sm italic text-blue-400 dark:text-blue-500">{tag}</span>
+                            <span key={tag} className="text-sm italic text-r4n-grass dark:text-r4n-grass-hover">{tag}</span>
                           ))}
                         </div>
                       </article>

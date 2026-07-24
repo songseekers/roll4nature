@@ -313,8 +313,8 @@ export default function RouteMap() {
         aria-pressed={selectedRoute === 'c2c2c'}
         className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap border-2 cursor-pointer ${
           selectedRoute === 'c2c2c'
-            ? 'bg-r4v-primary border-r4v-primary text-white shadow-md'
-            : 'bg-transparent border-r4v-primary/30 text-r4v-primary/50 dark:text-r4v-primary-hover/60 hover:border-r4v-primary hover:text-r4v-primary'
+            ? 'bg-r4v-primary border-r4n-tan text-r4n-tan shadow-md'
+            : 'bg-transparent border-r4n-tan text-r4n-tan hover:bg-r4v-primary/20'
         }`}
       >
         Coast to Coast to Canyon
@@ -324,7 +324,7 @@ export default function RouteMap() {
         aria-pressed={selectedRoute === 'mse'}
         className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap border-2 cursor-pointer ${
           selectedRoute === 'mse'
-            ? 'bg-r4n-sage border-r4n-sage text-white shadow-md'
+            ? 'bg-r4n-sage border-r4n-sage text-r4n-warm-cream shadow-md'
             : 'bg-transparent border-r4n-sage/30 text-r4n-sage/50 hover:border-r4n-sage hover:text-r4n-sage'
         }`}
       >
