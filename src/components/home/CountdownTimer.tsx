@@ -85,29 +85,81 @@ function calcCountdown(to: number): TimerTime & { isOver: boolean } {
   };
 }
 
-// Tan on brown — all timer numbers and labels
+// All inline styles — no Tailwind color classes on the container
+// to avoid class resolution issues
+const CONTAINER: React.CSSProperties = {
+  backgroundColor: '#2a1a08',
+  borderRadius: '12px',
+  padding: '32px',
+  border: 'none',
+  boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
+};
+
+const LABEL: React.CSSProperties = {
+  fontSize: '18px',
+  fontWeight: '600',
+  color: '#E8D0B0',
+  textAlign: 'center',
+};
+
+const NUMBER: React.CSSProperties = {
+  fontSize: '36px',
+  fontWeight: '700',
+  fontFamily: 'monospace',
+  color: '#E8D0B0',
+};
+
+const UNIT: React.CSSProperties = {
+  fontSize: '11px',
+  textTransform: 'uppercase',
+  letterSpacing: '2px',
+  color: '#D4B896',
+};
+
+const DIVIDER_CHAR: React.CSSProperties = {
+  fontSize: '24px',
+  fontWeight: '700',
+  color: 'rgba(212,184,150,0.5)',
+  alignSelf: 'flex-start',
+  paddingTop: '4px',
+};
+
+const SEPARATOR_H: React.CSSProperties = {
+  width: '1px',
+  height: '64px',
+  backgroundColor: 'rgba(212,184,150,0.2)',
+};
+
+const SEPARATOR_V: React.CSSProperties = {
+  width: '96px',
+  height: '1px',
+  backgroundColor: 'rgba(212,184,150,0.2)',
+};
+
+const SECONDARY_TEXT: React.CSSProperties = {
+  fontSize: '14px',
+  fontWeight: '600',
+  color: '#D4B896',
+  textAlign: 'center',
+};
+
 function TimerBlock({ value, label }: { value: number | null; label: string }) {
   return (
-    <div className="flex flex-col items-center">
-      <span className="text-3xl md:text-4xl font-bold font-mono text-r4n-tan">
-        {value !== null ? String(value).padStart(2, '0') : '--'}
-      </span>
-      <span className="text-xs uppercase tracking-wide text-r4n-tan-dark">{label}</span>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <span style={NUMBER}>{value !== null ? String(value).padStart(2, '0') : '--'}</span>
+      <span style={UNIT}>{label}</span>
     </div>
   );
 }
 
 function Divider() {
-  return <span className="text-2xl font-bold text-r4n-tan-dark/60 self-start pt-1">|</span>;
+  return <span style={DIVIDER_CHAR}>|</span>;
 }
 
-function SectionSeparator() {
-  return (
-    <>
-      <div className="hidden md:block w-px h-16 bg-r4n-tan/20" />
-      <div className="block md:hidden w-24 h-px bg-r4n-tan/20" />
-    </>
-  );
+function SectionSeparator({ mobile }: { mobile?: boolean }) {
+  return mobile
+    ? <div style={SEPARATOR_V} />
+    : <div style={SEPARATOR_H} />;
 }
 
 export default function CountdownTimer() {
@@ -145,140 +197,99 @@ export default function CountdownTimer() {
     return () => clearInterval(interval);
   }, []);
 
+  const timerBlocks = (time: TimerTime | null) => (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+      <TimerBlock value={time?.days ?? null} label="days" />
+      <Divider />
+      <TimerBlock value={time?.hours ?? null} label="hrs" />
+      <Divider />
+      <TimerBlock value={time?.minutes ?? null} label="min" />
+      <Divider />
+      <TimerBlock value={time?.seconds ?? null} label="sec" />
+    </div>
+  );
+
   return (
-    <div
-      style={{ backgroundColor: '#5C3317', borderRadius: '12px', padding: '32px' }}
-      className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12"
-    >
+    <div style={CONTAINER} className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+
       {/* Count-UP: time since Key West */}
-      <div className="flex flex-col items-center gap-2">
-        <p className="text-lg font-semibold text-r4n-tan text-center">
-          Time on The Path
-        </p>
-        <div className="flex items-center gap-2">
-          <TimerBlock value={elapsed?.days ?? null} label="days" />
-          <Divider />
-          <TimerBlock value={elapsed?.hours ?? null} label="hrs" />
-          <Divider />
-          <TimerBlock value={elapsed?.minutes ?? null} label="min" />
-          <Divider />
-          <TimerBlock value={elapsed?.seconds ?? null} label="sec" />
-        </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+        <p style={LABEL}>Time on The Path</p>
+        {timerBlocks(elapsed)}
       </div>
 
-      <SectionSeparator />
+      <div className="hidden md:block"><SectionSeparator /></div>
+      <div className="block md:hidden"><SectionSeparator mobile /></div>
 
       {/* Miles Cycled */}
-      <Link href="/stats" className="flex flex-col items-center gap-1 group cursor-pointer">
-        <p className="text-lg font-semibold text-r4n-tan text-center">
-          Miles Cycled
-        </p>
-        <div className="flex flex-col items-center transition-transform group-hover:-translate-y-0.5">
-          <span className="text-2xl md:text-3xl font-bold font-mono text-r4n-tan border-b border-r4n-tan-dark pb-0.5">
+      <Link href="/stats" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', cursor: 'pointer', textDecoration: 'none' }}>
+        <p style={LABEL}>Miles Cycled</p>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <span style={{ ...NUMBER, borderBottom: '1px solid #D4B896', paddingBottom: '2px' }}>
             {totalMilesCycled.toFixed(1)}
           </span>
-          <span className="text-[10px] uppercase tracking-wide text-r4n-tan-dark">miles</span>
+          <span style={UNIT}>miles</span>
         </div>
-        <div className="flex items-center gap-1 mt-1">
-          <span className="text-sm font-semibold text-r4n-tan-dark group-hover:underline transition-all">
-            Click
-          </span>
-          <span className="text-r4n-tan-dark text-base leading-none">↑</span>
-          <span className="text-sm font-semibold text-r4n-tan-dark group-hover:underline transition-all">
-            to see stats
-          </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '4px' }}>
+          <span style={SECONDARY_TEXT}>Click ↑ to see stats</span>
         </div>
       </Link>
 
-      <SectionSeparator />
+      <div className="hidden md:block"><SectionSeparator /></div>
+      <div className="block md:hidden"><SectionSeparator mobile /></div>
 
-      {/* Next event countdown or expiration message */}
-      <div className="flex flex-col items-center gap-2">
-        <p className="text-lg font-semibold text-r4n-tan text-center">
-          What&apos;s Next
-        </p>
+      {/* What's Next */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+        <p style={LABEL}>What&apos;s Next</p>
         {activeEvent ? (
           showExpiration ? (
             <>
-              <p className="text-sm font-semibold text-r4n-tan text-center">
-                {activeEvent.expirationMessage}
-              </p>
+              <p style={SECONDARY_TEXT}>{activeEvent.expirationMessage}</p>
               {activeEvent.expirationLine2 && (
-                <p className="text-sm font-semibold text-r4n-tan-dark text-center">
-                  {activeEvent.expirationLine2}
-                </p>
+                <p style={SECONDARY_TEXT}>{activeEvent.expirationLine2}</p>
               )}
               {activeEvent.expirationLine3 && (
                 activeEvent.expirationLine3.startsWith('https://') ? (
-                  <a
-                    href={activeEvent.expirationLine3}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4n-tan text-center underline underline-offset-2 hover:opacity-80 transition"
-                  >
+                  <a href={activeEvent.expirationLine3} target="_blank" rel="noopener noreferrer"
+                    style={{ ...SECONDARY_TEXT, textDecoration: 'underline' }}>
                     📍 View on Maps
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-r4n-tan-dark text-center">
-                    {activeEvent.expirationLine3}
-                  </p>
+                  <p style={SECONDARY_TEXT}>{activeEvent.expirationLine3}</p>
                 )
               )}
             </>
           ) : (
             <>
-              <p className="text-sm font-semibold text-r4n-tan text-center">
-                {activeEvent.label}
-              </p>
+              <p style={SECONDARY_TEXT}>{activeEvent.label}</p>
               {activeEvent.location && activeEvent.location !== 'TBD' && (
                 activeEvent.locationUrl ? (
-                  <a
-                    href={activeEvent.locationUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4n-tan-dark text-center underline underline-offset-2 hover:opacity-80 transition"
-                  >
+                  <a href={activeEvent.locationUrl} target="_blank" rel="noopener noreferrer"
+                    style={{ ...SECONDARY_TEXT, textDecoration: 'underline' }}>
                     📍 {activeEvent.location}
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-r4n-tan-dark text-center">
-                    {activeEvent.location}
-                  </p>
+                  <p style={SECONDARY_TEXT}>{activeEvent.location}</p>
                 )
               )}
               {activeEvent.locationAddress && (
                 activeEvent.locationUrl ? (
-                  <a
-                    href={activeEvent.locationUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4n-tan-dark text-center underline underline-offset-2 hover:opacity-80 transition"
-                  >
+                  <a href={activeEvent.locationUrl} target="_blank" rel="noopener noreferrer"
+                    style={{ ...SECONDARY_TEXT, textDecoration: 'underline' }}>
                     {activeEvent.locationAddress}
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-r4n-tan-dark text-center">
-                    {activeEvent.locationAddress}
-                  </p>
+                  <p style={SECONDARY_TEXT}>{activeEvent.locationAddress}</p>
                 )
               )}
-              <div className="flex items-center gap-2">
-                <TimerBlock value={activeCountdown?.days ?? null} label="days" />
-                <Divider />
-                <TimerBlock value={activeCountdown?.hours ?? null} label="hrs" />
-                <Divider />
-                <TimerBlock value={activeCountdown?.minutes ?? null} label="min" />
-                <Divider />
-                <TimerBlock value={activeCountdown?.seconds ?? null} label="sec" />
-              </div>
+              {timerBlocks(activeCountdown)}
             </>
           )
         ) : (
-          <p className="text-sm font-semibold text-r4n-tan text-center">
-            Stay tuned for the next stop!
-          </p>
+          <p style={SECONDARY_TEXT}>Stay tuned for the next stop!</p>
         )}
       </div>
+
     </div>
   );
 }

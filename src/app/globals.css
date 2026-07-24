@@ -15,9 +15,9 @@
 
   /* ── Core brand ─────────────────────────────────────── */
 
-  /* Brown — primary action color */
-  --color-r4n-primary:       #5C3317;
-  --color-r4n-primary-hover: #7A4A28;
+  /* Brown — telegram dark (matches header/footer bars) */
+  --color-r4n-primary:       #2a1a08;
+  --color-r4n-primary-hover: #3d2810;
 
   /* Tan — text and accents on brown backgrounds */
   --color-r4n-tan:           #E8D0B0;
@@ -31,7 +31,7 @@
   --color-r4n-sage-hover:    #5a9c6e;
   --color-r4n-sage-light:    #d4e8d8;
 
-  /* Grass green — kept in palette but no longer used on brown */
+  /* Grass green — kept in palette but not used on brown */
   --color-r4n-grass:         #7AB648;
   --color-r4n-grass-hover:   #8FCC58;
 
@@ -62,8 +62,8 @@
   /* ── Legacy r4v- aliases ────────────────────────────── */
   /* Keep these so existing components using r4v- classes  */
   /* continue to work without a full find-and-replace.     */
-  --color-r4v-primary:         #5C3317;
-  --color-r4v-primary-hover:   #7A4A28;
+  --color-r4v-primary:         #2a1a08;
+  --color-r4v-primary-hover:   #3d2810;
   --color-r4v-secondary:       #4a7c59;
   --color-r4v-secondary-hover: #5a9c6e;
   --color-r4v-tan:             #E8D0B0;
@@ -99,7 +99,7 @@ body {
   height: 32px !important;
   font-size: 24px !important;
   line-height: 32px !important;
-  color: #5C3317 !important;
+  color: #2a1a08 !important;
   background-color: rgba(255, 255, 255, 0.95) !important;
   border-radius: 50% !important;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
@@ -111,8 +111,8 @@ body {
 }
 
 .mapboxgl-popup-close-button:hover {
-  background-color: #5C3317 !important;
-  color: white !important;
+  background-color: #2a1a08 !important;
+  color: #E8D0B0 !important;
   transform: scale(1.1) !important;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
 }
