@@ -36,7 +36,7 @@ export default function Error({ error, reset }: ErrorProps) {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => reset()}
-            className="bg-r4n-primary hover:bg-r4n-primary-hover text-r4n-tan font-bold py-3 px-6 rounded-lg transition inline-block"
+            className="bg-r4n-primary hover:bg-r4n-primary-hover text-r4n-grass font-bold py-3 px-6 rounded-lg transition inline-block"
           >
             Try Again
           </button>

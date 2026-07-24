@@ -12,19 +12,9 @@ interface JourneyHeroProps {
 // Calculate total miles dynamically from activities
 const totalMiles = activitiesData
   .reduce((sum, activity) => sum + activity.distance, 0)
-  .toFixed(1);
-
-// Days rolling since Feb 27, 2026
-function getDaysOnPath(): number {
-  const start = new Date('2026-02-27T00:00:00');
-  const now = new Date();
-  const diff = Math.floor((now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-  return Math.max(0, diff);
-}
+  .toFixed(0);
 
 export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
-  const daysOnPath = getDaysOnPath();
-
   return (
     <div className="bg-gradient-to-b from-r4n-tan-light to-white dark:from-r4n-forest dark:to-gray-950 pt-40 sm:pt-36 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
 
@@ -60,17 +50,6 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
           Rolling 4 Purpose | Rolling 4 Health | Rolling 4 Discovery | Rolling 4 Nature
         </p>
 
-        {/* Days on The Path counter */}
-        <div className="bg-r4n-primary dark:bg-r4n-forest-mid rounded-lg p-6 shadow-sm max-w-sm mx-auto mb-8 border border-r4n-tan/30">
-          <div className="text-4xl font-bold text-r4n-grass mb-1">{daysOnPath}</div>
-          <div className="text-r4n-tan text-sm font-semibold tracking-wide uppercase">
-            Days Rolling on The Path
-          </div>
-          <div className="text-r4n-tan-dark text-xs mt-2">
-            Since 27 February 2026
-          </div>
-        </div>
-
       </div>
 
       {/* Flagstaff Celebration Banner */}
@@ -81,7 +60,7 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
       )}
 
       {/* Countdown Timer */}
-      <div className="bg-white dark:bg-r4n-forest-mid rounded-lg p-8 shadow-sm">
+      <div className="bg-r4n-primary rounded-lg p-8 shadow-sm">
         <CountdownTimer />
       </div>
     </div>

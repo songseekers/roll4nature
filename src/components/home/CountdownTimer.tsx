@@ -94,23 +94,23 @@ function calcCountdown(to: number): TimerTime & { isOver: boolean } {
 function TimerBlock({ value, label }: { value: number | null; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-3xl md:text-4xl font-bold font-mono text-r4n-primary dark:text-r4n-primary-hover">
+      <span className="text-3xl md:text-4xl font-bold font-mono text-r4n-grass">
         {value !== null ? String(value).padStart(2, '0') : '--'}
       </span>
-      <span className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</span>
+      <span className="text-xs uppercase tracking-wide text-r4n-grass-light">{label}</span>
     </div>
   );
 }
 
 function Divider() {
-  return <span className="text-2xl font-bold text-gray-400 dark:text-gray-500 self-start pt-1">|</span>;
+  return <span className="text-2xl font-bold text-r4n-grass-light/70 self-start pt-1">|</span>;
 }
 
 function SectionSeparator() {
   return (
     <>
-      <div className="hidden md:block w-px h-16 bg-gray-300 dark:bg-gray-600" />
-      <div className="block md:hidden w-24 h-px bg-gray-300 dark:bg-gray-600" />
+      <div className="hidden md:block w-px h-16 bg-r4n-tan/30" />
+      <div className="block md:hidden w-24 h-px bg-r4n-tan/30" />
     </>
   );
 }
@@ -156,8 +156,8 @@ export default function CountdownTimer() {
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
       {/* Count-UP: time since Key West */}
       <div className="flex flex-col items-center gap-2">
-        <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 text-center">
-          Rolling time since Key West
+        <p className="text-lg font-semibold text-r4n-grass text-center">
+          Time on The Path
         </p>
         <div className="flex items-center gap-2">
           <TimerBlock value={elapsed?.days ?? null} label="days" />
@@ -174,21 +174,21 @@ export default function CountdownTimer() {
 
       {/* Miles Cycled — links to /stats */}
       <Link href="/stats" className="flex flex-col items-center gap-1 group cursor-pointer">
-        <p className="text-lg font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center">
+        <p className="text-lg font-semibold text-r4n-grass text-center">
           Miles Cycled
         </p>
         <div className="flex flex-col items-center transition-transform group-hover:-translate-y-0.5">
-          <span className="text-2xl md:text-3xl font-bold font-mono text-r4n-primary dark:text-r4n-primary-hover border-b border-r4n-primary dark:border-r4n-primary-hover pb-0.5">
+          <span className="text-2xl md:text-3xl font-bold font-mono text-r4n-grass border-b border-r4n-grass pb-0.5">
             {totalMilesCycled.toFixed(1)}
           </span>
-          <span className="text-[10px] uppercase tracking-wide text-gray-500 dark:text-gray-400">miles</span>
+          <span className="text-[10px] uppercase tracking-wide text-r4n-grass-light">miles</span>
         </div>
         <div className="flex items-center gap-1 mt-1">
-          <span className="text-sm font-semibold text-r4n-primary dark:text-gray-300 group-hover:underline transition-all">
+          <span className="text-sm font-semibold text-r4n-grass-light group-hover:underline transition-all">
             Click
           </span>
-          <span className="text-r4n-primary dark:text-gray-300 text-base leading-none">↑</span>
-          <span className="text-sm font-semibold text-r4n-primary dark:text-gray-300 group-hover:underline transition-all">
+          <span className="text-r4n-grass-light text-base leading-none">↑</span>
+          <span className="text-sm font-semibold text-r4n-grass-light group-hover:underline transition-all">
             to see stats
           </span>
         </div>
@@ -198,19 +198,19 @@ export default function CountdownTimer() {
 
       {/* Next event countdown or expiration message */}
       <div className="flex flex-col items-center gap-2">
-        {/* Header — matches "Rolling time since Key West" and "Miles Cycled" style */}
-        <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 text-center">
+        {/* Header — matches "Time on The Path" and "Miles Cycled" style */}
+        <p className="text-lg font-semibold text-r4n-grass text-center">
           What&apos;s Next
         </p>
         {activeEvent ? (
           showExpiration ? (
             // Post-event: show expiration message until midnight
             <>
-              <p className="text-sm font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center">
+              <p className="text-sm font-semibold text-r4n-grass text-center">
                 {activeEvent.expirationMessage}
               </p>
               {activeEvent.expirationLine2 && (
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+                <p className="text-sm font-semibold text-r4n-grass-light text-center">
                   {activeEvent.expirationLine2}
                 </p>
               )}
@@ -220,12 +220,12 @@ export default function CountdownTimer() {
                     href={activeEvent.expirationLine3}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-r4n-grass text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     📍 View on Maps
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+                  <p className="text-sm font-semibold text-r4n-grass-light text-center">
                     {activeEvent.expirationLine3}
                   </p>
                 )
@@ -234,8 +234,8 @@ export default function CountdownTimer() {
           ) : (
             // Pre-event: show countdown
             <>
-              {/* Event label in orange — primary info, matches Miles Cycled value style */}
-              <p className="text-sm font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center">
+              {/* Event label — primary info, matches Miles Cycled value style */}
+              <p className="text-sm font-semibold text-r4n-grass text-center">
                 {activeEvent.label}
               </p>
               {activeEvent.location && activeEvent.location !== 'TBD' && (
@@ -244,12 +244,12 @@ export default function CountdownTimer() {
                     href={activeEvent.locationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-r4n-grass-light text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     📍 {activeEvent.location}
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+                  <p className="text-sm font-semibold text-r4n-grass-light text-center">
                     {activeEvent.location}
                   </p>
                 )
@@ -260,12 +260,12 @@ export default function CountdownTimer() {
                     href={activeEvent.locationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center underline underline-offset-2 hover:opacity-80 transition"
+                    className="text-sm font-semibold text-r4n-grass-light text-center underline underline-offset-2 hover:opacity-80 transition"
                   >
                     {activeEvent.locationAddress}
                   </a>
                 ) : (
-                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 text-center">
+                  <p className="text-sm font-semibold text-r4n-grass-light text-center">
                     {activeEvent.locationAddress}
                   </p>
                 )
@@ -282,7 +282,7 @@ export default function CountdownTimer() {
             </>
           )
         ) : (
-          <p className="text-sm font-semibold text-r4n-primary dark:text-r4n-primary-hover text-center">
+          <p className="text-sm font-semibold text-r4n-grass text-center">
             Stay tuned for the next stop!
           </p>
         )}

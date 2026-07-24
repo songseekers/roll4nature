@@ -1000,7 +1000,7 @@ export default function TeamBravoPage() {
                       required
                       className="mt-1 w-4 h-4 text-r4n-primary border-gray-300 rounded focus:ring-r4n-primary cursor-pointer"
                     />
-                    <span className="text-sm text-r4n-tan">
+                    <span className="text-sm text-r4n-grass-light">
                       I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided to discuss potential involvement. Message and data rates may apply.
                     </span>
                   </label>

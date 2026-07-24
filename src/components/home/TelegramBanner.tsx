@@ -50,8 +50,8 @@ export default function TelegramBanner() {
       fontSize: '72px',
       fontWeight: '700',
       letterSpacing: '8px',
-      color: 'rgba(92,51,23,0.12)',
-      border: '6px solid rgba(92,51,23,0.09)',
+      color: 'rgba(74,124,89,0.12)',
+      border: '6px solid rgba(74,124,89,0.09)',
       padding: '4px 16px',
       borderRadius: '3px',
       whiteSpace: 'nowrap' as const,
@@ -60,7 +60,7 @@ export default function TelegramBanner() {
     },
     header: {
       background: '#2a1a08',
-      color: '#d4c49a',
+      color: '#7AB648',
       textAlign: 'center' as const,
       padding: '10px 16px',
       fontSize: '14px',
@@ -121,7 +121,7 @@ export default function TelegramBanner() {
     },
     footer: {
       background: '#2a1a08',
-      color: '#d4c49a',
+      color: '#7AB648',
       padding: '8px 16px',
       fontSize: '12px',
       letterSpacing: '2px',

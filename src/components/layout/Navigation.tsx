@@ -44,7 +44,7 @@ export default function Navigation() {
               aria-label="Read JT's Rolling Journal"
               className="text-r4n-warm-cream-dim hover:text-r4n-tan transition text-sm md:text-base whitespace-nowrap"
             >
-              Journal
+              JT's Journal
             </Link>
             <Link
               href="/purpose"

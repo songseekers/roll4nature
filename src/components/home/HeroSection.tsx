@@ -51,8 +51,8 @@ export default function HeroSection() {
               </div>
 
               <div className="bg-r4n-primary border-l-4 border-r4n-tan p-6 rounded">
-                <h3 className="font-bold text-r4n-tan mb-3">The 8 Petals of Purpose:</h3>
-                <div className="grid grid-cols-2 gap-4 text-sm text-r4n-tan">
+                <h3 className="font-bold text-r4n-grass mb-3">The 8 Petals of Purpose:</h3>
+                <div className="grid grid-cols-2 gap-4 text-sm text-r4n-grass-light">
                   <div>
                     <span className="font-semibold">Physical:</span> Vitality, Nourishment
                   </div>
@@ -113,7 +113,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#map"
-                className="bg-r4n-primary text-r4n-tan px-8 py-3 rounded-lg font-bold hover:bg-r4n-primary-hover transition inline-block"
+                className="bg-r4n-primary text-r4n-grass px-8 py-3 rounded-lg font-bold hover:bg-r4n-primary-hover transition inline-block"
               >
                 Explore the Route
               </Link>
@@ -139,7 +139,7 @@ export default function HeroSection() {
       </div>
 
       {/* Countdown Section */}
-      <div className="mt-16 bg-gradient-to-b from-gray-50 to-white rounded-xl p-8 sm:p-12">
+      <div className="mt-16 bg-r4n-primary rounded-xl p-8 sm:p-12">
         <CountdownTimer />
       </div>
     </div>

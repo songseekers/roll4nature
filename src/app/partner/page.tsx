@@ -499,7 +499,7 @@ export default function PartnerPage() {
                 <div className="bg-r4n-primary border-2 border-r4n-tan rounded-lg p-4 max-w-2xl">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="sms_consent" required className="mt-1 w-4 h-4 text-r4n-primary border-gray-300 rounded focus:ring-r4n-primary cursor-pointer" />
-                    <span className="text-sm text-r4n-tan">
+                    <span className="text-sm text-r4n-grass-light">
                       I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided to discuss potential involvement. Message and data rates may apply.
                     </span>
                   </label>

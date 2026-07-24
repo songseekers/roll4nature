@@ -6,19 +6,19 @@ export default function HubHero() {
       <div className="max-w-4xl mx-auto text-center">
         {/* Logo/Branding */}
         <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-r4n-tan mb-2">
+          <h1 className="text-4xl md:text-5xl font-bold text-r4n-grass mb-2">
             Songseekers
           </h1>
-          <p className="text-xl text-r4n-tan font-semibold">Purpose in Motion</p>
+          <p className="text-xl text-r4n-grass font-semibold">Purpose in Motion</p>
         </div>
 
         {/* Mission Statement */}
         <div className="max-w-2xl mx-auto mb-12">
-          <p className="text-lg md:text-xl text-r4n-tan italic leading-relaxed">
+          <p className="text-lg md:text-xl text-r4n-grass-light italic leading-relaxed">
             "Too many dwell in silent despair—their true purpose unrealized,{' '}
             <span className="font-bold text-r4n-grass">songs yet unsung!</span>"
           </p>
-          <p className="text-base text-r4n-tan mt-4">
+          <p className="text-base text-r4n-grass-light mt-4">
             Choose your path: Discover your purpose, or join us on a journey that changes lives.
           </p>
         </div>

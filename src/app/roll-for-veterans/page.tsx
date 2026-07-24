@@ -51,7 +51,7 @@ export default function RollForVeteransPage() {
             />
           </div>
 
-          <p className="text-lg text-r4n-tan mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-r4n-grass-light mb-8 max-w-2xl mx-auto">
             Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America in the video below.
           </p>
 
