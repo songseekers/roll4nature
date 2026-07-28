@@ -30,24 +30,29 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
           Mountain States Exploration
         </h1>
 
-        {/* Dynamic mileage — brown in light mode, tan in dark */}
+        {/* Dynamic mileage */}
         <p className="text-2xl md:text-3xl font-bold mb-6 text-r4v-primary dark:text-r4n-tan">
           {Number(totalMiles).toLocaleString()} Miles of Purpose in Motion
         </p>
 
-        {/* Body paragraph 1 */}
+        {/* Body paragraph 1 — nature as medicine */}
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
           Nature is not a backdrop — it is the medicine. Research continues to confirm what those who spend time outdoors already know: time in nature reduces cortisol, quiets the mind, restores emotional balance, and reconnects the spirit to something larger than itself. This journey is built on that truth.
         </p>
 
-        {/* Body paragraph 2 */}
+        {/* Body paragraph 2 — the invitation */}
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
-          From the coastline to the canyon to the mountain states, we roll through America's wild places not to conquer them, but to listen. Every mile is an invitation — to step away from the noise, to breathe, to move, and to discover what becomes clear when you get outside and stay there.
+          From the coastline to the canyon to the mountain states, we roll through America&apos;s wild places not to conquer them, but to listen. Every mile is an invitation — to step away from the noise, to breathe, to move, and to discover what becomes clear when you get outside and stay there.
         </p>
 
-        {/* Rolling tagline */}
+        {/* Body paragraph 3 — route context */}
+        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
+          Having completed the Coast to Coast to Canyon route from Key West to Flagstaff, we have now embarked on the Mountain States Exploration — heading north through arid canyon lands, national parks, and imposing mountain ranges of the American West. Both routes can be explored by toggling the buttons on the map below.
+        </p>
+
+        {/* Updated tagline */}
         <p className="text-base font-semibold text-r4v-primary dark:text-r4n-tan mb-8">
-          Rolling 4 Purpose | Rolling 4 Health | Rolling 4 Discovery | Rolling 4 Nature
+          4 Purpose | 4 Veterans | 4 Everyone | 4 Nature
         </p>
 
       </div>
