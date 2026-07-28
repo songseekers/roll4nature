@@ -131,16 +131,16 @@ export default function StatsPage() {
     <div className="min-h-screen bg-white dark:bg-gray-950 pt-24 transition-colors">
 
       {/* Hero */}
-      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div style={{ backgroundColor: '#2a1a08' }} className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <Link
             href="/"
-            className="inline-block mb-4 text-white/80 hover:text-white transition text-sm font-semibold"
+            className="inline-block mb-4 text-r4n-tan-dark hover:text-r4n-tan transition text-sm font-semibold"
           >
             &larr; Back to Home
           </Link>
-          <h1 className="text-3xl sm:text-4xl font-bold mb-2">Cycling Stats</h1>
-          <p className="text-white/80 text-lg">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-r4n-grass">Cycling Stats</h1>
+          <p className="text-r4n-tan text-lg">
             Roll 4 Nature 2026 — Key West, FL to Flagstaff, AZ
           </p>
         </div>

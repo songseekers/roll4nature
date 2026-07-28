@@ -19,7 +19,7 @@ export default function PathwayCards() {
                   <h2 className="text-2xl font-bold text-r4n-grass mb-3">
                     Discover Your Purpose
                   </h2>
-                  <p className="text-base text-r4n-grass-light mb-6 leading-relaxed">
+                  <p className="text-base text-r4n-tan mb-6 leading-relaxed">
                     Explore the 8-petal framework for whole-person health across Physical, Mental, Emotional, and Lifestyle domains.
                   </p>
                   <div className="text-lg font-semibold text-r4n-grass group-hover:text-r4n-grass-hover transition-colors">

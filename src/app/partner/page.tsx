@@ -78,7 +78,7 @@ export default function PartnerPage() {
     <div className="bg-white dark:bg-gray-950 pt-24">
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
@@ -89,8 +89,8 @@ export default function PartnerPage() {
               className="mx-auto object-contain"
             />
           </div>
-          <h1 className="text-5xl font-bold mb-6">Become a Partner</h1>
-          <p className="text-xl text-white mb-8">
+          <h1 className="text-5xl font-bold mb-6 text-r4n-grass">Become a Partner</h1>
+          <p className="text-xl text-r4n-tan mb-8">
             Help us roll across America in support of our nation&apos;s veterans
           </p>
         </div>
@@ -159,22 +159,22 @@ export default function PartnerPage() {
 
       {/* Mission Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white dark:bg-gray-900 transition-colors">
-        <div className="bg-gradient-to-br from-r4n-tan to-r4n-tan-dark dark:from-r4n-secondary dark:to-r4n-secondary-hover rounded-lg p-8 border-2 border-r4n-primary mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+        <div style={{ backgroundColor: '#2a1a08' }} className="rounded-lg p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-r4n-grass">
             Support the Mission
           </h2>
-          <p className="text-base text-gray-700 dark:text-gray-200 mb-4 leading-relaxed">
+          <p className="text-base text-r4n-tan mb-4 leading-relaxed">
             Roll 4 Nature is a fundraising journey to raise awareness and support for Team Red, White &amp; Blue,
             a nonprofit organization dedicated to enriching the lives of America&apos;s veterans through physical and
             social engagement. Every dollar donated goes directly to Team RWB&apos;s mission.
           </p>
-          <p className="text-base text-gray-700 dark:text-gray-200 mb-4 leading-relaxed">
+          <p className="text-base text-r4n-tan mb-4 leading-relaxed">
             Beyond supporting Team RWB, the operation of this 4,545-mile journey requires significant resources.
             From fuel for support vehicles to food for our cycling team, from bike maintenance to primitive camping
             gear—these operational costs add up quickly.
           </p>
-          <p className="text-base text-gray-700 dark:text-gray-200 leading-relaxed">
-            <span className="font-semibold text-gray-900 dark:text-white">
+          <p className="text-base text-r4n-tan leading-relaxed">
+            <span className="font-semibold text-r4n-grass">
               If you&apos;re interested in partnering with Roll 4 Nature directly,
             </span>{' '}
             we would be grateful for your support. Whether it&apos;s fuel, food, equipment, or financial assistance
@@ -440,7 +440,7 @@ export default function PartnerPage() {
       )}
 
       {/* Contact Form Section */}
-      <section className="bg-gradient-to-b from-r4n-tan to-r4n-tan-dark dark:from-r4n-secondary dark:to-r4n-secondary-hover py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gray-50 dark:bg-gray-900 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
             Let&apos;s Connect
@@ -499,7 +499,7 @@ export default function PartnerPage() {
                 <div className="bg-r4n-primary border-2 border-r4n-tan rounded-lg p-4 max-w-2xl">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="sms_consent" required className="mt-1 w-4 h-4 text-r4n-primary border-gray-300 rounded focus:ring-r4n-primary cursor-pointer" />
-                    <span className="text-sm text-r4n-grass-light">
+                    <span className="text-sm text-r4n-tan">
                       I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided to discuss potential involvement. Message and data rates may apply.
                     </span>
                   </label>
@@ -529,10 +529,10 @@ export default function PartnerPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Questions About Partnering?</h2>
-          <p className="text-xl text-white">
+          <h2 className="text-4xl font-bold mb-6 text-r4n-grass">Questions About Partnering?</h2>
+          <p className="text-xl text-r4n-tan">
             Reach out any time to discuss how your support can make a difference by using the Connect With Us buttons below. We look forward to hearing from you!
           </p>
         </div>

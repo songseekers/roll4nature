@@ -19,21 +19,24 @@
   --color-r4n-primary:       #2a1a08;
   --color-r4n-primary-hover: #3d2810;
 
-  /* Tan — text and accents on brown backgrounds */
-  --color-r4n-tan:           #E8D0B0;
-  --color-r4n-tan-hover:     #F0DCC0;
-  --color-r4n-tan-light:     #F5EBD8;
-  --color-r4n-tan-dark:      #D4B896;
-  --color-r4n-tan-dark-hover:#C8A888;
+  /* Tan — body text and secondary text on brown */
+  /* Lightened for maximum readability on dark brown */
+  --color-r4n-tan:           #F2DFC0;   /* light tan — body text on brown */
+  --color-r4n-tan-hover:     #F8EAD4;
+  --color-r4n-tan-light:     #FAF0E4;   /* very light — backgrounds */
+  --color-r4n-tan-dark:      #E0C4A0;   /* medium tan — secondary text */
+  --color-r4n-tan-dark-hover:#D4B896;
+
+  /* Grass green — headings and display text on brown */
+  /* Lightened significantly for readability */
+  --color-r4n-grass:         #A8D878;   /* light grass — headings on brown */
+  --color-r4n-grass-hover:   #BEE896;
+  --color-r4n-grass-light:   #C8F0A0;   /* very light grass — secondary on brown */
 
   /* Sage green — section backgrounds and accents */
   --color-r4n-sage:          #4a7c59;
   --color-r4n-sage-hover:    #5a9c6e;
   --color-r4n-sage-light:    #d4e8d8;
-
-  /* Grass green — kept in palette but not used on brown */
-  --color-r4n-grass:         #7AB648;
-  --color-r4n-grass-hover:   #8FCC58;
 
   /* Earth, stone, cream */
   --color-r4n-earth:         #8b6914;
@@ -66,15 +69,15 @@
   --color-r4v-primary-hover:   #3d2810;
   --color-r4v-secondary:       #4a7c59;
   --color-r4v-secondary-hover: #5a9c6e;
-  --color-r4v-tan:             #E8D0B0;
-  --color-r4v-tan-hover:       #F0DCC0;
-  --color-r4v-tan-dark:        #D4B896;
-  --color-r4v-tan-dark-hover:  #C8A888;
+  --color-r4v-tan:             #F2DFC0;
+  --color-r4v-tan-hover:       #F8EAD4;
+  --color-r4v-tan-dark:        #E0C4A0;
+  --color-r4v-tan-dark-hover:  #D4B896;
   --color-r4v-cream:           #f8faf5;
 }
 
 .dark {
-  --background: #1a2e1a;
+  --background: #111111;
   --foreground: #f0ebe0;
 }
 
@@ -112,7 +115,7 @@ body {
 
 .mapboxgl-popup-close-button:hover {
   background-color: #2a1a08 !important;
-  color: #E8D0B0 !important;
+  color: #F2DFC0 !important;
   transform: scale(1.1) !important;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
 }

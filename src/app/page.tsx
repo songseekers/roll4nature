@@ -134,7 +134,7 @@ export default function HomePage() {
       <FacebookComments />
 
       {/* Team Bravo Section */}
-      <section className="bg-gradient-to-b from-[#E8C9A1] dark:from-[#8B4513] to-white dark:to-gray-900 py-16 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
             <Image
@@ -153,49 +153,63 @@ export default function HomePage() {
             />
           </div>
 
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America in the video below.
+          <p style={{ color: '#D4B896' }} className="text-lg mb-8 max-w-2xl mx-auto">
+            Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America.
           </p>
 
           <a
             href="/team-bravo"
-            className="inline-block bg-[#5C3317] text-white px-10 py-3 rounded-lg font-bold hover:bg-[#7A4A28] transition text-lg"
+            style={{ backgroundColor: '#3d2810', color: '#E8D0B0', border: '1px solid #D4B896' }}
+            className="inline-block px-10 py-3 rounded-lg font-bold transition text-lg hover:opacity-90"
           >
             Learn About Team Bravo
           </a>
+        </div>
+      </section>
 
-          <div className="mt-10 pt-8 border-t border-[#5C3317]/30">
-            <a href="/purpose">
-              <Image
-                src="/resources/PP_dk.png"
-                alt="The Purpose Pathfinder — click to learn more"
-                width={350}
-                height={350}
-                className="mx-auto object-contain dark:hidden hover:opacity-80 transition cursor-pointer"
-              />
-              <Image
-                src="/resources/PP.png"
-                alt="The Purpose Pathfinder — click to learn more"
-                width={350}
-                height={350}
-                className="mx-auto object-contain hidden dark:block hover:opacity-80 transition cursor-pointer"
-              />
-            </a>
-            <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 mt-4">
-              Interested in working with JT &amp; Sean as your integrative health coaches?
-            </p>
-            <a
-              href="/purpose"
-              className="inline-block bg-[#8B4513] text-white px-8 py-2 rounded-lg font-semibold hover:bg-[#6d360f] transition text-base"
-            >
-              Find Your Purpose
-            </a>
-          </div>
+      {/* Purpose Pathfinder Section */}
+      <section className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            Discover Your Purpose
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+            JT is a certified integrative health coach. The same framework guiding him across 4,000+ miles is available to you — free.
+          </p>
+
+          <a href="/purpose">
+            <Image
+              src="/resources/PP_dk.png"
+              alt="The Purpose Pathfinder — click to learn more"
+              width={350}
+              height={350}
+              className="mx-auto object-contain dark:hidden hover:opacity-80 transition cursor-pointer"
+            />
+            <Image
+              src="/resources/PP.png"
+              alt="The Purpose Pathfinder — click to learn more"
+              width={350}
+              height={350}
+              className="mx-auto object-contain hidden dark:block hover:opacity-80 transition cursor-pointer"
+            />
+          </a>
+
+          <p className="text-gray-600 dark:text-gray-400 text-sm mt-6 mb-4">
+            Click the image to explore the framework, or go straight to the guidebook.
+          </p>
+
+          <a
+            href="/purpose"
+            style={{ backgroundColor: '#2a1a08', color: '#E8D0B0', border: '1px solid #D4B896' }}
+            className="inline-block px-8 py-3 rounded-lg font-semibold transition text-base hover:opacity-90"
+          >
+            Find Your Purpose
+          </a>
         </div>
       </section>
 
       {/* Main CTA Section */}
-      <section className="bg-gradient-to-r from-[#5C3317] to-[#8B4513] text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Support the Mission?

@@ -252,7 +252,7 @@ function FlagstaffRsvpModal({ onClose }: { onClose: () => void }) {
                       name="smsConsent"
                       className="mt-0.5 accent-[#1B3A6B]"
                     />
-                    <span className="text-xs text-r4n-grass-light leading-relaxed">
+                    <span className="text-xs text-r4n-tan leading-relaxed">
                       I agree to receive a confirmation SMS about this event. Message and data rates
                       may apply. Reply STOP to opt out.
                     </span>

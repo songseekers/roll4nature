@@ -52,7 +52,7 @@ export default function HeroSection() {
 
               <div className="bg-r4n-primary border-l-4 border-r4n-tan p-6 rounded">
                 <h3 className="font-bold text-r4n-grass mb-3">The 8 Petals of Purpose:</h3>
-                <div className="grid grid-cols-2 gap-4 text-sm text-r4n-grass-light">
+                <div className="grid grid-cols-2 gap-4 text-sm text-r4n-tan">
                   <div>
                     <span className="font-semibold">Physical:</span> Vitality, Nourishment
                   </div>
@@ -113,7 +113,8 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#map"
-                className="bg-r4n-primary text-r4n-grass px-8 py-3 rounded-lg font-bold hover:bg-r4n-primary-hover transition inline-block"
+                style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+                className="px-8 py-3 rounded-lg font-bold transition hover:opacity-90 inline-block"
               >
                 Explore the Route
               </Link>

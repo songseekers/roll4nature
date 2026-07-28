@@ -10,10 +10,10 @@ export default function AccessibilityPage() {
   return (
     <div className="bg-white dark:bg-gray-950 pt-24 pb-16 transition-colors">
       {/* Header */}
-      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div style={{ backgroundColor: '#2a1a08' }} className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-2">Accessibility Statement</h1>
-          <p className="text-gray-200">Last Updated: February 16, 2026</p>
+          <h1 className="text-4xl font-bold mb-2 text-r4n-grass">Accessibility Statement</h1>
+          <p className="text-r4n-tan">Last Updated: February 16, 2026</p>
         </div>
       </div>
 

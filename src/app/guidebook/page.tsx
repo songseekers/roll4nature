@@ -38,13 +38,13 @@ export default function GuidebookPage() {
       <DimensionsGrid />
 
       {/* Download CTA Section */}
-      <section className="bg-gradient-to-r from-r4n-primary to-r4n-primary-hover text-r4n-grass py-16 px-4 sm:px-6 lg:px-8">
+      <section style={{ backgroundColor: '#2a1a08' }} className="text-r4n-grass py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Explore Deeper?
           </h2>
 
-          <p className="text-lg text-r4n-grass-light mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-r4n-tan mb-10 max-w-2xl mx-auto">
             Download the full Purpose Pathfinder Guidebook to access worksheets, exercises, and deeper insights into each dimension.
           </p>
 
@@ -76,7 +76,8 @@ export default function GuidebookPage() {
 
           <Link
             href="/roll-for-veterans"
-            className="inline-block bg-r4n-primary text-r4n-grass px-8 py-3 rounded-lg font-bold hover:bg-r4n-primary-hover transition"
+            style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+            className="inline-block px-8 py-3 rounded-lg font-bold transition hover:opacity-90"
           >
             Explore the Journey →
           </Link>

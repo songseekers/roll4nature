@@ -59,7 +59,7 @@ export default function CityPage({ params }: Props) {
       </div>
 
       {/* Hero Header */}
-      <div className="bg-gradient-to-r from-r4n-primary to-[#3D220F] text-r4n-grass py-12 px-4 sm:px-6 lg:px-8">
+      <div style={{ backgroundColor: '#2a1a08' }} className="text-r4n-grass py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-4 inline-block bg-r4n-primary-hover px-4 py-1 rounded-full">
             <span className="text-sm font-bold">Day {city.dayNumber} of 108</span>
@@ -69,11 +69,11 @@ export default function CityPage({ params }: Props) {
             {city.name}, {city.state}
           </h1>
 
-          <p className="text-xl text-r4n-grass-light mb-6">
+          <p className="text-xl text-r4n-tan mb-6">
             {formattedDate}
           </p>
 
-          <p className="text-r4n-grass-light text-lg max-w-2xl">
+          <p className="text-r4n-tan text-lg max-w-2xl">
             {city.description || `Join us for Day ${city.dayNumber} of the Roll 4 Nature journey in ${city.name}, ${city.state}.`}
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function CityPage({ params }: Props) {
               <div className="bg-r4n-primary rounded-lg p-6 border-2 border-r4n-tan">
                 <div className="flex items-center mb-2">
                   <Users size={24} className="text-r4n-grass mr-2" />
-                  <span className="text-r4n-grass-light font-semibold">Population</span>
+                  <span className="text-r4n-tan font-semibold">Population</span>
                 </div>
                 <div className="text-3xl font-bold text-r4n-grass">
                   {city.population.toLocaleString()}
@@ -139,7 +139,7 @@ export default function CityPage({ params }: Props) {
                 <p className="text-xl text-r4n-grass font-semibold mb-2">
                   {city.rwbChapter.name}
                 </p>
-                <p className="text-r4n-grass-light mb-4">
+                <p className="text-r4n-tan mb-4">
                   Email: <a href={`mailto:${city.rwbChapter.contactEmail}`} className="text-r4n-grass hover:underline">
                     {city.rwbChapter.contactEmail}
                   </a>
@@ -149,7 +149,8 @@ export default function CityPage({ params }: Props) {
                     href={city.rwbChapter.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-r4n-primary-hover text-r4n-grass px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+                    style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+                    className="inline-block px-6 py-2 rounded-lg font-semibold transition hover:opacity-90"
                   >
                     Visit Chapter Website
                   </a>
@@ -178,18 +179,18 @@ export default function CityPage({ params }: Props) {
 
           {/* Right Column - Signup */}
           <div className="lg:col-span-1">
-            <div className="bg-gradient-to-b from-r4n-primary to-r4n-primary-hover border-2 border-r4n-tan rounded-lg p-8 sticky top-24">
+            <div style={{ backgroundColor: '#2a1a08' }} className="border-2 border-r4n-tan-dark rounded-lg p-8 sticky top-24">
               <h3 className="text-2xl font-bold text-r4n-grass mb-4">
                 Join Us Here
               </h3>
 
-              <p className="text-r4n-grass-light mb-6">
+              <p className="text-r4n-tan mb-6">
                 Want to meet us, ride with us, or volunteer in {city.name}?
               </p>
 
               <div className="space-y-3">
                 <div>
-                  <label className="block text-sm font-semibold text-r4n-grass-light mb-2">
+                  <label className="block text-sm font-semibold text-r4n-tan mb-2">
                     Name
                   </label>
                   <input
@@ -200,7 +201,7 @@ export default function CityPage({ params }: Props) {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-r4n-grass-light mb-2">
+                  <label className="block text-sm font-semibold text-r4n-tan mb-2">
                     Email
                   </label>
                   <input
@@ -211,7 +212,7 @@ export default function CityPage({ params }: Props) {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-r4n-grass-light mb-2">
+                  <label className="block text-sm font-semibold text-r4n-tan mb-2">
                     Phone
                   </label>
                   <input
@@ -222,7 +223,7 @@ export default function CityPage({ params }: Props) {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-r4n-grass-light mb-2">
+                  <label className="block text-sm font-semibold text-r4n-tan mb-2">
                     How can you help?
                   </label>
                   <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-r4n-grass focus:border-transparent">
@@ -239,7 +240,7 @@ export default function CityPage({ params }: Props) {
                 </button>
               </div>
 
-              <p className="text-xs text-r4n-grass-light text-center mt-6">
+              <p className="text-xs text-r4n-tan text-center mt-6">
                 100% of donations go to Team RWB
               </p>
             </div>
@@ -261,7 +262,8 @@ export default function CityPage({ params }: Props) {
             )}
             <Link
               href="/#cities"
-              className="flex-1 bg-r4n-primary hover:bg-r4n-primary-hover text-r4n-grass px-6 py-3 rounded-lg font-semibold transition text-center"
+              style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+              className="flex-1 px-6 py-3 rounded-lg font-semibold transition hover:opacity-90 text-center"
             >
               Explore All 42+ Communities →
             </Link>

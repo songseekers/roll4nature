@@ -3,6 +3,7 @@ import MissionStatement from '@/components/journey/MissionStatement';
 import RouteMapLoader from '@/components/map/RouteMapLoader';
 import Button from '@/components/ui/Button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'R4N 2026: Coast to Coast to Canyon | 4,545 Miles of Purpose',
@@ -51,24 +52,28 @@ export default function RollForVeteransPage() {
             />
           </div>
 
-          <p className="text-lg text-r4n-grass-light mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-r4n-tan mb-8 max-w-2xl mx-auto">
             Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America in the video below.
           </p>
 
-          <Button variant="primary" size="lg" href="/team-bravo">
+          <Link
+            href="/team-bravo"
+            style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+            className="inline-flex items-center justify-center rounded-lg font-bold px-8 py-4 text-lg transition hover:opacity-90"
+          >
             Learn About Team Bravo
-          </Button>
+          </Link>
         </div>
       </section>
 
       {/* Main CTA Section */}
-      <section className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 text-r4n-grass">
             Ready to Support the Mission?
           </h2>
 
-          <p className="text-xl text-white mb-10 leading-relaxed">
+          <p className="text-xl text-r4n-tan mb-10 leading-relaxed">
             Whether you want to donate, volunteer, or join us in your city—your support matters.
           </p>
 
@@ -79,9 +84,13 @@ export default function RollForVeteransPage() {
             <Button variant="tan-dark" size="md" href="https://gofund.me/fdff623ca" target="_blank" rel="noopener noreferrer">
               R4N GoFundMe
             </Button>
-            <Button variant="primary" size="md" href="/sponsor">
+            <Link
+              href="/sponsor"
+              style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+              className="inline-flex items-center justify-center rounded-lg font-bold px-6 py-3 text-base transition hover:opacity-90"
+            >
               Become a Partner
-            </Button>
+            </Link>
             <Button variant="dark" size="md" href="/team-bravo">
               Join Team Bravo
             </Button>

@@ -50,7 +50,7 @@ export default function Navigation() {
               href="/purpose"
               className="text-r4n-warm-cream-dim hover:text-r4n-tan transition text-sm md:text-base whitespace-nowrap"
             >
-              The Path
+              Free Guidebook
             </Link>
             <Button
               variant="primary"

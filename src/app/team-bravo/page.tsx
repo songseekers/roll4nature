@@ -114,7 +114,7 @@ export default function TeamBravoPage() {
   return (
     <div className="bg-white dark:bg-gray-950 pt-24">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
@@ -132,35 +132,41 @@ export default function TeamBravoPage() {
               className="mx-auto object-contain hidden dark:block"
             />
           </div>
-          <h1 className="text-5xl font-bold mb-6">Join Team Bravo</h1>
+          <h1 className="text-5xl font-bold mb-6 text-r4n-grass">Join Team Bravo</h1>
 
-          <div className="text-xl text-white mb-6 space-y-3">
+          <div className="text-xl text-r4n-tan mb-6 space-y-3">
             <p className="font-bold text-2xl">
-              Roll <span className="text-3xl">4</span> Veterans
+              Roll <span className="text-3xl text-r4n-grass">4</span> Veterans
             </p>
             <p>
-              <span className="text-3xl font-bold">4,444</span> miles across America
+              <span className="text-3xl font-bold text-r4n-grass">4,444</span> miles across America
             </p>
             <p>
-              <span className="text-3xl font-bold">4</span> fingers raised with the thumb across the palm — the letter <strong>B</strong> in sign language
+              <span className="text-3xl font-bold text-r4n-grass">4</span> fingers raised with the thumb across the palm — the letter <strong>B</strong> in sign language
             </p>
           </div>
 
-          <p className="text-gray-200 text-lg leading-relaxed mb-6">
+          <p className="text-r4n-tan text-lg leading-relaxed mb-6">
             Team Bravo isn&apos;t just the core crew on the road — it&apos;s <strong>everyone</strong> who supports this mission.
             Veterans who ride alongside us. Communities who welcome us. And you — choosing to do good deeds,
             get out into nature, and connect with others.
           </p>
 
-          <p className="text-gray-200 text-lg leading-relaxed mb-8">
+          <p className="text-r4n-tan text-lg leading-relaxed mb-8">
             There are no requirements to join Team Bravo. Just raise four fingers in the Team Bravo Salute,
             share it with others, and live the mission in your own way.
           </p>
 
-          <Button variant="white" size="lg" href="https://youtube.com/@roll4veterans/shorts" target="_blank" rel="noopener noreferrer" className="gap-2 whitespace-nowrap">
+          <a
+            href="https://youtube.com/@roll4veterans/shorts"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+            className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg font-bold px-8 py-4 text-lg transition hover:opacity-90"
+          >
             <ExternalLink size={20} />
             Roll4Veterans YouTube Channel
-          </Button>
+          </a>
         </div>
       </div>
 
@@ -837,7 +843,7 @@ export default function TeamBravoPage() {
       </section>
 
       {/* Application Section */}
-      <section className="bg-gradient-to-b from-r4n-tan to-r4n-tan-dark dark:from-r4n-secondary dark:to-r4n-secondary-hover py-20 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section className="bg-white dark:bg-gray-900 py-20 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
             Ready to Join?
@@ -1000,7 +1006,7 @@ export default function TeamBravoPage() {
                       required
                       className="mt-1 w-4 h-4 text-r4n-primary border-gray-300 rounded focus:ring-r4n-primary cursor-pointer"
                     />
-                    <span className="text-sm text-r4n-grass-light">
+                    <span className="text-sm text-r4n-tan">
                       I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided to discuss potential involvement. Message and data rates may apply.
                     </span>
                   </label>
@@ -1091,13 +1097,13 @@ export default function TeamBravoPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <section style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 text-r4n-grass">
             Questions? Let&apos;s Talk!
           </h2>
 
-          <p className="text-xl text-white mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-r4n-tan mb-10 max-w-2xl mx-auto leading-relaxed">
             Email or call us to talk more about Team Bravo opportunities using the links under Connect With Us below. We look forward to hearing from you!
           </p>
         </div>

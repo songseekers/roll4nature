@@ -184,21 +184,21 @@ export default function PurposeJourney() {
                 </div>
 
                 {/* Journey Points */}
-                <div className="bg-r4n-primary border-l-4 border-r4n-tan p-6 rounded-lg">
+                <div className="bg-r4n-primary border-l-4 border-r4n-tan-dark p-6 rounded-lg">
                   <h4 className="font-bold text-r4n-grass mb-4">On This Journey:</h4>
                   <ul className="space-y-3">
                     {selectedMapping.journeyPoints.map((point, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <span className="text-r4n-grass font-bold mt-1">→</span>
-                        <span className="text-r4n-grass-light">{point}</span>
+                        <span className="text-r4n-tan">{point}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Journey Message */}
-                <div className="bg-gradient-to-br from-r4n-primary to-r4n-primary-hover p-6 rounded-lg border border-r4n-tan">
-                  <p className="text-lg italic text-r4n-grass-light leading-relaxed">{selectedMapping.journeyMessage}</p>
+                <div style={{ backgroundColor: '#2a1a08' }} className="p-6 rounded-lg border border-r4n-tan-dark">
+                  <p className="text-lg italic text-r4n-tan leading-relaxed">{selectedMapping.journeyMessage}</p>
                 </div>
 
                 {/* CTA */}
@@ -240,7 +240,7 @@ export default function PurposeJourney() {
                 }`}
               >
                 <h4 className="font-bold mb-2">{mapping.petalLabel}</h4>
-                <p className={`text-sm ${selectedPetalId === mapping.id ? 'text-r4n-grass-light' : 'text-gray-600'}`}>
+                <p className={`text-sm ${selectedPetalId === mapping.id ? 'text-r4n-tan' : 'text-gray-600'}`}>
                   {mapping.title}
                 </p>
               </button>

@@ -297,11 +297,11 @@ export default function PurposePage() {
     <div className="bg-white dark:bg-gray-950 pt-24">
 
       {/* ── Section 1: Hero ──────────────────────────────────── */}
-      <div className="bg-gradient-to-r from-r4n-primary to-r4n-secondary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-4">The Path</h1>
-          <p className="text-xl text-white mb-4">Integrative Health Coaching with JT &amp; Sean</p>
-          <p className="text-lg italic text-gray-200">
+          <h1 className="text-5xl font-bold mb-4 text-r4n-grass">The Path</h1>
+          <p className="text-xl text-r4n-tan mb-4">Integrative Health Coaching with JT &amp; Sean</p>
+          <p className="text-lg italic text-r4n-tan">
             &ldquo;Too many dwell in silent despair — their true purpose unrealized, songs yet unsung.&rdquo;
           </p>
         </div>
@@ -413,7 +413,7 @@ export default function PurposePage() {
       </section>
 
       {/* ── Section 5: Application Form ──────────────────────── */}
-      <section className="bg-gradient-to-b from-r4n-tan to-r4n-tan-dark dark:from-r4n-secondary dark:to-r4n-secondary-hover py-20 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section className="bg-gray-50 dark:bg-gray-900 py-20 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
             Apply for Coaching
@@ -580,7 +580,7 @@ export default function PurposePage() {
                       required
                       className="mt-1 w-4 h-4 text-r4n-primary border-gray-300 rounded focus:ring-r4n-primary cursor-pointer"
                     />
-                    <span className="text-sm text-r4n-grass-light">
+                    <span className="text-sm text-r4n-tan">
                       I consent to receive a follow-up SMS message from Roll 4 Nature at the number provided
                       to discuss potential involvement. Message and data rates may apply.
                     </span>
