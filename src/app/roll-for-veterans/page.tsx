@@ -17,7 +17,7 @@ export default function RollForVeteransPage() {
       <JourneyHero />
 
       {/* Interactive Route Map */}
-      <section id="map" className="bg-gray-50 dark:bg-gray-900 pb-16 pt-0 px-4 sm:px-6 lg:px-8 transition-colors">
+      <section id="map" className="bg-white dark:bg-gray-900 pb-16 pt-0 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Explore Our Route

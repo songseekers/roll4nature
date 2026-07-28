@@ -16,7 +16,7 @@ const totalMiles = (activitiesData as Array<{ distance: number }>)
 
 export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
   return (
-    <div className="bg-r4n-tan-light dark:bg-r4n-forest pt-40 sm:pt-36 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
+    <div className="bg-r4n-tan-light dark:bg-[#2a1a08] pt-40 sm:pt-36 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8 transition-colors">
 
       {/* Telegram Banner */}
       <div className="max-w-4xl mx-auto mb-8">
