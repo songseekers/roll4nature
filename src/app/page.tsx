@@ -14,7 +14,6 @@ export const metadata = {
 export default function HomePage() {
   const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
   const showFlagstaffBanner = today < '2026-07-03';
-  // Celebration banner expires July 4 at noon CT (CDT = UTC-5, so noon CDT = 17:00 UTC)
   const showCelebrationBanner = Date.now() < new Date('2026-07-04T17:00:00Z').getTime();
 
   const trackingRaw = fs.readFileSync(
@@ -30,21 +29,20 @@ export default function HomePage() {
 
   return (
     <div className="bg-white dark:bg-gray-900 transition-colors">
+
       {/* Journey Hero */}
       <JourneyHero showBanner={showFlagstaffBanner} />
 
-      {/* 4th of July Parade — Journey Celebration (expires July 4 at noon CT) */}
+      {/* 4th of July Parade — expires July 4 at noon CT */}
       {showCelebrationBanner && (
         <section className="bg-gradient-to-r from-red-600 to-blue-600 text-white py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-4">
               🎆 Celebrate the Finish 🎆
             </h2>
-
             <p className="text-xl text-white mb-8 leading-relaxed">
               Join us for the Flagstaff 4th of July Parade—the perfect way to celebrate 4,444 miles of purpose, connection, and community.
             </p>
-
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-8 max-w-2xl mx-auto border border-white/20">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left sm:text-center">
                 <div>
@@ -59,11 +57,9 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Whether you&apos;re local or traveling from afar, come celebrate the end of a journey with Team RWB, Team Bravo, and everyone who made this ride possible.
             </p>
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://maps.google.com/?q=Beaver+St+and+Elm+St,+Flagstaff,+AZ"
@@ -84,8 +80,8 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Interactive Route Map */}
-      <section id="map" className="bg-gray-50 dark:bg-gray-800 pb-16 pt-0 px-4 sm:px-6 lg:px-8 transition-colors">
+      {/* ── 1. Interactive Route Map ── */}
+      <section id="map" className="bg-gray-50 dark:bg-gray-800 pb-8 pt-0 px-4 sm:px-6 lg:px-8 transition-colors">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Explore Our Route
@@ -97,7 +93,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Live Tracking Banner — only rendered when a session is active */}
+      {/* ── 2. Live Tracking — sits below map ── */}
       {isTrackingActive && (
         <section className="bg-gray-900 py-6 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -127,13 +123,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Mission Statement */}
-      <MissionStatement />
-
-      {/* Facebook Comments */}
-      <FacebookComments />
-
-      {/* Team Bravo Section */}
+      {/* ── 3. Team Bravo — human connection before mission ── */}
       <section style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
@@ -152,14 +142,12 @@ export default function HomePage() {
               className="mx-auto object-contain hidden dark:block"
             />
           </div>
-
-          <p style={{ color: '#D4B896' }} className="text-lg mb-8 max-w-2xl mx-auto">
+          <p style={{ color: '#F2DFC0' }} className="text-lg mb-8 max-w-2xl mx-auto">
             Ready to be part of this epic journey? Find out more about Team Bravo and the ride across America.
           </p>
-
           <a
             href="/team-bravo"
-            style={{ backgroundColor: '#3d2810', color: '#E8D0B0', border: '1px solid #D4B896' }}
+            style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
             className="inline-block px-10 py-3 rounded-lg font-bold transition text-lg hover:opacity-90"
           >
             Learn About Team Bravo
@@ -167,7 +155,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Purpose Pathfinder Section */}
+      {/* ── 4. Discover Your Purpose ── */}
       <section className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -176,7 +164,6 @@ export default function HomePage() {
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             JT is a certified integrative health coach. The same framework guiding him across 4,000+ miles is available to you — free.
           </p>
-
           <a href="/purpose">
             <Image
               src="/resources/PP_dk.png"
@@ -193,14 +180,12 @@ export default function HomePage() {
               className="mx-auto object-contain hidden dark:block hover:opacity-80 transition cursor-pointer"
             />
           </a>
-
           <p className="text-gray-600 dark:text-gray-400 text-sm mt-6 mb-4">
             Click the image to explore the framework, or go straight to the guidebook.
           </p>
-
           <a
             href="/purpose"
-            style={{ backgroundColor: '#2a1a08', color: '#E8D0B0', border: '1px solid #D4B896' }}
+            style={{ backgroundColor: '#2a1a08', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
             className="inline-block px-8 py-3 rounded-lg font-semibold transition text-base hover:opacity-90"
           >
             Find Your Purpose
@@ -208,33 +193,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Main CTA Section */}
+      {/* ── 5. About Team RWB (was "Why We Roll") ── */}
+      <MissionStatement />
+
+      {/* ── 6. Facebook Comments ── */}
+      <FacebookComments />
+
+      {/* ── 7. Main CTA ── */}
       <section style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 style={{ color: '#A8D878' }} className="text-4xl font-bold mb-6">
             Ready to Support the Mission?
           </h2>
-
-          <p className="text-xl text-white mb-10 leading-relaxed">
+          <p style={{ color: '#F2DFC0' }} className="text-xl mb-10 leading-relaxed">
             Whether you want to donate, volunteer, or join us in your city—your support matters.
           </p>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/donate"
-              className="bg-[#D4A574] text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-[#c49464] transition inline-block"
+              style={{ backgroundColor: '#F2DFC0', color: '#2a1a08' }}
+              className="px-8 py-3 rounded-lg font-bold hover:opacity-90 transition inline-block"
             >
               Help Fuel the Mission
             </a>
             <a
               href="/partner"
-              className="bg-[#5C3317] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#a84d25] transition inline-block"
+              style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+              className="px-8 py-3 rounded-lg font-bold hover:opacity-90 transition inline-block"
             >
               Become a Partner
             </a>
             <a
               href="/team-bravo"
-              className="bg-[#8B4513] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#6d360f] transition inline-block"
+              style={{ backgroundColor: '#3d2810', color: '#F2DFC0', border: '1px solid #E0C4A0' }}
+              className="px-8 py-3 rounded-lg font-bold hover:opacity-90 transition inline-block"
             >
               Join Team Bravo
             </a>

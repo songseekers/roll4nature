@@ -31,9 +31,10 @@ export default function MapControls({ layer, onLayerChange }: MapControlsProps) 
           <button
             key={control.value}
             onClick={() => onLayerChange(control.value)}
+            style={layer === control.value ? { backgroundColor: '#2a1a08', color: '#F2DFC0' } : undefined}
             className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap ${
               layer === control.value
-                ? 'bg-r4n-primary text-white shadow-md'
+                ? 'shadow-md'
                 : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
             }`}
             title={control.description}

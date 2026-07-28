@@ -4,8 +4,9 @@ import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
 const BROWN = '#2a1a08';
-const TAN   = '#E8D0B0';
-const TAN_DIM = '#D4B896';
+const GRASS = '#A8D878';
+const TAN   = '#F2DFC0';
+const TAN_DIM = '#E0C4A0';
 const TAN_BORDER = 'rgba(232,208,176,0.2)';
 
 export default function MissionStatement() {
@@ -17,7 +18,7 @@ export default function MissionStatement() {
           {/* Left: Mission Content */}
           <div>
             <h2 className="text-4xl font-bold text-gray-900 dark:text-r4n-warm-cream mb-6 text-center">
-              Why We Roll
+              About Team RWB
             </h2>
             <p className="text-base text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
               Roll 4 Nature is riding in support of Team Red, White and Blue (Team RWB) — a nationwide community dedicated to enriching the lives of veterans through physical activity, meaningful connection, and shared purpose. Founded in 2010, Team RWB has become the heartbeat of veteran wellness across America.
@@ -34,7 +35,9 @@ export default function MissionStatement() {
             </Button>
           </div>
 
-          {/* Right: Team RWB Impact — telegram-dark brown container */}
+          {/* Right: Team RWB Impact — brown container */}
+          {/* Headings/numbers: light grass green */}
+          {/* Body text: light tan */}
           <div style={{
             backgroundColor: BROWN,
             borderRadius: '8px',
@@ -42,23 +45,23 @@ export default function MissionStatement() {
             border: `1px solid ${TAN_BORDER}`,
             boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
           }}>
-            <h3 style={{ fontSize: '28px', fontWeight: '700', color: TAN, textAlign: 'center', marginBottom: '24px' }}>
+            <h3 style={{ fontSize: '28px', fontWeight: '700', color: GRASS, textAlign: 'center', marginBottom: '24px' }}>
               Team RWB Impact
             </h3>
 
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px' }}>
               <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: TAN, marginBottom: '4px' }}>300,000+</div>
-                  <p style={{ fontSize: '16px', color: TAN_DIM }}>Members and supporters</p>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: GRASS, marginBottom: '4px' }}>300,000+</div>
+                  <p style={{ fontSize: '16px', color: TAN }}>Members and supporters</p>
                 </div>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: TAN, marginBottom: '4px' }}>173,768</div>
-                  <p style={{ fontSize: '16px', color: TAN_DIM }}>Event check-ins in 2025</p>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: GRASS, marginBottom: '4px' }}>173,768</div>
+                  <p style={{ fontSize: '16px', color: TAN }}>Event check-ins in 2025</p>
                 </div>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: TAN, marginBottom: '4px' }}>18,490</div>
-                  <p style={{ fontSize: '16px', color: TAN_DIM }}>Total events nationwide</p>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: GRASS, marginBottom: '4px' }}>18,490</div>
+                  <p style={{ fontSize: '16px', color: TAN }}>Total events nationwide</p>
                 </div>
               </div>
 
