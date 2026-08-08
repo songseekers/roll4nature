@@ -40,11 +40,11 @@ export default function Navigation() {
             )}
 
             <Link
-              href="/journal"
-              aria-label="Read JT's Rolling Journal"
+              href="/writings"
+              aria-label="Read JT's Writings"
               className="text-r4n-warm-cream-dim hover:text-r4n-tan transition text-sm md:text-base whitespace-nowrap"
             >
-              JT's Journal
+              JT&apos;s Writings
             </Link>
             <Link
               href="/purpose"

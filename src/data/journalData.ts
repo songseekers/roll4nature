@@ -10,9 +10,10 @@ export interface JournalDay {
   region: string;
   entry: string;
   hashtags: string[];
+  title?: string;
 }
 
-export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Northern Arizona', 'Grand Canyon'];
+export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Northern Arizona', 'Grand Canyon', 'Interlude'];
 
 export const stateConfig: Record<string, { color: string; subtitle: string; displayName?: string }> = {
   Florida:      { color: '#1a5276', subtitle: 'Key West to the Panhandle · ~1,000 Miles' },
@@ -26,6 +27,7 @@ export const stateConfig: Record<string, { color: string; subtitle: string; disp
   'Utah':             { color: '#8B3a00', subtitle: 'St. George to the Canyon Country' },
   'Northern Arizona': { color: '#8B4513', subtitle: 'Jacob Lake to Flagstaff', displayName: 'Arizona' },
   'Grand Canyon':     { color: '#6b2a00', subtitle: 'Flagstaff to the Colorado River' },
+  'Interlude':        { color: '#c9821f', subtitle: 'Flagstaff to Tuacahn' },
 };
 
 export const journalDays: JournalDay[] = [
@@ -1715,5 +1717,710 @@ To conserve battery power, I've decided to record just one video and one audio j
 
 If today is any indication, this is going to be an unforgettable journey.`,
     hashtags: ["#Wonder", "#Gratitude", "#Milestone", "#NewWayOfLife", "#Adventure", "#Brotherhood", "#RollForVeterans", "#TeamBravo", "#Connection", "#Sparkle"]
+  },
+  {
+    num: 133,
+    date: "Thursday, July 9, 2026",
+    location: "Nautiloid Camp → Mile 35, Colorado River, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the ninth, Day one hundred thirty-three.
+
+We woke up at Nautiloid Camp, named for the marine fossils found throughout this stretch of the canyon. Our site sits on a small patch of sand at the mouth of a slot canyon — a little more room than last night's spot, with plenty of rocks scattered around to remind you where you are.
+
+This morning I decided to ride the oar boat with Doug.
+
+Doug is a fascinating character. We seem to have quite a bit in common — small construction projects, a love of the outdoors, and a lifetime of stories from years spent working the river. Logan joined us at first, but before long he decided to trade in for one of the inflatable kayaks.
+
+The rapids this morning were no joke. I decided that wasn't the moment to try kayaking myself. Those inflatable kayaks flip easily, and with water like that, I was content to stay put in the larger oar boat.
+
+While Logan paddled off on his own, Doug let me take the oars for a while. It's a strange feeling. Instead of facing the direction you're traveling and pulling, you face downstream and push the oars forward. Awkward at first, but after a while it starts to make sense.
+
+...And there's the conch shell. That's the signal that dinner is ready.
+
+I rowed with Doug for several hours before Logan decided he'd had enough kayaking for the morning. He'd taken a pretty memorable swim through one of the rapids — the kind of swim that makes a person decide it's time for a break.
+
+Once we'd passed most of the larger rapids, I traded places and climbed into one of the inflatable kayaks myself. That turned out to be a great decision. I capsized twice. On one of those flips, I nearly lost a shoe — caught it with my fingertips just before it floated off downstream. That was close.
+
+Kayaking asks for a lot more paddling than anticipated, but it was an absolute blast. I especially loved what the guides call ripples. The difference between a ripple and a rapid, they explained, is that a rapid hides what's ahead behind the river's horizon line, signaling a real drop in elevation. Ripples still carry whitewater and movement, just without the standing waves and sudden drops that define a true rapid. Exciting without being overwhelming.
+
+Just before we reached camp, I nearly flipped a third time — which would have stung a little, since the current wasn't even strong. I simply got sideways, one wave nearly rolled me, then another wave from the opposite direction almost finished the job. A little well-timed leaning kept everything upright.
+
+After setting up camp, Dillon and I went exploring one of the side canyons. The area was full of rock and debris left behind by flash floods during monsoon season. We climbed a good ways up before turning back. On the way down, Dillon's sandal broke.
+
+Later we wandered over to another part of camp where a few adventurous souls were jumping off a large boulder into the river. I decided not to jump. Instead, I recorded everyone else doing it.
+
+As I'm writing this, there's a crow casually walking across Dillon's sleeping pad. Apparently it has no respect for personal space.
+
+Tonight we're camped together on the same stretch of beach, surrounded by canyon walls tall enough to make the whole place feel like a natural fortress.
+
+The weather stayed uneventful. No rain, no storms — just sunshine, heat, and plenty of waves. I think we've reached around Mile thirty-five. The guides call today's stretch "The Roaring Twenties," on account of how many rapids are packed into the section starting around mile twenty.
+
+Looking back, I think this might be another best day ever. I'm deeply grateful for everything we experienced today, and especially grateful everyone made it through safely. At one point the paddle raft nearly flipped, throwing three people into the river. Fortunately everyone had their helmets on going into that rapid — a precaution we don't always take. One of the paddlers told me his helmet collided hard with someone else's. Without those helmets, that could easily have meant cuts, a concussion, or worse. Instead, everyone walked away smiling.
+
+Tomorrow the guides say there won't be nearly as many rapids. That's fine by me. I have a feeling there will still be plenty of beauty. I don't know which boat I'll end up in tomorrow. I'll let fate decide.
+
+But first — it's time for dinner.`,
+    hashtags: ["#Wonder", "#Gratitude", "#Adventure", "#Grit", "#Brotherhood", "#Connection", "#RollForVeterans", "#TeamBravo", "#Sparkle", "#NewWayOfLife"]
+  },
+  {
+    num: 134,
+    date: "Friday, July 10, 2026",
+    location: "Colorado River → Saddle Canyon, River Mile 47, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the tenth, Day one hundred thirty-four.
+
+I'm sitting beside a babbling brook whose water begins deep within the rocks before emerging into the open, spilling over a beautiful waterfall. This place is called Saddle Canyon, and it's absolutely breathtaking. The hike up here was fairly strenuous, but every step was worth it.
+
+We stopped for the day much earlier than usual. The wind had been blowing hard, people were tired, and quite a few hadn't slept well the night before, so the guides agreed to make camp here at River Mile forty-seven. Normally we stop for lunch before making camp, but today we pushed a little farther and arrived around one o'clock in the afternoon.
+
+On the way, we stopped to explore an old tunnel that engineers once dug into the canyon wall while studying whether a dam could be built here. Just imagine that — flooding the entire Grand Canyon. It's almost impossible to picture.
+
+As I lie here stretched across the little stream created by the waterfall, I look up and see birds soaring overhead, tiny insects darting through the air, and life everywhere I turn. I can hear it. I can feel it. The miracle that water brings to the desert.
+
+This place feels sacred. Everything here is so completely natural that it's almost beyond comprehension. The scale is overwhelming. The canyon walls rise higher and higher above us, and every layer of rock tells another chapter of a story millions of years in the making.
+
+Today I rode in the oar boat with Wayne. He's lived an incredible life — snowboarding, skiing, mountain biking, river running. Those are just a few of the adventures he's pursued. He's constantly moving. He told me he's hiked around five hundred trails within the Grand Canyon and climbed roughly half of its eighty-six named peaks.
+
+Listening to someone with that much experience is fascinating. When people like Wayne talk about nature, it isn't just an idea. It's the life they've chosen. And spending time with people like that reinforces something I've been feeling throughout this journey. When you're immersed in nature, so much of the noise that accumulates in everyday civilization simply falls away. You begin remembering what really matters.
+
+I have to stop recording — I'm the last one lingering here. Well, not quite; one guide is waiting for me on the path. As we walk back toward camp, Wayne and I fall into a wonderful conversation. He's been leading the oar boat all day, but on the hike he naturally drifts toward the back of the group. I'm not in any hurry to leave Saddle Canyon, so we walk out together.
+
+I discovered that he and I think in remarkably similar ways. We compared notes about life, purpose, and the outdoors. Neither of us claimed to have all the answers. In fact, that may have been what I appreciated most. Wayne is incredibly accomplished, yet also deeply humble. That's a rare combination.
+
+The wind is blowing downriver tonight. It's warm — it feels like someone is aiming a giant hair dryer at camp. Honestly, that's nothing new. We've been riding into hot, dry winds ever since crossing New Mexico. The difference now is that the Colorado River flows alongside us the whole way. Whenever the heat becomes too much, all it takes is a splash of that cold water to cool everything down. Blessings abound.
+
+I've been fighting to stay awake all day. I keep catching myself nodding off. So I think it's time to call it a night. Hopefully a good night's sleep is waiting for me beneath the canyon walls.`,
+    hashtags: ["#Wonder", "#Gratitude", "#Connection", "#Brotherhood", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo", "#Sparkle", "#Inspiration", "#Adventure"]
+  },
+  {
+    num: 135,
+    date: "Saturday, July 11, 2026",
+    location: "Saddle Canyon → Nevills Beach, River Mile 76, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was Saturday, July the eleventh, Day one hundred thirty-five.
+
+We began the day in Saddle Canyon. Since we hadn't covered many miles yesterday, the plan was to make up for it today. And we certainly did. We ran so many rapids that I lost count.
+
+Around noon, we stopped at the Little Colorado River. It was unlike anything I've ever seen. The water was a brilliant light turquoise, colored by a high concentration of dissolved minerals, primarily calcium. It looked almost unreal. The Hopi people believe this is the place where their ancestors emerged into this world, making it one of their most sacred sites. Standing there, I could understand why. There was a special feeling about that place.
+
+One of the highlights of the day was carrying Dennis up the trail in his wheelchair. We balanced the chair on long poles and carried him like a king being escorted to his palace. I took the back end, holding the poles almost like the handles of a wheelbarrow. There were already two people supporting that end, but I wanted to add a little extra stability. The last thing we wanted was to tip Big D over.
+
+As we made our way farther into the canyon, a helicopter suddenly appeared. One of our fellow travelers, Inga, had a possible encounter with a bat the night before. Even a tiny scratch can transmit rabies, and those scratches aren't always visible. Out of an abundance of caution, the decision was made to fly her out for medical evaluation. That brought a somber moment to an otherwise joyful morning. Safety comes first.
+
+Once we reached the upper part of the canyon, the mood quickly became playful again. Everyone slipped their life jackets around their hips instead of their shoulders, almost like giant diapers, and we took turns sliding down the smooth, water-polished rock. It was ridiculously fun. At one point, we even formed a human train, each person holding onto the legs of the person behind them as we all slid together. There was a lot of laughter. A lot of splashing. A lot of joy.
+
+It was also incredibly hot today. Whenever I wasn't in the water, I found myself looking for whatever shade I could find. I found a few nooks and a couple of crannies along the canyon wall.
+
+Lunch was served back on the beach. The crew mixed meat, vegetables, and other ingredients into a large bowl, and we filled half tortillas with the mixture like little funnels. Simple. Quick. Delicious.
+
+After lunch, we climbed back into the boats and entered some of the biggest rapids we've seen so far. Unkar Rapid was enormous. The waves towered above the raft. It's hard to describe the feeling of watching walls of water rushing toward you — waves taller than the boat itself — and then climbing over one after another, sometimes disappearing completely into a crashing wall of water before emerging soaked from head to toe. It was exhilarating.
+
+By late afternoon we reached Nevills Beach, just below Nevills Rapid near River Mile seventy-six, named after the legendary river runner Norm Nevills. I'd spent the day on the paddle raft, and Nevills Rapid absolutely drenched me. By the time we landed, the sun had already disappeared behind the canyon wall. I was cold.
+
+Still, we all pitched in to unload the boats before I dug through my dry bags for warmer clothes. Despite their name, dry bags don't always keep everything perfectly dry, no matter how carefully you pack them.
+
+Dinner was unbelievable. Steaks. Mashed potatoes. Asparagus. And a chocolate cherry cake baked in a Dutch oven that was so rich and moist it hardly seemed possible. I definitely ate too much. Again.
+
+The evening was filled with long conversations around camp. Every day I get to know the group a little better. We share stories. Life lessons. Dreams. Failures. Successes. It feels less and less like a tour group and more like a community. I'm incredibly grateful to be sharing this adventure with them.
+
+Tomorrow, the guides tell us we'll face rapids even larger than anything we've run so far. Several magnitudes larger was the exact wording. That almost seems impossible. I can't imagine water bigger than what we've already experienced. But countless people have navigated these rapids before us. So why not us? We'll face them together. We'll have fun. And, hopefully, everyone will come through safely.
+
+Of course, we'll be missing Inga. Watching the helicopter carry her back to civilization was difficult. No one wanted to see her leave. But caution was the smart call. Hopefully she'll be back home soon with nothing more than a story to tell.
+
+Now it's time to get some sleep. A good night's rest will help us meet tomorrow's challenges with clear eyes, steady hearts, and a renewed appreciation for our place in this incredible landscape.
+
+I've actually been sleeping surprisingly well out here. Everything is covered with sand by morning, but after a few days you stop noticing. Maybe all those months of sleeping in Cleo the trailer prepared me for this. Whatever the reason, I seem to be adapting well.
+
+One thing I'm especially thankful for is that the stomach issues I'd been dealing with before the trip completely cleared up the day before we launched. I've felt healthy ever since. For that, I'm deeply grateful.
+
+This marks my fourth day on the river. And somehow, each day has been even more beautiful than the one before. I wouldn't have believed that was possible. Yet tomorrow promises to be even more spectacular.`,
+    hashtags: ["#Wonder", "#Gratitude", "#Adventure", "#Connection", "#Brotherhood", "#Grit", "#RollForVeterans", "#TeamBravo", "#Sparkle", "#Adaptation"]
+  },
+  {
+    num: 136,
+    date: "Sunday, July 12, 2026",
+    location: "Nevills Beach → Upper Trinity, Colorado River, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the twelfth, Day one hundred thirty-six.
+
+We camped at Upper Trinity for the night — a quirky little beach with limited camping space — after what was, perhaps, the most remarkable day of the trip so far. Day five of this epic adventure.
+
+The morning actually began in a much quieter way. Before leaving Nevills Beach, we hiked up a beautiful slot canyon. The stream had rounded and polished the rocks until about ten feet above the canyon floor, where they became sharper and more angular, revealing how much water had shaped the canyon over the years. It was incredibly peaceful.
+
+Doug, Scooter, Mike, and Justin brought their guitars, and the canyon filled with music. We leaned against the smooth rock walls, listened to them sing, and simply enjoyed the moment. It was the perfect way to begin the day. Another group joined and listened until the last song.
+
+Then we hiked back to the beach over countless rocks and climbed back into the boats. The tranquility didn't last long.
+
+I spent the day riding in Wayne's oar boat again. Almost immediately we entered some of the biggest rapids I've ever seen. Hans Rapid was the first major one, and it gave us a good soaking. But the real monster was Sockdolager Rapid.
+
+I learned that "sockdolager" was an old expression from the 1800s that meant a knockout punch or a decisive blow. The name fits. One wave completely swallowed me. It hit so hard that Wayne later told me the water rose all the way to his shoulders, and for a moment he couldn't even see me. That's how big it was.
+
+And somehow... it was exhilarating. Unforgettable. And the most memorable rapid moment for me so far.
+
+The more time I spend talking with Wayne, the more I appreciate who he is. Today I learned that he lived in Belize a couple of years before I did, and we traded stories from those chapters of our lives. Our conversations seem to wander everywhere — life, work, adventure, philosophy — and somehow they always leave me thinking.
+
+Then the day took a more serious turn. Earlier, during lunch, Dennis had fallen backward in his wheelchair while being transferred from a kayak. We were told he wasn't quite himself afterward, so everyone was paying close attention to how he was doing.
+
+Not long after that, another raft lost both a passenger and a piece of luggage in one of the rapids. Ben happened to be the closest person to the floating bag in his inflatable kayak. Without hesitation, he paddled over, scooped it up like he'd done it a hundred times before, balanced it on his kayak, and brought it safely back. He laughed and admitted he felt the eyes watching him. Fortunately, he made it look easy.
+
+The bigger challenge came when the tandem kayak flipped in another rapid. Mike and Dennis were in that one, and Dennis wasn't in any condition to continue kayaking after that. The guides decided to transfer him into Wayne's oar boat. If there was one person everyone trusted to get him safely through the remaining rapids, it was Wayne.
+
+We pulled alongside, fashioned a seat for Dennis between dry bags, with Kim and I sitting on either side of him for the rest of the afternoon, making sure he stayed comfortable and steady. Despite everything that had happened, Dennis remained in good spirits. The ride became surprisingly enjoyable. Sometimes simply being there for someone is enough.
+
+When we finally reached camp, we discovered there wasn't much room to work with. Part of the kitchen had to be set up on the upper beach and the rest on the lower beach. Everything took longer than usual, and dinner wasn't served until late.
+
+As darkness settled over camp, we gathered together for a time of sharing. Everyone talked about something they were proud of from the day. The conversation stretched into twilight, and before we knew it we were washing dishes by headlamp.
+
+Somewhere during that evening it felt like we stopped being just a collection of people on a guided river trip. We became a team. Maybe even something closer to a family. The canyon has a way of doing that.
+
+Yesterday we watched Inga leave by helicopter. Today we experienced hard rapids, flipped boats, rescues, injuries, and uncertainty. But we also watched people step up for one another. We trusted the guides and their years of experience. We worked together. And by the end of the day, everyone was safely in camp.
+
+Earlier in the trip we'd passed several groups traveling on motorized rafts. Today one of those groups stopped and shared some of their extra ice with us. It was a simple gesture, but one that meant a lot. Out here, little kindnesses seem even bigger.
+
+Tomorrow is Day six. We'll be running Crystal Rapid, along with several other famous rapids. I've heard plenty of stories about Crystal. Interestingly, nobody seems to talk nearly as much about Lava Falls, which I'd always assumed was the legendary one. Maybe I'll understand why after tomorrow.
+
+Regardless, I'll get into whichever boat needs me. We'll respect the canyon. We'll trust each other. And, with any luck, we'll all come through another day together. That's what we do.`,
+    hashtags: ["#Grit", "#Brotherhood", "#Gratitude", "#Connection", "#Resilience", "#Community", "#Wonder", "#RollForVeterans", "#TeamBravo", "#Adventure"]
+  },
+  {
+    num: 137,
+    date: "Monday, July 13, 2026",
+    location: "Upper Trinity → Bass Camp, Colorado River, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the thirteenth, Day one hundred thirty-seven, out here in nature.
+
+We began day six at Upper Trinity Camp. Some call it False Trinity, but someone whose opinion I respect told me the proper name is Upper Trinity, so that's what I'll call it.
+
+Unfortunately, we lost two more members of our group today. Chica had hit her head in the rapids yesterday, and today she was stung by a scorpion. Between those two incidents, she just didn't seem quite like herself. Her father, Mike, and the guides decided not to take any chances, so they called for another helicopter evacuation. Her father left with her.
+
+We had to travel down to the next beach, which was large enough for the helicopter to land, navigating one rapid along the way. Once we arrived, everyone worked together to prepare a safe landing area. I was able to record the helicopter coming in, which was fascinating to watch. After Chica, Mike, and a few of their belongings were loaded aboard, the helicopter lifted off, and after a salute to our departing comrades, we returned to the business of the river.
+
+The day that followed was simply outstanding. I spent it riding with my good friend Doug in the sweeper oar boat. I honestly couldn't have asked for a better place to be.
+
+Doug explained how he approaches each rapid — what he's looking for, where he wants the boat to be, how he reads the water, and how he adjusts his line as conditions change. Watching someone who has mastered their craft is inspiring. The more I watched him, the more I found myself thinking, "I could learn to do this." With enough training, I think I could become a competent oarsman. Kayaking still looks a little more intimidating, but even that seems possible. You learn how to roll back upright, and if all else fails, you can always swim.
+
+Not that swimming is always easy. One kayaker got caught in a recirculating hydraulic today. He said all he could see were bubbles and couldn't tell which direction was up. Someone on a nearby boat yelled instructions, and he managed to swim free and get a full breath of air. He wasn't the only victim of Crystal Rapid. A term used in the whitewater community is "carnage." Several kayakers and the paddle boat ran into trouble.
+
+It was another reminder that the canyon deserves constant respect. We all watch out for one another out here. And today, once again, everyone made it safely back to camp. That's something worth celebrating.
+
+Being part of a group like this is incredibly rewarding. When challenges arise, nobody asks whose job something is. People simply step in and help. I think the fact that we're sharing twelve straight days together changes the dynamic. Everyone has a life waiting for them when this trip ends, but while we're here, we're fully invested in each day.
+
+For me, this trip also feels like the beginning of something new. When I get back, Sean and I will sit down and start planning the next chapter of our lives. We'll head back toward Bodaway Gap for the wellness event on the twenty-fifth. Then we'll continue through Marble Canyon, Jacob Lake, Kanab, and wherever the road leads after that. I'll also spend more time developing this retreat idea that's been growing stronger in my mind throughout the journey.
+
+Speaking of camps... Yesterday I decided to sleep in a tent. Today I did it again. You could say it's because of how intense it is out here. Yes... The quality of my jokes has not improved on this trip.
+
+There are a lot of bats around camp, though, so having a little extra cover over my head isn't the worst idea. There's also a greater chance of rain now that monsoon season is beginning.
+
+I found what I think is the perfect campsite. I pitched my tent beside a stand of green reeds near the river. Being close to the river makes nighttime bathroom trips much easier, since we're supposed to relieve ourselves directly in the water. If I'm nearby, I can simply walk over and come straight back.
+
+The damp sand beside the river is another bonus. It doesn't blow around nearly as much as the dry sand farther inland. The reeds seem to block a little of the wind, maybe even a few adventurous bats, and the whole area feels slightly cooler. The only rule is not to camp too close to the water. When the river rises overnight, you might wake up floating.
+
+Today's rapids were excellent. We ran the Gems — Ruby, Sapphire, and Emerald — and later Serpentine. Emerald turned out to be the biggest splasher of the day. It wasn't necessarily the largest rapid, but we hit exactly the correct line and took a wall of water straight over the boat. I was completely soaked. The rest of the day was fairly dry by comparison. Serpentine felt almost like being out on the ocean, with waves arriving from several different directions at once. It made for a fun ride.
+
+Earlier in the morning, while transporting Chica to the helicopter landing, I rode with Jordan and Seth because Mike took the seat I had originally planned to use in Doug's boat. During that stretch I recorded a couple of short interviews with people about their experiences in nature. Everyone I've asked has seemed happy to share their thoughts. I'd love to collect more of those conversations before the trip ends.
+
+I'm intentionally keeping my own filming to a minimum — usually just one or two videos a day, maybe a few extra photos if we discover something extraordinary like a waterfall. But hearing other people describe what nature means to them... that's what really interests me.
+
+Questions like: What has being out here done for you? How has nature changed you? How often do you need to get outside to feel balanced? Those are the conversations I want people to hear. I think stories like that reach people more effectively than anything I could say by myself.
+
+As I'm finishing this journal entry, it's beginning to sprinkle. Just enough to make me close the rain fly before climbing into my sleeping bag. It'll be a little warmer inside the tent, but at least I'll stay dry.
+
+Today really was another best day ever. I genuinely love the people I'm sharing this adventure with. Every one of them has added something meaningful to the experience.
+
+One final note. Seth, one of the paddle guides, told me about a card game called Euchre. As he described the bowers and how the jacks become the highest cards, it sounded strangely familiar. I think I've played something similar before. We don't have a deck of cards out here. That's probably for the best. We'd stay up far too late playing.
+
+Instead, I've been going to bed with the sun and waking up with the sun. The days leave me tired — between the heat, the rowing, the hiking, and the constant movement — but it's a good kind of tired.
+
+Today I also spotted three desert bighorn sheep. They're surprisingly difficult to see against the canyon walls, and usually someone else spots them before I do. Not today. I found them.
+
+We also landed at Bass Camp, which the guides say is one of the most coveted campsites anywhere along the Colorado River. After yesterday's cramped campsite, Bass felt enormous. People even set up horseshoes on the upper beach. Justin told us the famous "We got Bass!" story — a bit of river lore about one group calling out those words as they claimed the campsite before another group could reach it. Apparently, it's become something of a tradition ever since.
+
+Dinner tonight was outstanding. Sausage spaghetti, fresh salad, and a delicious pasta salad with olives, cheese, crackers, and olive oil as an appetizer.
+
+Lunches have become one of my favorite parts of the day, too. The guides mix together a hearty salad, and everyone scoops it into half a tortilla to make simple handheld wraps. It's such an easy meal that Sean and I could easily adopt it on the road. A bagged salad, a can of chicken, tortillas, and you've got a satisfying lunch with almost no cleanup. Definitely something to remember.
+
+The rain has stopped now. The canyon is quiet. And it's time for bed. Tomorrow will bring whatever tomorrow brings.`,
+    hashtags: ["#Gratitude", "#Brotherhood", "#Connection", "#Wonder", "#Grit", "#Resilience", "#Inspiration", "#RollForVeterans", "#TeamBravo", "#Community"]
+  },
+  {
+    num: 138,
+    date: "Tuesday, July 14, 2026",
+    location: "Bass Campground → Diabase Campground, River Mile 132, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the fourteenth, Day one hundred thirty-eight.
+
+Day seven on the river began at Bass Campground. We started the morning with bagels, smoked salmon, capers, tomatoes, and cream cheese. It was an excellent breakfast. After packing everything up, we headed back onto the river.
+
+For the first part of the day, we kept the inflatable kayaks deflated, and Dennis stayed out of the tandem kayak until we were through the more technical rapids. Once the rough water was behind us, the guides inflated the kayaks, and Big D paddled tandem with Ben.
+
+I had originally planned to ride with Wayne, but Doug didn't have anyone in his oar boat, so I joined him instead. I'm glad I did.
+
+Soon after leaving Bass Campground, we stopped for a silent hike through Blacktail Canyon. We were asked not to talk, which suited me just fine. I often prefer experiencing places like this in silence anyway.
+
+As I walked through the narrow canyon, surrounded by billion-year-old rock layers stacked like enormous stone shelves, I rounded a corner and suddenly found myself standing in what felt like a natural cathedral.
+
+The chamber was immense. Three great shelves of rock curved overhead, bending inward like the ribs of a giant dome. A massive boulder rested in the center of the room, where I saw Dillon lying peacefully on top of it as though he were offering himself to the canyon.
+
+I found a place along the curved wall, sat down, and simply looked. The rest of the party continued on the hike, but I was transfixed.
+
+There was an energy in that place that is difficult to describe. It almost felt like a portal to heaven. Everything about it invited stillness. I stayed there for quite a while, letting gratitude fill my heart — for this journey, for the friendships I've made, and for all the adventures that somehow led me here.
+
+Later, when I mentioned the chamber to Doug, he told me we were almost exactly halfway through the river trip. That somehow made the place feel even more meaningful. Maybe it really was the center of something — not just geographically, but personally as well.
+
+Once again, I was the last person to leave, save the sweeper.
+
+Back on the river, we ran several splashy rapids. None were especially intimidating today, but Doug and I bumped into the rocks a couple of times. I think the strong wind was changing the way the current pushed the boat.
+
+Doug and I spent much of the day talking philosophy. He's a thoughtful person, and I always enjoy our conversations. Later, one of the kayakers needed to come off the water and ride with us for a while, which changed the dynamic aboard the boat. After that, the day became much quieter, and we simply enjoyed drifting through the canyon. Originally, Justin had hoped we could visit Elves Chasm, but another rafting group had already taken the available landing space along the beach.
+
+By late afternoon we arrived at Diabase Campground at Mile one hundred thirty-two. Diabase is a type of rock that we've only recently begun seeing after leaving Granite Gorge.
+
+The sky had turned dark and threatening, and the wind had picked up considerably. After consulting with the other guides, Justin decided we'd stay here.
+
+That's one thing I've really appreciated about Justin's leadership. Although he's the lead guide and ultimately makes the decisions, he consistently seeks input from the rest of the guide team before choosing where we'll stop or how we'll proceed.
+
+Everything is set up for another night on the river. I've been sleeping surprisingly well, and I don't take that for granted. Several others have struggled to get good sleep, so I feel fortunate every night I wake up rested.
+
+The conch shell has just sounded, which means dinner is ready.
+
+As this journey continues, something inside me continues to change. At first I wondered when this adventure would end and ordinary life would return. But little by little, this is becoming my ordinary life.
+
+Being comfortable in nature. Accepting both its gifts and its hardships. Finding peace in simplicity. Maybe that's what this whole journey has been preparing me for.`,
+    hashtags: ["#Wonder", "#Gratitude", "#Connection", "#Brotherhood", "#Sparkle", "#Adaptation", "#RollForVeterans", "#TeamBravo", "#NewWayOfLife", "#Community"]
+  },
+  {
+    num: 139,
+    date: "Wednesday, July 15, 2026",
+    location: "Diabase Campground → Kanab Creek Camp, Colorado River, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the fifteenth, Day one hundred thirty-nine — eight days since departing Lee's Ferry.
+
+We started the morning at Diabase Campground and finished at the campground below Kanab Creek, which seems to have several different names depending on who you ask — Kanab Camp, Hell's Kitchen, or Stick Island.
+
+I began the day on the paddle boat. After a while we stopped at Deer Creek, and I experienced one of the most magnificent places I've ever seen.
+
+A spring emerges from the canyon wall and cascades into a series of smaller waterfalls, surrounded by lush green trees and grass. It feels almost impossible that a place like this exists in the middle of the desert.
+
+I stood beneath one of the waterfalls wearing my hat. The water hit the brim and spread outward like an umbrella, creating a curtain of water all around me that briefly shut out the outside world. When I stepped out, my hat was firmly pressed down onto my head. I spent a little while soaking in the creek before we continued to the main waterfall farther down.
+
+That waterfall was enormous — at least sixty feet tall. The force of the falling water created its own wind. The mist alone was enough to blow people's hats away and send clothing flapping in every direction. Standing beneath it took some courage because the power of the water was incredible.
+
+The creek water was much colder than the Colorado River, and by the time we finished exploring I was chilled. We had lunch immediately afterward, and I stayed cold for much of it. Oddly enough, I appreciated it after spending so many hot days in the canyon.
+
+After lunch I wanted one more chance to run some rapids in an inflatable kayak before our opportunities ran out. I asked Nick — a tall fellow with remarkably long arms — if he had a splash jacket I could borrow. Thankfully, he did.
+
+The splash jacket seals tightly around your neck, wrists, and waist, so your torso stays mostly dry. It fit so snugly that I actually became warm from paddling before we even reached the whitewater.
+
+I made it safely through a couple of rapids, but then we reached the Fish Rapids: Fish Head, Fish Guts, and Fish Tail.
+
+Fish Guts got me. A wave flipped the kayak, and this time I couldn't recover it. The previous two times I'd capsized, I was able to grab the kayak and climb back on. This time, when I surfaced, it had already drifted a few feet away. I still had my paddle, but the current carried me away from the kayak instead of toward it. I had no choice but to swim to one of the oar boats, where they pulled me aboard.
+
+So much for my perfect self-rescue record. Once I got back into the kayak, I finished the remaining rapids without incident.
+
+We reached camp around five o'clock, giving us plenty of time to relax. I set up my sleeping area right beside the river and skipped the tent tonight.
+
+The younger guides spent the evening practicing kayak skills. I enjoyed watching them while Seth, Colton, and Sadie coached Jordan on rolling the kayak upright after flipping.
+
+One thing I remain wary of is the bats. As dusk approaches, they begin flying everywhere. If one merely brushes against you, the guides take it very seriously because of the possibility of rabies exposure. That can mean a helicopter evacuation, expensive medical treatment, and a series of vaccinations. I'd much rather avoid all of that. I almost wish I had a bug net to hang over my sleeping area. Sometimes, though, you simply trust nature to be kind.
+
+As evening settled in, we were treated to another beautiful sunset. Earlier in the afternoon, dark storm clouds surrounded us. Lightning flashed in the distance, thunder echoed through the canyon, and strong winds swept down the river. I was especially grateful to have borrowed Nick's splash jacket. It made the day much more comfortable.
+
+Tomorrow we'll encounter a rapid called Upset. If nobody else wants to take an inflatable kayak through it, I'd like to give it a try. It will probably be my last opportunity to run a significant rapid in one before this trip ends.
+
+They say the waves are enormous. There's a good chance I'll end up swimming again, but that doesn't bother me. I'll do my best to stay upright, but if a rogue wave catches the kayak sideways, there's only so much you can do. That's part of the adventure.
+
+Tonight I'm simply grateful. Grateful to Team RWB for making this experience possible. Grateful for the Grand Canyon and the Colorado River. Grateful for good health. Grateful for the incredible people sharing this journey with me.
+
+My only complaint is a stiff neck most mornings, though it loosens up after a couple of hours and I'm good to go.
+
+Every day out here somehow becomes the best day ever.`,
+    hashtags: ["#Wonder", "#Gratitude", "#Adventure", "#Grit", "#Sparkle", "#Brotherhood", "#RollForVeterans", "#TeamBravo", "#Connection", "#NewWayOfLife"]
+  },
+  {
+    num: 140,
+    date: "Thursday, July 16, 2026",
+    location: "Hell's Kitchen Camp → Mohawk Campground, River Mile 172, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the sixteenth, Day one hundred forty — my ninth day in the Grand Canyon.
+
+Only about two and a half days remain. On Day twelve we'll reach Diamond Creek, and they tell us we'll be on a bus headed home by around lunchtime. It's hard to believe how quickly the time has gone.
+
+We started the day at Hell's Kitchen Camp. The sun hit the beach almost immediately after it rose, so it warmed up quickly. It rained a little during the night — just enough to dampen the sheet I was sleeping under before it stopped. It happened twice, but neither shower lasted long. Even with the interruptions, I slept fairly well and woke up feeling rested.
+
+Today brought more rapids. I had hoped to take an inflatable kayak through one more major rapid, especially Upset Rapid, because I wanted one last chance to face that kind of challenge. It just wasn't my turn today, and at this point I don't know if I'll get another opportunity. We'll see what tomorrow brings.
+
+Instead, I spent the morning in the paddle boat. Honestly, I really enjoy the paddle boat. It's more engaging than an oar boat because everyone has a job to do, and since it's smaller, you feel every wave much more intensely. You're part of the river instead of simply riding through it.
+
+One of the highlights of the day came when Seth handed me the steering paddle and let me guide the boat for a while. I had never even thought to ask if I could steer.
+
+It was a lot of fun, but I think I was pulling a little too hard while working through one of the rapids. Before long I could barely turn my neck. Apparently I strained one of the muscles, so when we stopped for lunch I took some ibuprofen and decided to take it easy for the rest of the afternoon.
+
+After lunch I moved over to Doug's oar boat. As always, our conversations wandered all over the map. We talked philosophy, the possibility of future disasters, living off the grid, the choices people make, and all sorts of subjects in between. Those conversations have become one of my favorite parts of this trip.
+
+By late afternoon we arrived at Mohawk Campground. I spent a little extra time setting up camp because this place has some wonderful features. There's a perfect little shower area with a large flat rock that works as a shelf for soap, another rock that's ideal for drying my sarong and wet clothes, and plenty of room to organize everything.
+
+I pitched my tent only a few steps from the river. Before setting it up, I used a kayak paddle to carve an eight-inch step into the sand outside the entrance. It doesn't sound like much, but when you're tired, half asleep, and your joints are stiff, that little step makes getting in and out of the tent much easier. Small comforts become surprisingly important out here.
+
+I decided to use the tent tonight because of last night's rain. If another shower comes through, I'd rather keep everything dry than wake up soaked.
+
+So far, this has been my favorite campground of the entire trip. I even put a rock and piece of driftwood on the sides of my tent entrance to serve as ornaments. I think I may be becoming too comfortable here.
+
+At the moment it's cool and overcast. Thunder has been rumbling in the distance all evening, and a strong wind continues to blow through camp.
+
+We're now around Mile one hundred seventy-two. The end of the journey is getting closer.
+
+Everything comes to an end — even the most wonderful adventures. That doesn't make me sad, though, because every ending opens the door to another beginning. There are more adventures waiting after this one, and I'm excited to discover what they are.
+
+The cicadas are incredibly loud tonight. This morning I found the empty shell of one attached to my tent — a reminder that transformation is happening everywhere out here, not just in me.
+
+Another incredible day in the canyon.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Adventure", "#Grit", "#NewWayOfLife", "#Sparkle", "#RollForVeterans", "#TeamBravo", "#Connection", "#Adaptation"]
+  },
+  {
+    num: 141,
+    date: "Friday, July 17, 2026",
+    location: "Mohawk Campground → Parashant Campground, River Mile 198, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the seventeenth, Day one hundred forty-one — our tenth day in Grand Canyon.
+
+We broke camp at Mohawk Campground under an overcast sky. It turned out to be a beautiful day to be on the river.
+
+Today I rode in Jordan's oar boat. I hadn't really had the chance to spend much time with her before, and we didn't talk very much during the morning. I think we both knew what was ahead.
+
+Lava Falls. The biggest rapid on the river.
+
+When we arrived, we pulled ashore to scout the line. Another rafting party was already there with oar boats and kayaks. I don't believe they had any paddle boats. Their group ran the rapid first. I was back near our boats while they went through, so I didn't actually see it happen, but I heard that several of their boats flipped.
+
+Then it was our turn. Almost immediately, everything became chaos.
+
+The tandem kayak flipped, throwing Dennis into the river. Ben, who was paddling with him, stayed with the kayak. It seemed like forever before he was finally able to roll it back upright. His head appeared above the water over and over again, gasping for air between attempts, but he never gave up. Later he told me he drank plenty of river water and how close he was to swimming. Ben is probably the strongest kayaker on the trip — world-class, really. There are a couple of paddlers from Georgia on this expedition who have spent years mastering whitewater, and watching them work is impressive.
+
+I didn't see everything that happened because my attention was divided. Ahead of us, Colter's equipment boat — the heavy cargo raft — flipped. Behind us, I watched the paddle boat overturn.
+
+The moment Jordan saw it happen, she blew her whistle and ferried our boat into an eddy. Two of the paddle boat crew swam toward us, and after giving them a moment to catch their breath, I helped pull them safely into our raft.
+
+Little by little, everyone was accounted for.
+
+Once things had settled down, we landed on shore to help recover the equipment boat. Wayne and Colter secured a rope to the side closest to shore. Eight of us climbed onto the overturned raft while two more people pushed from the riverbank, trying to use our combined weight to roll it upright.
+
+It wasn't enough. A few more people climbed aboard. That boat was incredibly heavy.
+
+Finally, with ten people on top and the others pushing from shore, the raft slowly rolled back over and settled upright into the water.
+
+There was a real sense of accomplishment in that moment. It wasn't any one person's effort — it took all of us working together.
+
+Once every person and every boat had been recovered, we continued through Lower Lava and eventually landed at Tequila Beach to regroup.
+
+The other rafting party joined us there, and before long someone brought out a guitar. And someone else produced a banjo. Even a kazoo appeared from somewhere. What started as a stressful morning ended with both groups singing together on the beach. It was one of those moments that reminds you how quickly hardship can give way to joy.
+
+The rest of the day was remarkably peaceful. After all the excitement at Lava Falls, simply floating down the river felt almost meditative.
+
+By evening we arrived at Parashant Campground near Mile one hundred ninety-eight. After such an active and emotional day, everyone was ready for dinner and an early night. We had originally planned to perform a skit for the guides, but we decided to postpone that given the fatigue level of all involved.
+
+Lava Falls certainly lived up to its reputation. But what I'll remember most isn't the chaos. It's watching a group of people remain calm under pressure, take care of one another, and accomplish together what none of us could have done alone.`,
+    hashtags: ["#Grit", "#Resilience", "#Brotherhood", "#Community", "#Gratitude", "#Wonder", "#RollForVeterans", "#TeamBravo", "#Connection", "#Adventure"]
+  },
+  {
+    num: 142,
+    date: "Saturday, July 18, 2026",
+    location: "Buccaneer Cove → 221 Mile Camp, Grand Canyon",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the eighteenth, Day one hundred forty-two — Day eleven on the Colorado River.
+
+We started the day at Buccaneer Cove.
+
+I had hoped to ride in an oar boat because my feet were in rough shape. Wayne took one look at them and said it was probably trench foot. Little sores had developed all over my feet, especially beneath my toes on the left foot and in the center of my left sole. They were tender, swollen, and uncomfortable. My shoes had been wet for most of the past eleven days, and I hadn't taken them off often enough to let my feet dry. The shoes I brought also take a long time to dry, which certainly didn't help. The worst of it began after kayaking on Day ten, when my feet became so sensitive that I had to remove my shoes halfway through the run.
+
+I wanted an oar boat, but I was needed in the paddle boat. And so I paddled. The morning passed without carnage — we went through a few rapids without incident. Lunch was sandwiches at the small beach below Lower Fall Canyon. Before lunch I paddled from the front starboard side, and afterward from the front port side.
+
+The first rapid after lunch — the aptly named Little Bastard — was particularly technical, but everyone made it through safely.
+
+At Granite Rapid, all the paddlers left Seth to manage the rapid as we swam through. I handled the first section well enough, but the later waves absolutely hammered me. I swallowed quite a bit of Colorado River water, which had turned chocolate brown from the recent monsoon runoff. Somewhere during that swim I must have scratched my left eye. It felt like there was sand trapped beneath my eyelid. I flushed it over and over, but the scratching sensation never completely went away.
+
+In Trail Canyon Rapid — also called Ducky Eater — inflatable kayaks got tossed. Fortunately, there were no major rocks or hazards where they flipped. We also took another enormous wave in the paddle boat. It completely drenched us.
+
+By evening we reached Two Hundred Twenty-One Mile Camp. Not the most romantic campground name, so I think I'll call it Camp Hurricane. The reason will become obvious soon enough.
+
+The campsite sat about four miles upstream from the Diamond Creek takeout. Unloading the boats required climbing a steep bank to a second level, then another climb to a broad sandy terrace dotted with rocks, trees, and brush. I carried one load up toward the kitchen, but by the time I reached the upper level, the sand was so hot it literally burned my feet. Between the trench foot and the scorching sand, I decided to stay near the lower beach and help unload the boats there instead.
+
+Not long after we finished, the two motorized rafts we'd been seeing throughout the trip stopped by for a few minutes. We exchanged greetings before they continued downstream.
+
+About thirty minutes later, the sky downriver turned dark and ominous, while upstream remained bright and blue. Fifteen minutes after that, the rain began.
+
+I wanted to pitch my tent before the storm arrived, but by the time I had my tarp laid out and my gear organized, the rain was already falling hard. Then the wind arrived.
+
+I quickly stacked my belongings as neatly as I could. I placed rocks on other people's gear to keep it from blowing away, tucked someone's sheet into their dry bag, and secured what I could. The storm only intensified.
+
+Sheets of rain swept across camp as the wind became fierce. I had my hat on, but I still had to shield my face with my hands because the rain struck so hard it actually hurt.
+
+Then I realized it wasn't rain anymore. It was hail.
+
+The visibility dropped dramatically. I could only make out a few people through the blowing rain. The wind became so powerful that I thought it might knock me over, so I planted one foot in front of the other and leaned into it. I stood there like that for several minutes wearing only my lightweight hoodie and shorts. My legs were bare, and I wasn't even wearing shoes.
+
+I simply stood there and accepted whatever nature wanted to give me. The hailstones were about the size of black pepper balls, with a few even larger. They stung enough that I eventually had to turn my back to the wind. The entire barrage probably lasted ten minutes or more, though it's impossible to judge time accurately in a storm like that.
+
+Looking across the river, I saw streams of water being blown up the canyon walls before gravity finally won and they cascaded back down. For a moment it looked like rivers were flowing uphill.
+
+When it finally eased, I realized I was shivering.
+
+The monsoon was magnificent. Powerful. A little frightening. And absolutely unforgettable.
+
+As the hail ended, waterfalls suddenly appeared everywhere. Water poured down cliffs on both sides of us. New streams sprang to life across the river. We'd spent the previous three days watching threatening skies and hoping we'd get to witness the famous rimfalls.
+
+We certainly got our wish. The guides later said it was one of the biggest monsoon storms they had ever seen in the canyon.
+
+I've experienced monsoon season in places like St. George before, but never while standing completely exposed to the elements from beginning to end.
+
+It reminded me of Forrest Gump, when Lieutenant Dan stands in the crow's nest during the hurricane, shouting into the storm. It almost feels as though nature is asking a question: "Are you sure you belong here?"
+
+"I'm still here!" And very grateful that I was able to withstand such a powerful demonstration of nature's power. As I walked on the warm sand that previously had burned my feet, my heart was full of wonder and gratitude. I could see from the faces of my friends that I wasn't the only one with those feelings.
+
+Ironically, the storm washed out the Diamond Creek takeout, which meant we would receive an unexpected bonus day on the river before eventually leaving by jet boat and then enduring a long bus ride back to Flagstaff — to technology, civilization, and everything we'd left behind.`,
+    hashtags: ["#Wonder", "#Grit", "#Resilience", "#Gratitude", "#Sparkle", "#Adventure", "#RollForVeterans", "#TeamBravo", "#Connection", "#NewWayOfLife"]
+  },
+  {
+    num: 143,
+    date: "Sunday, July 19, 2026",
+    location: "221 Mile Camp, Grand Canyon → Flagstaff, AZ",
+    state: "Grand Canyon",
+    region: "Colorado River — Grand Canyon",
+    entry: `Today was July the nineteenth, Day one hundred forty-three — Day twelve of the Grand Canyon excursion.
+
+The final day of our Grand Canyon adventure began at Two Hundred Twenty-One Mile Camp, about four miles upstream from our intended takeout point at Diamond Creek.
+
+After the monsoon that capped off Day eleven, the weather couldn't have been better.
+
+The inflatable kayaks stayed packed away today. Only the oar boats and hard-shell kayaks were going out, and I was perfectly happy with that. My feet were in rough shape, and I wanted to keep them as dry as possible. They were swollen, sore, and definitely not normal. So I put my feet up and climbed into Doug's oar boat for one last ride together.
+
+The night before, Justin had told us that the storm which hit us also swept through Diamond Creek and washed out the takeout road, making it inaccessible. Rather than ending our journey there, we were given an unexpected gift: six additional rapids and a few more miles of river before the Colorado gradually widened and began its transition toward Lake Mead.
+
+It was icing on the cake. Every day of this remarkable journey had offered something different — something unique and unforgettable. The monsoon that closed Diamond Creek ended up allowing us to experience a stretch of river that many groups never get to see.
+
+As we drifted toward Diamond Creek, Justin asked us to observe a period of silence. No conversations. Just twenty-four people floating together, taking in the scenery and reflecting on the previous twelve days.
+
+Doug broke the silence only once. He pointed ahead and quietly said, “That's Diamond Peak.” He explained that the summit sits at roughly the same elevation as Lee's Ferry, where our journey had begun. Looking up at that towering mountain was one final reminder of just how far we had descended through the canyon.
+
+One last lesson in perspective.
+
+Our final major rapid was The Fangs. Two sharp rock formations rise in the center of the whitewater like enormous teeth, and they've destroyed more than a few boats over the years. Doug explained how they can catch a raft, flip it, tear it open, or puncture the tubes if approached incorrectly.
+
+Watching him navigate through them was watching a true master at work. Every guide threaded their boats safely through. There were no flips, no rescues, no mishaps — just experienced river runners finishing the trip with quiet confidence.
+
+After the six bonus rapids, we began watching around each bend for the jet boat that would carry us the rest of the way.
+
+They were supposed to meet us around eleven-thirty. Eleven-thirty came and went. No boats. I didn't mind. It simply meant another half hour or so floating down the Colorado with my friend Doug.
+
+Eventually we spotted the boat waiting along the riverbank, moored to a bright white sandbar. Two motorized rafts and their passengers were tied alongside.
+
+Once we landed, we unloaded our personal gear while the guides transformed our little flotilla one final time. The paddle boat rolled up and strapped onto one of the oar boats. The oar boats were lashed together into a floating convoy, and the jet boat captain provided an outboard motor, which the guides attached to the center oar boat to power the entire armada. At this point, the Colorado no longer behaves like a swift river. It begins to feel more like a long, narrow lake, and the current alone simply isn't enough to move the boats efficiently.
+
+We climbed aboard the jet boat with another group and headed downstream at nearly thirty miles an hour.
+
+What a contrast. For twelve days we'd traveled at the pace of the river. Now it felt like we were flying.
+
+About ninety minutes later we arrived at Pearce Ferry, little more than a boat dock marking the end of our river journey.
+
+We unloaded once again and boarded another bus. After bumping along seven miles of washboard dirt road, which felt much longer than seven miles, the jet-boat-captain-turned-bus-driver pulled into a parking lot, where two buses were waiting.
+
+A luxury coach carried the passengers returning to Las Vegas. A Canyon Explorations school bus waited for us. Rustic... just the way we like it.
+
+We loaded our luggage one last time — the same practiced routine we'd repeated every morning with the rafts — and began the long drive back to Flagstaff.
+
+We stopped at a gas station for lunch. Pre-made sandwiches. Fresh fruit. Cookies. Soft drinks. Little treats. Another excellent meal provided by Can Ex.
+
+Several hours later, we pulled into the DoubleTree Hotel in Flagstaff. Sean was already there waiting.
+
+We unloaded the bus, and before everyone scattered, I asked Wayne and CK — the bus driver — to sign the trailer. Later, after Sean and I parked the truck and trailer behind the hotel, we were able to collect several more signatures from people lingering in the parking lot before they headed home.
+
+Those signatures mean a lot to me. They're reminders of a group of people who started as strangers, then shared something extraordinary together.
+
+Back in the hotel room, I finally took a long, much-needed shower. I scrubbed away twelve days of sand, sunscreen, sweat, river water, and campfire smoke.
+
+Then I carefully washed my feet. My toes were badly swollen. When I tried to bend them, I could feel hard ridges beneath them. They didn't feel normal, and for a while I worried about whether I'd even be able to continue riding my bicycle afterward.
+
+I quickly set those worries aside and reminded myself that I'm not in charge of the future.
+
+Sean and I got dressed and went downstairs for pizza with the group — one last celebration together. There were more photos. More stories. A few more trailer signatures. And finally, the goodbyes.
+
+Then Sean and I returned to our room. I climbed into a real bed. And I slept. And slept. And slept. I didn't wake up until around eight o'clock the next morning.
+
+Twelve unforgettable days on the Colorado River had finally come to an end.
+
+This adventure has been profoundly therapeutic. Even though riding across the country allowed me to step away from the noise of modern life, being in the canyon forced me to relinquish most of the technology that surrounds us in modern society. Yet I was surrounded by genuine challenges — with real consequences.
+
+For our little group of twenty-four people, these twelve days were filled with adventure, hardship, laughter, rescues, storms, rapids, friendships, and unforgettable beauty. What memories we made.
+
+And through every challenge, one truth remained constant: nature is awesome. Nature is where life happens. Out here, it was impossible not to live fully. And every day spent in the wilderness reminded me of my small but meaningful place in the great circle of life.
+
+Looking back, I realize the river gave me far more than an adventure. It gave me perspective. It gave me friendships. It gave me confidence. It reminded me that nature has a way of stripping away everything unnecessary until all that's left is an appreciation of the grandeur of nature, and a heart full of gratitude. And for that, I'll always be thankful.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Brotherhood", "#Connection", "#Milestone", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo", "#Community", "#Adventure"]
+  },
+  {
+    num: 144,
+    date: "Monday, July 20, 2026",
+    location: "Flagstaff, AZ → Grand Canyon Oasis, AZ",
+    state: "Interlude",
+    region: "Interlude — Flagstaff to the Oasis",
+    title: "The First Day Back in Civilization",
+    entry: `I woke this morning to an email waiting for me.
+
+Brooks, one of the people from our river group, had gone to the emergency room to have his feet looked at. He came away with a prescription for an antifungal medication.
+
+Several of us had been dealing with some kind of foot infection. Some called it trench foot. Others called it toelio, foot rot, or toe rot. Whatever the name, it was nasty, and a surprising number of us came out of the canyon with it.
+
+Several of the afflicted were already downstairs in the lobby, sharing some of the medication Brooks had gotten from the doctor. I applied mine upstairs after saying goodbye to the people still enjoying one last hotel shower.
+
+I had requested a late checkout because I was exhausted. The nice clerk let us stay until noon, although we did get a knock on the door around eleven-fifteen. I had to explain that we'd been granted the late checkout. Apparently, that happens from time to time.
+
+After checking out, we loaded everything into the truck, hooked up the trailer, and headed over to Bici Mundo, the bike shop where we'd gotten Sean's replacement front tire after I accidentally ran over his original one.
+
+This time, it was Herbie's turn.
+
+Cayson, the mechanic, gave Herbie a good once-over and found that the rear wheel hub was a little loose. He tightened it and made a few other adjustments, including aligning the rear brakes.
+
+Then it started raining.
+
+We stood around talking with Cayson and Elson, the owner. Elson told us about some of his experiences on the Colorado River and even shared some stories about making your own pyrotechnics for an unforgettable nighttime show.
+
+A few other people came in with bikes while we waited for the rain to pass, and before long we were just hanging around talking like old friends.
+
+Eventually the rain let up.
+
+We said goodbye to our new friends, put Herbie back on the trailer, and headed for our next stop: Canyon Explorations.
+
+I'd wanted to eat first, but I looked at the clock and realized it was already one-thirty. If we were going to help with the post-trip cleanup, we needed to get there.
+
+So we went straight over.
+
+The crew was surprised to see us, I think, but we jumped straight in. We helped take down and dry tents, unloaded the big truck, moved tables and oar-boat frames, and swept the floor.
+
+It felt good.
+
+After twelve days of being part of the group, I wasn't quite ready to simply walk away from it. Helping with the cleanup gave us one more opportunity to be useful before leaving.
+
+Eventually, the guides started coming out.
+
+One by one, they signed the trailer.
+
+We said our farewells.
+
+And just like that, another part of the journey was over.
+
+We stopped at Walmart for supplies and picked up a rotisserie chicken. While we were eating in the parking lot, we met a pretty interesting guy.
+
+His hat identified him as the “Dysfunctional Veteran.”
+
+He gave us some money and told us several funny stories about his time in the Army as an eighteen-year-old pilot. He was also carrying a gun, which isn't something you see every day.
+
+Then he went on his way.
+
+Before we left the Walmart parking lot, I noticed a woman sitting in a Volkswagen Jetta with a flat tire. I went over and offered to help.
+
+She said someone had slashed the tire, but it would hold air for a little while after she pumped it up. She planned to inflate it and drive somewhere to get a replacement.
+
+She politely declined my help.
+
+Then she said something that stuck with me:
+
+I was the first person who had offered.
+
+I told her, “Well, I'm from out of town.”
+
+She replied, “I am, too.”
+
+We both laughed.
+
+It was a tiny interaction, but somehow it felt appropriate. Even after returning to civilization, there were still opportunities to simply be useful to another person.
+
+Next, we needed drinking water.
+
+We tried three different gas stations before realizing that none of them were a particularly good option for filling several large containers. We eventually returned to the Planet Fitness that had sheltered us during those smoky, ashy days in Flagstaff before the Fourth of July parade.
+
+It was a much better place to fill our containers than taking over the soda fountain at a gas station for half an hour.
+
+Finally, Flagstaff was behind us.
+
+We headed toward Gray Mountain and the Grand Canyon Oasis.
+
+When we arrived, Adam and Shelley were genuinely happy to see me — and especially happy to meet Sean. They made us feel welcome immediately.
+
+They're such good people.
+
+We set up camp, disconnected the trailer, put the truck where it belonged, and connected the electricity.
+
+Then I went into the clubhouse, finished the rest of our rotisserie chicken, ate some grapes, and started some laundry.
+
+While the clothes were washing, we watched a movie about rescuing a teenager from human trafficking.
+
+That subject is sobering.
+
+There's so much human trafficking in the world, and it's disturbing to think about how many people are trapped in situations like that. It's satisfying, at least in movies, to see some justice occasionally — to watch the good guys take down the bad guys.
+
+Real life doesn't always work that way.
+
+After the first movie, the wind and rain really picked up, so we watched another movie, this one about Jason Statham being a beekeeper.
+
+By the time it ended, it was around one in the morning.
+
+We were exhausted.
+
+So we ran through the rain wearing whatever we had handy. Sean had a towel around his shoulders. I had my hoodie pulled up.
+
+We reached the truck, said our goodnights, and went our separate ways. Sean disappeared into the back seat of the truck, and I climbed into the trailer.
+
+I closed the door, made the bed, and here I am.
+
+One thirty-eight in the morning.
+
+The wind has picked up again.
+
+It wasn't blowing when we ran out here, but now it's rattling the trailer. It's chilly, but I've got a sleeping bag and a blanket, so I'll be fine.
+
+And now, sitting here in the quiet, I realize that today really was the first day of a new chapter.
+
+I'm incredibly grateful that Sean came to pick me up in Flagstaff. I'm grateful for everything we were able to experience there, grateful for the river, grateful for the people we met, and grateful to be back here at the Oasis.
+
+But there's also something else.
+
+Excitement.
+
+And a little fear.
+
+The great unknown of what comes next.
+
+For the first time in a long while, I'm not simply following a route that has already been laid out.
+
+The Grand Canyon excursion had a beginning, a middle, and an end.
+
+The cross-country ride had a destination.
+
+Now?
+
+The next chapter is wide open.
+
+And I think that's what makes it exciting.
+
+Tomorrow, we begin figuring out what comes next.
+
+For tonight, I'm just grateful to be here.
+
+The river is behind me.
+
+Civilization is around me.
+
+And whatever comes next is waiting.
+
+The next chapter can now begin.`,
+    hashtags: ["#Gratitude", "#Brotherhood", "#Community", "#Connection", "#Milestone", "#NewWayOfLife", "#Adventure", "#Adaptation", "#RollForVeterans", "#TeamBravo"]
   },
 ];
