@@ -22,6 +22,7 @@ export type DateRow = {
 export type SegmentSummary = {
   count: number;
   distance: number;
+  totalSecs: number;
   calories: number;
   ascent: number;
   descent: number;
@@ -94,8 +95,9 @@ function DataRow({ row }: { row: DateRow }) {
   );
 }
 
-// Summary rows only ever show ride count, distance, calories, ascent, descent —
-// date/title/HR/temp/elevation/route image don't apply to a rollup.
+// Summary rows only ever show ride count, distance, moving time, calories,
+// ascent, descent — date/title/HR/temp/elevation/route image don't apply to
+// a rollup.
 function SummaryRow({ label, summary, className }: { label: string; summary: SegmentSummary; className: string }) {
   return (
     <tr className={className}>
@@ -103,7 +105,7 @@ function SummaryRow({ label, summary, className }: { label: string; summary: Seg
         {label} · {summary.count} {summary.count === 1 ? 'ride' : 'rides'}
       </td>
       <td className="px-3 py-3 text-right">{fmt1(summary.distance)}</td>
-      <td className="px-3 py-3">—</td>
+      <td className="px-3 py-3">{formatDuration(summary.totalSecs)}</td>
       <td className="px-3 py-3 text-right">—</td>
       <td className="px-3 py-3 text-right">—</td>
       <td className="px-3 py-3 text-right">{fmtInt(summary.ascent)}</td>

@@ -45,6 +45,10 @@ function sumBy(acts: Activity[], key: 'distance' | 'calories' | 'totalAscent' | 
   return acts.reduce((s, a) => s + a[key], 0);
 }
 
+function sumSeconds(acts: Activity[]): number {
+  return acts.reduce((s, a) => s + parseSeconds(a.movingTime), 0);
+}
+
 // ─── Computations ─────────────────────────────────────────────────────────────
 
 const activities: Activity[] = activitiesData as Activity[];
@@ -128,6 +132,7 @@ const c2c2cDateRows = dateRows.filter((r) => r.date < MSE_CUTOFF).slice().sort((
 const cumulativeSummary = {
   count: activities.length,
   distance: totalMiles,
+  totalSecs,
   calories: totalCalories,
   ascent: totalAscent,
   descent: totalDescent,
@@ -136,6 +141,7 @@ const cumulativeSummary = {
 const mseSummary = {
   count: mseActivities.length,
   distance: sumBy(mseActivities, 'distance'),
+  totalSecs: sumSeconds(mseActivities),
   calories: sumBy(mseActivities, 'calories'),
   ascent: sumBy(mseActivities, 'totalAscent'),
   descent: sumBy(mseActivities, 'totalDescent'),
@@ -144,6 +150,7 @@ const mseSummary = {
 const c2c2cSummary = {
   count: c2c2cActivities.length,
   distance: sumBy(c2c2cActivities, 'distance'),
+  totalSecs: sumSeconds(c2c2cActivities),
   calories: sumBy(c2c2cActivities, 'calories'),
   ascent: sumBy(c2c2cActivities, 'totalAscent'),
   descent: sumBy(c2c2cActivities, 'totalDescent'),
