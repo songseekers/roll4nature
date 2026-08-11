@@ -75,12 +75,11 @@ export default function JournalPage() {
           </div>
 
           {/* CHAPTERS */}
-          {stateOrder.map((state, stateIndex) => {
-            if (!byState[state]) return null;
+          {stateOrder.filter(state => byState[state]).map((state, stateIndex) => {
             const { color, subtitle, displayName } = stateConfig[state];
             const stateId = `state-${state.toLowerCase().replace(/\s+/g, '-')}`;
             const days = byState[state].sort((a, b) => a.num - b.num);
-            let currentRegion = '';
+            let currentRegion = days[0]?.region ?? '';
 
             return (
               <section key={state} className="mb-24">

@@ -77,12 +77,20 @@ export default function JournalMSEPage() {
                 A Note to the Reader
               </p>
               <p className="text-sm text-gray-400 dark:text-gray-500 italic leading-relaxed mb-3">
-                Coast to Coast to Canyon is finished — 143 days, a bicycle, a canyon, and a river.
-                This is the next chapter: an interlude back in civilization, then a swing north
-                through the Mountain States.
+                Coast to Coast to Canyon wrapped up after a hundred and forty-three days, a
+                bicycle, a canyon, and a river. This is what comes next — though at the moment,
+                &ldquo;next&rdquo; mostly looks like laundry, a mysteriously smiley-face-shaped
+                sunburn, and an ongoing negotiation with the Wi-Fi at a desert oasis.
+              </p>
+              <p className="text-sm text-gray-400 dark:text-gray-500 italic leading-relaxed mb-3">
+                Somewhere in these entries, a raffle number gets called, a canopy gets won, a
+                website gets rebranded, and there may or may not be pigs waiting a few days down
+                the road. Nothing about this chapter is fully mapped or planned&hellip; that&apos;s
+                sort of the point.
               </p>
               <p className="text-sm font-semibold text-gray-500 dark:text-gray-400 italic">
-                More entries will be added here as the miles roll by. Check back soon.
+                Stick around. The mountains are coming. But first, a little more time in
+                civilization — mostly deserved, occasionally itchy.
               </p>
             </div>
           </div>
@@ -90,12 +98,11 @@ export default function JournalMSEPage() {
           {hasEntries ? (
             <>
               {/* CHAPTERS */}
-              {stateOrder.map((state, stateIndex) => {
-                if (!byState[state]) return null;
+              {stateOrder.filter(state => byState[state]).map((state, stateIndex) => {
                 const { color, subtitle, displayName } = stateConfig[state];
                 const stateId = `state-${state.toLowerCase().replace(/\s+/g, '-')}`;
                 const days = byState[state].sort((a, b) => a.num - b.num);
-                let currentRegion = '';
+                let currentRegion = days[0]?.region ?? '';
 
                 return (
                   <section key={state} className="mb-24">
