@@ -10,14 +10,14 @@ interface RouteImageCellProps {
 
 function dateToPath(date: string): string {
   // "2026-02-27" → "/images/routes/2603/260227.png"
+  const [year, month] = date.split('-');
   const filename = date.replace(/^20/, '').replace(/-/g, '');
-  const month = date.substring(0, 7);
-  let folder: string;
-  if (month <= '2026-03') { folder = '2603'; }
-  else if (month <= '2026-04') { folder = '2604'; }
-  else if (month <= '2026-05') { folder = '2605'; }
-  else if (month <= '2026-06') { folder = '2606'; }
-  else { folder = '2607'; }
+  const yy = year.slice(2);
+  // The first two days of the journey (Feb 27-28, 2026) share the March
+  // folder — too few Feb days to warrant a folder of their own. Every other
+  // month gets its own folder, derived directly from the date so this keeps
+  // working as new months of riding are added.
+  const folder = year === '2026' && month === '02' ? `${yy}03` : `${yy}${month}`;
   return `/images/routes/${folder}/${filename}.png`;
 }
 
