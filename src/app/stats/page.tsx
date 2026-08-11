@@ -107,7 +107,7 @@ const totalAvgMPH = totalMiles / (totalSecs / 3600);
 // ─── Summary card data ────────────────────────────────────────────────────────
 
 const summaryCards = [
-  { icon: '🚴', label: 'Miles Cycled', value: `${fmt1(totalMiles)} mi`, highlight: true },
+  { icon: '🚴', label: 'Miles Cycled', value: `${fmt1(totalMiles)} mi` },
   { icon: '⏱', label: 'Moving Time', value: formatDuration(totalSecs) },
   { icon: '🔥', label: 'Calories Burned', value: `${fmtInt(totalCalories)} kcal` },
   { icon: '❤️', label: 'Avg Heart Rate', value: overallAvgHR ? `${overallAvgHR} bpm` : '—' },
@@ -194,7 +194,7 @@ export default function StatsPage() {
           </Link>
           <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-r4n-grass">Cycling Stats</h1>
           <p className="text-r4n-tan text-lg">
-            Roll 4 Nature 2026 — Key West, FL to Flagstaff, AZ
+            Roll 4 Nature 2026
           </p>
         </div>
       </div>
@@ -214,13 +214,7 @@ export default function StatsPage() {
                 <span className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
                   {card.label}
                 </span>
-                <span
-                  className={`text-xl font-bold font-mono ${
-                    card.highlight
-                      ? 'text-r4n-primary dark:text-r4n-primary-hover'
-                      : 'text-gray-900 dark:text-white'
-                  }`}
-                >
+                <span className="text-xl font-bold font-mono text-gray-900 dark:text-white">
                   {card.value}
                 </span>
               </div>

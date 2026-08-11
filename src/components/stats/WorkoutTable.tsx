@@ -99,6 +99,7 @@ function DataRow({ row }: { row: DateRow }) {
 // ascent, descent — date/title/HR/temp/elevation/route image don't apply to
 // a rollup.
 function SummaryRow({ label, summary, className }: { label: string; summary: SegmentSummary; className: string }) {
+  const avgMPH = summary.distance / (summary.totalSecs / 3600);
   return (
     <tr className={className}>
       <td colSpan={2} className="px-3 py-3">
@@ -111,7 +112,7 @@ function SummaryRow({ label, summary, className }: { label: string; summary: Seg
       <td className="px-3 py-3 text-right">{fmtInt(summary.ascent)}</td>
       <td className="px-3 py-3 text-right">{fmtInt(summary.descent)}</td>
       <td className="px-3 py-3 text-right">—</td>
-      <td className="px-3 py-3 text-right">—</td>
+      <td className="px-3 py-3 text-right">{fmt1(avgMPH)}</td>
       <td className="px-3 py-3 text-right">{fmtInt(summary.calories)}</td>
       <td className="px-3 py-3 text-right">—</td>
       <td className="px-3 py-3 text-right">—</td>
