@@ -2423,4 +2423,285 @@ And whatever comes next is waiting.
 The next chapter can now begin.`,
     hashtags: ["#Gratitude", "#Brotherhood", "#Community", "#Connection", "#Milestone", "#NewWayOfLife", "#Adventure", "#Adaptation", "#RollForVeterans", "#TeamBravo"]
   },
+  {
+    num: 145,
+    date: "Tuesday, July 21, 2026",
+    location: "Grand Canyon Oasis, AZ — Home Base",
+    state: "Interlude",
+    region: "Interlude — Flagstaff to the Oasis",
+    entry: `I woke up this morning at the Grand Canyon Oasis.
+
+After breakfast and some stretching, I went outside and pulled weeds. Sean came out later and helped me. We've had afternoon monsoons for the past several days, and all that rain made the ground soft enough that pulling weeds was considerably easier.
+
+It was actually a satisfying job.
+
+I did discover later that, somehow, I had managed to acquire a strange sunburn across my lower back. I'm not quite sure how I managed that while pulling weeds, but apparently the sun found a way to my skin.
+
+After finishing the job, I went into the clubhouse and worked on adding material to YouTube and updating the website.
+
+The internet has been a little problematic, which makes uploading and editing difficult. Sean gave me the password for another Wi-Fi source, though, and that connection seems to be working a little better.
+
+I'll continue working on it tomorrow.
+
+One of the things I want to start doing is working through the rebranding from Roll 4 Veterans to Roll 4 Nature.
+
+Originally, I wanted to call it simply 4 Nature, but I discovered that a similar name is already being used by an organization in Australia. So I'll keep “Roll” in the name and make it distinctly ours.
+
+Roll 4 Nature.
+
+The name feels fitting.
+
+The journey started as a ride across the country for veterans. But somewhere along the way, the purpose became bigger than that. Nature has been at the center of nearly everything I've experienced — the bike ride, the people I've met, the Grand Canyon, the river, the solitude, the challenges, and the sense of peace that comes from simply being immersed in the natural world.
+
+Now I want to explore what happens when that experience is intentionally shared with other people.
+
+For tonight, though, I'm back at the Oasis, working on the pieces that will eventually become the next chapter.
+
+Roll 4 Nature.`,
+    hashtags: ["#Gratitude", "#Purpose", "#NewWayOfLife", "#Transformation", "#Milestone", "#Wonder", "#Adaptation", "#Community", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 146,
+    date: "Wednesday, July 22, 2026",
+    location: "Grand Canyon Oasis, AZ — Home Base",
+    state: "Interlude",
+    region: "Interlude — Flagstaff to the Oasis",
+    entry: `Today was July the twenty-second, Day one hundred forty-six of the journey.
+
+I spent the morning relaxing somewhat, although there was still some work to do. We finished cleaning up the weeds we didn't get to yesterday, and then I got back to working on the website and making calls to some of the people and places we'll be visiting soon.
+
+In the afternoon, I got the name of the owner of one of the inns in the Marble Canyon area. His name is Brady, and I called him to introduce myself and tell him a little about what we're doing. He seems like a really interesting fellow, and he offered to let us park on his property when we're in the Vermilion Cliffs area. That should make things a lot easier, and I'm looking forward to meeting him in person.
+
+I also called the chapter house in the Gap to let them know that we're planning to be there Saturday for their health and wellness event. We're going to ride there Friday so we'll already be in position Saturday morning and can participate in whatever they have planned. I'm curious to see what the event is all about and how we might fit into it.
+
+I've mapped a good portion of our route from here through Salt Lake City. The new website is starting to take shape, too. I think the direction I'm taking it is pretty cool, although it still has a long way to go before it matches what I have in my head. That's the frustrating thing about building something from scratch: you can see the finished product in your mind, but getting all the pieces into place takes time.
+
+I'm creating an entirely new file system for the new site. I've archived the old website so that we can still reference it if we need to, but the old site is essentially static now. The new system will have much of the same basic structure, but the emphasis is going to be different.
+
+The focus is becoming nature.
+
+I want the new site and the new identity to be more inclusive. I want everyone to feel welcome to be part of Team Bravo. We're not talking exclusively about veterans anymore, or about any other particular group. We're talking about something that belongs to all of us: nature, and the importance of being connected to it.
+
+I haven't met anyone yet who disagrees with the idea that nature is important.
+
+Tomorrow is our last day here for maintenance and preparation. After that, we'll be back on the road, with questionable Wi-Fi, changing locations, and all the uncertainty that comes with traveling again. I'm trying to take full advantage of the reliable internet while we have it.
+
+One strange remnant of yesterday's weeding is the irritation on my lower back. When I took a shower and looked in the mirror, I discovered that I had somehow acquired a crescent-shaped sunburn across my lower back. It almost looks like a smiley face.
+
+Apparently, while I was bending over and pulling weeds, my shirt wasn't covering that part of my back.
+
+It's a pretty funny-looking sunburn.
+
+Unfortunately, it doesn't feel nearly as funny as it looks.
+
+So tomorrow I'll finish up what I can here, and then it's time to get back on the road.
+
+The next chapter is already taking shape.`,
+    hashtags: ["#Purpose", "#Transformation", "#NewWayOfLife", "#Community", "#Gratitude", "#Adaptation", "#Milestone", "#Connection", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 147,
+    date: "Thursday, July 23, 2026",
+    location: "Grand Canyon Oasis, AZ — Home Base",
+    state: "Interlude",
+    region: "Interlude — Flagstaff to the Oasis",
+    entry: `Today was July the twenty-third, Day one hundred forty-seven.
+
+We're still at the Grand Canyon Oasis, splitting our time between helping around the property and getting everything ready for the next leg of the journey.
+
+Sean decided to switch bicycles. There are several bicycles here, and Adam told him he could choose one if he wanted to take it. He ended up choosing a Mongoose with twenty-nine-inch wheels and disc brakes. It has those twist-style shifters instead of the traditional levers. In some ways, it's an upgrade, and in other ways, it's not quite as nice as what he had before. But Sean has a strong grip, so shifting shouldn't be a problem for him.
+
+I've also made a lot of progress on the website. It's pretty much switched over to Roll 4 Nature now. I really like the words on the homepage about nature, and I changed the entire color scheme to match the new direction.
+
+The old site used orange and red, reflecting the colors of the Grand Canyon. The new site uses earth tones — brown and green, the colors of earth and plants.
+
+It feels appropriate.
+
+I'm calling this next phase of our journey Mountain States Exploration. We'll be heading into Utah, and possibly Wyoming and Colorado, before eventually making our way south again before the weather gets too cold.
+
+It should be fun.
+
+New places. New people. New adventures.
+
+That's what this is all about.
+
+Today we also had to say goodbye to Adam and Shelley, the proprietors of the Grand Canyon Oasis. I can't speak highly enough of these two people.
+
+They've created a little refuge in the middle of an incredibly arid landscape, and they do far more than simply provide a place for people to stay. I've watched them extend kindness not only to us, but to other people who have come through the property, including some who were clearly in need of a little help.
+
+There's a very good spirit in that place.
+
+I really like it there.
+
+And I don't like goodbyes.
+
+But it's time to move on.
+
+The river chapter is behind us. The Grand Canyon is behind us. The Oasis is behind us.
+
+Now it's time to get back into nature and see what comes next.`,
+    hashtags: ["#Gratitude", "#Transformation", "#NewWayOfLife", "#Community", "#Connection", "#Milestone", "#Adventure", "#Adaptation", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 148,
+    date: "Friday, July 24, 2026",
+    location: "Grand Canyon Oasis, AZ → Bodaway Gap, AZ",
+    state: "Interlude",
+    region: "Interlude — Bodaway Gap",
+    entry: `Today was July the twenty-fourth, Day one hundred forty-eight.
+
+We're at the Bodaway Gap Chapter House tonight.
+
+Sean rode roughly halfway from the Grand Canyon Oasis to Cameron, and I rode from Cameron the rest of the way to the Gap. It was a pleasant ride overall, although there were plenty of ups and downs. Toward the end, I started feeling a lot of body aches. I'm not sure if that's just my body adjusting to getting back on the bike after the Grand Canyon trip, but I'm hoping it's temporary. I took some ibuprofen and I'm hoping a good night's sleep will take care of it.
+
+I got a flat tire when I was almost to the Gap.
+
+I was out of water, and I could see the gas station in the distance, but flat tires need to be dealt with immediately. Fortunately, I found an abandoned roadside vendor site where I could stop and repair it. It wasn't exactly the place I would have chosen to work on Herbie, but it did the job. And it was much better than standing in the sun.
+
+After fixing the tire, I made my way to the Sinclair station to get some water.
+
+That's when the weather started getting interesting.
+
+Before I got to the Gap, I had noticed a strange, very localized area of dark sky. It looked like rain was falling in perhaps a one-square-mile area. It was almost like someone had turned on a shower over one particular section of the desert.
+
+Once I reached the gas station, the thunder and lightning started. Then came the wind.
+
+It was a legitimate monsoon.
+
+The storm didn't hit the gas station particularly hard, but I waited for things to settle down before heading over to the chapter house. The brunt of the storm stayed on the other side of the small mountain range that is famous around here. We didn't get particularly wet, although we did get some sand in our eyes from the wind.
+
+Jordan was still there, so we chatted for a while. She's been our point of contact here at the chapter house and helps organize many of the events. She remembered us, which is always a good feeling. It's nice to return somewhere and have someone recognize you rather than feeling like complete strangers.
+
+I've also been making calls ahead to arrange the next parts of our journey.
+
+I talked with the volunteer point of contact at Best Friends Animal Sanctuary and let her know we're on our way. She's looking for a project for us to work on while we're there. And afterward, she said we could hang out with the pigs.
+
+Now, I can't lie — both Sean and I immediately became interested when we heard there were pigs.
+
+We're wondering what kind of pigs we're going to meet. Are they all going to be enormous, happy, fat pigs? Or will there be some of those little pet pigs people keep around? Teacup pigs or whatever they're called...
+
+Either way, we're going to see the pigs.
+
+I also spoke with the person who owns an inn in the Vermilion Cliffs area. That's where we're headed after the Gap. We'll spend tomorrow participating in the health and wellness event here, and then we'll depart Sunday morning.
+
+I also talked with a few other people by phone today as we continue lining up the next part of the trip.
+
+That's one of the interesting things about this journey. The road ahead is never completely defined. We have a general direction, but the people we meet along the way keep shaping what comes next.
+
+I really like this little town.
+
+There's a lot going for it, and I can see how much the Chapter House contributes to the community. I'm grateful that we've been invited to participate and that we have an opportunity to contribute something ourselves, even if it's only a small part.
+
+Hopefully, this won't be our last visit.
+
+For tonight, we're here.
+
+Tomorrow we'll take part in the event, meet some more people, and see what develops.
+
+And then, Sunday morning, we plan to head toward the Vermilion Cliffs.
+
+Another chapter is already beginning.
+
+Thirty-five miles on the day.`,
+    hashtags: ["#Grit", "#Adventure", "#Gratitude", "#Community", "#Connection", "#ProblemSolving", "#Adaptation", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 149,
+    date: "Saturday, July 25, 2026",
+    location: "Bodaway Gap, AZ — Chapter House",
+    state: "Interlude",
+    region: "Interlude — Bodaway Gap",
+    entry: `Today was July the twenty-fifth, Day one hundred forty-nine.
+
+We spent the day at the Bodaway Gap Chapter House and made a bunch of new friends.
+
+We woke up semi-early and helped put out chairs and set everything up the way Adrian wanted it. When the designated time arrived, the event began, and Adrian took charge of the proceedings.
+
+There is so much history here with alcohol and drug use on the reservation, and Adrian has lived through much of it himself. He talked openly about his struggles, including three attempts to take his own life. He also talked about the twelve-step program that helped him begin turning his life around. It sounded very much like an AA approach to addiction.
+
+Throughout the day, person after person stood up and talked about overcoming addiction, tragedy, loss, and difficult circumstances in their lives.
+
+There was a tremendous amount of honesty in the room.
+
+And throughout the entire day, people welcomed Sean and me as though we belonged there. Several of the people who spoke specifically thanked us for being there.
+
+At one point, they opened the floor so that anyone could get up and say something. I got up and introduced Sean and myself and explained what Roll 4 Nature is becoming and what we're trying to accomplish. I thanked everyone for their hospitality and for allowing us to be part of their day.
+
+Then things got a little more playful.
+
+We played a game that was kind of like rock-paper-scissors, except the choices were Hunter, Bear, and Princess.
+
+And I won!
+
+My prize was a three-person tent.
+
+We had given away a tent earlier in the journey, but neither Sean nor I really wanted to accumulate more stuff. Now that we have this one, though, we've decided it actually has a purpose: we'll have a place for visitors to stay when they come to see us.
+
+Then Sean started winning things.
+
+First he won some headphones and a jump rope. The headphones will come in handy because he's started taking some college courses, and the jump rope fits nicely with his desire to stay active on the road.
+
+Then he won a canopy.
+
+That's something we've actually talked about getting. We hadn't bought one partly because of the cost and partly because we kept wondering where in the world we'd store it.
+
+Well, apparently we're getting a canopy.
+
+We'll find somewhere to put it. Out here in the desert, shade is valuable. A canopy can also provide protection from rain, and really, it's useful just about anywhere we're spending time outdoors.
+
+Then they got ready to give away the grand prize.
+
+I still had one ticket in the drawing.
+
+I leaned over to Sean and said, "If he says 088, I don't know what I'm going to do."
+
+And then he pulled out the ticket.
+
+"088."
+
+We won.
+
+The grand prize was lunch for two at a very exclusive resort in southern Utah called Amangiri.
+
+Apparently, this is the kind of place where you have to make reservations ahead of time and make sure the people at the gate know you're coming. It's frequented by celebrities and wealthy people, and it's not somewhere most people have ever heard of.
+
+The certificate is for lunch for two, with no price limit.
+
+So I suppose we'll have to figure out how to handle that responsibility.
+
+I'm definitely going to take some pictures so people can see what the place is like.
+
+We've also made some friends who live in Page. Andrea, the manager of the Chapter House, said we could park at her house. She also used to work at Amangiri and she told us all about it.
+
+As it stands now, the plan is to ride our bikes into Page, then drive the truck up to Amangiri for lunch and head back afterward. Apparently it's only a few miles from Page.
+
+We may stay in Page for the night. We probably won't head toward Marble Canyon until Monday.
+
+There are some riding trails around Page, and Horseshoe Bend is just outside of town. Since we have a place to park, it seems like a place worth exploring for a little while.
+
+I think I've been through Page once before, but it was so long ago that I don't remember much about it. I remember passing through on my way to the east entrance of Zion, and that's about it.
+
+But today wasn't really about Page or Amangiri or the prizes.
+
+It was about the people here in Bodaway.
+
+I want to express my thanks and gratitude to everyone who participated in the health and wellness event here at the Gap.
+
+We came here as strangers.
+
+But by the end of the day, it felt like we could come back someday and people would remember us. Maybe they'd accept us as part of the family.
+
+That feels really good.
+
+I'm very grateful that we had the opportunity to come back here and be part of this community.
+
+Thank you, Bodaway Gap Chapter House.
+
+Thank you for everything you do for the community — and for the strangers who happen to pass through.
+
+This will always be a special place for me.
+
+That's for sure.`,
+    hashtags: ["#Gratitude", "#Community", "#Connection", "#Inspiration", "#Sparkle", "#NewWayOfLife", "#Milestone", "#Adventure", "#RollForVeterans", "#TeamBravo"]
+  },
 ];
