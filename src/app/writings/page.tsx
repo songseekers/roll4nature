@@ -31,7 +31,7 @@ export default function WritingsPage() {
         />
         <div className="relative max-w-3xl mx-auto px-6 sm:px-10 py-20 text-center">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-white bg-r4n-sage px-3 py-1 rounded-full mb-5">
-            Coming Soon
+            New Entries Added Weekly
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Mountain States Exploration
