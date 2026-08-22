@@ -35,6 +35,80 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Roll 4 Nature",
+  "url": "https://r4v.songseekers.org",
+  "logo": "https://r4v.songseekers.org/images/R4VLogo.png",
+  "description": "Veteran-founded, purpose-driven outdoor community. Get outside, discover purpose in nature.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "JT Tracy",
+    "jobTitle": "Integrative Health Coach",
+    "description": "Army veteran, endurance cyclist, and certified integrative health coach",
+  },
+  "sameAs": [
+    "https://instagram.com/roll4veterans",
+    "https://facebook.com/roll4veterans",
+    "https://youtube.com/@roll4veterans",
+    "https://tiktok.com/@roll4veterans",
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "roll4veterans@gmail.com",
+    "contactType": "General Inquiries",
+  },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "JT Tracy",
+  "jobTitle": "Integrative Health Coach",
+  "description": "Army veteran, endurance cyclist, and certified UHP integrative health coach. Founder of Roll 4 Nature.",
+  "url": "https://r4v.songseekers.org/team-bravo",
+  "email": "roll4veterans@gmail.com",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Roll 4 Nature",
+  },
+  "knowsAbout": [
+    "Integrative Health Coaching",
+    "Veterans Wellness",
+    "Nature Therapy",
+    "Endurance Cycling",
+    "Purpose Discovery",
+    "Mental Health",
+  ],
+};
+
+const eventSchema = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Mountain States Exploration — Roll 4 Nature 2026",
+  "description": "A purpose-driven cycling journey through the mountain states of the American West, supporting Team Red White and Blue (Team RWB) veterans wellness.",
+  "startDate": "2026-07-01",
+  "endDate": "2026-09-03",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "American West — Flagstaff, AZ to Rigby, ID",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US",
+    },
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Roll 4 Nature",
+    "url": "https://r4v.songseekers.org",
+  },
+  "url": "https://r4v.songseekers.org",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,6 +116,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-r4n-forest text-gray-900 dark:text-r4n-warm-cream`}
         suppressHydrationWarning

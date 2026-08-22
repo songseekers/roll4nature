@@ -6,8 +6,8 @@ import { City } from '@/types/city';
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
-  title: 'Route Schedule | Roll 4 Nature',
-  description: 'Complete route schedule for Roll 4 Nature — 78 communities across the Coast to Coast to Canyon and Mountain States Exploration routes.',
+  title: 'Route List | Roll 4 Nature Mountain States Exploration',
+  description: "Full route list for Roll 4 Nature 2026 — 78 stops from Key West, Florida to Rigby, Idaho through America's canyon lands, national parks, and mountain states.",
 };
 
 interface StopRow {

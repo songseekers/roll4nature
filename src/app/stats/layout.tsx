@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'Cycling Stats | Roll 4 Nature 2026',
+  title: 'Journey Stats | Roll 4 Nature',
   description:
-    'Live cycling stats for the Roll 4 Nature 2026 cross-country journey — 4,434 miles from Key West, FL to Flagstaff, AZ supporting Team RWB.',
+    'Live journey statistics for Roll 4 Nature 2026 — total miles cycled, days on the path, and activity log.',
   openGraph: {
-    title: 'Cycling Stats | Roll 4 Nature 2026',
+    title: 'Journey Stats | Roll 4 Nature',
     description:
-      'Track the miles: Key West to Flagstaff, 4,434 miles for Team RWB veterans.',
+      'Live journey statistics for Roll 4 Nature 2026 — total miles cycled, days on the path, and activity log.',
     url: 'https://r4v.songseekers.org/stats',
   },
 };

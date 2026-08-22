@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Partner with Roll 4 Nature 2026 | Support Team RWB',
+  title: 'Partner with Roll 4 Nature | Support Veterans Wellness',
   description:
-    'Become a partner of Roll 4 Nature 2026 — a 4,545-mile cross-country cycling journey from Key West to Los Angeles supporting Team RWB veterans. Join us in making a difference.',
+    'Partner with Roll 4 Nature to support veteran wellness through nature, cycling, and community. Sponsorship opportunities for the Mountain States Exploration 2026.',
   openGraph: {
-    title: 'Partner with Roll 4 Nature 2026',
-    description: 'Support a 4,545-mile journey for Team RWB veterans',
+    title: 'Partner with Roll 4 Nature | Support Veterans Wellness',
+    description: 'Partner with Roll 4 Nature to support veteran wellness through nature, cycling, and community. Sponsorship opportunities for the Mountain States Exploration 2026.',
     url: 'https://r4v.songseekers.org/partner',
   },
 };

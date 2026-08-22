@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
+
 Disallow: /api/
 Disallow: /api/flagstaff-rsvp
+Disallow: /api/sponsor
+Disallow: /api/team-bravo
 
 Sitemap: https://r4v.songseekers.org/sitemap.xml
