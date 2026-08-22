@@ -7,8 +7,8 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata = {
-  title: 'R4N 2026: Coast to Coast to Canyon | 4,444 Miles of Purpose',
-  description: 'Join our epic bike journey from Key West, FL to Flagstaff, AZ, connecting with veterans in 57 communities. Rolling 4 Purpose, Health, Discovery, and Veterans. Feb 27 - July 1, 2026.',
+  title: 'Roll 4 Nature | Mountain States Exploration',
+  description: 'Roll 4 Nature is a veteran-founded, purpose-driven journey through America\'s wild places. 4 Purpose | 4 Veterans | 4 Everyone | 4 Nature.',
 };
 
 export default function HomePage() {
@@ -123,7 +123,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* ── 3. Team Bravo — human connection before mission ── */}
+      {/* ── 3. Team Bravo ── */}
       <section style={{ backgroundColor: '#2a1a08' }} className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
@@ -193,7 +193,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 5. About Team RWB (was "Why We Roll") ── */}
+      {/* ── 5. About Team RWB ── */}
       <MissionStatement />
 
       {/* ── 6. Facebook Comments ── */}
