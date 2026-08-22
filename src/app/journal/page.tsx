@@ -123,6 +123,11 @@ export default function JournalPage() {
                           <span className="text-gray-400 italic text-lg">{d.date}</span>
                         </div>
                         <div className="text-base text-r4n-grass italic mb-8">{d.location}</div>
+                        {d.title && (
+                          <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center italic">
+                            {d.title}
+                          </h3>
+                        )}
                         <div className="space-y-5">
                           {d.entry.split('\n\n').map((para, i) => (
                             <p key={i} className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">{para}</p>

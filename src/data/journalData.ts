@@ -2704,4 +2704,519 @@ This will always be a special place for me.
 That's for sure.`,
     hashtags: ["#Gratitude", "#Community", "#Connection", "#Inspiration", "#Sparkle", "#NewWayOfLife", "#Milestone", "#Adventure", "#RollForVeterans", "#TeamBravo"]
   },
+  {
+    num: 150,
+    date: "Sunday, July 26, 2026",
+    location: "Bodaway Gap, AZ → Page, AZ",
+    state: "Interlude",
+    region: "Interlude — Page",
+    entry: `Today was July the twenty-sixth, Day one hundred fifty.
+
+And what a day it was.
+
+We finally managed to make reservations at Amangiri using the certificate we won in the raffle at the Bodaway Gap Chapter House. We discovered just how exclusive the place is, and it took a while to get everything arranged. Thankfully, Andrea helped us get it all worked out.
+
+Before that, though, there was the ride.
+
+I rode thirty-two miles today, and a lot of it was uphill. I felt like I couldn't catch my breath. Maybe it's the altitude. Maybe it's because I haven't been riding regularly since the Grand Canyon. I didn't really notice it on the ride from the Oasis, but today I definitely felt it.
+
+Sean pulled the truck over around mile thirty so I could put my bike on the trailer, and he rode the remaining distance into Page. As luck would have it, he got a nice downhill stretch and was flying. It actually took me a while to catch up to him after I started driving.
+
+So Sean had a great ride. I did too — mine just required considerably more work.
+
+Thankfully, we had cloud cover for most of the morning. If we hadn't, I think I would have been in much worse shape. I'm hoping for some clouds tomorrow because there's another climb ahead.
+
+Somehow, when I was planning this route, I thought Page to Marble Canyon was only about fifteen miles.
+
+It isn't.
+
+We have to go all the way back down to Bitter Springs and then climb Highway 89A again.
+
+So that's what's waiting for us tomorrow. I don't even know what to say about that — it's what happens sometimes, I suppose.
+
+Amangiri was a fascinating experience.
+
+We ordered a lot of food because, well... because we could.
+
+The only restriction on the certificate was that it couldn't be used for alcohol, so we tried several of their nonalcoholic cocktails instead. They were surprisingly good. I tried most of them, and I think my favorite was one with plum, including a piece of plum on the rim.
+
+We had several appetizers. We both ordered Wagyu beef burgers, which were more like steak burgers. We had asparagus with shrimp, pizza, and a couple of scoops of honey ice cream that were absolutely delicious. We had leftovers to take with us.
+
+But throughout the meal, I couldn't shake a certain dissonance.
+
+Just yesterday, we were living among some of the most economically impoverished communities we've encountered on this journey. Then, almost without warning, we were sitting in a place surrounded by extraordinary wealth and affluence. The contrast was jarring.
+
+It got me thinking about a question I've been carrying around for a while:
+
+How much am I giving versus how much am I taking?
+
+A familiar feeling these days is that I don't deserve all the blessings I've received, but I am very grateful for them.
+
+I'm grateful for the opportunity to visit Amangiri. I'm grateful that we won that certificate. I'm grateful for the people we met there.
+
+Dusty, the security guard, was incredibly friendly. We left the truck and trailer at the guard house, and a fellow named Jaden drove us up to the restaurant.
+
+After we ate, we met another fellow named Schradi who has apparently been there for seventeen years. It certainly seems like he's been successful at what he does.
+
+I should have asked him if he wanted to do a YouTube video. I didn't — I miss opportunities like that sometimes because I assume people will say no before I ever give them the chance to decide.
+
+That's something I need to work on.
+
+Just ask, and let people say yes or no for themselves.
+
+Afterward, we drove back to Page and spent the evening watching a movie with Andrea and her family.
+
+And that's how Day 150 ended.
+
+Tomorrow morning, we continue our trek back into Utah.
+
+Another climb.
+
+Another road.
+
+Another day.
+
+Thirty-two miles on the day.`,
+    hashtags: ["#Grit", "#Gratitude", "#Perspective", "#Wonder", "#Adventure", "#Reflection", "#Community", "#Connection", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 151,
+    date: "Monday, July 27, 2026",
+    location: "Page, AZ → Vermilion Cliffs, AZ",
+    state: "Interlude",
+    region: "Interlude — Vermilion Cliffs",
+    title: "The Road Less Traveled",
+    entry: `Today started in Page, Arizona, where Sean and I had been invited to stay in the yard of some friends we had made through the Bodaway Gap Chapter House. It was a warm night, and I woke up a little sweaty — but sweat is just sweat if you don't sweat it.
+
+Before I left, Lionel, Andrea's brother, stopped me. He told me to come over to his truck, put some sweetgrass into a lighter, and blessed me with it. He explained that this is something they do before taking a trip — to clear the mind and provide safety and protection.
+
+That meant a lot to me.
+
+We've only known these people for a short time, yet somehow I felt like I was being welcomed as part of the family. That feeling of acceptance has become one of the unexpected gifts of this journey.
+
+I stopped for water on my way out of town and started talking with the cashier, Bambi. After hearing what Sean and I are doing with Roll 4 Nature, she gave me a bracelet with a heart in the center. I gave her one of my Roll 4 Veterans bracelets in return.
+
+So now I have two bracelets given to me by people I've met along this journey — one from Mary at the Escalante staircase overlook and one from Bambi.
+
+I really like them.
+
+I headed toward Bitter Springs, thinking I knew where I was going. I remembered there being a road that would take me there, but when I reached the point where I expected to find it, I discovered that the road ahead wasn't quite what I expected.
+
+It was dirt.
+
+Actually, it wasn't really dirt.
+
+It was sand.
+
+I was about twenty-two miles into the ride, and I had three choices:
+
+Continue to Gap, about twenty-eight miles.
+
+Go back to Page, another twenty-two miles.
+
+Or take the roughly eighteen-mile road through the sand to Bitter Springs.
+
+I thought about it for a while and decided to go forward. The other two options would have added quite a lot more miles.
+
+That decision turned out to be quite an adventure.
+
+The sand was sometimes so deep that I couldn't pedal. I had to get off Herbie and push. Other sections were hard-packed and flat, while others were washboarded, rocky and rough.
+
+It took about three hours to get through it.
+
+I had just enough water.
+
+There was almost nothing out there. I passed only three vehicles — all of them white trucks — and saw a man on a red tractor pushing sand on a side road. I waved at him instead of stopping to talk. I wonder if I should have stopped.
+
+At one point I came across the Red Rock Community Center. It appeared almost abandoned. The door was unlocked, but the sinks didn't work, and I couldn't find any water. I couldn't even figure out where the community it served was located. There didn't seem to be any houses around. It was one of those places that makes you wonder about the stories you don't know.
+
+Eventually, I reached Highway 89. The road was newly paved, smooth and beautiful.
+
+And I couldn't help thinking:
+
+This is the road I should have taken in the first place.
+
+But perhaps I was meant to take the sandy path.
+
+Because shortly afterward, the road dropped. Four miles. Six percent grade.
+
+I recorded the descent on my phone.
+
+I averaged around thirty miles per hour, reaching the bottom in roughly seven minutes. There wasn't much shoulder, so I was riding with traffic, but fortunately there wasn't much traffic coming down behind me.
+
+Only four vehicles passed me.
+
+That descent was exhilarating. After everything I had just gone through — the heat, sand, rocks, washboard road and pushing Herbie — it felt like a reward. Maybe the difficult road was the price of admission.
+
+At the bottom, I found that Sean had parked Marcus in a handy pullout. I mixed up some protein powder and drove toward the Vermilion Cliffs.
+
+We arrived at Lee's Ferry Lodge at Vermilion Cliffs, where Brady had agreed to let us stay for a few days.
+
+Brady was incredibly welcoming. Deborah showed me around and signed the trailer, and I met Charlie, who runs the bar in the evenings, and Chad, who along with Brady seems to be a resident handyman.
+
+Brady showed me some of the damage caused by recent monsoon flooding. The water has a tendency to break through a small levy he's built because that's where the runoff naturally wants to go. When the storms become intense enough, the water simply wins.
+
+The lodge reminded me of the Grand Canyon Oasis — a place with a clubhouse, kitchen and space for travelers to settle in for a while. They even let us plug the refrigerator and charging box into a handy outlet.
+
+There's an outdoor shower and bathroom facilities, and a real sense that this is a place where travellers are welcome.
+
+After the day I'd had, it felt like the perfect place to land.
+
+Today ended up being forty-two miles.
+
+But the mileage isn't really what I'll remember.
+
+I'll remember Lionel's blessing.
+
+I'll remember Bambi's bracelet.
+
+I'll remember the strange isolation of that sandy road.
+
+I'll remember wondering what kind of population once gathered around that lonely community center, and what happened to them.
+
+I'll remember pushing Herbie through sand.
+
+I'll remember finally reaching pavement.
+
+And I'll remember flying down that four-mile hill at thirty miles per hour, thinking about how many times the universe has rewarded me with something thrilling and awe-inspiring after a trial. And feeling a profound gratitude for the experience.
+
+Sometimes the road you plan to take isn't the road you're meant to take.
+
+Today, I took the wrong road. Somehow, it turned out to be the one I was destined to travel.`,
+    hashtags: ["#Grit", "#Adventure", "#Gratitude", "#Wonder", "#Connection", "#Resilience", "#Community", "#Sparkle", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 152,
+    date: "Tuesday, July 28, 2026",
+    location: "Vermilion Cliffs, AZ — Lee's Ferry Lodge",
+    state: "Interlude",
+    region: "Interlude — Vermilion Cliffs",
+    title: "The Force of Nature",
+    entry: `Today was a quieter day, spent entirely at Lee's Ferry Lodge on Brady's property at Vermilion Cliffs. But even a day without riding somehow managed to become full of meaningful moments.
+
+I met Brady's wife, Cathy, when I saw her carrying a heavy garbage can toward the dumpster. I offered to help, and she accepted. That simple act turned into a really good conversation about life and purpose.
+
+Cathy and Brady are wonderful people. I really enjoy talking with both of them.
+
+She also signed the trailer, putting her initials and Brady's initials inside a heart. Brady had previously written “VC” for Vermilion Cliffs, so now their initials are there too. Another little mark from another place and another pair of people we've encountered along this journey.
+
+Most of the day was spent in the clubhouse working through my journal entries from the Grand Canyon excursion.
+
+It's already July the twenty-eighth, and I've only finished cleaning up through July the seventeenth. That leaves ten more days sitting on my phone waiting to be processed.
+
+And those aren't exactly uneventful days.
+
+There's the Health and Wellness event at the Bodaway Gap Chapter House, our time in Page, winning the Amangiri lunch, meeting all the people along the way, arriving here at Vermilion Cliffs — and, of course, taking the wrong road from Page toward Bitter Springs and spending three hours pushing Herbie through sand.
+
+Every day seems to have become a story.
+
+I'm hoping that once I finish the Grand Canyon entries, things will move a little faster. If I can work through two or three entries a night, I'll eventually catch up.
+
+But tonight, it was simply time for bed.
+
+I also discovered that Herbie's front tire was flat. Actually, Cathy noticed it while he was perched on the trailer, patiently waiting for someone to pay attention to it.
+
+I was actually pretty grateful to discover it here, as I had forgotten to put my bicycle pump back on the bike after charging it. If I'd gotten that flat while I was out on that isolated sandy road between Page and Highway 89, I could have been in serious trouble. Instead, the tire waited until I was safely here. Another Guardian Angel event.
+
+The hole was tiny — probably a goathead or a piece of retread wire — and it took some searching to find it. Eventually I located it and repaired the tube.
+
+I haven't put the wheel back on the bike yet. I want to make sure the repair holds before I put everything back together.
+
+Once again, I find myself grateful for the things that didn't happen.
+
+Tomorrow is going to be busy:
+
+Get up early.
+
+Put Herbie back together.
+
+Put the tools away.
+
+Load the trailer.
+
+Get the canopy and bike cover put away.
+
+Eat breakfast.
+
+Get dressed.
+
+And then start rolling again.
+
+We're heading west toward Jacob Lake.
+
+It's another climb — similar to the climb we made toward Jacob Lake from Fredonia — but this time Sean is going to take part of the riding, so I won't have to do the whole thing myself.
+
+We're ready to Roll 4 Nature again.
+
+Ready to meet new people. Ready to experience whatever comes next. Ready to see what nature has waiting for us.
+
+One of the most interesting encounters today was with a chaplain who went kayaking from Horseshoe Bend toward Lee's Ferry.
+
+When he returned, he told me that he and his family had experienced the same monsoon we had encountered earlier.
+
+Except instead of rain and hail, we experienced something closer to a sandblaster.
+
+The wind was so powerful that dust was driven everywhere — even inside the trailer.
+
+I remember trying to get from the trailer to the clubhouse during the storm. It was all I could do to get the kitchen door open. The wind slammed the door behind me as I finally made it inside. Another example of the brutal power of nature. Talking with the chaplain brought that experience back to mind.
+
+There is something humbling about witnessing nature when it stops being scenery and reminds you what it really is:
+
+Power.
+
+Unbridled power.
+
+We spend so much of our lives surrounded by things we've designed to protect us from the natural world. Buildings. Vehicles. Roads. Air conditioning. Technology.
+
+Out here, those barriers become much thinner.
+
+You feel the wind. You feel the heat. You feel the rain. You feel the waves.
+
+You are reminded how small you actually are, but also how you fit.
+
+And somehow, that's part of what makes this life so meaningful.
+
+I'm grateful for the opportunity to live with so few possessions, to travel through the world with Herbie and our little home base, and to depend on nature's kindness while respecting its ability to hurt us.
+
+And I'm especially grateful for the Guardian Angels I believe have been watching over me.
+
+There have been too many moments when things could have gone differently.
+
+The flat tire could have happened on the sand road.
+
+The storms could have caused serious damage.
+
+The river could have been less forgiving.
+
+The list goes on. But I'm still here, still rolling. Still meeting people. Still learning. Still witnessing. Still experiencing.
+
+Wondering what the next chapter will look like.
+
+Thank you, Guardian Angels, for continuing to watch over me. I truly appreciate it.
+
+Tomorrow, we roll on.`,
+    hashtags: ["#Gratitude", "#Connection", "#Wonder", "#Perspective", "#Community", "#Grit", "#NewWayOfLife", "#Reflection", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 153,
+    date: "Wednesday, July 29, 2026",
+    location: "Vermilion Cliffs, AZ → Jacob Lake, AZ",
+    state: "Interlude",
+    region: "Interlude — Jacob Lake",
+    title: "The Long Climb to Jacob Lake",
+    entry: `Today began at Lee's Ferry Lodge, tucked beneath the Vermilion Cliffs, and ended at Jacob Lake.
+
+I had originally planned to split the riding with Sean, but once we got started, I decided I wanted to ride the whole thing. So Sean drove ahead to Jacob Lake, parked the truck, and then came back down to House Rock Observation Point to meet me. From there, we started the climb toward Jacob Lake together.
+
+Well… together for a little while. Sean beat me by quite a bit.
+
+My bike is heavy. I was already tired. I had plenty of excuses. And honestly, the climb was a lot harder than I remembered it being back in June. I had to stop and take breaks.
+
+The final tally was forty-one miles after roughly nine hours of riding.
+
+And tonight, I am very, very tired.
+
+Before the real climbing began, Sean caught up to me as a monsoon was approaching. He pulled over and we watched it approach together.
+
+The sky ahead turned gray, and a couple of women stopped to ask us whether it was safe to drive in the rain.
+
+I told them they were probably asking the wrong person, because I was getting ready to ride my bicycle into it.
+
+Then the storm reached us. The wind picked up. Rain came down hard. We huddled behind the rig, occasionally exposing ourselves to the full spectacle as the storm passed directly over us.
+
+It moved through fairly quickly, continuing east toward Lee's Ferry Lodge. Thankfully, the lightning that I had witnessed while the storm was lingering in the mountains had decreased quite a bit.
+
+When it passed, I got back on Herbie and continued as Sean passed me and disappeared into the horizon.
+
+As I continued riding, I could see evidence of just how much rain had fallen in the mountains. When I reached a bridge, I found a torrent of muddy water rushing around the bridge pylons. A tremendous amount of water. All of that runoff had been collecting in the mountains and was now making its way along a previously dry riverbed.
+
+I had watched the lightning and darkness building as I pedaled westward from the Vermilion Cliffs, but seeing the result of the storm was something else entirely.
+
+I stopped on the bridge and sat on the railing to eat lunch — a tortilla with tuna fish — while watching the muddy water roar underneath me.
+
+The bridge made a few noises that I didn't particularly like, prompting me to move toward the other end.
+
+A couple stopped to watch the water too, and we talked for a while.
+
+Later, I discovered that they had made it to Jacob Lake and signed the trailer when they passed through.
+
+Another connection made along the way.
+
+After lunch, I continued toward House Rock. Sean was waiting on Judy, his faithful steed.
+
+Once we started climbing again, Sean took off. He was gone. I just settled into my own pace. There wasn't much else to do.
+
+I realized that the climb from this direction is much more formidable than the climb up from Fredonia. I had remembered the other side, but this was something different.
+
+I kept pedaling.
+
+Stop.
+
+Rest.
+
+Pedal.
+
+Repeat.
+
+Eventually, Jacob Lake appeared.
+
+I made it.
+
+We checked with the folks at Jacob Lake Inn and confirmed that we could stay overnight in the parking lot, just as we had previously.
+
+They've always been very kind to us, and we're grateful that they allow us to park there.
+
+One of the family members, Melinda, happened to be outside this evening. While I was getting ready for bed, we had a chance to talk for a little while.
+
+It was nice to see a familiar face at the end of such a long day.
+
+Then came the strange part.
+
+When I opened the trailer, I noticed that the inflatable mattress looked extremely inflated.
+
+I asked Sean if he'd pumped it up.
+
+Nope.
+
+Neither of us had.
+
+So how did the mattress suddenly become so full?
+
+Then it hit me.
+
+We had climbed roughly five thousand feet in elevation.
+
+The air inside the mattress had expanded as the atmospheric pressure dropped.
+
+Mystery solved.
+
+It was one of those little reminders that even the simplest things behave differently when you're moving through the landscape this way.
+
+Today was hard. Really difficult. But very rewarding.
+
+Forty-one miles. Nine hours. One enormous climb. One spectacular monsoon. One raging runoff channel. And one very tired cyclist at the end of it.
+
+Tomorrow, we'll see what comes next.
+
+Tonight, I'm just grateful to be here.`,
+    hashtags: ["#Grit", "#Resilience", "#Adventure", "#Wonder", "#Gratitude", "#Connection", "#Community", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 154,
+    date: "Thursday, July 30, 2026",
+    location: "Jacob Lake, AZ → Best Friends Animal Sanctuary, Kanab, UT",
+    state: "Interlude",
+    region: "Interlude — Kanab",
+    entry: `Today began at Jacob Lake and ended just north of Kanab, at Best Friends Animal Sanctuary. It was quite a day.
+
+The air was crisp and clean when I woke up at Jacob Lake. I had noticed a little bit of an earache and something going on in my throat the night before, perhaps from the dramatic change in temperature after climbing twelve miles into the mountains. That climb from the east continues to impress me. It isn't just steep; it's relentless. Six to eight percent for roughly twelve miles, with almost no real breaks. Every time you think you've reached the top, you turn a corner and find another incline waiting.
+
+The ride back down toward Kanab was a completely different experience. There was only about two miles of truly continuous downhill, rather than the twelve-mile descent I'd remembered going the other direction, but it was still wonderful. I had Aaron Copland music playing and was enjoying the cool mountain air, just reveling in the freedom of riding through it.
+
+I stopped at the Escalante Staircase Overlook because I wanted to see Mary, the wonderful woman who gave me one of the bracelets I'm wearing. She wasn't there, but I met several other people, and then Sean arrived. Once he showed up, things quickly turned into a little gathering around the trailer. People noticed what we were doing and wanted to sign it. There were six or eight teenagers among them, some wearing yarmulkes. We didn't talk about religion; we talked about nature, and they were excited to leave their marks on the trailer.
+
+Then we met Russ, a retired Navy Seabee traveling by motorcycle with his bike loaded up for a road trip. He invited us to dinner, and we accepted. Sean and I continued toward Kanab while Russ went ahead to get a shower and do some maintenance on his motorcycle.
+
+I stopped at the first gas station in Fredonia to get some ice and met Brody, another motorcycle traveler. He was riding a dirt bike and had started in Wyoming, traveling through Colorado and Arizona and continuing into Utah. It was great meeting someone else who was living a version of the same kind of life we are. When you meet people who are traveling this way, there's already a common language. They understand what nature brings to the table — the freedom, the uncertainty, the discomfort, the beauty and the stories.
+
+Then about thirty more Jewish teenagers arrived at the gas station.
+
+They noticed us because we looked different from everyone else, and before long they had surrounded us with questions about what we were doing. They were fascinated by Roll 4 Nature and wanted to hear our stories. I made a little YouTube video with a couple of them and talked with the group about nature and how special it is to have the opportunity to spend time in it. They were headed toward Jacob Lake and the North Rim of the Grand Canyon, something that many people never get the opportunity to experience.
+
+They were an energetic bunch. Those poor chaperones had their hands full.
+
+The truck was a few blocks away, where Sean had left it as he started pedaling toward Kanab. One group of the excursionists drove over to sign Cleopatra. One of the kids drew what appeared to be an alien smoking a cigarette and pointing a gun into the air, and told me it was his group's symbol. I wasn't sure I believed him until one of the chaperones confirmed that, yes, apparently that really was their thing. Some things in life are difficult to explain.
+
+Later, I met Russ for dinner at Houston's Trails Restaurant in Kanab. The food was good, but the company was even better. We talked about military adventures, experiences in nature, and all the amazing stories that accumulate when you spend your life traveling along what I think of as the Path. Sean arrived late because he had been hiking when I sent him the location, but he got there just in time to eat and join the conversation.
+
+Eventually we had to leave because Sean's bicycle didn't have lights, and he needed to make it to the animal sanctuary before dark. It was only about a ten-minute drive, but it would have been closer to an hour on the bicycle, especially with the hill.
+
+When I arrived at Best Friends, I got the truck situated for the night, and then Rick, one of the sanctuary's security people, came by. We talked for another thirty or forty minutes.
+
+And that's really what today has been about: conversation after conversation with fascinating people.
+
+Mary wasn't there, but I met other people.
+
+Russ appeared out of nowhere.
+
+Then Brody.
+
+Then thirty teenagers at a gas station.
+
+Then Rick.
+
+It is hard to believe that this keeps happening day after day — that we can simply move through the world, meet complete strangers, and discover that almost everyone has a story worth hearing.
+
+There is something really good about living this way.
+
+Tomorrow Angie and Brian, Best Friends Volunteer Coordinators, are coming at eight-thirty to take us to our volunteer assignment. Apparently it involves paint.
+
+I'm excited to see what we get ourselves into.
+
+Thirty-two and a half miles on the day.`,
+    hashtags: ["#Connection", "#Community", "#Gratitude", "#Adventure", "#NewWayOfLife", "#Wonder", "#Sparkle", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 155,
+    date: "Friday, July 31, 2026",
+    location: "Best Friends Animal Sanctuary, Kanab, UT",
+    state: "Interlude",
+    region: "Interlude — Kanab",
+    entry: `July the thirty-first was Day one hundred fifty-five, the last day of July, and it found us at Best Friends Animal Sanctuary, just north of Kanab.
+
+We were there to paint some doors in Dogtown, where all the dogs hang out. We had parked across the way for the night, and there was quite a bit of barking. It kept me from sleeping as well as I might have otherwise. But trying to sleep when there are distractions is probably a good practice in something — maybe forbearance. I try to look at the positive side of things rather than simply focusing on the fact that I wasn't getting much sleep. Eventually, I fell asleep around six in the morning and slept until seven, and somehow I felt remarkably good during that one hour of sleep.
+
+After getting up, I putzed around in the trailer for a while. Then I noticed a truck pulling up to the shipping and receiving building, so I went over and asked if I could put our cooler inside so it would stay cold. They kindly allowed me to do that.
+
+We waited for our volunteer liaison, Angie, who runs the group service projects at Best Friends. I've been talking with her for a couple of weeks now, so it was nice to finally meet her in person. She showed up promptly at eight-thirty with her coworker, Daryl. We climbed into a golf cart with our dirty clothes, because Daryl had generously offered to wash them for us — a completely unexpected kindness.
+
+We headed over to the building where we would be working and got our instructions for painting the doors. Sean took the first one, and I took the next. We spent quite a bit of time working in the sun, and it was brutal. Really, really hot. Every once in a while I'd open the door just to let a little bit of air conditioning waft past me. We finished our doors and put a coat on another one before it was time for lunch.
+
+Lunch was wonderful. Best Friends has a vegan cafeteria, and they served baked potatoes along with a bunch of different salads. Afterward, we went on a little tour of the sanctuary and saw some things I didn't even know were there.
+
+One of the stops was the place where Tonto, the Lone Ranger's trusty sidekick, had his hideout on the old television show. It was beautiful. There was a huge field of grass surrounded by trees that provided shade, with a little bit of water running along the back and a fountain toward the front. I wouldn't call it a babbling brook, but it was a peaceful little place.
+
+Then came the part Sean and I had been looking forward to: the pigs.
+
+They drove us out to the pig area, and those pigs were enormous. They loved getting scratched, too. We were given back scratchers, and when we started scratching their sides, they would flip their legs up in the air as if to say, Please, keep scratching!
+
+We also watched one of the caregivers lead a pig into a pen using almonds and a cookie toy. It was pretty entertaining to watch how easily food could persuade such a large animal to go exactly where she wanted it to go.
+
+After that, we stopped at the gift store and welcome center and ran into a bunch of people we'd met during our first visit. Dwayne was there, Deb was there, Jordan was there — he'd just had his wisdom teeth removed — and Thomas, the guy who plays the guitar, was there too. It turned into a little reunion with our new friends.
+
+We even managed to arrange another volunteer opportunity for both of us for the following day, Saturday. After that, we'll have another vegan lunch, assuming the schedule works out, and then we'll be back on the road. I'll have to see exactly how long the next ride is.
+
+Eventually, we headed back up the hill, retrieved our freshly laundered clothes, and said goodbye to everyone we'd worked with that day. Daryl gave us a ride back to the truck and trailer, and Angie came along as well so we could say our goodbyes.
+
+I drove back down toward the main entrance while Sean rode his bike. We wanted to find another opportunity to volunteer before leaving the area, and we found a couple of possibilities. We went back to the welcome center and talked with Deb about staying in their RV park, and she said yes.
+
+What a wonderful organization this is. Best Friends Animal Sanctuary is filled with people who genuinely care about what they're doing. Sean and I both love the place. Anyone passing through the Kanab area should consider stopping in. There's something special about it.
+
+We stayed at the welcome center working on computer stuff until they closed at six. We were wrapping things up on the patio outside when, of all people, Jordan — the security guard who was the first person I met when I arrived here about three weeks ago — showed up.
+
+We ended up talking for a couple of hours. He told me about all the broken bones he'd had as a child growing up, and eventually our conversation turned toward spiritual things. He had a lot of thoughts and ideas, and I really appreciated him sharing them with me. These conversations seem to happen everywhere we go. You meet somebody almost by accident, and before long you're talking about things that actually matter.
+
+We talked until the sun was almost down. Then we set up camp, took showers, and finally went to sleep.
+
+It is so nice to be somewhere cool after a hard day's work. Being able to sleep without sweating is a pretty big blessing.
+
+I guess this was our first full day in Utah. We'll be back in Arizona for a little while because that's simply the way the road goes, but Utah is going to be our home territory for the foreseeable future, at least for most of August.
+
+Jordan also gave us a lot of insight into the route we've chosen through Utah's national parks. There are going to be quite a few mountain ranges to climb, and it's going to be a challenge. But it's the kind of challenge I'm looking forward to. I think it will make us appreciate Utah's natural beauty in a different way.
+
+He also told us about a place we absolutely cannot miss: Calf Creek Falls, between Bryce and Capitol Reef. According to Jordan, if we miss it, we've failed our mission to explore Utah.
+
+So we have to go.
+
+There's a big waterfall.
+
+That's all I need to know. I love waterfalls.
+
+Before ending the day, I want to say thank you to this wonderful organization and to the people who make Best Friends Animal Sanctuary what it is. Their mission to reduce the number of animals killed in the United States and provide refuge for animals in need is something special. It's really cool to be here and to see so many people devote themselves to such a compassionate endeavor.
+
+Thank you, Best Friends Animal Sanctuary.
+
+We love you.`,
+    hashtags: ["#Gratitude", "#Community", "#Connection", "#Wonder", "#Sparkle", "#NewWayOfLife", "#Milestone", "#Adventure", "#RollForVeterans", "#TeamBravo"]
+  },
 ];
