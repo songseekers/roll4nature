@@ -121,7 +121,7 @@ export default function Footer() {
                 </a>
                 <a href="https://www.instagram.com/roll4nature" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-r4n-warm-cream-dim hover:text-r4n-primary-hover transition bg-r4n-forest-light dark:bg-r4n-charcoal hover:bg-r4n-forest dark:hover:bg-r4n-charcoal-mid px-3 py-2 rounded-lg" aria-label="JT's Instagram">
                   <Instagram size={18} />
-                  <span className="text-xs">@roll4nature</span>
+                  <span className="text-xs">Instagram</span>
                 </a>
                 <a href="https://www.youtube.com/@roll4nature/shorts" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-r4n-warm-cream-dim hover:text-r4n-primary-hover transition bg-r4n-forest-light dark:bg-r4n-charcoal hover:bg-r4n-forest dark:hover:bg-r4n-charcoal-mid px-3 py-2 rounded-lg" aria-label="JT's YouTube">
                   <Youtube size={18} />
