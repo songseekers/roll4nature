@@ -25,7 +25,7 @@ const MONTHS = [
   'July', 'August', 'September', 'October', 'November', 'December',
 ];
 
-// "Monday, July 30, 2026" -> "30-7-26"
+// "Monday, July 30, 2026" -> "7-30-26"
 function formatShortDate(dateStr: string): string {
   const parts = dateStr.split(', ');
   if (parts.length < 3) return dateStr;
@@ -34,7 +34,7 @@ function formatShortDate(dateStr: string): string {
   const day = parseInt(dayStr, 10);
   const yy = parts[2].slice(-2);
   if (!month || Number.isNaN(day)) return dateStr;
-  return `${day}-${month}-${yy}`;
+  return `${month}-${day}-${yy}`;
 }
 
 // "Monday, July 30, 2026" -> "Mon"
@@ -133,7 +133,7 @@ export default function JournalSidebar({
                           : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
                       }`}
                     >
-                      {formatWeekdayAbbr(d.date)} · {formatShortDate(d.date)} · Day {d.num}
+                      Day {d.num} · {formatShortDate(d.date)} · {formatWeekdayAbbr(d.date)}
                     </button>
                   </li>
                 ))}
