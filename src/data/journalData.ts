@@ -13,7 +13,7 @@ export interface JournalDay {
   title?: string;
 }
 
-export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Northern Arizona', 'Grand Canyon', 'Interlude'];
+export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Northern Arizona', 'Grand Canyon', 'Interlude', 'Mountain State 1: Utah'];
 
 export const stateConfig: Record<string, { color: string; subtitle: string; displayName?: string }> = {
   Florida:      { color: '#1a5276', subtitle: 'Key West to the Panhandle · ~1,000 Miles' },
@@ -28,6 +28,7 @@ export const stateConfig: Record<string, { color: string; subtitle: string; disp
   'Northern Arizona': { color: '#8B4513', subtitle: 'Jacob Lake to Flagstaff', displayName: 'Arizona' },
   'Grand Canyon':     { color: '#6b2a00', subtitle: 'Flagstaff to the Colorado River' },
   'Interlude':        { color: '#c9821f', subtitle: 'Flagstaff to Tuacahn' },
+  'Mountain State 1: Utah': { color: '#b1452f', subtitle: 'Zion to Arches, and the Wasatch Mountains Beyond' },
 };
 
 export const journalDays: JournalDay[] = [
@@ -3335,5 +3336,467 @@ Thank you to everyone who shared this day with us.
 
 It was an amazing day.`,
     hashtags: ["#Gratitude", "#Community", "#Connection", "#Family", "#Wonder", "#NewWayOfLife", "#Sparkle", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 159,
+    date: "Tuesday, August 4, 2026",
+    location: "Liberty Village, Hurricane, UT",
+    state: "Interlude",
+    region: "Interlude — Liberty Village",
+    entry: `August the fourth was Day one hundred fifty-nine, and it was a service day at Liberty Village. I spent part of the morning doing some weeding, and then around lunchtime I got authorization to build a gate for the sheep corral. It was a lot of fun. Before today, the only way to get into the corral was to climb over the fence, so I figured a gate would be a useful improvement. My friend Jamie helped me with the project, and I think the finished gate will last as long as the pen does—especially since Richard told me the existing corral will eventually be replaced. For now, though, there is a proper way in and out. Yesterday there wasn't.
+
+As I was finishing up the gate, Sean took a break from his schoolwork to tell me that we had been invited to dinner with Julz, Shea's mom. She goes by Julz, partly because people who don't know how to pronounce her given name, Julienne, tend to struggle with it. It's French. I had just enough time to clean up the equipment and tools I'd used to build the gate and grab a quick shower before we needed to head out. The restaurant turned out to be surprisingly close to Tuacahn, which gave us a chance to reconnoiter the route we'd be riding soon. Since time was short, though, we drove Marcus over, leaving Cleo and the bikes back at Liberty Village.
+
+The restaurant was Santo Forno, which is connected to Julienne's family—I think her nephew. It's so new that the sign isn't even up yet. We circled the lot twice before we found it. Shea and her kids were there with Julienne, and we had a really good time together. We had a lot of pizza, along with some beautiful slices of watermelon with feta cheese and olives that was surprisingly delicious. There was another salad as well, and Sean and I were treated to a blood-orange seltzer water that was really good. Everything was delicious. I want to thank Julienne very much for dinner. Thank you, Julz!
+
+After dinner, everyone met up at Liberty Village to sign the trailer and take a look at the gate. It was nice to be able to share a little bit of what we'd been doing with them.
+
+Now it's bedtime, and tomorrow we're going to say goodbye to these people. I don't like goodbyes. There's a certain inertia that comes with staying somewhere you feel welcome, especially when there is still plenty of work to do and people are happy to have you around. It would be easy to stay here a little longer. But there are other plans waiting for us, and getting through all of these national parks is going to take time.
+
+Tomorrow we move onward to beautiful Ivins, Utah, and the red red rocks. I don't think I can get enough of that place. Before we leave the area, though, we're going to head downtown and take a look at some of the older buildings and architecture. Maybe we'll even get a chance to say goodbye to our friends at the courthouse that's being restored.
+
+Whatever tomorrow brings, it will come after we get some sleep. And that's what I'm going to do now.
+
+Good night.`,
+    hashtags: ["#Gratitude", "#Community", "#Connection", "#Family", "#NewWayOfLife", "#Grit", "#Wonder", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 160,
+    date: "Wednesday, August 5, 2026",
+    location: "Hurricane, UT → Ivins, UT",
+    state: "Interlude",
+    region: "Interlude — Ivins",
+    entry: `The fifth of August was quite special. We had to say goodbye to our friends at Liberty Village, and that was sad. I really enjoyed helping them with the grounds and making the gate, not to mention just spending some time with them. Of course, Frozen and the dinner at Santo Forno were unforgettable. But today, we had to say goodbye, and we traveled from Hurricane to Ivins. And it was a hot day. By the time we got everything packed up, it was about eleven. I sometimes take more time than necessary when I'm reluctant to leave a place I like. It's hard for me to say goodbye and start riding when we have to leave good friends.
+
+When I was ready to go, I noticed that I wasn't really ready. The derailleur on Herbie was severely twisted. I'm not sure how it happened, but it was up on the trailer, and somehow it might have gotten caught on some part of the truck when I moved it. I'm not sure, but the bottom line is that Herbie was out of commission. Usually you can bend the derailleur to work, but this time that trick was not going to work. I looked online, only to find out that Amazon does not have any eight-speed derailleurs currently in stock. My original plan was to order a replacement, have Sean ride, and I would drive the truck today. But when I found out that there's no replacement available, I reconsidered. I decided the best course of action was to use the original derailleur that I had taken off in San Antonio, before the ride began. So I dug it out of the part collection in Cleo, got all the required tools, and took everything over to the little lawnmower building that has air conditioning. When you close that roll-up door, it's tolerable. I thought I might need to borrow a tool, and it would be better to be in a location where there's a bunch of tools than to be in Tuacahn where there's none. I am sure there's a lot of tools at Tuacahn, but we don't have the same kind of relationship there that we do in Hurricane.
+
+Luckily, the shifting cable was in good condition. I had to reinstall the original shifter and the derailleur because they work as a kit. It took me a while to dial in the gears. The shifting is still a little bit off, but is so much easier with this old derailleur than it was with the one that was deformed. I think part of it is the design of how the cable is routed from the frame to the derailleur. There's a tight turn on the Acolyte setup, where the Shimano Acera has more of a gradual turn. So my feeble thumbs are appreciating the difference in the amount of force needed to shift, because I shift quite a lot. Easier shifting is a nice side effect of all this unexpected bike maintenance. There is a little bit of fine-tuning that still needs to happen, but I'm back on the road, which is the important thing. I don't know if I need to worry about replacing the shifter and the derailleur after all. It seems to be working fine, and if it's not broke, don't fix it. That's what they say, anyway.
+
+The replacement put us way behind schedule (we were already late when I discovered the need for repair). It was about one o'clock before I left. I left behind that little nub that you use to cover the tip of the cable, so I was unable to crimp that on. I'm pretty sure I have some extras of those, but I'll have to find them. For now, I got what I need.
+
+It was a long, hot ride. Luckily, more downhill than uphill to get back to Ivins. I returned the flag that I ordered that was too big at a UPS store along the way. I gave all of the store staff bracelets and inducted them into Team Bravo, and they said they would share our Nature message with their friends and other people. And I believe them. When I finally rode into Tuacahn, Sean was pulling up right behind me. He parked and I took a shower. Another hasty shower, because we were running out of time. I also ate some peanut butter and honey with a tortilla and an apple because I needed the calories and protein. Plus, I didn't want to be hungry going up the hill on our way to see Grease! We got our tickets from the box office, went into the theater area, and would have been on time, except that an usher started to talk to us. By the time we got to our seats, the first number was playing. Usually the ushers keep you from going to your seat when you arrive late, until there's a slow spot. But these ushers didn't stop us, so we went down and had to excuse ourselves to all the people in our row, because our seats were right in the middle of row H.
+
+I must say that row H was a perfect viewing distance, and we were right in the middle. We saw all of it, up close, and it was fantastic. I thought "Hopelessly Devoted to You" was the best song. That actress did a phenomenal job as Sandy. All of the songs were great. And the dancing. They had a lot of new numbers that I never saw in the movie.
+
+We watched some of the dismantling of the set, because right after the show they started to get things ready for another Les Mis production. It's a lot of work. As we were leaving, we went up to the store where the actors were throughout and said hello to them. A few of them recognized us from last time we were visiting. We invited everybody to sign the trailer if they had a moment on their way to the actor housing. Now it's after midnight, and bedtime was hours ago.
+
+Tomorrow, we are going to attempt the Veyo loop, which is over forty-seven miles and a lot of elevation. The route goes through Gunlock, Veyo, and Snow Canyon, and then we return to Tuacahn. It was quite steep the last time I rode it in a counterclockwise direction. So, I was thinking that we could try clockwise. Someone said they prefer that way. There's a famous pie shop in Veyo where everybody stops. I think that having a treat after doing most of the hard stuff would be cool. In the end, it's probably about the same either way. Veyo is kind of in the middle of the ride. Maybe we'll just flip a coin and let fate decide.
+
+Thirty-four and two-tenths miles on the day.`,
+    hashtags: ["#Gratitude", "#Community", "#Connection", "#ProblemSolving", "#Grit", "#Adventure", "#Wonder", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 161,
+    date: "Thursday, August 6, 2026",
+    location: "Ivins, UT (Veyo Loop)",
+    state: "Interlude",
+    region: "Interlude — Ivins",
+    entry: `The sixth of August was Day one hundred sixty-one on the road. Sean and I woke up at Tuacahn, got ourselves ready, and headed out for a ride around the area known as the Veyo Loop. Veyo is a little town up in the mountains, famous for its pies and its volcanic history. We were looking forward to seeing what the ride had in store for us.
+
+On the way out of town, we passed a VA nursing facility and decided to stop in and say hello to a few veterans. We met several interesting characters who seemed to enjoy our visit and our message about the importance of nature. We didn't have the trailer with us for them to sign, but we were able to give them a few brochures and spend a little time talking. After a bathroom break and filling our water bottles, we got back on the road.
+
+The ride turned out to be about forty-seven miles, with some challenging hills along the way. The toughest one came just before Veyo. Parts of that climb reached a thirteen percent grade, and it was brutal. It seemed like a constant uphill with no flat sections where we could catch our breath, and the heat made it even harder. But eventually, we made it to Veyo. It wasn't easy, but we got there.
+
+And then came the reward: pie.
+
+Sean chose a slice of lemon sour cream, while I went with the Volcano, a chocolate-and-caramel pie that seemed to be one of their signature creations. I probably wouldn't have chosen it if I'd been selecting purely based on what I normally like, but the town's entrance sign proudly announces that this is "Volcano Country," so I figured I should give the Volcano a try. Sean's lemon sour cream was probably the better choice for the circumstances. It was fresh, bright, and airy, with just a little bite to it. I had a taste, and it was excellent. Mine was good too, but it was heavier, which made sense considering it was chocolate and caramel. Either way, it was a pretty good way to celebrate surviving that climb.
+
+The rest of the ride was considerably easier because we'd already conquered most of the major climbs. There were a couple of moderate ones still waiting for us, but nothing compared to the monster we had just finished. I still don't understand how the person who recommended doing the loop clockwise managed to leave that last climb into Veyo out of the description. My only conclusion is that they must have been riding an e-bike.
+
+Eventually, we made our way into Snow Canyon, which remains one of my favorite places in the whole world. We stopped at a picnic table and had some tuna on tortillas while I took some time to simply enjoy the surroundings. The red rocks, the formations, the clouds, the light—there is something magical about that place. I could sit there for a long time just taking it all in. Sean went off on a short hike while I stayed behind for a while and enjoyed the scenery.
+
+When we got back to Tuacahn, I wanted to take advantage of the opportunity to work on the website, so I brought my computer up to the café next to the amphitheater. They were performing Les Misérables again, which meant I got to work with the music from the show playing in the background. I love that soundtrack, so hearing those songs while I worked was a pretty wonderful way to spend an evening.
+
+Unfortunately, the internet had other plans. I couldn't get connected, so I wasn't able to accomplish anything with the website or the journal. I'm now a couple of weeks behind, and every day I seem to fall a little further behind. My opportunities to get reliable Wi-Fi have been pretty limited lately, and that's probably going to become even more of a challenge as we head into some of the more remote and magical places in nature. Civilization and a good internet connection aren't always found in the same places.
+
+But I'll get caught up eventually. That's one of the things I've learned on this journey: not everything has to happen today. Sometimes you just have to keep moving forward and trust that you'll find the time and opportunity to do what needs to be done.
+
+And now another day has come to a close. It was a really good day—a day filled with challenge and trial, but also with veterans, pie, mountains, red rocks, music, and beautiful places. We made it through, and we're both still alive.
+
+I call that a good day.`,
+    hashtags: ["#Gratitude", "#Grit", "#Adventure", "#Wonder", "#Community", "#Connection", "#RollForVeterans", "#TeamBravo", "#NewWayOfLife", "#Milestone"]
+  },
+  {
+    num: 162,
+    date: "Friday, August 7, 2026",
+    location: "Hurricane, UT → Rockville, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Rockville",
+    entry: `The seventh of August was Day one hundred sixty-two of this country-exploring ride, and it was also my father's birthday. He passed away years ago, but his memory always comes to me strongly on special days like Father's Day and his birthday. I think of him anytime I'm working with wood or doing some kind of construction project. My father was a good teacher of home construction, auto mechanics, and just about anything that could be done with your hands. He was a quiet man who grew up just after the Great Depression, learning how to make things work on a farm with very little in the way of replacement parts. Baling wire and basic tools could accomplish a lot in his hands. He could work wonders with a little duct tape and a coat hanger. I miss working next to him and learning his secrets.
+
+We started the day at Tuacahn. Sean drove to Hurricane and then rode from there toward Springdale, the town just outside Zion. I rode the other direction and met a couple of interesting people along the way. One of the best conversations was with Brian, who owns Hungry Howie's Pizza on Red Cliffs Drive. We sat and talked about biking adventures while I ate most of the pizza I'd ordered. Apparently, I had arrived before the lunch crowd, so I had plenty of time to enjoy the conversation as well as the food.
+
+I stopped at a thrift store afterward and found a couple of pairs of shorts that should work well for hiking. Then I stopped at a gas station to fill my bottles and douse myself with water before getting back on the road. I chose some good music to accompany me and headed out for what I considered the main part of the day's ride.
+
+There was plenty of heat and there were some challenging hills, but something was different about the way I approached them today. For the first time, I found myself looking at the hills as something I could become stronger from rather than something I simply had to survive. A small change in perspective can create a surprisingly large transformation in the way we handle life's challenges. The hills are still a challenge, but they're also an opportunity to get stronger, learn from the experience, and improve.
+
+I want to see where that idea takes me as I continue to evolve as a bicyclist. I'd like to be able to stay in higher gears while climbing and maintain more speed. Most of the sustained hills I've encountered have been six percent grade or more, and I generally find myself moving between five and eight miles per hour. Sometimes I'm down to three and a half miles per hour in first gear. I haven't had to walk Herbie up a hill very often, although it has happened, particularly on sandy or rocky roads. Today, though, I deliberately worked on pushing myself instead of automatically settling into the easiest gear.
+
+After I found Marcus at the Hurricane Walmart, I went looking for water to fill the tank on the camper shell. I wanted to start our next stretch of the journey with a full tank because we're heading into some pretty remote country. I looked everywhere but couldn't find a place to fill it at any of the gas stations or businesses I passed. Fortunately, I talked to my son Jacob, who lives in the area, and he told me where I could get water. I also topped off the truck. I have no idea what gas prices are going to look like once we get farther into the boonies, so I'd rather start with a full tank.
+
+When I reached Springdale, I started looking for a place where we could stay. What I found was a town overwhelmed with visitors. Nobody seemed to have a place for us to park, and nobody really wanted to talk about it. It wasn't a good parking day.
+
+I understand why the town is the way it is. Tourism around Zion has exploded, and the town has enacted regulations governing where motor homes, trucks, cars, and other vehicles can stay. Even if a business wanted to let us park overnight, doing so might violate a town ordinance. After asking several people around town, I finally realized that I wasn't going to get anywhere in Springdale. There was simply too much outsider saturation.
+
+I met up with Sean, and we decided to retreat to Rockville, a smaller town about five miles outside the Springdale city limits. From what we'd heard, Rockville might be a little more relaxed about overnight parking. Sean found a policeman and asked him about our options. The officer told him there was a place to park about five miles farther down the road, but I wasn't comfortable leaving the truck somewhere that remote while we explored the park over the next few days.
+
+I spent some time driving around Rockville, including down a few dirt roads that quickly made it clear Cleo wasn't meant to go much farther. Eventually, I came back into town and started knocking on doors, looking for someone who might have enough space on their property to let us park overnight, or ideally for a couple of nights.
+
+It was getting late, and we had a decision to make. We could go five miles farther down the road and sleep somewhere that would probably be noisy, or we could keep looking for a place on private property where we could get away from the traffic.
+
+Sean headed toward the roadside area while I went back toward the truck, which I'd left parked on a little road called Jensen. As I approached, I noticed a couple of heads appearing over a hedge. They had come out of the house and were walking toward the driveway. I could see that there was plenty of parking space behind the house, although there were gates and dogs that had made me hesitant to knock on the door earlier.
+
+As the two people walked toward their car, I introduced myself and asked whether their parents might be willing to let us park on the property. They were a girl and a boy, both around high-school age. The girl, Sophia, appeared to live there, and she did the talking. She said her mom was working until about nine o'clock but thought it would probably be okay.
+
+I looked at my watch. It was getting close to eight, and I was simply happy to have finally encountered some human beings who weren't telling us to go away.
+
+Sophia texted her mom to let her know I was waiting for her. As we talked, I discovered that Sophia knew my son, Jacob. In fact, her mother had worked with him for years.
+
+These are the serendipities of living life in nature. Some people might call them coincidences. I call them sparkles, and I don't believe they are coincidental. They are little signs that I am walking the right path.
+
+I called Sean and told him to turn around. As we waited for Sophia's mom, Eva, Jacob happened to finish work and pass by. We sat and talked for a while, catching up since we hadn't seen each other in about a year.
+
+Eva finally arrived around nine-thirty. I felt an enormous sense of gratitude and happiness knowing that my boy had somehow played a part in helping us find a place to stay. Eva welcomed us onto her property and told us we could stay for the several days we were planning to explore Zion.
+
+The property has plenty of vegetation and things that need attention, so I'm hoping I can make myself useful while we're here. Helping with whatever needs to be done seems like a good way to repay Eva for her hospitality.
+
+It was quite a day. We started with hills, heat, and the uncertainty of finding a place to sleep, and ended with family, friendship, and a safe place to park. Another little sparkle along the road.
+
+Twenty-three miles on the day.`,
+    hashtags: ["#Gratitude", "#Family", "#Connection", "#Sparkle", "#Grit", "#Adventure", "#ProblemSolving", "#Community", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 163,
+    date: "Saturday, August 8, 2026",
+    location: "Rockville, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Rockville",
+    entry: `The eighth of August was Day one hundred sixty-three, and it started in Rockville. I did a little maintenance around the campsite, which was situated in the backyard of a property lush with plant life. I had some breakfast, too, and then decided to head to the library when it opened at noon.
+
+It may seem like a strange decision given the opportunity to explore Zion, but Sean was behind on his schoolwork and I was behind on my website maintenance. We agreed that some library time followed by some time in the park was a good division of the day.
+
+It was about thirty minutes from Rockville to the library, and we spent five hours there. I worked on my journal entries while Sean worked on his school assignments. I am very behind on my journal entries. I have about twenty days to clean up and post on the website, and when I sat down for those five hours today, I first modified the website to include the book I've been writing, The Caterpillar and the Dragonfly, along with the Purpose Guidebook. I also split the journal into two separate parts: the Coast to Coast to Canyon volume and the Mountain States Exploration volume.
+
+That took the better part of two and a half hours—half of our allotted library time. I spent the rest of the afternoon going through my daily entries, which I usually create at the end of each day, cleaning them up and making them more coherent. There are a lot of filler words and misspellings to fix, and invariably I think of little details that I left out. It all takes time. But it's important to me to share the miracles that happen when I let Nature take over.
+
+Before the Grand Canyon trip, I was able to keep up better, usually cleaning up each nightly entry the following morning. Since that twelve-day excursion, when I documented everything but didn't have much opportunity to edit, I've been getting behinder and behinder. I'm going to keep chipping away at it, though. I have hope that eventually I will catch up with myself.
+
+Now I have the structure I want, and it's just a matter of adding the days, two or three at a time. As long as I can maintain maybe three or four entries a week, find some Wi-Fi, and get them added to the website, I'll be able to catch up. Eventually it'll all work out. But for today, it sufficeth to say that I made progress, and that's enough.
+
+After the library closed, we headed up the hill to the Zion Park entrance. We found that there was a separate entrance for bikers and pedestrians, so we went in that way. We stopped at the visitor center, looked around a little bit, and then decided to try biking up the canyon on the road the buses use.
+
+We made it up to the lodge before it got too close to sunset, and then we turned around and rode back down. We stopped at the art gallery where Eva works and looked around for a little while before cycling back to Rockville in the dark. There wasn't much traffic after the sun went down, so it was actually a nice ride.
+
+When we got back, I ate some bread and cheese topped with ravioli. I didn't wash the plate, so it's over there somewhere, and I'm not going to get back up because I just took a shower and I'm ready for bed. Tomorrow, I will make amends to that plate.
+
+My plan is to get up early so that I can get an early start on that mountain and ride all the way to the top before I go have brunch with my son. So I need to get some sleep.
+
+The end to possibly the best day ever.
+
+Eighteen and three-quarters miles on the day.`,
+    hashtags: ["#Gratitude", "#Family", "#ProblemSolving", "#NewWayOfLife", "#Community", "#Connection", "#Adventure", "#Wonder", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 164,
+    date: "Sunday, August 9, 2026",
+    location: "Rockville, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Rockville",
+    entry: `The ninth of August was Day one hundred sixty-four. Once again, we awoke at Rancho Evalux. I got up early because I wanted to ride to the top of Zion Canyon, to the point where you can't go any farther. That's where The Narrows starts. Sean wanted to go up there, too. Well, he wanted to get into the park and explore some of the trails, so we both had things we wanted to see.
+
+I planned to leave at six o'clock, but by the time I ate and got ready, it was seven o'clock. Still, riding up the canyon meant that the sunlight wouldn't hit until around eleven o'clock, when it reached its apex. It was a very nice ride. There was a little bit of wind, but not too much, and I made pretty good time.
+
+I had made plans to have lunch with my son, Jacob, so I was mindful of the time as I rode. As it turned out, I had plenty of time because Jacob was delayed. I started at seven o'clock, reached the top around eight-thirty, and had some time to walk around a bit. I didn't have the right kind of shoes to hike, though. I only had my biking shoes. I did walk down the dirt path toward The Narrows, which is a hike that eventually turns into walking in the river through a slot canyon. Apparently, the water can reach up to your shoulders in places. I'm thinking about doing that hike maybe tomorrow.
+
+I also have some website stuff that needs to be updated, so I'm trying to balance these two worlds. The world of Nature usually wins.
+
+As I was coming back down, I was still coordinating lunch with Jacob. As I mentioned, he was delayed, which gave me the opportunity to sit down and watch a Park Ranger presentation about amazing animals. I learned quite a bit about wasps, particularly parasitic wasps that lay their eggs on or inside other animals or insects so their babies have something to eat when they hatch.
+
+It was pretty amazing to hear about. There's one really tiny wasp that lays its eggs on aphids, which eat plants. The baby wasps eat the aphid, and in that way, fewer plants get eaten by hungry aphids. So it turns out wasps are pretty cool, even though they're kind of stingy sometimes.
+
+Let's not even talk about the Tarantula Hawk.
+
+Okay, let's.
+
+I encountered my first Tarantula Hawk in the Grand Canyon. The Tarantula Hawk is not a hawk; it's a wasp that looks scary. It turns out it's actually very beautiful, and I appreciate them more now that I've heard more about them. They're not aggressive unless you get aggressive with them—or maybe accidentally sit on one. I also got a Junior Ranger Handbook so I could learn more about the park.
+
+Eventually, the planned brunch turned into lunch with Jacob. Neither Sean nor Jacob's partner joined us, so we were able to enjoy some quiet time catching up. It was an enjoyable meal, reminiscing a little and comparing notes about life.
+
+After lunch, I came back to the ranch and got instructions on a few things that needed attention: two gates and some landscaping maintenance. I fixed the gates with the tools here. It's nice when I don't have to take my own tools out, since they're buried under the bed and all the bike equipment.
+
+As I was getting ready to do some landscaping work, Shea showed up from Hurricane with the bike chain that had been delivered after we left, later than promised. Sometimes Amazon misses the mark. She drove all the way up to Rockville, which, in retrospect, isn't really that far. It was very nice of her to do that, and it was good to see her.
+
+She took us over to a nearby ghost town. It was down a road that I had partially explored when pulling Cleo. It wasn't that bad after all, but the signs about needing a four-wheel-drive vehicle and the limited places to turn around had scared me off. It was an option to stay out there, but it's so remote, and you have to go through these pretty aggressive dips and hills to get there. I'm glad we found an alternative.
+
+I'm so grateful for finding friends who help one another in this life. That's what it's all about.
+
+The ghost town was very interesting. Places like that always make me think about what it would have been like to live back then. There's something about seeing these remnants of people's lives that makes you wonder what their days looked like, what they hoped for, and what eventually brought them to leave.
+
+After we got back to Eva's, she took Shea on a tour of her place. We said our goodbyes, and I took a shower. Now it's late.
+
+I saw the stars tonight. They were so bright against the dark sky, and there were so many of them. I couldn't quite see the whole Milky Way, but I could see parts of it.
+
+I reflected on the nature I saw today, and I reminisced a bit. I felt a little melancholy today, but I think these kinds of feelings are necessary to process things from the past—the regrets that you have. I've found that it's not healthy to ignore them or pretend they're not there. At the same time, I don't have to dwell on them. I can acknowledge them and then replace those feelings of melancholy and regret with gratitude.
+
+That's one reason why it's so important to find and live your purpose.
+
+Thirty-two and three-tenths miles on the day.`,
+    hashtags: ["#Gratitude", "#Family", "#Wonder", "#Reflection", "#Community", "#Connection", "#NewWayOfLife", "#Adventure", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 165,
+    date: "Monday, August 10, 2026",
+    location: "Rockville, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Rockville",
+    entry: `The tenth of August was Day one hundred sixty-five, and it was so exhausting that I neglected to enter it on my phone before falling asleep. It was a day of yard work.
+
+Sean went to the library to work on school, while I stayed behind and tackled the property. I cut back all the trees growing into the irrigation ditch in the front yard and trimmed everything along the sidewalk leading to the house. I cut back a rose bush that had become quite overgrown, fixed some more fences, and lubricated the hinges.
+
+I also spent a couple of hours working on the website, getting some parts updated that I'd been thinking about for a while. That was about it. A lot of yard work.
+
+After spending time at Liberty Village doing gardening work there, I'm starting to think maybe I could make it as a decent gardener if I actually studied the way plants grow and learned more about all that stuff. I'm focused on people right now, but who knows what the future might hold...`,
+    hashtags: ["#Gratitude", "#Grit", "#NewWayOfLife", "#Reflection", "#Community", "#ProblemSolving", "#Wonder", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 166,
+    date: "Tuesday, August 11, 2026",
+    location: "Rockville, UT (Zion National Park)",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Rockville",
+    entry: `The eleventh of August was Day one hundred sixty-six, and it was a Nature makeup day. I had wanted to spend a day doing yard work, which I did on the tenth, so I saved today to be a Zion day, all day long.
+
+I got up early and rode my bike to the lodge, which is about halfway to The Narrows. I took my time and didn't have any sense of urgency. Of course, I filled up with ice at the gas station in Springdale. The lodge is a good place to park the bike in the shade, so that's what I did. I also discovered a soda fountain in the lodge. Very convenient.
+
+I checked out all the Emerald Pools, from the top to the bottom, as well as the Grotto. On the way back from the Grotto to the Lower Emerald Pool, I met Mike and Pierrette, who were visiting from Ohio. We had a good talk. They were on their way to the lodge for a bite to eat and a cool drink. Mike told me about a place called The Wild in Ohio where you can go on a safari—in the United States. I never conceived of such a thing, but there it is. He said they have hippopotami, giraffes, elephants, and all kinds of other animals, so that's definitely going on the list of things to check out eventually.
+
+I also met a guy named Greg, and we had a good talk. I got his picture, but not his phone number.
+
+Finally, I went to The Narrows, which is kind of the end of the line for hikes in Zion. I walked alone for a lot of the time, and then I met a woman named Sandy. We walked down the river together for a while, talking about life, pottery, getting inspiration from nature, spending time in the great outdoors, exercise, and our families. All kinds of stuff, really—like old friends. She's about my daughter's age. It was a good way to wrap up the hiking day.
+
+I neglected to mention that when I told Sean I was going to The Narrows, he suggested that I take a walking stick. I didn't take my walking stick, but I spent some time looking for one along the way. Right there on the right-hand side of the road, waiting for me, was a really cool walking stick that looked like a sorcerer's staff. It was longer than a normal walking stick and curved at the top. I used it through the hike and brought it back to base camp. I plan to put some teak oil on it and see how long it will work as a hiking aid.
+
+I also found three walking sticks that people had thrown away at the end of the hike, sitting next to the garbage can. I suppose that happens every day. People think, "I don't have room for this. I'm going to get back on the plane tomorrow, so I'll just throw it away." You would think the park would have a reclamation bin or something.
+
+So I picked up three extra walking sticks, and I'd like to give them to people who sign the trailer and indicate that they like to hike, or would like to hike more. I really resonate with getting out into Nature, and with people who do the same.
+
+It was starting to get dark as I rode down the canyon road, and my bike started to act up. The basket on the front is a very heavy thing, and one of the bolts had worked its way loose. I noticed it was loose a few weeks earlier. I should have done something about it then, but I didn't. I just let it go. I thought it was going to stay the way it was because it had a nylon nut.
+
+But that nut finally fell off the bolt, and the whole basket dropped about half an inch—maybe an inch. Just enough for the fender to start rubbing on the tire. It was bad enough that I couldn't ride like that, so I had to stop.
+
+Good thing I have a supply of bungee cords.
+
+I was able to pull the basket away from the tire using bungees attached to the handlebars. It wasn't a proper fix, but it got me moving again and allowed me to make it back.
+
+Well, Zion has been visited.
+
+Tomorrow I'm going to fix my bike properly, and Sean is going to come back from Hurricane with clean clothes. I didn't mention it before, but Sean took our dirty clothes back in Giselle, the bike trailer. The dirty-clothes situation had become pretty desperate. His plan was to come back in the evening, but that's a lot, and we agreed he should stay down there until the morning.
+
+He is reportedly sleeping on a trampoline tonight.
+
+Tomorrow we're also going to violate the one-person-riding-at-all-times rule and load both bikes on the trailer. Getting through the one-mile, uphill tunnel in Zion that was built in the nineteen-thirties isn't allowed on the bikes. But we're going to enjoy the drive, get through the tunnel, and start riding again on the other side.
+
+Forty-six miles on the day.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Adventure", "#Connection", "#ProblemSolving", "#Grit", "#NewWayOfLife", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 167,
+    date: "Wednesday, August 12, 2026",
+    location: "Rockville, UT → Bryce Canyon area, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Bryce Canyon",
+    entry: `The twelfth of August was Day one hundred sixty-seven.
+
+There was a lot of packing up to do because we'd been in Rockville for several days, and we had stuff scattered all over the place. Sean had gone back to Hurricane to hang out with friends and wash our clothes, and he got back this morning. He let me know that Marcus's battery was dead. I guess the heat, combined with sitting there for several days without being used, had run the battery down.
+
+Luckily, there was a battery charger where we were staying. I put Marcus on the charger for several hours while we packed up the truck. Eventually, he started right up, and everything seems to be in good order except for the engine light. It's on now, and the tailgate will only open with the button on the dash. That's something to get checked out.
+
+There's a maintenance check coming up pretty soon—the ninety-thousand-mile service. I can't believe I've driven that far since twenty twenty-two. I plan to get Marcus looked at when I get to Provo, which is where I purchased him all those years ago. Hopefully they can take care of the maintenance, check-engine light, oil change, and tire rotation all in one fell swoop.
+
+We got everything packed up and hit the road. We stopped at the visitor center to get some of their good mountain water. When we were going through the booth, the girl working there wanted to make sure the trailer wasn't too wide. As she was measuring Cleo's width, she noticed that there was a beetle on the back of my shirt.
+
+I think it happened at the gas station when we were getting ice and cleaning the windows. The beetle was iridescent green—so pretty. She carefully took it off my shirt, and it just sat there perched on her finger. I took some pictures of it, and then we took off. Maybe she still has it. I don't know. Her name is Audrey.
+
+As we were going through the park toward the tunnels, we were looking for a hidden place that our friend Jordan from Best Friends Animal Sanctuary had told us about. Right before we got to the point where we needed to turn, Sean's phone revealed the location. We didn't have very much signal, so it was a minor miracle—and a major sparkle.
+
+As soon as we got to the place where we were supposed to park to hike to the hidden spot, Sean's phone alerted us, and we pulled over just in time. Then we went to check it out. Between the dead battery and all the packing, it was much later than we'd expected. We considered skipping it, but I'm so glad we didn't.
+
+It was a magical, magical place.
+
+It required a steep hike down, but once we got there, we were treated to a series of waterfalls and pools. Not huge waterfalls, but trickling waterfalls. It just sounded so nice. The stream fed one pool after another, some deep, some clear, some mossy. A mystical stairway of water running through this little canyon, hidden from the masses of tourists.
+
+I could have stayed there for hours, but unfortunately it was already kind of late. We spent maybe an hour down there, and I took off most of my clothes and jumped into one of the pools. The water was perfect, probably about sixty-five degrees. It was a hot day, so I really enjoyed the cool diversion.
+
+I need to let Jordan know how much we appreciated his little hint.
+
+We had to put both bikes on the trailer because of the tunnel. The tunnel, as promised, was pretty sketchy. I think we could have done it with the truck as the lead vehicle, but it was uphill, and doing that would have caused a delay for the following vehicles. So we just drove through.
+
+After we got partway toward Bryce, I took my bike off the trailer and started riding, with Sean driving toward the destination. There were a few cool arches along the way, and quite a climb heading into Bryce, with sprinkles most of the way. We met up, but it was a challenge to find a place to stay. After asking people at a campground and a small airport, I met a guy named Clay.
+
+Clay is a cowboy, with cows and horses, and a truck pulling a trailer near the airport. I told him I was looking for a place where we could just spend the night, and he responded that I could pull over anywhere on the side of the road leading to the airport. Apparently, it's all state land, and nobody really cares if you park out there.
+
+So here we are.
+
+Hopefully tomorrow we'll be able to find a friend who will let us park on their property. I like finding friends like that. It's a way to get to know people and hopefully have a chance to do some kind of service for them. We've been able to build a network of people who have become good friends as we've traveled across the country, instead of just getting a campground and transacting with money.
+
+I'm not fond of that. Bartering is my preference.
+
+Tomorrow, we should be able to find a place and start exploring Bryce and its hoodoos. Maybe we'll find a friend in town. If there is a town. I didn't even get there today, so I don't know what it looks like. I was here once before, but I can't remember. All I remember are hoodoos, which I can't even remember very well.
+
+It's supposed to rain tomorrow and Friday, and it's supposed to be cool. A chance to wear our wet-weather stuff if needed and go at it. Go check it out.
+
+It's also cool here, temperature-wise. The first cool day since Jacob Lake, and we weren't able to spend a lot of time there. It's kind of nice after being so hot for so long—sweating on the bike, sweating in bed. It's nice to have a cool night where I might actually sleep comfortably.
+
+I'm excited to get looking at this part of the country tomorrow. This whole place is just magical. So many things to find and see, with Nature all around. Nature abounding.
+
+Fifteen miles on the day.`,
+    hashtags: ["#Gratitude", "#Wonder", "#ProblemSolving", "#Adventure", "#Sparkle", "#Community", "#NewWayOfLife", "#Connection", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 168,
+    date: "Thursday, August 13, 2026",
+    location: "Bryce Canyon City, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Bryce Canyon",
+    entry: `The thirteenth of August was Day one hundred sixty-eight. It started on a spur road outside Bryce Canyon. I made some eggs and hash—little breakfast burritos—and sliced up an apple that needed to be eaten. We used up most of our tortillas. Sean went to look for rocks for a school assignment while I got ready to get on the road.
+
+I had to wash the dishes, though. That's always a pain in camp, but when you want to have a hot breakfast, it comes at a cost.
+
+We headed to Bryce City, which isn't really a city, even though the sign says so. It doesn't have many houses, just hotels, gas stations, and the usual stuff for tourists visiting Bryce Canyon proper. There was a large parking lot next to a pond that said RVs were welcome. After talking to a local, we figured we were safe to park there during our stay.
+
+It was a good location. Although it lacked the find-a-friend aspect, it was close to bathrooms, water, food, and people. Every now and then, somebody would stop by and ask us about the trailer. I was in love with the pond, too. It was so beautiful, the perfect way to greet the morning. Dragonflies lived among the reeds, and it occurred to me that this might be the pond I write about in The Caterpillar and the Dragonfly.
+
+Before departing for the park, a couple stopped to ask us about the trailer. It turns out they had served a mission down in Florida, interacting with active-duty military and veterans, trying to make sure they were well adjusted and doing okay. They recorded a video for their Instagram account, and I recorded something for my YouTube account. And it was good.
+
+We rode up to Bryce, although it was probably around two o'clock before we actually got to the park. Sometimes I just like to enjoy the morning and not worry about hurrying up to get somewhere to see the beauty, because there's beauty right where we are. Sean is a good companion that way. He seems to enjoy the surroundings as much as I do.
+
+We went up to the visitor center and checked that out. We discovered there is a nice bike path all the way through the park—well, most of the way. We went to see the sunset and sunrise viewpoints. If possible, I'd like to get to the sunrise viewpoint tomorrow before the sun comes up. But that's at six-thirty, and it's going to be cold tomorrow morning, so we'll have to see how that goes. I do have my warm pants, and I can always layer up. It's mostly just getting up, you know. Convincing the old bones and muscles to get moving.
+
+When we got to Inspiration Point, we saw a bikepacker on a Trek mountain bike riding on a path that you're not supposed to ride on. I was immediately intrigued by him and knew I had to talk to him. He stopped at the viewpoint, so I had a chance to introduce myself, and we started comparing notes.
+
+Turns out his name is Sebastian, and he's from Germany. He did the race from Canada to Mexico along the Rocky Mountains in sixteen days. He was the thirteenth finisher in that race, which I thought was quite impressive. He said he went one hundred seventy miles a day, but that seems like so much. Maybe he said one hundred seventeen and it just sounded like one hundred seventy.
+
+In the course of the conversation, I invited him to come back to home base—which right now is the parking lot of Ruby's Inn—and have some dinner. He accepted, and we went our separate ways.
+
+Sean and I rode up to Bryce Point, which basically gives you a view of the entire valley and all these hoodoos. They're stacked up like little chess pieces, one behind the other. Like guards at the gate of a magic castle.
+
+It was nice, though. It was all nice.
+
+The weather was cool and crisp. I had a rain jacket that was just enough. It got to be a little bit chilly toward the end, but I was still comfortable. It's such a change to be in a cool climate after so much heat, and to see a different kind of beauty.
+
+Bryce Canyon is different from all the other beautiful places we've seen—the Grand Canyon, Snow Canyon, Zion Canyon. They're all different in their own unique and beautiful way.
+
+Since it was drizzling, we used the canopy that was gifted to us at Bodaway Gap and cooked dinner while staying dry. Sebastian showed up just as the food was ready, and we enjoyed the second hot meal of the day. After dinner and some cocoa, he left his bike at camp for the night and went in search of someplace warm to spend the night.
+
+Now it's very late, and if I have any chance of getting up to see the sunrise, I'd better go to bed.
+
+Twenty and four-tenths miles on the day.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Connection", "#Adventure", "#Community", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo", "#Milestone", "#Sparkle"]
+  },
+  {
+    num: 169,
+    date: "Friday, August 14, 2026",
+    location: "Bryce Canyon City, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Bryce Canyon",
+    entry: `The fourteenth of August was Day one hundred sixty-nine, and it was rainy. It rained for hours—pretty constant rain. I woke up around two in the morning and, for whatever reason, couldn't go back to sleep. It happens sometimes. And then, when my alarm goes off, I'm out. That's what happened this morning. I wanted to get up early and go to Sunrise Point to see what all the hubbub was about, but I just didn't have it in me. I heard Sebastian come and get his bike, and when I saw him later, he told me it was around six o'clock. I just couldn't do it.
+
+It's another late night tonight, too. I hung out with Sebastian again today. He's leaving tomorrow, heading toward Zion. The people on The Path that we meet seem to always be going in the opposite direction. Perhaps that's the way of things.
+
+I was heading over to the lodge during a little break between downpours to work on the website when I saw Sebastian at the door. He was coming out of the lodge, getting ready to go up and do one more hike before departure. I decided my plans would have to wait. The computer stuff would have to wait because I wanted to hang out with my buddy Sebastian one last time.
+
+I took the computer back to the trailer, and we went up the hill. I forgot to take lunch with me. I had some snacks, but I wanted to bring some tuna fish. I survived, though, and we saw some of the most beautiful sights in Bryce. It's just a very special place, and we went all over, spending several hours immersed in Nature.
+
+It was cold, but not bitterly cold, and it didn't rain after we started hiking. In fact, the sun came out toward the end, and we had to take our jackets off because it started to get warm. Parts of the trail were a little muddy, but that just added to the authenticity of what we were doing.
+
+When it was time for Sebastian to leave, I gave him a couple of the shower tokens I had gotten from the general store the day before, and he went and took a shower. I went back down the hill, dropped off my computer and everything, and looked for Sean. There was no sign of him, so I figured he was either on the computer or out on a Bryce Canyon trail.
+
+Sebastian and I met again at the lodge, shared a pizza, and enjoyed a little bit more of each other's company before he departs for Zion and Las Vegas, then heads north through California to get back to Canada before his visa expires. He's got about a month to go, and he has a lot of miles to make, so he can't be messing around anymore.
+
+It was really cool to get to know him, and hopefully our paths will cross again. I always say that, and sometimes they do.
+
+I did also upload a bunch of YouTube videos from the Grand Canyon. I'm so far behind on editing my journal entries and uploading my videos. This morning, while it was raining, I used my phone to edit a few journal entries and get them ready to put on the website. But it took me about an hour to do two entries because they were quite lengthy.
+
+I think some of the entries aren't as detailed—maybe five or six minutes of dictation. But the ones I'm transcribing right now are more like ten to twelve minutes, and there's a lot of detail: people I met, things we did, and then little snippets of things that happened during the day that I remember afterward and add to the entry.
+
+So it's a time-consuming, laborious process. I just have to keep on going, and eventually I'll catch up—or not. But at least I'll try. I'll try to get it done, and that's all I can do.
+
+I'll probably work on the computer a little bit tomorrow morning. I want to go on a hike and take a shower toward evening time. It's been a couple of days since I've taken a shower, but it's been so cold that I haven't really been sweating. I mean, I sweat somewhat today because I had a hoodie on and we were climbing a hill, but for the most part, it's been cold, and I don't feel particularly dirty.
+
+Even though I probably am very dirty.
+
+I guess it's all subjective.
+
+Tomorrow it will be nice to get a shower, I think. And that's all I have to say for today. I kind of belabored the shower thing, which I probably shouldn't feel the need to do. This being a judgment-free place.
+
+Sean did a bunch of schoolwork and went to bed early. He'll probably hike a bunch tomorrow and get the most out of it before we leave on Sunday morning. Then we'll set our sights for Calf Creek and Boulder, Utah.
+
+Fifteen and three-tenths miles on the day.`,
+    hashtags: ["#Gratitude", "#Connection", "#Community", "#Wonder", "#NewWayOfLife", "#Reflection", "#Sparkle", "#RollForVeterans", "#TeamBravo", "#Adventure"]
+  },
+  {
+    num: 170,
+    date: "Saturday, August 15, 2026",
+    location: "Bryce Canyon City, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Bryce Canyon",
+    entry: `Today was the fifteenth of August. It still is, for a little while longer. Day one hundred seventy.
+
+It was spent in, well, a kind of paradise.
+
+Still in Bryce City, I woke up to the sound of knocking. Actually, I heard the bike before I heard the knock. Sebastian's cassette is loud. He was passing by to say goodbye to me. We exchanged some pleasantries. I think he came over at about eight o'clock, and I was embarrassed that I was still in bed. I had woken up at five or five-thirty, but I fell back asleep.
+
+Tomorrow morning, I'm going to get up early, get ready to go, and be on the road by seven. After breakfast, I need to replenish our ice supply in the icebox, get my clothes on, use the bathroom. It's a whole thing, but I want to be on the road by seven. I've mapped out a route of about four hours. That should get us to Calf Creek and then to Boulder by the end of the day, as long as Sean is agreeable to the plan.
+
+Today was spent working on the truck. I disconnected the gauge I had set up for the water tank because it isn't working, and something drained the battery. I'm reluctant to think that that little gauge drained that big battery when we were in Rockville, but the battery was drained, and things started going haywire after that. So I want to try to avoid any occurrence of dead batteries in the future.
+
+Preventive maintenance includes starting the truck every two days and running the engine for at least fifteen minutes to keep it charged up, and disconnecting this water gauge.
+
+I also sorted some things out, refilled my pill dispenser, and made a resolution to start getting rid of some of the stuff that I haven't used since I started this trip. I think that's a good rule of thumb: if I haven't touched it since I started the trip, I need to get rid of it. And if I need it in the future, I will get it in the future.
+
+I'm interested in continuing to explore minimalization, which means dispatching more of these worldly belongings, getting down to the nitty-gritty. A couple of shirts, some socks, a pair of pants, a tent, a tarp, a sleeping bag—that kind of thing.
+
+I didn't ask Sebastian if he had any kind of pillow. In the Grand Canyon, I just used my hoodie wrapped around some clothes bundled together for a pillow.
+
+I don't know. I started talking about all the stuff I am carrying around, and it's made me think more about attachments to worldly objects. I've been thinking about that quite a bit lately. How much do I need to be self-sustaining and resilient, and satisfied with life?
+
+I feel like when I'm in Nature, I don't really crave TV or a computer. Or even a phone. I use these things to communicate the progress I'm making during this journey—the epiphanies, the resolutions, the sparkles that I find. But I don't know if I will do this forever. I think that this lifestyle may have a finite timespan.
+
+Roll for Veterans. Roll for Nature.
+
+Maybe just roll into a hole in the ground eventually.
+
+I did spend several hours on the computer, transcribing journal entries, cleaning them up, and getting ready to post them on the website. I spent some time sitting by this pond we're parked next to, thinking about the book that I started, The Caterpillar and the Dragonfly, and how this pond is like the one I saw in my mind.
+
+It's very much like the pond in the book, except that it doesn't have any lily pads. But I took pictures and videos so that I can examine it in more detail and maybe go back and revise the book's description. I think I can add some detail that's lacking.
+
+I also posted more videos on YouTube, trying to share the magic of Nature. The awesome nature of Nature.
+
+I'm still uploading videos from the Grand Canyon, weeks later. That's how slow the process is. The way that YouTube works, I can only upload about five per day. So it's a laborious and cumbersome task, but I have help in the form of Gavin, my dear friend.
+
+Thank you so much, Gavin, for what you do.
+
+Finally, I put my computer away. I got the tokens for the shower that I received from a friend up in the canyon, and I went up to take a shower.
+
+I'm back!
+
+I haven't seen Sean today. He's been trotting a separate path from mine for the past few days.
+
+I enjoyed that ride, the final ride up into Bryce, since I'm leaving tomorrow morning. And I met a man named Tim up by the showers. He's an airline pilot who wanted to be a pilot in the Navy but didn't have the eyesight for it. But he still accomplished his dream of becoming a pilot, even though he wasn't able to fly the fighters he dreamed of.
+
+I think he and I share some commonalities, and I'm hoping that we'll run into each other again. We're both the same age, with similar paths through life, so I'm sure there are a lot of commonalities that we share. He said he may be heading to Capitol Reef, which is our next destination as well.
+
+I took my time coming down out of that canyon. It's one of my favorite rides so far. Going down that bike path downhill, with the curves that they put in it, makes me feel like I'm in a race car, zooming down the track. Or maybe in an airplane.
+
+Even though I'm quite top-heavy and can't take the corners very gracefully, it still feels good.
+
+I got some more milk, filled up the water jugs, and put away the canopy. I have things more or less ready to go tomorrow.
+
+All that's left is for me to climb into bed.
+
+And get some rest.
+
+Seven and a half miles on the day.`,
+    hashtags: ["#Gratitude", "#Reflection", "#Wonder", "#Connection", "#NewWayOfLife", "#Community", "#Sparkle", "#RollForVeterans", "#TeamBravo", "#Adventure"]
   },
 ];
