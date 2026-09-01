@@ -20,6 +20,23 @@ interface JournalSidebarProps {
   emptyMessage?: string;
 }
 
+const MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+
+// "Monday, July 30, 2026" -> "7-30-26"
+function formatShortDate(dateStr: string): string {
+  const parts = dateStr.split(', ');
+  if (parts.length < 3) return dateStr;
+  const [monthName, dayStr] = parts[1].split(' ');
+  const month = MONTHS.indexOf(monthName) + 1;
+  const day = parseInt(dayStr, 10);
+  const yy = parts[2].slice(-2);
+  if (!month || Number.isNaN(day)) return dateStr;
+  return `${month}-${day}-${yy}`;
+}
+
 export default function JournalSidebar({
   states,
   bannerLabel = 'Roll 4 Nature',
@@ -111,7 +128,7 @@ export default function JournalSidebar({
                           : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
                       }`}
                     >
-                      Day {d.num} · {d.date.split(',')[0]}
+                      {formatShortDate(d.date)} · {d.date.split(',')[0]} · Day {d.num}
                     </button>
                   </li>
                 ))}
@@ -135,7 +152,7 @@ export default function JournalSidebar({
       </aside>
 
       {/* MOBILE FLOATING CONTROLS */}
-      <div className="lg:hidden fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+      <div className="lg:hidden fixed bottom-6 right-6 z-40 flex flex-row items-center gap-3">
         {latestDay > 0 && (
           <button
             onClick={jumpToLatest}
