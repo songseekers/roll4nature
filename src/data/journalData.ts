@@ -3219,4 +3219,121 @@ Thank you, Best Friends Animal Sanctuary.
 We love you.`,
     hashtags: ["#Gratitude", "#Community", "#Connection", "#Wonder", "#Sparkle", "#NewWayOfLife", "#Milestone", "#Adventure", "#RollForVeterans", "#TeamBravo"]
   },
+  {
+    num: 156,
+    date: "Saturday, August 1, 2026",
+    location: "Best Friends Animal Sanctuary, Kanab, UT → Apple Valley, UT",
+    state: "Interlude",
+    region: "Interlude — Apple Valley",
+    entry: `August the first was Day one hundred fifty-six, and we were blessed with another opportunity to volunteer at Best Friends Animal Sanctuary. We spent the morning taking care of some dogs — feeding them, walking them, and trying to get them to settle down a little bit. There is something satisfying about working with animals, especially when you can see them gradually relax and trust you.
+
+Afterward, we had another wonderful lunch up on the hill. They served vegan meatball subs, and somehow they managed to make them taste like actual meatballs. Sean and I both ate a lot. We also had a chance to talk with some of the founders, who gave us the names of a few people we should look up when we get to Boulder, Utah, between Bryce and Capitol Reef. I love having people to look up along the way. There's something almost old-fashioned about it — two bicyclists arriving in town carrying a message from someone a person knows. It's a little bit like the way messages must have traveled in the Old West. I really enjoy seeing people's eyes light up when we tell them, "Your friend sent us to find you."
+
+After lunch, I started riding toward Colorado City. I made a wrong turn coming out of Best Friends onto Highway 89, and it turned into a climb. I rode for about forty minutes before finally pulling out my phone. I try not to rely on it when I'm figuring out the route myself, but this time it was worth checking. I discovered that there was a much more direct way if I simply doubled back the way I had come. Fortunately, the return was downhill with the wind at my back, so it only took a few minutes to get back to where I'd started.
+
+There were some challenging hills today, including one with a nine percent grade. That may be the steepest grade I've encountered so far. My bike has also started making a clicking sound, and I'm wondering whether it could be the bottom bracket or something else in the drivetrain. With all the national parks we're planning to ride through, I'm beginning to think it might be wise to have Herbie checked out while we're still close enough to civilization to find a good bike shop. I'll make some calls and see what I can find.
+
+It was a very hot day. Before leaving Best Friends, I doused myself with water and then simply dealt with the heat once I dried out. Wearing several layers on my upper body means I don't completely dry out while I'm riding, so there is a continuing evaporative cooling effect. It's become my method for dealing with the desert heat, and so far, it's working pretty well.
+
+Eventually I made it to the Bee Marketplace in Colorado City, where I found Marcus and Cleopatra waiting for me. I filled the water tank, got some ice, and then met a fellow named Harry, who signed the trailer and gave me a bag of granola that he makes himself. His company is called Prickly Pear Snacks, and he also makes fruit leather. Harry told me about a friend who makes stickers with a Cricut machine, which immediately got me thinking.
+
+Sean has been generating some AI images for us with a circular patch-like design. One has "Roll 4 Nature" across the top and "Nature Is Everything" across the bottom, with a bicyclist, trees, and Native American-inspired symbols around the edges. Maybe that's the starting point for a new sticker. If we can find somebody with a Cricut who can turn the design into something physical, perhaps we can make our own stickers without spending a fortune. Maybe they could even ship them to us somewhere along the route. We'll see where that leads.
+
+From Colorado City, we continued on to Apple Valley. We made it all the way to Volunteer Park, which turned out to be a pretty wonderful place to spend the night. There was grass, trees, a bathroom, electricity, and even water. We had everything we needed.
+
+Sean had been riding around the area waiting for me to arrive, so by the time I got there he was very hungry. We also picked up another trailer signature from a fellow named White Eagle, and some people who were sitting on picnic blankets in the park came over to see what we were doing and signed it too. We talked for a while and took some pictures, sharing a little bit about what the journey has been like so far.
+
+Sean finally got something to eat — a meatball sub and one of the donuts we'd brought back from Best Friends. After everything we've done today, I'm exhausted.
+
+It was another good day on the road. Another day of meeting people, following unexpected turns, climbing hills, solving little problems, and finding kindness in places we didn't expect it.
+
+And now I'm ready for sleep.
+
+Good night.`,
+    hashtags: ["#Gratitude", "#Community", "#Connection", "#Adventure", "#ProblemSolving", "#Grit", "#NewWayOfLife", "#Wonder", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 157,
+    date: "Sunday, August 2, 2026",
+    location: "Apple Valley, UT",
+    state: "Interlude",
+    region: "Interlude — Apple Valley",
+    entry: `The second of August found us at Volunteer Park in Apple Valley. There were some lovely mature trees providing plenty of shade, which meant the heat didn't become oppressive as soon as the sun came up. I really appreciated that. Sean was still asleep after a pretty demanding day of riding and expending a lot of energy, so I put up my hammock beneath one of the shade trees and spent some quiet time contemplating life while he slept. There's something about being able to lie in a hammock under a tree with nowhere particular to be that makes it easier to slow down and just think.
+
+When Sean woke up, we had breakfast and started planning our route for the day. We decided that he would ride while I drove because Marcus needed water. I also wanted to try getting the Nitro card working at Maverik so we could save a little money on fuel. I drove into town, stopping at Walmart first to pick up some additional food and supplies, and then headed over to Maverik. Unfortunately, getting the Nitro card set up wasn't nearly as simple as I had hoped. It requires waiting for two transactions to appear on the bank account, and because there isn't an automatic connection with USAA, the process was more complicated than it was worth. There were plenty of other banks listed, but USAA wasn't one of them. Eventually I gave up and went to Exxon instead, where at least we could earn some reward points.
+
+The truck took gasoline priced at four dollars and thirty-four cents a gallon. As I stood there watching the numbers climb, I thought about how different things were when I was a teenager and gasoline cost less than a dollar a gallon. I remember being able to fill the tank for ninety-seven cents, although at the time I didn't have much money, so even that seemed expensive. I wondered what it would be like to have ninety-seven-cent gas today. Crossing the country would certainly be a lot cheaper. Of course, we're doing it slowly, so at least the expense is spread out over time.
+
+After replenishing our supplies, I drove toward Liberty Village while talking with the family on our weekly Zoom call. By the time I arrived, Sean was already there. We showed the family around the village for a little while. Since it was Sunday, we were the only people there, and the heat was oppressive. Marcus told me it had reached one hundred thirteen degrees, and I believe him. Even after the sun went down, it was still in the eighties. It was definitely hotter than I would classify as comfortable.
+
+I've started thinking of this heat as part of the refining process. There's no question that it saps your strength and diminishes your desire to do much of anything. I can only imagine how much more energy I would have if the temperature were comfortable. But there's something to be said for doing what needs to be done when you don't particularly want to do it. Maybe that's part of the lesson. Character isn't built when everything is easy.
+
+After the Zoom call, I cooked breakfast for dinner: sausage, eggs, roast beef hash, and pancakes. We ate all of it. I also had a pint of strawberries. I started with just a few, but they were so good — right on the edge between perfectly ripe and almost overripe. I knew that if I left them for another day, many of them would probably go bad, so I did the responsible thing and ate them all. They were delicious. Sean didn't want any, so that made my job easier.
+
+Afterward I washed the dishes and started getting ready for bed. The sun had gone down around eight-thirty, but I should have started preparing for the night much earlier. That's one of the realities of this nomadic life: if you want to be in bed by eight-thirty, you really need to start getting ready around seven-thirty. If you wait until the sun goes down to begin, somehow it's suddenly ten o'clock before you're actually settled in. There's always something to do — filling and carrying buckets of water, setting up the shower area, deciding whether to heat the water, putting things away, and preparing the trailer for the night.
+
+When it's this hot, there's really no need to heat the water. The water in the black tank on top of Marcus gets warm from the sun, and that warm, almost room-temperature water feels pretty good. A shower like that cools your core just enough to make sleeping possible without leaving you shivering. Tonight there was also a nice breeze blowing, although that's another trade-off. If I leave the trailer doors open, I get the breeze, but I also invite every flying insect in the neighborhood to explore my ears. Close the doors for privacy and protection from the bugs, and the breeze disappears. It's a two-edged sword.
+
+Meanwhile, Sean came back with a new story of his own. Apparently the route his phone directed him along was a little sketchy. At one point he had to climb over a fence and somehow get his bicycle over it as well. It may have involved a tiny bit of trespassing, but by then he was already committed to the route. Fortunately, the fence wasn't too tall. I could only imagine trying to get Herbie over something like that. Some days I can barely manage to get one wheel at a time onto the trailer when I'm tired, much less lift the whole bike over a fence.
+
+Tomorrow we'll meet up with our friends at Liberty Village and see where we can lend a hand. There should be plenty to do to help get the place ready for visitors. I also need to make progress on the website and get some more videos uploaded to YouTube, because I'm falling behind on both. There always seems to be more to do than there are hours in the day, especially when the heat steals a good portion of your energy.
+
+But we made it through another day. Sean has another story to tell, Marcus is still carrying our water, the trailer is our little home, and the road is waiting for us again tomorrow.
+
+For now, though, I'm going to sleep.
+
+I really appreciate the opportunity to sleep.
+
+Sleeping is awesome.`,
+    hashtags: ["#Gratitude", "#Reflection", "#Family", "#Connection", "#Grit", "#Resilience", "#NewWayOfLife", "#Wonder", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 158,
+    date: "Monday, August 3, 2026",
+    location: "Liberty Village, Hurricane, UT",
+    state: "Interlude",
+    region: "Interlude — Liberty Village",
+    entry: `August the third was Day one hundred fifty-eight, and it found us at Liberty Village, where much of the day was spent helping out and enjoying the company of people who have become friends. When I woke up, I saw Jamie cutting the grass. I remembered her from our first visit to Tuacahn, when she had signed the trailer with the group of Liberty Village folks we helped that evening. They had put on a patriotic presentation, and we helped gather up the flags, books, and tables afterward.
+
+I offered to help with the mowing. Jamie said she had an appointment, so she explained what needed to be done and essentially left me in charge. There was something satisfying about that. It felt good to have someone simply trust that I would take care of the job.
+
+I started by cutting around the perimeter of each pie-shaped section of grass in the 13-Colony Pavilion so Jamie could use the riding mower to handle the middle. Once I finished those areas, I just kept going. I was using a Milwaukee electric mower with several spare batteries, switching them out as needed. By the time I stopped, I had cut another section and a half. I collected the clippings in a wheelbarrow so I wouldn't have to make quite so many trips to the place where they were deposited. It was a little bit of a walk, so consolidating the clippings made sense.
+
+After that, Marin, who takes care of the sheep and donkey, asked if I could clean out the sheep pen. Of course I said yes. Jamie had also taught me how to operate the riding mower, which was actually a zero-turn tractor like the one my brother has in Kansas, except this one is electric. The batteries don't last nearly as long when the blades are running, but apparently the thing will drive around all day without much trouble.
+
+There was a small trailer attached to it that I could use to haul the manure to the compost pile. That made the job considerably faster and more pleasant than trying to move everything with a wheelbarrow. Once I had the sheep pen cleaned out, I cleaned both mowers, tidied up as much as I could, put everything back where it belonged, and got ready for the evening.
+
+We were going to see Frozen at the Hurricane Community Theater. I didn't even know where the theater was until Richard, the Director of Operations, sent me the address. When we arrived, the building looked almost like an old school or perhaps a church. But the moment we stepped inside the theater, it was magical. The set was beautifully arranged, the air conditioning was blowing, and the entire place had been decorated in a way that immediately transported you somewhere else. It really set the stage, so to speak.
+
+Shea, who works at Liberty Village, had invited us. Before the show began, we met Shea's mom, Julz, in the concession area, and I ended up sitting next to her during the performance. I wasn't prepared for how emotional the evening would be.
+
+I cried. Several times.
+
+I think part of the reason was Shea. She reminded me of my daughter, who was involved in theater when she was younger. But it wasn't just that. The entire cast was incredibly talented. Their singing and dancing brought out emotions in me that I wasn't expecting. They had been performing for more than a month, and it showed. They knew their parts, they knew the music, and they were completely comfortable on that stage.
+
+Shea, playing Elsa, and Sammy, playing Anna, were especially impressive. Their duets were beautiful, and they hit the notes. The whole performance was mesmerizing. I found myself completely absorbed in it.
+
+Afterward, we got to meet some of the cast, and I made sure to tell them how wonderful they were. I wanted them to know that their hard work had reached at least one person in the audience in a meaningful way.
+
+On the way back to Liberty Village, we stopped at Maverick, the first stop on our adventure, to get some ice for the next day. We have insulated cups that we fill with ice so we can keep our drinks cold for as long as possible. When you're traveling this way, little things like a cup full of ice can feel like a luxury.
+
+But the biggest thing I took away from today wasn't the mowing, the sheep pen, or even the theater. It was acceptance.
+
+We don't always experience that when we pass through a place. Sometimes people are suspicious when we ask if there's something we can do to help. They wonder what we're really after, and I suppose they're not entirely wrong. We are looking for something. We're looking for friendship. We're looking for connection. That's part of the purpose of what we're doing.
+
+But the people at Liberty Village don't seem to question it. They accept us for who we are. They let us help. They trust us with their work. They invite us into their lives. And somehow, after only a relatively short time, it feels like family.
+
+That's a pretty special feeling.
+
+And tonight that feeling was made even better by getting to watch some of that family share their incredible talents on stage. It was a celebration of hard work, talent, friendship, and community. I feel very humbled to have been able to witness it and, in some small way, be part of it.
+
+Thank you, Liberty Village.
+
+Thank you, Frozen cast.
+
+Thank you to everyone who shared this day with us.
+
+It was an amazing day.`,
+    hashtags: ["#Gratitude", "#Community", "#Connection", "#Family", "#Wonder", "#NewWayOfLife", "#Sparkle", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
 ];
