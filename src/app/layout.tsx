@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     "Roll for Veterans",
     "roll4veterans",
     "R4V",
+    "Roll for Veterans cycling",
+    "Roll for Veterans bike ride",
+    "Roll for Veterans 2026",
+    "Roll 4 Veterans cycling",
+    "Roll 4 Veterans bike ride",
     // Cycling and endurance
     "endurance cycling",
     "cycling for a cause",
