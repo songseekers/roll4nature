@@ -3424,6 +3424,8 @@ I call that a good day.`,
     region: "Mountain State 1: Utah — Rockville",
     entry: `The seventh of August was Day one hundred sixty-two of this country-exploring ride, and it was also my father's birthday. He passed away years ago, but his memory always comes to me strongly on special days like Father's Day and his birthday. I think of him anytime I'm working with wood or doing some kind of construction project. My father was a good teacher of home construction, auto mechanics, and just about anything that could be done with your hands. He was a quiet man who grew up just after the Great Depression, learning how to make things work on a farm with very little in the way of replacement parts. Baling wire and basic tools could accomplish a lot in his hands. He could work wonders with a little duct tape and a coat hanger. I miss working next to him and learning his secrets.
 
+I consider today the official start of the Mountain States Exploration segment of this journey. Although we have been in Utah for about a week, until now we have been retracing places we visited on our way to Flagstaff. Today, we set off for parts heretofore unvisited!
+
 We started the day at Tuacahn. Sean drove to Hurricane and then rode from there toward Springdale, the town just outside Zion. I rode the other direction and met a couple of interesting people along the way. One of the best conversations was with Brian, who owns Hungry Howie's Pizza on Red Cliffs Drive. We sat and talked about biking adventures while I ate most of the pizza I'd ordered. Apparently, I had arrived before the lunch crowd, so I had plenty of time to enjoy the conversation as well as the food.
 
 I stopped at a thrift store afterward and found a couple of pairs of shorts that should work well for hiking. Then I stopped at a gas station to fill my bottles and douse myself with water before getting back on the road. I chose some good music to accompany me and headed out for what I considered the main part of the day's ride.
@@ -3798,5 +3800,480 @@ And get some rest.
 
 Seven and a half miles on the day.`,
     hashtags: ["#Gratitude", "#Reflection", "#Wonder", "#Connection", "#NewWayOfLife", "#Community", "#Sparkle", "#RollForVeterans", "#TeamBravo", "#Adventure"]
+  },
+  {
+    num: 171,
+    date: "Sunday, August 16, 2026",
+    location: "Bryce Canyon City, UT → Boulder, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Boulder",
+    entry: `The sixteenth of August was Day one hundred seventy-one, and it started in Bryce City and ended in Boulder.
+
+I decided to ride the whole thing, and Sean was okay with that. In hindsight, it was probably an error in judgment. I did not realize the number of climbs that were included. I should have, if only I had done a little research. I did look at the elevation. It was about five thousand feet, but I figured that was spread out over the seventy-five miles.
+
+It wasn't.
+
+Instead, most of the inclines—and declines—were confined to six- to ten-mile stretches that were steep uphills followed by steep downhills. The downhills were fun, but the uphills were brutal. They included grades up to twelve percent and were miles long.
+
+By the time I got to Calf Creek, it was dark. A lot of that was my fault for taking my time on the Mossy Cave Trail and getting distracted by other things along the way. There were simply too many interesting corners to explore and too many things worth stopping for.
+
+On the last climb, I was defeated about halfway up. I had to push my bike up the hill leading into Boulder. I try to avoid getting off the bike because progress is at a snail's pace at that point, but I was done. I was just so wasted that it was all I could do to keep moving forward.
+
+It didn't help that I didn't eat very well.
+
+More hindsight: we should have just gone to Escalante and stayed there for the night. When I rolled through that little town, I wanted to stay a spell and check it out. It had a good vibe. But Sean was already in Boulder at that point.
+
+Sometimes you don't realize there's a better course of action until it's too late.
+
+Stopping in Escalante and checking out Calf Creek tomorrow would have been so much better. I had a talk with Sean and shared my thought that maybe, if he saw that a route was extreme like this one was, a phone call and discussion might be a prudent course of action.
+
+Today was an example of biting off more than I could chew.
+
+I mean, I chewed it, but it was a tough, gristly piece of meat.
+
+I got into home base at eleven o'clock at night. I was pedaling for about seven hours. I was on the path for about thirteen, so six of those hours were spent hiking, talking to people, exploring corners of interesting places, and taking pictures and videos of things that I thought were worth preserving.
+
+I met some good friends and had a lot of fun today. I proved to myself once again that I can do hard things. Today was definitely another one.
+
+Although, I wonder if I need to do all of these hard things…
+
+What am I trying to prove?
+
+Utah Highway 12 between Bryce and Boulder is one that will stick in my mind as an unforgettable ride. It ranks as one of my favorite stretches of highway, as far as beauty and challenge, but definitely to be taken in smaller doses.
+
+That will be the last time I do all seventy-five miles on that road in one day, either direction. Because those downhills that I went down, those would be uphills. And the uphills would be downhills. But it would still be pretty much the same amount of challenge.
+
+Experience is a great teacher.
+
+Live and learn.
+
+I think we may need to check out the Hogback and Calf Creek Falls tomorrow. Jordan at Best Friends recommended it, and he hasn't steered us wrong yet!
+
+Seventy-nine and eight-tenths miles on the day.`,
+    hashtags: ["#Grit", "#Adventure", "#Wonder", "#Reflection", "#Community", "#ProblemSolving", "#NewWayOfLife", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 172,
+    date: "Monday, August 17, 2026",
+    location: "Boulder, UT (Calf Creek Falls)",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Boulder",
+    entry: `The seventeenth of August was Day one hundred seventy-two, and it was full of Nature.
+
+We decided to disconnect the trailer and drive the truck back down to Calf Creek Falls because we had been told it was a magical place by our friend Jordan at the Best Friends Animal Sanctuary in Kanab. And so we did.
+
+It seemed like a really, really long walk, but it was only about three miles, maybe a little over three miles in and another three miles out. There were markers along the trail that confused us because, at first, it seemed like we had walked something closer to thirteen miles. But that couldn't be right. Thirteen miles would have taken us all day.
+
+Later, I found out on the interwebs that the markers are quarter-mile markers. There are no explanations given, so it's kind of confusing when you first encounter them.
+
+The hike was quite challenging, though, especially after the taxing ride the day before and in one-hundred-plus-degree heat. But it was well worth the effort. The waterfall was magical and quite sparsely populated, most likely because of the heat.
+
+There are a lot of pictures of Calf Creek Falls out there on the internet. Still, I created several videos from different angles and took plenty of pictures of my own. The water looked so inviting that I took a dip.
+
+It was cold. It was so cold.
+
+I dunked my head in there several times. My goal was to cool off and get ready for the hike back.
+
+Mission accomplished.
+
+Dipping my head in took my breath away and caused my body to ask my brain what it was thinking.
+
+Prior to the hike, we had talked about riding partway to Capitol Reef today. Sean declared that he wanted to ride the whole thing. According to Google, it's about twelve miles mostly uphill and then almost forty miles mostly downhill.
+
+After the hike, he decided he'd rather just do it tomorrow. Even after I offered to share the twelve-mile climb with him, he still wanted to do it tomorrow by himself.
+
+We were very grateful to the Sinclair station manager for letting us park there overnight, but it wasn't the best place to park a truck and trailer given the limited space, so we started looking for another place to stay.
+
+After talking to several people in several different places, we found… well, first we found David.
+
+He was talking to a gas station attendant named Cindy. David Holiday is quite a character. He is a survivalist, and he's been surviving for a long time. He teaches people how to do it if they want to come out and learn. Now that he's retired, he just does it for fun with friends and family.
+
+It sounds like fun to me, too. Too bad we don't have a lot of time allotted for that kind of thing. Maybe in a different time, with more advanced notice.
+
+David gave me his address because he doesn't have a phone. He has a post office box. So, to get ahold of him, you have to write him a letter. Isn't that crazy?
+
+In today's technological age, you have to write David a letter to communicate with him.
+
+We recorded a video with him after he told us that he had the original idea for Wilson in the movie Cast Away when he was serving as a technical advisor for the screenplay. He started talking to a soccer ball while showing the screenplay writer how to survive in the wild, and it made it into the movie.
+
+In fact, before the addition of Wilson, the movie executives didn't want to fund production because Tom Hanks didn't have any dialogue on the island other than talking to himself. When Wilson was added, they got the green light.
+
+After we recorded the YouTube Short with him, David told us that he had prayed that day to meet somebody who was good, and he thought that we were an answer to that prayer.
+
+It felt really good to talk to him and get some of his story. His life has been very Nature-based, and he had a very comfortable energy about him.
+
+Thanks, David!
+
+That man has a lot of stories. I could have talked to him for an hour or the whole evening, but we had to find a place to stay.
+
+Cindy was working at a gas station where there were three RV hookup spots. I talked to her about staying and doing something in exchange. She said that we could stay on her property. She mentioned goats and chickens and geese and things, and it sounded like there was plenty to do.
+
+We got directions and, after reconnoitering the destination, we went and picked up the trailer, which was still at the Sinclair, tucked away in the corner along with the bicycles.
+
+The recon was a good idea because we got lost and had to ask Cindy for some clarification.
+
+We drove over, met a nice lady named Hopi who took care of the animals, and set everything up. Cindy came home and asked me to work on her recumbent bike, getting it ready for some riding when the weather cooled off a bit.
+
+I pumped up the back two tires and cleaned and lubricated the chain. The front tire was problematic.
+
+Cindy puts Slime in the tires, and it appears that the Slime breaks down over a period of time. I knew that because when I took out the valve to add Slime, a liquidy substance came out of the stem.
+
+I had pumped up the front tire a little before I started looking at the rear tires, just to see if it would hold air. Well, when I took out the valve from the front tire stem, the liquidy ooze erupted from the opening and sprayed my face and shirt.
+
+I got a little in my left eye, which has been complaining ever since. Hopefully it will feel better after some rest.
+
+I went into the room that Sean was painting and declared, "I got slimed."
+
+He seemed to get some entertainment from my appearance. I saw why a few hours later when I went into the bathroom for a shower and saw myself in the mirror.
+
+I told Cindy that the front tire needs a new tube, since the eruption caused a blockage that, try as I might, I could not clear. Apparently, the closest store that has such things is three hours away, so it's something that needs to be planned for.
+
+We also met Hopi's husband, Rex, and four dogs. One of them is named Lunchbox.
+
+The property also housed about fifteen Norwegian goats, some of them babies. A Norwegian goat has a beard—a long beard that gives them a distinct look.
+
+They had a chicken that's also a turkey. It has a wattle and everything, quite different from the chickens I'm familiar with. Geese, a few turkeys… it was a lot to manage, but Hopi and Rex seem to have a good system of teamwork going.
+
+Sean helped Cindy paint the front room of her house. The bike and the painting kept us occupied until midnight.
+
+The seventy-eight-mile ride yesterday, plus the hike today, has really taken the stuffing out of me, so I'm quite ready for bed.
+
+Overall, this was a best day ever.
+
+We drove on the Hogback, which is a part of the road from Boulder to Calf Creek that is elevated and doesn't have any kind of barricade or other prevention for driving off the side, other than a curb for part of the distance.
+
+The curb didn't look like it would prevent a person from veering off the road, and both sides just drop off into big valleys filled with slot canyons and the like. It's quite interesting to take that drive. We took it slow, since traffic was light.
+
+Of course, you have a big elevation change going from Boulder down to Calf Creek. That was the hill that I had to push Herbie up the night before.
+
+The descent would have been fun on the bike, but I didn't want to think about going back up, hence the use of Marcus for the adventure.
+
+It was a seventeen-hundred-foot elevation change over six miles. It's a lot harder on a bike than it is in a truck.
+
+I'm grateful to have the option of driving once in a while on this epic Nature adventure.
+
+A final note…
+
+My knees, especially my right knee, are not very happy with my riding decisions lately. Usually, they calm down after I calm down and don't hike so much.
+
+But what do I do when there's a waterfall that I simply must go see?
+
+I ask my knees for a little more understanding, and pray for endurance.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Community", "#Connection", "#ProblemSolving", "#Grit", "#Adventure", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 173,
+    date: "Tuesday, August 18, 2026",
+    location: "Boulder, UT → Capitol Reef area, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Capitol Reef",
+    entry: `The eighteenth of August was Day one hundred seventy-three. It started at Cindy's farm with the crow of a rooster and the bleating of sheep.
+
+I woke up and had a cup of tea. We had electricity, so that was nice. Cindy had offered to let us sleep inside on some bunk beds, but the plethora of dogs and the pleasant evening air prompted us to sleep in the rig instead.
+
+Then Sean got ready to depart, but Hopi offered him some fresh eggs for breakfast. That caused him to delay long enough to fry some up with mushrooms and cheese before launch.
+
+Since I was driving, I had some time to help out a little more. Since we had helped Cindy yesterday, I decided to focus on Hopi and Rex's situation. During a tour of their home, I learned that they had some problems with the sinks, where the faucets weren't working.
+
+I set about trying to help fix that.
+
+The problem was that their pipes were very old and had sediment in them. There's a lot of calcium in the water. I thought the most likely remedy was to blow the debris out of the faucets with compressed air, but that was a time-consuming approach because although there was a compressor and hose, there was no nozzle.
+
+After searching for one in various outbuildings around the farm—and checking out Rex's impressive collection of books—Rex went over and borrowed an air nozzle from his friend Randy.
+
+Meanwhile, Sean finished his breakfast. We asked our hosts to sign the trailer, which they all did, and we took a picture together. Sean said his goodbyes to the people and animals, and he was off.
+
+I was able to fix the kitchen sink somewhat, getting about fifty percent flow on the hot side. The cold side was already working okay.
+
+Then I made my own breakfast: toast and a six-egg mushroom, cheese, and tomato omelet. While I ate, I talked to Rex for quite a bit about meditation, self-awareness, and what he calls self-realization. Much of his great book collection is focused on mindfulness and awareness.
+
+After eating, I worked with him on the bathroom sinks. I wanted to share some knowledge with him so that he could continue working on them in my absence. We got one sink working, but only the hot water. The other sink was completely clogged, and we were unsuccessful there.
+
+We also fixed the shower by installing a new shower head, which was a quick fix. They have two showers, so now both of them are working.
+
+After that, I packed up the tools, cleaned up, and said my own goodbyes.
+
+Then I departed, said goodbye to Cindy as I passed by the gas station where she works, and filled our water bottles at the Anasazi State Park Welcome Center next door.
+
+In hindsight, I should have gotten some gas at Cindy's station. It was about four dollars and thirty cents a gallon. But it escaped my mind, and so I had to get some in Torrey, which is close to Capitol Reef. The price there was about forty cents more.
+
+I passed Sean near the top of the twelve-mile incline. I thought he would be farther ahead, but he had gotten distracted, like I do during so many of my rides.
+
+And for good reason.
+
+After the climb, you find yourself on Boulder Mountain and a beauty of a totally different kind from the desert below. We've been enjoying desert landscapes for the better part of three months now. But the top of Boulder Mountain is forested, with rolling hills and meadows and a reservoir down in a beautiful valley.
+
+The air is crisp and clear, and there is beauty everywhere.
+
+The quaking aspens, one of my favorite trees, shimmer and seem to be waving hello in the wind. Ponderosa pines and other kinds of conifers abound.
+
+I was tempted to just stay the night up there. There was a place perfect for the purpose, and the cool air was so inviting.
+
+But when I looked at the timeline, I saw that we were about three days behind schedule. We should have been in Moab by now. We took more time than anticipated in Zion and Bryce. We went back to Calf Creek while we were in Boulder, so that was another day.
+
+While I didn't feel regret for our delay, I felt that we had to move along.
+
+I talked to Sean about it—he caught up to me while I was scoping out the potential campground—and he agreed. Despite the temptation of a cool mountain night, we made the decision to continue down to the Capitol Reef park entrance.
+
+Given the expense of the gas in Torrey, the only town of note between Boulder and Capitol Reef, I only added a quarter tank to Marcus so we could make it through to Moab, which should have more reasonably priced gas.
+
+Gas and food are the main expenses right now. An oil change for Marcus is on the horizon, but not quite yet.
+
+I started to wonder what it would be like to just travel with a bike and tent, minimizing the expense of logistics.
+
+That comes with its own challenges, of course.
+
+I have so many belongings in the truck and the trailer that I would have to address. And then what would I do with Marcus and Cleo—sell them? Split up the family?
+
+I would like to get to a point where I have less stuff. I don't necessarily want to just give all my tools away, but I don't believe in storing things in a place where they sit unused, and you have to pay for not having access to your stuff.
+
+Regardless, there's a lot of other things that would need to be disposed of.
+
+I have four bins in the truck, for example, that have bathroom items, computer equipment, and other personal possessions that I haven't used much since I started this thing. A lot of it is just extra bathroom supplies and things that, at this point, are so old that they're probably no good anymore.
+
+A lot of kitchen items could probably go with the truck, since it has cabinetry installed under the camper shell.
+
+All of these concerns stand in the way, but I do sort of long for less.
+
+Less attachments. Fewer possessions. But that's a decision for another day.
+
+After talking to a few locals, I found a nice, secluded place, a little off the road on BLM land. It was located about eight miles from the entrance to Capitol Reef, which is basically as close as you can get to the park before the No Parking signs start appearing.
+
+Hopefully, we can get a good night's sleep here and explore the canyon tomorrow.
+
+Or whatever type of land feature Capitol Reef is. I'm not sure.
+
+But Google knows:
+
+Capitol Reef covers more than two hundred forty thousand acres. It became a national monument in nineteen thirty-seven and a national park on December the eighteenth, nineteen seventy-one. The name comes from the white Navajo sandstone domes that resemble the U.S. Capitol and the rocky, impassable barrier that the ridge presented to early travelers.
+
+And then there's the Waterpocket Fold—a massive, one-hundred-mile-long "wrinkle" in the earth's crust, formed by ancient uplift and erosion.
+
+There's the Fruita Historic District, a peaceful pioneer settlement along the Fremont River with historic buildings, the Gifford Homestead, and massive orchards where visitors can pick seasonal fruit.
+
+There's a Scenic Drive, an eight-mile paved route showcasing stunning rock layers, deep canyons, and dramatic viewpoints.
+
+And there are the dark skies. Capitol Reef is designated as a Gold Tier International Dark Sky Park, offering incredible stargazing.
+
+Sounds heaven-like!
+
+After today's drive, the vision of Boulder Mountain is going to stay with me. It's one of those places that feels like more time is warranted. I feel like I need to go back there and spend a few days on that mountain.
+
+In the forest.
+
+And it looks like people just camp up there. It's not really regulated.
+
+Hidden places in Zion, Escalante, Boulder Mountain… the list of Places to Revisit groweth.
+
+Tomorrow we need to figure out how much of Capitol Reef we can visit and whether or not we want to spend another day.
+
+I'm still feeling tired from the seventy-eight-mile ride from Bryce to Boulder, but I'm hoping that with a good night's sleep, I'll be back to my normal, peppy self.
+
+And check out another beautiful national park in Utah.
+
+That is the plan.`,
+    hashtags: ["#Gratitude", "#Community", "#ProblemSolving", "#Wonder", "#NewWayOfLife", "#Reflection", "#Connection", "#Adventure", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 174,
+    date: "Wednesday, August 19, 2026",
+    location: "Capitol Reef National Park, UT (West to East entrance)",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Capitol Reef",
+    entry: `The nineteenth of August was Day one hundred seventy-four. It began and ended outside of Capitol Reef National Park. We were at the West entrance at the break of day and the East entrance when the sun went down.
+
+Today was a day of exploration.
+
+I was content riding the bike. Sean wanted to go on some hikes. I rode to the end of the scenic road, which is about an eight-mile stretch of pretty aggressive hills. Up to ten percent grades, up and down, up and down.
+
+When I reached the end, I encountered six people—three couples in their eighties. I talked to them for about an hour, and I got to do an interview with one of them. We talked about Nature and how being out in Nature adds to longevity and quality of life.
+
+After they left, I talked to two couples who spoke French and Spanish, so I spoke Spanish with them. They were cool.
+
+I started riding back and saw Judy—Sean's bike—at a trailhead. I stopped to wait for him, recording a video during my wait. I told him I was feeling good and could ride through the park to the East entrance.
+
+In the morning, we had been talking about him riding after we did the scenic drive, but it made sense for me to keep riding since he wanted to go on more hikes. That way, he would have more time to hike, and then he could just hop in the truck and meet me at the endpoint.
+
+So that's what we did.
+
+Such beauty I saw during the entire day!
+
+Lots of green around the river and beautiful rock formations as far as the eye can see.
+
+We also found Tim as we passed the Capitol Reef campground. He's the guy I met at the shower area of Bryce Canyon. Tim is a pilot and has the good fortune of spending weeks at a time out here in this part of the country.
+
+When I passed by the campground, he was there. That doesn't always happen, so I was glad the timing worked out like that. I sat and talked to him for a while after I got back from my ride. I told him I would be around for a bit before departing, if he wanted to check out the rig and sign the trailer.
+
+I rode back to the truck and had some food. As I was finishing, Tim arrived on his e-bike. He checked out the truck and trailer, signing the latter.
+
+A few other couples and individuals passed by as well. One fellow who sounded like he was from India seemed to be very interested in my story. He had a fold-up bike and a van that he was sleeping in. Just enough room for his folded-up bike and a mattress.
+
+He was set up to just go wherever he desired.
+
+It was a simple setup that made me a little jealous.
+
+It's about a nine-mile ride through the park. At the East entrance, I found the road that Tim told me about—Notom Road. It was a very steep ten percent grade, I'd say, for a quarter mile to a third of a mile up this hill.
+
+Sean arrived soon after I did.
+
+We found some BLM land at the top of a steep hill, with a large canyon opening up below us—a very cool view. We got hit by a monsoon while we were making macaroni and cheese with chicken that Tim gave us. So basically, the evening was a celebration, in large part due to Tim. We put up the canopy again and were able to stay relatively dry during our feast.
+
+I made two boxes of mac and cheese, which I thought was a little much as I was cooking it.
+
+Turned out to be just enough for two guys who were riding and hiking all day.
+
+Once the wind and rain passed, it turned into a nice, quiet night. I've had some strange dreams lately—vivid ones that I still think about when I wake, and that sometimes keep me from falling back asleep. In the morning, I got up to take in the sunrise, but then went back to bed because it was cold. I hope tomorrow morning is a little warmer—it'll probably cool down some more, but it'd be nice to get up, get dressed, and hit the road without needing cold-weather gear.
+
+It was a day spent in Nature. We saw petroglyphs, water, waterfalls, rivers, a little stream… We checked out the orchards that were open and picked apples and a few pears. Couldn't find any peaches. They had a peach orchard, but I think it was closed when I passed by there at dusk.
+
+All in all, it was just a fabulous, best day ever.
+
+We have no signal here, so I haven't been able to map the route for tomorrow. I know the general direction, and I'll have to figure it out when we get to the next town.
+
+But for now, that's enough.
+
+I'm going to get some sleep and get ready for tomorrow's adventure.
+
+Forty and nine-tenths miles on the day.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Community", "#Connection", "#Adventure", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo", "#Milestone", "#Sparkle"]
+  },
+  {
+    num: 175,
+    date: "Thursday, August 20, 2026",
+    location: "Capitol Reef area, UT → Moab, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Moab",
+    entry: `The twentieth of August was Day one hundred seventy-five, and it began on Notom Road just outside of Capitol Reef. I awoke relatively early, had breakfast, and set out toward the east, hopefully toward a place where I could find enough signal to figure out the exact route to Moab.
+
+The first part of my journey took me through what looked like a moonscape. All of the hills consisted of this poofy kind of dirt. I stopped at one hill that seemed scalable, although I'm not really sure why. Something sparkled at me, I suppose. I decided to record a video about perspective, starting at the base and culminating at the top, where I was rewarded with a spectacular view of the surrounding area. The dirt reminded me a little of snow, with my feet sinking into it as I walked. I imagined being the first human to tread across this crusty ground, but then I started to make out other footsteps from previous earthlings who had preceded me.
+
+Resuming my ride, I stopped at the first place that showed any signs of life—a cute little two-story hideaway called the Cathedral Valley Inn. I asked the girl who was cleaning a room if I could use the bathroom. She said I could, and even offered me some ice from the ice machine and a place to sit in their lobby for a little while. It was air-conditioned, and they had Wi-Fi! I was finally able to check my messages.
+
+That's when I discovered there had been a little snafu with Sebastian staying with a friend in Las Vegas. There had been some miscommunication, and because I'd had so little signal, I hadn't been able to straighten things out. Luckily, I was able to remediate the situation, and my friend picked up Sebastian from a McDonald's. It seemed like everything ended well there, but I'll check in tomorrow. It was getting too late tonight.
+
+All of that took some time, though, and the day was progressing quickly toward midday. I eventually reached my destination near I-70, where Marcus and Cleo were waiting for me. But first, I got back on the bike and rode to Hanksville, where the road turned north toward the freeway.
+
+By then I had traveled about thirty miles, and I discovered that the total distance to my destination was about ten miles longer than I had originally thought. All said and done, it would be a total of seventy-seven miles. I could have sworn Google had told me it was sixty-five miles when I was researching the route the last time I had signal. Apparently, Google and I had different ideas about what constituted a reasonable day on a bicycle.
+
+While I was in Hanksville, I got some more ice and water. I talked with a family who was interested in what I was doing, and that always feels good. I shared the website with them. I also talked to a couple of fellows, Nick and Eric, who had just relocated a boat from Lake Mead because the water is getting so low. Eric does quite a bit of bikepacking, so we talked a little about my setup and his. I shared the website with them as well.
+
+Finally, I hit the road again. I made it back to Marcus a little late and set about putting Herbie on the trailer and getting underway. I stopped in Green River for gas, water, and ice, then headed toward Moab.
+
+I arrived quite tardily—around ten-twenty at night, if I remember correctly. I parked near a highly rated bicycle shop, hoping I could get Herbie looked at the next day. There are some creaking noises coming from down below, which I think might be the bottom bracket, but a second opinion would be nice. I also think that the front wheel needs more grease in the bearings, because I hear this kind of like squeaky, rubby kind of sound when I'm pedaling, or even when I'm just coasting. So I need a little bit of attention there, so we'll see how it goes tomorrow.
+
+Seventy-seven miles on the day.`,
+    hashtags: ["#Adventure", "#Wonder", "#Community", "#ProblemSolving", "#Grit", "#NewWayOfLife", "#Connection", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 176,
+    date: "Friday, August 21, 2026",
+    location: "Moab, UT",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Moab",
+    entry: `The twenty-first of August was Day one hundred seventy-six, and it was spent in Moab, Utah. Although I had it in mind to ride some of the legendary trails around here, it wasn't meant to be. I never left the city limits.
+
+I started the day by repacking the bearings in Herbie's front and rear wheels. I had been hearing this dry, frictiony kind of sound when I rode. The bearings weren't actually dry, though, so if that wasn't the cause, I'll continue the search for whatever else might be in need of lubrication.
+
+The Chili Pepper Bike Company let me use their grease. I had parked near the shop the previous night just to be close to them in the morning. I also found some donuts on clearance at the little market next door. With some hot water from the hotel next door, I had cocoa and donuts for breakfast. Not exactly a cyclist's breakfast of champions, but it worked.
+
+After repacking the bearings, I went off in search of a post office. I wanted to send bracelets and stickers to the members of Air Support Team Bravo. They've been helping us along the journey, working to maximize visibility and help make this whole thing a success.
+
+Imagine my surprise when I handed the fellow five bubble-wrap envelopes and he informed me that the price for shipping was nearly nine dollars each. I was thinking it would cost a few dollars, as the envelopes weighed next to nothing. They contained a couple of silicone bracelets, a few stickers, and a handwritten note. After a moment's pause, I gathered myself and sent them on their way. The Air Support Team is worth that and much more. It's just that I'm trying to maintain a budget, so a forty-dollar expense took a little time to get used to.
+
+It was the bulkiness, you see. The bubble envelopes with silicone bands inside can't be run through the automated sorting machines, so they have to be handled by hand, which is a whole different process. They're treated like packages. I hope those little mementos will bring a smile to the recipients.
+
+When I got back to the truck, I passed by the VA. The clinic is currently in a little trailer placed in the corner of the parking lot because their new location is being renovated. It's in the shopping center next to Chili Pepper Cycles. I asked if they could give me a new ID card, but alas, the person who does ID cards is only there Monday, Tuesday, and Wednesday. They have to travel from Grand Junction, which is the nearest VA facility to Moab.
+
+So I scratched that off the list. Maybe in Salt Lake. It would be nice to have a more modern form of ID than the old VA card I have. It's kind of faded, and it looks aged. Luckily, I haven't really needed a photo ID for much of anything, so I'm grateful for that.
+
+I went in search of another place to park. I'd moved to the opposite side of the street in the morning because it provided a lot of shade until the afternoon, but there were signs on the shady side saying no overnight parking.
+
+I rode around town and found myself at a place called Moab Community Cycle. Despite dozens of bikes and parts sitting out in the open, nobody was there. In fact, it seemed to be sort of a junkyard for bikes. I rode across the street and saw some signs on what looked like a house. One said something about customer parking, and another informed me that I should ring the side door for service.
+
+So I did.
+
+I met a fellow who is semi-retired, maybe all the way retired. He seems to value his privacy, so I won't share his name. After we'd talked for some time, his wife came into the shop and joined the conversation. His wife is from Bulgaria. We talked for a couple of hours, and he was a fascinating guy.
+
+He's a musician who plays guitar, a bicycle enthusiast—well, more than an enthusiast. He has a whole bunch of very expensive bikes in that shop, along with a lot of bike equipment for sale. But he doesn't really have any customers. It seems to be more of a hobby for him now.
+
+He had story upon story of things he'd done in his life, and it was nice to see someone who had lived a full life and hadn't asked for permission to live it. That was a good time.
+
+He told me that I should be able to park the truck there on the street, which also has shade. Hopefully, Marcus won't be baking tomorrow morning.
+
+I enjoyed the visit and told him I'd be back in a bit. Maybe we could even fix his little swamp cooler, which was making some strange noises.
+
+Unfortunately, when I came back with the truck, it was quite a bit later. I stopped by the Chili Pepper Bike Shop and worked on Herbie with the techs. That work consisted of looking at the derailleur hanger and the derailleur itself. We straightened the hanger out a little bit because they didn't have one that matched. We got the shifting working better, which had been off since I replaced the bent hanger in Hurricane.
+
+Smooth shifting is a very nice thing.
+
+We didn't change the bottom bracket, which I believe may be causing some of the noise I'm hearing when I pedal. It's either that or the pedals themselves, but the pedals are pretty new. I decided to endure the clicking noise that happens when I pedal. The technician said the bottom bracket feels solid. At least the shifting is fixed, and we checked the chain. It's still good.
+
+I'm ready to hit the road again tomorrow.
+
+When I went to park for the night, my new friend was eating dinner with his wife, and the magic was gone. I bid him a good night. He did say that he rides up the hill toward Arches every morning, so hopefully we can ride together tomorrow.
+
+Our plan is to go to Arches and then travel to a little place to camp where the road to Canyonlands connects with the highway that brought us to Moab. The plan is to sleep there tomorrow, so we'll be just twenty miles away from Canyonlands National Park.
+
+It's going to be a good time because I think Canyonlands is just as impressive as the Grand Canyon. It's not as well known as the Grand Canyon, but I think it's just as magical.
+
+That will be on Sunday. Tomorrow, Saturday, is Arches. Canyonlands on Sunday. And that will conclude our five-Utah-national-parks tour.
+
+Before retiring, I updated the website. The nearby inn allowed me to use their Wi-Fi. I updated the miles ridden, which are now over five thousand one hundred since I started on February 27. I also updated a few more days of this journal, which is still quite a bit behind. I had just uploaded Day one hundred fifty-five and now Day one hundred seventy-six, so I have twenty-one days that I need to refine and log.
+
+I think I'm going to need at least three or four days of time to catch up. It's time-consuming to clean up the audio files, but I don't want to let these days disappear into the blur of everything that's happening. There are too many people, places, conversations, and little moments that I know I'll want to remember.
+
+So I'll find the time. The journal may be twenty-one days behind, but the story is still unfolding. For now, I have tomorrow's ride to think about, and somewhere ahead are Arches, Canyonlands, and whatever else the road decides to put in front of me.
+
+Roll 4 Nature.`,
+    hashtags: ["#Gratitude", "#ProblemSolving", "#Community", "#Connection", "#Reflection", "#NewWayOfLife", "#Adventure", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 177,
+    date: "Saturday, August 22, 2026",
+    location: "Moab, UT → Canyonlands junction, UT (via Arches National Park)",
+    state: "Mountain State 1: Utah",
+    region: "Mountain State 1: Utah — Arches & Canyonlands",
+    entry: `The twenty-second of August was Day one hundred seventy-seven. It began in Moab and ended at the junction where the highway leads toward Canyonlands, about twenty-two miles from the park. It rained a little during the wee hours of the morning, but it was just a sprinkling.
+
+We spent more time than planned in Moab this morning because we met a guy named Shane. He was on a bicycle, pulling a trailer with a dog in it. Shane has been all over the country, many times over. He keeps coming back to his home base in Moab to recover after his trips.
+
+His dog, Anu, is just adorable. She has been sick for a while, and Shane went to Mexico to get medicine for her because he couldn't afford the veterinary costs and medication in the United States. He had to diagnose her himself because of the waiting time to see a veterinarian. It looks like he diagnosed her correctly because she seems to be in relatively good spirits. The main difference in Anu since her illness is that she now prefers to ride in the trailer instead of running alongside him.
+
+After we'd talked for a while, we found out Shane was heading to the bicycle graveyard located in the parking lot next to where we had stayed. He told us we were welcome to scavenge parts for our bikes, so we went with him.
+
+There were at least forty bikes over there, all in different conditions. I was looking for a derailleur that might serve better than the one I have, and Sean was looking for a better mounting system for a basket and rack to carry things on Judy, his bike.
+
+He ended up with a pretty nice basket that we attached to the back with a rack that is really durable. I think the setup will serve him well until he moves on from that bike. Installation took most of the morning.
+
+It was about noon when we headed to Arches. On the way, I got a call from Lloyd, a truck driver who lives in South Jordan and whom I hope to see soon. I almost fell off my bike when I learned that he was going to pass Arches on his way back home and was only about two hours from where I was.
+
+It was a pretty bright sparkle of serendipity.
+
+It was about two o'clock before we started riding in earnest, up a very steep hill to begin the ride. When I was nearing the top, I got another call from Lloyd. He told me that he had seen Marcus and Cleopatra in the parking lot of Arches when he passed by. What a random happening in such a remote part of Utah.
+
+The ride to Devil's Garden was eighteen miles from the visitor center, where we were told we would see quite a few arches. There were four significant climbs and two significant descents, where we got up to thirty-eight miles an hour. With that experience, we knew what we were in for on the way back—mostly downhill, but with a couple of significant climbs woven in.
+
+About nine miles into the ride, we stopped to see Balanced Rock, one of the most amazing things I've witnessed during our travels. A huge, egg-shaped chunk of sandstone sits perched atop a base of softer material, which is eroding faster than the egg. One of these days, that boulder is going to topple over. Standing underneath it, it's not so hard to believe that it could happen at any time... definitely a humbling experience.
+
+We went around the park until the sun went down because we wanted to see as many arches as we could. My favorite was Pine Tree Arch, which is one you can actually walk through. It looks like a portal into another dimension. It's so amazing how erosion can cut away a huge hole inside this really formidable rock. And to think that the wind did that over centuries or millennia.
+
+The experience was just magical.
+
+We rode back, and it was Sean's turn to ride from the visitor center to the place we were planning to stay, about six miles away. He decided to go back down the hill for some ice, so it was more like sixteen miles for him. He's in such good shape.
+
+Since I had some extra time, I had dinner in the visitor center parking lot: a hard-boiled egg, thanks to our friend Hopi in Boulder, and some protein powder with milk. I needed to use up that milk because we were out of ice in the fridge. There were a few more things in the fridge that would make breakfast tomorrow.
+
+I drove up to the Canyonlands turnoff and found a nice place to park behind another truck and trailer on a piece of paved road that was kind of a little cul-de-sac. There's a pavilion with some information boards concerning Canyonlands. It doesn't look like it's frequented very much, so hopefully nobody will care that we're parked here.
+
+The plan is to visit Canyonlands in the morning, come back and sleep one more night here, and then head north to South Jordan. I can't believe that tomorrow we'll be visiting the last of the Utah national parks.
+
+I was able to call several of my friends in Salt Lake and my mother, who lives in South Jordan, to reiterate our plans and approximate arrival date. There is a chance of a bit of a delay, or of getting there earlier. If anything, I think we'll arrive later than I plan. If all goes according to schedule, we should arrive in South Jordan on Wednesday night.
+
+Tomorrow is Canyonlands. After that, we turn north toward South Jordan. For tonight, we're parked just twenty-two miles from the next adventure, and that's close enough.
+
+It's almost twelve-thirty, so I'm going to bed.
+
+Forty-six and three-tenths miles on the day.`,
+    hashtags: ["#Gratitude", "#Wonder", "#Connection", "#Sparkle", "#Community", "#Adventure", "#NewWayOfLife", "#Milestone", "#RollForVeterans", "#TeamBravo"]
   },
 ];
