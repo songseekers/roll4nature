@@ -708,7 +708,7 @@
     "state": "Arizona",
     "coordinates": [-111.4226, 35.8597],
     "arrivalDate": "2026-06-29",
-    "dayNumber": 122,
+    "dayNumber": 123,
     "distanceFromPrevious": 0,
     "distanceFromStart": 0,
     "tier": "major",
@@ -961,59 +961,6 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "salt-lake-city",
-    "route": "mse"
-  },
-  {
-    "id": "brigham-city-ut",
-    "name": "Brigham City",
-    "state": "Utah",
-    "coordinates": [-112.0152, 41.5102],
-    "arrivalDate": "2026-08-31",
-    "dayNumber": 187,
-    "distanceFromPrevious": 0,
-    "distanceFromStart": 0,
-    "tier": "major",
-    "slug": "brigham-city",
-    "route": "mse"
-  },
-  {
-    "id": "clifton-id",
-    "name": "Clifton",
-    "state": "Idaho",
-    "coordinates": [-112.0461, 42.2013],
-    "arrivalDate": "2026-09-01",
-    "dayNumber": 188,
-    "distanceFromPrevious": 0,
-    "distanceFromStart": 0,
-    "tier": "major",
-    "slug": "clifton",
-    "route": "mse"
-  },
-  {
-    "id": "pocatello-id",
-    "name": "Pocatello",
-    "state": "Idaho",
-    "coordinates": [-112.4455, 42.8713],
-    "arrivalDate": "2026-09-02",
-    "dayNumber": 189,
-    "distanceFromPrevious": 0,
-    "distanceFromStart": 0,
-    "tier": "major",
-    "slug": "pocatello",
-    "route": "mse"
-  },
-  {
-    "id": "rigby-id",
-    "name": "Rigby",
-    "state": "Idaho",
-    "coordinates": [-111.9149, 43.6724],
-    "arrivalDate": "2026-09-03",
-    "dayNumber": 190,
-    "distanceFromPrevious": 0,
-    "distanceFromStart": 0,
-    "tier": "major",
-    "slug": "rigby",
-    "description": "Current northern terminus of the Mountain States Exploration route.",
     "route": "mse"
   }
 ]

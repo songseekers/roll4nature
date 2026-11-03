@@ -27,7 +27,7 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
 
         {/* Route title */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-r4n-warm-cream mb-4 leading-tight">
-          Mountain States Exploration
+          Roll 4 Nature
         </h1>
 
         {/* Dynamic mileage */}
@@ -47,7 +47,7 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
 
         {/* Body paragraph 3 — route context */}
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
-          Having completed the Coast to Coast to Canyon route from Key West to Flagstaff, we have now embarked on the Mountain States Exploration — heading north through arid canyon lands, national parks, and imposing mountain ranges of the American West. Both routes can be explored by toggling the buttons on the map below.
+          <span className="font-semibold text-gray-900 dark:text-r4n-warm-cream">A pause on the road, not on nature.</span> I&apos;m taking a break from the cross-country travel and staying in San Antonio for a while, spending time with family and friends and exploring the natural beauty of Texas. The miles keep adding up through local rides, and the route I&apos;ve ridden so far is on the map below. Stay tuned for what&apos;s next on The Path.
         </p>
 
         {/* Updated tagline */}

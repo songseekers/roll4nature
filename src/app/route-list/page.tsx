@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: 'Route List | Roll 4 Nature Mountain States Exploration',
-  description: "Full route list for Roll 4 Nature 2026 — 78 stops from Key West, Florida to Rigby, Idaho through America's canyon lands, national parks, and mountain states.",
+  description: "Full route list for Roll 4 Nature 2026 — 74 stops from Key West, Florida to Salt Lake City, Utah through America's canyon lands, national parks, and mountain states.",
 };
 
 interface StopRow {
@@ -24,11 +24,12 @@ function formatDate(arrivalDate: string) {
 }
 
 export default function RouteListPage() {
+  // cities.json ends at Salt Lake City, so the list does too.
   const sortedByDay = getAllCities().slice().sort((a, b) => a.dayNumber - b.dayNumber);
   const stops: StopRow[] = sortedByDay.map((city, index) => ({ city, stop: index + 1 }));
 
   // Flagstaff (route: "both") is the dividing point — it closes out the
-  // MSE section (Rigby -> Flagstaff) and is not repeated in the C2C2C section.
+  // MSE section (Salt Lake City -> Flagstaff) and is not repeated in the C2C2C section.
   const mseStops = stops
     .filter((s) => s.city.route === 'mse' || s.city.route === 'both')
     .slice()
@@ -91,7 +92,7 @@ export default function RouteListPage() {
             Route Schedule
           </h1>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
-            78 communities across two routes — Coast to Coast to Canyon and Mountain States Exploration
+            {stops.length} communities across two routes — Coast to Coast to Canyon and Mountain States Exploration
           </p>
           <Link
             href="/#map"
@@ -131,7 +132,7 @@ export default function RouteListPage() {
                 </tr>
               </thead>
               <tbody>
-                {sectionHeader('Mountain States Exploration — Flagstaff to Rigby', 'bg-r4n-sage')}
+                {sectionHeader('Mountain States Exploration — Flagstaff to Salt Lake City', 'bg-r4n-sage')}
                 {mseStops.map((row) => renderRow(row, 'sage'))}
                 {sectionHeader('Coast to Coast to Canyon — Key West to Flagstaff', 'bg-r4n-primary')}
                 {c2c2cStops.map((row) => renderRow(row, 'orange'))}

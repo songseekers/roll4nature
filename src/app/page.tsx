@@ -7,8 +7,23 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata = {
-  title: 'Roll 4 Nature | Mountain States Exploration',
-  description: 'Roll 4 Nature is a veteran-founded, purpose-driven journey through America\'s wild places. 4 Purpose | 4 Veterans | 4 Everyone | 4 Nature.',
+  title: 'Roll 4 Nature | Mountain States Exploration 2026',
+  description: 'Roll 4 Nature (roll4nature, Roll for Nature, R4N) — a veteran-founded cycling journey through America\'s wild places. Mountain States Exploration: Flagstaff, AZ to Salt Lake City, UT. Supporting Team RWB veterans wellness through nature, movement, and purpose.',
+  keywords: [
+    'Roll 4 Nature',
+    'Roll for Nature',
+    'roll4nature',
+    'R4N 2026',
+    'Mountain States Exploration',
+    'veteran cycling journey',
+    'Team RWB',
+    'veterans outdoor wellness',
+    'JT Tracy cyclist',
+    'purpose in nature',
+    'cross country cycling',
+    'Flagstaff to Salt Lake City cycling',
+    'nature mental health veterans',
+  ],
 };
 
 export default function HomePage() {
@@ -129,14 +144,14 @@ export default function HomePage() {
           <div className="mb-6">
             <Image
               src="/images/TeamBravoPatch.png"
-              alt="Team Bravo Patch"
+              alt="Roll 4 Nature Team Bravo patch — veteran cycling crew"
               width={400}
               height={200}
               className="mx-auto object-contain dark:hidden"
             />
             <Image
               src="/images/TeamBravoFlag.png"
-              alt="Team Bravo Flag"
+              alt="Roll 4 Nature Team Bravo flag"
               width={400}
               height={200}
               className="mx-auto object-contain hidden dark:block"
@@ -162,19 +177,19 @@ export default function HomePage() {
             Discover Your Purpose
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            JT is a certified integrative health coach. The same framework guiding him across 4,000+ miles is available to you — free.
+            JT Tracy is a certified integrative health coach. The same framework guiding him across 4,000+ miles of Roll 4 Nature is available to you — free.
           </p>
           <a href="/purpose">
             <Image
               src="/resources/PP_dk.png"
-              alt="The Purpose Pathfinder — click to learn more"
+              alt="The Purpose Pathfinder by JT Tracy — free integrative health coaching framework"
               width={350}
               height={350}
               className="mx-auto object-contain dark:hidden hover:opacity-80 transition cursor-pointer"
             />
             <Image
               src="/resources/PP.png"
-              alt="The Purpose Pathfinder — click to learn more"
+              alt="The Purpose Pathfinder by JT Tracy — free integrative health coaching framework"
               width={350}
               height={350}
               className="mx-auto object-contain hidden dark:block hover:opacity-80 transition cursor-pointer"

@@ -46,3 +46,6 @@ HANDOVER.md
 # user data (contains real submissions)
 /data/sponsor-inquiries.json
 /data/team-bravo-applications.json
+
+# raw GPS tracks from Strava/Garmin (exact locations - never commit)
+/_strava_raw/
