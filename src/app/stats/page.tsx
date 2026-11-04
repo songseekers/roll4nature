@@ -118,15 +118,19 @@ const summaryCards = [
 ];
 
 // ─── Segmented table data ──────────────────────────────────────────────────────
-// Mountain States Exploration: Jul 24, 2026 onward
+// Back in San Antonio: Sep 18, 2026 onward
+// Mountain States Exploration: Jul 24 – Sep 17, 2026
 // Coast to Coast to Canyon: Feb 27 – Jul 4, 2026 (Jul 4 Flagstaff ride is the final C2C2C ride)
 
 const MSE_CUTOFF = '2026-07-24';
+const SA_CUTOFF = '2026-09-18';
 
-const mseActivities = activities.filter((a) => a.date >= MSE_CUTOFF);
+const saActivities = activities.filter((a) => a.date >= SA_CUTOFF);
+const mseActivities = activities.filter((a) => a.date >= MSE_CUTOFF && a.date < SA_CUTOFF);
 const c2c2cActivities = activities.filter((a) => a.date < MSE_CUTOFF);
 
-const mseDateRows = dateRows.filter((r) => r.date >= MSE_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
+const saDateRows = dateRows.filter((r) => r.date >= SA_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
+const mseDateRows = dateRows.filter((r) => r.date >= MSE_CUTOFF && r.date < SA_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
 const c2c2cDateRows = dateRows.filter((r) => r.date < MSE_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
 
 const cumulativeSummary = {
@@ -136,6 +140,15 @@ const cumulativeSummary = {
   calories: totalCalories,
   ascent: totalAscent,
   descent: totalDescent,
+};
+
+const saSummary = {
+  count: saActivities.length,
+  distance: sumBy(saActivities, 'distance'),
+  totalSecs: sumSeconds(saActivities),
+  calories: sumBy(saActivities, 'calories'),
+  ascent: sumBy(saActivities, 'totalAscent'),
+  descent: sumBy(saActivities, 'totalDescent'),
 };
 
 const mseSummary = {
@@ -158,8 +171,17 @@ const c2c2cSummary = {
 
 const tableSegments: WorkoutTableSegment[] = [
   {
+    key: 'sa',
+    headerLabel: '🏠 Back in San Antonio — Sep 18, 2026 onward',
+    headerClassName: 'bg-r4n-earth text-white',
+    rows: saDateRows,
+    summaryLabel: '🏠 Back in San Antonio Subtotal',
+    summary: saSummary,
+    summaryClassName: 'bg-r4n-earth-light/40 dark:bg-r4n-earth/20 font-semibold text-gray-900 dark:text-white',
+  },
+  {
     key: 'mse',
-    headerLabel: '🏔️ Mountain States Exploration — Jul 24, 2026 onward',
+    headerLabel: '🏔️ Mountain States Exploration — Jul 24 – Aug 26, 2026',
     headerClassName: 'bg-r4n-sage text-white',
     rows: mseDateRows,
     summaryLabel: '🏔️ Mountain States Exploration Subtotal',

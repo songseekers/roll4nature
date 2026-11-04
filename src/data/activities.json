@@ -1804,5 +1804,47 @@
     "maxTemp": 96.8,
     "movingTime": "3:28:04",
     "maxElevation": 4855
+  },
+  {
+    "date": "2026-09-18",
+    "title": "San Antonio Cycling",
+    "distance": 52.79,
+    "calories": 2152,
+    "avgHR": 114,
+    "maxHR": 166,
+    "totalAscent": 1670,
+    "totalDescent": 1644,
+    "minTemp": 77.0,
+    "maxTemp": 91.4,
+    "movingTime": "5:29:11",
+    "maxElevation": 1030
+  },
+  {
+    "date": "2026-09-30",
+    "title": "San Antonio Cycling",
+    "distance": 62.22,
+    "calories": 2580,
+    "avgHR": 110,
+    "maxHR": 153,
+    "totalAscent": 1539,
+    "totalDescent": 1404,
+    "minTemp": 73.4,
+    "maxTemp": 91.4,
+    "movingTime": "6:17:17",
+    "maxElevation": 1041
+  },
+  {
+    "date": "2026-10-09",
+    "title": "San Antonio Cycling",
+    "distance": 60.01,
+    "calories": 2882,
+    "avgHR": 113,
+    "maxHR": 160,
+    "totalAscent": 2028,
+    "totalDescent": 2001,
+    "minTemp": 75.2,
+    "maxTemp": 87.8,
+    "movingTime": "6:06:23",
+    "maxElevation": 1128
   }
 ]
