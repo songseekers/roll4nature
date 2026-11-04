@@ -112,6 +112,20 @@
     "maxElevation": 86
   },
   {
+    "date": "2026-03-08",
+    "title": "Ormond Beach Cycling",
+    "distance": 15.87,
+    "calories": 457,
+    "avgHR": 86,
+    "maxHR": 133,
+    "totalAscent": 141,
+    "totalDescent": 207,
+    "minTemp": 71.6,
+    "maxTemp": 80.6,
+    "movingTime": "1:41:19",
+    "maxElevation": 79
+  },
+  {
     "date": "2026-03-09",
     "title": "St Johns County Cycling",
     "distance": 51.3,
@@ -1720,5 +1734,75 @@
     "maxTemp": 98.6,
     "movingTime": "0:58:46",
     "maxElevation": 4231
+  },
+  {
+    "date": "2026-08-22",
+    "title": "Moab Cycling",
+    "distance": 46.31,
+    "calories": 2454,
+    "avgHR": 104,
+    "maxHR": 149,
+    "totalAscent": 3773,
+    "totalDescent": 3665,
+    "minTemp": 75.2,
+    "maxTemp": 96.8,
+    "movingTime": "6:17:08",
+    "maxElevation": 5238
+  },
+  {
+    "date": "2026-08-23",
+    "title": "Grand County Cycling",
+    "distance": 86.86,
+    "calories": 3203,
+    "avgHR": 101,
+    "maxHR": 137,
+    "totalAscent": 4692,
+    "totalDescent": 4626,
+    "minTemp": 71.6,
+    "maxTemp": 96.8,
+    "movingTime": "10:12:01",
+    "maxElevation": 6259
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Grand County Cycling",
+    "distance": 81.62,
+    "calories": 2515,
+    "avgHR": 98,
+    "maxHR": 126,
+    "totalAscent": 2720,
+    "totalDescent": 1752,
+    "minTemp": 77.0,
+    "maxTemp": 96.8,
+    "movingTime": "7:33:55",
+    "maxElevation": 5463
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Emery County Cycling",
+    "distance": 105.28,
+    "calories": 2990,
+    "avgHR": 98,
+    "maxHR": 130,
+    "totalAscent": 3524,
+    "totalDescent": 4308,
+    "minTemp": 66.2,
+    "maxTemp": 98.6,
+    "movingTime": "10:02:56",
+    "maxElevation": 7493
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Springville Cycling",
+    "distance": 32.4,
+    "calories": 1151,
+    "avgHR": 85,
+    "maxHR": 130,
+    "totalAscent": 1083,
+    "totalDescent": 686,
+    "minTemp": 80.6,
+    "maxTemp": 96.8,
+    "movingTime": "3:28:04",
+    "maxElevation": 4855
   }
 ]
