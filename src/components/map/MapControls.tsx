@@ -9,14 +9,14 @@ interface MapControlsProps {
 export default function MapControls({ layer, onLayerChange }: MapControlsProps) {
   const controls: { label: string; value: MapLayer; description: string }[] = [
     {
-      label: 'Overview',
-      value: 'overview',
-      description: 'Key West → Flagstaff → Rigby',
+      label: 'Milestones',
+      value: 'milestones',
+      description: 'The start, the Pacific, the Grand Canyon, and the finish',
     },
     {
-      label: 'Planned Stops',
+      label: 'All Stops',
       value: 'major',
-      description: '78 communities on our route',
+      description: '74 communities on our route',
     },
   ];
 

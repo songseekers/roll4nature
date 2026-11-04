@@ -548,7 +548,7 @@
   },
   {
     "id": "las-vegas-nv",
-    "name": "Tahiti Village, Las Vegas",
+    "name": "Las Vegas",
     "state": "Nevada",
     "coordinates": [-115.1398, 36.1699],
     "arrivalDate": "2026-06-05",
@@ -835,7 +835,7 @@
   },
   {
     "id": "bryce-np-ut",
-    "name": "Bryce National Park",
+    "name": "Bryce Canyon National Park",
     "state": "Utah",
     "coordinates": [-112.1871, 37.5930],
     "arrivalDate": "2026-08-11",
@@ -848,7 +848,7 @@
   },
   {
     "id": "capital-reef-np-ut",
-    "name": "Capital Reef National Park",
+    "name": "Capitol Reef National Park",
     "state": "Utah",
     "coordinates": [-111.2615, 38.2972],
     "arrivalDate": "2026-08-14",

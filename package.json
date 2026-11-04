@@ -30,8 +30,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "csv-parse": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.1.4",
+    "fit-file-parser": "^6.2.7",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -33,6 +33,10 @@ interface CountdownEvent {
   midnightTime: number;
 }
 
+// Which sections of the box are shown. Turned off for now: only Miles Cycled is displayed.
+const SHOW_TIME_ON_PATH = false;
+const SHOW_WHATS_NEXT = false;
+
 const START_TIME = new Date('2026-02-27T10:00:00').getTime();
 
 const EVENTS: CountdownEvent[] = (
@@ -192,6 +196,9 @@ export default function CountdownTimer() {
       }
     };
 
+    // nothing to update each second while the time-based sections are hidden
+    if (!SHOW_TIME_ON_PATH && !SHOW_WHATS_NEXT) return;
+
     tick();
     const interval = setInterval(tick, 1000);
     return () => clearInterval(interval);
@@ -212,14 +219,18 @@ export default function CountdownTimer() {
   return (
     <div style={CONTAINER} className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
 
-      {/* Count-UP: time since Key West */}
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
-        <p style={LABEL}>Time on The Path</p>
-        {timerBlocks(elapsed)}
-      </div>
+      {/* Count-UP: time since Key West (hidden for now) */}
+      {SHOW_TIME_ON_PATH && (
+        <>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+            <p style={LABEL}>Time on The Path</p>
+            {timerBlocks(elapsed)}
+          </div>
 
-      <div className="hidden md:block"><SectionSeparator /></div>
-      <div className="block md:hidden"><SectionSeparator mobile /></div>
+          <div className="hidden md:block"><SectionSeparator /></div>
+          <div className="block md:hidden"><SectionSeparator mobile /></div>
+        </>
+      )}
 
       {/* Miles Cycled */}
       <Link href="/stats" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', cursor: 'pointer', textDecoration: 'none' }}>
@@ -235,10 +246,12 @@ export default function CountdownTimer() {
         </div>
       </Link>
 
+      {SHOW_WHATS_NEXT && (
+        <>
       <div className="hidden md:block"><SectionSeparator /></div>
       <div className="block md:hidden"><SectionSeparator mobile /></div>
 
-      {/* What's Next */}
+      {/* What's Next (hidden for now) */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
         <p style={LABEL}>What&apos;s Next</p>
         {activeEvent ? (
@@ -289,6 +302,8 @@ export default function CountdownTimer() {
           <p style={SECONDARY_TEXT}>Stay tuned for the next stop!</p>
         )}
       </div>
+        </>
+      )}
 
     </div>
   );

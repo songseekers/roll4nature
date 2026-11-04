@@ -96,6 +96,16 @@ body {
   animation: fadeIn 0.3s ease-in-out;
 }
 
+/* Map hover popups sit above Mapbox's logo/attribution so they stay readable */
+.mapboxgl-popup {
+  z-index: 5;
+}
+
+/* hover popups never catch the mouse, so they can't make the icon under them flicker */
+.hover-popup .mapboxgl-popup-content {
+  pointer-events: none;
+}
+
 /* Mapbox Popup Close Button */
 .mapboxgl-popup-close-button {
   width: 32px !important;
