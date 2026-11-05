@@ -19,7 +19,7 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://r4v.songseekers.org/journal-mse</loc>
+    <loc>https://r4v.songseekers.org/journal-cce</loc>
     <lastmod>2026-08-21</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -530,36 +530,6 @@
   </url>
   <url>
     <loc>https://r4v.songseekers.org/roll4veterans/south-jordan</loc>
-    <lastmod>2026-08-21</lastmod>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://r4v.songseekers.org/roll4veterans/salt-lake-city</loc>
-    <lastmod>2026-08-21</lastmod>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://r4v.songseekers.org/roll4veterans/brigham-city</loc>
-    <lastmod>2026-08-21</lastmod>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://r4v.songseekers.org/roll4veterans/clifton</loc>
-    <lastmod>2026-08-21</lastmod>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://r4v.songseekers.org/roll4veterans/pocatello</loc>
-    <lastmod>2026-08-21</lastmod>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://r4v.songseekers.org/roll4veterans/rigby</loc>
     <lastmod>2026-08-21</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>

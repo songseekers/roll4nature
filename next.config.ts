@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
 
+  async redirects() {
+    return [
+      {
+        source: '/journal-mse',
+        destination: '/journal-cce',
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {

@@ -13,20 +13,20 @@ import MapControls from './MapControls';
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 export type MapLayer = 'milestones' | 'major';
-export type RouteKey = 'c2c2c' | 'mse';
-type MapMode = 'replay' | RouteKey;
+export type RouteKey = 'c2c2c' | 'cce';
+export type MapMode = 'replay' | RouteKey;
 type LngLat = [number, number];
 type Phase = 'draw' | 'pause' | 'hold';
 
 const ROUTE_COLORS: Record<RouteKey, string> = {
-  c2c2c: '#30744A', // green, a bit lighter than the Mountain States line
-  mse: '#1E4D2B',   // deep forest green
+  c2c2c: '#30744A', // green, a bit lighter than the Canyon Country line
+  cce: '#1E4D2B',   // deep forest green
 };
 
 const ROUTE_LABELS: Record<City['route'], string> = {
   c2c2c: 'Coast to Coast to Canyon',
-  mse: 'Mountain States Exploration',
-  both: 'Coast to Coast to Canyon → Mountain States Exploration',
+  cce: 'Canyon Country Exploration',
+  both: 'Coast to Coast to Canyon → Canyon Country Exploration',
 };
 
 // Where Herbie's tires touched the Pacific. The ride track ended inland that day, so
@@ -115,9 +115,9 @@ const MILESTONES: Milestone[] = [
     side: 'right',
   },
   {
-    cityId: 'salt-lake-city-ut',
+    cityId: 'south-jordan-ut',
     kind: 'finish',
-    route: 'mse',
+    route: 'cce',
     title: 'The Finish Line',
     note: 'The end of this path, the beginning of another.',
     side: 'above',
@@ -167,7 +167,7 @@ const MILESTONES: Milestone[] = [
   {
     cityId: 'zion-np-ut',
     kind: 'cliff',
-    route: 'mse',
+    route: 'cce',
     title: 'Zion National Park',
     note: 'Towering sandstone cliffs.',
     side: 'upper-left',
@@ -175,7 +175,7 @@ const MILESTONES: Milestone[] = [
   {
     cityId: 'arches-np-ut',
     kind: 'arch',
-    route: 'mse',
+    route: 'cce',
     title: 'Arches National Park',
     note: 'Red rock arches.',
     side: 'right',
@@ -207,7 +207,7 @@ const MILESTONES: Milestone[] = [
   {
     cityId: 'bryce-np-ut',
     kind: 'hoodoo',
-    route: 'mse',
+    route: 'cce',
     showInReplay: false,
     title: 'Bryce Canyon National Park',
     note: 'A forest of red rock hoodoos.',
@@ -216,7 +216,7 @@ const MILESTONES: Milestone[] = [
   {
     cityId: 'capital-reef-np-ut',
     kind: 'dome',
-    route: 'mse',
+    route: 'cce',
     showInReplay: false,
     title: 'Capitol Reef National Park',
     note: 'Domes and cliffs along the Waterpocket Fold.',
@@ -225,7 +225,7 @@ const MILESTONES: Milestone[] = [
   {
     cityId: 'canyonlands-np-ut',
     kind: 'mesa',
-    route: 'mse',
+    route: 'cce',
     showInReplay: false,
     title: 'Canyonlands National Park',
     note: 'Mesas and canyons carved by the Green and Colorado Rivers.',
@@ -294,6 +294,11 @@ const SIDE_PLACEMENT: Record<BadgeSide, { anchor: MarkerAnchor; offset: [number,
   'lower-right': { anchor: 'top-left', offset: [6, 6] },
 };
 
+// The little bike that rides along the line during the replay (side view, facing right;
+// it is flipped when the route heads west).
+const BIKE_SVG =
+  '<svg viewBox="0 0 32 20" width="36" height="22" aria-hidden="true" style="overflow:visible;display:block"><g fill="none" stroke="#2a1a08" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="14" r="5" fill="rgba(242,223,192,0.9)"/><circle cx="25" cy="14" r="5" fill="rgba(242,223,192,0.9)"/><path d="M7 14L12 6.5L22 7.5L15 14L7 14M12 6.5L15 14M22 7.5L25 14M22 7.5L21 4.2h3M10.4 5.4h3.4"/></g></svg>';
+
 // How solid the milestone badges look (1 = fully opaque). Lower = less busy.
 const BADGE_OPACITY = 0.78;
 // Added to the recorded daily high temperature (the Garmin read low).
@@ -313,11 +318,11 @@ function citiesForRoute(route: RouteKey): City[] {
 // ---------- real route line (built by scripts/build-route-track.mjs) ----------
 interface TrackData {
   c2c2c: LngLat[];
-  mse: LngLat[];
-  pts: LngLat[];       // c2c2c followed by mse
+  cce: LngLat[];
+  pts: LngLat[];       // c2c2c followed by cce
   cum: number[];       // cumulative distance (km) at each point of pts
   total: number;
-  split: number;       // index in pts where the mse leg starts
+  split: number;       // index in pts where the cce leg starts
   cities: City[];      // all cities, in trip order
   cityIdx: number[];   // for each city, index in pts of the nearest track point
   milesAt: number[];   // for each city, miles ridden by its arrival date (from activities.json)
@@ -339,9 +344,9 @@ function haversine(a: LngLat, b: LngLat): number {
 function assignCityIndexes(cities: City[], pts: LngLat[], split: number): number[] {
   let prev = 0;
   return cities.map((city) => {
-    const isMse = city.route === 'mse';
-    const from = isMse ? Math.max(prev, split) : prev;
-    const to = isMse ? pts.length - 1 : Math.max(split - 1, from);
+    const isCce = city.route === 'cce';
+    const from = isCce ? Math.max(prev, split) : prev;
+    const to = isCce ? pts.length - 1 : Math.max(split - 1, from);
     const cosLat = Math.cos((city.coordinates[1] * Math.PI) / 180);
     let best = Math.min(from, Math.max(pts.length - 1, 0));
     let bestD = Infinity;
@@ -380,8 +385,8 @@ let trackCache: TrackData | null = null;
 function getTrackData(): TrackData {
   if (trackCache) return trackCache;
   const c2c2c = withBeachStop(routeTrack.c2c2c as unknown as LngLat[]);
-  const mse = routeTrack.mse as unknown as LngLat[];
-  const pts = [...c2c2c, ...mse];
+  const cce = routeTrack.cce as unknown as LngLat[];
+  const pts = [...c2c2c, ...cce];
   const cum: number[] = [0];
   for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + haversine(pts[i - 1], pts[i]));
   const total = cum[cum.length - 1] || 1;
@@ -461,7 +466,7 @@ function getTrackData(): TrackData {
   });
   pausePoints.sort((a, b) => a.frac - b.frac);
 
-  trackCache = { c2c2c, mse, pts, cum, total, split, cities, cityIdx, milesAt, highAt, pausePoints };
+  trackCache = { c2c2c, cce, pts, cum, total, split, cities, cityIdx, milesAt, highAt, pausePoints };
   return trackCache;
 }
 
@@ -640,6 +645,7 @@ export default function RouteMap() {
   const markersRef = useRef<mapboxgl.Marker[]>([]);
   const markerEls = useRef<Map<string, HTMLDivElement>>(new Map());
   const milestoneEls = useRef<Map<string, HTMLDivElement>>(new Map());
+  const bikeRef = useRef<mapboxgl.Marker | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [layer, setLayer] = useState<MapLayer>('milestones');
   const [mode, setMode] = useState<MapMode>('replay');
@@ -658,6 +664,8 @@ export default function RouteMap() {
   const passedRef = useRef<number>(-1);
   const paintRef = useRef<((p: number) => void) | null>(null);
   const [playing, setPlaying] = useState<boolean>(!reducedRef.current);
+  // the replay only runs while the map is on screen (starts at 50% visible)
+  const [inView, setInView] = useState<boolean>(typeof IntersectionObserver === 'undefined');
   const [caption, setCaption] = useState<Caption | null>(null);
 
   useEffect(() => {
@@ -675,6 +683,17 @@ export default function RouteMap() {
     return () => clearTimeout(timer);
   }, [isFullscreen]);
 
+  // ---------- only run the replay while the map is on screen ----------
+  useEffect(() => {
+    const el = mapContainer.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const io = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), {
+      threshold: 0.5,
+    });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   // ---------- create the map ----------
   useEffect(() => {
     if (!mapContainer.current) return;
@@ -686,8 +705,11 @@ export default function RouteMap() {
       zoom: 4,
       pitch: 0,
       bearing: 0,
+      attributionControl: false,
     });
 
+    // compact attribution (an "i" button) keeps the bottom edge free for the day-by-day caption
+    map.current.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right');
     map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
     map.current.on('load', () => {
@@ -700,8 +722,8 @@ export default function RouteMap() {
         td.c2c2c.length > 1
           ? td.c2c2c
           : citiesForRoute('c2c2c').map((c) => c.coordinates as LngLat);
-      const mseLine: LngLat[] =
-        td.mse.length > 1 ? td.mse : citiesForRoute('mse').map((c) => c.coordinates as LngLat);
+      const cceLine: LngLat[] =
+        td.cce.length > 1 ? td.cce : citiesForRoute('cce').map((c) => c.coordinates as LngLat);
 
       m.addSource('route-c2c2c', {
         type: 'geojson',
@@ -711,19 +733,18 @@ export default function RouteMap() {
           properties: {},
         },
       });
-      m.addSource('route-mse', {
+      m.addSource('route-cce', {
         type: 'geojson',
         data: {
           type: 'Feature',
-          geometry: { type: 'LineString', coordinates: mseLine },
+          geometry: { type: 'LineString', coordinates: cceLine },
           properties: {},
         },
       });
 
       // animated line (replay) sources
       m.addSource('anim-c2c2c', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-      m.addSource('anim-mse', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-      m.addSource('anim-head', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+      m.addSource('anim-cce', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
 
       const lineLayout = { 'line-cap': 'round' as const, 'line-join': 'round' as const };
 
@@ -735,11 +756,11 @@ export default function RouteMap() {
         paint: { 'line-color': ROUTE_COLORS.c2c2c, 'line-width': 4, 'line-opacity': 0.15 },
       });
       m.addLayer({
-        id: 'route-line-mse',
+        id: 'route-line-cce',
         type: 'line',
-        source: 'route-mse',
+        source: 'route-cce',
         layout: lineLayout,
-        paint: { 'line-color': ROUTE_COLORS.mse, 'line-width': 4, 'line-opacity': 0.15 },
+        paint: { 'line-color': ROUTE_COLORS.cce, 'line-width': 4, 'line-opacity': 0.15 },
       });
       m.addLayer({
         id: 'anim-line-c2c2c',
@@ -749,23 +770,22 @@ export default function RouteMap() {
         paint: { 'line-color': ROUTE_COLORS.c2c2c, 'line-width': 4, 'line-opacity': 1 },
       });
       m.addLayer({
-        id: 'anim-line-mse',
+        id: 'anim-line-cce',
         type: 'line',
-        source: 'anim-mse',
+        source: 'anim-cce',
         layout: lineLayout,
-        paint: { 'line-color': ROUTE_COLORS.mse, 'line-width': 4, 'line-opacity': 1 },
+        paint: { 'line-color': ROUTE_COLORS.cce, 'line-width': 4, 'line-opacity': 1 },
       });
-      m.addLayer({
-        id: 'anim-head',
-        type: 'circle',
-        source: 'anim-head',
-        paint: {
-          'circle-radius': 6,
-          'circle-color': '#F2DFC0',
-          'circle-stroke-color': '#2a1a08',
-          'circle-stroke-width': 2,
-        },
-      });
+      // the little bike that rides along the line during the replay
+      const bikeEl = document.createElement('div');
+      bikeEl.style.width = '36px';
+      bikeEl.style.height = '22px';
+      bikeEl.style.pointerEvents = 'none';
+      bikeEl.style.display = 'none';
+      bikeEl.innerHTML = BIKE_SVG;
+      bikeRef.current = new mapboxgl.Marker({ element: bikeEl, anchor: 'bottom', offset: [0, 1] })
+        .setLngLat([0, 0])
+        .addTo(m);
 
       setIsLoading(false);
     });
@@ -774,6 +794,8 @@ export default function RouteMap() {
       markersRef.current.forEach((marker) => marker.remove());
       if (popupRef.current) popupRef.current.remove();
       if (hoverPopupRef.current) hoverPopupRef.current.remove();
+      bikeRef.current?.remove();
+      bikeRef.current = null;
       map.current?.remove();
     };
   }, []);
@@ -784,16 +806,17 @@ export default function RouteMap() {
     if (!m || isLoading) return;
     const replay = mode === 'replay';
 
-    (['c2c2c', 'mse'] as RouteKey[]).forEach((route) => {
+    (['c2c2c', 'cce'] as RouteKey[]).forEach((route) => {
       const layerId = `route-line-${route}`;
       if (m.getLayer(layerId)) {
         m.setPaintProperty(layerId, 'line-opacity', replay ? 0.15 : route === mode ? 1 : 0.12);
       }
     });
 
-    ['anim-line-c2c2c', 'anim-line-mse', 'anim-head'].forEach((id) => {
+    ['anim-line-c2c2c', 'anim-line-cce'].forEach((id) => {
       if (m.getLayer(id)) m.setLayoutProperty(id, 'visibility', replay ? 'visible' : 'none');
     });
+    if (bikeRef.current) bikeRef.current.getElement().style.display = replay ? 'block' : 'none';
 
     const targetCities = mode === 'replay' ? getAllCities() : citiesForRoute(mode);
     if (targetCities.length > 0) {
@@ -846,14 +869,20 @@ export default function RouteMap() {
       const part1: LngLat[] = i < td.split ? [...td.pts.slice(0, i + 1), head] : td.c2c2c;
       const part2: LngLat[] = i >= td.split ? [...td.pts.slice(td.split, i + 1), head] : [];
       setLineData(m, 'anim-c2c2c', part1);
-      setLineData(m, 'anim-mse', part2);
+      setLineData(m, 'anim-cce', part2);
 
-      const headSrc = m.getSource('anim-head') as mapboxgl.GeoJSONSource | undefined;
-      headSrc?.setData({
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: head },
-        properties: {},
-      });
+      // move the bike to the head of the line and face it the way the route is heading
+      const bike = bikeRef.current;
+      if (bike) {
+        bike.setLngLat(head);
+        const ahead = td.pts[Math.min(i + 6, td.pts.length - 1)];
+        const behind = td.pts[Math.max(i - 6, 0)];
+        const dLng = ahead[0] - behind[0];
+        if (Math.abs(dLng) > 1e-3) {
+          const svg = bike.getElement().firstElementChild as HTMLElement | null;
+          if (svg) svg.style.transform = dLng < 0 ? 'scaleX(-1)' : 'none';
+        }
+      }
 
       let passed = 0;
       while (passed < td.cities.length && td.cityIdx[passed] <= i) passed++;
@@ -875,7 +904,7 @@ export default function RouteMap() {
     // let the step buttons repaint at any point
     paintRef.current = paint;
     paint(progressRef.current);
-    if (!playing) {
+    if (!playing || !inView) {
       return () => {
         paintRef.current = null;
       };
@@ -953,7 +982,7 @@ export default function RouteMap() {
       cancelAnimationFrame(raf);
       paintRef.current = null;
     };
-  }, [mode, playing, isLoading]);
+  }, [mode, playing, inView, isLoading]);
 
   // while paused: step to the previous / next stop (each stop is a labeled day)
   const stepStop = (dir: 1 | -1) => {
@@ -1278,80 +1307,35 @@ export default function RouteMap() {
     </div>
   );
 
+  // On the map itself, between the Mapbox logo (left) and the attribution button (right).
+  // On phones it sits just above that bottom row instead.
   const replayCaption =
     mode === 'replay' && caption ? (
-      <div className={isFullscreen ? 'w-full px-4 py-2' : 'max-w-3xl mx-auto w-full px-4 mt-2'}>
+      <div className="absolute z-[3] pointer-events-none bottom-9 left-2 right-2 sm:bottom-2 sm:left-28 sm:right-12">
         <div
           style={{
-            backgroundColor: '#2a1a08',
+            backgroundColor: 'rgba(42,26,8,0.92)',
             color: '#F2DFC0',
             border: '1px solid rgba(242,223,192,0.35)',
           }}
-          className="rounded-lg px-3 py-2 text-[11px] sm:text-sm font-semibold text-center leading-tight sm:whitespace-nowrap sm:overflow-hidden sm:text-ellipsis"
+          className="mx-auto w-fit max-w-full rounded-lg px-3 py-1.5 text-[11px] sm:text-sm font-semibold text-center leading-tight sm:whitespace-nowrap sm:overflow-hidden sm:text-ellipsis shadow"
         >
           {captionText(caption)}
         </div>
       </div>
     ) : null;
 
-  const routeToggle = (
-    <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto mb-4">
-      <button
-        onClick={() => setMode('replay')}
-        aria-pressed={mode === 'replay'}
-        className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap border-2 cursor-pointer ${
-          mode === 'replay'
-            ? 'bg-r4n-primary border-r4n-tan text-r4n-tan shadow-md'
-            : 'bg-transparent border-r4n-tan text-r4n-tan hover:bg-r4n-primary/20'
-        }`}
-      >
-        <span className="inline-flex items-center gap-1">
-          <Play size={14} />
-          Journey Replay
-        </span>
-      </button>
-      <button
-        onClick={() => setMode('c2c2c')}
-        aria-pressed={mode === 'c2c2c'}
-        style={mode === 'c2c2c' ? { backgroundColor: ROUTE_COLORS.c2c2c } : undefined}
-        className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap border-2 cursor-pointer ${
-          mode === 'c2c2c'
-            ? 'bg-r4n-primary border-r4n-tan text-r4n-tan shadow-md'
-            : 'bg-transparent border-r4n-tan text-r4n-tan hover:bg-r4n-primary/20'
-        }`}
-      >
-        Coast to Coast to Canyon
-      </button>
-      <button
-        onClick={() => setMode('mse')}
-        aria-pressed={mode === 'mse'}
-        style={
-          mode === 'mse'
-            ? { backgroundColor: ROUTE_COLORS.mse, borderColor: ROUTE_COLORS.mse }
-            : undefined
-        }
-        className={`px-4 py-2 rounded-lg font-semibold text-sm transition whitespace-nowrap border-2 cursor-pointer ${
-          mode === 'mse'
-            ? 'text-r4n-warm-cream shadow-md'
-            : 'bg-transparent border-r4n-sage/30 text-r4n-sage/50 hover:border-r4n-sage hover:text-r4n-sage'
-        }`}
-      >
-        Mountain States Exploration
-      </button>
-    </div>
-  );
-
   const legend = (
-    <div className="mt-4 bg-gray-50 dark:bg-gray-900 rounded-lg p-3 transition-colors max-w-3xl mx-auto">
-      <h3 className="font-bold text-gray-900 dark:text-white mb-3">Map Legend</h3>
-      <div className="flex flex-wrap items-center gap-6 text-sm">
+    <div className="mt-4 mx-auto w-fit max-w-full bg-gray-50 dark:bg-gray-900 rounded-lg px-6 py-3 transition-colors text-center">
+      <h3 className="font-bold text-gray-900 dark:text-white mb-2">Map Legend</h3>
+      <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
         <div className="flex items-center space-x-2">
           <div className="h-1 w-8 rounded" style={{ backgroundColor: ROUTE_COLORS.c2c2c }}></div>
           <span className="text-gray-700 dark:text-gray-300">Coast to Coast to Canyon</span>
         </div>
         <div className="flex items-center space-x-2">
-          <div className="h-1 w-8 rounded" style={{ backgroundColor: ROUTE_COLORS.mse }}></div>
-          <span className="text-gray-700 dark:text-gray-300">Mountain States Exploration</span>
+          <div className="h-1 w-8 rounded" style={{ backgroundColor: ROUTE_COLORS.cce }}></div>
+          <span className="text-gray-700 dark:text-gray-300">Canyon Country Exploration</span>
         </div>
       </div>
     </div>
@@ -1365,21 +1349,27 @@ export default function RouteMap() {
         : 'w-full'
       }
     >
-      <MapControls layer={layer} onLayerChange={setLayer} />
-      {routeToggle}
+      <MapControls
+        layer={layer}
+        onLayerChange={setLayer}
+        mode={mode}
+        onModeChange={setMode}
+        routeColors={ROUTE_COLORS}
+      />
 
       <div className={isFullscreen
         ? 'relative flex-1 min-h-0'
-        : 'relative max-w-3xl mx-auto px-4'
+        : 'relative w-full'
       }>
         <div
           ref={mapContainer}
           className={isFullscreen
             ? 'w-full h-full'
-            : 'w-full h-64 sm:h-72 lg:h-80 rounded-lg overflow-hidden shadow-lg'
+            : 'w-full h-72 sm:h-96 lg:h-[32rem] rounded-lg overflow-hidden shadow-lg'
           }
         />
         {mapButtons}
+        {replayCaption}
 
         {isLoading && (
           <div className={`absolute inset-0 bg-black/20 flex items-center justify-center${isFullscreen ? '' : ' rounded-lg'}`}>
@@ -1389,8 +1379,6 @@ export default function RouteMap() {
           </div>
         )}
       </div>
-
-      {replayCaption}
 
       {!isFullscreen && legend}
     </div>

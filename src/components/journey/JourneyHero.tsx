@@ -42,7 +42,7 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
 
         {/* Body paragraph 2 — the invitation */}
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
-          From the coastline to the canyon to the mountain states, we roll through America&apos;s wild places not to conquer them, but to listen. Every mile is an invitation — to step away from the noise, to breathe, to move, and to discover what becomes clear when you get outside and stay there.
+          From the coastline to the canyon and on into canyon country, we roll through America&apos;s wild places not to conquer them, but to listen. Every mile is an invitation — to step away from the noise, to breathe, to move, and to discover what becomes clear when you get outside and stay there.
         </p>
 
         {/* Body paragraph 3 — route context */}
@@ -65,7 +65,7 @@ export default function JourneyHero({ showBanner = false }: JourneyHeroProps) {
       )}
 
       {/* Countdown Timer */}
-      <div className="bg-white dark:bg-r4n-forest-mid rounded-lg p-8 shadow-sm">
+      <div className="max-w-2xl mx-auto bg-white dark:bg-r4n-forest-mid rounded-lg p-8 shadow-sm">
         <CountdownTimer />
       </div>
     </div>

@@ -18,30 +18,27 @@ export default function WritingsPage() {
         </p>
       </div>
 
-      {/* MOUNTAIN STATES EXPLORATION */}
+      {/* CANYON COUNTRY EXPLORATION */}
       <section className="relative overflow-hidden border-t border-gray-200 dark:border-gray-800">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.07] dark:opacity-[0.1]"
           style={{
-            backgroundImage: "url('/images/writings/route-mse.svg')",
+            backgroundImage: "url('/images/writings/route-cce.svg')",
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundSize: 'min(60%, 640px)',
           }}
         />
         <div className="relative max-w-3xl mx-auto px-6 sm:px-10 py-20 text-center">
-          <span className="inline-block text-xs font-bold uppercase tracking-widest text-white bg-r4n-sage px-3 py-1 rounded-full mb-5">
-            New Entries Added Weekly
-          </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Mountain States Exploration
+            Canyon Country Exploration
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto leading-relaxed mb-8">
             The next chapter of the journey: a swing north from Bodaway Gap through Utah&apos;s
-            canyon country and up into Idaho. The page is live and waiting — entries will start
-            appearing as the miles roll by.
+            canyon country to the finish line in South Jordan. Follow the chronicle from
+            Flagstaff to the end of the path.
           </p>
-          <Button href="/journal-mse" variant="primary" size="lg">
+          <Button href="/journal-cce" variant="primary" size="lg">
             Visit the Journal
           </Button>
         </div>
@@ -66,7 +63,7 @@ export default function WritingsPage() {
             Coast to Coast to Canyon
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto leading-relaxed mb-8">
-            Key West to Los Angeles to the bottom of the Grand Canyon — a bicycle, a trailer named
+            Key West to Los Angeles to the bottom of the Grand Canyon — a bicycle named Herbie, a trailer named
             Cleo, a river named the Colorado, and a hundred and forty-three days of dispatches
             from the road. The full journal, start to finish.
           </p>

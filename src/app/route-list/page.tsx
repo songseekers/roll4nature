@@ -6,8 +6,8 @@ import { City } from '@/types/city';
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
-  title: 'Route List | Roll 4 Nature Mountain States Exploration',
-  description: "Full route list for Roll 4 Nature 2026 — 74 stops from Key West, Florida to Salt Lake City, Utah through America's canyon lands, national parks, and mountain states.",
+  title: 'Route List | Roll 4 Nature Canyon Country Exploration',
+  description: `Full route list for Roll 4 Nature 2026 — ${getAllCities().length} stops from Key West, Florida to South Jordan, Utah through America's deserts, national parks, and canyon country.`,
 };
 
 interface StopRow {
@@ -29,9 +29,9 @@ export default function RouteListPage() {
   const stops: StopRow[] = sortedByDay.map((city, index) => ({ city, stop: index + 1 }));
 
   // Flagstaff (route: "both") is the dividing point — it closes out the
-  // MSE section (Salt Lake City -> Flagstaff) and is not repeated in the C2C2C section.
-  const mseStops = stops
-    .filter((s) => s.city.route === 'mse' || s.city.route === 'both')
+  // CCE section (South Jordan -> Flagstaff) and is not repeated in the C2C2C section.
+  const cceStops = stops
+    .filter((s) => s.city.route === 'cce' || s.city.route === 'both')
     .slice()
     .reverse();
   const c2c2cStops = stops
@@ -92,7 +92,7 @@ export default function RouteListPage() {
             Route Schedule
           </h1>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
-            {stops.length} communities across two routes — Coast to Coast to Canyon and Mountain States Exploration
+            {stops.length} communities across two routes — Coast to Coast to Canyon and Canyon Country Exploration
           </p>
           <Link
             href="/#map"
@@ -110,7 +110,7 @@ export default function RouteListPage() {
           </span>
           <span className="flex items-center gap-2 text-gray-900 dark:text-white font-medium">
             <span className="w-4 h-4 rounded-full bg-r4n-sage inline-block" aria-hidden="true" />
-            Mountain States Exploration
+            Canyon Country Exploration
           </span>
           <span className="flex items-center gap-2 text-gray-900 dark:text-white font-medium">
             <span className="w-4 h-4 rounded-full bg-r4n-primary inline-block" aria-hidden="true" />
@@ -132,8 +132,8 @@ export default function RouteListPage() {
                 </tr>
               </thead>
               <tbody>
-                {sectionHeader('Mountain States Exploration — Flagstaff to Salt Lake City', 'bg-r4n-sage')}
-                {mseStops.map((row) => renderRow(row, 'sage'))}
+                {sectionHeader('Canyon Country Exploration — Flagstaff to South Jordan', 'bg-r4n-sage')}
+                {cceStops.map((row) => renderRow(row, 'sage'))}
                 {sectionHeader('Coast to Coast to Canyon — Key West to Flagstaff', 'bg-r4n-primary')}
                 {c2c2cStops.map((row) => renderRow(row, 'orange'))}
               </tbody>

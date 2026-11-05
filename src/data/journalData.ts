@@ -13,7 +13,7 @@ export interface JournalDay {
   title?: string;
 }
 
-export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Northern Arizona', 'Grand Canyon', 'Interlude', 'Mountain State 1: Utah'];
+export const stateOrder = ['Florida', 'Mississippi', 'Louisiana', 'Texas', 'New Mexico', 'Arizona', 'California', 'Nevada', 'Utah', 'Northern Arizona', 'Grand Canyon', 'Interlude', 'Canyon Country: Utah'];
 
 export const stateConfig: Record<string, { color: string; subtitle: string; displayName?: string }> = {
   Florida:      { color: '#1a5276', subtitle: 'Key West to the Panhandle · ~1,000 Miles' },
@@ -28,7 +28,7 @@ export const stateConfig: Record<string, { color: string; subtitle: string; disp
   'Northern Arizona': { color: '#8B4513', subtitle: 'Jacob Lake to Flagstaff', displayName: 'Arizona' },
   'Grand Canyon':     { color: '#6b2a00', subtitle: 'Flagstaff to the Colorado River' },
   'Interlude':        { color: '#c9821f', subtitle: 'Flagstaff to Tuacahn' },
-  'Mountain State 1: Utah': { color: '#b1452f', subtitle: 'Zion to Arches, and the Wasatch Mountains Beyond' },
+  'Canyon Country: Utah': { color: '#b1452f', subtitle: 'Zion to Arches, and the Wasatch Mountains Beyond' },
 };
 
 export const journalDays: JournalDay[] = [
@@ -3420,7 +3420,7 @@ I call that a good day.`,
     num: 162,
     date: "Friday, August 7, 2026",
     location: "Hurricane, UT → Rockville, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Rockville",
     entry: `The seventh of August was Day one hundred sixty-two of this country-exploring ride, and it was also my father's birthday. He passed away years ago, but his memory always comes to me strongly on special days like Father's Day and his birthday. I think of him anytime I'm working with wood or doing some kind of construction project. My father was a good teacher of home construction, auto mechanics, and just about anything that could be done with your hands. He was a quiet man who grew up just after the Great Depression, learning how to make things work on a farm with very little in the way of replacement parts. Baling wire and basic tools could accomplish a lot in his hands. He could work wonders with a little duct tape and a coat hanger. I miss working next to him and learning his secrets.
 
@@ -3471,7 +3471,7 @@ Twenty-three miles on the day.`,
     num: 163,
     date: "Saturday, August 8, 2026",
     location: "Rockville, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Rockville",
     entry: `The eighth of August was Day one hundred sixty-three, and it started in Rockville. I did a little maintenance around the campsite, which was situated in the backyard of a property lush with plant life. I had some breakfast, too, and then decided to head to the library when it opened at noon.
 
@@ -3502,7 +3502,7 @@ Eighteen and three-quarters miles on the day.`,
     num: 164,
     date: "Sunday, August 9, 2026",
     location: "Rockville, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Rockville",
     entry: `The ninth of August was Day one hundred sixty-four. Once again, we awoke at Rancho Evalux. I got up early because I wanted to ride to the top of Zion Canyon, to the point where you can't go any farther. That's where The Narrows starts. Sean wanted to go up there, too. Well, he wanted to get into the park and explore some of the trails, so we both had things we wanted to see.
 
@@ -3549,7 +3549,7 @@ Thirty-two and three-tenths miles on the day.`,
     num: 165,
     date: "Monday, August 10, 2026",
     location: "Rockville, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Rockville",
     entry: `The tenth of August was Day one hundred sixty-five, and it was so exhausting that I neglected to enter it on my phone before falling asleep. It was a day of yard work.
 
@@ -3564,7 +3564,7 @@ After spending time at Liberty Village doing gardening work there, I'm starting 
     num: 166,
     date: "Tuesday, August 11, 2026",
     location: "Rockville, UT (Zion National Park)",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Rockville",
     entry: `The eleventh of August was Day one hundred sixty-six, and it was a Nature makeup day. I had wanted to spend a day doing yard work, which I did on the tenth, so I saved today to be a Zion day, all day long.
 
@@ -3605,7 +3605,7 @@ Forty-six miles on the day.`,
     num: 167,
     date: "Wednesday, August 12, 2026",
     location: "Rockville, UT → Bryce Canyon area, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Bryce Canyon",
     entry: `The twelfth of August was Day one hundred sixty-seven.
 
@@ -3658,7 +3658,7 @@ Fifteen miles on the day.`,
     num: 168,
     date: "Thursday, August 13, 2026",
     location: "Bryce Canyon City, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Bryce Canyon",
     entry: `The thirteenth of August was Day one hundred sixty-eight. It started on a spur road outside Bryce Canyon. I made some eggs and hash—little breakfast burritos—and sliced up an apple that needed to be eaten. We used up most of our tortillas. Sean went to look for rocks for a school assignment while I got ready to get on the road.
 
@@ -3699,7 +3699,7 @@ Twenty and four-tenths miles on the day.`,
     num: 169,
     date: "Friday, August 14, 2026",
     location: "Bryce Canyon City, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Bryce Canyon",
     entry: `The fourteenth of August was Day one hundred sixty-nine, and it was rainy. It rained for hours—pretty constant rain. I woke up around two in the morning and, for whatever reason, couldn't go back to sleep. It happens sometimes. And then, when my alarm goes off, I'm out. That's what happened this morning. I wanted to get up early and go to Sunrise Point to see what all the hubbub was about, but I just didn't have it in me. I heard Sebastian come and get his bike, and when I saw him later, he told me it was around six o'clock. I just couldn't do it.
 
@@ -3740,7 +3740,7 @@ Fifteen and three-tenths miles on the day.`,
     num: 170,
     date: "Saturday, August 15, 2026",
     location: "Bryce Canyon City, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Bryce Canyon",
     entry: `Today was the fifteenth of August. It still is, for a little while longer. Day one hundred seventy.
 
@@ -3805,7 +3805,7 @@ Seven and a half miles on the day.`,
     num: 171,
     date: "Sunday, August 16, 2026",
     location: "Bryce Canyon City, UT → Boulder, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Boulder",
     entry: `The sixteenth of August was Day one hundred seventy-one, and it started in Bryce City and ended in Boulder.
 
@@ -3856,7 +3856,7 @@ Seventy-nine and eight-tenths miles on the day.`,
     num: 172,
     date: "Monday, August 17, 2026",
     location: "Boulder, UT (Calf Creek Falls)",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Boulder",
     entry: `The seventeenth of August was Day one hundred seventy-two, and it was full of Nature.
 
@@ -3965,7 +3965,7 @@ I ask my knees for a little more understanding, and pray for endurance.`,
     num: 173,
     date: "Tuesday, August 18, 2026",
     location: "Boulder, UT → Capitol Reef area, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Capitol Reef",
     entry: `The eighteenth of August was Day one hundred seventy-three. It started at Cindy's farm with the crow of a rooster and the bleating of sheep.
 
@@ -4078,7 +4078,7 @@ That is the plan.`,
     num: 174,
     date: "Wednesday, August 19, 2026",
     location: "Capitol Reef National Park, UT (West to East entrance)",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Capitol Reef",
     entry: `The nineteenth of August was Day one hundred seventy-four. It began and ended outside of Capitol Reef National Park. We were at the West entrance at the break of day and the East entrance when the sun went down.
 
@@ -4141,7 +4141,7 @@ Forty and nine-tenths miles on the day.`,
     num: 175,
     date: "Thursday, August 20, 2026",
     location: "Capitol Reef area, UT → Moab, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Moab",
     entry: `The twentieth of August was Day one hundred seventy-five, and it began on Notom Road just outside of Capitol Reef. I awoke relatively early, had breakfast, and set out toward the east, hopefully toward a place where I could find enough signal to figure out the exact route to Moab.
 
@@ -4168,7 +4168,7 @@ Seventy-seven miles on the day.`,
     num: 176,
     date: "Friday, August 21, 2026",
     location: "Moab, UT",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Moab",
     entry: `The twenty-first of August was Day one hundred seventy-six, and it was spent in Moab, Utah. Although I had it in mind to ride some of the legendary trails around here, it wasn't meant to be. I never left the city limits.
 
@@ -4231,7 +4231,7 @@ Roll 4 Nature.`,
     num: 177,
     date: "Saturday, August 22, 2026",
     location: "Moab, UT → Canyonlands junction, UT (via Arches National Park)",
-    state: "Mountain State 1: Utah",
+    state: "Canyon Country: Utah",
     region: "Mountain State 1: Utah — Arches & Canyonlands",
     entry: `The twenty-second of August was Day one hundred seventy-seven. It began in Moab and ended at the junction where the highway leads toward Canyonlands, about twenty-two miles from the park. It rained a little during the wee hours of the morning, but it was just a sprinkling.
 
@@ -4275,5 +4275,210 @@ It's almost twelve-thirty, so I'm going to bed.
 
 Forty-six and three-tenths miles on the day.`,
     hashtags: ["#Gratitude", "#Wonder", "#Connection", "#Sparkle", "#Community", "#Adventure", "#NewWayOfLife", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 178,
+    date: "Sunday, August 23, 2026",
+    location: "Canyonlands National Park, UT",
+    state: "Canyon Country: Utah",
+    region: "Mountain State 1: Utah — Arches & Canyonlands",
+    entry: `The twenty-third of August was Day one hundred seventy-eight, the last day of our Big Five National Park Tour in Utah. Our attention was turned toward Canyonlands.
+
+Canyonlands is a massively huge network of canyons dug out of the soft, sandy soil of this part of Utah, carved by the Green River and the Colorado River working in tandem with each other. The results are quite impressive. It's also one of the most—rustic would be a good word—of all the Utah parks.
+
+There are only two places to get water: the visitor center and another location near the campground at the end of the road. There's also a road called the White Rim Road, where you can drive your vehicle down through the canyon. The ribbon of dirt runs all over the place. It seems like if you had a side-by-side or something, that would be a lot of fun. But I didn't even want to think about taking Marcus down in there with all that sand, especially after the experience we had when we visited Toroweap on the West Rim of the Grand Canyon. No, thank you.
+
+We looked at the route through the park, and it appeared that we could visit all of the overlooks because they were all near the road. And that's what we did. Eighteen miles times two is thirty-six, plus another ten, plus twenty-two miles up and twenty-two miles back, along with some hiking, for a total of eighty-six point eighty-six miles.
+
+It was a lot of climbing. A whole lot of climbing. Almost four thousand seven hundred feet of ascent.
+
+Sean drove Marcus up the hill, which allowed us to get some signatures. Luckily, the way back to camp was downhill most of the way. I don't think I could have made it otherwise. It was very hilly.
+
+Along the way, we met some awesome people. Most notable was a fellow from San Antonio and his son. They were celebrating the son finishing a tour of the United States, teaching kids about science in a pretty innovative way.
+
+He's a clown. He finished clown school and developed a program to introduce complex topics to kids by making learning fun. His website includes videos from his shows, with groups of children learning to appreciate Nature and understand how things work in the body.
+
+His name is Dallas, and his dad's name is Jeff. Jeff lives in San Antonio, where I started this little venture, and Dallas lives in France. He rattled off some French, and it was quite French-sounding to me. He even gave us a few mime skits, like climbing a wall and pushing a boat with a pole.
+
+It was really cool. It was a really cool experience. I got their phone numbers because I'd like to continue to correspond with them if possible.
+
+Canyonlands was awesome, although I got a little bit lost, as I am wont to do.
+
+On the Upheaval Dome hike, I think I somehow found the Whale Rock formation. I felt that the Upheaval Dome trail wasn't very well marked. Then there was another trail marker warning that you were on an eight-mile trail that was very strenuous, difficult to follow, and not recommended, especially in the summertime. Proceed at your own risk.
+
+During the hike, I came to places where it looked like there were three possible paths, and I had no idea which one to follow. At some point, I started looking for my own footprints. The tread of my shoes was kind of unique, so I simply followed my footprints back out.
+
+At the end, I thought I was on my way out, but I saw the sign again saying that I was on that really strenuous hike. You probably don't want to be on this trail unless you have an ample water supply and know your way around.
+
+That was the same eight-mile path I had been trying to avoid!
+
+Fortunately, that allowed me to turn around and find the right path out. In hindsight, I should have started my Trek app, which shows the path and makes it easier to find my way back out. But I didn't know the hike was going to be so ambiguous.
+
+I think my favorite view was the Green River Overlook. I went to the Grand View Overlook, but it was nearly dark by the time I arrived. I wasn't able to truly see all the details of that view, but even in the waning light, I could tell that it was massive. It was a big deal.
+
+Mission accomplished. All five Utah national parks have now been visited, and tomorrow we'll point our bicycles north toward South Jordan, with the goal of arriving by Wednesday.
+
+We'll spend some time visiting family, and I hope to be able to get rid of a lot of my stuff while we're there. There are thrift stores where I can donate the things I no longer need. I've been thinking more and more that minimalism is a worthwhile endeavor. It's time to disencumber myself from a lot of the things I've been carrying around.
+
+Some of these are items I haven't touched since the beginning of this trip. I've been carrying them around for eventualities that simply haven't arisen.
+
+Six months of carrying something on a bicycle has a way of making you question whether you really need it.
+
+Attachments are somewhat of a two-edged sword. The things we care about can give life meaning, but the things we hold onto simply because we might need them someday can become a burden. When you're carrying those things across the country for six months, that burden becomes a little easier to feel.
+
+Everything matters.
+
+The challenge is figuring out what truly matters enough to keep carrying—not just on the bicycle, but through life. I think that's something worth figuring out.
+
+Wish me luck!`,
+    hashtags: ["#Gratitude", "#Wonder", "#Adventure", "#Community", "#Connection", "#Reflection", "#Milestone", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 179,
+    date: "Monday, August 24, 2026",
+    location: "Green River, UT → I-15 rest area, UT (en route to Provo)",
+    state: "Canyon Country: Utah",
+    region: "Mountain State 1: Utah — En Route to Provo",
+    entry: `The twenty-fourth of August was Day one hundred seventy-nine, and it was a full day of riding, riding, riding.
+
+We started from Junction Camp. I just made that name up, but adventurers are allowed liberties like that.
+
+We headed up the highway with hardly any shoulder before eventually getting onto I-70. I arrived in Green River around four o'clock, where I discovered that Sean's bike was broken. We made the decision that I should ride the rest of the route while he continued driving.
+
+It was a good day for riding, with the wind at my back and a gentle one-degree incline in a lot of places, followed by a one-degree decline in others. I made good time, and surprisingly, I'm not too tired.
+
+Tomorrow is going to be another long day, with the plan to make it to Provo. We should be able to find a derailleur hanger for Sean's bike there. Derailleur hangers are a pain because there are so many different varieties. If we make it that far, we'll be within one day's ride of South Jordan, our next destination.
+
+It was a good, productive day for the most part. It was a little overcast, which was wonderful. I didn't get rained on, and the clouds kept the temperature from getting too hot. It was a good day for contemplation, for experiencing Nature, and for gratitude.
+
+There was also a minor miracle I want to report.
+
+We were looking for a place to stay, and I thought I could do another eighteen miles. My hope was to find a wide shoulder where we could park and sleep, then get an early start the next morning. It's a long way to Provo, and I wanted to maximize our chances of getting there.
+
+Then, about eleven miles into those eighteen, I got a flat tire.
+
+I repaired it and continued on, only to encounter a big hill. As I was making my way up, I saw a sign for a rest area.
+
+It hadn't shown up on Google Maps when I was looking for a place to stay.
+
+I think it must have been placed there by my Guardian Angels. I can't come up with another explanation.
+
+There it was, at exactly the right time and in exactly the right place. A safe place to stop for the night, with bathrooms, water, and even a hot shower—our outdoor shower, that is. The rest area wasn't equipped with fancy stuff like that.
+
+A flat tire could have turned into a roadblock. Instead, it led us directly to a place where we could stop, rest, clean up, and prepare for another long day toward Provo.
+
+I believe in miracles! I ended up riding eighty-one point six total miles today.`,
+    hashtags: ["#Gratitude", "#Grit", "#Adventure", "#Sparkle", "#ProblemSolving", "#NewWayOfLife", "#Wonder", "#Milestone", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 180,
+    date: "Tuesday, August 25, 2026",
+    location: "Wellington, UT → Spanish Fork, UT",
+    state: "Canyon Country: Utah",
+    region: "Mountain State 1: Utah — En Route to Provo",
+    entry: `The twenty-fifth of August was Day one hundred eighty. It started at a rest area south of Wellington. I wanted to get to Wellington yesterday, but we spent time in Green River trying to fix Sean's bike. Then I got a flat tire about eight miles from Wellington, and we found the miracle rest area about a mile later, just as dusk was falling. It was a long day, but a satisfying one at the same time. I didn't make it as far as I had planned, but then again, I didn't know I'd be doing all the riding. I thought that once I got to Green River, I would be driving.
+
+But Nature had other ideas.
+
+To be fair, I don't know if Nature broke Sean's derailleur hanger, or if that particular delay was human-caused. Either way, today I guess I made up for it because I rode a total of one hundred five miles.
+
+The route took me up over a pass called Soldier Summit. I liked that. It was a climb, but it wasn't overly steep. It was mostly a long succession of one- and two-percent inclines, with a few sections around five to seven percent. Luckily, none of them lasted very long, like some of the climbs I encountered riding in and between the Utah national parks.
+
+Once I reached the summit, it was probably eighty percent downhill. There was one more small hill toward the bottom that I had to climb before riding into Spanish Fork, but for the most part, the hard work was behind me.
+
+I have to confess, it was just a magical day.
+
+The temperature was perfect. A friend I hadn't heard from in some time called me, and we had a really good talk. I also had some good conversations with people along the road. And then there was the little adventure involving Sean, a water bottle, and a treasure map.
+
+There weren't any sources of water until after the summit, so I asked Sean to stash some water for me at the top. Not knowing what the summit looked like, I just asked him to find somewhere close to the summit and maybe leave me a hint—kind of like taking a peek at a treasure map to get an idea of where to look for the booty.
+
+When I reached Soldier Summit, I couldn't find anything.
+
+I decided to check my phone and saw that Sean had sent me a picture and a text:
+
+"History stands above me, but I'm waiting down below. Where am I? 👀💧
+—Water Bottle"
+
+I didn't even look at the picture. As soon as I read the message, I noticed an information-board area at the bottom of the hill. I figured that had to be what his clue was referring to.
+
+So I rode down the hill and started looking for the water while learning a little more about Soldier Summit. After several minutes of fruitless searching, I finally looked more carefully at the picture. Then I looked up and peered into the distance.
+
+Just before the road began to curve to the left and disappear from sight, I saw what Sean wanted me to see.
+
+A gas station.
+
+With ice and everything!
+
+I laughed at my folly as I rode toward the station. And there, standing at the gas station, I saw a couple I had met at Canyonlands. I wouldn't have recognized them at first, but the guy gave me the Team Bravo signal, and it all came back to me in an instant.
+
+I love the sparkles.
+
+When I finally got to Spanish Fork, I met up with Sean at the Love's gas station. I walked inside and asked the manager if she might give me a free shower because I had ridden one hundred five miles. I figured I would just buy one if it was five bucks or so, but it was eighteen dollars, and that's just not in my budget right now.
+
+Unfortunately, she wasn't able to accommodate me.
+
+But then a customer named James overheard me talking to her. He's a commercial driver, and he gets free showers through the Love's app when he buys fuel. He pulled out his phone and gave me one of his showers.
+
+I felt like crying. I was so dirty and grimy. I'd been on the road for thirteen hours. That shower was worth so much more to me than the price of a shower. I wish I could thank him enough.
+
+The shower felt incredible. I took my time and tried to really be in the moment, getting thoroughly clean from head to toe—including my teeth. Afterward, as I started walking back toward the rig, I saw James walking toward his truck.
+
+I caught up with him and had another chance to thank him. He seemed interested when I told him what Sean and I were doing, so we went back to home base and I showed him the trailer. I explained what it means to sign it. I tell people that it's my petition, and I ask everyone who loves Nature to sign it.
+
+James signed it.
+
+We spent a few special moments sharing little notes about life.
+
+Thank you, James. And thanks for joining Team Bravo. You are an awesome individual.
+
+My favorite part of the ride today was the stretch that paralleled the river and the twin train tracks running through the gorge. I loved seeing the numerous twin tunnels that allowed the trains to travel in a straight line through the mountains. Everything about that stretch was picturesque. It was beautiful to see the river winding alongside the road for so many miles.
+
+My knees are quite tender right now. My shoulders and my knees, I think, are my Achilles heel.
+
+Get it?
+
+I'm going to bed.`,
+    hashtags: ["#Gratitude", "#Sparkle", "#Grit", "#Adventure", "#Community", "#Connection", "#ProblemSolving", "#NewWayOfLife", "#RollForVeterans", "#TeamBravo"]
+  },
+  {
+    num: 181,
+    date: "Wednesday, August 26, 2026",
+    location: "Spanish Fork, UT → South Jordan, UT (via Provo)",
+    state: "Canyon Country: Utah",
+    region: "Mountain State 1: Utah — South Jordan",
+    entry: `The twenty-sixth of August was Day one hundred eighty-one.
+
+We departed the Love's in Spanish Fork with me on my bike because Sean's bike was still broken. Our first stop was the Ford dealership in Provo, where I bought Marcus Antonius way back in twenty twenty-two. I found out that they're under different management now, and they don't have any record of the transaction. Since they couldn't pull Marcus up in their system, they recommended that I visit the Ford dealership near where I'll be staying in South Jordan. While we were there at the Provo dealership, we met a salesman named John. He really likes the outdoors and enjoys biking, so we had plenty to talk about. John also shared some of his story with us. He talked about gaining sobriety after a near-death experience and how much better he feels now, especially being able to be a better father to his children. It was really nice to talk with somebody who was so open about life's challenges.
+
+I recorded a three-minute short with John, and we also obtained several signatures from people at the dealership.
+
+As I was riding toward the dealership earlier, I had come across one of those little moments that can make a busy day stop completely. I was riding on a bike trail and crossed a bridge over the Provo River. The water below was so picturesque that I had to get off my bike and walk down to the riverbank.
+
+I sat there for a few minutes and just appreciated it. It was a little pocket of serenity in the middle of a big city. I couldn't even hear the cars from down there. There were just birds, water, and insects. And that's the way we like it.
+
+From the Ford dealership, we headed to Ari, a bicycle manufacturing company that John had told us about. It was about an hour and a half away by bicycle, but it was in the same general direction as South Jordan, our ultimate destination.
+
+We visited with Jordan, the owner's son, who talked with me on-camera about what makes Ari special. He also signed the trailer.
+
+Ari is focused on making bicycles available to the common person. I don't know if I'd classify them as "affordable," because the bikes are still what I would consider rather expensive, but the quality is very high. After getting a tour of the assembly area, I walked away with a real appreciation for the attention to quality that Ari puts into its bikes.
+
+Their prices are also much more competitive than what you'd typically find in a retail shop, because their goal is to get everybody on a bike. I like that philosophy.
+
+Finally, we headed to the bike shop that had the derailleur hanger for Sean's bike. Since I was riding my bike, I arrived later, but I was able to help Sean put the chain back on and adjust the shifting. We got some more signatures from the shop technicians while we were there, too.
+
+Unfortunately, I put the cable on the derailleur too tight, so Sean took the bike into the shop and had them make the final adjustment. By that point, I was tired and ready to get to the end of the day.
+
+Eventually, we made it to a friend's house in South Jordan, where we'll stay for the duration of our visit.
+
+It feels pretty good to be in one place for a little while after four consecutive days of riding more than eighty miles. The one hundred five-mile ride over Soldier Summit was the longest. Mercifully, today's total was thirty-two point three miles.
+
+And I think I need the break.
+
+My knees are beginning to give me some pretty clear signs of their displeasure. I have plenty of sorting and cleaning to do while we're here, anyway. I plan to take everything out of the truck and clean as much as possible, getting Marcus back to something resembling the condition he was in when this adventure began.
+
+If only for a few days, it'll be nice to have a nice, clean truck.
+
+And now it is quite late, so I must bid you adieu.`,
+    hashtags: ["#Gratitude", "#Connection", "#Community", "#Wonder", "#NewWayOfLife", "#Grit", "#Milestone", "#Reflection", "#RollForVeterans", "#TeamBravo"]
   },
 ];

@@ -39,8 +39,8 @@ const OUT = path.join(ROOT, 'src', 'data', 'route-track.json');
 
 // ---------- settings ----------
 const START = Date.parse('2026-02-27T00:00:00Z');
-const END = Date.parse('2026-08-29T06:00:00Z');   // Salt Lake City arrival (Aug 28, US time)
-const SPLIT = Date.parse('2026-07-02T00:00:00Z'); // before = Coast to Coast to Canyon, after = Mountain States Exploration
+const END = Date.parse('2026-08-26T08:00:00Z');   // South Jordan arrival (Aug 25, US time), the final destination
+const SPLIT = Date.parse('2026-07-02T00:00:00Z'); // before = Coast to Coast to Canyon, after = Canyon Country Exploration
 const MIN_STEP_M = 50;         // drop points closer together than this
 const TRIM_END_M = 1000;       // hide the first/last 1 km of every ride
 const TOLERANCE_M = 120;       // line simplification tolerance
@@ -332,14 +332,14 @@ kept.sort((a, b) => a.sortKey - b.sortKey);
 const round = (p) => [+p[0].toFixed(4), +p[1].toFixed(4)];
 const ptDate = (p, fallback) => iso(Number.isFinite(p[2]) ? p[2] : fallback);
 const mkLeg = () => ({ pts: [], ridden: 0, bridged: 0 });
-const legs = { c2c2c: mkLeg(), mse: mkLeg() };
+const legs = { c2c2c: mkLeg(), cce: mkLeg() };
 const bridges = [];
 let filledRoad = 0;
 let filledStraight = 0;
 let prev = null;
 
 for (const r of kept) {
-  const leg = r.sortKey < SPLIT ? legs.c2c2c : legs.mse;
+  const leg = r.sortKey < SPLIT ? legs.c2c2c : legs.cce;
   const first = r.pts[0];
   const last = r.pts[r.pts.length - 1];
   if (prev) {
@@ -377,9 +377,9 @@ fs.writeFileSync(
   OUT,
   JSON.stringify({
     generated: new Date().toISOString(),
-    range: ['2026-02-27', '2026-08-28'],
+    range: ['2026-02-27', '2026-08-25'],
     c2c2c: legs.c2c2c.pts,
-    mse: legs.mse.pts,
+    cce: legs.cce.pts,
   })
 );
 
@@ -395,9 +395,9 @@ console.log('Rides skipped            :', skipped.length);
 skipped.forEach((s) => console.log('   -', s));
 console.log('Gaps filled along roads  :', filledRoad);
 console.log('Gaps left as straight    :', filledStraight, '(only counts gaps over', mi(GAP_FILL_MIN_M), 'mi)');
-console.log('Points  c2c2c / mse      :', legs.c2c2c.pts.length, '/', legs.mse.pts.length);
-console.log('Ridden miles c2c2c / mse :', mi(legs.c2c2c.ridden), '/', mi(legs.mse.ridden));
-console.log('Gap miles (straight-line) c2c2c / mse:', mi(legs.c2c2c.bridged), '/', mi(legs.mse.bridged));
+console.log('Points  c2c2c / cce      :', legs.c2c2c.pts.length, '/', legs.cce.pts.length);
+console.log('Ridden miles c2c2c / cce :', mi(legs.c2c2c.ridden), '/', mi(legs.cce.ridden));
+console.log('Gap miles (straight-line) c2c2c / cce:', mi(legs.c2c2c.bridged), '/', mi(legs.cce.bridged));
 console.log('Largest gaps:');
 bridges
   .sort((a, b) => b.gap - a.gap)

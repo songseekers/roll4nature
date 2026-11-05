@@ -726,7 +726,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "flagstaff",
-    "description": "Coast to Coast to Canyon complete. Mountain States Exploration begins.",
+    "description": "Coast to Coast to Canyon complete. Canyon Country Exploration begins.",
     "route": "both"
   },
   {
@@ -740,7 +740,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "bodaway-gap",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "vermillion-cliffs-az",
@@ -753,7 +753,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "vermillion-cliffs",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "jacob-lake-az-2",
@@ -766,7 +766,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "jacob-lake-jul28",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "kanab-ut-2",
@@ -779,7 +779,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "kanab-jul30",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "hildale-ut",
@@ -792,7 +792,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "hildale",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "hurricane-ut-2",
@@ -805,7 +805,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "hurricane-aug03",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "ivins-ut-2",
@@ -818,7 +818,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "ivins-aug05",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "zion-np-ut",
@@ -831,7 +831,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "zion-national-park",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "bryce-np-ut",
@@ -844,7 +844,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "bryce-national-park",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "capital-reef-np-ut",
@@ -857,7 +857,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "capital-reef-national-park",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "canyonlands-np-ut",
@@ -870,7 +870,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "canyonlands-national-park",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "moab-ut",
@@ -883,7 +883,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "moab",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "arches-np-ut",
@@ -896,7 +896,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "arches-national-park",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "green-river-ut",
@@ -909,7 +909,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "green-river",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "price-ut",
@@ -922,7 +922,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "price",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "springville-ut",
@@ -935,7 +935,7 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "springville",
-    "route": "mse"
+    "route": "cce"
   },
   {
     "id": "south-jordan-ut",
@@ -948,19 +948,6 @@
     "distanceFromStart": 0,
     "tier": "major",
     "slug": "south-jordan",
-    "route": "mse"
-  },
-  {
-    "id": "salt-lake-city-ut",
-    "name": "Salt Lake City",
-    "state": "Utah",
-    "coordinates": [-111.891, 40.7608],
-    "arrivalDate": "2026-08-28",
-    "dayNumber": 184,
-    "distanceFromPrevious": 0,
-    "distanceFromStart": 0,
-    "tier": "major",
-    "slug": "salt-lake-city",
-    "route": "mse"
+    "route": "cce"
   }
 ]

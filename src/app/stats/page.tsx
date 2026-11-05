@@ -119,19 +119,19 @@ const summaryCards = [
 
 // ─── Segmented table data ──────────────────────────────────────────────────────
 // Back in San Antonio: Sep 18, 2026 onward
-// Mountain States Exploration: Jul 24 – Sep 17, 2026
+// Canyon Country Exploration: Jul 24 – Sep 17, 2026
 // Coast to Coast to Canyon: Feb 27 – Jul 4, 2026 (Jul 4 Flagstaff ride is the final C2C2C ride)
 
-const MSE_CUTOFF = '2026-07-24';
+const CCE_CUTOFF = '2026-07-24';
 const SA_CUTOFF = '2026-09-18';
 
 const saActivities = activities.filter((a) => a.date >= SA_CUTOFF);
-const mseActivities = activities.filter((a) => a.date >= MSE_CUTOFF && a.date < SA_CUTOFF);
-const c2c2cActivities = activities.filter((a) => a.date < MSE_CUTOFF);
+const cceActivities = activities.filter((a) => a.date >= CCE_CUTOFF && a.date < SA_CUTOFF);
+const c2c2cActivities = activities.filter((a) => a.date < CCE_CUTOFF);
 
 const saDateRows = dateRows.filter((r) => r.date >= SA_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
-const mseDateRows = dateRows.filter((r) => r.date >= MSE_CUTOFF && r.date < SA_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
-const c2c2cDateRows = dateRows.filter((r) => r.date < MSE_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
+const cceDateRows = dateRows.filter((r) => r.date >= CCE_CUTOFF && r.date < SA_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
+const c2c2cDateRows = dateRows.filter((r) => r.date < CCE_CUTOFF).slice().sort((a, b) => b.date.localeCompare(a.date));
 
 const cumulativeSummary = {
   count: activities.length,
@@ -151,13 +151,13 @@ const saSummary = {
   descent: sumBy(saActivities, 'totalDescent'),
 };
 
-const mseSummary = {
-  count: mseActivities.length,
-  distance: sumBy(mseActivities, 'distance'),
-  totalSecs: sumSeconds(mseActivities),
-  calories: sumBy(mseActivities, 'calories'),
-  ascent: sumBy(mseActivities, 'totalAscent'),
-  descent: sumBy(mseActivities, 'totalDescent'),
+const cceSummary = {
+  count: cceActivities.length,
+  distance: sumBy(cceActivities, 'distance'),
+  totalSecs: sumSeconds(cceActivities),
+  calories: sumBy(cceActivities, 'calories'),
+  ascent: sumBy(cceActivities, 'totalAscent'),
+  descent: sumBy(cceActivities, 'totalDescent'),
 };
 
 const c2c2cSummary = {
@@ -180,12 +180,12 @@ const tableSegments: WorkoutTableSegment[] = [
     summaryClassName: 'bg-r4n-earth-light/40 dark:bg-r4n-earth/20 font-semibold text-gray-900 dark:text-white',
   },
   {
-    key: 'mse',
+    key: 'cce',
     headerLabel: '🏔️ Mountain States Exploration — Jul 24 – Aug 26, 2026',
     headerClassName: 'bg-r4n-sage text-white',
-    rows: mseDateRows,
+    rows: cceDateRows,
     summaryLabel: '🏔️ Mountain States Exploration Subtotal',
-    summary: mseSummary,
+    summary: cceSummary,
     summaryClassName: 'bg-r4n-sage-light/40 dark:bg-r4n-sage/20 font-semibold text-gray-900 dark:text-white',
   },
   {

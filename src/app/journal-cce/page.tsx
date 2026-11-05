@@ -1,11 +1,11 @@
 import { journalDays, stateOrder, stateConfig, JournalDay } from '@/data/journalData';
 import JournalSidebar from '@/components/journal/JournalSidebar';
 
-const MSE_FIRST_DAY = 144;
+const CCE_FIRST_DAY = 144;
 
-export default function JournalMSEPage() {
+export default function JournalCCEPage() {
   const byState: Record<string, JournalDay[]> = {};
-  journalDays.filter(d => d.num >= MSE_FIRST_DAY).forEach(d => {
+  journalDays.filter(d => d.num >= CCE_FIRST_DAY).forEach(d => {
     if (!byState[d.state]) byState[d.state] = [];
     const existing = byState[d.state].findIndex(x => x.num === d.num);
     if (existing >= 0) byState[d.state][existing] = d;
@@ -31,7 +31,7 @@ export default function JournalMSEPage() {
 
         <JournalSidebar
           states={sidebarStates}
-          bannerTitle="MOUNTAIN STATES"
+          bannerTitle="CANYON COUNTRY"
           emptyMessage="The journey hasn't started yet — entries will appear here once it does."
         />
 
@@ -42,7 +42,7 @@ export default function JournalMSEPage() {
           <div
             className="pointer-events-none fixed inset-0 -z-10 opacity-[0.06] dark:opacity-[0.08]"
             style={{
-              backgroundImage: "url('/images/writings/route-mse.svg')",
+              backgroundImage: "url('/images/writings/route-cce.svg')",
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center 30%',
               backgroundSize: 'min(70%, 700px)',
@@ -55,7 +55,7 @@ export default function JournalMSEPage() {
               Roll 4 Nature
             </div>
             <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-5 leading-none">
-              MOUNTAIN STATES EXPLORATION
+              CANYON COUNTRY EXPLORATION
             </h1>
             <p className="text-2xl sm:text-3xl text-gray-500 dark:text-gray-400 italic mb-6">
               A new chronicle begins
@@ -67,8 +67,6 @@ export default function JournalMSEPage() {
               <span>Flagstaff, AZ</span>
               <span>→</span>
               <span>Utah</span>
-              <span>→</span>
-              <span>Idaho</span>
             </div>
 
             {/* NOTE — title page only */}

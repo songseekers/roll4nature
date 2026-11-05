@@ -7,21 +7,21 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata = {
-  title: 'Roll 4 Nature | Mountain States Exploration 2026',
-  description: 'Roll 4 Nature (roll4nature, Roll for Nature, R4N) — a veteran-founded cycling journey through America\'s wild places. Mountain States Exploration: Flagstaff, AZ to Salt Lake City, UT. Supporting Team RWB veterans wellness through nature, movement, and purpose.',
+  title: 'Roll 4 Nature | Canyon Country Exploration 2026',
+  description: 'Roll 4 Nature (roll4nature, Roll for Nature, R4N) — a veteran-founded cycling journey through America\'s wild places. Canyon Country Exploration: Flagstaff, AZ to South Jordan, UT. Supporting Team RWB veterans wellness through nature, movement, and purpose.',
   keywords: [
     'Roll 4 Nature',
     'Roll for Nature',
     'roll4nature',
     'R4N 2026',
-    'Mountain States Exploration',
+    'Canyon Country Exploration',
     'veteran cycling journey',
     'Team RWB',
     'veterans outdoor wellness',
     'JT Tracy cyclist',
     'purpose in nature',
     'cross country cycling',
-    'Flagstaff to Salt Lake City cycling',
+    'Flagstaff to South Jordan cycling',
     'nature mental health veterans',
   ],
 };

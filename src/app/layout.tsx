@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     "bikepacking",
     "touring cyclist",
     "cycling across America",
-    "mountain states cycling",
-    "mountain states exploration",
+    "canyon country cycling",
+    "canyon country exploration",
     // Veterans
     "veteran cycling",
     "cycling for veterans",
@@ -195,20 +195,20 @@ const personSchema = {
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
-  "name": "Mountain States Exploration — Roll 4 Nature 2026",
+  "name": "Canyon Country Exploration — Roll 4 Nature 2026",
   "alternateName": [
-    "R4N Mountain States Exploration",
-    "Roll for Nature Mountain States",
+    "R4N Canyon Country Exploration",
+    "Roll for Nature Canyon Country",
     "roll4nature cycling 2026",
   ],
-  "description": "A purpose-driven cycling journey through the mountain states of the American West, supporting Team Red White and Blue (Team RWB) veterans wellness. From Flagstaff, Arizona to Rigby, Idaho.",
-  "startDate": "2026-07-01",
-  "endDate": "2026-09-03",
+  "description": "A purpose-driven cycling journey through the canyon country of the American West, supporting Team Red White and Blue (Team RWB) veterans wellness. From Flagstaff, Arizona to South Jordan, Utah.",
+  "startDate": "2026-07-20",
+  "endDate": "2026-08-25",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
   "location": {
     "@type": "Place",
-    "name": "American West — Flagstaff, AZ to Rigby, ID",
+    "name": "American West — Flagstaff, AZ to South Jordan, UT",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US",
