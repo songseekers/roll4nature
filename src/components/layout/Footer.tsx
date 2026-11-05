@@ -113,7 +113,7 @@ export default function Footer() {
 
             {/* JT — updated links */}
             <div className="bg-r4n-forest-mid dark:bg-r4n-charcoal-mid rounded-lg p-5 flex flex-col items-center gap-3 border border-r4n-forest-light dark:border-r4n-charcoal">
-              <h5 className="text-r4n-primary-hover font-semibold text-sm uppercase tracking-wide">JT</h5>
+              <h5 className="text-r4n-tan font-semibold text-sm uppercase tracking-wide">JT&apos;s Social Links</h5>
               <div className="flex flex-wrap justify-center gap-2">
                 <a href="https://www.youtube.com/@roll4nature/shorts" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-r4n-warm-cream-dim hover:text-r4n-primary-hover transition bg-r4n-forest-light dark:bg-r4n-charcoal hover:bg-r4n-forest dark:hover:bg-r4n-charcoal-mid px-3 py-2 rounded-lg" aria-label="JT's YouTube">
                   <Youtube size={18} />
@@ -140,7 +140,7 @@ export default function Footer() {
 
             {/* Boogalie Bear */}
             <div className="bg-r4n-forest-mid dark:bg-r4n-charcoal-mid rounded-lg p-5 flex flex-col items-center gap-3 border border-r4n-primary/30">
-              <h5 className="text-r4n-primary-hover font-semibold text-sm uppercase tracking-wide">Boogalie Bear</h5>
+              <h5 className="text-r4n-tan font-semibold text-sm uppercase tracking-wide">Boogalie&apos;s Social Links</h5>
               <div className="flex flex-wrap justify-center gap-2">
                 <a href="https://www.instagram.com/boogaliebear?igsh=MWM2dTk3M3prYXN5Yg==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-r4n-warm-cream-dim hover:text-r4n-primary-hover transition bg-r4n-forest-light dark:bg-r4n-charcoal hover:bg-r4n-forest dark:hover:bg-r4n-charcoal-mid px-3 py-2 rounded-lg" aria-label="Follow Boogs on Instagram">
                   <Instagram size={18} />
@@ -151,7 +151,7 @@ export default function Footer() {
 
             {/* Sean */}
             <div className="bg-r4n-forest-mid dark:bg-r4n-charcoal-mid rounded-lg p-5 flex flex-col items-center gap-3 border border-r4n-forest-light dark:border-r4n-charcoal">
-              <h5 className="text-r4n-primary-hover font-semibold text-sm uppercase tracking-wide">Sean</h5>
+              <h5 className="text-r4n-tan font-semibold text-sm uppercase tracking-wide">Sean&apos;s Social Links</h5>
               <div className="flex flex-wrap justify-center gap-2">
                 <a href="https://www.facebook.com/share/18Wt5WcbA2/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-r4n-warm-cream-dim hover:text-r4n-primary-hover transition bg-r4n-forest-light dark:bg-r4n-charcoal hover:bg-r4n-forest dark:hover:bg-r4n-charcoal-mid px-3 py-2 rounded-lg" aria-label="Sean's Facebook">
                   <Facebook size={18} />

@@ -470,6 +470,18 @@ function getTrackData(): TrackData {
   return trackCache;
 }
 
+// Frame the map on the stops of the chosen view.
+function fitToMode(m: mapboxgl.Map, mode: MapMode, duration: number) {
+  const targetCities = mode === 'replay' ? getAllCities() : citiesForRoute(mode);
+  if (targetCities.length === 0) return;
+  const bounds = new mapboxgl.LngLatBounds();
+  targetCities.forEach((city) => bounds.extend(city.coordinates));
+  m.fitBounds(bounds, {
+    padding: { top: 40, bottom: 40, left: 40, right: 40 },
+    duration,
+  });
+}
+
 // Nudge a popup back inside the map window if it hangs over an edge, so all of it is readable.
 function keepPopupInside(m: mapboxgl.Map, popup: mapboxgl.Popup) {
   const run = () => {
@@ -663,6 +675,7 @@ export default function RouteMap() {
   const remainingRef = useRef<number>(0); // ms left in the current pause/hold
   const passedRef = useRef<number>(-1);
   const paintRef = useRef<((p: number) => void) | null>(null);
+  const modeRef = useRef<MapMode>('replay');
   const [playing, setPlaying] = useState<boolean>(!reducedRef.current);
   // the replay only runs while the map is on screen (starts at 50% visible)
   const [inView, setInView] = useState<boolean>(typeof IntersectionObserver === 'undefined');
@@ -677,8 +690,16 @@ export default function RouteMap() {
   }, []);
 
   useEffect(() => {
+    modeRef.current = mode;
+  }, [mode]);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
-      map.current?.resize();
+      const m = map.current;
+      if (!m) return;
+      m.resize();
+      // return to the default framing after a resize (or after exploring in Full Screen)
+      fitToMode(m, modeRef.current, 0);
     }, 100);
     return () => clearTimeout(timer);
   }, [isFullscreen]);
@@ -706,11 +727,20 @@ export default function RouteMap() {
       pitch: 0,
       bearing: 0,
       attributionControl: false,
+      // the embedded map stays put; exploring is only turned on in Full Screen
+      scrollZoom: false,
+      boxZoom: false,
+      dragRotate: false,
+      dragPan: false,
+      keyboard: false,
+      doubleClickZoom: false,
+      touchZoomRotate: false,
+      touchPitch: false,
     });
 
     // compact attribution (an "i" button) keeps the bottom edge free for the day-by-day caption
     map.current.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right');
-    map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
+    map.current.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'top-right');
 
     map.current.on('load', () => {
       const m = map.current;
@@ -818,16 +848,31 @@ export default function RouteMap() {
     });
     if (bikeRef.current) bikeRef.current.getElement().style.display = replay ? 'block' : 'none';
 
-    const targetCities = mode === 'replay' ? getAllCities() : citiesForRoute(mode);
-    if (targetCities.length > 0) {
-      const bounds = new mapboxgl.LngLatBounds();
-      targetCities.forEach((city) => bounds.extend(city.coordinates));
-      m.fitBounds(bounds, {
-        padding: { top: 40, bottom: 40, left: 40, right: 40 },
-        duration: 800,
-      });
-    }
+    fitToMode(m, mode, 800);
   }, [mode, isLoading]);
+
+  // The embedded map stays put so scrolling the page never moves it.
+  // Full Screen turns zooming and panning back on (rotation stays off).
+  useEffect(() => {
+    const m = map.current;
+    if (!m || isLoading) return;
+    if (isFullscreen) {
+      m.scrollZoom.enable();
+      m.boxZoom.enable();
+      m.dragPan.enable();
+      m.keyboard.enable();
+      m.doubleClickZoom.enable();
+      m.touchZoomRotate.enable();
+      m.touchZoomRotate.disableRotation();
+    } else {
+      m.scrollZoom.disable();
+      m.boxZoom.disable();
+      m.dragPan.disable();
+      m.keyboard.disable();
+      m.doubleClickZoom.disable();
+      m.touchZoomRotate.disable();
+    }
+  }, [isFullscreen, isLoading]);
 
   // ---------- replay: restart from the beginning when it is selected ----------
   useEffect(() => {
@@ -1359,7 +1404,7 @@ export default function RouteMap() {
 
       <div className={isFullscreen
         ? 'relative flex-1 min-h-0'
-        : 'relative w-full'
+        : 'relative w-full map-static'
       }>
         <div
           ref={mapContainer}

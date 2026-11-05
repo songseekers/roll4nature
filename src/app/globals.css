@@ -106,6 +106,20 @@ body {
   pointer-events: none;
 }
 
+/* Footer links: the brown hover color is unreadable on the dark footer, so lighten on hover */
+footer a:hover {
+  color: #F2DFC0;
+}
+
+/* The embedded map stays put: no zoom buttons and no grab cursor (Full Screen lets you explore) */
+.map-static .mapboxgl-ctrl-top-right {
+  display: none;
+}
+.map-static .mapboxgl-canvas-container.mapboxgl-interactive,
+.map-static .mapboxgl-canvas-container.mapboxgl-interactive:active {
+  cursor: default !important;
+}
+
 /* Mapbox Popup Close Button */
 .mapboxgl-popup-close-button {
   width: 32px !important;
